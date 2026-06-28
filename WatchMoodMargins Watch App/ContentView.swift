@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  MoodMargins
+//  WatchMoodMargins Watch App
 //
 //  Created by Gerard Gomez on 6/21/26.
 //

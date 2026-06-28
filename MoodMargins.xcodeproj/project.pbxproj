@@ -6,6 +6,26 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CCE094932FE8380900725C1C /* FlexStore in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094922FE8380900725C1C /* FlexStore */; };
+		CCE0949B2FE8389F00725C1C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949A2FE8389F00725C1C /* WidgetKit.framework */; };
+		CCE0949D2FE8389F00725C1C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949C2FE8389F00725C1C /* SwiftUI.framework */; };
+		CCE094AE2FE8389F00725C1C /* MoodMarginsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CCE094982FE8389F00725C1C /* MoodMarginsWidgetExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCE094B92FE8397F00725C1C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949A2FE8389F00725C1C /* WidgetKit.framework */; };
+		CCE094BA2FE8397F00725C1C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949C2FE8389F00725C1C /* SwiftUI.framework */; };
+		CCE094C52FE8398000725C1C /* MoodMarginsWidgetMacExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CCE094B82FE8397F00725C1C /* MoodMarginsWidgetMacExtension.appex */; platformFilters = (macos, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCE094D12FE83AA100725C1C /* EZSwiftData in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094D02FE83AA100725C1C /* EZSwiftData */; };
+		CCE094D42FE83AB600725C1C /* EZCharts in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094D32FE83AB600725C1C /* EZCharts */; };
+		CCE094D62FE83AB600725C1C /* EZCharts3D in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094D52FE83AB600725C1C /* EZCharts3D */; };
+		CCE094D92FE83AC300725C1C /* OnboardingKit in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094D82FE83AC300725C1C /* OnboardingKit */; };
+		CCE094DC2FE83AD200725C1C /* GentleNotification in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094DB2FE83AD200725C1C /* GentleNotification */; };
+		CCE094DF2FE83AFC00725C1C /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094DE2FE83AFC00725C1C /* Algorithms */; };
+		CCE094E22FE840C000725C1C /* DotLottie in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094E12FE840C000725C1C /* DotLottie */; };
+		CCE094E42FE840C000725C1C /* DotLottiePlayer in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094E32FE840C000725C1C /* DotLottiePlayer */; };
+		CCE095112FE8490A00725C1C /* WatchMoodMargins Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CCE095072FE8490900725C1C /* WatchMoodMargins Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCE0955A2FE8828E00725C1C /* MoodMarginsIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = CCE095592FE8828E00725C1C /* MoodMarginsIcon.icon */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CCE094772FE8377A00725C1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +41,100 @@
 			remoteGlobalIDString = CCE094682FE8377800725C1C;
 			remoteInfo = MoodMargins;
 		};
+		CCE094AC2FE8389F00725C1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE094612FE8377800725C1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE094972FE8389F00725C1C;
+			remoteInfo = MoodMarginsWidgetExtension;
+		};
+		CCE094C32FE8398000725C1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE094612FE8377800725C1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE094B72FE8397F00725C1C;
+			remoteInfo = MoodMarginsWidgetMacExtension;
+		};
+		CCE0950F2FE8490A00725C1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE094612FE8377800725C1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE095062FE8490900725C1C;
+			remoteInfo = "WatchMoodMargins Watch App";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CCE094B32FE8389F00725C1C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				CCE094AE2FE8389F00725C1C /* MoodMarginsWidgetExtension.appex in Embed Foundation Extensions */,
+				CCE094C52FE8398000725C1C /* MoodMarginsWidgetMacExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+		CCE095152FE8490A00725C1C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolder = Product;
+			files = (
+				CCE095112FE8490A00725C1C /* WatchMoodMargins Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CC7170862FF18C7E00C635FD /* EvaluationSeedSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationSeedSamples.swift; sourceTree = "<group>"; };
+		CC7170872FF18C7E00C635FD /* EvaluationValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationValidators.swift; sourceTree = "<group>"; };
+		CC7170882FF18C7F00C635FD /* SyntheticDatasetGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntheticDatasetGeneration.swift; sourceTree = "<group>"; };
+		CC7170892FF18C7F00C635FD /* TagSuggestionEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSuggestionEvaluation.swift; sourceTree = "<group>"; };
+		CC71708A2FF18C8000C635FD /* InsightRecapEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightRecapEvaluation.swift; sourceTree = "<group>"; };
 		CCE094692FE8377800725C1C /* MoodMargins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodMargins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE094762FE8377A00725C1C /* MoodMarginsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodMarginsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE094802FE8377A00725C1C /* MoodMarginsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodMarginsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE094982FE8389F00725C1C /* MoodMarginsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MoodMarginsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE0949A2FE8389F00725C1C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CCE0949C2FE8389F00725C1C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CCE094B82FE8397F00725C1C /* MoodMarginsWidgetMacExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MoodMarginsWidgetMacExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE094CD2FE83A1700725C1C /* MoodMarginsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodMarginsWidgetExtension.entitlements; sourceTree = "<group>"; };
+		CCE094CE2FE83A2800725C1C /* MoodMarginsWidgetMacExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodMarginsWidgetMacExtension.entitlements; sourceTree = "<group>"; };
+		CCE095072FE8490900725C1C /* WatchMoodMargins Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchMoodMargins Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE095592FE8828E00725C1C /* MoodMarginsIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = MoodMarginsIcon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CCE094AF2FE8389F00725C1C /* Exceptions for "MoodMarginsWidget" folder in "MoodMarginsWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CCE094972FE8389F00725C1C /* MoodMarginsWidgetExtension */;
+		};
+		CCE094C62FE8398000725C1C /* Exceptions for "MoodMarginsWidgetMac" folder in "MoodMarginsWidgetMacExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CCE094B72FE8397F00725C1C /* MoodMarginsWidgetMacExtension */;
+		};
+		CCE094CC2FE839E900725C1C /* Exceptions for "MoodMargins" folder in "MoodMargins" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CCE094682FE8377800725C1C /* MoodMargins */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CCE0946B2FE8377800725C1C /* MoodMargins */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CCE094CC2FE839E900725C1C /* Exceptions for "MoodMargins" folder in "MoodMargins" target */,
+			);
 			path = MoodMargins;
 			sourceTree = "<group>";
 		};
@@ -45,12 +148,42 @@
 			path = MoodMarginsUITests;
 			sourceTree = "<group>";
 		};
+		CCE0949E2FE8389F00725C1C /* MoodMarginsWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CCE094AF2FE8389F00725C1C /* Exceptions for "MoodMarginsWidget" folder in "MoodMarginsWidgetExtension" target */,
+			);
+			path = MoodMarginsWidget;
+			sourceTree = "<group>";
+		};
+		CCE094BB2FE8397F00725C1C /* MoodMarginsWidgetMac */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CCE094C62FE8398000725C1C /* Exceptions for "MoodMarginsWidgetMac" folder in "MoodMarginsWidgetMacExtension" target */,
+			);
+			path = MoodMarginsWidgetMac;
+			sourceTree = "<group>";
+		};
+		CCE095082FE8490900725C1C /* WatchMoodMargins Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WatchMoodMargins Watch App";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CCE094662FE8377800725C1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				CCE094E42FE840C000725C1C /* DotLottiePlayer in Frameworks */,
+				CCE094932FE8380900725C1C /* FlexStore in Frameworks */,
+				CCE094E22FE840C000725C1C /* DotLottie in Frameworks */,
+				CCE094DF2FE83AFC00725C1C /* Algorithms in Frameworks */,
+				CCE094D62FE83AB600725C1C /* EZCharts3D in Frameworks */,
+				CCE094DC2FE83AD200725C1C /* GentleNotification in Frameworks */,
+				CCE094D92FE83AC300725C1C /* OnboardingKit in Frameworks */,
+				CCE094D42FE83AB600725C1C /* EZCharts in Frameworks */,
+				CCE094D12FE83AA100725C1C /* EZSwiftData in Frameworks */,
 			);
 		};
 		CCE094732FE8377A00725C1C /* Frameworks */ = {
@@ -63,16 +196,55 @@
 			files = (
 			);
 		};
+		CCE094952FE8389F00725C1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				CCE0949D2FE8389F00725C1C /* SwiftUI.framework in Frameworks */,
+				CCE0949B2FE8389F00725C1C /* WidgetKit.framework in Frameworks */,
+			);
+		};
+		CCE094B52FE8397F00725C1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				CCE094BA2FE8397F00725C1C /* SwiftUI.framework in Frameworks */,
+				CCE094B92FE8397F00725C1C /* WidgetKit.framework in Frameworks */,
+			);
+		};
+		CCE095042FE8490900725C1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC71706B2FF18B3500C635FD /* MoodMarginsEvaluations */ = {
+			isa = PBXGroup;
+			children = (
+				CC7170862FF18C7E00C635FD /* EvaluationSeedSamples.swift */,
+				CC7170872FF18C7E00C635FD /* EvaluationValidators.swift */,
+				CC7170882FF18C7F00C635FD /* SyntheticDatasetGeneration.swift */,
+				CC7170892FF18C7F00C635FD /* TagSuggestionEvaluation.swift */,
+				CC71708A2FF18C8000C635FD /* InsightRecapEvaluation.swift */,
+			);
+			path = MoodMarginsEvaluations;
+			sourceTree = "<group>";
+		};
 		CCE094602FE8377800725C1C = {
 			isa = PBXGroup;
 			children = (
+				CCE094CE2FE83A2800725C1C /* MoodMarginsWidgetMacExtension.entitlements */,
+				CCE094CD2FE83A1700725C1C /* MoodMarginsWidgetExtension.entitlements */,
 				CCE0946B2FE8377800725C1C /* MoodMargins */,
 				CCE094792FE8377A00725C1C /* MoodMarginsTests */,
 				CCE094832FE8377A00725C1C /* MoodMarginsUITests */,
+				CCE0949E2FE8389F00725C1C /* MoodMarginsWidget */,
+				CCE094BB2FE8397F00725C1C /* MoodMarginsWidgetMac */,
+				CCE095082FE8490900725C1C /* WatchMoodMargins Watch App */,
+				CCE094992FE8389F00725C1C /* Frameworks */,
 				CCE0946A2FE8377800725C1C /* Products */,
+				CCE095592FE8828E00725C1C /* MoodMarginsIcon.icon */,
+				CC71706B2FF18B3500C635FD /* MoodMarginsEvaluations */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,8 +254,20 @@
 				CCE094692FE8377800725C1C /* MoodMargins.app */,
 				CCE094762FE8377A00725C1C /* MoodMarginsTests.xctest */,
 				CCE094802FE8377A00725C1C /* MoodMarginsUITests.xctest */,
+				CCE094982FE8389F00725C1C /* MoodMarginsWidgetExtension.appex */,
+				CCE094B82FE8397F00725C1C /* MoodMarginsWidgetMacExtension.appex */,
+				CCE095072FE8490900725C1C /* WatchMoodMargins Watch App.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CCE094992FE8389F00725C1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCE0949A2FE8389F00725C1C /* WidgetKit.framework */,
+				CCE0949C2FE8389F00725C1C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,13 +280,31 @@
 				CCE094652FE8377800725C1C /* Sources */,
 				CCE094662FE8377800725C1C /* Frameworks */,
 				CCE094672FE8377800725C1C /* Resources */,
+				CCE094B32FE8389F00725C1C /* Embed Foundation Extensions */,
+				CCE095152FE8490A00725C1C /* Embed Watch Content */,
 			);
 			buildRules = (
+			);
+			dependencies = (
+				CCE094AD2FE8389F00725C1C /* PBXTargetDependency */,
+				CCE094C42FE8398000725C1C /* PBXTargetDependency */,
+				CCE095102FE8490A00725C1C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				CCE0946B2FE8377800725C1C /* MoodMargins */,
 			);
 			name = MoodMargins;
+			packageProductDependencies = (
+				CCE094922FE8380900725C1C /* FlexStore */,
+				CCE094D02FE83AA100725C1C /* EZSwiftData */,
+				CCE094D32FE83AB600725C1C /* EZCharts */,
+				CCE094D52FE83AB600725C1C /* EZCharts3D */,
+				CCE094D82FE83AC300725C1C /* OnboardingKit */,
+				CCE094DB2FE83AD200725C1C /* GentleNotification */,
+				CCE094DE2FE83AFC00725C1C /* Algorithms */,
+				CCE094E12FE840C000725C1C /* DotLottie */,
+				CCE094E32FE840C000725C1C /* DotLottiePlayer */,
+			);
 			productName = MoodMargins;
 			productReference = CCE094692FE8377800725C1C /* MoodMargins.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +351,60 @@
 			productReference = CCE094802FE8377A00725C1C /* MoodMarginsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CCE094972FE8389F00725C1C /* MoodMarginsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE094B02FE8389F00725C1C /* Build configuration list for PBXNativeTarget "MoodMarginsWidgetExtension" */;
+			buildPhases = (
+				CCE094942FE8389F00725C1C /* Sources */,
+				CCE094952FE8389F00725C1C /* Frameworks */,
+				CCE094962FE8389F00725C1C /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				CCE0949E2FE8389F00725C1C /* MoodMarginsWidget */,
+			);
+			name = MoodMarginsWidgetExtension;
+			productName = MoodMarginsWidgetExtension;
+			productReference = CCE094982FE8389F00725C1C /* MoodMarginsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CCE094B72FE8397F00725C1C /* MoodMarginsWidgetMacExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE094C72FE8398000725C1C /* Build configuration list for PBXNativeTarget "MoodMarginsWidgetMacExtension" */;
+			buildPhases = (
+				CCE094B42FE8397F00725C1C /* Sources */,
+				CCE094B52FE8397F00725C1C /* Frameworks */,
+				CCE094B62FE8397F00725C1C /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				CCE094BB2FE8397F00725C1C /* MoodMarginsWidgetMac */,
+			);
+			name = MoodMarginsWidgetMacExtension;
+			productName = MoodMarginsWidgetMacExtension;
+			productReference = CCE094B82FE8397F00725C1C /* MoodMarginsWidgetMacExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CCE095062FE8490900725C1C /* WatchMoodMargins Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE095122FE8490A00725C1C /* Build configuration list for PBXNativeTarget "WatchMoodMargins Watch App" */;
+			buildPhases = (
+				CCE095032FE8490900725C1C /* Sources */,
+				CCE095042FE8490900725C1C /* Frameworks */,
+				CCE095052FE8490900725C1C /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				CCE095082FE8490900725C1C /* WatchMoodMargins Watch App */,
+			);
+			name = "WatchMoodMargins Watch App";
+			productName = "WatchMoodMargins Watch App";
+			productReference = CCE095072FE8490900725C1C /* WatchMoodMargins Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +426,15 @@
 						CreatedOnToolsVersion = 27.0;
 						TestTargetID = CCE094682FE8377800725C1C;
 					};
+					CCE094972FE8389F00725C1C = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					CCE094B72FE8397F00725C1C = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					CCE095062FE8490900725C1C = {
+						CreatedOnToolsVersion = 27.0;
+					};
 				};
 			};
 			buildConfigurationList = CCE094642FE8377800725C1C /* Build configuration list for PBXProject "MoodMargins" */;
@@ -178,9 +443,22 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
+				"es-US",
+				es,
+				ar,
 			);
 			mainGroup = CCE094602FE8377800725C1C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CCE094912FE8380900725C1C /* XCRemoteSwiftPackageReference "FlexStore" */,
+				CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */,
+				CCE094D22FE83AB600725C1C /* XCRemoteSwiftPackageReference "EZCharts" */,
+				CCE094D72FE83AC300725C1C /* XCRemoteSwiftPackageReference "OnboardingKit" */,
+				CCE094DA2FE83AD200725C1C /* XCRemoteSwiftPackageReference "GentleNotification" */,
+				CCE094DD2FE83AFC00725C1C /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				CCE094E02FE840C000725C1C /* XCRemoteSwiftPackageReference "dotlottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CCE0946A2FE8377800725C1C /* Products */;
 			projectDirPath = "";
@@ -189,6 +467,9 @@
 				CCE094682FE8377800725C1C /* MoodMargins */,
 				CCE094752FE8377A00725C1C /* MoodMarginsTests */,
 				CCE0947F2FE8377A00725C1C /* MoodMarginsUITests */,
+				CCE094972FE8389F00725C1C /* MoodMarginsWidgetExtension */,
+				CCE094B72FE8397F00725C1C /* MoodMarginsWidgetMacExtension */,
+				CCE095062FE8490900725C1C /* WatchMoodMargins Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +478,7 @@
 		CCE094672FE8377800725C1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				CCE0955A2FE8828E00725C1C /* MoodMarginsIcon.icon in Resources */,
 			);
 		};
 		CCE094742FE8377A00725C1C /* Resources */ = {
@@ -205,6 +487,21 @@
 			);
 		};
 		CCE0947E2FE8377A00725C1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		CCE094962FE8389F00725C1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		CCE094B62FE8397F00725C1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		CCE095052FE8490900725C1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -227,6 +524,21 @@
 			files = (
 			);
 		};
+		CCE094942FE8389F00725C1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		CCE094B42FE8397F00725C1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		CCE095032FE8490900725C1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -239,6 +551,25 @@
 			isa = PBXTargetDependency;
 			target = CCE094682FE8377800725C1C /* MoodMargins */;
 			targetProxy = CCE094812FE8377A00725C1C /* PBXContainerItemProxy */;
+		};
+		CCE094AD2FE8389F00725C1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = CCE094972FE8389F00725C1C /* MoodMarginsWidgetExtension */;
+			targetProxy = CCE094AC2FE8389F00725C1C /* PBXContainerItemProxy */;
+		};
+		CCE094C42FE8398000725C1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilters = (
+				macos,
+			);
+			target = CCE094B72FE8397F00725C1C /* MoodMarginsWidgetMacExtension */;
+			targetProxy = CCE094C32FE8398000725C1C /* PBXContainerItemProxy */;
+		};
+		CCE095102FE8490A00725C1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE095062FE8490900725C1C /* WatchMoodMargins Watch App */;
+			targetProxy = CCE0950F2FE8490A00725C1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -362,8 +693,9 @@
 		CCE094892FE8377A00725C1C /* Debug configuration for PBXNativeTarget "MoodMargins" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = MoodMarginsIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoodMargins/MoodMargins.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
@@ -372,6 +704,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodMargins/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -397,7 +730,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 27.0;
 			};
@@ -406,8 +739,9 @@
 		CCE0948A2FE8377A00725C1C /* Release configuration for PBXNativeTarget "MoodMargins" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = MoodMarginsIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoodMargins/MoodMargins.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
@@ -416,6 +750,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodMargins/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -441,7 +776,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 27.0;
 			};
@@ -549,6 +884,216 @@
 			};
 			name = Release;
 		};
+		CCE094B12FE8389F00725C1C /* Debug configuration for PBXNativeTarget "MoodMarginsWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MoodMarginsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88QL9VPLMY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodMarginsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodMarginsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.MoodMarginsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCE094B22FE8389F00725C1C /* Release configuration for PBXNativeTarget "MoodMarginsWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MoodMarginsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88QL9VPLMY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodMarginsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodMarginsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.MoodMarginsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCE094C82FE8398000725C1C /* Debug configuration for PBXNativeTarget "MoodMarginsWidgetMacExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MoodMarginsWidgetMacExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88QL9VPLMY;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodMarginsWidgetMac/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodMarginsWidgetMac;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.MoodMarginsWidgetMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CCE094C92FE8398000725C1C /* Release configuration for PBXNativeTarget "MoodMarginsWidgetMacExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MoodMarginsWidgetMacExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88QL9VPLMY;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodMarginsWidgetMac/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodMarginsWidgetMac;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.MoodMarginsWidgetMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CCE095132FE8490A00725C1C /* Debug configuration for PBXNativeTarget "WatchMoodMargins Watch App" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchMoodMargins Watch App/WatchMoodMargins Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88QL9VPLMY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchMoodMargins;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.transfinite.MoodMargins;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		CCE095142FE8490A00725C1C /* Release configuration for PBXNativeTarget "WatchMoodMargins Watch App" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchMoodMargins Watch App/WatchMoodMargins Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88QL9VPLMY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchMoodMargins;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.transfinite.MoodMargins;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -584,7 +1129,138 @@
 			);
 			defaultConfigurationName = Release;
 		};
+		CCE094B02FE8389F00725C1C /* Build configuration list for PBXNativeTarget "MoodMarginsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE094B12FE8389F00725C1C /* Debug configuration for PBXNativeTarget "MoodMarginsWidgetExtension" */,
+				CCE094B22FE8389F00725C1C /* Release configuration for PBXNativeTarget "MoodMarginsWidgetExtension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		CCE094C72FE8398000725C1C /* Build configuration list for PBXNativeTarget "MoodMarginsWidgetMacExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE094C82FE8398000725C1C /* Debug configuration for PBXNativeTarget "MoodMarginsWidgetMacExtension" */,
+				CCE094C92FE8398000725C1C /* Release configuration for PBXNativeTarget "MoodMarginsWidgetMacExtension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		CCE095122FE8490A00725C1C /* Build configuration list for PBXNativeTarget "WatchMoodMargins Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE095132FE8490A00725C1C /* Debug configuration for PBXNativeTarget "WatchMoodMargins Watch App" */,
+				CCE095142FE8490A00725C1C /* Release configuration for PBXNativeTarget "WatchMoodMargins Watch App" */,
+			);
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCE094912FE8380900725C1C /* XCRemoteSwiftPackageReference "FlexStore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gomez1112/FlexStore";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+		CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gomez1112/EZSwiftData";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.4;
+			};
+		};
+		CCE094D22FE83AB600725C1C /* XCRemoteSwiftPackageReference "EZCharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gomez1112/EZCharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+		CCE094D72FE83AC300725C1C /* XCRemoteSwiftPackageReference "OnboardingKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gomez1112/OnboardingKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.3;
+			};
+		};
+		CCE094DA2FE83AD200725C1C /* XCRemoteSwiftPackageReference "GentleNotification" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gomez1112/GentleNotification";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		CCE094DD2FE83AFC00725C1C /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		CCE094E02FE840C000725C1C /* XCRemoteSwiftPackageReference "dotlottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LottieFiles/dotlottie-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 0.15.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CCE094922FE8380900725C1C /* FlexStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCE094912FE8380900725C1C /* XCRemoteSwiftPackageReference "FlexStore" */;
+			productName = FlexStore;
+		};
+		CCE094D02FE83AA100725C1C /* EZSwiftData */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */;
+			productName = EZSwiftData;
+		};
+		CCE094D32FE83AB600725C1C /* EZCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCE094D22FE83AB600725C1C /* XCRemoteSwiftPackageReference "EZCharts" */;
+			productName = EZCharts;
+		};
+		CCE094D52FE83AB600725C1C /* EZCharts3D */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCE094D22FE83AB600725C1C /* XCRemoteSwiftPackageReference "EZCharts" */;
+			productName = EZCharts3D;
+		};
+		CCE094D82FE83AC300725C1C /* OnboardingKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCE094D72FE83AC300725C1C /* XCRemoteSwiftPackageReference "OnboardingKit" */;
+			productName = OnboardingKit;
+		};
+		CCE094DB2FE83AD200725C1C /* GentleNotification */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCE094DA2FE83AD200725C1C /* XCRemoteSwiftPackageReference "GentleNotification" */;
+			productName = GentleNotification;
+		};
+		CCE094DE2FE83AFC00725C1C /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCE094DD2FE83AFC00725C1C /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		CCE094E12FE840C000725C1C /* DotLottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCE094E02FE840C000725C1C /* XCRemoteSwiftPackageReference "dotlottie-ios" */;
+			productName = DotLottie;
+		};
+		CCE094E32FE840C000725C1C /* DotLottiePlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCE094E02FE840C000725C1C /* XCRemoteSwiftPackageReference "dotlottie-ios" */;
+			productName = DotLottiePlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCE094612FE8377800725C1C /* Project object */;
 	validationLevel = 1;

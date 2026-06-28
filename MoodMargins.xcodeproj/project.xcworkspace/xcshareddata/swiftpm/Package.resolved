@@ -1,0 +1,78 @@
+{
+  "originHash" : "a7b41041a10f31e6e5bcc73fe5386eceaf86af3faf5354f69bffd37f0ee47458",
+  "pins" : [
+    {
+      "identity" : "dotlottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/LottieFiles/dotlottie-ios",
+      "state" : {
+        "revision" : "8ccbcff4ae56f82880be06b46593ca112249f767",
+        "version" : "0.15.7"
+      }
+    },
+    {
+      "identity" : "ezcharts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gomez1112/EZCharts",
+      "state" : {
+        "revision" : "e030ab4b2c011517789bbcc6b6e7d815939d312f",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "ezswiftdata",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gomez1112/EZSwiftData",
+      "state" : {
+        "revision" : "0b5dbfb6bcd6f5b5f2d9f3c86bb78d7a72f93a0b",
+        "version" : "1.1.4"
+      }
+    },
+    {
+      "identity" : "flexstore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gomez1112/FlexStore",
+      "state" : {
+        "revision" : "ac6fc14049e41f69bb7e5f3fec028c870eccfc4b",
+        "version" : "1.2.2"
+      }
+    },
+    {
+      "identity" : "gentlenotification",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gomez1112/GentleNotification",
+      "state" : {
+        "revision" : "8ff5a73598253451bff3aa4de1b25bfaada45701",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "onboardingkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gomez1112/OnboardingKit",
+      "state" : {
+        "revision" : "efaf46093a1586369d6433d05414801caf10d1fc",
+        "version" : "1.5.3"
+      }
+    },
+    {
+      "identity" : "swift-algorithms",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-algorithms.git",
+      "state" : {
+        "revision" : "87e50f483c54e6efd60e885f7f5aa946cee68023",
+        "version" : "1.2.1"
+      }
+    },
+    {
+      "identity" : "swift-numerics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-numerics.git",
+      "state" : {
+        "revision" : "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+        "version" : "1.1.1"
+      }
+    }
+  ],
+  "version" : 3
+}
