@@ -6,6 +6,9 @@ struct StoreView: View {
     @Environment(PurchaseStore.self) private var purchases
     @Environment(ThemePreferences.self) private var themes
     @Environment(FoundationModelPreferences.self) private var modelPreferences
+#if DEBUG
+    @Environment(MarketingCaptureState.self) private var marketingCapture
+#endif
     @State private var isManagingSubscriptions = false
     @State private var restoreRevision = 0
     @State private var loadRevision = 0
@@ -33,6 +36,7 @@ struct StoreView: View {
                     NavigationLink(value: theme) {
                         ThemeStoreRow(theme: theme, status: status(for: theme))
                     }
+                    .accessibilityIdentifier("theme-\(theme.rawValue)")
                 }
             } header: {
                 Text("Themes")
@@ -45,7 +49,7 @@ struct StoreView: View {
                     if let status = FoundationModelService.status(for: .privateCloudCompute) {
                         Text(status).font(.subheadline).foregroundStyle(.secondary)
                     }
-                    if let suggestion = FoundationModelService.cloudModel.quotaUsage.limitIncreaseSuggestion {
+                    if FoundationModelService.canAttemptCloud, let suggestion = FoundationModelService.cloudModel.quotaUsage.limitIncreaseSuggestion {
                         Button("Manage cloud limit", systemImage: "cloud") { suggestion.show() }
                     }
                 }
@@ -79,6 +83,14 @@ struct StoreView: View {
                 Link("Privacy policy on the web", destination: StoreLegal.privacyURL)
                 Link("Terms of use", destination: StoreLegal.termsURL)
             }
+#if DEBUG
+            Section {
+                Toggle("Screenshot preview", isOn: Binding(get: { marketingCapture.isEnabled }, set: marketingCapture.setEnabled))
+                if let message = marketingCapture.errorMessage { Text(message).foregroundStyle(.secondary) }
+            } header: { Text("Development") } footer: {
+                Text("Uses fictional entries in a separate preview store. Your journal stays in its own store. This option is excluded from App Store builds.")
+            }
+#endif
         }
         .formStyle(.grouped)
         .navigationTitle("Customize")

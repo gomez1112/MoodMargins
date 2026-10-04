@@ -25,7 +25,7 @@ struct InsightHeader: View {
     private var rangePicker: some View {
         Picker("Range", selection: $selectedRange) {
             Text("7 days").tag(7)
-            Text("14 days").tag(14)
+            Text("14 days").tag(14).accessibilityIdentifier("insight-range-14")
             Text("30 days").tag(30)
             Text("Year").tag(365)
         }

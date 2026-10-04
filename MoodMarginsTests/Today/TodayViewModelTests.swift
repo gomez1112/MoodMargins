@@ -41,7 +41,7 @@ final class TodayViewModelTests: XCTestCase {
                 savedMood: .wink,
                 selectedTags: ["calm"],
                 savedTags: ["calm"],
-                expectedStatus: "Today's page saved",
+                expectedStatus: "Saved automatically",
                 expectedButtonTitle: "Saved",
                 expectedHasPendingChanges: false
             ),
@@ -67,7 +67,7 @@ final class TodayViewModelTests: XCTestCase {
                 savedMood: .sad,
                 selectedTags: [],
                 savedTags: [],
-                expectedStatus: "Unsaved changes",
+                expectedStatus: "Saving…",
                 expectedButtonTitle: "Save",
                 expectedHasPendingChanges: true
             ),
@@ -80,7 +80,7 @@ final class TodayViewModelTests: XCTestCase {
                 savedMood: .mourn,
                 selectedTags: ["work"],
                 savedTags: [],
-                expectedStatus: "Unsaved changes",
+                expectedStatus: "Saving…",
                 expectedButtonTitle: "Save",
                 expectedHasPendingChanges: true
             )

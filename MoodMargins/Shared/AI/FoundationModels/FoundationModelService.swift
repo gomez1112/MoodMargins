@@ -1,9 +1,22 @@
 import Foundation
 import FoundationModels
+#if os(macOS)
+import Security
+#endif
 
 /// Builds fresh sessions for an individual model attempt; providers handle cloud-to-local retries.
 @MainActor
 enum FoundationModelService {
+    /// Local Mac debug signing lacks Apple's managed PCC grant. Never query that model
+    /// from a process without its entitlement; the provider can safely retry on device.
+    static var canAttemptCloud: Bool {
+#if os(macOS)
+        guard let task = SecTaskCreateFromSelf(nil) else { return false }
+        return SecTaskCopyValueForEntitlement(task, "com.apple.developer.private-cloud-compute" as CFString, nil) as? Bool == true
+#else
+        return true
+#endif
+    }
     static let cloudModel = PrivateCloudComputeLanguageModel()
     private static let taggingModel = SystemLanguageModel(useCase: .contentTagging)
     private static let generalModel = SystemLanguageModel.default
@@ -19,6 +32,7 @@ enum FoundationModelService {
             @unknown default: return String(localized: "The on-device model is unavailable.")
             }
         case .privateCloudCompute:
+            guard canAttemptCloud else { return String(localized: "Cloud access is not configured for this build. AI will use the on-device model.") }
             switch cloudModel.availability {
             case .available:
                 let quota = cloudModel.quotaUsage
@@ -46,6 +60,9 @@ enum FoundationModelService {
             guard model.capabilities.contains(.guidedGeneration) else { throw FoundationModelsAppError.structuredOutputUnavailable }
             return LanguageModelSession(model: model, instructions: Instructions(instructions))
         case .privateCloudCompute:
+            guard canAttemptCloud else {
+                throw FoundationModelsAppError.modelUnavailable(String(localized: "Cloud access is not configured for this build. AI will use the on-device model."))
+            }
             guard cloudModel.isAvailable else {
                 throw FoundationModelsAppError.modelUnavailable(status(for: choice) ?? String(localized: "Private Cloud Compute is unavailable."))
             }

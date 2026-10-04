@@ -707,6 +707,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = MoodMarginsIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MoodMargins/MoodMargins.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = MoodMargins/MoodMargins-Mac-Debug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88QL9VPLMY;

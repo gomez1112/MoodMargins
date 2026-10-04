@@ -8,16 +8,13 @@ struct WatchCheckInView: View {
         NavigationStack {
             Form {
                 Section("Today") {
-                    Picker("Mood", selection: $journal.selectedMood) {
+                    Picker("Mood", selection: Binding(get: { journal.selectedMood }, set: journal.selectMood)) {
                         ForEach(Mood.allCases) { mood in
                             Label(mood.title, systemImage: mood.systemImage).tag(mood)
                         }
                     }
                     TextField("A short note", text: $journal.note)
-                    Button(journal.hasChanges ? "Save check-in" : "Saved", systemImage: "checkmark.seal.fill") {
-                        journal.save()
-                    }
-                    .disabled(!journal.hasChanges || journal.errorMessage != nil)
+                    Text(journal.status).font(.caption).foregroundStyle(.secondary)
                     if journal.today != nil {
                         Text("Saved on this Watch")
                             .font(.caption)
@@ -48,7 +45,10 @@ struct WatchCheckInView: View {
             }
             .navigationTitle("MoodMargins")
         }
+        .task(id: journal.draft) { await journal.autosave() }
+        .onDisappear { journal.saveIfChanged() }
         .onChange(of: scenePhase) {
+            journal.saveIfChanged()
             if scenePhase == .active && !journal.hasChanges { journal.loadToday() }
         }
     }

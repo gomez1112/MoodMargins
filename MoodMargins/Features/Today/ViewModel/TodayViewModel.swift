@@ -69,12 +69,41 @@ final class TodayViewModel {
     private var activeTagRequest: UUID?
     private var tagRetryRevision = 0
     private var lastTagSuggestionNote = ""
+    private var draftDate = Date()
+    private var selectedEntryID: UUID?
+    private var confirmedMood = false
+
+    var autosaveDraft: DiaryDraft {
+        DiaryDraft(date: draftDate, mood: selectedMood, note: note, tags: selectedTags, confirmedMood: confirmedMood)
+    }
+
+    func selectMood(_ mood: Mood) {
+        selectedMood = mood
+        confirmedMood = true
+    }
+
+    func autosave(entries: [MoodEntry], modelContext: ModelContext) async {
+        guard didLoadToday, hasUnsavedEdits else { return }
+        do {
+            try await Task.sleep(for: .milliseconds(500))
+            try Task.checkCancellation()
+            saveIfChanged(entries: entries, modelContext: modelContext)
+        } catch is CancellationError { return }
+        catch { saveErrorMessage = error.localizedDescription }
+    }
+
+    func saveIfChanged(entries: [MoodEntry], modelContext: ModelContext) {
+        guard didLoadToday, hasUnsavedEdits else { return }
+        saveTodayPage(entries: entries, modelContext: modelContext)
+    }
 
     /// Status copy that reflects the current editing state of the diary page.
     var statusText: String {
-        if pageSaved && !hasPendingChanges { return String(localized: "Today's page saved") }
+        if saveErrorMessage != nil { return String(localized: "Couldn't save changes") }
+        if pageSaved && !hasPendingChanges { return String(localized: "Saved automatically") }
+        if hasUnsavedEdits { return String(localized: "Saving…") }
         if note.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty { return String(localized: "Dear diary…") }
-        return String(localized: "Unsaved changes")
+        return String(localized: "Saving…")
     }
 
     /// A Boolean value indicating whether the editor differs from the last saved snapshot.
@@ -83,7 +112,10 @@ final class TodayViewModel {
     }
 
     private var hasUnsavedEdits: Bool {
-        selectedMood != savedMood || note != savedNote || selectedTags != savedTags
+        if selectedEntryID == nil, savedNote.isEmpty, savedTags.isEmpty,
+           note.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty, selectedTags.isEmpty,
+           selectedMood == savedMood, !confirmedMood { return false }
+        return selectedMood != savedMood || note != savedNote || selectedTags != savedTags || (!pageSaved && confirmedMood)
     }
 
     /// The title shown on the save button for the current editing state.
@@ -112,6 +144,7 @@ final class TodayViewModel {
     func loadTodayIfNeeded(from entries: [MoodEntry]) {
         guard !didLoadToday || !hasUnsavedEdits else { return }
         didLoadToday = true
+        confirmedMood = false
 
         guard let entry = entries.first(where: { Calendar.current.isDateInToday($0.date) }) else {
             selectedMood = .laughing
@@ -121,6 +154,8 @@ final class TodayViewModel {
             savedNote = ""
             savedTags = []
             pageSaved = false
+            draftDate = Date()
+            selectedEntryID = nil
             return
         }
         selectedMood = entry.mood
@@ -131,6 +166,8 @@ final class TodayViewModel {
         savedTags = Set(entry.tags)
         pageSaved = true
         generatedTagSuggestions = []
+        draftDate = entry.date
+        selectedEntryID = entry.id
     }
 
     /// Saves the current Today page state into SwiftData.
@@ -219,11 +256,13 @@ final class TodayViewModel {
     ///   - modelContext: The SwiftData model context used to insert and save the entry.
     /// - Throws: Any error thrown by `ModelContext.save()`.
     private func persistTodayPage(entries: [MoodEntry], modelContext: ModelContext) throws {
-        let saveDate = Date()
-        try MoodEntryPersistence.saveEntry(
+        // An edit spanning midnight belongs to the day the editor was opened for.
+        let saveDate = Calendar.current.isDateInToday(draftDate) ? Date() : draftDate
+        let entry = try MoodEntryPersistence.saveEntry(
             in: entries,
             modelContext: modelContext,
-            fallbackMatch: { Calendar.current.isDateInToday($0.date) },
+            preferredEntryID: selectedEntryID,
+            fallbackMatch: { Calendar.current.isDate($0.date, inSameDayAs: self.draftDate) },
             date: saveDate,
             mood: selectedMood,
             note: note,
@@ -234,6 +273,7 @@ final class TodayViewModel {
         savedNote = note
         savedTags = selectedTags
         pageSaved = true
+        selectedEntryID = entry.id
     }
 
     /// Marks the page as unsaved when the draft note no longer matches the saved note.

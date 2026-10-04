@@ -9,6 +9,7 @@ struct PastPagesGrid: View {
     var viewModel: PageViewModel
     var entries: [MoodEntry]
     var daysWithMultipleEntries: Set<Date>
+    var selectEntry: (MoodEntry) -> Void
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -52,7 +53,7 @@ struct PastPagesGrid: View {
 
     private func pageButton(_ entry: MoodEntry) -> some View {
         Button {
-            viewModel.loadEntry(entry)
+            selectEntry(entry)
         } label: {
             MiniDiaryPage(entry: entry, showsTime: daysWithMultipleEntries.contains(Calendar.current.startOfDay(for: entry.date)))
         }
@@ -67,9 +68,11 @@ struct PastPagesGrid: View {
     }
 
     private func delete(_ entry: MoodEntry) {
+        let id = entry.id
         do {
             modelContext.delete(entry)
             try modelContext.save()
+            viewModel.didDeleteEntry(id)
         } catch {
             modelContext.rollback()
             deleteError = error.localizedDescription

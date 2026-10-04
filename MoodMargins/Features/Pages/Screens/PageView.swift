@@ -34,11 +34,10 @@ struct PageView: View {
                                 lines: 6,
                                 paper: palette.paper,
                                 lineColor: palette.lavenderLine,
-                                accentColor: viewModel.selectedMood.tint
-                            ) {
-                                viewModel.saveCurrentPage(entries: entries, modelContext: modelContext)
-                            }
-                            CalendarStickerStrip(viewModel: viewModel, entries: viewModel.calendarEntries(from: entries))
+                                accentColor: viewModel.selectedMood.tint,
+                                saveStatus: viewModel.saveStatus
+                            )
+                            CalendarStickerStrip(viewModel: viewModel, entries: viewModel.calendarEntries(from: entries), selectEntry: selectEntry)
                             MoodStickerRow(viewModel: viewModel)
                             WashiTags(viewModel: viewModel)
                         }
@@ -50,7 +49,7 @@ struct PageView: View {
                             trailingMaxWidth: 640
                         ) {
                             VStack(alignment: .leading, spacing: 22) {
-                                CalendarStickerStrip(viewModel: viewModel, entries: viewModel.calendarEntries(from: entries))
+                                CalendarStickerStrip(viewModel: viewModel, entries: viewModel.calendarEntries(from: entries), selectEntry: selectEntry)
                                 MoodStickerRow(viewModel: viewModel)
                                 WashiTags(viewModel: viewModel)
                             }
@@ -63,10 +62,9 @@ struct PageView: View {
                                     lines: 6,
                                     paper: palette.paper,
                                     lineColor: palette.lavenderLine,
-                                    accentColor: viewModel.selectedMood.tint
-                                ) {
-                                    viewModel.saveCurrentPage(entries: entries, modelContext: modelContext)
-                                }
+                                    accentColor: viewModel.selectedMood.tint,
+                                    saveStatus: viewModel.saveStatus
+                                )
                             }
                         }
                     }
@@ -76,7 +74,8 @@ struct PageView: View {
                     PastPagesGrid(
                         viewModel: viewModel,
                         entries: viewModel.filteredEntries(from: entries),
-                        daysWithMultipleEntries: viewModel.daysWithMultipleEntries(in: entries)
+                        daysWithMultipleEntries: viewModel.daysWithMultipleEntries(in: entries),
+                        selectEntry: selectEntry
                     )
                 }
                 .padding(22)
@@ -96,13 +95,21 @@ struct PageView: View {
         .onAppear { viewModel.synchronize(from: entries) }
         .onChange(of: selectedSnapshot) { viewModel.synchronize(from: entries) }
         .onChange(of: scenePhase) {
+            viewModel.saveIfChanged(entries: entries, modelContext: modelContext)
             if scenePhase == .active { viewModel.synchronize(from: entries) }
         }
+        .onDisappear { viewModel.saveIfChanged(entries: entries, modelContext: modelContext) }
+        .task(id: viewModel.autosaveDraft) { await viewModel.autosave(entries: entries, modelContext: modelContext) }
         .alert("Couldn't save your page", isPresented: $viewModel.isShowingSaveError) {
+            Button("Try again") { viewModel.saveIfChanged(entries: entries, modelContext: modelContext) }
             Button("OK", role: .cancel) {}
         } message: {
             Text(viewModel.saveErrorMessage ?? "")
         }
+    }
+
+    private func selectEntry(_ entry: MoodEntry) {
+        viewModel.selectEntry(entry, entries: entries, modelContext: modelContext)
     }
 
     private var selectedSnapshot: DiaryEntrySnapshot? {

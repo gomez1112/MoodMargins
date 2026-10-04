@@ -21,6 +21,7 @@ struct ThemeDetailView: View {
                     }
                     .pickerStyle(.segmented)
                     ThemePreviewView(theme: theme)
+                        .accessibilityIdentifier("theme-preview")
                         .environment(\.colorScheme, previewScheme ?? colorScheme)
                     if purchases.entitlements.canUse(theme) {
                         Button(isSelected ? "Selected" : "Use this theme", systemImage: "checkmark") {

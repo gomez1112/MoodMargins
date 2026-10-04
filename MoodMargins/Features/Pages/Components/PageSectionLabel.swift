@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PageSectionLabel: View {
-    let title: String
+    var title: LocalizedStringKey
     let ink: Color
     var topPadding: CGFloat = 0
 

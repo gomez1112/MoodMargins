@@ -26,13 +26,11 @@ struct TodayView: View {
             AdaptiveContentWidth(maximumWidth: 1040) {
                 VStack(alignment: .leading, spacing: 18) {
                     Header(streak: MoodInsights.currentStreak(entries))
-                    QuickMoodCard(selectedMood: $viewModel.selectedMood, pageSaved: $viewModel.pageSaved)
+                    QuickMoodCard(viewModel: viewModel)
 
                     ResponsiveTwoColumn(leadingMinWidth: 320, leadingMaxWidth: 560, trailingMinWidth: 320, trailingMaxWidth: 420) {
                         VStack(alignment: .leading, spacing: 18) {
-                            TodayCard(viewModel: viewModel) {
-                                viewModel.saveTodayPage(entries: entries, modelContext: modelContext)
-                            }
+                            TodayCard(viewModel: viewModel)
                             if purchases.entitlements.hasPlus {
                                 PromptCard(
                                     generatedTags: viewModel.generatedTagSuggestions,
@@ -66,8 +64,11 @@ struct TodayView: View {
             viewModel.loadTodayIfNeeded(from: entries)
         }
         .onChange(of: scenePhase) {
+            viewModel.saveIfChanged(entries: entries, modelContext: modelContext)
             if scenePhase == .active { viewModel.loadTodayIfNeeded(from: entries) }
         }
+        .onDisappear { viewModel.saveIfChanged(entries: entries, modelContext: modelContext) }
+        .task(id: viewModel.autosaveDraft) { await viewModel.autosave(entries: entries, modelContext: modelContext) }
         .onChange(of: viewModel.note) {
             viewModel.markPageUnsavedIfNoteChanged()
         }
@@ -75,6 +76,7 @@ struct TodayView: View {
             await viewModel.generateTagSuggestions(using: modelPreferences.choice, hasPlus: purchases.entitlements.hasPlus)
         }
         .alert("Couldn't save your page", isPresented: $viewModel.isShowingSaveError) {
+            Button("Try again") { viewModel.saveIfChanged(entries: entries, modelContext: modelContext) }
             Button("OK", role: .cancel) {}
         } message: {
             Text(viewModel.saveErrorMessage ?? "")

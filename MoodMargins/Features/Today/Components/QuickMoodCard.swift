@@ -1,10 +1,9 @@
 import SwiftUI
 
 struct QuickMoodCard: View {
-    @Binding var selectedMood: Mood
-    @Binding var pageSaved: Bool
+    var viewModel: TodayViewModel
 
     var body: some View {
-        MoodPicker(selection: $selectedMood, title: String(localized: "Today I feel…"))
+        MoodPicker(selection: Binding(get: { viewModel.selectedMood }, set: viewModel.selectMood), title: String(localized: "Today I feel…"))
     }
 }

@@ -11,6 +11,7 @@ struct CalendarStickerStrip: View {
     @Environment(\.diaryPalette) private var palette
     var viewModel: PageViewModel
     let entries: [MoodEntry]
+    var selectEntry: (MoodEntry) -> Void
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -31,7 +32,7 @@ struct CalendarStickerStrip: View {
                             entry: entry,
                             isSelected: Calendar.current.isDate(entry.date, inSameDayAs: viewModel.selectedDate)
                         ) {
-                            viewModel.loadEntry(entry)
+                            selectEntry(entry)
                         }
                     }
                 }

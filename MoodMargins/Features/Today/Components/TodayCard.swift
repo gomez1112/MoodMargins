@@ -4,23 +4,11 @@ struct TodayCard: View {
     @Environment(\.diaryPalette) private var palette
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Bindable var viewModel: TodayViewModel
-    var saveAction: () -> Void
 
     var body: some View {
         DiaryCard(rotation: .zero) {
             VStack(alignment: .leading, spacing: 16) {
-                if dynamicTypeSize.isAccessibilitySize {
-                    VStack(alignment: .leading, spacing: 12) {
-                        header
-                        saveButton
-                    }
-                } else {
-                    HStack(alignment: .top) {
-                        header
-                        Spacer()
-                        saveButton.fixedSize(horizontal: true, vertical: false)
-                    }
-                }
+                header
                 LinedNote(text: $viewModel.note, lines: 3)
                 FlowLayout(spacing: 8) {
                     if viewModel.selectedTagList.isEmpty {
@@ -54,10 +42,4 @@ struct TodayCard: View {
         }
     }
 
-    private var saveButton: some View {
-        Button(viewModel.saveButtonTitle, systemImage: "checkmark.seal.fill", action: saveAction)
-            .buttonStyle(.borderedProminent)
-            .tint(palette.action)
-            .disabled(!viewModel.hasPendingChanges)
-    }
 }
