@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct PastelTagButton: View {
+    @Environment(\.diaryPalette) private var palette
     var tag: String
     @Binding var selectedTags: Set<String>
     @Binding var pageSaved: Bool
@@ -20,7 +21,7 @@ struct PastelTagButton: View {
                 .padding(.horizontal, 12)
                 .padding(.vertical, 10)
                 .frame(minHeight: 44)
-                .background(PastelTheme.washiColor(tag).opacity(0.18), in: Capsule())
+                .background(palette.washiColor(tag).opacity(0.18), in: Capsule())
                 .foregroundStyle(.primary)
         }
         .toggleStyle(.button)

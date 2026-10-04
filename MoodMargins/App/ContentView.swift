@@ -10,10 +10,13 @@ import SwiftUI
 import EZSwiftData
 
 struct ContentView: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(NavigationContext.self) private var navigationContext
+    @Environment(PurchaseStore.self) private var purchases
 
     var body: some View {
         @Bindable var navigationContext = navigationContext
+        @Bindable var purchases = purchases
 
         TabView(selection: $navigationContext.selectedTab) {
             Tab(AppTab.today.title, systemImage: AppTab.today.systemImage, value: AppTab.today) {
@@ -44,9 +47,23 @@ struct ContentView: View {
                 }
             }
             .customizationID(AppTab.insights.rawValue)
+            Tab(AppTab.customize.title, systemImage: AppTab.customize.systemImage, value: AppTab.customize) {
+                NavigationStack(path: $navigationContext.customizePath) {
+                    StoreView()
+                        .navigationDestination(for: AppScreen.self) { screen in
+                            screen.destination
+                        }
+                }
+            }
+            .customizationID(AppTab.customize.rawValue)
         }
         .tabViewStyle(.sidebarAdaptable)
-        .tint(PastelTheme.ink)
+        .tint(palette.ink)
+        .alert("Purchases", isPresented: $purchases.isShowingPurchaseMessage) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(purchases.purchaseMessage ?? "")
+        }
         .sheet(item: $navigationContext.presentedSheet) { sheet in
             NavigationStack {
                 sheet.destination
@@ -67,10 +84,4 @@ struct ContentView: View {
         }
 #endif
     }
-}
-
-#Preview("Dev", traits: .dev(AppPreviewConfig.self, { context in
-    PreviewDependencies(context: context)
-})) {
-    ContentView()
 }

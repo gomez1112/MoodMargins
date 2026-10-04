@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ReflectionPairs: View {
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    var hasPlus: Bool
     var pattern: String
     let selectedRange: Int
     let generatedRecap: PartialGeneratedInsightRecap?
@@ -22,26 +23,28 @@ struct ReflectionPairs: View {
                 HStack(alignment: .top, spacing: 22) {
                     GentlePatternCard(pattern: pattern)
                         .frame(minWidth: 320, maxWidth: .infinity, alignment: .topLeading)
-                    GeneratedInsightRecapCard(
-                        selectedRange: selectedRange,
-                        recap: generatedRecap,
-                        isGenerating: isGeneratingRecap,
-                        errorMessage: recapErrorMessage,
-                        retry: retry
-                    )
-                    .frame(minWidth: 320, maxWidth: .infinity, alignment: .topLeading)
+                    recapCard
+                        .frame(minWidth: 320, maxWidth: .infinity, alignment: .topLeading)
                 }
             }
             VStack(alignment: .leading, spacing: 22) {
                 GentlePatternCard(pattern: pattern)
-                GeneratedInsightRecapCard(
-                    selectedRange: selectedRange,
-                    recap: generatedRecap,
-                    isGenerating: isGeneratingRecap,
-                    errorMessage: recapErrorMessage,
-                        retry: retry
-                )
+                recapCard
             }
+        }
+    }
+
+    @ViewBuilder private var recapCard: some View {
+        if hasPlus {
+            GeneratedInsightRecapCard(
+                selectedRange: selectedRange,
+                recap: generatedRecap,
+                isGenerating: isGeneratingRecap,
+                errorMessage: recapErrorMessage,
+                retry: retry
+            )
+        } else {
+            PlusFeatureCard(title: String(localized: "Gentle recap"), message: String(localized: "Plus brings your saved pages together with an AI recap. Your mood charts and streaks stay free."))
         }
     }
 }

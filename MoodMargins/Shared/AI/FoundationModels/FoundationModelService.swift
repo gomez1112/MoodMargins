@@ -1,7 +1,7 @@
 import Foundation
 import FoundationModels
 
-/// Builds fresh sessions for each task using the person's explicitly selected model.
+/// Builds fresh sessions for an individual model attempt; providers handle cloud-to-local retries.
 @MainActor
 enum FoundationModelService {
     static let cloudModel = PrivateCloudComputeLanguageModel()

@@ -5,13 +5,21 @@ struct FoundationMoodTaggingProvider: Sendable {
     func generateSuggestions(for request: MoodTaggingRequest, onPartial: @MainActor @Sendable ([String]) -> Void) async throws {
         let note = request.note.trimmingCharacters(in: .whitespacesAndNewlines)
         guard note.count >= 12 else { onPartial([]); return }
+        try await FoundationModelFallback.run(preferred: request.modelChoice) { choice in
+            // A local retry replaces any partial cloud output rather than mixing responses.
+            onPartial([])
+            try await generateSuggestions(for: request, using: choice, onPartial: onPartial)
+        }
+    }
+
+    private func generateSuggestions(for request: MoodTaggingRequest, using choice: FoundationModelChoice, onPartial: @MainActor @Sendable ([String]) -> Void) async throws {
         let session = try await FoundationModelService.session(
-            choice: request.modelChoice,
+            choice: choice,
             contentTagging: true,
             instructions: "Provide up to four concise lowercase diary tags from this entry. Prefer emotions, topics, and routines. Avoid diagnosis, advice, and full sentences."
         )
         let stream = session.streamResponse(
-            to: Prompt(note),
+            to: Prompt(request.note),
             generating: MoodTaggingResult.self,
             options: GenerationOptions(samplingMode: .greedy, maximumResponseTokens: 80),
             contextOptions: ContextOptions(includeSchemaInPrompt: true)

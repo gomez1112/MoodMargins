@@ -1,0 +1,29 @@
+MoodMargins Privacy Policy
+Effective date: October 4, 2026
+
+Your journal
+MoodMargins is a personal mood journal developed by Gerard Gomez. You can save moods, notes, tags, and related journal details without creating a MoodMargins account. Journal content is stored on your device. When iCloud is available and enabled for MoodMargins, the main app uses Apple’s CloudKit to sync journal data through your private iCloud account. Your Apple Watch journal is stored locally on the watch and does not currently sync with the main app. The developer does not operate a server that receives your journal.
+
+Apple Intelligence and your choices
+AI tag suggestions and recaps are optional Plus features. When enabled, the app tries Apple’s Private Cloud Compute first, sending the content needed for the request to Apple’s service. If a cloud request fails, it retries once using the on-device model. Turn off Use Private Cloud Compute in Customize to process AI requests only on your device. Tag requests include the draft note and selected tags; recap requests include mood and date information, tags and activities, and short note excerpts of up to 140 characters from pages in the selected period. AI features require Apple Intelligence readiness. Private Cloud Compute also requires internet access, Apple access approval, and available usage capacity. Selecting the on-device model avoids sending AI requests to Private Cloud Compute.
+
+Generated content
+Tag suggestions and generated recaps are held temporarily in the app rather than saved as a separate AI history. A suggestion becomes part of your saved journal only if you select it and save the page. Recaps are not medical advice or a diagnosis. Apple’s privacy protections and terms apply to Apple Intelligence, Private Cloud Compute, and iCloud.
+
+Purchases
+Apple processes payments for auto-renewing weekly, monthly, and yearly Plus subscriptions and permanent, non-consumable theme purchases. MoodMargins reads verified StoreKit product and transaction information to provide, restore, and update access. The developer does not receive your payment card details. Canceling a subscription does not delete journal pages or themes purchased separately. You can manage or cancel subscriptions in your Apple Account settings.
+
+Preferences and notifications
+The app stores preferences such as your theme, model choice, and onboarding state on your device. Where you use reminders, notification permissions are controlled by your device settings. Journal content is not used for advertising or sold. This version does not include developer-operated analytics, advertising, or tracking services.
+
+Retention and deletion
+Journal pages remain in the app until you delete them. Use the Pages screen to delete individual entries; deletions sync to iCloud when the service is available. Apple manages iCloud backups and their retention under your account settings. Deleting the app removes its local app data, but does not automatically cancel a subscription or guarantee deletion of cloud data or backups. Manage those separately in your Apple Account and iCloud settings.
+
+Your privacy choices
+You can view, edit, and delete your journal in the app, change the AI model choice, disable iCloud access through system settings, and manage notification permissions and subscriptions. The developer cannot retrieve private journal content stored only on your device or in your private iCloud account. If you contact the developer for help, the information you voluntarily provide is used to respond to your request; avoid sending private journal entries unless you intend to share them.
+
+Scope and updates
+This policy covers the MoodMargins app. Apple’s services have their own privacy policies. A website hosting this policy may have separate practices for cookies or analytics. Material changes to the app’s data practices will be reflected in an updated policy with a new effective date.
+
+Contact
+For privacy questions or data requests, contact Gerard Gomez at transfinite@transfinite.us.

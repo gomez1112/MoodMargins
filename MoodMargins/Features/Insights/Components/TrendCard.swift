@@ -2,6 +2,7 @@ import Charts
 import SwiftUI
 
 struct TrendCard: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(\.layoutDirection) private var layoutDirection
     @ScaledMetric(relativeTo: .body) private var chartHeight = 240.0
     @ScaledMetric(relativeTo: .body) private var scaledAxisIconSize = 32.0
@@ -25,7 +26,7 @@ struct TrendCard: View {
                                 y: .value("Mood score", item.value),
                                 series: .value("Consecutive days", item.segmentStart)
                             )
-                            .foregroundStyle(PastelTheme.ink.opacity(0.55))
+                            .foregroundStyle(palette.ink.opacity(0.55))
                             .lineStyle(StrokeStyle(lineWidth: 2))
                             .interpolationMethod(.linear)
                             .accessibilityHidden(true)
@@ -49,7 +50,7 @@ struct TrendCard: View {
                     }
                     .chartYAxis {
                         AxisMarks(position: .leading, values: [1, 2, 3, 4, 5]) {
-                            AxisGridLine().foregroundStyle(PastelTheme.ink.opacity(0.12))
+                            AxisGridLine().foregroundStyle(palette.ink.opacity(0.12))
                             AxisValueLabel(centered: true, collisionResolution: .disabled, horizontalSpacing: 8) {
                                 Color.clear.frame(width: axisIconSize, height: axisIconSize)
                             }

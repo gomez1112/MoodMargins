@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct LinedNoteCard: View {
+    @Environment(\.diaryPalette) private var palette
     @Binding var text: String
     var prompt: String
     var lines: Int
@@ -16,7 +17,7 @@ struct LinedNoteCard: View {
                 Spacer()
                 Button("Save page", systemImage: "checkmark.seal.fill", action: saveAction)
                     .buttonStyle(.borderedProminent)
-                    .tint(PastelTheme.action)
+                    .tint(palette.action)
             }
         }
         .padding(18)

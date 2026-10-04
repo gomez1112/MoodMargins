@@ -9,7 +9,9 @@ import SwiftData
 import SwiftUI
 
 struct TodayView: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(FoundationModelPreferences.self) private var modelPreferences
+    @Environment(PurchaseStore.self) private var purchases
     @Environment(\.modelContext) private var modelContext
     @Environment(\.scenePhase) private var scenePhase
 
@@ -24,7 +26,6 @@ struct TodayView: View {
             AdaptiveContentWidth(maximumWidth: 1040) {
                 VStack(alignment: .leading, spacing: 18) {
                     Header(streak: MoodInsights.currentStreak(entries))
-                    FoundationModelPicker()
                     QuickMoodCard(selectedMood: $viewModel.selectedMood, pageSaved: $viewModel.pageSaved)
 
                     ResponsiveTwoColumn(leadingMinWidth: 320, leadingMaxWidth: 560, trailingMinWidth: 320, trailingMaxWidth: 420) {
@@ -32,13 +33,17 @@ struct TodayView: View {
                             TodayCard(viewModel: viewModel) {
                                 viewModel.saveTodayPage(entries: entries, modelContext: modelContext)
                             }
-                            PromptCard(
-                                generatedTags: viewModel.generatedTagSuggestions,
-                                isGeneratingTags: viewModel.isGeneratingTagSuggestions,
-                                errorMessage: viewModel.tagSuggestionError,
-                                retry: viewModel.retryTagSuggestions,
-                                selectGeneratedTag: viewModel.selectGeneratedTag
-                            )
+                            if purchases.entitlements.hasPlus {
+                                PromptCard(
+                                    generatedTags: viewModel.generatedTagSuggestions,
+                                    isGeneratingTags: viewModel.isGeneratingTagSuggestions,
+                                    errorMessage: viewModel.tagSuggestionError,
+                                    retry: viewModel.retryTagSuggestions,
+                                    selectGeneratedTag: viewModel.selectGeneratedTag
+                                )
+                            } else {
+                                PlusFeatureCard(title: String(localized: "AI tags"), message: String(localized: "Plus suggests tags from your note as you write."))
+                            }
                         }
                     } trailing: {
                         RecentPages(entries: entries)
@@ -49,7 +54,7 @@ struct TodayView: View {
         }
         .scrollDismissesKeyboard(.interactively)
         .safeAreaPadding(.bottom, 16)
-        .background(PastelTheme.background.ignoresSafeArea())
+        .background(palette.background.ignoresSafeArea())
         .navigationTitle("")
 #if !os(macOS)
         .toolbar(.hidden, for: .navigationBar)
@@ -66,8 +71,8 @@ struct TodayView: View {
         .onChange(of: viewModel.note) {
             viewModel.markPageUnsavedIfNoteChanged()
         }
-        .task(id: viewModel.tagRefreshID(using: modelPreferences.choice)) {
-            await viewModel.generateTagSuggestions(using: modelPreferences.choice)
+        .task(id: "\(purchases.entitlements.hasPlus):\(viewModel.tagRefreshID(using: modelPreferences.choice))") {
+            await viewModel.generateTagSuggestions(using: modelPreferences.choice, hasPlus: purchases.entitlements.hasPlus)
         }
         .alert("Couldn't save your page", isPresented: $viewModel.isShowingSaveError) {
             Button("OK", role: .cancel) {}

@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct RecentPages: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @ScaledMetric(relativeTo: .body) private var cardWidth = 210.0
     var entries: [MoodEntry]
@@ -9,7 +10,7 @@ struct RecentPages: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Recent pages")
                 .font(.system(.headline, design: .rounded))
-                .foregroundStyle(PastelTheme.ink)
+                .foregroundStyle(palette.ink)
                 .accessibilityAddTraits(.isHeader)
             ScrollView(.horizontal) {
                 HStack(alignment: .top, spacing: 16) {

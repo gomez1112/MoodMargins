@@ -69,6 +69,20 @@ enum MoodInsights {
         return count
     }
 
+    /// Counts the longest run of saved calendar days, ignoring duplicate and future entries.
+    static func longestStreak(_ entries: [MoodEntry], calendar: Calendar = .current, now: Date = Date()) -> Int {
+        let days = Set(entries.filter { $0.date <= now }.map { calendar.startOfDay(for: $0.date) }).sorted()
+        var longest = 0
+        var current = 0
+        var previous: Date?
+        for day in days {
+            current = previous.flatMap { calendar.date(byAdding: .day, value: 1, to: $0) } == day ? current + 1 : 1
+            longest = max(longest, current)
+            previous = day
+        }
+        return longest
+    }
+
     static func pattern(_ entries: [MoodEntry]) -> String {
         guard !entries.isEmpty else {
             return String(localized: "Save a page to start noticing patterns in your days.")

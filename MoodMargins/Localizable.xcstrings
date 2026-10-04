@@ -4119,6 +4119,30 @@
           }
         }
       }
+    },
+    "%lld days" : {
+      "comment" : "Number of consecutive saved journal days. Used by the longest streak summary.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld day"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld days"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "version" : "1.3"

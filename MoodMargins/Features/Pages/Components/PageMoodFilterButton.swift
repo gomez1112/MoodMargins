@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct PageMoodFilterButton: View {
+    @Environment(\.diaryPalette) private var palette
     var title: String
     var mood: Mood?
     var selectedMood: Mood?
@@ -17,8 +18,8 @@ struct PageMoodFilterButton: View {
             .padding(.horizontal, 12)
             .padding(.vertical, 10)
             .frame(minHeight: 44)
-            .background((mood?.tint ?? PastelTheme.ink).opacity(isSelected ? 0.22 : 0.10), in: Capsule())
-            .foregroundStyle(PastelTheme.ink)
+            .background((mood?.tint ?? palette.ink).opacity(isSelected ? 0.22 : 0.10), in: Capsule())
+            .foregroundStyle(palette.ink)
         }
         .buttonStyle(.plain)
         .accessibilityAddTraits(isSelected ? [.isSelected] : [])

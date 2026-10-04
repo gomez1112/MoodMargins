@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct InsightHeader: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Binding var selectedRange: Int
 
@@ -8,7 +9,7 @@ struct InsightHeader: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Insights")
                 .font(.system(.title, design: .rounded).bold())
-                .foregroundStyle(PastelTheme.ink)
+                .foregroundStyle(palette.ink)
                 .accessibilityAddTraits(.isHeader)
             Text("A soft look back through your pages")
                 .font(.subheadline)

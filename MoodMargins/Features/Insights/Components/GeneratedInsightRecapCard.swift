@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GeneratedInsightRecapCard: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let selectedRange: Int
     let recap: PartialGeneratedInsightRecap?
@@ -44,7 +45,7 @@ struct GeneratedInsightRecapCard: View {
                 if let gentleReflection = text(recap?.gentleReflection) {
                     Text(gentleReflection)
                         .font(.system(.callout, design: .serif))
-                        .foregroundStyle(PastelTheme.ink.opacity(0.74))
+                        .foregroundStyle(palette.ink.opacity(0.74))
                 }
 
                 if let nextPrompt = text(recap?.nextPrompt) {
@@ -52,8 +53,8 @@ struct GeneratedInsightRecapCard: View {
                         .font(.system(.caption, design: .rounded).weight(.semibold))
                         .padding(.horizontal, 12)
                         .padding(.vertical, 8)
-                        .background(Capsule().fill(PastelTheme.blush))
-                        .foregroundStyle(PastelTheme.ink)
+                        .background(Capsule().fill(palette.blush))
+                        .foregroundStyle(palette.ink)
                 }
 
                 if errorMessage != nil && !isGenerating {

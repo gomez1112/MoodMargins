@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct PageMoodFilter: View {
+    @Environment(\.diaryPalette) private var palette
     var viewModel: PageViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text("Filter pages")
                 .font(.system(.headline, design: .rounded))
-                .foregroundStyle(PastelTheme.ink)
+                .foregroundStyle(palette.ink)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
@@ -31,10 +32,4 @@ struct PageMoodFilter: View {
             }
         }
     }
-}
-
-#Preview {
-    PageMoodFilter(viewModel: PageViewModel())
-        .padding()
-        .background(PastelTheme.background)
 }

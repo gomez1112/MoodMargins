@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct MoodPicker: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Binding var selection: Mood
     var title: String
@@ -9,7 +10,7 @@ struct MoodPicker: View {
         VStack(alignment: .leading, spacing: 12) {
             Text(title)
                 .font(.system(.headline, design: .rounded))
-                .foregroundStyle(PastelTheme.ink)
+                .foregroundStyle(palette.ink)
             if dynamicTypeSize.isAccessibilitySize {
                 Picker(title, selection: $selection) {
                     ForEach(Mood.allCases) { mood in
@@ -30,12 +31,12 @@ struct MoodPicker: View {
                                     .background(mood.tint.opacity(selection == mood ? 0.26 : 0.10), in: .rect(cornerRadius: 16))
                                     .overlay {
                                         RoundedRectangle(cornerRadius: 16)
-                                            .stroke(selection == mood ? PastelTheme.ink : .clear, lineWidth: 2)
+                                            .stroke(selection == mood ? palette.ink : .clear, lineWidth: 2)
                                     }
                                     .accessibilityHidden(true)
                                 Text(mood.title)
                                     .font(.system(.caption2, design: .rounded).bold())
-                                    .foregroundStyle(PastelTheme.ink)
+                                    .foregroundStyle(palette.ink)
                                     .fixedSize(horizontal: false, vertical: true)
                             }
                             .frame(maxWidth: .infinity)

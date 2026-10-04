@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct DistributionCard: View {
+    @Environment(\.diaryPalette) private var palette
     @ScaledMetric(relativeTo: .body) private var emojiSize = 34.0
     var distribution: [MoodCount]
     private var total: Int { distribution.reduce(0) { $0 + $1.count } }
@@ -30,7 +31,7 @@ struct DistributionCard: View {
                                 }
                             }
                             GeometryReader { proxy in
-                                Capsule().fill(PastelTheme.ink.opacity(0.10))
+                                Capsule().fill(palette.ink.opacity(0.10))
                                     .overlay(alignment: .leading) {
                                         Capsule().fill(item.mood.tint)
                                             .frame(width: proxy.size.width * share(item))

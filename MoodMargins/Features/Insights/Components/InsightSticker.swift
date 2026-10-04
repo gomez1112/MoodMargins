@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct InsightSticker: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @ScaledMetric(relativeTo: .body) private var minimumHeight = 125.0
     var title: String
@@ -17,11 +18,11 @@ struct InsightSticker: View {
             } else {
                 Image(systemName: systemName)
                     .font(.body)
-                    .foregroundStyle(PastelTheme.ink)
+                    .foregroundStyle(palette.ink)
                     .accessibilityHidden(true)
                 Text(value)
                     .font(.system(.title3, design: .rounded).bold())
-                    .foregroundStyle(PastelTheme.ink)
+                    .foregroundStyle(palette.ink)
                     .fixedSize(horizontal: false, vertical: true)
             }
             Text(title)
@@ -32,7 +33,7 @@ struct InsightSticker: View {
         }
         .padding(14)
         .frame(maxWidth: .infinity, minHeight: dynamicTypeSize.isAccessibilitySize ? 0 : minimumHeight, alignment: .topLeading)
-        .background(PastelTheme.paper, in: .rect(cornerRadius: 16))
+        .background(palette.paper, in: .rect(cornerRadius: 16))
         .shadow(color: .black.opacity(0.04), radius: 5, y: 3)
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(title)

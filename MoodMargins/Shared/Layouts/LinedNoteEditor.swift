@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct LinedNoteEditor: View {
+    @Environment(\.diaryPalette) private var palette
     @Binding var text: String
 
     let prompt: String
     let lines: Int
-    var lineColor = PastelTheme.lavenderLine
+    var lineColor: Color? = nil
     var textColor = Color.primary.opacity(0.82)
     var minimumHeight: CGFloat? = nil
 
@@ -26,7 +27,7 @@ struct LinedNoteEditor: View {
                 lines: lines,
                 rowHeight: rowHeight,
                 firstRuleOffset: firstRuleOffset,
-                lineColor: lineColor
+                lineColor: lineColor ?? palette.lavenderLine
             )
 
             TextField(prompt, text: $text, axis: .vertical)

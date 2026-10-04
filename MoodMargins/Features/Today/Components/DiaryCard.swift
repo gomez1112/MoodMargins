@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct DiaryCard<Content: View>: View {
+    @Environment(\.diaryPalette) private var palette
     let rotation: Angle
     @ContentBuilder var content: () -> Content
     
     var body: some View {
         content()
             .padding()
-            .background(PastelTheme.paper, in: RoundedRectangle(cornerRadius: 18))
+            .background(palette.paper, in: RoundedRectangle(cornerRadius: 18))
             .overlay(alignment: .topTrailing) {
                 RoundedRectangle(cornerRadius: 5)
                     .fill(.pink.opacity(0.28))

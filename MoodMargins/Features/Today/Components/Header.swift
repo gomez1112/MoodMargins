@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct Header: View {
+    @Environment(\.diaryPalette) private var palette
     var streak: Int
 
     var body: some View {
@@ -21,7 +22,7 @@ struct Header: View {
         VStack(alignment: .leading, spacing: 4) {
             Text("Today")
                 .font(.system(.title, design: .rounded).bold())
-                .foregroundStyle(PastelTheme.ink)
+                .foregroundStyle(palette.ink)
                 .accessibilityAddTraits(.isHeader)
             Text(Date(), format: .dateTime.weekday(.wide).month(.wide).day())
                 .font(.subheadline)
@@ -34,7 +35,7 @@ struct Header: View {
             .font(.system(.caption, design: .rounded).bold())
             .padding(.horizontal, 14)
             .padding(.vertical, 10)
-            .background(PastelTheme.paper, in: Capsule())
-            .foregroundStyle(PastelTheme.ink)
+            .background(palette.paper, in: Capsule())
+            .foregroundStyle(palette.ink)
     }
 }

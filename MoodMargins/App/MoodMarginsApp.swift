@@ -11,8 +11,11 @@ import EZSwiftData
 
 @main
 struct MoodMarginsApp: App {
+    @Environment(\.scenePhase) private var scenePhase
     @State private var navigationContext = NavigationContext()
     @State private var modelPreferences = FoundationModelPreferences()
+    @State private var purchases = PurchaseStore()
+    @State private var themes = ThemePreferences()
     private let container: ModelContainer
     
     init() {
@@ -27,9 +30,17 @@ struct MoodMarginsApp: App {
             MoodMarginsOnboarding {
                 ContentView()
             }
+            .task { await purchases.observeTransactions() }
+            .task { await purchases.observeSubscriptionStatus() }
+            .task(id: scenePhase) {
+                if scenePhase == .active { await purchases.refreshEntitlements() }
+            }
         }
         .environment(navigationContext)
         .environment(modelPreferences)
+        .environment(purchases)
+        .environment(themes)
+        .environment(\.diaryPalette, themes.effectiveTheme(access: purchases.entitlements).palette)
         .modelContainer(container)
     }
 }

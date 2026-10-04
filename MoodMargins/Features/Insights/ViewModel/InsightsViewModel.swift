@@ -43,10 +43,10 @@ final class InsightsViewModel {
         let commonMoods = counts.filter { highestCount > 0 && $0.count == highestCount }
         let commonMood = commonMoods.last?.mood
         let topTag = tagCounts(for: included).first?.tag
-        let overallMood = MoodInsights.overallMoodSummary(included)
+        let longestStreak = MoodInsights.longestStreak(included)
 
         return [
-            InsightSummaryItem(id: "average", title: String(localized: "Overall mood"), value: overallMood, systemName: "sparkles"),
+            InsightSummaryItem(id: "streak", title: String(localized: "Longest streak"), value: String(localized: "\(longestStreak) days"), systemName: "flame"),
             InsightSummaryItem(id: "entries", title: String(localized: "Entries"), value: included.count.formatted(), systemName: "book.pages.fill"),
             InsightSummaryItem(id: "common", title: String(localized: "Most common"), value: commonMood?.title ?? "—", systemName: "heart.fill", mood: commonMood),
             InsightSummaryItem(id: "topTag", title: String(localized: "Top tag"), value: topTag.map { "#\($0)" } ?? "—", systemName: "tag.fill")
@@ -88,7 +88,14 @@ final class InsightsViewModel {
     }
 
     /// Runs inside the view's cancellable task; an old range cannot update the new recap.
-    func refreshGeneratedRecap(from entries: [MoodEntry], using modelChoice: FoundationModelChoice = .onDevice) async {
+    func refreshGeneratedRecap(from entries: [MoodEntry], using modelChoice: FoundationModelChoice = .onDevice, hasPlus: Bool) async {
+        guard hasPlus else {
+            activeSnapshotIdentity = nil
+            generatedRecap = nil
+            recapErrorMessage = nil
+            isGeneratingRecap = false
+            return
+        }
         let snapshot = InsightRecapSnapshotBuilder.snapshot(from: entries, selectedRange: selectedRange, modelChoice: modelChoice)
         guard snapshot.identity != activeSnapshotIdentity else { return }
         activeSnapshotIdentity = snapshot.identity

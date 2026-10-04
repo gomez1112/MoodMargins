@@ -9,6 +9,7 @@ import SwiftData
 import SwiftUI
 
 struct PageView: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Environment(\.modelContext) private var modelContext
     @Environment(\.scenePhase) private var scenePhase
@@ -22,17 +23,17 @@ struct PageView: View {
         ScrollView {
             AdaptiveContentWidth(maximumWidth: 1120) {
                 VStack(alignment: .leading, spacing: 24) {
-                    PageDateHeader(date: viewModel.selectedDate, ink: PastelTheme.ink)
+                    PageDateHeader(date: viewModel.selectedDate, ink: palette.ink)
 
                     if horizontalSizeClass == .compact {
                         VStack(alignment: .leading, spacing: 22) {
-                            PageSectionLabel(title: "Current selected page", ink: PastelTheme.ink)
+                            PageSectionLabel(title: "Current selected page", ink: palette.ink)
                             LinedNoteCard(
                                 text: $viewModel.note,
                                 prompt: "Dear diary…",
                                 lines: 6,
-                                paper: PastelTheme.paper,
-                                lineColor: PastelTheme.lavenderLine,
+                                paper: palette.paper,
+                                lineColor: palette.lavenderLine,
                                 accentColor: viewModel.selectedMood.tint
                             ) {
                                 viewModel.saveCurrentPage(entries: entries, modelContext: modelContext)
@@ -55,13 +56,13 @@ struct PageView: View {
                             }
                         } trailing: {
                             VStack(alignment: .leading, spacing: 22) {
-                                PageSectionLabel(title: "Current selected page", ink: PastelTheme.ink)
+                                PageSectionLabel(title: "Current selected page", ink: palette.ink)
                                 LinedNoteCard(
                                     text: $viewModel.note,
                                     prompt: "Dear diary…",
                                     lines: 6,
-                                    paper: PastelTheme.paper,
-                                    lineColor: PastelTheme.lavenderLine,
+                                    paper: palette.paper,
+                                    lineColor: palette.lavenderLine,
                                     accentColor: viewModel.selectedMood.tint
                                 ) {
                                     viewModel.saveCurrentPage(entries: entries, modelContext: modelContext)
@@ -70,7 +71,7 @@ struct PageView: View {
                         }
                     }
 
-                    PageSectionLabel(title: "Browse past pages", ink: PastelTheme.ink, topPadding: 8)
+                    PageSectionLabel(title: "Browse past pages", ink: palette.ink, topPadding: 8)
                     PageMoodFilter(viewModel: viewModel)
                     PastPagesGrid(
                         viewModel: viewModel,
@@ -84,7 +85,7 @@ struct PageView: View {
         .swipeActionsContainer()
         .scrollDismissesKeyboard(.interactively)
         .safeAreaPadding(.bottom, 16)
-        .background(PastelTheme.background.ignoresSafeArea())
+        .background(palette.background.ignoresSafeArea())
         .navigationTitle("Pages")
 #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)

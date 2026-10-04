@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PromptCard: View {
+    @Environment(\.diaryPalette) private var palette
     let generatedTags: [String]
     let isGeneratingTags: Bool
     var errorMessage: String? = nil
@@ -19,7 +20,7 @@ struct PromptCard: View {
             VStack(alignment: .leading, spacing: 14) {
                 Label("One small thing I noticed today was…", systemImage: "sparkles")
                     .font(.system(.headline, design: .rounded))
-                    .foregroundStyle(PastelTheme.ink)
+                    .foregroundStyle(palette.ink)
 
                 if let errorMessage {
                     Text(errorMessage).font(.caption).foregroundStyle(.secondary)
@@ -42,10 +43,10 @@ struct PromptCard: View {
                                         .padding(.horizontal, 12)
                                         .padding(.vertical, 10)
                                         .frame(minHeight: 44)
-                                        .background(Capsule().fill(PastelTheme.washiColor(tag).opacity(0.22)))
+                                        .background(Capsule().fill(palette.washiColor(tag).opacity(0.22)))
                                         .overlay {
                                             Capsule()
-                                                .stroke(PastelTheme.washiColor(tag).opacity(0.48), lineWidth: 1)
+                                                .stroke(palette.washiColor(tag).opacity(0.48), lineWidth: 1)
                                         }
                                         .foregroundStyle(.primary)
                                 }

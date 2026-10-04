@@ -20,7 +20,3 @@ struct PageSectionLabel: View {
             .padding(.top, topPadding)
     }
 }
-
-#Preview {
-    PageSectionLabel(title: "Browse past pages", ink: PastelTheme.ink, topPadding: 8)
-}

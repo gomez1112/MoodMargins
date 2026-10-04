@@ -2,6 +2,7 @@ import SwiftData
 import SwiftUI
 
 struct PastPagesGrid: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var deleteError: String?
@@ -14,7 +15,7 @@ struct PastPagesGrid: View {
             HStack {
                 Text("Past pages")
                     .font(.system(.headline, design: .rounded))
-                    .foregroundStyle(PastelTheme.ink)
+                    .foregroundStyle(palette.ink)
                 Spacer()
                 Text(entries.count, format: .number)
                     .font(.caption)

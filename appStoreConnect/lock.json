@@ -1,0 +1,86 @@
+{
+  "appId": "6819079849",
+  "derived": {
+    "appStoreVersionScreenshotSets": {
+
+    },
+    "pricing": {
+      "automaticPrices": [
+
+      ]
+    }
+  },
+  "formatVersion": 1,
+  "gitignore": "created",
+  "resources": {
+    "ageRatingDeclaration": {
+      "fields": {
+        "ageRatingOverrideV2": "NONE",
+        "koreaAgeRatingOverride": "NONE"
+      },
+      "id": "355e8e43-e735-4659-b5a3-3567667c66b5",
+      "type": "ageRatingDeclarations"
+    },
+    "app": {
+      "fields": {
+        "primaryLocale": "en-US"
+      },
+      "id": "6819079849",
+      "type": "apps"
+    },
+    "appInfo": {
+      "fields": {
+
+      },
+      "id": "355e8e43-e735-4659-b5a3-3567667c66b5",
+      "type": "appInfos"
+    },
+    "appInfoLocalization:en-US": {
+      "fields": {
+        "name": "MoodMargins"
+      },
+      "id": "7eb0e856-7cf7-4dfb-b5cd-8dbe8fbd01e8",
+      "type": "appInfoLocalizations"
+    },
+    "appStoreVersion:IOS:1.0": {
+      "fields": {
+        "releaseType": "AFTER_APPROVAL",
+        "versionString": "1.0"
+      },
+      "id": "f0de5b17-9993-497e-bcd1-11c8058457b2",
+      "type": "appStoreVersions"
+    },
+    "appStoreVersion:MAC_OS:1.0": {
+      "fields": {
+        "releaseType": "AFTER_APPROVAL",
+        "versionString": "1.0"
+      },
+      "id": "8fb28006-1166-4943-b833-85b0228c4040",
+      "type": "appStoreVersions"
+    },
+    "appStoreVersionLocalization:IOS:1.0:en-US": {
+      "fields": {
+
+      },
+      "id": "08cf0b58-c1e4-4557-bb77-158a28b91533",
+      "type": "appStoreVersionLocalizations"
+    },
+    "appStoreVersionLocalization:MAC_OS:1.0:en-US": {
+      "fields": {
+
+      },
+      "id": "687c226b-357f-41bc-9b58-6d26384a04d0",
+      "type": "appStoreVersionLocalizations"
+    },
+    "pricing": {
+      "fields": {
+        "baseTerritory": "USA",
+        "manualPrices": [
+
+        ]
+      },
+      "id": "6819079849",
+      "type": "appPriceSchedules"
+    }
+  }
+}

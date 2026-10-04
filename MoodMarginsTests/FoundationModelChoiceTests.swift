@@ -6,17 +6,20 @@ import Testing
 @Suite("Foundation model selection")
 @MainActor
 struct FoundationModelChoiceTests {
-    @Test("Model choice defaults to local and persists an explicit PCC selection")
+    @Test("PCC is the default and turning it off persists across launches")
     func persistsSelection() throws {
         let suite = "MoodMargins.ModelChoiceTests.\(UUID().uuidString)"
         let defaults = try #require(UserDefaults(suiteName: suite))
         defer { defaults.removePersistentDomain(forName: suite) }
         let preferences = FoundationModelPreferences(defaults: defaults)
-        #expect(preferences.choice == .onDevice)
-        preferences.choice = .privateCloudCompute
+        #expect(preferences.choice == .privateCloudCompute)
+        #expect(preferences.usesPrivateCloudCompute)
+        preferences.usesPrivateCloudCompute = false
+        #expect(FoundationModelPreferences(defaults: defaults).choice == .onDevice)
+        preferences.usesPrivateCloudCompute = true
         #expect(FoundationModelPreferences(defaults: defaults).choice == .privateCloudCompute)
         defaults.set("unknown-model", forKey: FoundationModelPreferences.storageKey)
-        #expect(FoundationModelPreferences(defaults: defaults).choice == .onDevice)
+        #expect(FoundationModelPreferences(defaults: defaults).choice == .privateCloudCompute)
     }
 
     @Test("Recap identity tracks the chosen model and note-only edits")

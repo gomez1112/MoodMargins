@@ -2,6 +2,7 @@ import SwiftUI
 
 /// Keeps content aligned; the small piece of tape carries the diary decoration.
 struct InsightPage<Content: View>: View {
+    @Environment(\.diaryPalette) private var palette
     var title: String
     var symbol: String
     var rotation: Double
@@ -11,13 +12,13 @@ struct InsightPage<Content: View>: View {
         VStack(alignment: .leading, spacing: 16) {
             Label(title, systemImage: symbol)
                 .font(.system(.headline, design: .rounded))
-                .foregroundStyle(PastelTheme.ink)
+                .foregroundStyle(palette.ink)
                 .accessibilityAddTraits(.isHeader)
             content()
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(PastelTheme.paper, in: .rect(cornerRadius: 18))
+        .background(palette.paper, in: .rect(cornerRadius: 18))
         .overlay(alignment: .topTrailing) {
             RoundedRectangle(cornerRadius: 5)
                 .fill(.purple.opacity(0.18))

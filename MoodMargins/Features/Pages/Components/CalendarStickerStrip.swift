@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CalendarStickerStrip: View {
+    @Environment(\.diaryPalette) private var palette
     var viewModel: PageViewModel
     let entries: [MoodEntry]
 
@@ -16,7 +17,7 @@ struct CalendarStickerStrip: View {
             HStack {
                 Text("Calendar stickers")
                     .font(.system(.headline, design: .rounded))
-                    .foregroundStyle(PastelTheme.ink)
+                    .foregroundStyle(palette.ink)
                 Spacer()
                 Text(viewModel.selectedDate, format: .dateTime.month(.wide).year())
                     .font(.system(.caption, design: .rounded).weight(.semibold))
@@ -38,10 +39,4 @@ struct CalendarStickerStrip: View {
             }
         }
     }
-}
-
-#Preview {
-    CalendarStickerStrip(viewModel: PageViewModel(), entries: [MoodEntry.latest])
-        .padding()
-        .background(PastelTheme.background)
 }

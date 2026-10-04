@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct MiniDiaryPage: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @ScaledMetric(relativeTo: .body) private var minimumHeight = 180.0
     var entry: MoodEntry
@@ -33,7 +34,7 @@ struct MiniDiaryPage: View {
         }
         .padding()
         .frame(maxWidth: .infinity, minHeight: dynamicTypeSize.isAccessibilitySize ? 0 : minimumHeight, alignment: .topLeading)
-        .background(PastelTheme.paper, in: .rect(cornerRadius: 16))
+        .background(palette.paper, in: .rect(cornerRadius: 16))
         .shadow(color: .black.opacity(0.06), radius: 5, y: 3)
         .accessibilityElement(children: .combine)
         .accessibilityValue(entry.mood.title)

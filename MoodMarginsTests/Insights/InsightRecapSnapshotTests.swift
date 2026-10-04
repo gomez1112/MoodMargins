@@ -12,6 +12,27 @@ import Testing
 @Suite("Insight recap snapshots", .serialized)
 @MainActor
 struct InsightRecapSnapshotTests {
+    @MainActor private final class CountingRecapProvider: InsightRecapProviding {
+        var calls = 0
+        func generateRecap(for snapshot: InsightRecapSnapshot, onPartial: @MainActor @Sendable (PartialGeneratedInsightRecap) -> Void) async throws {
+            calls += 1
+        }
+    }
+
+    @Test("A free journal never sends a recap request and clears prior results")
+    func noRecapWithoutPlus() async {
+        let provider = CountingRecapProvider()
+        let model = InsightsViewModel(recapProvider: provider)
+        let entries = [TestFactory.entry(date: TestFactory.date(daysAgo: 1)), TestFactory.entry(date: TestFactory.date(daysAgo: 0))]
+        await model.refreshGeneratedRecap(from: entries, hasPlus: true)
+        #expect(provider.calls == 1)
+        await model.refreshGeneratedRecap(from: entries, using: .privateCloudCompute, hasPlus: false)
+        #expect(provider.calls == 1)
+        #expect(model.generatedRecap == nil)
+        #expect(model.recapErrorMessage == nil)
+        #expect(!model.isGeneratingRecap)
+    }
+
     private struct FailingRecapProvider: InsightRecapProviding {
         func generateRecap(
             for snapshot: InsightRecapSnapshot,
@@ -29,7 +50,7 @@ struct InsightRecapSnapshotTests {
         ]
         let viewModel = InsightsViewModel(recapProvider: FailingRecapProvider())
 
-        await viewModel.refreshGeneratedRecap(from: entries)
+        await viewModel.refreshGeneratedRecap(from: entries, hasPlus: true)
 
         #expect(viewModel.isGeneratingRecap == false)
         #expect(viewModel.generatedRecap == nil)
@@ -52,7 +73,7 @@ struct InsightRecapSnapshotTests {
             TestFactory.entry(date: TestFactory.date(daysAgo: 0), note: "Today")
         ]
         let model = InsightsViewModel(recapProvider: CancelledRecapProvider())
-        await model.refreshGeneratedRecap(from: entries)
+        await model.refreshGeneratedRecap(from: entries, hasPlus: true)
         #expect(!model.isGeneratingRecap)
         #expect(model.recapErrorMessage == nil)
         #expect(model.generatedRecap == nil)

@@ -160,11 +160,16 @@ final class TodayViewModel {
     }
 
     /// SwiftUI owns this debounced task and cancels it when the note, model, or view lifetime changes.
-    func generateTagSuggestions(using modelChoice: FoundationModelChoice) async {
+    func generateTagSuggestions(using modelChoice: FoundationModelChoice, hasPlus: Bool) async {
         let requestID = UUID()
         activeTagRequest = requestID
         tagSuggestionError = nil
         isGeneratingTagSuggestions = false
+        guard hasPlus else {
+            generatedTagSuggestions = []
+            lastTagSuggestionNote = ""
+            return
+        }
         let trimmedNote = note.trimmingCharacters(in: .whitespacesAndNewlines)
         guard trimmedNote.count >= 12 else {
             generatedTagSuggestions = []

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LinedNote: View {
+    @Environment(\.diaryPalette) private var palette
     @Binding var text: String
     let lines: Int
 
@@ -16,7 +17,7 @@ struct LinedNote: View {
             text: $text,
             prompt: "Write a little about today…",
             lines: lines,
-            lineColor: PastelTheme.lavenderLine
+            lineColor: palette.lavenderLine
         )
     }
 }

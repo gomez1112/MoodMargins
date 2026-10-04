@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct TodayCard: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Bindable var viewModel: TodayViewModel
     var saveAction: () -> Void
@@ -23,7 +24,7 @@ struct TodayCard: View {
                 LinedNote(text: $viewModel.note, lines: 3)
                 FlowLayout(spacing: 8) {
                     if viewModel.selectedTagList.isEmpty {
-                        Text("Choose a suggested tag after writing")
+                        Text("No tags yet")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     } else {
@@ -32,7 +33,7 @@ struct TodayCard: View {
                                 .font(.caption)
                                 .padding(.horizontal, 12)
                                 .padding(.vertical, 8)
-                                .background(PastelTheme.washiColor(tag).opacity(0.18), in: Capsule())
+                                .background(palette.washiColor(tag).opacity(0.18), in: Capsule())
                                 .foregroundStyle(.primary)
                         }
                     }
@@ -45,7 +46,7 @@ struct TodayCard: View {
         VStack(alignment: .leading, spacing: 4) {
             Text("Today's page")
                 .font(.system(.headline, design: .rounded))
-                .foregroundStyle(PastelTheme.ink)
+                .foregroundStyle(palette.ink)
             Text("\(viewModel.statusText) · \(viewModel.selectedTagList.count) tags")
                 .font(.caption)
                 .foregroundStyle(.secondary)
@@ -56,7 +57,7 @@ struct TodayCard: View {
     private var saveButton: some View {
         Button(viewModel.saveButtonTitle, systemImage: "checkmark.seal.fill", action: saveAction)
             .buttonStyle(.borderedProminent)
-            .tint(PastelTheme.action)
+            .tint(palette.action)
             .disabled(!viewModel.hasPendingChanges)
     }
 }

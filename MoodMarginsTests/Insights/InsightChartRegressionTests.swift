@@ -64,6 +64,7 @@ struct InsightChartRegressionTests {
         let entries = [recent, old]
         let summary = Dictionary(uniqueKeysWithValues: model.summaryItems(for: entries).map { ($0.id, $0.value) })
         #expect(summary["entries"] == "1")
+        #expect(summary["streak"] == "1 day")
         #expect(summary["common"] == Mood.sad.title)
         #expect(summary["topTag"] == "#family")
         #expect(model.distribution(for: entries).reduce(0) { $0 + $1.count } == 1)
@@ -74,7 +75,8 @@ struct InsightChartRegressionTests {
         let empty = Dictionary(uniqueKeysWithValues: model.summaryItems(for: []).map { ($0.id, $0.value) })
         #expect(empty["common"] == "—")
         #expect(empty["topTag"] == "—")
-        #expect(empty["average"] == "—")
+        #expect(empty["streak"] == "0 days")
+        #expect(empty["average"] == nil)
     }
 
     @Test("Patterns reflect actual repeated tags and mood scores")
@@ -120,5 +122,16 @@ struct InsightChartRegressionTests {
         #expect(MoodInsights.overallMoodSummary(lighter) == "Mostly lighter days")
         #expect(MoodInsights.overallMoodSummary([lighter[0]]) == Mood.laughing.title)
         #expect(MoodInsights.moodDescription(for: 3.5) == "Between \(Mood.mourn.title) and \(Mood.wink.title)")
+    }
+
+    @Test("Longest streak finds a previous run and ignores duplicates and future days", arguments: [
+        ([0, 2, 3, 4, 4, 7], 3), ([1, 2, 3, 4], 4), ([0, 0], 1), ([], 0), ([-1], 0)
+    ])
+    func longestStreak(_ scenario: ([Int], Int)) throws {
+        let now = try now()
+        let entries = try scenario.0.map {
+            TestFactory.entry(date: try date(daysAgo: $0, now: now), mood: .wink)
+        }
+        #expect(MoodInsights.longestStreak(entries, calendar: calendar, now: now) == scenario.1)
     }
 }

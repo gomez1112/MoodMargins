@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-04",
+  "sourceBaseline": "3a8ed2a",
+  "features": [
+    "Longest streak replaces Overall mood within the selected Insights period; duplicate and future days are excluded.",
+    "Weekly, monthly and yearly Plus subscriptions unlock all premium themes, AI tags and recaps.",
+    "Botanical, Coastal and Sunset are permanent non-consumable purchases; original Pastel remains free.",
+    "Theme preference survives subscription expiry; unavailable themes fall back to Pastel without changing journal drafts.",
+    "PCC managed entitlement is present in the app entitlement file used by Debug and Release.",
+    "Website privacy policy draft and in-app policy include transfinite@transfinite.us.",
+    "Previous Today tag layout restored; tag suggestions still generate automatically for Plus.",
+    "PCC is enabled by default, with a persisted off switch in Customize. Failed cloud requests retry once on device; cancellation does not retry.",
+    "Native SubscriptionStoreView and ProductView load real product identifiers directly, including when the catalog is initially empty.",
+    "Hosted privacy-policy URL is configured in StoreKit policy links and local App Store Connect app-info metadata."
+  ],
+  "usdPrices": {
+    "weekly": "0.99",
+    "monthly": "2.99",
+    "yearly": "19.99",
+    "eachTheme": "1.99"
+  },
+  "verification": {
+    "toolchain": "Xcode 27.0 (27A266a), Swift 6.4, Swift 6 language mode",
+    "deployment": "iOS/macOS/visionOS 27.0 app; watchOS 27.0",
+    "testCommand": "xcodebuild test -project MoodMargins.xcodeproj -scheme MoodMargins -destination platform=macOS -only-testing:MoodMarginsTests CODE_SIGNING_ALLOWED=NO",
+    "lastCompletedTests": {
+      "swiftTesting": 44,
+      "swiftTestingSuites": 11,
+      "xctest": 17,
+      "failures": 0
+    },
+    "unitCoverage": [
+      "Longest streak past runs, duplicates, future dates and range bounds",
+      "Singular and plural day labels",
+      "Every Plus duration grants the same access",
+      "Permanent themes do not unlock AI and remain accessible without Plus",
+      "Unavailable theme selection is rejected; preference survives reopening and access loss",
+      "No recap provider call without Plus; prior AI content clears",
+      "Free tagging preserves draft and selected tags",
+      "Existing journal persistence and synchronization regressions",
+      "PCC default/off persistence, cloud success/failure, local-only failure, cancellation, and failure of both models"
+    ],
+    "visualChecks": [
+      "Observed new Today Plus card and Customize screen on iPad before simulator became blocked",
+      "Rendered all four theme previews in light/dark and standard/large text",
+      "Reviewed rendered theme paper/ink/rules/swatches; ImageRenderer cannot capture the live Lottie view",
+      "Existing compact, wide, dark and accessibility Insights render fixtures regenerated with Longest streak"
+    ],
+    "minimumTextContrast": {
+      "botanical": 4.6,
+      "coastal": 4.66,
+      "sunset": 4.88
+    },
+    "listingValidation": "valid, no diagnostics",
+    "privacyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy returned HTTP 200",
+    "bitrigBuildAttempts": 3,
+    "bitrigBuildResult": "Simulator-target dependency build succeeded; signed Mac build failed on the managed PCC entitlement. No further retry attempted after the third identical provisioning failure."
+  },
+  "limitations": [
+    "Signed Bitrig build fails on Mac: Entitlement com.apple.developer.private-cloud-compute not found and could not be included in profile. Apple must assign the managed capability to the developer account/App ID/profile.",
+    "Bitrig refuses simulator inspection after edits until every target builds successfully. Further purchase-screen, PCC toggle and automatic-tag interaction checks are blocked by the Mac signing failure.",
+    "Six App Store Connect products are staged in local listing files, not applied remotely. App Review screenshots are still required; do not submit products without them.",
+    "Built-in simulator cannot complete real StoreKit sandbox purchases. Verify purchase, restore, expiry, cancellation and refunds on device after metadata setup.",
+    "Main-app SwiftData uses automatic CloudKit configuration with the entitled private container. Actual two-device iCloud sync is not verified by these isolated regression tests. Watch data remains local.",
+    "New store copy and policy are English; existing Arabic and Spanish localization is preserved and can be extended.",
+    "Hosted policy currently says AI never sends context to Private Cloud Compute. Replace its content with the updated Legal/PrivacyPolicy.txt draft before release."
+  ]
+}

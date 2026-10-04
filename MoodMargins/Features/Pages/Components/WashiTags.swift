@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct WashiTags: View {
+    @Environment(\.diaryPalette) private var palette
     var viewModel: PageViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             Text("Washi tags")
                 .font(.system(.headline, design: .rounded))
-                .foregroundStyle(PastelTheme.ink)
+                .foregroundStyle(palette.ink)
 
             ForEach(viewModel.tagGroups) { group in
                 VStack(alignment: .leading, spacing: 8) {
@@ -32,10 +33,4 @@ struct WashiTags: View {
             }
         }
     }
-}
-
-#Preview {
-    WashiTags(viewModel: PageViewModel())
-        .padding()
-        .background(PastelTheme.background)
 }

@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct WashiTagButton: View {
+    @Environment(\.diaryPalette) private var palette
     var tag: String
     var isSelected: Bool
     var action: () -> Void
@@ -15,7 +16,7 @@ struct WashiTagButton: View {
             .padding(.horizontal, 12)
             .padding(.vertical, 10)
             .frame(minHeight: 44)
-            .background(PastelTheme.washiColor(tag).opacity(0.18), in: Capsule())
+            .background(palette.washiColor(tag).opacity(0.18), in: Capsule())
             .foregroundStyle(.primary)
         }
         .toggleStyle(.button)
