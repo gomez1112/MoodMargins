@@ -52,11 +52,20 @@ struct ContentView: View {
                 sheet.destination
             }
         }
+#if os(macOS)
+        // macOS presents these routes as sheets because full-screen covers are unavailable.
+        .sheet(item: $navigationContext.presentedFullScreenCover) { fullScreenCover in
+            NavigationStack {
+                fullScreenCover.destination
+            }
+        }
+#else
         .fullScreenCover(item: $navigationContext.presentedFullScreenCover) { fullScreenCover in
             NavigationStack {
                 fullScreenCover.destination
             }
         }
+#endif
     }
 }
 

@@ -40,7 +40,9 @@ struct InsightsView: View {
         .safeAreaPadding(.bottom, 88)
         .background(PastelTheme.background.ignoresSafeArea())
         .navigationTitle("")
+#if !os(macOS)
         .toolbar(.hidden, for: .navigationBar)
+#endif
         .task(id: viewModel.recapRefreshID(for: entries)) {
             viewModel.refreshGeneratedRecap(from: entries)
         }

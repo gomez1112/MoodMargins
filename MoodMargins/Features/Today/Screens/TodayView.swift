@@ -46,7 +46,9 @@ struct TodayView: View {
         .safeAreaPadding(.bottom, 88)
         .background(PastelTheme.background.ignoresSafeArea())
         .navigationTitle("")
+#if !os(macOS)
         .toolbar(.hidden, for: .navigationBar)
+#endif
         .onAppear {
             viewModel.loadTodayIfNeeded(from: entries)
         }
