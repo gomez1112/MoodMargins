@@ -1,4 +1,5 @@
 {
   "bundleId": "com.transfinite.MoodMargins",
-  "primaryLocale": "en-US"
+  "primaryLocale": "en-US",
+  "contentRightsDeclaration": "USES_THIRD_PARTY_CONTENT"
 }

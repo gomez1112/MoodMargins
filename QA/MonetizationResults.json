@@ -6,12 +6,16 @@
     "Weekly, monthly and yearly Plus subscriptions unlock all premium themes, AI tags and recaps.",
     "Botanical, Coastal and Sunset are permanent non-consumable purchases; original Pastel remains free.",
     "Theme preference survives subscription expiry; unavailable themes fall back to Pastel without changing journal drafts.",
-    "PCC managed entitlement is present in the app entitlement file used by Debug and Release.",
+    "PCC managed entitlement remains in iOS Debug and all Release signing; Mac Debug uses a separate development entitlement file and falls back to the local model when it lacks PCC access.",
     "Website privacy policy draft and in-app policy include transfinite@transfinite.us.",
     "Previous Today tag layout restored; tag suggestions still generate automatically for Plus.",
     "PCC is enabled by default, with a persisted off switch in Customize. Failed cloud requests retry once on device; cancellation does not retry.",
     "Native SubscriptionStoreView and ProductView load real product identifiers directly, including when the catalog is initially empty.",
-    "Hosted privacy-policy URL is configured in StoreKit policy links and local App Store Connect app-info metadata."
+    "Hosted privacy-policy URL is configured in StoreKit policy links and local App Store Connect app-info metadata.",
+    "Today and Pages save after a short typing pause, on navigation, and on app backgrounding; no Save control is required.",
+    "Autosave avoids empty pages and stale-query duplicates, preserves selected legacy entry identity, and clears deleted drafts.",
+    "Watch quick check-ins save automatically to their existing local store.",
+    "English, Spanish, and Arabic listing copy, app store copy, and real app screenshots are included."
   ],
   "usdPrices": {
     "weekly": "0.99",
@@ -24,9 +28,10 @@
     "deployment": "iOS/macOS/visionOS 27.0 app; watchOS 27.0",
     "testCommand": "xcodebuild test -project MoodMargins.xcodeproj -scheme MoodMargins -destination platform=macOS -only-testing:MoodMarginsTests CODE_SIGNING_ALLOWED=NO",
     "lastCompletedTests": {
-      "swiftTesting": 44,
-      "swiftTestingSuites": 11,
-      "xctest": 17,
+      "swiftTesting": 51,
+      "swiftTestingSuites": 12,
+      "xctest": 18,
+      "includesOptInMacCapture": true,
       "failures": 0
     },
     "unitCoverage": [
@@ -38,31 +43,97 @@
       "No recap provider call without Plus; prior AI content clears",
       "Free tagging preserves draft and selected tags",
       "Existing journal persistence and synchronization regressions",
-      "PCC default/off persistence, cloud success/failure, local-only failure, cancellation, and failure of both models"
+      "PCC default/off persistence, cloud success/failure, local-only failure, cancellation, and failure of both models",
+      "Blank draft suppression and explicit mood-only check-ins",
+      "Autosave cancellation and recovery of a later typing draft",
+      "Flush before changing pages, stale queries, legacy entry IDs, and deletion without recreation"
     ],
     "visualChecks": [
-      "Observed new Today Plus card and Customize screen on iPad before simulator became blocked",
-      "Rendered all four theme previews in light/dark and standard/large text",
-      "Reviewed rendered theme paper/ink/rules/swatches; ImageRenderer cannot capture the live Lottie view",
-      "Existing compact, wide, dark and accessibility Insights render fixtures regenerated with Longest streak"
+      "Reviewed all 57 public screenshot exports in localized preview sheets; no private journal or account information.",
+      "Checked complete theme labels, subtitle spacing, Mac frame edges, Arabic text shaping, emoji graphs, and native light/dark appearance.",
+      "All exported screenshots are opaque RGB PNGs at Apple-required dimensions.",
+      "Six product review screenshots show actual Customize or theme preview screens; no fabricated StoreKit catalog prices or purchase access."
     ],
     "minimumTextContrast": {
       "botanical": 4.6,
       "coastal": 4.66,
       "sunset": 4.88
     },
-    "listingValidation": "valid, no diagnostics",
+    "listingValidation": "valid, no diagnostics, including all screenshot manifests",
     "privacyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy returned HTTP 200",
-    "bitrigBuildAttempts": 3,
-    "bitrigBuildResult": "Simulator-target dependency build succeeded; signed Mac build failed on the managed PCC entitlement. No further retry attempted after the third identical provisioning failure."
+    "bitrigBuildResult": "Succeeded for configured Bitrig simulator and Mac targets. Mac development signing uses its dedicated Debug entitlement file; Release retains managed PCC.",
+    "uiTests": {
+      "suite": "JournalCaptureUITests",
+      "iPhone18ProMax": 4,
+      "iPad13InchM5": 4,
+      "failures": 0,
+      "covers": [
+        "Autosave survives tab changes without a Save button",
+        "English, Spanish, and Arabic navigation and screenshots",
+        "Real theme previews and light/dark Insights"
+      ]
+    },
+    "watchAutosaveTests": {
+      "passed": 4,
+      "failures": 0,
+      "command": "Tools/QA/CheckWatchAutosave.sh",
+      "covers": [
+        "Empty drafts and explicit mood-only check-ins",
+        "One stable entry identity and reopening persistence",
+        "Cancellation retains the draft without writing",
+        "Unreadable existing storage is preserved"
+      ]
+    },
+    "nativeMacCapture": {
+      "locales": [
+        "en",
+        "es",
+        "ar"
+      ],
+      "latestCaptureRunsPassed": 3,
+      "method": "ScreenCaptureKit current-process windows containing actual app feature views; live Metal-backed Lottie frames are rendered."
+    },
+    "screenshots": {
+      "publicCount": 57,
+      "productReviewCount": 6,
+      "sourceCount": 69,
+      "locales": [
+        "en-US",
+        "es-ES",
+        "ar-SA"
+      ],
+      "iPhonePixels": [
+        1320,
+        2868
+      ],
+      "iPadPixels": [
+        2064,
+        2752
+      ],
+      "macPixels": [
+        2880,
+        1800
+      ],
+      "watchPixels": [
+        416,
+        496
+      ],
+      "colorMode": "RGB, no alpha"
+    },
+    "evidenceLogs": {
+      "mainUnits": "/private/tmp/mood-final-units-2.log",
+      "iPhoneUI": "/private/tmp/mood-phone-final-clean.log",
+      "iPadUI": "/private/tmp/mood-pad-final.log",
+      "watchUnits": "/private/tmp/mood-watch-autosave-tests-2.log",
+      "latestMacCapture": "/private/tmp/mood-mac-feature-{en,es,ar}.log"
+    }
   },
   "limitations": [
-    "Signed Bitrig build fails on Mac: Entitlement com.apple.developer.private-cloud-compute not found and could not be included in profile. Apple must assign the managed capability to the developer account/App ID/profile.",
-    "Bitrig refuses simulator inspection after edits until every target builds successfully. Further purchase-screen, PCC toggle and automatic-tag interaction checks are blocked by the Mac signing failure.",
-    "Six App Store Connect products are staged in local listing files, not applied remotely. App Review screenshots are still required; do not submit products without them.",
-    "Built-in simulator cannot complete real StoreKit sandbox purchases. Verify purchase, restore, expiry, cancellation and refunds on device after metadata setup.",
-    "Main-app SwiftData uses automatic CloudKit configuration with the entitled private container. Actual two-device iCloud sync is not verified by these isolated regression tests. Watch data remains local.",
-    "New store copy and policy are English; existing Arabic and Spanish localization is preserved and can be extended.",
-    "Hosted policy currently says AI never sends context to Private Cloud Compute. Replace its content with the updated Legal/PrivacyPolicy.txt draft before release."
+    "Listing, prices, availability, and screenshots are prepared locally and have not been applied to App Store Connect or submitted for review.",
+    "Apple must grant the managed PCC capability to the release App ID and provisioning profile. Actual PCC requests are not verified on an authorized device; the Mac Debug build uses the local fallback.",
+    "StoreKit catalog loads after applying product metadata, screenshot requirements, and propagation. On-device purchase/restore/expiry/refund checks remain pending. Refresh product review screenshots with loaded purchase controls before submission.",
+    "Main-app SwiftData uses the entitled private CloudKit container; actual two-device iCloud sync remains unverified. Watch journal data remains local.",
+    "The built-in iPhone accessibility inspection was unavailable; native CoreSimulator XCUIAutomation verified the iPhone and iPad workflows.",
+    "The hosted privacy policy still contains an obsolete on-device-only AI claim. Replace it with the reviewed Legal/PrivacyPolicy.txt draft and publish the App Privacy label before release."
   ]
 }

@@ -1,0 +1,9 @@
+MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.
+
+Choose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.
+
+Customize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.
+
+AI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.
+
+Main-app data uses a private iCloud store when available. The Apple Watch companion's quick journal is local to the watch and does not sync to the main app. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds.
