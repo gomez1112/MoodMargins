@@ -11,11 +11,13 @@ struct MoodTaggingRequest: Sendable, Equatable {
     let note: String
     let selectedTags: Set<String>
     let maximumTagCount: Int
+    var modelChoice: FoundationModelChoice
 
-    init(note: String, selectedTags: Set<String> = [], maximumTagCount: Int = 4) {
+    init(note: String, selectedTags: Set<String> = [], maximumTagCount: Int = 4, modelChoice: FoundationModelChoice = .onDevice) {
         self.note = note
         self.selectedTags = selectedTags
         self.maximumTagCount = maximumTagCount
+        self.modelChoice = modelChoice
     }
 }
 

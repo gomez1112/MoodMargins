@@ -16,9 +16,9 @@ struct LinedNoteEditor: View {
     var textColor = Color.primary.opacity(0.82)
     var minimumHeight: CGFloat? = nil
 
-    private let rowHeight: CGFloat = 31
+    @ScaledMetric(relativeTo: .body) private var rowHeight = 31.0
     private let textLineSpacing: CGFloat = 11
-    private let firstRuleOffset: CGFloat = 27
+    @ScaledMetric(relativeTo: .body) private var firstRuleOffset = 27.0
 
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -38,14 +38,4 @@ struct LinedNoteEditor: View {
                 .padding(.top, 1)
         }
     }
-}
-
-#Preview {
-    LinedNoteEditor(
-        text: .constant("Dear diary,\nThe line spacing now keeps text above each rule."),
-        prompt: "Write a little about today...",
-        lines: 5
-    )
-    .padding()
-    .background(PastelTheme.background)
 }

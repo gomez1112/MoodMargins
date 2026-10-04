@@ -14,13 +14,9 @@ struct LinedNote: View {
     var body: some View {
         LinedNoteEditor(
             text: $text,
-            prompt: "Write a little about today...",
+            prompt: "Write a little about today…",
             lines: lines,
             lineColor: PastelTheme.lavenderLine
         )
     }
-}
-
-#Preview {
-    LinedNote(text: .constant("Hello, I love this very much."), lines: 8)
 }

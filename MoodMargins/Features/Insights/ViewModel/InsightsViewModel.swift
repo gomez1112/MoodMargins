@@ -25,8 +25,8 @@ final class InsightsViewModel {
     var recapErrorMessage: String?
 
     private let recapProvider: any InsightRecapProviding
-    private var recapTask: Task<Void, Never>?
     private var activeSnapshotIdentity: String?
+    private var recapRetryRevision = 0
 
     init(recapProvider: any InsightRecapProviding = FoundationInsightRecapProvider()) {
         self.recapProvider = recapProvider
@@ -37,15 +37,19 @@ final class InsightsViewModel {
     /// - Parameter entries: The mood entries to summarize.
     /// - Returns: A fixed set of summary values ready for display.
     func summaryItems(for entries: [MoodEntry]) -> [InsightSummaryItem] {
-        let distribution = distribution(for: entries)
-        let bestMood = distribution.max { $0.count < $1.count }?.mood ?? .angry
-        let topTag = tagCounts(for: entries).first?.tag ?? "calm"
+        let included = MoodInsights.entries(entries, days: selectedRange)
+        let counts = MoodInsights.distribution(included)
+        let highestCount = counts.map(\.count).max() ?? 0
+        let commonMoods = counts.filter { highestCount > 0 && $0.count == highestCount }
+        let commonMood = commonMoods.last?.mood
+        let topTag = tagCounts(for: included).first?.tag
+        let overallMood = MoodInsights.overallMoodSummary(included)
 
         return [
-            InsightSummaryItem(id: "average", title: "Average", value: String(format: "%.1f", averageMood(for: entries)), systemName: "sparkles"),
-            InsightSummaryItem(id: "entries", title: "Entries", value: "\(entries.count)", systemName: "book.pages.fill"),
-            InsightSummaryItem(id: "common", title: "Most common", value: bestMood.systemImage, systemName: "heart.fill"),
-            InsightSummaryItem(id: "topTag", title: "Top tag", value: "#\(topTag)", systemName: "tag.fill")
+            InsightSummaryItem(id: "average", title: String(localized: "Overall mood"), value: overallMood, systemName: "sparkles"),
+            InsightSummaryItem(id: "entries", title: String(localized: "Entries"), value: included.count.formatted(), systemName: "book.pages.fill"),
+            InsightSummaryItem(id: "common", title: String(localized: "Most common"), value: commonMood?.title ?? "—", systemName: "heart.fill", mood: commonMood),
+            InsightSummaryItem(id: "topTag", title: String(localized: "Top tag"), value: topTag.map { "#\($0)" } ?? "—", systemName: "tag.fill")
         ]
     }
 
@@ -62,7 +66,7 @@ final class InsightsViewModel {
     /// - Parameter entries: The mood entries to count.
     /// - Returns: Mood counts in `Mood.allCases` order.
     func distribution(for entries: [MoodEntry]) -> [MoodCount] {
-        MoodInsights.distribution(entries)
+        MoodInsights.distribution(MoodInsights.entries(entries, days: selectedRange))
     }
 
     /// Builds the top activity list shown in the favorite margins card.
@@ -70,22 +74,24 @@ final class InsightsViewModel {
     /// - Parameter entries: The mood entries whose activities should be counted.
     /// - Returns: Up to four activity counts sorted by frequency.
     func topActivities(for entries: [MoodEntry]) -> [ActivityCount] {
-        MoodInsights.topActivities(entries, limit: 4)
+        MoodInsights.topActivities(MoodInsights.entries(entries, days: selectedRange), limit: 4)
+    }
+
+    func pattern(for entries: [MoodEntry]) -> String {
+        MoodInsights.pattern(MoodInsights.entries(entries, days: selectedRange))
     }
 
     /// Returns a stable identifier for refreshing the generated recap from SwiftUI task modifiers.
-    func recapRefreshID(for entries: [MoodEntry]) -> String {
-        let snapshot = InsightRecapSnapshotBuilder.snapshot(from: entries, selectedRange: selectedRange)
-        return snapshot.identity
+    func recapRefreshID(for entries: [MoodEntry], using modelChoice: FoundationModelChoice = .onDevice) -> String {
+        let snapshot = InsightRecapSnapshotBuilder.snapshot(from: entries, selectedRange: selectedRange, modelChoice: modelChoice)
+        return "\(recapRetryRevision):\(snapshot.identity)"
     }
 
-    /// Starts or skips AI recap generation for the current entry range.
-    func refreshGeneratedRecap(from entries: [MoodEntry]) {
-        let snapshot = InsightRecapSnapshotBuilder.snapshot(from: entries, selectedRange: selectedRange)
+    /// Runs inside the view's cancellable task; an old range cannot update the new recap.
+    func refreshGeneratedRecap(from entries: [MoodEntry], using modelChoice: FoundationModelChoice = .onDevice) async {
+        let snapshot = InsightRecapSnapshotBuilder.snapshot(from: entries, selectedRange: selectedRange, modelChoice: modelChoice)
         guard snapshot.identity != activeSnapshotIdentity else { return }
-
         activeSnapshotIdentity = snapshot.identity
-        recapTask?.cancel()
         recapErrorMessage = nil
 
         guard snapshot.canGenerate else {
@@ -96,43 +102,48 @@ final class InsightsViewModel {
 
         generatedRecap = .empty
         isGeneratingRecap = true
-
-        recapTask = Task { [recapProvider] in
-            do {
-                try await recapProvider.generateRecap(for: snapshot) { partial in
-                    generatedRecap = partial
-                }
-            } catch {
-                guard !Task.isCancelled else { return }
-                generatedRecap = nil
-                recapErrorMessage = FoundationModelsErrorPresenter.message(for: error)
-                activeSnapshotIdentity = nil
+        defer {
+            if activeSnapshotIdentity == snapshot.identity {
+                isGeneratingRecap = false
+                if Task.isCancelled { activeSnapshotIdentity = nil }
             }
-
-            guard !Task.isCancelled else { return }
+        }
+        do {
+            try Task.checkCancellation()
+            try await recapProvider.generateRecap(for: snapshot) { partial in
+                guard !Task.isCancelled, self.activeSnapshotIdentity == snapshot.identity else { return }
+                self.generatedRecap = partial
+            }
+            try Task.checkCancellation()
+        } catch is CancellationError {
+            if activeSnapshotIdentity == snapshot.identity {
+                activeSnapshotIdentity = nil
+                generatedRecap = nil
+                isGeneratingRecap = false
+            }
+        } catch {
+            guard !Task.isCancelled, activeSnapshotIdentity == snapshot.identity else { return }
+            generatedRecap = nil
+            recapErrorMessage = FoundationModelsErrorPresenter.message(for: error)
+            activeSnapshotIdentity = nil
             isGeneratingRecap = false
         }
     }
 
-    func cancelGeneratedRecap() {
-        recapTask?.cancel()
-        recapTask = nil
-        isGeneratingRecap = false
-    }
-
-    private func averageMood(for entries: [MoodEntry]) -> Double {
-        MoodInsights.averageMood(entries)
+    func retryGeneratedRecap() {
+        activeSnapshotIdentity = nil
+        recapRetryRevision += 1
     }
 
     private func tagCounts(for entries: [MoodEntry]) -> [(tag: String, count: Int)] {
         var counts: [String: Int] = [:]
         for entry in entries {
-            for tag in entry.tags {
+            for tag in Set(entry.tags) {
                 counts[tag, default: 0] += 1
             }
         }
 
-        return counts.sorted { $0.value > $1.value }
+        return counts.sorted { $0.value == $1.value ? $0.key < $1.key : $0.value > $1.value }
             .map { ($0.key, $0.value) }
     }
 }

@@ -9,7 +9,9 @@ import SwiftData
 import SwiftUI
 
 struct TodayView: View {
+    @Environment(FoundationModelPreferences.self) private var modelPreferences
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.scenePhase) private var scenePhase
 
     @Query(sort: \MoodEntry.date, order: .reverse) private var entries: [MoodEntry]
 
@@ -21,7 +23,8 @@ struct TodayView: View {
         ScrollView {
             AdaptiveContentWidth(maximumWidth: 1040) {
                 VStack(alignment: .leading, spacing: 18) {
-                    Header()
+                    Header(streak: MoodInsights.currentStreak(entries))
+                    FoundationModelPicker()
                     QuickMoodCard(selectedMood: $viewModel.selectedMood, pageSaved: $viewModel.pageSaved)
 
                     ResponsiveTwoColumn(leadingMinWidth: 320, leadingMaxWidth: 560, trailingMinWidth: 320, trailingMaxWidth: 420) {
@@ -32,6 +35,8 @@ struct TodayView: View {
                             PromptCard(
                                 generatedTags: viewModel.generatedTagSuggestions,
                                 isGeneratingTags: viewModel.isGeneratingTagSuggestions,
+                                errorMessage: viewModel.tagSuggestionError,
+                                retry: viewModel.retryTagSuggestions,
                                 selectGeneratedTag: viewModel.selectGeneratedTag
                             )
                         }
@@ -43,7 +48,7 @@ struct TodayView: View {
             }
         }
         .scrollDismissesKeyboard(.interactively)
-        .safeAreaPadding(.bottom, 88)
+        .safeAreaPadding(.bottom, 16)
         .background(PastelTheme.background.ignoresSafeArea())
         .navigationTitle("")
 #if !os(macOS)
@@ -52,18 +57,26 @@ struct TodayView: View {
         .onAppear {
             viewModel.loadTodayIfNeeded(from: entries)
         }
-        .onDisappear {
-            viewModel.cancelTagSuggestions()
+        .onChange(of: todaySnapshot) {
+            viewModel.loadTodayIfNeeded(from: entries)
+        }
+        .onChange(of: scenePhase) {
+            if scenePhase == .active { viewModel.loadTodayIfNeeded(from: entries) }
         }
         .onChange(of: viewModel.note) {
             viewModel.markPageUnsavedIfNoteChanged()
-            viewModel.scheduleTagSuggestions()
+        }
+        .task(id: viewModel.tagRefreshID(using: modelPreferences.choice)) {
+            await viewModel.generateTagSuggestions(using: modelPreferences.choice)
+        }
+        .alert("Couldn't save your page", isPresented: $viewModel.isShowingSaveError) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(viewModel.saveErrorMessage ?? "")
         }
     }
-}
 
-#Preview {
-    NavigationStack {
-        TodayView()
+    private var todaySnapshot: DiaryEntrySnapshot? {
+        entries.first { Calendar.current.isDateInToday($0.date) }.map(DiaryEntrySnapshot.init)
     }
 }

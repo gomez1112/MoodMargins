@@ -12,6 +12,7 @@ import EZSwiftData
 @main
 struct MoodMarginsApp: App {
     @State private var navigationContext = NavigationContext()
+    @State private var modelPreferences = FoundationModelPreferences()
     private let container: ModelContainer
     
     init() {
@@ -28,6 +29,7 @@ struct MoodMarginsApp: App {
             }
         }
         .environment(navigationContext)
+        .environment(modelPreferences)
         .modelContainer(container)
     }
 }

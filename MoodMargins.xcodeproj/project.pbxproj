@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+        A11000000000000000000001 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11000000000000000000002 /* Mood.swift */; };
 		CCE094932FE8380900725C1C /* FlexStore in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094922FE8380900725C1C /* FlexStore */; };
 		CCE0949B2FE8389F00725C1C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949A2FE8389F00725C1C /* WidgetKit.framework */; };
 		CCE0949D2FE8389F00725C1C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949C2FE8389F00725C1C /* SwiftUI.framework */; };
@@ -87,6 +88,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+        A11000000000000000000002 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMargins/Shared/Model/Mood.swift; sourceTree = SOURCE_ROOT; };
 		CC7170862FF18C7E00C635FD /* EvaluationSeedSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationSeedSamples.swift; sourceTree = "<group>"; };
 		CC7170872FF18C7E00C635FD /* EvaluationValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationValidators.swift; sourceTree = "<group>"; };
 		CC7170882FF18C7F00C635FD /* SyntheticDatasetGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntheticDatasetGeneration.swift; sourceTree = "<group>"; };
@@ -218,6 +220,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+        A11000000000000000000003 /* Shared Watch Model */ = {
+            isa = PBXGroup;
+            children = (A11000000000000000000002 /* Mood.swift */,);
+            name = "Shared Watch Model";
+            sourceTree = "<group>";
+        };
 		CC71706B2FF18B3500C635FD /* MoodMarginsEvaluations */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +249,7 @@
 				CCE0949E2FE8389F00725C1C /* MoodMarginsWidget */,
 				CCE094BB2FE8397F00725C1C /* MoodMarginsWidgetMac */,
 				CCE095082FE8490900725C1C /* WatchMoodMargins Watch App */,
+                A11000000000000000000003 /* Shared Watch Model */,
 				CCE094992FE8389F00725C1C /* Frameworks */,
 				CCE0946A2FE8377800725C1C /* Products */,
 				CCE095592FE8828E00725C1C /* MoodMarginsIcon.icon */,
@@ -537,6 +546,7 @@
 		CCE095032FE8490900725C1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+                A11000000000000000000001 /* Mood.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -802,7 +812,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+                SWIFT_STRICT_CONCURRENCY = complete;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodMargins.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoodMargins";
 				XROS_DEPLOYMENT_TARGET = 27.0;
@@ -828,7 +839,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+                SWIFT_STRICT_CONCURRENCY = complete;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodMargins.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoodMargins";
 				XROS_DEPLOYMENT_TARGET = 27.0;
@@ -1053,7 +1065,8 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+                SWIFT_STRICT_CONCURRENCY = complete;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 27.0;
 			};
@@ -1088,7 +1101,8 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+                SWIFT_STRICT_CONCURRENCY = complete;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 27.0;

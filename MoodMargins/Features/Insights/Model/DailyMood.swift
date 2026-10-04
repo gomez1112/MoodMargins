@@ -8,7 +8,10 @@
 import Foundation
 
 struct DailyMood: Identifiable {
-    let id: Int
-    let date: Date
-    let value: Double
+    var date: Date
+    var value: Double
+    /// Marks in different runs must not be connected across days without entries.
+    var segmentStart: Date
+
+    var id: Date { date }
 }

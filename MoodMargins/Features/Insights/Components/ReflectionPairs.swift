@@ -8,43 +8,40 @@
 import SwiftUI
 
 struct ReflectionPairs: View {
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    var pattern: String
     let selectedRange: Int
     let generatedRecap: PartialGeneratedInsightRecap?
     let isGeneratingRecap: Bool
     let recapErrorMessage: String?
+    var retry: () -> Void = {}
 
     var body: some View {
         ViewThatFits(in: .horizontal) {
-            HStack(alignment: .top, spacing: 22) {
-                GentlePatternCard()
+            if !dynamicTypeSize.isAccessibilitySize {
+                HStack(alignment: .top, spacing: 22) {
+                    GentlePatternCard(pattern: pattern)
+                        .frame(minWidth: 320, maxWidth: .infinity, alignment: .topLeading)
+                    GeneratedInsightRecapCard(
+                        selectedRange: selectedRange,
+                        recap: generatedRecap,
+                        isGenerating: isGeneratingRecap,
+                        errorMessage: recapErrorMessage,
+                        retry: retry
+                    )
                     .frame(minWidth: 320, maxWidth: .infinity, alignment: .topLeading)
-                GeneratedInsightRecapCard(
-                    selectedRange: selectedRange,
-                    recap: generatedRecap,
-                    isGenerating: isGeneratingRecap,
-                    errorMessage: recapErrorMessage
-                )
-                .frame(minWidth: 320, maxWidth: .infinity, alignment: .topLeading)
+                }
             }
-
             VStack(alignment: .leading, spacing: 22) {
-                GentlePatternCard()
+                GentlePatternCard(pattern: pattern)
                 GeneratedInsightRecapCard(
                     selectedRange: selectedRange,
                     recap: generatedRecap,
                     isGenerating: isGeneratingRecap,
-                    errorMessage: recapErrorMessage
+                    errorMessage: recapErrorMessage,
+                        retry: retry
                 )
             }
         }
     }
-}
-
-#Preview {
-    ReflectionPairs(
-        selectedRange: 14,
-        generatedRecap: .fallback(for: 14),
-        isGeneratingRecap: false,
-        recapErrorMessage: nil
-    )
 }

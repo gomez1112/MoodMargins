@@ -44,7 +44,13 @@ enum MoodEntryPersistence {
         entry.note = note
         entry.tags = tags
 
-        try modelContext.save()
-        return entry
+        do {
+            try modelContext.save()
+            return entry
+        } catch {
+            // Editors retain value drafts; revert model changes so a failed save does not look persisted.
+            modelContext.rollback()
+            throw error
+        }
     }
 }

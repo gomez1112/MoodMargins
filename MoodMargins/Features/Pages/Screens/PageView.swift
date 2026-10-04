@@ -11,6 +11,7 @@ import SwiftUI
 struct PageView: View {
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.scenePhase) private var scenePhase
     @Query(sort: \MoodEntry.date, order: .reverse) private var entries: [MoodEntry]
 
     @State private var viewModel = PageViewModel()
@@ -28,7 +29,7 @@ struct PageView: View {
                             PageSectionLabel(title: "Current selected page", ink: PastelTheme.ink)
                             LinedNoteCard(
                                 text: $viewModel.note,
-                                prompt: "Dear diary...",
+                                prompt: "Dear diary…",
                                 lines: 6,
                                 paper: PastelTheme.paper,
                                 lineColor: PastelTheme.lavenderLine,
@@ -57,7 +58,7 @@ struct PageView: View {
                                 PageSectionLabel(title: "Current selected page", ink: PastelTheme.ink)
                                 LinedNoteCard(
                                     text: $viewModel.note,
-                                    prompt: "Dear diary...",
+                                    prompt: "Dear diary…",
                                     lines: 6,
                                     paper: PastelTheme.paper,
                                     lineColor: PastelTheme.lavenderLine,
@@ -80,30 +81,32 @@ struct PageView: View {
                 .padding(22)
             }
         }
-        .modifier(ScrollableSwipeActionsContainer())
+        .swipeActionsContainer()
         .scrollDismissesKeyboard(.interactively)
-        .safeAreaPadding(.bottom, 88)
+        .safeAreaPadding(.bottom, 16)
         .background(PastelTheme.background.ignoresSafeArea())
-        .navigationTitle("")
-#if !os(macOS)
-        .toolbar(.hidden, for: .navigationBar)
-#endif
+        .navigationTitle("Pages")
+#if os(iOS)
+        .navigationBarTitleDisplayMode(.inline)
+        .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search your pages")
+#else
         .searchable(text: $viewModel.searchText, placement: .automatic, prompt: "Search your pages")
-    }
-}
-
-private struct ScrollableSwipeActionsContainer: ViewModifier {
-    func body(content: Content) -> some View {
-        if #available(anyAppleOS 27.0, *) {
-            content.swipeActionsContainer()
-        } else {
-            content
+#endif
+        .onAppear { viewModel.synchronize(from: entries) }
+        .onChange(of: selectedSnapshot) { viewModel.synchronize(from: entries) }
+        .onChange(of: scenePhase) {
+            if scenePhase == .active { viewModel.synchronize(from: entries) }
+        }
+        .alert("Couldn't save your page", isPresented: $viewModel.isShowingSaveError) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(viewModel.saveErrorMessage ?? "")
         }
     }
-}
 
-#Preview {
-    NavigationStack {
-        PageView()
+    private var selectedSnapshot: DiaryEntrySnapshot? {
+        let entry = viewModel.selectedEntryID.flatMap { id in entries.first { $0.id == id } }
+            ?? entries.first { Calendar.current.isDate($0.date, inSameDayAs: viewModel.selectedDate) }
+        return entry.map(DiaryEntrySnapshot.init)
     }
 }

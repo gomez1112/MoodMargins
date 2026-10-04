@@ -5,6 +5,7 @@
 //  Created by Gerard Gomez on 6/28/26.
 //
 
+import Foundation
 import Testing
 @testable import MoodMargins
 
@@ -28,14 +29,33 @@ struct InsightRecapSnapshotTests {
         ]
         let viewModel = InsightsViewModel(recapProvider: FailingRecapProvider())
 
-        viewModel.refreshGeneratedRecap(from: entries)
-        for _ in 0..<20 where viewModel.isGeneratingRecap {
-            await Task.yield()
-        }
+        await viewModel.refreshGeneratedRecap(from: entries)
 
         #expect(viewModel.isGeneratingRecap == false)
         #expect(viewModel.generatedRecap == nil)
         #expect(viewModel.recapErrorMessage == "Apple Intelligence is still preparing.")
+    }
+
+    private struct CancelledRecapProvider: InsightRecapProviding {
+        func generateRecap(
+            for snapshot: InsightRecapSnapshot,
+            onPartial: @MainActor @Sendable (PartialGeneratedInsightRecap) -> Void
+        ) async throws {
+            throw CancellationError()
+        }
+    }
+
+    @Test("Cancelled recap generation stops loading without presenting an error")
+    func cancellationIsNormal() async {
+        let entries = [
+            TestFactory.entry(date: TestFactory.date(daysAgo: 1), note: "Yesterday"),
+            TestFactory.entry(date: TestFactory.date(daysAgo: 0), note: "Today")
+        ]
+        let model = InsightsViewModel(recapProvider: CancelledRecapProvider())
+        await model.refreshGeneratedRecap(from: entries)
+        #expect(!model.isGeneratingRecap)
+        #expect(model.recapErrorMessage == nil)
+        #expect(model.generatedRecap == nil)
     }
 
     @Test("Snapshot filters entries to the selected range and summarizes top tags")

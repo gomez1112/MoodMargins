@@ -9,6 +9,89 @@ import Foundation
 
 /// Calculates aggregate mood and activity statistics for insight views.
 enum MoodInsights {
+    static func dateRange(days: Int, calendar: Calendar = .current, now: Date = Date()) -> ClosedRange<Date> {
+        let today = calendar.startOfDay(for: now)
+        let start = calendar.date(byAdding: .day, value: -(max(days, 1) - 1), to: today) ?? today
+        let end = calendar.date(byAdding: .day, value: 1, to: today) ?? now
+        return start...end
+    }
+
+    static func chartDateRange(days: Int, calendar: Calendar = .current, now: Date = Date()) -> ClosedRange<Date> {
+        let range = dateRange(days: days, calendar: calendar, now: now)
+        let today = calendar.startOfDay(for: now)
+        return range.lowerBound...(today > range.lowerBound ? today : range.upperBound)
+    }
+
+    static func chartTickDates(days: Int, calendar: Calendar = .current, now: Date = Date()) -> [Date] {
+        let range = chartDateRange(days: days, calendar: calendar, now: now)
+        let middle = calendar.date(byAdding: .day, value: max(days - 1, 0) / 2, to: range.lowerBound) ?? range.lowerBound
+        return Set([range.lowerBound, middle, range.upperBound]).sorted()
+    }
+
+    static func overallMoodSummary(_ entries: [MoodEntry]) -> String {
+        guard !entries.isEmpty else { return "—" }
+        if entries.count == 1 { return entries[0].mood.title }
+        let days = Dictionary(grouping: entries) { Calendar.current.startOfDay(for: $0.date) }
+        let dailyMoods = days.values.map(averageMood)
+        // A balanced day stays mixed instead of being rounded into a lighter or heavier mood.
+        let lighterCount = dailyMoods.filter { $0 >= Double(Mood.wink.rawValue) }.count
+        let heavierCount = dailyMoods.filter { $0 <= Double(Mood.mourn.rawValue) }.count
+        if lighterCount * 2 > dailyMoods.count { return String(localized: "Mostly lighter days") }
+        if heavierCount * 2 > dailyMoods.count { return String(localized: "Mostly heavier days") }
+        return String(localized: "A mix of moods")
+    }
+
+    static func moodDescription(for value: Double) -> String {
+        let lower = Mood(rawValue: min(max(Int(value.rounded(.down)), 1), 5)) ?? .mourn
+        let upper = Mood(rawValue: min(max(Int(value.rounded(.up)), 1), 5)) ?? .mourn
+        return lower == upper ? lower.title : String(localized: "Between \(lower.title) and \(upper.title)")
+    }
+
+    static func entries(_ entries: [MoodEntry], days: Int, calendar: Calendar = .current, now: Date = Date()) -> [MoodEntry] {
+        let range = dateRange(days: days, calendar: calendar, now: now)
+        return entries.filter { $0.date >= range.lowerBound && $0.date <= now }
+    }
+
+    /// A missed today does not reset yesterday's streak before the person has checked in.
+    static func currentStreak(_ entries: [MoodEntry], calendar: Calendar = .current, now: Date = Date()) -> Int {
+        let days = Set(entries.filter { $0.date <= now }.map { calendar.startOfDay(for: $0.date) })
+        var day = calendar.startOfDay(for: now)
+        if !days.contains(day) {
+            guard let yesterday = calendar.date(byAdding: .day, value: -1, to: day) else { return 0 }
+            day = yesterday
+        }
+        var count = 0
+        while days.contains(day) {
+            count += 1
+            guard let previous = calendar.date(byAdding: .day, value: -1, to: day) else { break }
+            day = previous
+        }
+        return count
+    }
+
+    static func pattern(_ entries: [MoodEntry]) -> String {
+        guard !entries.isEmpty else {
+            return String(localized: "Save a page to start noticing patterns in your days.")
+        }
+        var groups: [String: [MoodEntry]] = [:]
+        for entry in entries {
+            for tag in Set(entry.tags.map { $0.lowercased() }) {
+                groups[tag, default: []].append(entry)
+            }
+        }
+        guard let group = groups.sorted(by: {
+            $0.value.count == $1.value.count ? $0.key < $1.key : $0.value.count > $1.value.count
+        }).first, group.value.count >= 2 else {
+            return String(localized: "Use the same tag on a few pages to see how those days compare.")
+        }
+        let counts = distribution(group.value)
+        let highest = counts.map(\.count).max() ?? 0
+        let common = counts.filter { $0.count == highest }
+        if common.count == 1, let mood = common.first?.mood {
+            return String(localized: "\(group.value.count) pages shared #\(group.key). Their most common mood was \(mood.title).")
+        }
+        return String(localized: "\(group.value.count) pages shared #\(group.key), with a mix of moods.")
+    }
     /**
      Returns the average mood score across the provided entries.
 
@@ -25,24 +108,28 @@ enum MoodInsights {
     /**
      Returns daily average mood values for recent calendar days, ordered from oldest to newest.
 
-     Days without entries are omitted from the result. Each returned ``DailyMood`` receives a sequential identifier based on its position in the filtered result.
+     Days without entries are omitted, with separate line segments on either side of each gap.
+     The calendar date is the stable identifier and the horizontal chart position.
 
      - Parameters:
        - entries: The mood entries to group by calendar day.
        - days: The number of recent days to inspect, counting back from the current date. The default is `14`.
      - Returns: A list of daily mood averages for days that contain at least one entry.
      */
-    static func dailyAverages(_ entries: [MoodEntry], days: Int = 14) -> [DailyMood] {
-        let calendar = Calendar.current
-        let now = Date()
-        let raw: [(date: Date, value: Double)] = (0..<days).reversed().compactMap { offset in
-            guard let day = calendar.date(byAdding: .day, value: -offset, to: now) else { return nil }
-            let dayEntries = entries.filter { calendar.isDate($0.date, inSameDayAs: day) }
-            guard !dayEntries.isEmpty else { return nil }
-            let avg = Double(dayEntries.map(\.mood.rawValue).reduce(0, +)) / Double(dayEntries.count)
-            return (day, avg)
+    static func dailyAverages(_ entries: [MoodEntry], days: Int = 14, calendar: Calendar = .current, now: Date = Date()) -> [DailyMood] {
+        guard days > 0 else { return [] }
+        let included = self.entries(entries, days: days, calendar: calendar, now: now)
+        let grouped = Dictionary(grouping: included) { calendar.startOfDay(for: $0.date) }
+        let dates = grouped.keys.sorted()
+        var segmentStart = dates.first ?? calendar.startOfDay(for: now)
+        var previousDate: Date?
+        return dates.map { date in
+            if let previousDate, calendar.date(byAdding: .day, value: 1, to: previousDate) != date {
+                segmentStart = date
+            }
+            previousDate = date
+            return DailyMood(date: date, value: averageMood(grouped[date] ?? []), segmentStart: segmentStart)
         }
-        return raw.enumerated().map { DailyMood(id: $0.offset, date: $0.element.date, value: $0.element.value) }
     }
 
     /**
@@ -70,6 +157,7 @@ enum MoodInsights {
      - Returns: Activity counts sorted by descending frequency.
      */
     static func topActivities(_ entries: [MoodEntry], limit: Int = 5) -> [ActivityCount] {
+        guard limit > 0 else { return [] }
         var counts: [String: (activity: Activity, count: Int)] = [:]
 
         for entry in entries {

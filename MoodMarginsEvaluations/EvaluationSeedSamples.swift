@@ -11,14 +11,12 @@ import Foundation
 import Evaluations
 import FoundationModels
 
-@available(iOS 27.0, macOS 27.0, visionOS 27.0, watchOS 27.0, *)
 @Generable
 struct TagSuggestionExpected: Codable, Sendable, Equatable {
     @Guide(description: "Relevant lowercase diary tags.", .maximumCount(4))
     var tags: [String]
 }
 
-@available(iOS 27.0, macOS 27.0, visionOS 27.0, watchOS 27.0, *)
 @Generable
 struct InsightRecapExpected: Codable, Sendable, Equatable {
     var title: String
@@ -28,7 +26,6 @@ struct InsightRecapExpected: Codable, Sendable, Equatable {
     var nextPrompt: String
 }
 
-@available(iOS 27.0, macOS 27.0, visionOS 27.0, watchOS 27.0, *)
 enum EvaluationSeedSamples {
     static let tagSuggestionSeeds: [ModelSample<TagSuggestionExpected>] = [
         ModelSample(

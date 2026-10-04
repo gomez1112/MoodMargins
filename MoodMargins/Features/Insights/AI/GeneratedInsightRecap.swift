@@ -7,7 +7,6 @@
 
 import Foundation
 
-#if canImport(FoundationModels)
 import FoundationModels
 
 @Generable
@@ -27,15 +26,7 @@ struct GeneratedInsightRecap: Sendable, Equatable {
     @Guide(description: "One short journaling prompt for the next entry.")
     let nextPrompt: String
 }
-#else
-struct GeneratedInsightRecap: Sendable, Equatable {
-    let title: String
-    let pattern: String
-    let supportingDetail: String
-    let gentleReflection: String
-    let nextPrompt: String
-}
-#endif
+
 
 struct PartialGeneratedInsightRecap: Sendable, Equatable {
     var title: String?
@@ -57,7 +48,6 @@ struct PartialGeneratedInsightRecap: Sendable, Equatable {
     }
 }
 
-#if canImport(FoundationModels)
 extension PartialGeneratedInsightRecap {
     init(_ content: GeneratedInsightRecap.PartiallyGenerated) {
         self.init(
@@ -69,4 +59,3 @@ extension PartialGeneratedInsightRecap {
         )
     }
 }
-#endif

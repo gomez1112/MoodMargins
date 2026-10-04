@@ -22,8 +22,6 @@ import SwiftUI
 /// }
 /// ```
 struct AdaptiveContentWidth<Content: View>: View {
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
-
     /// The largest width the content can occupy when the horizontal size class is regular.
     var maximumWidth: CGFloat
 
@@ -44,26 +42,7 @@ struct AdaptiveContentWidth<Content: View>: View {
     /// The content constrained to a maximum width on regular horizontal size classes.
     var body: some View {
         content()
-            .containerRelativeFrame(.horizontal, alignment: .center) { length, _ in
-                horizontalSizeClass == .regular ? min(length, maximumWidth) : length
-            }
+            .frame(maxWidth: maximumWidth, alignment: .leading)
+            .frame(maxWidth: .infinity, alignment: .center)
     }
 }
-
-#Preview {
-    AdaptiveContentWidth {
-        VStack(alignment: .leading, spacing: 16) {
-            Text("Adaptive Content Width")
-                .font(.title.bold())
-            Text("This content expands on compact widths and stays centered with a maximum width on regular widths.")
-                .foregroundStyle(.secondary)
-            RoundedRectangle(cornerRadius: 12)
-                .fill(.blue.gradient)
-                .frame(height: 160)
-        }
-        .padding()
-        .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 16))
-        .padding()
-    }
-}
-

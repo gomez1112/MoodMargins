@@ -1,19 +1,13 @@
-//
-//  PastPagesGrid.swift
-//  MoodMargins
-//
-//  Created by Gerard Gomez on 6/28/26.
-//
-
 import SwiftData
 import SwiftUI
 
 struct PastPagesGrid: View {
     @Environment(\.modelContext) private var modelContext
-
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @State private var deleteError: String?
     var viewModel: PageViewModel
-    let entries: [MoodEntry]
-    let daysWithMultipleEntries: Set<Date>
+    var entries: [MoodEntry]
+    var daysWithMultipleEntries: Set<Date>
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -22,29 +16,53 @@ struct PastPagesGrid: View {
                     .font(.system(.headline, design: .rounded))
                     .foregroundStyle(PastelTheme.ink)
                 Spacer()
-                Text("\(entries.count)")
-                    .font(.system(.caption, design: .rounded).weight(.semibold))
+                Text(entries.count, format: .number)
+                    .font(.caption)
                     .foregroundStyle(.secondary)
             }
-
-            AdaptiveCardGrid(items: entries, minimumCardWidth: 150, maximumCardWidth: 210, spacing: 24) { entry in
-                let showsTime = daysWithMultipleEntries.contains(Calendar.current.startOfDay(for: entry.date))
-
-                Button {
-                    viewModel.loadEntry(entry)
-                } label: {
-                    MiniDiaryPage(entry: entry, showsTime: showsTime)
+            if entries.isEmpty {
+                ContentUnavailableView {
+                    Label("No matching pages", systemImage: "book.closed")
+                } description: {
+                    Text("Try another search or mood filter, or save your first page.")
                 }
-                .buttonStyle(.plain)
-                .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                    Button(role: .destructive) {
-                        delete(entry)
-                    } label: {
-                        Label("Delete", systemImage: "trash")
+            } else {
+                LazyVGrid(columns: columns, spacing: 16) {
+                    ForEach(entries) { entry in
+                        pageButton(entry)
                     }
                 }
             }
         }
+        .alert("Couldn't delete your page", isPresented: Binding {
+            deleteError != nil
+        } set: { if !$0 { deleteError = nil } }) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(deleteError ?? "")
+        }
+    }
+
+    private var columns: [GridItem] {
+        dynamicTypeSize.isAccessibilitySize
+            ? [GridItem(.flexible())]
+            : [GridItem(.adaptive(minimum: 160), spacing: 16)]
+    }
+
+    private func pageButton(_ entry: MoodEntry) -> some View {
+        Button {
+            viewModel.loadEntry(entry)
+        } label: {
+            MiniDiaryPage(entry: entry, showsTime: daysWithMultipleEntries.contains(Calendar.current.startOfDay(for: entry.date)))
+        }
+        .buttonStyle(.plain)
+        .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+            Button("Delete", systemImage: "trash", role: .destructive) { delete(entry) }
+        }
+        .contextMenu {
+            Button("Delete", systemImage: "trash", role: .destructive) { delete(entry) }
+        }
+        .accessibilityAction(named: "Delete") { delete(entry) }
     }
 
     private func delete(_ entry: MoodEntry) {
@@ -52,13 +70,8 @@ struct PastPagesGrid: View {
             modelContext.delete(entry)
             try modelContext.save()
         } catch {
-            assertionFailure("Failed to delete diary page: \(error)")
+            modelContext.rollback()
+            deleteError = error.localizedDescription
         }
     }
-}
-
-#Preview {
-    PastPagesGrid(viewModel: PageViewModel(), entries: [MoodEntry.latest], daysWithMultipleEntries: [])
-        .padding()
-        .background(PastelTheme.background)
 }

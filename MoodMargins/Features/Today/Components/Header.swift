@@ -1,33 +1,40 @@
-//
-//  Header.swift
-//  MoodMargins
-//
-//  Created by Gerard Gomez on 6/26/26.
-//
-
 import SwiftUI
 
 struct Header: View {
+    var streak: Int
+
     var body: some View {
-        HStack(alignment: .top) {
-            VStack(alignment: .leading) {
-                Text("Today")
-                    .font(.system(.title, design: .rounded).weight(.heavy))
-                    .foregroundStyle(PastelTheme.ink)
-                Text(Date(), format: .dateTime.weekday(.wide).month(.wide).day())
-                    .font(.system(.subheadline, design: .rounded))
-                    .foregroundStyle(.secondary)
+        ViewThatFits(in: .horizontal) {
+            HStack(alignment: .top) {
+                title
+                Spacer()
+                streakBadge.fixedSize(horizontal: true, vertical: false)
             }
-            Spacer()
-            Text("3-day streak")
-                .font(.system(.caption, design: .rounded).weight(.semibold))
-                .padding()
-                .background(Capsule().fill(.white.opacity(0.55)))
-                .foregroundStyle(PastelTheme.ink)
+            VStack(alignment: .leading, spacing: 12) {
+                title
+                streakBadge
+            }
         }
     }
-}
 
-#Preview {
-    Header()
+    private var title: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text("Today")
+                .font(.system(.title, design: .rounded).bold())
+                .foregroundStyle(PastelTheme.ink)
+                .accessibilityAddTraits(.isHeader)
+            Text(Date(), format: .dateTime.weekday(.wide).month(.wide).day())
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+        }
+    }
+
+    private var streakBadge: some View {
+        Text("\(streak)-day streak")
+            .font(.system(.caption, design: .rounded).bold())
+            .padding(.horizontal, 14)
+            .padding(.vertical, 10)
+            .background(PastelTheme.paper, in: Capsule())
+            .foregroundStyle(PastelTheme.ink)
+    }
 }

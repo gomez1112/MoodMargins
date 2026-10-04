@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum Mood: Int, CaseIterable, Identifiable, Comparable, Codable {
+enum Mood: Int, CaseIterable, Identifiable, Comparable, Codable, Sendable {
     case angry = 1
     case sad
     case mourn
@@ -42,11 +42,11 @@ enum Mood: Int, CaseIterable, Identifiable, Comparable, Codable {
     
     var systemImage: String {
         switch self {
-            case .angry: "angry.face"
-            case .sad: "sad.face"
-            case .mourn: "skull"
-            case .wink: "smiling.face.fill"
-            case .laughing: "laughing.face"
+            case .angry: "cloud.bolt.rain.fill"
+            case .sad: "cloud.rain.fill"
+            case .mourn: "cloud.fill"
+            case .wink: "cloud.sun.fill"
+            case .laughing: "sun.max.fill"
         }
     }
     var tint: Color {
