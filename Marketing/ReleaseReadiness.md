@@ -2,6 +2,8 @@
 
 English, Spanish, and Arabic listing copy, 57 public screenshots, and six product review images were applied to App Store Connect on October 4, 2026. The Arabic duplicate-localization conflict was resolved by resuming Update Listing, which reconciled the existing remote localization IDs and regenerated the sync snapshot. All public screenshot uploads are complete and match the local files and ordering; each subscription has prices in 175 territories. Local validation passes, and a final Update Listing reports that the local files already match App Store Connect. No app build, product, or version has been submitted for review by this work.
 
+Version 1.0 iOS build 4 (including Watch), macOS build 6, and visionOS build 3 were uploaded and passed Apple's TestFlight processing checks on October 5, 2026. The signing repair and platform packaging fixes are recorded in [SigningRepair.md](../QA/SigningRepair.md).
+
 - App: free; Lifestyle, with Health & Fitness as its secondary category.
 - Plus: $0.99 weekly, $2.99 monthly, or $19.99 yearly in the US; all three include every premium theme, AI tags, and AI recaps. Other territories equalize from the US baseline.
 - Botanical, Coastal, and Sunset: $1.99 each in the US; non-consumable, permanent purchases.
@@ -9,6 +11,6 @@ English, Spanish, and Arabic listing copy, 57 public screenshots, and six produc
 - Hosted privacy-policy URL: https://apps.transfinite.us/moodmargins/privacy-policy.
 - First release has no “What's New” text; the app description introduces the features.
 
-Before submission: publish the privacy label using `Legal/AppPrivacyWorksheet.md`, replace the hosted policy's obsolete on-device-only AI claim, obtain Apple's managed PCC access for release provisioning, upload a signed release build, and test purchases/restore and real iCloud sync on devices. Native StoreKit products cannot load until their local metadata and review screenshots have been applied and propagated. Attach the first in-app purchases and subscriptions to the app's first review submission.
+Before submission: publish the privacy label using `Legal/AppPrivacyWorksheet.md`, replace the hosted policy's obsolete on-device-only AI claim, confirm Apple's managed PCC access for release use, and test purchases/restore and real iCloud sync on devices. Native StoreKit products cannot load until their local metadata and review screenshots have been applied and propagated. Attach the first in-app purchases and subscriptions to the app's first review submission.
 
 After applying the listing and allowing StoreKit propagation, refresh the six product review images with the loaded native purchase screens. The current review images truthfully show Plus benefits and theme previews while the catalog is pending setup. Review [PrivacyPolicy.txt](../Legal/PrivacyPolicy.txt) with a legal professional before publishing its updated text.
