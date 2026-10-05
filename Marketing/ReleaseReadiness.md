@@ -2,7 +2,9 @@
 
 English, Spanish, and Arabic listing copy, 57 public screenshots, and six product review images were applied to App Store Connect on October 4, 2026. The Arabic duplicate-localization conflict was resolved by resuming Update Listing, which reconciled the existing remote localization IDs and regenerated the sync snapshot. All public screenshot uploads are complete and match the local files and ordering; each subscription has prices in 175 territories. Local validation passes, and a final Update Listing reports that the local files already match App Store Connect. No app build, product, or version has been submitted for review by this work.
 
-Version 1.0 iOS build 4 (including Watch), macOS build 6, and visionOS build 3 were uploaded and passed Apple's TestFlight processing checks on October 5, 2026. The signing repair and platform packaging fixes are recorded in [SigningRepair.md](../QA/SigningRepair.md).
+Version 1.0 iOS build 6 (including Watch), macOS build 8, and visionOS build 5 were uploaded and passed Apple's TestFlight processing checks on October 5, 2026. Their export-compliance declarations are complete and all three are `IN_BETA_TESTING` for the existing internal testing group. Apple has issued the existing tester's invitation; it must be accepted on the tester's device. The signing and packaging fixes are recorded in [SigningRepair.md](../QA/SigningRepair.md), and the access checks in [TestFlightAccess.md](../QA/TestFlightAccess.md).
+
+The reported weekly-subscription price-point HTTP 500 recovered on October 5. Both a paginated lookup and the exact original request, including `limit=8000`, succeeded; the latter returned 800 US price points. The configured US weekly price remains $0.99. Listing validation passes, and Update Listing confirms that the local files already match App Store Connect.
 
 - App: free; Lifestyle, with Health & Fitness as its secondary category.
 - Plus: $0.99 weekly, $2.99 monthly, or $19.99 yearly in the US; all three include every premium theme, AI tags, and AI recaps. Other territories equalize from the US baseline.
