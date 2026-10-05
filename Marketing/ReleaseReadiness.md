@@ -1,6 +1,6 @@
 # MoodMargins listing handoff
 
-English, Spanish, and Arabic listing copy, 57 public screenshots, and six product review images are prepared and validated locally in `appStoreConnect/`. Use Bitrig **Project Settings → Distribute → App Store Listing** to review and apply them. No app build, product, or version has been submitted for review by this work.
+English, Spanish, and Arabic listing copy, 57 public screenshots, and six product review images were applied to App Store Connect on October 4, 2026. The Arabic duplicate-localization conflict was resolved by resuming Update Listing, which reconciled the existing remote localization IDs and regenerated the sync snapshot. All public screenshot uploads are complete and match the local files and ordering; each subscription has prices in 175 territories. Local validation passes, and a final Update Listing reports that the local files already match App Store Connect. No app build, product, or version has been submitted for review by this work.
 
 - App: free; Lifestyle, with Health & Fitness as its secondary category.
 - Plus: $0.99 weekly, $2.99 monthly, or $19.99 yearly in the US; all three include every premium theme, AI tags, and AI recaps. Other territories equalize from the US baseline.
