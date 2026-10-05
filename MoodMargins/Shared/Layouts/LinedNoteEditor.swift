@@ -42,7 +42,7 @@ struct LinedNoteEditor: View {
                 .frame(minHeight: minimumHeight ?? CGFloat(lines) * rowHeight, alignment: .topLeading)
                 .padding(.top, 1)
         }
-#if os(iOS) || os(visionOS)
+#if os(iOS)
         .toolbar {
             ToolbarItem(placement: .keyboard) {
                 Button("Done", systemImage: "keyboard.chevron.compact.down") {

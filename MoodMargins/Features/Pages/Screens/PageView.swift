@@ -82,7 +82,9 @@ struct PageView: View {
             }
         }
         .swipeActionsContainer()
+#if os(iOS) || os(macOS)
         .scrollDismissesKeyboard(.interactively)
+#endif
         .safeAreaPadding(.bottom, 16)
         .background(palette.background.ignoresSafeArea())
         .navigationTitle("Pages")

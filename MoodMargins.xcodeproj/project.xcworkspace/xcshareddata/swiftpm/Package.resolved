@@ -1,13 +1,13 @@
 {
-  "originHash" : "a7b41041a10f31e6e5bcc73fe5386eceaf86af3faf5354f69bffd37f0ee47458",
+  "originHash" : "b297666d17207d9bf03af825639e4e8d01a82bcd64f7d71c8d1cf142cc2fe75a",
   "pins" : [
     {
       "identity" : "dotlottie-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/LottieFiles/dotlottie-ios",
       "state" : {
-        "revision" : "8ccbcff4ae56f82880be06b46593ca112249f767",
-        "version" : "0.15.7"
+        "revision" : "ddc69d0ae3a90894b15b5a925c73232ff1d94307",
+        "version" : "0.16.9"
       }
     },
     {
@@ -26,15 +26,6 @@
       "state" : {
         "revision" : "0b5dbfb6bcd6f5b5f2d9f3c86bb78d7a72f93a0b",
         "version" : "1.1.4"
-      }
-    },
-    {
-      "identity" : "flexstore",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/gomez1112/FlexStore",
-      "state" : {
-        "revision" : "ac6fc14049e41f69bb7e5f3fec028c870eccfc4b",
-        "version" : "1.2.2"
       }
     },
     {

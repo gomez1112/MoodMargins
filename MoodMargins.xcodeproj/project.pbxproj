@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
         A11000000000000000000001 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11000000000000000000002 /* Mood.swift */; };
-		CCE094932FE8380900725C1C /* FlexStore in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094922FE8380900725C1C /* FlexStore */; };
 		CCE0949B2FE8389F00725C1C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949A2FE8389F00725C1C /* WidgetKit.framework */; };
 		CCE0949D2FE8389F00725C1C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949C2FE8389F00725C1C /* SwiftUI.framework */; };
 		CCE094AE2FE8389F00725C1C /* MoodMarginsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CCE094982FE8389F00725C1C /* MoodMarginsWidgetExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -178,7 +177,6 @@
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				CCE094E42FE840C000725C1C /* DotLottiePlayer in Frameworks */,
-				CCE094932FE8380900725C1C /* FlexStore in Frameworks */,
 				CCE094E22FE840C000725C1C /* DotLottie in Frameworks */,
 				CCE094DF2FE83AFC00725C1C /* Algorithms in Frameworks */,
 				CCE094D62FE83AB600725C1C /* EZCharts3D in Frameworks */,
@@ -304,7 +302,6 @@
 			);
 			name = MoodMargins;
 			packageProductDependencies = (
-				CCE094922FE8380900725C1C /* FlexStore */,
 				CCE094D02FE83AA100725C1C /* EZSwiftData */,
 				CCE094D32FE83AB600725C1C /* EZCharts */,
 				CCE094D52FE83AB600725C1C /* EZCharts3D */,
@@ -460,7 +457,6 @@
 			mainGroup = CCE094602FE8377800725C1C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				CCE094912FE8380900725C1C /* XCRemoteSwiftPackageReference "FlexStore" */,
 				CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */,
 				CCE094D22FE83AB600725C1C /* XCRemoteSwiftPackageReference "EZCharts" */,
 				CCE094D72FE83AC300725C1C /* XCRemoteSwiftPackageReference "OnboardingKit" */,
@@ -1172,14 +1168,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CCE094912FE8380900725C1C /* XCRemoteSwiftPackageReference "FlexStore" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/gomez1112/FlexStore";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.1;
-			};
-		};
 		CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gomez1112/EZSwiftData";
@@ -1225,17 +1213,12 @@
 			repositoryURL = "https://github.com/LottieFiles/dotlottie-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 0.15.7;
+				version = 0.16.9;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CCE094922FE8380900725C1C /* FlexStore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CCE094912FE8380900725C1C /* XCRemoteSwiftPackageReference "FlexStore" */;
-			productName = FlexStore;
-		};
 		CCE094D02FE83AA100725C1C /* EZSwiftData */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */;

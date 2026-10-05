@@ -36,7 +36,9 @@ struct ThemeDetailView: View {
                     } else {
                         if let identifier = theme.product {
                             ProductView(id: identifier.rawValue)
+#if os(iOS) || os(macOS)
                                 .productViewStyle(.compact)
+#endif
                                 .id(loadRevision)
                                 .onInAppPurchaseCompletion { _, result in await purchases.handlePurchase(result) }
                         }

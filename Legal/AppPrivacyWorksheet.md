@@ -14,6 +14,6 @@ Prepared October 4, 2026 from the app and its resolved packages. Confirm this ma
 
 The table records the audit, not a recommendation to declare these as collected. Apple's guidance excludes data collected only by Apple and request data discarded after real-time processing. The current app therefore has no developer-collected rows to add. [Apple's App Privacy guidance](https://developer.apple.com/app-store/app-privacy-details/).
 
-Audit scope: SwiftData/CloudKit configuration, Foundation Models request snapshots, StoreKit transaction processing, bundled dotLottie animation loading, EZSwiftData, EZCharts, FlexStore, GentleNotification, and OnboardingKit. The main app has no journal backend, remote animation URLs, advertising SDK, or analytics SDK. Watch entries are local. iCloud sync still needs a real two-device test.
+Audit scope: SwiftData/CloudKit configuration, Foundation Models request snapshots, StoreKit transaction processing, bundled dotLottie animation loading, EZSwiftData, EZCharts, GentleNotification, and OnboardingKit. The main app has no journal backend, remote animation URLs, advertising SDK, or analytics SDK. Watch entries are local. iCloud sync still needs a real two-device test.
 
 Before release, replace the hosted policy's old claim that AI never uses Private Cloud Compute with [PrivacyPolicy.txt](PrivacyPolicy.txt). This policy is a draft, not legal advice: verify it reflects actual practices, including SDKs, and have a legal professional review it before publishing.
