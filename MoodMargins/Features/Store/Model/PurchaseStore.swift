@@ -105,23 +105,30 @@ final class PurchaseStore {
         }
     }
 
-    func handlePurchase(_ result: Result<Product.PurchaseResult, Error>) async {
+    /// Returns the verified product only after its current access has been refreshed.
+    @discardableResult
+    func handlePurchase(_ result: Result<Product.PurchaseResult, Error>) async -> StoreProduct? {
         switch result {
         case .success(.success(let verification)):
             guard case .verified(let transaction) = verification else {
                 purchaseMessage = String(localized: "This purchase couldn't be verified. Restore purchases or try again.")
-                return
+                return nil
             }
             await refreshEntitlements()
             await transaction.finish()
+            guard !Task.isCancelled, transaction.revocationDate == nil, !transaction.isUpgraded,
+                  let product = StoreProduct(rawValue: transaction.productID),
+                  entitlements.products.contains(product) else { return nil }
+            return product
         case .success(.pending):
             purchaseMessage = String(localized: "Your purchase is waiting for approval. Access will unlock when Apple confirms it.")
         case .success(.userCancelled): break
         case .failure(let error):
-            guard !(error is CancellationError), !Task.isCancelled else { return }
-            if let storeError = error as? StoreKitError, case .userCancelled = storeError { return }
+            guard !(error is CancellationError), !Task.isCancelled else { return nil }
+            if let storeError = error as? StoreKitError, case .userCancelled = storeError { return nil }
             purchaseMessage = String(localized: "Your purchase couldn't be completed. Please try again.")
         @unknown default: break
         }
+        return nil
     }
 }

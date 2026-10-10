@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61000000000000000000001 /* PurchaseCompletion.storekit in UI Test Resources */ = {isa = PBXBuildFile; fileRef = A61000000000000000000002 /* PurchaseCompletion.storekit */; };
         A11000000000000000000001 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11000000000000000000002 /* Mood.swift */; };
 		CCE0949B2FE8389F00725C1C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949A2FE8389F00725C1C /* WidgetKit.framework */; };
 		CCE0949D2FE8389F00725C1C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949C2FE8389F00725C1C /* SwiftUI.framework */; };
@@ -79,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A61000000000000000000002 /* PurchaseCompletion.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MoodMarginsTests/Store/PurchaseCompletion.storekit; sourceTree = SOURCE_ROOT; };
         A11000000000000000000002 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMargins/Shared/Model/Mood.swift; sourceTree = SOURCE_ROOT; };
 		CC7170862FF18C7E00C635FD /* EvaluationSeedSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationSeedSamples.swift; sourceTree = "<group>"; };
 		CC7170872FF18C7E00C635FD /* EvaluationValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationValidators.swift; sourceTree = "<group>"; };
@@ -485,6 +487,7 @@
 		CCE0947E2FE8377A00725C1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				A61000000000000000000001 /* PurchaseCompletion.storekit in UI Test Resources */,
 			);
 		};
 		CCE094962FE8389F00725C1C /* Resources */ = {

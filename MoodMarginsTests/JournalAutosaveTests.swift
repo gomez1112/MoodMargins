@@ -12,6 +12,32 @@ struct JournalAutosaveTests {
         return try ModelContainer(for: schema, configurations: [configuration])
     }
 
+    @Test("Selecting multiple generated tags survives each autosave query refresh")
+    func generatedTagsSurviveAutosave() throws {
+        let container = try store()
+        let context = container.mainContext
+        let editor = TodayViewModel()
+        editor.loadTodayIfNeeded(from: [])
+        editor.note = "A quiet morning with family outdoors."
+        editor.generatedTagSuggestions = ["morning", "family", "outdoors"]
+        editor.selectGeneratedTag("morning")
+        editor.saveIfChanged(entries: [], modelContext: context)
+        var saved = try context.fetch(FetchDescriptor<MoodEntry>())
+        editor.loadTodayIfNeeded(from: saved)
+        #expect(editor.generatedTagSuggestions == ["family", "outdoors"])
+        #expect(editor.selectedTags == ["morning"])
+        #expect(!editor.hasPendingChanges)
+
+        editor.selectGeneratedTag("family")
+        editor.saveIfChanged(entries: saved, modelContext: context)
+        saved = try context.fetch(FetchDescriptor<MoodEntry>())
+        editor.loadTodayIfNeeded(from: saved)
+        #expect(saved.count == 1)
+        #expect(Set(saved.first?.tags ?? []) == ["morning", "family"])
+        #expect(editor.generatedTagSuggestions == ["outdoors"])
+        #expect(editor.saveErrorMessage == nil)
+    }
+
     @Test("Opening a blank editor or typing whitespace does not create a page")
     func blankEditors() throws {
         let container = try store()

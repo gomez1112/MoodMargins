@@ -58,35 +58,170 @@
       }
     },
     "%@ · %lld tags" : {
+      "comment" : "Today journal save status followed by the number of selected tags. The first argument is the localized status; the second is the tag count.",
       "localizations" : {
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ · %lld وسمًا"
-          }
-        },
         "en" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ · %2$lld tags"
+            "state" : "translated",
+            "value" : "%1$@ · %#@tagCount@"
+          },
+          "substitutions" : {
+            "tagCount" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld tag"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld tags"
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$@ · %2$lld etiquetas"
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "machine_translated",
-            "value" : "%@ · %lld etiquetas"
+            "value" : "%1$@ · %#@tagCount@"
+          },
+          "substitutions" : {
+            "tagCount" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld etiqueta"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld etiquetas"
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "es-US" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ · %lld etiquetas"
+            "value" : "%1$@ · %#@tagCount@"
+          },
+          "substitutions" : {
+            "tagCount" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld etiqueta"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld etiquetas"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %#@tagCount@"
+          },
+          "substitutions" : {
+            "tagCount" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld etiqueta"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld etiquetas"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ · %#@tagCount@"
+          },
+          "substitutions" : {
+            "tagCount" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "zero" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld وسم"
+                    }
+                  },
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld وسم"
+                    }
+                  },
+                  "two" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld وسمان"
+                    }
+                  },
+                  "few" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld وسوم"
+                    }
+                  },
+                  "many" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld وسمًا"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%lld وسم"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }

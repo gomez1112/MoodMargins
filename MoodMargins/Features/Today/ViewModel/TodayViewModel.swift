@@ -147,6 +147,7 @@ final class TodayViewModel {
         confirmedMood = false
 
         guard let entry = entries.first(where: { Calendar.current.isDateInToday($0.date) }) else {
+            resetTagSuggestions()
             selectedMood = .laughing
             note = ""
             selectedTags = []
@@ -158,6 +159,9 @@ final class TodayViewModel {
             selectedEntryID = nil
             return
         }
+        if note != entry.note || (selectedEntryID != nil && selectedEntryID != entry.id) {
+            resetTagSuggestions()
+        }
         selectedMood = entry.mood
         note = entry.note
         selectedTags = Set(entry.tags)
@@ -165,9 +169,19 @@ final class TodayViewModel {
         savedNote = entry.note
         savedTags = Set(entry.tags)
         pageSaved = true
-        generatedTagSuggestions = []
+        // Autosave updates the query after selecting a tag. Keep the other suggestions
+        // for this note, filtering out tags selected here or on another device.
+        generatedTagSuggestions = MoodTagNormalizer.normalizedTags(generatedTagSuggestions, excluding: selectedTags)
         draftDate = entry.date
         selectedEntryID = entry.id
+    }
+
+    private func resetTagSuggestions() {
+        activeTagRequest = nil
+        lastTagSuggestionNote = ""
+        generatedTagSuggestions = []
+        tagSuggestionError = nil
+        isGeneratingTagSuggestions = false
     }
 
     /// Saves the current Today page state into SwiftData.
@@ -222,6 +236,7 @@ final class TodayViewModel {
         do {
             try await Task.sleep(for: .milliseconds(800))
             try Task.checkCancellation()
+            guard activeTagRequest == requestID else { return }
             isGeneratingTagSuggestions = true
             let request = MoodTaggingRequest(note: trimmedNote, selectedTags: selectedTags, modelChoice: modelChoice)
             try await tagProvider.generateSuggestions(for: request) { suggestions in

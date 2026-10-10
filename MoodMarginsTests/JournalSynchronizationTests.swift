@@ -6,6 +6,32 @@ import Testing
 @Suite("Journal UI regressions")
 @MainActor
 struct JournalSynchronizationTests {
+    @Test("A changed saved note invalidates its old generated suggestions")
+    func changedNoteClearsSuggestions() {
+        let entry = TestFactory.entry(date: Date(), mood: .wink, note: "A walk outdoors")
+        let editor = TodayViewModel()
+        editor.loadTodayIfNeeded(from: [entry])
+        editor.generatedTagSuggestions = ["outdoors"]
+        editor.tagSuggestionError = "Previous error"
+        entry.note = "A busy day at work"
+        editor.loadTodayIfNeeded(from: [entry])
+        #expect(editor.note == entry.note)
+        #expect(editor.generatedTagSuggestions.isEmpty)
+        #expect(editor.tagSuggestionError == nil)
+    }
+
+    @Test("Saved tag changes remove selected suggestions and preserve the rest")
+    func changedTagsPreserveSuggestions() {
+        let entry = TestFactory.entry(date: Date(), mood: .wink, note: "A walk with family")
+        let editor = TodayViewModel()
+        editor.loadTodayIfNeeded(from: [entry])
+        editor.generatedTagSuggestions = ["family", "outdoors"]
+        entry.tags = ["family"]
+        editor.loadTodayIfNeeded(from: [entry])
+        #expect(editor.generatedTagSuggestions == ["outdoors"])
+        #expect(editor.selectedTags == ["family"])
+    }
+
     @Test("Today refreshes a clean editor after a Page edit and preserves a draft")
     func todayRefresh() {
         let entry = TestFactory.entry(date: Date(), mood: .wink, note: "Original", tags: ["family"])
@@ -31,10 +57,14 @@ struct JournalSynchronizationTests {
         let entry = TestFactory.entry(date: Date(), mood: .sad, note: "Saved", tags: ["work"])
         let editor = TodayViewModel()
         editor.loadTodayIfNeeded(from: [entry])
+        editor.generatedTagSuggestions = ["busy"]
+        editor.tagSuggestionError = "Previous error"
         editor.loadTodayIfNeeded(from: [])
         #expect(editor.note.isEmpty)
         #expect(editor.selectedTags.isEmpty)
         #expect(!editor.pageSaved)
+        #expect(editor.generatedTagSuggestions.isEmpty)
+        #expect(editor.tagSuggestionError == nil)
     }
 
     @Test("Page loads today's saved entry and synchronizes clean changes")

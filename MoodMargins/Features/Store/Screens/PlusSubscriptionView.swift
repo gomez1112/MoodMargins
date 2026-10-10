@@ -2,8 +2,10 @@ import StoreKit
 import SwiftUI
 
 struct PlusSubscriptionView: View {
+    @Environment(\.dismiss) private var dismiss
     @Environment(PurchaseStore.self) private var purchases
     @State private var loadRevision = 0
+    @State private var didDismiss = false
 
     var body: some View {
         SubscriptionStoreView(productIDs: StoreProduct.subscriptions.map(\.rawValue)) {
@@ -29,9 +31,23 @@ struct PlusSubscriptionView: View {
         .storeButton(.visible, for: .restorePurchases)
         .subscriptionStorePolicyDestination(url: StoreLegal.termsURL, for: .termsOfService)
         .subscriptionStorePolicyDestination(url: StoreLegal.privacyURL, for: .privacyPolicy)
-        .onInAppPurchaseCompletion { _, result in await purchases.handlePurchase(result) }
+        .onInAppPurchaseCompletion { _, result in
+            if let product = await purchases.handlePurchase(result), product.isSubscription {
+                dismissAfterUnlock()
+            }
+        }
+        .onChange(of: purchases.entitlements.hasPlus) { hadPlus, hasPlus in
+            // Also handles Restore Purchases and approval of a previously pending purchase.
+            if !hadPlus && hasPlus { dismissAfterUnlock() }
+        }
         .navigationTitle("MoodMargins Plus")
         .task(id: loadRevision) { await purchases.loadProducts() }
+    }
+
+    private func dismissAfterUnlock() {
+        guard !didDismiss else { return }
+        didDismiss = true
+        dismiss()
     }
 }
 
