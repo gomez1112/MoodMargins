@@ -11,14 +11,17 @@ struct WatchJournalAutosaveTests {
         let defaults = try #require(UserDefaults(suiteName: name))
         defer { defaults.removePersistentDomain(forName: name) }
         let journal = WatchJournalStore(defaults: defaults)
+        #expect(!journal.hasSelectedMood)
         journal.note = " \n "
         journal.saveIfChanged()
         #expect(journal.entries.isEmpty)
         journal.selectMood(.laughing)
+        #expect(journal.hasSelectedMood)
         await journal.autosave()
         #expect(journal.entries.count == 1)
         #expect(journal.entries.first?.mood == .laughing)
         #expect(!journal.hasChanges)
+        #expect(journal.hasSelectedMood)
     }
 
     @Test("Repeated edits persist in the same entry and survive reopening")

@@ -41,6 +41,7 @@ final class WatchJournalStore {
     }
 
     var today: WatchJournalEntry? { entries.first { Calendar.current.isDateInToday($0.date) } }
+    var hasSelectedMood: Bool { loadedEntryID != nil || confirmedMood }
     var draft: WatchJournalDraft { WatchJournalDraft(date: draftDate, mood: selectedMood, note: note, confirmedMood: confirmedMood) }
     var hasChanges: Bool {
         if loadedEntryID == nil {
@@ -48,12 +49,6 @@ final class WatchJournalStore {
         }
         return selectedMood != savedMood || note != savedNote
     }
-    var status: String {
-        if errorMessage != nil { return String(localized: "Couldn't save changes") }
-        if hasChanges { return String(localized: "Saving…") }
-        return loadedEntryID == nil ? String(localized: "Changes save automatically") : String(localized: "Saved automatically")
-    }
-
     func selectMood(_ mood: Mood) { selectedMood = mood; confirmedMood = true }
 
     func loadToday() {
