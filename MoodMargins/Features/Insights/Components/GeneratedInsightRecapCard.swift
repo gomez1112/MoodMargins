@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct GeneratedInsightRecapCard: View {
+    @Environment(\.diaryPalette) private var palette
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let selectedRange: Int
     let recap: PartialGeneratedInsightRecap?
     let isGenerating: Bool
     let errorMessage: String?
+    var retry: () -> Void = {}
 
     private var title: String {
         text(recap?.title) ?? (selectedRange == 365 ? String(localized: "Year recap") : String(localized: "\(selectedRange)-day recap"))
@@ -42,7 +45,7 @@ struct GeneratedInsightRecapCard: View {
                 if let gentleReflection = text(recap?.gentleReflection) {
                     Text(gentleReflection)
                         .font(.system(.callout, design: .serif))
-                        .foregroundStyle(PastelTheme.ink.opacity(0.74))
+                        .foregroundStyle(palette.ink.opacity(0.74))
                 }
 
                 if let nextPrompt = text(recap?.nextPrompt) {
@@ -50,17 +53,21 @@ struct GeneratedInsightRecapCard: View {
                         .font(.system(.caption, design: .rounded).weight(.semibold))
                         .padding(.horizontal, 12)
                         .padding(.vertical, 8)
-                        .background(Capsule().fill(.white.opacity(0.62)))
-                        .foregroundStyle(PastelTheme.ink)
+                        .background(Capsule().fill(palette.blush))
+                        .foregroundStyle(palette.ink)
                 }
 
+                if errorMessage != nil && !isGenerating {
+                    Button("Try recap again", systemImage: "arrow.clockwise", action: retry)
+                        .buttonStyle(.bordered)
+                }
                 if isGenerating {
                     loadingLine(String(localized: "Writing recap"))
                 } else if let errorMessage, text(recap?.pattern) != nil {
                     statusLine(errorMessage, systemImage: "sparkles")
                 }
             }
-            .animation(.easeInOut(duration: 0.2), value: recap)
+            .animation(reduceMotion ? nil : .snappy, value: recap)
         }
     }
 
@@ -86,19 +93,4 @@ struct GeneratedInsightRecapCard: View {
         }
         return trimmed
     }
-}
-
-#Preview {
-    GeneratedInsightRecapCard(
-        selectedRange: 14,
-        recap: PartialGeneratedInsightRecap(
-            title: "A steadier week",
-            pattern: "Your calmer tags showed up near the days with higher moods.",
-            supportingDetail: "Top tags included calm and rest.",
-            gentleReflection: "The small routines seem worth noticing.",
-            nextPrompt: "What helped today feel a little softer?"
-        ),
-        isGenerating: false,
-        errorMessage: nil
-    )
 }

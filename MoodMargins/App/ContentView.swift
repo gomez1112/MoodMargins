@@ -10,7 +10,9 @@ import SwiftUI
 import EZSwiftData
 
 struct ContentView: View {
+    @Environment(\.diaryPalette) private var palette
     @Environment(NavigationContext.self) private var navigationContext
+    @Environment(PurchaseStore.self) private var purchases
 
     var body: some View {
         @Bindable var navigationContext = navigationContext
@@ -44,24 +46,48 @@ struct ContentView: View {
                 }
             }
             .customizationID(AppTab.insights.rawValue)
+            Tab(AppTab.customize.title, systemImage: AppTab.customize.systemImage, value: AppTab.customize) {
+                NavigationStack(path: $navigationContext.customizePath) {
+                    StoreView()
+                        .navigationDestination(for: AppScreen.self) { screen in
+                            screen.destination
+                        }
+                }
+            }
+            .customizationID(AppTab.customize.rawValue)
         }
         .tabViewStyle(.sidebarAdaptable)
-        .tint(PastelTheme.ink)
+        .tint(palette.ink)
+        // Purchase feedback belongs to the active Plus sheet while it is presented.
+        .alert("Purchases", isPresented: Binding {
+            purchases.isShowingPurchaseMessage && navigationContext.presentedSheet != .plus
+        } set: { if !$0 { purchases.isShowingPurchaseMessage = false } }) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(purchases.purchaseMessage ?? "")
+        }
         .sheet(item: $navigationContext.presentedSheet) { sheet in
-            NavigationStack {
-                sheet.destination
+            if sheet == .plus {
+                PlusSubscriptionView()
+            } else {
+                NavigationStack {
+                    sheet.destination
+                }
             }
         }
+#if os(macOS)
+        // macOS presents these routes as sheets because full-screen covers are unavailable.
+        .sheet(item: $navigationContext.presentedFullScreenCover) { fullScreenCover in
+            NavigationStack {
+                fullScreenCover.destination
+            }
+        }
+#else
         .fullScreenCover(item: $navigationContext.presentedFullScreenCover) { fullScreenCover in
             NavigationStack {
                 fullScreenCover.destination
             }
         }
+#endif
     }
-}
-
-#Preview("Dev", traits: .dev(AppPreviewConfig.self, { context in
-    PreviewDependencies(context: context)
-})) {
-    ContentView()
 }

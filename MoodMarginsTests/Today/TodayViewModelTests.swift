@@ -25,9 +25,9 @@ final class TodayViewModelTests: XCTestCase {
         let expectedHasPendingChanges: Bool
     }
 
-    override func tearDown() {
-        TestFactory.resetInMemoryModelContainers()
-        super.tearDown()
+    override func tearDown() async throws {
+        await MainActor.run { TestFactory.resetInMemoryModelContainers() }
+        try await super.tearDown()
     }
 
     func testStatusAndSaveButton() {
@@ -41,7 +41,7 @@ final class TodayViewModelTests: XCTestCase {
                 savedMood: .wink,
                 selectedTags: ["calm"],
                 savedTags: ["calm"],
-                expectedStatus: "Today's page saved",
+                expectedStatus: "Saved automatically",
                 expectedButtonTitle: "Saved",
                 expectedHasPendingChanges: false
             ),
@@ -54,7 +54,7 @@ final class TodayViewModelTests: XCTestCase {
                 savedMood: .laughing,
                 selectedTags: [],
                 savedTags: [],
-                expectedStatus: "Dear diary...",
+                expectedStatus: "Dear diary…",
                 expectedButtonTitle: "Save",
                 expectedHasPendingChanges: true
             ),
@@ -67,7 +67,7 @@ final class TodayViewModelTests: XCTestCase {
                 savedMood: .sad,
                 selectedTags: [],
                 savedTags: [],
-                expectedStatus: "Draft updates live",
+                expectedStatus: "Saving…",
                 expectedButtonTitle: "Save",
                 expectedHasPendingChanges: true
             ),
@@ -80,7 +80,7 @@ final class TodayViewModelTests: XCTestCase {
                 savedMood: .mourn,
                 selectedTags: ["work"],
                 savedTags: [],
-                expectedStatus: "Draft updates live",
+                expectedStatus: "Saving…",
                 expectedButtonTitle: "Save",
                 expectedHasPendingChanges: true
             )
@@ -137,20 +137,20 @@ final class TodayViewModelTests: XCTestCase {
         XCTAssertTrue(viewModel.didLoadToday)
     }
 
-    func testLoadTodayFallsBackToFirstEntry() {
+    func testLoadTodayStartsEmptyWhenOnlyHistoricalEntriesExist() {
         let firstEntry = TestFactory.entry(date: TestFactory.date(daysAgo: 3), mood: .mourn, note: "First", tags: ["social"])
         let secondEntry = TestFactory.entry(date: TestFactory.date(daysAgo: 5), mood: .angry, note: "Second", tags: ["tired"])
         let viewModel = TodayViewModel()
 
         viewModel.loadTodayIfNeeded(from: [firstEntry, secondEntry])
 
-        XCTAssertEqual(viewModel.selectedMood, .mourn)
-        XCTAssertEqual(viewModel.note, "First")
-        XCTAssertEqual(viewModel.selectedTags, ["social"])
-        XCTAssertTrue(viewModel.pageSaved)
+        XCTAssertEqual(viewModel.selectedMood, .laughing)
+        XCTAssertEqual(viewModel.note, "")
+        XCTAssertEqual(viewModel.selectedTags, [])
+        XCTAssertFalse(viewModel.pageSaved)
     }
 
-    func testLoadTodayOnlyRunsOnce() {
+    func testRefreshPreservesAnUnsavedDraft() {
         let initialEntry = TestFactory.entry(date: TestFactory.date(daysAgo: 0), mood: .sad, note: "Initial", tags: ["tired"])
         let laterEntry = TestFactory.entry(date: TestFactory.date(daysAgo: 0), mood: .laughing, note: "Later", tags: ["grateful"])
         let viewModel = TodayViewModel()

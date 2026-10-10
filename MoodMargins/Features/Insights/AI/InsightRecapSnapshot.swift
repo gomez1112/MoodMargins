@@ -14,14 +14,18 @@ struct InsightRecapSnapshot: Sendable, Equatable {
     let trend: InsightRecapTrend
     let topTags: [String]
     let topActivities: [String]
+    var modelChoice: FoundationModelChoice = .onDevice
 
     var entryCount: Int { entries.count }
     var canGenerate: Bool { entries.count >= 2 }
 
     var identity: String {
-        let latestDate = entries.map(\.date).max()?.timeIntervalSince1970 ?? 0
-        let tagKey = topTags.joined(separator: ",")
-        return "\(selectedRange)-\(entries.count)-\(latestDate)-\(String(format: "%.2f", averageMood))-\(trend.rawValue)-\(tagKey)"
+        let entryKey = entries.map { entry in
+            [String(entry.date.timeIntervalSince1970), String(entry.moodValue), entry.moodTitle,
+             entry.noteExcerpt, entry.tags.joined(separator: ","), entry.activities.joined(separator: ",")]
+                .map { "\($0.utf8.count):\($0)" }.joined()
+        }.joined(separator: "|")
+        return "\(selectedRange):\(modelChoice.rawValue):\(entryKey)"
     }
 
     var promptText: String {
@@ -42,7 +46,7 @@ struct InsightRecapSnapshot: Sendable, Equatable {
 
         Range: \(selectedRange) days
         Entries: \(entryCount)
-        Average mood: \(String(format: "%.1f", averageMood)) out of 5
+        Average mood: \(averageMood.formatted(.number.precision(.fractionLength(1)))) out of 5
         Trend: \(trend.title)
         Top tags: \(tags)
         Top activities: \(activities)

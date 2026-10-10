@@ -8,15 +8,12 @@
 import SwiftUI
 
 struct GentlePatternCard: View {
+    var pattern: String
     var body: some View {
         InsightPage(title: String(localized: "Soft pattern"), symbol: "leaf.fill", rotation: 0.8) {
-            Text("Pages tagged #outdoors often appear with Good or Great moods.")
+            Text(pattern)
                 .font(.system(.body, design: .serif))
                 .foregroundStyle(.primary.opacity(0.82))
         }
     }
-}
-
-#Preview {
-    GentlePatternCard()
 }

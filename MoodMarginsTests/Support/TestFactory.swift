@@ -55,7 +55,7 @@ enum TestFactory {
 
     static func inMemoryModelContext() throws -> ModelContext {
         let schema = Schema([MoodEntry.self, Activity.self])
-        let configuration = ModelConfiguration("Test-\(UUID().uuidString)", schema: schema, isStoredInMemoryOnly: true)
+        let configuration = ModelConfiguration("Test-\(UUID().uuidString)", schema: schema, isStoredInMemoryOnly: true, cloudKitDatabase: .none)
         let container = try ModelContainer(for: schema, configurations: [configuration])
         retainedModelContainers.append(container)
         return ModelContext(container)

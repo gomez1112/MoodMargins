@@ -11,7 +11,6 @@ import Foundation
 import Evaluations
 import FoundationModels
 
-@available(iOS 27.0, macOS 27.0, visionOS 27.0, watchOS 27.0, *)
 enum SyntheticDatasetGeneration {
     static func expandedTagSamples(targetCount: Int = 40) -> AsyncThrowingStream<ModelSample<TagSuggestionExpected>, Error> {
         EvaluationSeedSamples.tagSuggestionSeeds.makeSamples(

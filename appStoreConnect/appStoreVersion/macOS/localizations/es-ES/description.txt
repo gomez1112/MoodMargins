@@ -1,0 +1,32 @@
+Un lugar amable para ti.
+
+MoodMargins convierte tus emociones diarias en un diario personal de pequeños momentos. Elige un sticker de ánimo animado, escribe unas líneas y deja que tu página se guarde automáticamente. No necesitas crear una cuenta ni recordar pulsar Guardar.
+
+UN POCO DE ESPACIO PARA TU DÍA
+• Exprésate con cinco stickers de ánimo animados.
+• Escribe en suaves páginas de cuaderno con renglones.
+• Conecta emociones y rutinas con etiquetas estilo washi.
+• Revisa tus entradas por fecha, búsqueda o estado de ánimo.
+
+DESCUBRE PATRONES SIN PRESIÓN
+• Explora Perspectivas de 7, 14 o 30 días y de todo el año.
+• Sigue las tendencias del ánimo con etiquetas de emojis.
+• Consulta tu racha más larga, tu ánimo más frecuente y tus etiquetas principales.
+• Revisa la distribución de tus emociones y las actividades de tus páginas.
+
+UN DIARIO A TU ESTILO
+El tema Pastel original es gratis. Botánica, Costera y Atardecer aportan nuevas paletas, cada una con aspectos claro y oscuro. Compra un tema individual una sola vez para conservarlo para siempre o disfruta de todos los temas premium mientras MoodMargins Plus esté activo.
+
+APPLE INTELLIGENCE OPCIONAL CON PLUS
+Plus sugiere etiquetas mientras escribes y crea resúmenes amables a partir de tus páginas guardadas. La app intenta usar primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si falla una solicitud a la nube. Desactiva Private Cloud Compute en Personalizar para mantener las solicitudes de IA en tu dispositivo. La IA requiere un dispositivo compatible con Apple Intelligence activado y listo; las solicitudes a la nube también necesitan internet y capacidad disponible del servicio.
+
+TUS PÁGINAS, TU ESPACIO
+Las entradas se almacenan en tu dispositivo. Cuando iCloud está disponible y activado, la app principal las sincroniza mediante tu cuenta privada de iCloud. El desarrollador no opera un servidor que reciba tu diario. Apple Watch permite notas rápidas de ánimo en un diario local separado; esas entradas todavía no se sincronizan con la app principal.
+
+El diario y las Perspectivas básicas son gratis. MoodMargins Plus ofrece las mismas funciones premium mediante suscripciones semanales, mensuales o anuales de renovación automática. Los temas premium individuales son compras permanentes no consumibles. Los precios se muestran antes de comprar y pueden variar según la región. Gestiona o cancela tus suscripciones en los ajustes de tu cuenta de Apple. Cancelar Plus no elimina tus entradas ni los temas comprados por separado.
+
+MoodMargins es una herramienta de reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.
+
+Política de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy
+Condiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Soporte: transfinite@transfinite.us

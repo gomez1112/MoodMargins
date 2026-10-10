@@ -1,79 +1,32 @@
-//
-//  FoundationMoodTaggingProvider.swift
-//  MoodMargins
-//
-//  Created by Gerard Gomez on 6/28/26.
-//
-
 import Foundation
-
-#if canImport(FoundationModels)
 import FoundationModels
-#endif
 
 struct FoundationMoodTaggingProvider: Sendable {
-    func generateSuggestions(
-        for request: MoodTaggingRequest,
-        onPartial: @MainActor @Sendable ([String]) -> Void
-    ) async throws {
+    func generateSuggestions(for request: MoodTaggingRequest, onPartial: @MainActor @Sendable ([String]) -> Void) async throws {
         let note = request.note.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard note.count >= 12 else {
+        guard note.count >= 12 else { onPartial([]); return }
+        try await FoundationModelFallback.run(preferred: request.modelChoice) { choice in
+            // A local retry replaces any partial cloud output rather than mixing responses.
             onPartial([])
-            return
+            try await generateSuggestions(for: request, using: choice, onPartial: onPartial)
         }
-
-#if canImport(FoundationModels)
-        let model = SystemLanguageModel(useCase: .contentTagging)
-        let availability = FoundationModelsAvailability.current(for: model)
-        guard availability.isAvailable else {
-            onPartial(MoodTagFallbackSuggester.suggestions(for: request))
-            return
-        }
-
-        do {
-            let session = LanguageModelSession(
-                model: model,
-                instructions: Instructions(Self.instructions)
-            )
-
-            let stream = session.streamResponse(
-                to: Prompt(note),
-                generating: MoodTaggingResult.self,
-                options: GenerationOptions(samplingMode: .greedy, maximumResponseTokens: 80)
-            )
-
-            var didEmitSuggestions = false
-            for try await partialResponse in stream {
-                guard !Task.isCancelled else { return }
-                let suggestions = MoodTagNormalizer.normalizedTags(
-                    partialResponse.content.tags ?? [],
-                    excluding: request.selectedTags,
-                    limit: request.maximumTagCount
-                )
-
-                guard !suggestions.isEmpty else { continue }
-                didEmitSuggestions = true
-                onPartial(suggestions)
-            }
-
-            if !didEmitSuggestions {
-                onPartial(MoodTagFallbackSuggester.suggestions(for: request))
-            }
-        } catch {
-            guard !Task.isCancelled else { return }
-            onPartial(MoodTagFallbackSuggester.suggestions(for: request))
-        }
-#else
-        onPartial(MoodTagFallbackSuggester.suggestions(for: request))
-#endif
     }
 
-    private static var instructions: String {
-        switch FoundationModelsPromptVersion.current {
-        case .model26Initial:
-            return "Provide up to four concise lowercase diary tags. Focus on emotions, topics, and daily routines. Do not include medical or diagnostic terms."
-        case .model26Point4OrNewer:
-            return "Provide up to four concise lowercase diary tags from this entry. Prefer emotions, topics, and routines. Avoid diagnosis, advice, and full sentences."
+    private func generateSuggestions(for request: MoodTaggingRequest, using choice: FoundationModelChoice, onPartial: @MainActor @Sendable ([String]) -> Void) async throws {
+        let session = try await FoundationModelService.session(
+            choice: choice,
+            contentTagging: true,
+            instructions: "Provide up to four concise lowercase diary tags from this entry. Prefer emotions, topics, and routines. Avoid diagnosis, advice, and full sentences."
+        )
+        let stream = session.streamResponse(
+            to: Prompt(request.note),
+            generating: MoodTaggingResult.self,
+            options: GenerationOptions(samplingMode: .greedy, maximumResponseTokens: 80),
+            contextOptions: ContextOptions(includeSchemaInPrompt: true)
+        )
+        for try await partial in stream {
+            try Task.checkCancellation()
+            onPartial(MoodTagNormalizer.normalizedTags(partial.content.tags ?? [], excluding: request.selectedTags, limit: request.maximumTagCount))
         }
     }
 }

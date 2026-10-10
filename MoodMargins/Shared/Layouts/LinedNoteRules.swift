@@ -25,14 +25,3 @@ struct LinedNoteRules: View {
         .allowsHitTesting(false)
     }
 }
-
-#Preview {
-    LinedNoteRules(
-        lines: 5,
-        rowHeight: 31,
-        firstRuleOffset: 27,
-        lineColor: PastelTheme.lavenderLine
-    )
-    .padding()
-    .background(PastelTheme.background)
-}

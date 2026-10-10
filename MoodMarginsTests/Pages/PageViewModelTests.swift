@@ -11,9 +11,9 @@ import XCTest
 
 @MainActor
 final class PageViewModelTests: XCTestCase {
-    override func tearDown() {
-        TestFactory.resetInMemoryModelContainers()
-        super.tearDown()
+    override func tearDown() async throws {
+        await MainActor.run { TestFactory.resetInMemoryModelContainers() }
+        try await super.tearDown()
     }
 
     func testSelectedTagsPreserveGroupedOrderAndAppendCustomTags() {

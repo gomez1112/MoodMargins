@@ -1,0 +1,4780 @@
+{
+  "appId": "6819079849",
+  "derived": {
+    "appStoreVersionScreenshotSets": {
+      "IOS:1.0:ar-SA:APP_IPAD_PRO_3GEN_129": {
+        "screenshots": [
+          {
+            "fileName": "01-every-feeling.png",
+            "fileSize": 1919916,
+            "id": "13c00019-672e-86a9-803d-73bd27164232",
+            "sourceFileChecksum": "5b2d853c475f7a5e7fe7a764eb17f5a7"
+          },
+          {
+            "fileName": "02-autosave.png",
+            "fileSize": 2311010,
+            "id": "b1c00019-672e-86a9-8011-882537184552",
+            "sourceFileChecksum": "befc53608891b688d2d85bb5f37025c9"
+          },
+          {
+            "fileName": "03-mood-trends.png",
+            "fileSize": 1402267,
+            "id": "a3800019-672e-86a9-8031-e8b2c63cc692",
+            "sourceFileChecksum": "7017b1493630173f239d68cf9d5d273e"
+          },
+          {
+            "fileName": "04-mood-stickers.png",
+            "fileSize": 1413194,
+            "id": "77800019-672e-86a9-803f-3909564bb170",
+            "sourceFileChecksum": "daaa56af1a5ea802eacc12cf8116627c"
+          },
+          {
+            "fileName": "05-premium-themes.png",
+            "fileSize": 818053,
+            "id": "b6400019-672e-86a9-8004-3092ae3bd1cc",
+            "sourceFileChecksum": "9b75ff7f5bd524523ec67a008303ea71"
+          },
+          {
+            "fileName": "06-dark-appearance.png",
+            "fileSize": 1337842,
+            "id": "8e000019-672e-86a9-8021-cdb051b1010c",
+            "sourceFileChecksum": "541c35f3e3699679157bf04bdd85bef8"
+          }
+        ],
+        "setID": "07c314a7-87c9-4eac-a792-11e364b1c009"
+      },
+      "IOS:1.0:ar-SA:APP_IPHONE_67": {
+        "screenshots": [
+          {
+            "fileName": "01-every-feeling.png",
+            "fileSize": 1564616,
+            "id": "96c00019-672e-86a9-8015-9ffaa5150df7",
+            "sourceFileChecksum": "49a9de33c06e1dde46ff2a62705fe5dd"
+          },
+          {
+            "fileName": "02-autosave.png",
+            "fileSize": 1910114,
+            "id": "87c00019-672e-86a9-8017-4c6f8bbf8646",
+            "sourceFileChecksum": "61efb4e45b02853ffd03c3e42bf764c9"
+          },
+          {
+            "fileName": "03-mood-trends.png",
+            "fileSize": 1245378,
+            "id": "eac00019-672e-86a9-803b-141cdd6d647e",
+            "sourceFileChecksum": "fb572b124cc612f33f140cdc5a684369"
+          },
+          {
+            "fileName": "04-mood-stickers.png",
+            "fileSize": 1295860,
+            "id": "7cc00019-672e-86a9-8001-a205a3f5d54e",
+            "sourceFileChecksum": "c5a806a10748f84f141dd445d5043cbe"
+          },
+          {
+            "fileName": "05-premium-themes.png",
+            "fileSize": 730088,
+            "id": "fdc00019-672e-86a9-8009-95ad4aeb05bc",
+            "sourceFileChecksum": "5f1793b942d6d90ccea621ef3f149b00"
+          },
+          {
+            "fileName": "06-dark-appearance.png",
+            "fileSize": 1194175,
+            "id": "27000019-672e-86a9-803d-8b05f1f93107",
+            "sourceFileChecksum": "5b3fc7087198a6e974db65d40c867a5f"
+          }
+        ],
+        "setID": "2673d167-7cac-4eb9-9cb1-641fc5804892"
+      },
+      "IOS:1.0:ar-SA:APP_WATCH_SERIES_10": {
+        "screenshots": [
+          {
+            "fileName": "01-check-in.png",
+            "fileSize": 26159,
+            "id": "86400019-672e-86a9-803b-0a55bfa3c588",
+            "sourceFileChecksum": "2e8c708fac0efbb96edd52c5cbf24446"
+          }
+        ],
+        "setID": "9347561f-dcf8-427a-b624-9dd2cb61c6eb"
+      },
+      "IOS:1.0:en-US:APP_IPAD_PRO_3GEN_129": {
+        "screenshots": [
+          {
+            "fileName": "01-every-feeling.png",
+            "fileSize": 1959529,
+            "id": "ccc00019-672e-86a9-803a-e2aacca8e24f",
+            "sourceFileChecksum": "ec5bee7494d7b3b3dedf184474be35af"
+          },
+          {
+            "fileName": "02-autosave.png",
+            "fileSize": 2319156,
+            "id": "10400019-672e-86a9-803f-92602c103d78",
+            "sourceFileChecksum": "0265660c8c0c03f97ae18bc65189a53d"
+          },
+          {
+            "fileName": "03-mood-trends.png",
+            "fileSize": 1432401,
+            "id": "dbc00019-672e-86a9-8012-9f91e0a9ee77",
+            "sourceFileChecksum": "b2df26bc173ff74d0fc80af8d68df4f4"
+          },
+          {
+            "fileName": "04-mood-stickers.png",
+            "fileSize": 1470545,
+            "id": "ef000019-672e-86a9-800d-cf63655f1a7a",
+            "sourceFileChecksum": "5ba283c7386a443c3491e5f1d0cb1589"
+          },
+          {
+            "fileName": "05-premium-themes.png",
+            "fileSize": 822116,
+            "id": "8fc00019-672e-86a9-803c-47fdb2c2e443",
+            "sourceFileChecksum": "4ef9268101bb85789ff14b3ac5eacd5b"
+          },
+          {
+            "fileName": "06-dark-appearance.png",
+            "fileSize": 1371805,
+            "id": "d4000019-672e-86a9-803c-ef9fc169eeeb",
+            "sourceFileChecksum": "f8fd2247c62e5401dd5d1c524bc6bdcc"
+          }
+        ],
+        "setID": "3a499f1c-5479-44db-8679-b76e51b26e82"
+      },
+      "IOS:1.0:en-US:APP_IPHONE_67": {
+        "screenshots": [
+          {
+            "fileName": "01-every-feeling.png",
+            "fileSize": 1600664,
+            "id": "e6400019-672e-86a9-8005-51380cfc7ef9",
+            "sourceFileChecksum": "8eac1841a1d42f5f518db747b6b9f5bb"
+          },
+          {
+            "fileName": "02-autosave.png",
+            "fileSize": 1964426,
+            "id": "5b000019-672e-86a9-801c-ab1e7360b349",
+            "sourceFileChecksum": "ed2e494ef8877f2528f95e555b23b1e5"
+          },
+          {
+            "fileName": "03-mood-trends.png",
+            "fileSize": 1260402,
+            "id": "ed800019-672e-86a9-8018-ac1acc3de56e",
+            "sourceFileChecksum": "5fd97f627fd07a0de344663e86be2118"
+          },
+          {
+            "fileName": "04-mood-stickers.png",
+            "fileSize": 1328096,
+            "id": "18c00019-672e-86a9-802a-a150a55828df",
+            "sourceFileChecksum": "a84de5ab035356f4b9bac27149a4f4c2"
+          },
+          {
+            "fileName": "05-premium-themes.png",
+            "fileSize": 733243,
+            "id": "af400019-672e-86a9-800c-771e847290c9",
+            "sourceFileChecksum": "7b94bed2620ff399fcfd4abaf34c53fc"
+          },
+          {
+            "fileName": "06-dark-appearance.png",
+            "fileSize": 1212246,
+            "id": "4bc00019-672e-86a9-8012-4f92c297caa1",
+            "sourceFileChecksum": "e004bcdbdbfb9e6693c4e2ad7326fe50"
+          }
+        ],
+        "setID": "f33524f9-9bcd-4547-a45c-f3e8fbabdd66"
+      },
+      "IOS:1.0:en-US:APP_WATCH_SERIES_10": {
+        "screenshots": [
+          {
+            "fileName": "01-check-in.png",
+            "fileSize": 28389,
+            "id": "a8800019-672e-86a9-802c-3445cdd380e2",
+            "sourceFileChecksum": "51f2c6cd11d4e9d34cba01435479734d"
+          }
+        ],
+        "setID": "74684410-c889-4072-abe9-0baa080c6e55"
+      },
+      "IOS:1.0:es-ES:APP_IPAD_PRO_3GEN_129": {
+        "screenshots": [
+          {
+            "fileName": "01-every-feeling.png",
+            "fileSize": 1994625,
+            "id": "5b000019-672e-86a9-8027-d444ddb1ed82",
+            "sourceFileChecksum": "57d91e23d3ed0c988f45b7719cf6eaf4"
+          },
+          {
+            "fileName": "02-autosave.png",
+            "fileSize": 2372231,
+            "id": "39c00019-672e-86a9-8013-c65c8ed3bff6",
+            "sourceFileChecksum": "ac05b880476a266ed97fa29226f0c5b1"
+          },
+          {
+            "fileName": "03-mood-trends.png",
+            "fileSize": 1459772,
+            "id": "ff000019-672e-86a9-800b-0168b79d0661",
+            "sourceFileChecksum": "d0966808a0cc32551b8289a723dbf7a5"
+          },
+          {
+            "fileName": "04-mood-stickers.png",
+            "fileSize": 1501683,
+            "id": "ff400019-672e-86a9-801e-1175e3294543",
+            "sourceFileChecksum": "a77c94427024010c13177853e63df9af"
+          },
+          {
+            "fileName": "05-premium-themes.png",
+            "fileSize": 840607,
+            "id": "87c00019-672e-86a9-8033-70d0fc665ffb",
+            "sourceFileChecksum": "6985f4e9ac9eb87656d3391fef64d0c6"
+          },
+          {
+            "fileName": "06-dark-appearance.png",
+            "fileSize": 1391361,
+            "id": "8c000019-672e-86a9-803e-06092195bdfb",
+            "sourceFileChecksum": "634641512338d76bdccf8a9ffa3b461d"
+          }
+        ],
+        "setID": "5f53237f-c76e-428f-bb77-ea2e015c8a50"
+      },
+      "IOS:1.0:es-ES:APP_IPHONE_67": {
+        "screenshots": [
+          {
+            "fileName": "01-every-feeling.png",
+            "fileSize": 1639520,
+            "id": "4f000019-672e-86a9-8028-c9a56d68d7fa",
+            "sourceFileChecksum": "a4588b1206a4912eb28270cc7cc848d5"
+          },
+          {
+            "fileName": "02-autosave.png",
+            "fileSize": 1988461,
+            "id": "cb800019-672e-86a9-8030-01d4fb9adb96",
+            "sourceFileChecksum": "811889223d955e0f70169dc2bbf72f0e"
+          },
+          {
+            "fileName": "03-mood-trends.png",
+            "fileSize": 1294309,
+            "id": "a6000019-672e-86a9-800a-4aedd01c48e8",
+            "sourceFileChecksum": "5a97c66adc3dcb22fb6b8d3fb9ad2456"
+          },
+          {
+            "fileName": "04-mood-stickers.png",
+            "fileSize": 1400589,
+            "id": "22800019-672e-86a9-801c-969d3c28bf8a",
+            "sourceFileChecksum": "73211875ee7a6d79e3bd03aba4cce5b4"
+          },
+          {
+            "fileName": "05-premium-themes.png",
+            "fileSize": 755054,
+            "id": "24c00019-672e-86a9-803e-9d6e9683c766",
+            "sourceFileChecksum": "e30978ed03b1f6ed55df4dfd991f0b66"
+          },
+          {
+            "fileName": "06-dark-appearance.png",
+            "fileSize": 1245129,
+            "id": "2a800019-672e-86a9-802a-a042868be0c7",
+            "sourceFileChecksum": "9c299b09da8d9662bbb60a1e5a738372"
+          }
+        ],
+        "setID": "c682889b-fafd-493c-b70f-6102704fe74d"
+      },
+      "IOS:1.0:es-ES:APP_WATCH_SERIES_10": {
+        "screenshots": [
+          {
+            "fileName": "01-check-in.png",
+            "fileSize": 30620,
+            "id": "a9c00019-672e-86a9-8021-a38219418c81",
+            "sourceFileChecksum": "82e05950cb84afde8c85d5ac622b0225"
+          }
+        ],
+        "setID": "863fba4b-4a9e-4338-b270-4244bdfebc0a"
+      },
+      "MAC_OS:1.0:ar-SA:APP_DESKTOP": {
+        "screenshots": [
+          {
+            "fileName": "01-every-feeling.png",
+            "fileSize": 1212554,
+            "id": "5e800019-672e-86a9-8035-c52630217c4a",
+            "sourceFileChecksum": "fadbfa0d840a0847aade8b6b777845dd"
+          },
+          {
+            "fileName": "02-autosave.png",
+            "fileSize": 1442574,
+            "id": "22400019-672e-86a9-8003-4d03754c0911",
+            "sourceFileChecksum": "4550fd263685a195d11527825a298b17"
+          },
+          {
+            "fileName": "03-mood-trends.png",
+            "fileSize": 883119,
+            "id": "ce800019-672e-86a9-8011-71f5e7722f4d",
+            "sourceFileChecksum": "2f978124b94a3e12c17b40e00115c776"
+          },
+          {
+            "fileName": "04-mood-stickers.png",
+            "fileSize": 909894,
+            "id": "89c00019-672e-86a9-8002-a5d100423926",
+            "sourceFileChecksum": "dbc60d87977cc02aa506c7546c1c802b"
+          },
+          {
+            "fileName": "05-premium-themes.png",
+            "fileSize": 588290,
+            "id": "7c000019-672e-86a9-8038-92e20b20369b",
+            "sourceFileChecksum": "52f9ceb94a39abbb375deab2b5aadddb"
+          },
+          {
+            "fileName": "06-dark-appearance.png",
+            "fileSize": 813612,
+            "id": "38000019-672e-86a9-8016-78426c949b58",
+            "sourceFileChecksum": "0271c696fd53b0bf047c777b15c83d9e"
+          }
+        ],
+        "setID": "f1179cf8-0af7-4bc8-aa7e-f936f9544312"
+      },
+      "MAC_OS:1.0:en-US:APP_DESKTOP": {
+        "screenshots": [
+          {
+            "fileName": "01-every-feeling.png",
+            "fileSize": 1227004,
+            "id": "17c00019-672e-86a9-8022-3dddbe487374",
+            "sourceFileChecksum": "cf044d80bdce8636471e45de00518d2e"
+          },
+          {
+            "fileName": "02-autosave.png",
+            "fileSize": 1433574,
+            "id": "04000019-672e-86a9-8004-bd1ce4851b50",
+            "sourceFileChecksum": "0e31807118eb1d8e34f5fb85e882ddd7"
+          },
+          {
+            "fileName": "03-mood-trends.png",
+            "fileSize": 886685,
+            "id": "87c00019-672e-86a9-8039-65667f1cbfd7",
+            "sourceFileChecksum": "4b10fc0237c112144523512218d03201"
+          },
+          {
+            "fileName": "04-mood-stickers.png",
+            "fileSize": 923640,
+            "id": "d6000019-672e-86a9-8016-38515314158c",
+            "sourceFileChecksum": "cafb15a148aaf3375281b85d7fbfe9e6"
+          },
+          {
+            "fileName": "05-premium-themes.png",
+            "fileSize": 601037,
+            "id": "3a400019-672e-86a9-800f-8ed020a5998c",
+            "sourceFileChecksum": "be4d7736f788eb0bc13605f117600541"
+          },
+          {
+            "fileName": "06-dark-appearance.png",
+            "fileSize": 817930,
+            "id": "5fc00019-672e-86a9-801d-eb774a4ecb76",
+            "sourceFileChecksum": "87d2c53580c3242744f7e332a43b1bbc"
+          }
+        ],
+        "setID": "a431b7e6-5dae-40a7-b5fd-3b4df1daf24a"
+      },
+      "MAC_OS:1.0:es-ES:APP_DESKTOP": {
+        "screenshots": [
+          {
+            "fileName": "01-every-feeling.png",
+            "fileSize": 1253681,
+            "id": "44400019-672e-86a9-8010-7c01fb83ff0e",
+            "sourceFileChecksum": "6c69f3cea4b943f98eb2f965874283ec"
+          },
+          {
+            "fileName": "02-autosave.png",
+            "fileSize": 1490559,
+            "id": "74000019-672e-86a9-8038-defbece06ed5",
+            "sourceFileChecksum": "3f117413893baf8525026022fe0c8a25"
+          },
+          {
+            "fileName": "03-mood-trends.png",
+            "fileSize": 916412,
+            "id": "86c00019-672e-86a9-803e-dad50186bff1",
+            "sourceFileChecksum": "1e5d234acdfb0ec85e5f4c76eae72d16"
+          },
+          {
+            "fileName": "04-mood-stickers.png",
+            "fileSize": 948849,
+            "id": "b8000019-672e-86a9-802f-8c2271022e4b",
+            "sourceFileChecksum": "33d09e4475194ee02d47d525e2b3b58c"
+          },
+          {
+            "fileName": "05-premium-themes.png",
+            "fileSize": 609735,
+            "id": "ee800019-672e-86a9-803a-cae36fda0ec5",
+            "sourceFileChecksum": "e8df79ce2921afcb1962314607071eb8"
+          },
+          {
+            "fileName": "06-dark-appearance.png",
+            "fileSize": 842034,
+            "id": "8f400019-672e-86a9-801f-21ee25dcfa37",
+            "sourceFileChecksum": "3ab44b7bf92b8a60f743d8aec3df73b1"
+          }
+        ],
+        "setID": "a77efdec-2172-47cb-9023-fb877ff8acea"
+      }
+    },
+    "inAppPurchasePricing": {
+      "com.transfinite.MoodMargins.theme.botanical": {
+        "automaticPrices": [
+          {
+            "customerPrice": "1.99",
+            "territory": "AFG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AGO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AIA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ALB"
+          },
+          {
+            "customerPrice": "7.99",
+            "territory": "ARE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ARG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ARM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ATG"
+          },
+          {
+            "customerPrice": "2.99",
+            "territory": "AUS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AUT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AZE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BEL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BEN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BFA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BGR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BHR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BHS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BIH"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BLR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BLZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BMU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BOL"
+          },
+          {
+            "customerPrice": "12.9",
+            "territory": "BRA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BRB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BRN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BTN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BWA"
+          },
+          {
+            "customerPrice": "2.99",
+            "territory": "CAN"
+          },
+          {
+            "customerPrice": "2",
+            "territory": "CHE"
+          },
+          {
+            "customerPrice": "1990",
+            "territory": "CHL"
+          },
+          {
+            "customerPrice": "15",
+            "territory": "CHN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CIV"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CMR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "COD"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "COG"
+          },
+          {
+            "customerPrice": "9900",
+            "territory": "COL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CPV"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CRI"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CYM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CYP"
+          },
+          {
+            "customerPrice": "49",
+            "territory": "CZE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DEU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DMA"
+          },
+          {
+            "customerPrice": "19",
+            "territory": "DNK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DOM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DZA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ECU"
+          },
+          {
+            "customerPrice": "99.99",
+            "territory": "EGY"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ESP"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "EST"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FIN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FJI"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FRA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FSM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GAB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GBR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GEO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GHA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GMB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GNB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GRC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GRD"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GTM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GUY"
+          },
+          {
+            "customerPrice": "18",
+            "territory": "HKG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "HND"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "HRV"
+          },
+          {
+            "customerPrice": "999",
+            "territory": "HUN"
+          },
+          {
+            "customerPrice": "39000",
+            "territory": "IDN"
+          },
+          {
+            "customerPrice": "199",
+            "territory": "IND"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "IRL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "IRQ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ISL"
+          },
+          {
+            "customerPrice": "4.9",
+            "territory": "ISR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ITA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "JAM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "JOR"
+          },
+          {
+            "customerPrice": "300",
+            "territory": "JPN"
+          },
+          {
+            "customerPrice": "999",
+            "territory": "KAZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KEN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KGZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KHM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KNA"
+          },
+          {
+            "customerPrice": "3300",
+            "territory": "KOR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KWT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LAO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LBN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LBR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LBY"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LCA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LKA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LTU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LUX"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LVA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MAC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MAR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MDA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MDG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MDV"
+          },
+          {
+            "customerPrice": "39",
+            "territory": "MEX"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MKD"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MLI"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MLT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MMR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MNE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MNG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MOZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MRT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MSR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MUS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MWI"
+          },
+          {
+            "customerPrice": "9.9",
+            "territory": "MYS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NAM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NER"
+          },
+          {
+            "customerPrice": "3200",
+            "territory": "NGA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NIC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NLD"
+          },
+          {
+            "customerPrice": "29",
+            "territory": "NOR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NPL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NRU"
+          },
+          {
+            "customerPrice": "3.99",
+            "territory": "NZL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "OMN"
+          },
+          {
+            "customerPrice": "500",
+            "territory": "PAK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PAN"
+          },
+          {
+            "customerPrice": "9.9",
+            "territory": "PER"
+          },
+          {
+            "customerPrice": "129",
+            "territory": "PHL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PLW"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PNG"
+          },
+          {
+            "customerPrice": "9.99",
+            "territory": "POL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PRT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PRY"
+          },
+          {
+            "customerPrice": "7.99",
+            "territory": "QAT"
+          },
+          {
+            "customerPrice": "9.99",
+            "territory": "ROU"
+          },
+          {
+            "customerPrice": "199",
+            "territory": "RUS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "RWA"
+          },
+          {
+            "customerPrice": "9.99",
+            "territory": "SAU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SEN"
+          },
+          {
+            "customerPrice": "2.98",
+            "territory": "SGP"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SLB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SLE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SLV"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SRB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "STP"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SUR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SVK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SVN"
+          },
+          {
+            "customerPrice": "29",
+            "territory": "SWE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SWZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SYC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TCA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TCD"
+          },
+          {
+            "customerPrice": "79",
+            "territory": "THA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TJK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TKM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TON"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TTO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TUN"
+          },
+          {
+            "customerPrice": "99.99",
+            "territory": "TUR"
+          },
+          {
+            "customerPrice": "60",
+            "territory": "TWN"
+          },
+          {
+            "customerPrice": "5900",
+            "territory": "TZA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "UGA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "UKR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "URY"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "UZB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VCT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VEN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VGB"
+          },
+          {
+            "customerPrice": "59000",
+            "territory": "VNM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VUT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "XKS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "YEM"
+          },
+          {
+            "customerPrice": "39.99",
+            "territory": "ZAF"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ZMB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ZWE"
+          }
+        ]
+      },
+      "com.transfinite.MoodMargins.theme.coastal": {
+        "automaticPrices": [
+          {
+            "customerPrice": "1.99",
+            "territory": "AFG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AGO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AIA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ALB"
+          },
+          {
+            "customerPrice": "7.99",
+            "territory": "ARE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ARG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ARM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ATG"
+          },
+          {
+            "customerPrice": "2.99",
+            "territory": "AUS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AUT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AZE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BEL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BEN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BFA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BGR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BHR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BHS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BIH"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BLR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BLZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BMU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BOL"
+          },
+          {
+            "customerPrice": "12.9",
+            "territory": "BRA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BRB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BRN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BTN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BWA"
+          },
+          {
+            "customerPrice": "2.99",
+            "territory": "CAN"
+          },
+          {
+            "customerPrice": "2",
+            "territory": "CHE"
+          },
+          {
+            "customerPrice": "1990",
+            "territory": "CHL"
+          },
+          {
+            "customerPrice": "15",
+            "territory": "CHN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CIV"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CMR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "COD"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "COG"
+          },
+          {
+            "customerPrice": "9900",
+            "territory": "COL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CPV"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CRI"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CYM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CYP"
+          },
+          {
+            "customerPrice": "49",
+            "territory": "CZE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DEU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DMA"
+          },
+          {
+            "customerPrice": "19",
+            "territory": "DNK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DOM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DZA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ECU"
+          },
+          {
+            "customerPrice": "99.99",
+            "territory": "EGY"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ESP"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "EST"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FIN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FJI"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FRA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FSM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GAB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GBR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GEO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GHA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GMB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GNB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GRC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GRD"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GTM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GUY"
+          },
+          {
+            "customerPrice": "18",
+            "territory": "HKG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "HND"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "HRV"
+          },
+          {
+            "customerPrice": "999",
+            "territory": "HUN"
+          },
+          {
+            "customerPrice": "39000",
+            "territory": "IDN"
+          },
+          {
+            "customerPrice": "199",
+            "territory": "IND"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "IRL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "IRQ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ISL"
+          },
+          {
+            "customerPrice": "4.9",
+            "territory": "ISR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ITA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "JAM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "JOR"
+          },
+          {
+            "customerPrice": "300",
+            "territory": "JPN"
+          },
+          {
+            "customerPrice": "999",
+            "territory": "KAZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KEN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KGZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KHM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KNA"
+          },
+          {
+            "customerPrice": "3300",
+            "territory": "KOR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KWT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LAO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LBN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LBR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LBY"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LCA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LKA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LTU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LUX"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LVA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MAC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MAR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MDA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MDG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MDV"
+          },
+          {
+            "customerPrice": "39",
+            "territory": "MEX"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MKD"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MLI"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MLT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MMR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MNE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MNG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MOZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MRT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MSR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MUS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MWI"
+          },
+          {
+            "customerPrice": "9.9",
+            "territory": "MYS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NAM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NER"
+          },
+          {
+            "customerPrice": "3200",
+            "territory": "NGA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NIC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NLD"
+          },
+          {
+            "customerPrice": "29",
+            "territory": "NOR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NPL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NRU"
+          },
+          {
+            "customerPrice": "3.99",
+            "territory": "NZL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "OMN"
+          },
+          {
+            "customerPrice": "500",
+            "territory": "PAK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PAN"
+          },
+          {
+            "customerPrice": "9.9",
+            "territory": "PER"
+          },
+          {
+            "customerPrice": "129",
+            "territory": "PHL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PLW"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PNG"
+          },
+          {
+            "customerPrice": "9.99",
+            "territory": "POL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PRT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PRY"
+          },
+          {
+            "customerPrice": "7.99",
+            "territory": "QAT"
+          },
+          {
+            "customerPrice": "9.99",
+            "territory": "ROU"
+          },
+          {
+            "customerPrice": "199",
+            "territory": "RUS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "RWA"
+          },
+          {
+            "customerPrice": "9.99",
+            "territory": "SAU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SEN"
+          },
+          {
+            "customerPrice": "2.98",
+            "territory": "SGP"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SLB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SLE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SLV"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SRB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "STP"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SUR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SVK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SVN"
+          },
+          {
+            "customerPrice": "29",
+            "territory": "SWE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SWZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SYC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TCA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TCD"
+          },
+          {
+            "customerPrice": "79",
+            "territory": "THA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TJK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TKM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TON"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TTO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TUN"
+          },
+          {
+            "customerPrice": "99.99",
+            "territory": "TUR"
+          },
+          {
+            "customerPrice": "60",
+            "territory": "TWN"
+          },
+          {
+            "customerPrice": "5900",
+            "territory": "TZA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "UGA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "UKR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "URY"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "UZB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VCT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VEN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VGB"
+          },
+          {
+            "customerPrice": "59000",
+            "territory": "VNM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VUT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "XKS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "YEM"
+          },
+          {
+            "customerPrice": "39.99",
+            "territory": "ZAF"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ZMB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ZWE"
+          }
+        ]
+      },
+      "com.transfinite.MoodMargins.theme.sunset": {
+        "automaticPrices": [
+          {
+            "customerPrice": "1.99",
+            "territory": "AFG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AGO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AIA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ALB"
+          },
+          {
+            "customerPrice": "7.99",
+            "territory": "ARE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ARG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ARM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ATG"
+          },
+          {
+            "customerPrice": "2.99",
+            "territory": "AUS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AUT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "AZE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BEL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BEN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BFA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BGR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BHR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BHS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BIH"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BLR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BLZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BMU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BOL"
+          },
+          {
+            "customerPrice": "12.9",
+            "territory": "BRA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BRB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BRN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BTN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "BWA"
+          },
+          {
+            "customerPrice": "2.99",
+            "territory": "CAN"
+          },
+          {
+            "customerPrice": "2",
+            "territory": "CHE"
+          },
+          {
+            "customerPrice": "1990",
+            "territory": "CHL"
+          },
+          {
+            "customerPrice": "15",
+            "territory": "CHN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CIV"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CMR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "COD"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "COG"
+          },
+          {
+            "customerPrice": "9900",
+            "territory": "COL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CPV"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CRI"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CYM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "CYP"
+          },
+          {
+            "customerPrice": "49",
+            "territory": "CZE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DEU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DMA"
+          },
+          {
+            "customerPrice": "19",
+            "territory": "DNK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DOM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "DZA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ECU"
+          },
+          {
+            "customerPrice": "99.99",
+            "territory": "EGY"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ESP"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "EST"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FIN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FJI"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FRA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "FSM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GAB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GBR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GEO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GHA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GMB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GNB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GRC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GRD"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GTM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "GUY"
+          },
+          {
+            "customerPrice": "18",
+            "territory": "HKG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "HND"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "HRV"
+          },
+          {
+            "customerPrice": "999",
+            "territory": "HUN"
+          },
+          {
+            "customerPrice": "39000",
+            "territory": "IDN"
+          },
+          {
+            "customerPrice": "199",
+            "territory": "IND"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "IRL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "IRQ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ISL"
+          },
+          {
+            "customerPrice": "4.9",
+            "territory": "ISR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ITA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "JAM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "JOR"
+          },
+          {
+            "customerPrice": "300",
+            "territory": "JPN"
+          },
+          {
+            "customerPrice": "999",
+            "territory": "KAZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KEN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KGZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KHM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KNA"
+          },
+          {
+            "customerPrice": "3300",
+            "territory": "KOR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "KWT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LAO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LBN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LBR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LBY"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LCA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LKA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LTU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LUX"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "LVA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MAC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MAR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MDA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MDG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MDV"
+          },
+          {
+            "customerPrice": "39",
+            "territory": "MEX"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MKD"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MLI"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MLT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MMR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MNE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MNG"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MOZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MRT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MSR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MUS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "MWI"
+          },
+          {
+            "customerPrice": "9.9",
+            "territory": "MYS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NAM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NER"
+          },
+          {
+            "customerPrice": "3200",
+            "territory": "NGA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NIC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NLD"
+          },
+          {
+            "customerPrice": "29",
+            "territory": "NOR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NPL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "NRU"
+          },
+          {
+            "customerPrice": "3.99",
+            "territory": "NZL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "OMN"
+          },
+          {
+            "customerPrice": "500",
+            "territory": "PAK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PAN"
+          },
+          {
+            "customerPrice": "9.9",
+            "territory": "PER"
+          },
+          {
+            "customerPrice": "129",
+            "territory": "PHL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PLW"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PNG"
+          },
+          {
+            "customerPrice": "9.99",
+            "territory": "POL"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PRT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "PRY"
+          },
+          {
+            "customerPrice": "7.99",
+            "territory": "QAT"
+          },
+          {
+            "customerPrice": "9.99",
+            "territory": "ROU"
+          },
+          {
+            "customerPrice": "199",
+            "territory": "RUS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "RWA"
+          },
+          {
+            "customerPrice": "9.99",
+            "territory": "SAU"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SEN"
+          },
+          {
+            "customerPrice": "2.98",
+            "territory": "SGP"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SLB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SLE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SLV"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SRB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "STP"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SUR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SVK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SVN"
+          },
+          {
+            "customerPrice": "29",
+            "territory": "SWE"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SWZ"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "SYC"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TCA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TCD"
+          },
+          {
+            "customerPrice": "79",
+            "territory": "THA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TJK"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TKM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TON"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TTO"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "TUN"
+          },
+          {
+            "customerPrice": "99.99",
+            "territory": "TUR"
+          },
+          {
+            "customerPrice": "60",
+            "territory": "TWN"
+          },
+          {
+            "customerPrice": "5900",
+            "territory": "TZA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "UGA"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "UKR"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "URY"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "UZB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VCT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VEN"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VGB"
+          },
+          {
+            "customerPrice": "59000",
+            "territory": "VNM"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "VUT"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "XKS"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "YEM"
+          },
+          {
+            "customerPrice": "39.99",
+            "territory": "ZAF"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ZMB"
+          },
+          {
+            "customerPrice": "1.99",
+            "territory": "ZWE"
+          }
+        ]
+      }
+    },
+    "inAppPurchaseReviewScreenshots": {
+      "com.transfinite.MoodMargins.theme.botanical": {
+        "fileName": "SOURCE",
+        "fileSize": 540962,
+        "id": "761d29a8-f9b8-418d-bf82-662d74dcca9c",
+        "renditionChecksum": "3808cd06807fdc7a2175f82dfd4ec9b0",
+        "sourceFileChecksum": "2563c3cb9ef9ee2b102a1c729c3e7dcb"
+      },
+      "com.transfinite.MoodMargins.theme.coastal": {
+        "fileName": "SOURCE",
+        "fileSize": 523173,
+        "id": "ea3fbbb8-133e-4353-bee3-699096f4ccf2",
+        "renditionChecksum": "9084134d605cdad33b9eb4a5819784ff",
+        "sourceFileChecksum": "66e159a6584ecbb559530ae3df7c7355"
+      },
+      "com.transfinite.MoodMargins.theme.sunset": {
+        "fileName": "SOURCE",
+        "fileSize": 478892,
+        "id": "8c5769ca-9f3e-49cd-98d6-72e567852489",
+        "renditionChecksum": "021af7ff4723232039f4d64756b01296",
+        "sourceFileChecksum": "78ab4b7054f6a58ec338c7a5607a9b20"
+      }
+    },
+    "pricing": {
+      "automaticPrices": [
+        {
+          "customerPrice": "0",
+          "territory": "AFG"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "AGO"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "AIA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ALB"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ARE"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ARG"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ARM"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ATG"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "AUS"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "AUT"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "AZE"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BEL"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BEN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BFA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BGR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BHR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BHS"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BIH"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BLR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BLZ"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BMU"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BOL"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BRA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BRB"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BRN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BTN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "BWA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "CAN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "CHE"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "CHL"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "CHN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "CIV"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "CMR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "COD"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "COG"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "COL"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "CPV"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "CRI"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "CYM"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "CYP"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "CZE"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "DEU"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "DMA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "DNK"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "DOM"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "DZA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ECU"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "EGY"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ESP"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "EST"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "FIN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "FJI"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "FRA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "FSM"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "GAB"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "GBR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "GEO"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "GHA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "GMB"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "GNB"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "GRC"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "GRD"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "GTM"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "GUY"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "HKG"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "HND"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "HRV"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "HUN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "IDN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "IND"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "IRL"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "IRQ"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ISL"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ISR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ITA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "JAM"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "JOR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "JPN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "KAZ"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "KEN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "KGZ"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "KHM"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "KNA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "KOR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "KWT"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "LAO"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "LBN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "LBR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "LBY"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "LCA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "LKA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "LTU"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "LUX"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "LVA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MAC"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MAR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MDA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MDG"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MDV"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MEX"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MKD"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MLI"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MLT"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MMR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MNE"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MNG"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MOZ"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MRT"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MSR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MUS"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MWI"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "MYS"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "NAM"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "NER"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "NGA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "NIC"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "NLD"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "NOR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "NPL"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "NRU"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "NZL"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "OMN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "PAK"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "PAN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "PER"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "PHL"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "PLW"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "PNG"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "POL"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "PRT"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "PRY"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "QAT"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ROU"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "RUS"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "RWA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SAU"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SEN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SGP"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SLB"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SLE"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SLV"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SRB"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "STP"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SUR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SVK"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SVN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SWE"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SWZ"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "SYC"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "TCA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "TCD"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "THA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "TJK"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "TKM"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "TON"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "TTO"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "TUN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "TUR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "TWN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "TZA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "UGA"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "UKR"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "URY"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "UZB"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "VCT"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "VEN"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "VGB"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "VNM"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "VUT"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "XKS"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "YEM"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ZAF"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ZMB"
+        },
+        {
+          "customerPrice": "0",
+          "territory": "ZWE"
+        }
+      ]
+    },
+    "subscriptionReviewScreenshots": {
+      "com.transfinite.MoodMargins.plus.monthly": {
+        "fileName": "SOURCE",
+        "fileSize": 350197,
+        "id": "b1448708-3dc8-4494-9b8e-b7b0cbddf0d2",
+        "renditionChecksum": "dd5a758db24e36c6e6c6960bd77263d9",
+        "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+      },
+      "com.transfinite.MoodMargins.plus.weekly": {
+        "fileName": "SOURCE",
+        "fileSize": 350197,
+        "id": "b8e82042-db25-4b9a-9fe8-cc1d95494227",
+        "renditionChecksum": "d2f9853b2a46167980c7e1e291817286",
+        "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+      },
+      "com.transfinite.MoodMargins.plus.yearly": {
+        "fileName": "SOURCE",
+        "fileSize": 350197,
+        "id": "fe8f52d2-c870-4708-977a-eb6585ad82f0",
+        "renditionChecksum": "c0a3f99916f66951cddda521929b256a",
+        "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+      }
+    }
+  },
+  "formatVersion": 1,
+  "gitignore": "created",
+  "resources": {
+    "ageRatingDeclaration": {
+      "fields": {
+        "advertising": false,
+        "ageAssurance": false,
+        "ageRatingOverrideV2": "NONE",
+        "alcoholTobaccoOrDrugUseOrReferences": "NONE",
+        "contests": "NONE",
+        "gambling": false,
+        "gamblingSimulated": "NONE",
+        "gunsOrOtherWeapons": "NONE",
+        "healthOrWellnessTopics": true,
+        "horrorOrFearThemes": "NONE",
+        "koreaAgeRatingOverride": "NONE",
+        "lootBox": false,
+        "matureOrSuggestiveThemes": "NONE",
+        "medicalOrTreatmentInformation": "NONE",
+        "messagingAndChat": false,
+        "parentalControls": false,
+        "profanityOrCrudeHumor": "NONE",
+        "sexualContentGraphicAndNudity": "NONE",
+        "sexualContentOrNudity": "NONE",
+        "unrestrictedWebAccess": false,
+        "userGeneratedContent": false,
+        "violenceCartoonOrFantasy": "NONE",
+        "violenceRealistic": "NONE",
+        "violenceRealisticProlongedGraphicOrSadistic": "NONE"
+      },
+      "id": "355e8e43-e735-4659-b5a3-3567667c66b5",
+      "type": "ageRatingDeclarations"
+    },
+    "app": {
+      "fields": {
+        "contentRightsDeclaration": "USES_THIRD_PARTY_CONTENT",
+        "primaryLocale": "en-US"
+      },
+      "id": "6819079849",
+      "type": "apps"
+    },
+    "appInfo": {
+      "fields": {
+        "primaryCategory": "LIFESTYLE",
+        "secondaryCategory": "HEALTH_AND_FITNESS"
+      },
+      "id": "355e8e43-e735-4659-b5a3-3567667c66b5",
+      "type": "appInfos"
+    },
+    "appInfoLocalization:ar-SA": {
+      "fields": {
+        "name": "MoodMargins",
+        "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
+        "subtitle": "يوميات المزاج والتأملات"
+      },
+      "id": "3bdc74b8-ea33-4d30-a2da-b264e4b74d78",
+      "type": "appInfoLocalizations"
+    },
+    "appInfoLocalization:en-US": {
+      "fields": {
+        "name": "MoodMargins",
+        "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
+        "subtitle": "Mood Journal & Reflections"
+      },
+      "id": "7eb0e856-7cf7-4dfb-b5cd-8dbe8fbd01e8",
+      "type": "appInfoLocalizations"
+    },
+    "appInfoLocalization:es-ES": {
+      "fields": {
+        "name": "MoodMargins",
+        "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
+        "subtitle": "Diario de ánimo y reflexiones"
+      },
+      "id": "70156027-1e5d-4277-bfd2-c7f1a05049d1",
+      "type": "appInfoLocalizations"
+    },
+    "appStoreReviewDetail:IOS:1.0": {
+      "fields": {
+        "contactEmail": "transfinite@transfinite.us",
+        "contactFirstName": "Gerard",
+        "contactLastName": "Gomez",
+        "contactPhone": "+1 914 316 8248",
+        "demoAccountRequired": false,
+        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion's quick journal is local to the watch and does not sync to the main app. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
+      },
+      "id": "03a0254f-242c-40c6-b580-1793b221a4fd",
+      "type": "appStoreReviewDetails"
+    },
+    "appStoreReviewDetail:MAC_OS:1.0": {
+      "fields": {
+        "contactEmail": "transfinite@transfinite.us",
+        "contactFirstName": "Gerard",
+        "contactLastName": "Gomez",
+        "contactPhone": "+1 914 316 8248",
+        "demoAccountRequired": false,
+        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion's quick journal is local to the watch and does not sync to the main app. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
+      },
+      "id": "7b0b168c-2435-48e7-ae10-b350c3966b0d",
+      "type": "appStoreReviewDetails"
+    },
+    "appStoreVersion:IOS:1.0": {
+      "fields": {
+        "copyright": "2026 Gerard Gomez",
+        "releaseType": "AFTER_APPROVAL",
+        "versionString": "1.0"
+      },
+      "id": "f0de5b17-9993-497e-bcd1-11c8058457b2",
+      "type": "appStoreVersions"
+    },
+    "appStoreVersion:MAC_OS:1.0": {
+      "fields": {
+        "copyright": "2026 Gerard Gomez",
+        "releaseType": "AFTER_APPROVAL",
+        "versionString": "1.0"
+      },
+      "id": "8fb28006-1166-4943-b833-85b0228c4040",
+      "type": "appStoreVersions"
+    },
+    "appStoreVersionLocalization:IOS:1.0:ar-SA": {
+      "fields": {
+        "description": "مساحة لطيفة للتأمل.\n\nيحوّل MoodMargins مشاعرك اليومية إلى دفتر شخصي للحظات الصغيرة. اختر ملصق مزاج متحركًا واكتب بضعة أسطر ودع صفحتك تُحفظ تلقائيًا. لا حاجة لإنشاء حساب أو تذكّر الضغط على زر الحفظ.\n\nامنح يومك مساحة صغيرة\n• عبّر عن مزاجك بخمسة ملصقات متحركة.\n• اكتب على صفحات دفتر ناعمة ومسطّرة.\n• اربط المشاعر والروتين بوسوم تشبه شريط الواشي.\n• عد إلى تدويناتك حسب التاريخ أو البحث أو المزاج.\n\nلاحظ أنماطك دون ضغط\n• استكشف رؤى لسبعة أيام أو أربعة عشر يومًا أو ثلاثين يومًا أو العام كله.\n• تابع اتجاهات المزاج بوسوم رموز تعبيرية واضحة.\n• شاهد أطول سلسلة تدوين ومزاجك الأكثر شيوعًا والوسوم الأكثر تكرارًا.\n• تأمل توزيع المشاعر والأنشطة الموجودة في صفحاتك.\n\nدفتر يشبهك\nسمة باستيل الأصلية مجانية. تضيف سمات نباتية وساحلية وغروب لوحات ألوان جديدة إلى دفترك، ولكل منها مظهر فاتح وآخر داكن. اشترِ سمة منفردة مرة واحدة للاحتفاظ بها دائمًا، أو استمتع بكل السمات المميزة أثناء تفعيل MoodMargins Plus.\n\nذكاء Apple اختياري مع Plus\nيقترح Plus وسومًا أثناء الكتابة وينشئ ملخصات لطيفة من صفحاتك المحفوظة. يحاول التطبيق استخدام الحوسبة السحابية الخاصة من Apple أولًا، ثم يستخدم نموذج الجهاز إذا فشل الطلب السحابي. أوقف الحوسبة السحابية الخاصة في تخصيص لإبقاء طلبات الذكاء الاصطناعي على جهازك. تتطلب هذه الميزات جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا؛ وتحتاج الطلبات السحابية أيضًا إلى الإنترنت وسعة خدمة متاحة.\n\nصفحاتك ومساحتك\nتُخزّن تدويناتك على جهازك. عند توفر iCloud وتفعيله، يزامن التطبيق الرئيسي التدوينات عبر حسابك الخاص في iCloud. لا يدير المطور خادمًا يتلقى يومياتك. تتيح Apple Watch تدوين ملاحظات مزاج سريعة في دفتر محلي منفصل؛ ولا تُزامن تدوينات الساعة حاليًا مع التطبيق الرئيسي.\n\nاليوميات والرؤى الأساسية مجانية. يقدم MoodMargins Plus الميزات المميزة نفسها عبر اشتراكات أسبوعية أو شهرية أو سنوية تتجدد تلقائيًا. السمات المميزة المنفردة مشتريات دائمة غير قابلة للاستهلاك. تظهر الأسعار قبل الشراء وقد تختلف حسب المنطقة. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. لا يؤدي إلغاء Plus إلى حذف تدويناتك أو السمات المشتراة منفردة.\n\nMoodMargins أداة للتأمل الشخصي. لا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
+        "keywords": "يوميات,مشاعر,مزاج,تأمل,امتنان,راحة,ملاحظات,دفتر,سلسلة,تتبع,عناية بالنفس",
+        "marketingUrl": "https://apps.transfinite.us/#moodmargins",
+        "promotionalText": "مساحة لطيفة للتأمل. سجّل اللحظات الصغيرة بملصقات مزاج متحركة وصفحات تُحفظ تلقائيًا ورؤى هادئة. اجعل دفتر يومياتك يعبر عنك.",
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+      },
+      "id": "230cf5fb-ba10-458e-9473-0332156205de",
+      "type": "appStoreVersionLocalizations"
+    },
+    "appStoreVersionLocalization:IOS:1.0:en-US": {
+      "fields": {
+        "description": "A softer place to check in.\n\nMoodMargins turns your daily feelings into a personal journal of small moments. Choose an animated mood sticker, write a few lines, and let your page save automatically. There is no account to create and no Save button to remember.\n\nMAKE A LITTLE SPACE FOR YOUR DAY\n• Check in with five expressive, animated mood stickers.\n• Write on soft, lined notebook pages.\n• Connect feelings and routines with washi-style tags.\n• Revisit your entries by date, search, or mood.\n\nSEE YOUR PATTERNS WITHOUT PRESSURE\n• Explore 7-day, 14-day, 30-day, and yearly Insights.\n• Read mood trends with expressive emoji labels.\n• See your longest streak, most common mood, and top tags.\n• Look back at mood distribution and the activities in your pages.\n\nA JOURNAL THAT FEELS LIKE YOURS\nThe original Pastel theme is free. Botanical, Coastal, and Sunset bring fresh palettes to your notebook, each with light and dark appearances. Buy an individual theme once to keep it permanently, or enjoy all premium themes while MoodMargins Plus is active.\n\nOPTIONAL APPLE INTELLIGENCE WITH PLUS\nPlus suggests tags as you write and creates gentle recaps from your saved pages. The app tries Apple's Private Cloud Compute first and uses the on-device model if a cloud request fails. Turn off Private Cloud Compute in Customize to keep AI requests on your device. AI features require a compatible device with Apple Intelligence enabled and ready; cloud requests also need internet access and available service capacity.\n\nYOUR PAGES, YOUR SPACE\nJournal entries are stored on your device. When iCloud is available and enabled, the main app syncs them through your private iCloud account. The developer does not operate a server that receives your journal. Apple Watch supports quick mood notes in a separate local journal; watch entries do not currently sync with the main app.\n\nDaily journaling and standard Insights are free. MoodMargins Plus offers the same premium features with weekly, monthly, or yearly auto-renewing subscriptions. Individual premium themes are separate, permanent non-consumable purchases. Prices are shown before purchase and may vary by region. Manage or cancel subscriptions in your Apple Account settings. Canceling Plus does not delete your entries or themes purchased separately.\n\nMoodMargins is a personal reflection tool. It does not provide medical advice, diagnosis, or treatment.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
+        "keywords": "diary,feelings,emotion,reflection,gratitude,streaks,wellbeing,self care,notebook,tracker",
+        "marketingUrl": "https://apps.transfinite.us/#moodmargins",
+        "promotionalText": "A softer place to check in. Capture small moments with animated mood stickers, automatically saved pages, and gentle Insights. Make your notebook your own.",
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+      },
+      "id": "08cf0b58-c1e4-4557-bb77-158a28b91533",
+      "type": "appStoreVersionLocalizations"
+    },
+    "appStoreVersionLocalization:IOS:1.0:es-ES": {
+      "fields": {
+        "description": "Un lugar amable para ti.\n\nMoodMargins convierte tus emociones diarias en un diario personal de pequeños momentos. Elige un sticker de ánimo animado, escribe unas líneas y deja que tu página se guarde automáticamente. No necesitas crear una cuenta ni recordar pulsar Guardar.\n\nUN POCO DE ESPACIO PARA TU DÍA\n• Exprésate con cinco stickers de ánimo animados.\n• Escribe en suaves páginas de cuaderno con renglones.\n• Conecta emociones y rutinas con etiquetas estilo washi.\n• Revisa tus entradas por fecha, búsqueda o estado de ánimo.\n\nDESCUBRE PATRONES SIN PRESIÓN\n• Explora Perspectivas de 7, 14 o 30 días y de todo el año.\n• Sigue las tendencias del ánimo con etiquetas de emojis.\n• Consulta tu racha más larga, tu ánimo más frecuente y tus etiquetas principales.\n• Revisa la distribución de tus emociones y las actividades de tus páginas.\n\nUN DIARIO A TU ESTILO\nEl tema Pastel original es gratis. Botánica, Costera y Atardecer aportan nuevas paletas, cada una con aspectos claro y oscuro. Compra un tema individual una sola vez para conservarlo para siempre o disfruta de todos los temas premium mientras MoodMargins Plus esté activo.\n\nAPPLE INTELLIGENCE OPCIONAL CON PLUS\nPlus sugiere etiquetas mientras escribes y crea resúmenes amables a partir de tus páginas guardadas. La app intenta usar primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si falla una solicitud a la nube. Desactiva Private Cloud Compute en Personalizar para mantener las solicitudes de IA en tu dispositivo. La IA requiere un dispositivo compatible con Apple Intelligence activado y listo; las solicitudes a la nube también necesitan internet y capacidad disponible del servicio.\n\nTUS PÁGINAS, TU ESPACIO\nLas entradas se almacenan en tu dispositivo. Cuando iCloud está disponible y activado, la app principal las sincroniza mediante tu cuenta privada de iCloud. El desarrollador no opera un servidor que reciba tu diario. Apple Watch permite notas rápidas de ánimo en un diario local separado; esas entradas todavía no se sincronizan con la app principal.\n\nEl diario y las Perspectivas básicas son gratis. MoodMargins Plus ofrece las mismas funciones premium mediante suscripciones semanales, mensuales o anuales de renovación automática. Los temas premium individuales son compras permanentes no consumibles. Los precios se muestran antes de comprar y pueden variar según la región. Gestiona o cancela tus suscripciones en los ajustes de tu cuenta de Apple. Cancelar Plus no elimina tus entradas ni los temas comprados por separado.\n\nMoodMargins es una herramienta de reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
+        "keywords": "diario,emociones,reflexión,gratitud,rachas,bienestar,autocuidado,notas,seguimiento,ánimo",
+        "marketingUrl": "https://apps.transfinite.us/#moodmargins",
+        "promotionalText": "Un lugar amable para ti. Guarda pequeños momentos con stickers de ánimo, páginas que se guardan solas y Perspectivas suaves. Haz tuyo el diario.",
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+      },
+      "id": "271f284f-c4a7-492d-8dd7-51ac4b8209cf",
+      "type": "appStoreVersionLocalizations"
+    },
+    "appStoreVersionLocalization:MAC_OS:1.0:ar-SA": {
+      "fields": {
+        "description": "مساحة لطيفة للتأمل.\n\nيحوّل MoodMargins مشاعرك اليومية إلى دفتر شخصي للحظات الصغيرة. اختر ملصق مزاج متحركًا واكتب بضعة أسطر ودع صفحتك تُحفظ تلقائيًا. لا حاجة لإنشاء حساب أو تذكّر الضغط على زر الحفظ.\n\nامنح يومك مساحة صغيرة\n• عبّر عن مزاجك بخمسة ملصقات متحركة.\n• اكتب على صفحات دفتر ناعمة ومسطّرة.\n• اربط المشاعر والروتين بوسوم تشبه شريط الواشي.\n• عد إلى تدويناتك حسب التاريخ أو البحث أو المزاج.\n\nلاحظ أنماطك دون ضغط\n• استكشف رؤى لسبعة أيام أو أربعة عشر يومًا أو ثلاثين يومًا أو العام كله.\n• تابع اتجاهات المزاج بوسوم رموز تعبيرية واضحة.\n• شاهد أطول سلسلة تدوين ومزاجك الأكثر شيوعًا والوسوم الأكثر تكرارًا.\n• تأمل توزيع المشاعر والأنشطة الموجودة في صفحاتك.\n\nدفتر يشبهك\nسمة باستيل الأصلية مجانية. تضيف سمات نباتية وساحلية وغروب لوحات ألوان جديدة إلى دفترك، ولكل منها مظهر فاتح وآخر داكن. اشترِ سمة منفردة مرة واحدة للاحتفاظ بها دائمًا، أو استمتع بكل السمات المميزة أثناء تفعيل MoodMargins Plus.\n\nذكاء Apple اختياري مع Plus\nيقترح Plus وسومًا أثناء الكتابة وينشئ ملخصات لطيفة من صفحاتك المحفوظة. يحاول التطبيق استخدام الحوسبة السحابية الخاصة من Apple أولًا، ثم يستخدم نموذج الجهاز إذا فشل الطلب السحابي. أوقف الحوسبة السحابية الخاصة في تخصيص لإبقاء طلبات الذكاء الاصطناعي على جهازك. تتطلب هذه الميزات جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا؛ وتحتاج الطلبات السحابية أيضًا إلى الإنترنت وسعة خدمة متاحة.\n\nصفحاتك ومساحتك\nتُخزّن تدويناتك على جهازك. عند توفر iCloud وتفعيله، يزامن التطبيق الرئيسي التدوينات عبر حسابك الخاص في iCloud. لا يدير المطور خادمًا يتلقى يومياتك. تتيح Apple Watch تدوين ملاحظات مزاج سريعة في دفتر محلي منفصل؛ ولا تُزامن تدوينات الساعة حاليًا مع التطبيق الرئيسي.\n\nاليوميات والرؤى الأساسية مجانية. يقدم MoodMargins Plus الميزات المميزة نفسها عبر اشتراكات أسبوعية أو شهرية أو سنوية تتجدد تلقائيًا. السمات المميزة المنفردة مشتريات دائمة غير قابلة للاستهلاك. تظهر الأسعار قبل الشراء وقد تختلف حسب المنطقة. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. لا يؤدي إلغاء Plus إلى حذف تدويناتك أو السمات المشتراة منفردة.\n\nMoodMargins أداة للتأمل الشخصي. لا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
+        "keywords": "يوميات,مشاعر,مزاج,تأمل,امتنان,راحة,ملاحظات,دفتر,سلسلة,تتبع,عناية بالنفس",
+        "marketingUrl": "https://apps.transfinite.us/#moodmargins",
+        "promotionalText": "مساحة لطيفة للتأمل. سجّل اللحظات الصغيرة بملصقات مزاج متحركة وصفحات تُحفظ تلقائيًا ورؤى هادئة. اجعل دفتر يومياتك يعبر عنك.",
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+      },
+      "id": "2cb5a1a8-fe8d-4a7b-96ea-19a20bf6fbb5",
+      "type": "appStoreVersionLocalizations"
+    },
+    "appStoreVersionLocalization:MAC_OS:1.0:en-US": {
+      "fields": {
+        "description": "A softer place to check in.\n\nMoodMargins turns your daily feelings into a personal journal of small moments. Choose an animated mood sticker, write a few lines, and let your page save automatically. There is no account to create and no Save button to remember.\n\nMAKE A LITTLE SPACE FOR YOUR DAY\n• Check in with five expressive, animated mood stickers.\n• Write on soft, lined notebook pages.\n• Connect feelings and routines with washi-style tags.\n• Revisit your entries by date, search, or mood.\n\nSEE YOUR PATTERNS WITHOUT PRESSURE\n• Explore 7-day, 14-day, 30-day, and yearly Insights.\n• Read mood trends with expressive emoji labels.\n• See your longest streak, most common mood, and top tags.\n• Look back at mood distribution and the activities in your pages.\n\nA JOURNAL THAT FEELS LIKE YOURS\nThe original Pastel theme is free. Botanical, Coastal, and Sunset bring fresh palettes to your notebook, each with light and dark appearances. Buy an individual theme once to keep it permanently, or enjoy all premium themes while MoodMargins Plus is active.\n\nOPTIONAL APPLE INTELLIGENCE WITH PLUS\nPlus suggests tags as you write and creates gentle recaps from your saved pages. The app tries Apple's Private Cloud Compute first and uses the on-device model if a cloud request fails. Turn off Private Cloud Compute in Customize to keep AI requests on your device. AI features require a compatible device with Apple Intelligence enabled and ready; cloud requests also need internet access and available service capacity.\n\nYOUR PAGES, YOUR SPACE\nJournal entries are stored on your device. When iCloud is available and enabled, the main app syncs them through your private iCloud account. The developer does not operate a server that receives your journal. Apple Watch supports quick mood notes in a separate local journal; watch entries do not currently sync with the main app.\n\nDaily journaling and standard Insights are free. MoodMargins Plus offers the same premium features with weekly, monthly, or yearly auto-renewing subscriptions. Individual premium themes are separate, permanent non-consumable purchases. Prices are shown before purchase and may vary by region. Manage or cancel subscriptions in your Apple Account settings. Canceling Plus does not delete your entries or themes purchased separately.\n\nMoodMargins is a personal reflection tool. It does not provide medical advice, diagnosis, or treatment.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
+        "keywords": "diary,feelings,emotion,reflection,gratitude,streaks,wellbeing,self care,notebook,tracker",
+        "marketingUrl": "https://apps.transfinite.us/#moodmargins",
+        "promotionalText": "A softer place to check in. Capture small moments with animated mood stickers, automatically saved pages, and gentle Insights. Make your notebook your own.",
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+      },
+      "id": "687c226b-357f-41bc-9b58-6d26384a04d0",
+      "type": "appStoreVersionLocalizations"
+    },
+    "appStoreVersionLocalization:MAC_OS:1.0:es-ES": {
+      "fields": {
+        "description": "Un lugar amable para ti.\n\nMoodMargins convierte tus emociones diarias en un diario personal de pequeños momentos. Elige un sticker de ánimo animado, escribe unas líneas y deja que tu página se guarde automáticamente. No necesitas crear una cuenta ni recordar pulsar Guardar.\n\nUN POCO DE ESPACIO PARA TU DÍA\n• Exprésate con cinco stickers de ánimo animados.\n• Escribe en suaves páginas de cuaderno con renglones.\n• Conecta emociones y rutinas con etiquetas estilo washi.\n• Revisa tus entradas por fecha, búsqueda o estado de ánimo.\n\nDESCUBRE PATRONES SIN PRESIÓN\n• Explora Perspectivas de 7, 14 o 30 días y de todo el año.\n• Sigue las tendencias del ánimo con etiquetas de emojis.\n• Consulta tu racha más larga, tu ánimo más frecuente y tus etiquetas principales.\n• Revisa la distribución de tus emociones y las actividades de tus páginas.\n\nUN DIARIO A TU ESTILO\nEl tema Pastel original es gratis. Botánica, Costera y Atardecer aportan nuevas paletas, cada una con aspectos claro y oscuro. Compra un tema individual una sola vez para conservarlo para siempre o disfruta de todos los temas premium mientras MoodMargins Plus esté activo.\n\nAPPLE INTELLIGENCE OPCIONAL CON PLUS\nPlus sugiere etiquetas mientras escribes y crea resúmenes amables a partir de tus páginas guardadas. La app intenta usar primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si falla una solicitud a la nube. Desactiva Private Cloud Compute en Personalizar para mantener las solicitudes de IA en tu dispositivo. La IA requiere un dispositivo compatible con Apple Intelligence activado y listo; las solicitudes a la nube también necesitan internet y capacidad disponible del servicio.\n\nTUS PÁGINAS, TU ESPACIO\nLas entradas se almacenan en tu dispositivo. Cuando iCloud está disponible y activado, la app principal las sincroniza mediante tu cuenta privada de iCloud. El desarrollador no opera un servidor que reciba tu diario. Apple Watch permite notas rápidas de ánimo en un diario local separado; esas entradas todavía no se sincronizan con la app principal.\n\nEl diario y las Perspectivas básicas son gratis. MoodMargins Plus ofrece las mismas funciones premium mediante suscripciones semanales, mensuales o anuales de renovación automática. Los temas premium individuales son compras permanentes no consumibles. Los precios se muestran antes de comprar y pueden variar según la región. Gestiona o cancela tus suscripciones en los ajustes de tu cuenta de Apple. Cancelar Plus no elimina tus entradas ni los temas comprados por separado.\n\nMoodMargins es una herramienta de reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
+        "keywords": "diario,emociones,reflexión,gratitud,rachas,bienestar,autocuidado,notas,seguimiento,ánimo",
+        "marketingUrl": "https://apps.transfinite.us/#moodmargins",
+        "promotionalText": "Un lugar amable para ti. Guarda pequeños momentos con stickers de ánimo, páginas que se guardan solas y Perspectivas suaves. Haz tuyo el diario.",
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+      },
+      "id": "49ee0c11-68ea-4ae9-82a9-a313da59df8b",
+      "type": "appStoreVersionLocalizations"
+    },
+    "appStoreVersionScreenshotSet:IOS:1.0:ar-SA:APP_IPAD_PRO_3GEN_129": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-every-feeling.png",
+            "fileSize": 1919916,
+            "sourceFileChecksum": "5b2d853c475f7a5e7fe7a764eb17f5a7"
+          },
+          {
+            "file": "02-autosave.png",
+            "fileSize": 2311010,
+            "sourceFileChecksum": "befc53608891b688d2d85bb5f37025c9"
+          },
+          {
+            "file": "03-mood-trends.png",
+            "fileSize": 1402267,
+            "sourceFileChecksum": "7017b1493630173f239d68cf9d5d273e"
+          },
+          {
+            "file": "04-mood-stickers.png",
+            "fileSize": 1413194,
+            "sourceFileChecksum": "daaa56af1a5ea802eacc12cf8116627c"
+          },
+          {
+            "file": "05-premium-themes.png",
+            "fileSize": 818053,
+            "sourceFileChecksum": "9b75ff7f5bd524523ec67a008303ea71"
+          },
+          {
+            "file": "06-dark-appearance.png",
+            "fileSize": 1337842,
+            "sourceFileChecksum": "541c35f3e3699679157bf04bdd85bef8"
+          }
+        ]
+      },
+      "id": "07c314a7-87c9-4eac-a792-11e364b1c009",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:IOS:1.0:ar-SA:APP_IPHONE_67": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-every-feeling.png",
+            "fileSize": 1564616,
+            "sourceFileChecksum": "49a9de33c06e1dde46ff2a62705fe5dd"
+          },
+          {
+            "file": "02-autosave.png",
+            "fileSize": 1910114,
+            "sourceFileChecksum": "61efb4e45b02853ffd03c3e42bf764c9"
+          },
+          {
+            "file": "03-mood-trends.png",
+            "fileSize": 1245378,
+            "sourceFileChecksum": "fb572b124cc612f33f140cdc5a684369"
+          },
+          {
+            "file": "04-mood-stickers.png",
+            "fileSize": 1295860,
+            "sourceFileChecksum": "c5a806a10748f84f141dd445d5043cbe"
+          },
+          {
+            "file": "05-premium-themes.png",
+            "fileSize": 730088,
+            "sourceFileChecksum": "5f1793b942d6d90ccea621ef3f149b00"
+          },
+          {
+            "file": "06-dark-appearance.png",
+            "fileSize": 1194175,
+            "sourceFileChecksum": "5b3fc7087198a6e974db65d40c867a5f"
+          }
+        ]
+      },
+      "id": "2673d167-7cac-4eb9-9cb1-641fc5804892",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:IOS:1.0:ar-SA:APP_WATCH_SERIES_10": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-check-in.png",
+            "fileSize": 26159,
+            "sourceFileChecksum": "2e8c708fac0efbb96edd52c5cbf24446"
+          }
+        ]
+      },
+      "id": "9347561f-dcf8-427a-b624-9dd2cb61c6eb",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:IOS:1.0:en-US:APP_IPAD_PRO_3GEN_129": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-every-feeling.png",
+            "fileSize": 1959529,
+            "sourceFileChecksum": "ec5bee7494d7b3b3dedf184474be35af"
+          },
+          {
+            "file": "02-autosave.png",
+            "fileSize": 2319156,
+            "sourceFileChecksum": "0265660c8c0c03f97ae18bc65189a53d"
+          },
+          {
+            "file": "03-mood-trends.png",
+            "fileSize": 1432401,
+            "sourceFileChecksum": "b2df26bc173ff74d0fc80af8d68df4f4"
+          },
+          {
+            "file": "04-mood-stickers.png",
+            "fileSize": 1470545,
+            "sourceFileChecksum": "5ba283c7386a443c3491e5f1d0cb1589"
+          },
+          {
+            "file": "05-premium-themes.png",
+            "fileSize": 822116,
+            "sourceFileChecksum": "4ef9268101bb85789ff14b3ac5eacd5b"
+          },
+          {
+            "file": "06-dark-appearance.png",
+            "fileSize": 1371805,
+            "sourceFileChecksum": "f8fd2247c62e5401dd5d1c524bc6bdcc"
+          }
+        ]
+      },
+      "id": "3a499f1c-5479-44db-8679-b76e51b26e82",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:IOS:1.0:en-US:APP_IPHONE_67": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-every-feeling.png",
+            "fileSize": 1600664,
+            "sourceFileChecksum": "8eac1841a1d42f5f518db747b6b9f5bb"
+          },
+          {
+            "file": "02-autosave.png",
+            "fileSize": 1964426,
+            "sourceFileChecksum": "ed2e494ef8877f2528f95e555b23b1e5"
+          },
+          {
+            "file": "03-mood-trends.png",
+            "fileSize": 1260402,
+            "sourceFileChecksum": "5fd97f627fd07a0de344663e86be2118"
+          },
+          {
+            "file": "04-mood-stickers.png",
+            "fileSize": 1328096,
+            "sourceFileChecksum": "a84de5ab035356f4b9bac27149a4f4c2"
+          },
+          {
+            "file": "05-premium-themes.png",
+            "fileSize": 733243,
+            "sourceFileChecksum": "7b94bed2620ff399fcfd4abaf34c53fc"
+          },
+          {
+            "file": "06-dark-appearance.png",
+            "fileSize": 1212246,
+            "sourceFileChecksum": "e004bcdbdbfb9e6693c4e2ad7326fe50"
+          }
+        ]
+      },
+      "id": "f33524f9-9bcd-4547-a45c-f3e8fbabdd66",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:IOS:1.0:en-US:APP_WATCH_SERIES_10": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-check-in.png",
+            "fileSize": 28389,
+            "sourceFileChecksum": "51f2c6cd11d4e9d34cba01435479734d"
+          }
+        ]
+      },
+      "id": "74684410-c889-4072-abe9-0baa080c6e55",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:IOS:1.0:es-ES:APP_IPAD_PRO_3GEN_129": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-every-feeling.png",
+            "fileSize": 1994625,
+            "sourceFileChecksum": "57d91e23d3ed0c988f45b7719cf6eaf4"
+          },
+          {
+            "file": "02-autosave.png",
+            "fileSize": 2372231,
+            "sourceFileChecksum": "ac05b880476a266ed97fa29226f0c5b1"
+          },
+          {
+            "file": "03-mood-trends.png",
+            "fileSize": 1459772,
+            "sourceFileChecksum": "d0966808a0cc32551b8289a723dbf7a5"
+          },
+          {
+            "file": "04-mood-stickers.png",
+            "fileSize": 1501683,
+            "sourceFileChecksum": "a77c94427024010c13177853e63df9af"
+          },
+          {
+            "file": "05-premium-themes.png",
+            "fileSize": 840607,
+            "sourceFileChecksum": "6985f4e9ac9eb87656d3391fef64d0c6"
+          },
+          {
+            "file": "06-dark-appearance.png",
+            "fileSize": 1391361,
+            "sourceFileChecksum": "634641512338d76bdccf8a9ffa3b461d"
+          }
+        ]
+      },
+      "id": "5f53237f-c76e-428f-bb77-ea2e015c8a50",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:IOS:1.0:es-ES:APP_IPHONE_67": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-every-feeling.png",
+            "fileSize": 1639520,
+            "sourceFileChecksum": "a4588b1206a4912eb28270cc7cc848d5"
+          },
+          {
+            "file": "02-autosave.png",
+            "fileSize": 1988461,
+            "sourceFileChecksum": "811889223d955e0f70169dc2bbf72f0e"
+          },
+          {
+            "file": "03-mood-trends.png",
+            "fileSize": 1294309,
+            "sourceFileChecksum": "5a97c66adc3dcb22fb6b8d3fb9ad2456"
+          },
+          {
+            "file": "04-mood-stickers.png",
+            "fileSize": 1400589,
+            "sourceFileChecksum": "73211875ee7a6d79e3bd03aba4cce5b4"
+          },
+          {
+            "file": "05-premium-themes.png",
+            "fileSize": 755054,
+            "sourceFileChecksum": "e30978ed03b1f6ed55df4dfd991f0b66"
+          },
+          {
+            "file": "06-dark-appearance.png",
+            "fileSize": 1245129,
+            "sourceFileChecksum": "9c299b09da8d9662bbb60a1e5a738372"
+          }
+        ]
+      },
+      "id": "c682889b-fafd-493c-b70f-6102704fe74d",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:IOS:1.0:es-ES:APP_WATCH_SERIES_10": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-check-in.png",
+            "fileSize": 30620,
+            "sourceFileChecksum": "82e05950cb84afde8c85d5ac622b0225"
+          }
+        ]
+      },
+      "id": "863fba4b-4a9e-4338-b270-4244bdfebc0a",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:MAC_OS:1.0:ar-SA:APP_DESKTOP": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-every-feeling.png",
+            "fileSize": 1212554,
+            "sourceFileChecksum": "fadbfa0d840a0847aade8b6b777845dd"
+          },
+          {
+            "file": "02-autosave.png",
+            "fileSize": 1442574,
+            "sourceFileChecksum": "4550fd263685a195d11527825a298b17"
+          },
+          {
+            "file": "03-mood-trends.png",
+            "fileSize": 883119,
+            "sourceFileChecksum": "2f978124b94a3e12c17b40e00115c776"
+          },
+          {
+            "file": "04-mood-stickers.png",
+            "fileSize": 909894,
+            "sourceFileChecksum": "dbc60d87977cc02aa506c7546c1c802b"
+          },
+          {
+            "file": "05-premium-themes.png",
+            "fileSize": 588290,
+            "sourceFileChecksum": "52f9ceb94a39abbb375deab2b5aadddb"
+          },
+          {
+            "file": "06-dark-appearance.png",
+            "fileSize": 813612,
+            "sourceFileChecksum": "0271c696fd53b0bf047c777b15c83d9e"
+          }
+        ]
+      },
+      "id": "f1179cf8-0af7-4bc8-aa7e-f936f9544312",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:MAC_OS:1.0:en-US:APP_DESKTOP": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-every-feeling.png",
+            "fileSize": 1227004,
+            "sourceFileChecksum": "cf044d80bdce8636471e45de00518d2e"
+          },
+          {
+            "file": "02-autosave.png",
+            "fileSize": 1433574,
+            "sourceFileChecksum": "0e31807118eb1d8e34f5fb85e882ddd7"
+          },
+          {
+            "file": "03-mood-trends.png",
+            "fileSize": 886685,
+            "sourceFileChecksum": "4b10fc0237c112144523512218d03201"
+          },
+          {
+            "file": "04-mood-stickers.png",
+            "fileSize": 923640,
+            "sourceFileChecksum": "cafb15a148aaf3375281b85d7fbfe9e6"
+          },
+          {
+            "file": "05-premium-themes.png",
+            "fileSize": 601037,
+            "sourceFileChecksum": "be4d7736f788eb0bc13605f117600541"
+          },
+          {
+            "file": "06-dark-appearance.png",
+            "fileSize": 817930,
+            "sourceFileChecksum": "87d2c53580c3242744f7e332a43b1bbc"
+          }
+        ]
+      },
+      "id": "a431b7e6-5dae-40a7-b5fd-3b4df1daf24a",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:MAC_OS:1.0:es-ES:APP_DESKTOP": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-every-feeling.png",
+            "fileSize": 1253681,
+            "sourceFileChecksum": "6c69f3cea4b943f98eb2f965874283ec"
+          },
+          {
+            "file": "02-autosave.png",
+            "fileSize": 1490559,
+            "sourceFileChecksum": "3f117413893baf8525026022fe0c8a25"
+          },
+          {
+            "file": "03-mood-trends.png",
+            "fileSize": 916412,
+            "sourceFileChecksum": "1e5d234acdfb0ec85e5f4c76eae72d16"
+          },
+          {
+            "file": "04-mood-stickers.png",
+            "fileSize": 948849,
+            "sourceFileChecksum": "33d09e4475194ee02d47d525e2b3b58c"
+          },
+          {
+            "file": "05-premium-themes.png",
+            "fileSize": 609735,
+            "sourceFileChecksum": "e8df79ce2921afcb1962314607071eb8"
+          },
+          {
+            "file": "06-dark-appearance.png",
+            "fileSize": 842034,
+            "sourceFileChecksum": "3ab44b7bf92b8a60f743d8aec3df73b1"
+          }
+        ]
+      },
+      "id": "a77efdec-2172-47cb-9023-fb877ff8acea",
+      "type": "appScreenshotSets"
+    },
+    "availability": {
+      "fields": {
+        "territories": [
+
+        ]
+      },
+      "id": "6819079849",
+      "type": "appAvailabilities"
+    },
+    "inAppPurchase:com.transfinite.MoodMargins.theme.botanical": {
+      "fields": {
+        "familySharable": false,
+        "inAppPurchaseType": "NON_CONSUMABLE",
+        "name": "Botanical Theme",
+        "reviewNote": "Open Customize, then Botanical. This non-consumable permanently unlocks the Botanical theme in light and dark appearances. Use Restore purchases in Customize to restore ownership. No MoodMargins account or subscription is needed."
+      },
+      "id": "6819117140",
+      "type": "inAppPurchases"
+    },
+    "inAppPurchase:com.transfinite.MoodMargins.theme.coastal": {
+      "fields": {
+        "familySharable": false,
+        "inAppPurchaseType": "NON_CONSUMABLE",
+        "name": "Coastal Theme",
+        "reviewNote": "Open Customize, then Coastal. This non-consumable permanently unlocks the Coastal theme in light and dark appearances. Use Restore purchases in Customize to restore ownership. No MoodMargins account or subscription is needed."
+      },
+      "id": "6819117161",
+      "type": "inAppPurchases"
+    },
+    "inAppPurchase:com.transfinite.MoodMargins.theme.sunset": {
+      "fields": {
+        "familySharable": false,
+        "inAppPurchaseType": "NON_CONSUMABLE",
+        "name": "Sunset Theme",
+        "reviewNote": "Open Customize, then Sunset. This non-consumable permanently unlocks the Sunset theme in light and dark appearances. Use Restore purchases in Customize to restore ownership. No MoodMargins account or subscription is needed."
+      },
+      "id": "6819117325",
+      "type": "inAppPurchases"
+    },
+    "inAppPurchaseLocalization:com.transfinite.MoodMargins.theme.botanical:ar-SA": {
+      "fields": {
+        "description": "صفحات المريمية وحبر الغابة. ملك لك دائمًا.",
+        "name": "السمة النباتية"
+      },
+      "id": "72ac1016-3c1f-498d-afa8-32f851eaf7ee",
+      "type": "inAppPurchaseLocalizations"
+    },
+    "inAppPurchaseLocalization:com.transfinite.MoodMargins.theme.botanical:en-US": {
+      "fields": {
+        "description": "Permanent botanical theme, light and dark.",
+        "name": "Botanical Theme"
+      },
+      "id": "9937fcfb-7861-4606-b183-63d581417709",
+      "type": "inAppPurchaseLocalizations"
+    },
+    "inAppPurchaseLocalization:com.transfinite.MoodMargins.theme.botanical:es-ES": {
+      "fields": {
+        "description": "Papel salvia y tinta de bosque. Permanente.",
+        "name": "Tema Botánica"
+      },
+      "id": "81d559f8-925f-450b-be93-e9a682da0483",
+      "type": "inAppPurchaseLocalizations"
+    },
+    "inAppPurchaseLocalization:com.transfinite.MoodMargins.theme.coastal:ar-SA": {
+      "fields": {
+        "description": "ورق رملي وحبر المحيط. ملك لك دائمًا.",
+        "name": "السمة الساحلية"
+      },
+      "id": "4425ee51-2ca8-45be-a72c-500d2fa26057",
+      "type": "inAppPurchaseLocalizations"
+    },
+    "inAppPurchaseLocalization:com.transfinite.MoodMargins.theme.coastal:en-US": {
+      "fields": {
+        "description": "Permanent coastal theme, light and dark.",
+        "name": "Coastal Theme"
+      },
+      "id": "dddfe2a8-d1c7-4abb-a52c-ca57f4016233",
+      "type": "inAppPurchaseLocalizations"
+    },
+    "inAppPurchaseLocalization:com.transfinite.MoodMargins.theme.coastal:es-ES": {
+      "fields": {
+        "description": "Azul suave y tinta de océano. Para siempre.",
+        "name": "Tema Costera"
+      },
+      "id": "b3f9138f-828d-4c5f-a251-28f36392c4fa",
+      "type": "inAppPurchaseLocalizations"
+    },
+    "inAppPurchaseLocalization:com.transfinite.MoodMargins.theme.sunset:ar-SA": {
+      "fields": {
+        "description": "ورق دافئ ولمسات بلون الطين. ملك لك دائمًا.",
+        "name": "سمة الغروب"
+      },
+      "id": "7ddf9b05-a591-4344-a251-7d7bbbde734e",
+      "type": "inAppPurchaseLocalizations"
+    },
+    "inAppPurchaseLocalization:com.transfinite.MoodMargins.theme.sunset:en-US": {
+      "fields": {
+        "description": "Permanent sunset theme, light and dark.",
+        "name": "Sunset Theme"
+      },
+      "id": "3b61e500-61c8-4513-aca4-4659c29460c9",
+      "type": "inAppPurchaseLocalizations"
+    },
+    "inAppPurchaseLocalization:com.transfinite.MoodMargins.theme.sunset:es-ES": {
+      "fields": {
+        "description": "Papel cálido y terracota. Para siempre.",
+        "name": "Tema Atardecer"
+      },
+      "id": "fff46898-131f-401a-ac09-62d1531049b7",
+      "type": "inAppPurchaseLocalizations"
+    },
+    "inAppPurchasePricing:com.transfinite.MoodMargins.theme.botanical": {
+      "fields": {
+        "baseTerritory": "USA",
+        "manualPrices": [
+          {
+            "customerPrice": "1.99",
+            "territory": "USA"
+          }
+        ]
+      },
+      "id": "6819117140",
+      "type": "inAppPurchasePriceSchedules"
+    },
+    "inAppPurchasePricing:com.transfinite.MoodMargins.theme.coastal": {
+      "fields": {
+        "baseTerritory": "USA",
+        "manualPrices": [
+          {
+            "customerPrice": "1.99",
+            "territory": "USA"
+          }
+        ]
+      },
+      "id": "6819117161",
+      "type": "inAppPurchasePriceSchedules"
+    },
+    "inAppPurchasePricing:com.transfinite.MoodMargins.theme.sunset": {
+      "fields": {
+        "baseTerritory": "USA",
+        "manualPrices": [
+          {
+            "customerPrice": "1.99",
+            "territory": "USA"
+          }
+        ]
+      },
+      "id": "6819117325",
+      "type": "inAppPurchasePriceSchedules"
+    },
+    "inAppPurchaseReviewScreenshot:com.transfinite.MoodMargins.theme.botanical": {
+      "fields": {
+        "screenshot": {
+          "fileSize": 540962,
+          "sourceFileChecksum": "2563c3cb9ef9ee2b102a1c729c3e7dcb"
+        }
+      },
+      "id": "761d29a8-f9b8-418d-bf82-662d74dcca9c",
+      "type": "inAppPurchaseAppStoreReviewScreenshots"
+    },
+    "inAppPurchaseReviewScreenshot:com.transfinite.MoodMargins.theme.coastal": {
+      "fields": {
+        "screenshot": {
+          "fileSize": 523173,
+          "sourceFileChecksum": "66e159a6584ecbb559530ae3df7c7355"
+        }
+      },
+      "id": "ea3fbbb8-133e-4353-bee3-699096f4ccf2",
+      "type": "inAppPurchaseAppStoreReviewScreenshots"
+    },
+    "inAppPurchaseReviewScreenshot:com.transfinite.MoodMargins.theme.sunset": {
+      "fields": {
+        "screenshot": {
+          "fileSize": 478892,
+          "sourceFileChecksum": "78ab4b7054f6a58ec338c7a5607a9b20"
+        }
+      },
+      "id": "8c5769ca-9f3e-49cd-98d6-72e567852489",
+      "type": "inAppPurchaseAppStoreReviewScreenshots"
+    },
+    "pricing": {
+      "fields": {
+        "baseTerritory": "USA",
+        "manualPrices": [
+          {
+            "customerPrice": "0",
+            "territory": "USA"
+          }
+        ]
+      },
+      "id": "6819079849",
+      "type": "appPriceSchedules"
+    },
+    "subscription:com.transfinite.MoodMargins.plus.monthly": {
+      "fields": {
+        "familySharable": false,
+        "groupLevel": 1,
+        "name": "Plus Monthly",
+        "reviewNote": "This product uses monthly auto-renewing billing. The US base price is $2.99; Apple provides localized storefront prices.\n\nOpen Customize, then MoodMargins Plus. All three auto-renewing plans are the same subscription tier with different billing periods. Plus unlocks all premium themes, AI tag suggestions on Today, and AI recaps in Insights. AI requires Apple Intelligence readiness; the optional Private Cloud Compute model requires Apple access approval, connectivity, and available quota. Charts, streaks, manual tags, and journaling remain free. Themes purchased separately are permanent. No MoodMargins login is required. Restore purchases and Manage subscription are available in Customize.",
+        "subscriptionPeriod": "ONE_MONTH"
+      },
+      "id": "6819117421",
+      "type": "subscriptions"
+    },
+    "subscription:com.transfinite.MoodMargins.plus.weekly": {
+      "fields": {
+        "familySharable": false,
+        "groupLevel": 1,
+        "name": "Plus Weekly",
+        "reviewNote": "This product uses weekly auto-renewing billing. The US base price is $0.99; Apple provides localized storefront prices.\n\nOpen Customize, then MoodMargins Plus. All three auto-renewing plans are the same subscription tier with different billing periods. Plus unlocks all premium themes, AI tag suggestions on Today, and AI recaps in Insights. AI requires Apple Intelligence readiness; the optional Private Cloud Compute model requires Apple access approval, connectivity, and available quota. Charts, streaks, manual tags, and journaling remain free. Themes purchased separately are permanent. No MoodMargins login is required. Restore purchases and Manage subscription are available in Customize.",
+        "subscriptionPeriod": "ONE_WEEK"
+      },
+      "id": "6819117404",
+      "type": "subscriptions"
+    },
+    "subscription:com.transfinite.MoodMargins.plus.yearly": {
+      "fields": {
+        "familySharable": false,
+        "groupLevel": 1,
+        "name": "Plus Yearly",
+        "reviewNote": "This product uses yearly auto-renewing billing. The US base price is $19.99; Apple provides localized storefront prices.\n\nOpen Customize, then MoodMargins Plus. All three auto-renewing plans are the same subscription tier with different billing periods. Plus unlocks all premium themes, AI tag suggestions on Today, and AI recaps in Insights. AI requires Apple Intelligence readiness; the optional Private Cloud Compute model requires Apple access approval, connectivity, and available quota. Charts, streaks, manual tags, and journaling remain free. Themes purchased separately are permanent. No MoodMargins login is required. Restore purchases and Manage subscription are available in Customize.",
+        "subscriptionPeriod": "ONE_YEAR"
+      },
+      "id": "6819117424",
+      "type": "subscriptions"
+    },
+    "subscriptionAvailability:com.transfinite.MoodMargins.plus.monthly": {
+      "fields": {
+        "availableInNewTerritories": true,
+        "availableTerritories": [
+          "AFG",
+          "AGO",
+          "AIA",
+          "ALB",
+          "ARE",
+          "ARG",
+          "ARM",
+          "ATG",
+          "AUS",
+          "AUT",
+          "AZE",
+          "BEL",
+          "BEN",
+          "BFA",
+          "BGR",
+          "BHR",
+          "BHS",
+          "BIH",
+          "BLR",
+          "BLZ",
+          "BMU",
+          "BOL",
+          "BRA",
+          "BRB",
+          "BRN",
+          "BTN",
+          "BWA",
+          "CAN",
+          "CHE",
+          "CHL",
+          "CHN",
+          "CIV",
+          "CMR",
+          "COD",
+          "COG",
+          "COL",
+          "CPV",
+          "CRI",
+          "CYM",
+          "CYP",
+          "CZE",
+          "DEU",
+          "DMA",
+          "DNK",
+          "DOM",
+          "DZA",
+          "ECU",
+          "EGY",
+          "ESP",
+          "EST",
+          "FIN",
+          "FJI",
+          "FRA",
+          "FSM",
+          "GAB",
+          "GBR",
+          "GEO",
+          "GHA",
+          "GMB",
+          "GNB",
+          "GRC",
+          "GRD",
+          "GTM",
+          "GUY",
+          "HKG",
+          "HND",
+          "HRV",
+          "HUN",
+          "IDN",
+          "IND",
+          "IRL",
+          "IRQ",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JAM",
+          "JOR",
+          "JPN",
+          "KAZ",
+          "KEN",
+          "KGZ",
+          "KHM",
+          "KNA",
+          "KOR",
+          "KWT",
+          "LAO",
+          "LBN",
+          "LBR",
+          "LBY",
+          "LCA",
+          "LKA",
+          "LTU",
+          "LUX",
+          "LVA",
+          "MAC",
+          "MAR",
+          "MDA",
+          "MDG",
+          "MDV",
+          "MEX",
+          "MKD",
+          "MLI",
+          "MLT",
+          "MMR",
+          "MNE",
+          "MNG",
+          "MOZ",
+          "MRT",
+          "MSR",
+          "MUS",
+          "MWI",
+          "MYS",
+          "NAM",
+          "NER",
+          "NGA",
+          "NIC",
+          "NLD",
+          "NOR",
+          "NPL",
+          "NRU",
+          "NZL",
+          "OMN",
+          "PAK",
+          "PAN",
+          "PER",
+          "PHL",
+          "PLW",
+          "PNG",
+          "POL",
+          "PRT",
+          "PRY",
+          "QAT",
+          "ROU",
+          "RUS",
+          "RWA",
+          "SAU",
+          "SEN",
+          "SGP",
+          "SLB",
+          "SLE",
+          "SLV",
+          "SRB",
+          "STP",
+          "SUR",
+          "SVK",
+          "SVN",
+          "SWE",
+          "SWZ",
+          "SYC",
+          "TCA",
+          "TCD",
+          "THA",
+          "TJK",
+          "TKM",
+          "TON",
+          "TTO",
+          "TUN",
+          "TUR",
+          "TWN",
+          "TZA",
+          "UGA",
+          "UKR",
+          "URY",
+          "USA",
+          "UZB",
+          "VCT",
+          "VEN",
+          "VGB",
+          "VNM",
+          "VUT",
+          "XKS",
+          "YEM",
+          "ZAF",
+          "ZMB",
+          "ZWE"
+        ]
+      },
+      "id": "6819117421",
+      "type": "subscriptionAvailabilities"
+    },
+    "subscriptionAvailability:com.transfinite.MoodMargins.plus.weekly": {
+      "fields": {
+        "availableInNewTerritories": true,
+        "availableTerritories": [
+          "AFG",
+          "AGO",
+          "AIA",
+          "ALB",
+          "ARE",
+          "ARG",
+          "ARM",
+          "ATG",
+          "AUS",
+          "AUT",
+          "AZE",
+          "BEL",
+          "BEN",
+          "BFA",
+          "BGR",
+          "BHR",
+          "BHS",
+          "BIH",
+          "BLR",
+          "BLZ",
+          "BMU",
+          "BOL",
+          "BRA",
+          "BRB",
+          "BRN",
+          "BTN",
+          "BWA",
+          "CAN",
+          "CHE",
+          "CHL",
+          "CHN",
+          "CIV",
+          "CMR",
+          "COD",
+          "COG",
+          "COL",
+          "CPV",
+          "CRI",
+          "CYM",
+          "CYP",
+          "CZE",
+          "DEU",
+          "DMA",
+          "DNK",
+          "DOM",
+          "DZA",
+          "ECU",
+          "EGY",
+          "ESP",
+          "EST",
+          "FIN",
+          "FJI",
+          "FRA",
+          "FSM",
+          "GAB",
+          "GBR",
+          "GEO",
+          "GHA",
+          "GMB",
+          "GNB",
+          "GRC",
+          "GRD",
+          "GTM",
+          "GUY",
+          "HKG",
+          "HND",
+          "HRV",
+          "HUN",
+          "IDN",
+          "IND",
+          "IRL",
+          "IRQ",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JAM",
+          "JOR",
+          "JPN",
+          "KAZ",
+          "KEN",
+          "KGZ",
+          "KHM",
+          "KNA",
+          "KOR",
+          "KWT",
+          "LAO",
+          "LBN",
+          "LBR",
+          "LBY",
+          "LCA",
+          "LKA",
+          "LTU",
+          "LUX",
+          "LVA",
+          "MAC",
+          "MAR",
+          "MDA",
+          "MDG",
+          "MDV",
+          "MEX",
+          "MKD",
+          "MLI",
+          "MLT",
+          "MMR",
+          "MNE",
+          "MNG",
+          "MOZ",
+          "MRT",
+          "MSR",
+          "MUS",
+          "MWI",
+          "MYS",
+          "NAM",
+          "NER",
+          "NGA",
+          "NIC",
+          "NLD",
+          "NOR",
+          "NPL",
+          "NRU",
+          "NZL",
+          "OMN",
+          "PAK",
+          "PAN",
+          "PER",
+          "PHL",
+          "PLW",
+          "PNG",
+          "POL",
+          "PRT",
+          "PRY",
+          "QAT",
+          "ROU",
+          "RUS",
+          "RWA",
+          "SAU",
+          "SEN",
+          "SGP",
+          "SLB",
+          "SLE",
+          "SLV",
+          "SRB",
+          "STP",
+          "SUR",
+          "SVK",
+          "SVN",
+          "SWE",
+          "SWZ",
+          "SYC",
+          "TCA",
+          "TCD",
+          "THA",
+          "TJK",
+          "TKM",
+          "TON",
+          "TTO",
+          "TUN",
+          "TUR",
+          "TWN",
+          "TZA",
+          "UGA",
+          "UKR",
+          "URY",
+          "USA",
+          "UZB",
+          "VCT",
+          "VEN",
+          "VGB",
+          "VNM",
+          "VUT",
+          "XKS",
+          "YEM",
+          "ZAF",
+          "ZMB",
+          "ZWE"
+        ]
+      },
+      "id": "6819117404",
+      "type": "subscriptionAvailabilities"
+    },
+    "subscriptionAvailability:com.transfinite.MoodMargins.plus.yearly": {
+      "fields": {
+        "availableInNewTerritories": true,
+        "availableTerritories": [
+          "AFG",
+          "AGO",
+          "AIA",
+          "ALB",
+          "ARE",
+          "ARG",
+          "ARM",
+          "ATG",
+          "AUS",
+          "AUT",
+          "AZE",
+          "BEL",
+          "BEN",
+          "BFA",
+          "BGR",
+          "BHR",
+          "BHS",
+          "BIH",
+          "BLR",
+          "BLZ",
+          "BMU",
+          "BOL",
+          "BRA",
+          "BRB",
+          "BRN",
+          "BTN",
+          "BWA",
+          "CAN",
+          "CHE",
+          "CHL",
+          "CHN",
+          "CIV",
+          "CMR",
+          "COD",
+          "COG",
+          "COL",
+          "CPV",
+          "CRI",
+          "CYM",
+          "CYP",
+          "CZE",
+          "DEU",
+          "DMA",
+          "DNK",
+          "DOM",
+          "DZA",
+          "ECU",
+          "EGY",
+          "ESP",
+          "EST",
+          "FIN",
+          "FJI",
+          "FRA",
+          "FSM",
+          "GAB",
+          "GBR",
+          "GEO",
+          "GHA",
+          "GMB",
+          "GNB",
+          "GRC",
+          "GRD",
+          "GTM",
+          "GUY",
+          "HKG",
+          "HND",
+          "HRV",
+          "HUN",
+          "IDN",
+          "IND",
+          "IRL",
+          "IRQ",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JAM",
+          "JOR",
+          "JPN",
+          "KAZ",
+          "KEN",
+          "KGZ",
+          "KHM",
+          "KNA",
+          "KOR",
+          "KWT",
+          "LAO",
+          "LBN",
+          "LBR",
+          "LBY",
+          "LCA",
+          "LKA",
+          "LTU",
+          "LUX",
+          "LVA",
+          "MAC",
+          "MAR",
+          "MDA",
+          "MDG",
+          "MDV",
+          "MEX",
+          "MKD",
+          "MLI",
+          "MLT",
+          "MMR",
+          "MNE",
+          "MNG",
+          "MOZ",
+          "MRT",
+          "MSR",
+          "MUS",
+          "MWI",
+          "MYS",
+          "NAM",
+          "NER",
+          "NGA",
+          "NIC",
+          "NLD",
+          "NOR",
+          "NPL",
+          "NRU",
+          "NZL",
+          "OMN",
+          "PAK",
+          "PAN",
+          "PER",
+          "PHL",
+          "PLW",
+          "PNG",
+          "POL",
+          "PRT",
+          "PRY",
+          "QAT",
+          "ROU",
+          "RUS",
+          "RWA",
+          "SAU",
+          "SEN",
+          "SGP",
+          "SLB",
+          "SLE",
+          "SLV",
+          "SRB",
+          "STP",
+          "SUR",
+          "SVK",
+          "SVN",
+          "SWE",
+          "SWZ",
+          "SYC",
+          "TCA",
+          "TCD",
+          "THA",
+          "TJK",
+          "TKM",
+          "TON",
+          "TTO",
+          "TUN",
+          "TUR",
+          "TWN",
+          "TZA",
+          "UGA",
+          "UKR",
+          "URY",
+          "USA",
+          "UZB",
+          "VCT",
+          "VEN",
+          "VGB",
+          "VNM",
+          "VUT",
+          "XKS",
+          "YEM",
+          "ZAF",
+          "ZMB",
+          "ZWE"
+        ]
+      },
+      "id": "6819117424",
+      "type": "subscriptionAvailabilities"
+    },
+    "subscriptionGracePeriod": {
+      "fields": {
+        "optIn": false,
+        "sandboxOptIn": false
+      },
+      "id": "6819079849",
+      "type": "subscriptionGracePeriods"
+    },
+    "subscriptionGroup:MoodMargins Plus": {
+      "fields": {
+        "referenceName": "MoodMargins Plus"
+      },
+      "id": "22441029",
+      "type": "subscriptionGroups"
+    },
+    "subscriptionGroupLocalization:MoodMargins Plus:ar-SA": {
+      "fields": {
+        "customAppName": "MoodMargins",
+        "name": "MoodMargins Plus"
+      },
+      "id": "dd3bee89-8090-4ce9-8eb8-49af963afef0",
+      "type": "subscriptionGroupLocalizations"
+    },
+    "subscriptionGroupLocalization:MoodMargins Plus:en-US": {
+      "fields": {
+        "name": "MoodMargins Plus"
+      },
+      "id": "4056ad83-105d-4df7-896f-16e5fac2fafd",
+      "type": "subscriptionGroupLocalizations"
+    },
+    "subscriptionGroupLocalization:MoodMargins Plus:es-ES": {
+      "fields": {
+        "customAppName": "MoodMargins",
+        "name": "MoodMargins Plus"
+      },
+      "id": "9a7945b3-a114-4ddd-9bea-218f9b2c4c55",
+      "type": "subscriptionGroupLocalizations"
+    },
+    "subscriptionLocalization:com.transfinite.MoodMargins.plus.monthly:ar-SA": {
+      "fields": {
+        "description": "سمات مميزة ووسوم ذكية وملخصات لطيفة.",
+        "name": "Plus شهري"
+      },
+      "id": "977bbec3-2a9f-4c05-83ec-071b90a2b074",
+      "type": "subscriptionLocalizations"
+    },
+    "subscriptionLocalization:com.transfinite.MoodMargins.plus.monthly:en-US": {
+      "fields": {
+        "description": "Premium themes, AI tags and gentle recaps.",
+        "name": "Plus Monthly"
+      },
+      "id": "c7c749e3-95be-4208-a8c2-56714cb79d83",
+      "type": "subscriptionLocalizations"
+    },
+    "subscriptionLocalization:com.transfinite.MoodMargins.plus.monthly:es-ES": {
+      "fields": {
+        "description": "Temas premium, etiquetas con IA y resúmenes.",
+        "name": "Plus mensual"
+      },
+      "id": "16a8c8c0-3798-4886-a2a1-a604e8f34b4d",
+      "type": "subscriptionLocalizations"
+    },
+    "subscriptionLocalization:com.transfinite.MoodMargins.plus.weekly:ar-SA": {
+      "fields": {
+        "description": "سمات مميزة ووسوم ذكية وملخصات لطيفة.",
+        "name": "Plus أسبوعي"
+      },
+      "id": "78ae3d0f-5f16-4baa-830f-a68f29d753ec",
+      "type": "subscriptionLocalizations"
+    },
+    "subscriptionLocalization:com.transfinite.MoodMargins.plus.weekly:en-US": {
+      "fields": {
+        "description": "Premium themes, AI tags and gentle recaps.",
+        "name": "Plus Weekly"
+      },
+      "id": "83eb3443-8f16-45c4-8720-7d7c8aae4047",
+      "type": "subscriptionLocalizations"
+    },
+    "subscriptionLocalization:com.transfinite.MoodMargins.plus.weekly:es-ES": {
+      "fields": {
+        "description": "Temas premium, etiquetas con IA y resúmenes.",
+        "name": "Plus semanal"
+      },
+      "id": "ac96d979-4c01-4855-85bf-3350551c08c0",
+      "type": "subscriptionLocalizations"
+    },
+    "subscriptionLocalization:com.transfinite.MoodMargins.plus.yearly:ar-SA": {
+      "fields": {
+        "description": "سمات مميزة ووسوم ذكية وملخصات لطيفة.",
+        "name": "Plus سنوي"
+      },
+      "id": "7ceea7a4-fb9e-47b2-9b5e-b61691cfc10e",
+      "type": "subscriptionLocalizations"
+    },
+    "subscriptionLocalization:com.transfinite.MoodMargins.plus.yearly:en-US": {
+      "fields": {
+        "description": "Premium themes, AI tags and gentle recaps.",
+        "name": "Plus Yearly"
+      },
+      "id": "8676a240-730e-47f8-ac8a-dd335ed09e68",
+      "type": "subscriptionLocalizations"
+    },
+    "subscriptionLocalization:com.transfinite.MoodMargins.plus.yearly:es-ES": {
+      "fields": {
+        "description": "Temas premium, etiquetas con IA y resúmenes.",
+        "name": "Plus anual"
+      },
+      "id": "4b2f8f00-acf8-4f39-82dd-929d2b6417dd",
+      "type": "subscriptionLocalizations"
+    },
+    "subscriptionPricing:com.transfinite.MoodMargins.plus.monthly": {
+      "fields": {
+        "baseTerritory": "USA",
+        "prices": [
+          {
+            "customerPrice": "2.99",
+            "territory": "USA"
+          }
+        ]
+      },
+      "id": "6819117421",
+      "type": "subscriptionPrices"
+    },
+    "subscriptionPricing:com.transfinite.MoodMargins.plus.weekly": {
+      "fields": {
+        "baseTerritory": "USA",
+        "prices": [
+          {
+            "customerPrice": "0.99",
+            "territory": "USA"
+          }
+        ]
+      },
+      "id": "6819117404",
+      "type": "subscriptionPrices"
+    },
+    "subscriptionPricing:com.transfinite.MoodMargins.plus.yearly": {
+      "fields": {
+        "baseTerritory": "USA",
+        "prices": [
+          {
+            "customerPrice": "19.99",
+            "territory": "USA"
+          }
+        ]
+      },
+      "id": "6819117424",
+      "type": "subscriptionPrices"
+    },
+    "subscriptionReviewScreenshot:com.transfinite.MoodMargins.plus.monthly": {
+      "fields": {
+        "screenshot": {
+          "fileSize": 350197,
+          "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+        }
+      },
+      "id": "b1448708-3dc8-4494-9b8e-b7b0cbddf0d2",
+      "type": "subscriptionAppStoreReviewScreenshots"
+    },
+    "subscriptionReviewScreenshot:com.transfinite.MoodMargins.plus.weekly": {
+      "fields": {
+        "screenshot": {
+          "fileSize": 350197,
+          "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+        }
+      },
+      "id": "b8e82042-db25-4b9a-9fe8-cc1d95494227",
+      "type": "subscriptionAppStoreReviewScreenshots"
+    },
+    "subscriptionReviewScreenshot:com.transfinite.MoodMargins.plus.yearly": {
+      "fields": {
+        "screenshot": {
+          "fileSize": 350197,
+          "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+        }
+      },
+      "id": "fe8f52d2-c870-4708-977a-eb6585ad82f0",
+      "type": "subscriptionAppStoreReviewScreenshots"
+    }
+  }
+}

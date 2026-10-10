@@ -22,7 +22,3 @@ struct PageDateHeader: View {
         }
     }
 }
-
-#Preview {
-    PageDateHeader(date: Date(), ink: PastelTheme.ink)
-}

@@ -16,6 +16,7 @@ final class NavigationContext {
     var todayPath: [AppScreen] = []
     var pagePath: [AppScreen] = []
     var insightsPath: [AppScreen] = []
+    var customizePath = NavigationPath()
     var presentedSheet: AppSheet?
     var presentedFullScreenCover: AppFullScreenCover?
 
@@ -35,6 +36,8 @@ final class NavigationContext {
                 pagePath.append(screen)
         case .insights:
             insightsPath.append(screen)
+        case .customize:
+            customizePath.append(screen)
         }
     }
 
@@ -46,6 +49,8 @@ final class NavigationContext {
                 pagePath.removeAll()
         case .insights:
             insightsPath.removeAll()
+        case .customize:
+            customizePath = NavigationPath()
         }
     }
 

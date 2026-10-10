@@ -1,0 +1,286 @@
+{
+  "app": "MoodMargins",
+  "date": "2026-10-04",
+  "method": "Initial manual testing followed by fixes, regression tests, deterministic chart renders, and further interaction through Bitrig's iPad and Watch simulators. Initial observations are preserved below.",
+  "overallResult": "Failed checks reproduced; full coverage incomplete because simulator inspection stopped working.",
+  "sourceBaseline": "4ff8937",
+  "buildFixCommit": "ccd6686",
+  "environment": {
+    "xcode": "27.0 (27A266a)",
+    "swiftCompiler": "Apple Swift 6.4 (swiftlang-6.4.0.34.1)",
+    "appSwiftLanguageMode": "6",
+    "appApproachableConcurrency": true,
+    "iOSDeploymentTarget": "27.0",
+    "macOSDeploymentTargetAfterApprovedChange": "27.0",
+    "watchOSDeploymentTarget": "27.0",
+    "observedPhoneModel": "iPhone 17 Pro Max",
+    "observedWatchModel": "Apple Watch Ultra 3 (49mm)",
+    "runtimeOSVersions": "Not provided by simulator observations; SDK and deployment targets were inspected separately."
+  },
+  "buildChanges": {
+    "reason": "Bitrig blocked simulator interactions until all runnable targets built successfully; the existing Mac build failed.",
+    "changes": [
+      "Raised the Mac app, widget, and test deployment targets from 26.5 to 27.0 with user approval.",
+      "Applied navigationBar visibility modifiers only on platforms that support navigationBar.",
+      "Used a sheet for the existing full-screen presentation routes on Mac.",
+      "Restricted the embedded Watch app and its target dependency to iOS."
+    ],
+    "validation": "Bitrig build_project returned success after the fixes and again on the subsequent rebuild. git diff --check passed.",
+    "laterRecoveryBuild": "Subsequent build_project calls completed successfully. iPad interaction recovered; iPhone state inspection still fails."
+  },
+  "passedChecks": [
+    {
+      "flow": "Onboarding",
+      "verified": "Read all three pages using Next, then tapped Start journaling and reached Today."
+    },
+    {
+      "flow": "Mood and note input",
+      "verified": "Selected Wink in Today and Sad in Page. Entered and replaced notes through the software keyboard; draft status updated. The other three mood choices were visible but were not individually exercised."
+    },
+    {
+      "flow": "Tag suggestions",
+      "verified": "Writing about a walk and family produced peaceful walk, family, grateful, and outdoors suggestions. Selecting grateful and family updated the tag count and chips.",
+      "limit": "This verifies the suggestion UI, not whether Apple Intelligence or the existing fallback generated the suggestions."
+    },
+    {
+      "flow": "Save Today",
+      "verified": "Save changed to disabled Saved; the note, mood, and selected tags appeared in Recent pages and a calendar sticker appeared in Page."
+    },
+    {
+      "flow": "Keyboard dismissal",
+      "verified": "A downward content drag dismissed the keyboard and restored access to the tab bar. Save alone left the keyboard open."
+    },
+    {
+      "flow": "Load a page",
+      "verified": "Tapping the October 4 calendar sticker loaded the saved note into the Page editor."
+    },
+    {
+      "flow": "Edit a page",
+      "verified": "Changed the saved note, chose Sad, added calm, and tapped Save page. Recent pages and Insights reflected the edit."
+    },
+    {
+      "flow": "Mood filtering",
+      "verified": "Wink showed zero matching pages, Sad showed the edited page, and All restored browsing without a mood restriction."
+    },
+    {
+      "flow": "Insights data updates",
+      "verified": "The single saved Sad entry produced Entries 1, Average 2.0, a trend point at Sad, and a Sad distribution count of 1."
+    },
+    {
+      "flow": "Insufficient entries for a recap",
+      "verified": "With zero or one saved entry, the recap explained that at least two entries were required rather than displaying a generation failure."
+    },
+    {
+      "flow": "Navigation",
+      "verified": "Switched repeatedly among Today, Page, and Insights after dismissing the keyboard."
+    }
+  ],
+  "findings": [
+    {
+      "id": "UI-01",
+      "priority": "High",
+      "title": "Today retains stale saved state after a Page edit",
+      "steps": [
+        "Save an entry in Today.",
+        "In Page, tap its calendar sticker, edit its note and mood, and save.",
+        "Return to Today."
+      ],
+      "expected": "Today's editor displays the current saved entry when it has no unsaved changes.",
+      "actual": "Today still shows the original Wink mood and original note with disabled Saved, while its Recent pages card shows the edited Sad entry.",
+      "risk": "A subsequent Today save could replace the newer Page edit. That overwrite was not executed during this test.",
+      "source": "MoodMargins/Features/Today/ViewModel/TodayViewModel.swift: loadTodayIfNeeded only loads once per view-model lifecycle.",
+      "initialStatus": "Reproduced; not fixed.",
+      "status": "Fixed; validation and remaining limits are described below.",
+      "remediation": "Clean Today editors refresh from value snapshots; unsaved drafts remain independent. Deleting a saved page clears a clean editor.",
+      "verification": "JournalSynchronizationTests covers external edits, draft preservation, and deletion. The same saved note was visible in Today and Pages on iPad."
+    },
+    {
+      "id": "UI-02",
+      "priority": "High",
+      "title": "Page starts with a template instead of today's saved entry",
+      "steps": [
+        "Save an entry in Today.",
+        "Open Page before tapping a calendar sticker."
+      ],
+      "expected": "The selected date and editor agree with the saved entry, or the UI explicitly presents a separate new draft.",
+      "actual": "The editor shows Dear diary, and the default Laughing mood even though a saved Wink entry exists for the displayed date. Tapping its calendar sticker loads the real entry.",
+      "risk": "Save page can replace the entry for the displayed date with this template. The replacement behavior is inferred from the save implementation; the template overwrite was not executed.",
+      "source": "MoodMargins/Features/Pages/ViewModel/PageViewModel.swift: default draft values and same-day fallback save matching.",
+      "initialStatus": "Stale initial editor reproduced; overwrite risk identified from code.",
+      "status": "Fixed; validation and remaining limits are described below.",
+      "remediation": "Pages synchronizes its initial selection with the saved entry, with an empty draft only when no entry exists.",
+      "verification": "Initial editor loading was observed on iPad. An isolated SwiftData regression test verifies that saving this initial state preserves the existing note and mood."
+    },
+    {
+      "id": "UI-03",
+      "priority": "High",
+      "title": "Dark appearance makes diary text and secondary labels unreadable",
+      "steps": [
+        "Save a note.",
+        "Set simulator appearance to dark.",
+        "Inspect Today and Insights."
+      ],
+      "expected": "Readable text contrast against the diary cards and background in both appearances.",
+      "actual": "Diary notes become white on cream cards. Dates, status copy, insight captions, and chart dates become very faint on the fixed light backgrounds.",
+      "initialStatus": "Reproduced on Today and Insights; not fixed.",
+      "status": "Fixed; validation and remaining limits are described below.",
+      "remediation": "Diary backgrounds, ink, secondary ink, and rules use appearance-aware colors; controls use native tint.",
+      "verification": "Light and dark Insights were visually inspected on iPad, including maximum accessibility text size. Compact dark chart fixtures were rendered separately."
+    },
+    {
+      "id": "UI-04",
+      "priority": "Medium",
+      "title": "Insights shows the Today heading and no range selector",
+      "steps": [
+        "Open Insights and inspect the entire screen."
+      ],
+      "expected": "An Insights heading and a reachable control for the supported ranges.",
+      "actual": "The heading is Today. No range picker appears visually or in the accessibility tree; the screen remains on the 7-day range.",
+      "source": "InsightsView uses Header rather than the existing InsightHeader, which contains the range picker.",
+      "initialStatus": "Reproduced; not fixed.",
+      "status": "Fixed; validation and remaining limits are described below.",
+      "remediation": "Insights uses InsightHeader and a 7/14/30/365-day range picker, changing to a menu at accessibility text sizes.",
+      "verification": "The 7-day and 14-day graphs and selected controls were observed on iPad. Unit tests cover all selectable ranges."
+    },
+    {
+      "id": "UI-05",
+      "priority": "Medium",
+      "title": "Insight summaries display raw symbol names and unsupported conclusions",
+      "steps": [
+        "Open Insights with zero entries.",
+        "Save a Sad entry and inspect Insights again."
+      ],
+      "expected": "A friendly empty state, a meaningful common-mood value, and patterns supported by the saved entries.",
+      "actual": "Most common displays angry.face with no entries and sad.face after the edit. The empty screen shows #calm as Top tag. Soft pattern claims outdoors pages often have Good or Great moods even with no entries or outdoors tags.",
+      "initialStatus": "Reproduced; not fixed.",
+      "status": "Fixed; validation and remaining limits are described below.",
+      "remediation": "Most common uses its live Lottie emoji; empty summaries show dashes, and patterns derive from actual saved tags and moods.",
+      "verification": "Most common Laughing, empty Top tag, factual empty activity state, and real distribution counts were observed on iPad. Pattern and empty-state rules have regression coverage."
+    },
+    {
+      "id": "UI-06",
+      "priority": "Medium",
+      "title": "The streak badge is static",
+      "steps": [
+        "Finish onboarding on the empty simulator and inspect Today and Insights."
+      ],
+      "expected": "A streak derived from saved entries.",
+      "actual": "Both screens display 3-day streak with zero entries, and the badge remains unchanged after one save.",
+      "source": "MoodMargins/Features/Today/Components/Header.swift contains the literal 3-day streak.",
+      "initialStatus": "Reproduced and confirmed in code; not fixed.",
+      "status": "Fixed; validation and remaining limits are described below.",
+      "remediation": "Streak counts unique consecutive saved calendar days, allowing an unfinished today.",
+      "verification": "A real 1-day streak was observed on iPad. Fixed-calendar tests cover duplicate entries, gaps, yesterday, empty data, and future entries."
+    },
+    {
+      "id": "UI-07",
+      "priority": "Medium",
+      "title": "Search is not reachable on the tested Page screen",
+      "steps": [
+        "Open Page and inspect its header, browsing section, and accessibility tree."
+      ],
+      "expected": "A visible or discoverable search control for saved pages.",
+      "actual": "No search field or search action was available despite searchable being declared in the view.",
+      "initialStatus": "Control absence observed; query behavior could not be tested.",
+      "status": "Fixed; validation and remaining limits are described below.",
+      "remediation": "Pages exposes its search field and matches localized note, tag, and mood text with whitespace trimming.",
+      "verification": "Search was visible on iPad. A nonmatching query returned zero pages; park returned the saved page. The search was cleared afterward."
+    },
+    {
+      "id": "UI-08",
+      "priority": "Medium",
+      "title": "Maximum Dynamic Type breaks labels and saved-page previews",
+      "steps": [
+        "Set text size to accessibility_extra_extra_extra_large.",
+        "Inspect Today and scroll to Recent pages."
+      ],
+      "expected": "Readable controls and meaningful preview text at supported accessibility sizes.",
+      "actual": "Saved breaks within the word across lines. The small Recent pages card reduces the date and note to heavily truncated fragments such as Oc… and UI T….",
+      "initialStatus": "Reproduced on Today; not fixed.",
+      "status": "Fixed; validation and remaining limits are described below.",
+      "remediation": "Save controls reflow, preview width and typography scale, dates adapt, and accessibility layouts use a single column without excessive minimum card height.",
+      "verification": "Large-text iPad controls and Insights layouts were inspected. Compact and accessibility chart fixtures rendered successfully. A final iPhone replay remains blocked by Bitrig state inspection."
+    },
+    {
+      "id": "UI-09",
+      "priority": "Medium",
+      "title": "Selected moods and tags are not conveyed in accessibility state",
+      "steps": [
+        "Select a mood and tags, then inspect their accessibility entries."
+      ],
+      "expected": "The selected state is available to assistive technology as well as visually.",
+      "actual": "The controls expose labels but no selected trait or selected-state value after selection, while their visual styling changes.",
+      "initialStatus": "Accessibility tree observation only; VoiceOver interaction was not completed.",
+      "status": "Fixed; validation and remaining limits are described below.",
+      "remediation": "Mood controls expose selected traits; tag controls use native Toggle state. Decorative emojis are hidden from VoiceOver while chart points and distribution rows expose mood descriptions.",
+      "verification": "The iPad accessibility tree showed the selected Laughing mood and native tag switch state. VoiceOver operation itself was not completed."
+    },
+    {
+      "id": "UI-10",
+      "priority": "High for the Watch product",
+      "title": "The Watch app is still a placeholder",
+      "steps": [
+        "Inspect the running Watch app."
+      ],
+      "expected": "Usable MoodMargins functionality on the shipped Watch target.",
+      "actual": "Only a globe and Hello, world! appear. There are no journaling controls.",
+      "initialStatus": "Reproduced; not implemented during this testing task.",
+      "status": "Fixed; validation and remaining limits are described below.",
+      "remediation": "Watch has a native mood picker, note field, same-day save/edit, recent pages, and local persisted storage with explicit local-only copy.",
+      "verification": "Watch showed a saved mood and note after rebuilding. An isolated persistence harness verified save, reopening, same-day edit without duplication, and protection of unreadable storage. Phone sync is not implemented or advertised."
+    }
+  ],
+  "inconclusiveObservations": [
+    {
+      "flow": "iPhone landscape with Reduce Motion enabled",
+      "observed": "Page appeared in a narrow column with blank white side areas. Simulator inspection subsequently failed.",
+      "limit": "The observation was not reproduced on another device; it may be a simulator rendering problem rather than an app layout defect. Reduce Motion animation behavior was not established."
+    }
+  ],
+  "blockedOrUnverified": [
+    "Final iPhone replay: getSimulator still reports Failed to read the simulator state after successful builds. Compact layouts were rendered with isolated fixtures, but this does not replace live iPhone interaction.",
+    "Actual PCC generation, service availability and quota-management sheet: integration compiles and routing/error behavior is covered by tests; a live cloud request was not performed.",
+    "Actual AI recap generation: the live iPad journal had one saved entry, below the two-entry threshold. Cancellation and failure behavior are tested with providers.",
+    "Verified cold-launch persistence of the main journal, CloudKit synchronization between devices, and real save-error recovery.",
+    "VoiceOver operation, localization and right-to-left runtime layout, widget workflows, and Mac or Vision Pro runtime interaction.",
+    "Cleanup of the earlier phone UI TEST entry: the phone remains inaccessible. No existing iPad or Watch entries were edited or deleted during follow-up checks."
+  ],
+  "simulatorRecoveryAttempts": [
+    "Rebuilt successfully after the first iPad connection failures.",
+    "Reacquired the iPhone binding after a read timeout; state reading still failed.",
+    "Inspected the Watch successfully; its placeholder screen was readable.",
+    "Requested a change to the supported iPhone 18 Pro model; it progressed through preparingDevice and idle without yielding a usable inspection session.",
+    "Requested another Bitrig build; simulator discovery then timed out.",
+    "An alternate Xcode device-interaction session was unavailable because this agent was not approved to use Xcode's tools. No Xcode session was established.",
+    "Further successful builds recovered iPad interaction and continued to run the Watch target.",
+    "The final phone acquisition still returned Failed to read the simulator state. No further device-model changes were made."
+  ],
+  "cleanup": {
+    "testData": "One saved entry labeled UI TEST remains because simulator inspection stopped working before deletion. Its latest saved note begins UI TEST: Edited in Page.",
+    "settings": "Follow-up iPad testing restored light appearance and standard large text size, cleared search, retained on-device generation, and left Insights on the 7-day range.",
+    "device": "Final observations: iPad Pro 13-inch (M5) (16GB) and Apple Watch Ultra 3 (49mm). Phone acquisition remains blocked."
+  },
+  "followUpValidation": {
+    "date": "2026-10-04",
+    "build": "Final Bitrig build_project succeeded with no diagnostics after the endpoint date-label fix.",
+    "tests": "xcodebuild test on macOS with Xcode 27: 17 XCTest tests plus 32 Swift Testing tests passed (49 total). The chart rendering test was rerun after the final endpoint-label adjustment and passed.",
+    "testResult": "QA-Tests/Logs/Test/Test-MoodMargins-2026.10.04_16-21-28--0400.xcresult (under the Bitrig Builds directory)",
+    "chartRenderResult": "QA-Tests/Logs/Test/Test-MoodMargins-2026.10.04_16-24-11--0400.xcresult (under the Bitrig Builds directory)",
+    "renderLimits": "ImageRenderer cannot flatten the platform-backed Lottie player. Animated emojis were verified in the live iPad app rather than inferred from static renders.",
+    "graphChanges": [
+      "Vertical-axis Lottie emojis retained; numbered mood legend removed.",
+      "Mood Stickers distribution labels and Most Common use live Lottie emojis, retaining accessible mood names.",
+      "Overall mood uses descriptive words instead of an unexplained numeric average; a balanced 3.5 remains a mix of moods.",
+      "Trend points use actual calendar dates, preserve missing-day gaps, and show endpoint date labels aligned inside the plot.",
+      "Distribution bars show share of all saved pages, with zero-count bars empty.",
+      "Cards use consistent upright layouts, equal summary widths, dynamic appearance colors, and adaptive columns."
+    ],
+    "modelChanges": [
+      "Production Foundation Models code directly targets OS 27; availability-version wrappers and fallback generators were removed.",
+      "A persisted picker chooses on-device SystemLanguageModel or PrivateCloudComputeLanguageModel for both tags and recaps, defaulting to on-device.",
+      "OS 27 sessions check readiness, locale, guided-generation capability, and PCC quota; typed network, quota, and service failures expose recovery instructions.",
+      "Generation is streamed in cancellable view-owned tasks. Request identities include model choice and note edits; failed requests can be retried.",
+      "The live picker exposed both options. On-device tag suggestions appeared for the existing iPad note. No live PCC generation was performed."
+    ]
+  }
+}

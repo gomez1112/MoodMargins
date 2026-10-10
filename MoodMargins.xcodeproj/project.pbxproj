@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CCE094932FE8380900725C1C /* FlexStore in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094922FE8380900725C1C /* FlexStore */; };
+		A61000000000000000000001 /* PurchaseCompletion.storekit in UI Test Resources */ = {isa = PBXBuildFile; fileRef = A61000000000000000000002 /* PurchaseCompletion.storekit */; };
+        A11000000000000000000001 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11000000000000000000002 /* Mood.swift */; };
 		CCE0949B2FE8389F00725C1C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949A2FE8389F00725C1C /* WidgetKit.framework */; };
 		CCE0949D2FE8389F00725C1C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949C2FE8389F00725C1C /* SwiftUI.framework */; };
 		CCE094AE2FE8389F00725C1C /* MoodMarginsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CCE094982FE8389F00725C1C /* MoodMarginsWidgetExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CCE094B92FE8397F00725C1C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949A2FE8389F00725C1C /* WidgetKit.framework */; };
 		CCE094BA2FE8397F00725C1C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE0949C2FE8389F00725C1C /* SwiftUI.framework */; };
-		CCE094C52FE8398000725C1C /* MoodMarginsWidgetMacExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CCE094B82FE8397F00725C1C /* MoodMarginsWidgetMacExtension.appex */; platformFilters = (macos, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CCE094D12FE83AA100725C1C /* EZSwiftData in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094D02FE83AA100725C1C /* EZSwiftData */; };
 		CCE094D42FE83AB600725C1C /* EZCharts in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094D32FE83AB600725C1C /* EZCharts */; };
 		CCE094D62FE83AB600725C1C /* EZCharts3D in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094D52FE83AB600725C1C /* EZCharts3D */; };
@@ -22,8 +22,9 @@
 		CCE094DF2FE83AFC00725C1C /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094DE2FE83AFC00725C1C /* Algorithms */; };
 		CCE094E22FE840C000725C1C /* DotLottie in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094E12FE840C000725C1C /* DotLottie */; };
 		CCE094E42FE840C000725C1C /* DotLottiePlayer in Frameworks */ = {isa = PBXBuildFile; productRef = CCE094E32FE840C000725C1C /* DotLottiePlayer */; };
-		CCE095112FE8490A00725C1C /* WatchMoodMargins Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CCE095072FE8490900725C1C /* WatchMoodMargins Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCE095112FE8490A00725C1C /* WatchMoodMargins Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CCE095072FE8490900725C1C /* WatchMoodMargins Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CCE0955A2FE8828E00725C1C /* MoodMarginsIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = CCE095592FE8828E00725C1C /* MoodMarginsIcon.icon */; };
+		A51000000000000000000001 /* MoodMarginsIcon.icon in Watch Resources */ = {isa = PBXBuildFile; fileRef = CCE095592FE8828E00725C1C /* MoodMarginsIcon.icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,13 +49,6 @@
 			remoteGlobalIDString = CCE094972FE8389F00725C1C;
 			remoteInfo = MoodMarginsWidgetExtension;
 		};
-		CCE094C32FE8398000725C1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCE094612FE8377800725C1C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CCE094B72FE8397F00725C1C;
-			remoteInfo = MoodMarginsWidgetMacExtension;
-		};
 		CCE0950F2FE8490A00725C1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CCE094612FE8377800725C1C /* Project object */;
@@ -71,7 +65,6 @@
 			dstSubfolder = PlugIns;
 			files = (
 				CCE094AE2FE8389F00725C1C /* MoodMarginsWidgetExtension.appex in Embed Foundation Extensions */,
-				CCE094C52FE8398000725C1C /* MoodMarginsWidgetMacExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 		};
@@ -87,6 +80,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A61000000000000000000002 /* PurchaseCompletion.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MoodMarginsTests/Store/PurchaseCompletion.storekit; sourceTree = SOURCE_ROOT; };
+        A11000000000000000000002 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMargins/Shared/Model/Mood.swift; sourceTree = SOURCE_ROOT; };
 		CC7170862FF18C7E00C635FD /* EvaluationSeedSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationSeedSamples.swift; sourceTree = "<group>"; };
 		CC7170872FF18C7E00C635FD /* EvaluationValidators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationValidators.swift; sourceTree = "<group>"; };
 		CC7170882FF18C7F00C635FD /* SyntheticDatasetGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntheticDatasetGeneration.swift; sourceTree = "<group>"; };
@@ -176,7 +171,6 @@
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				CCE094E42FE840C000725C1C /* DotLottiePlayer in Frameworks */,
-				CCE094932FE8380900725C1C /* FlexStore in Frameworks */,
 				CCE094E22FE840C000725C1C /* DotLottie in Frameworks */,
 				CCE094DF2FE83AFC00725C1C /* Algorithms in Frameworks */,
 				CCE094D62FE83AB600725C1C /* EZCharts3D in Frameworks */,
@@ -218,6 +212,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+        A11000000000000000000003 /* Shared Watch Model */ = {
+            isa = PBXGroup;
+            children = (A11000000000000000000002 /* Mood.swift */,);
+            name = "Shared Watch Model";
+            sourceTree = "<group>";
+        };
 		CC71706B2FF18B3500C635FD /* MoodMarginsEvaluations */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +241,7 @@
 				CCE0949E2FE8389F00725C1C /* MoodMarginsWidget */,
 				CCE094BB2FE8397F00725C1C /* MoodMarginsWidgetMac */,
 				CCE095082FE8490900725C1C /* WatchMoodMargins Watch App */,
+                A11000000000000000000003 /* Shared Watch Model */,
 				CCE094992FE8389F00725C1C /* Frameworks */,
 				CCE0946A2FE8377800725C1C /* Products */,
 				CCE095592FE8828E00725C1C /* MoodMarginsIcon.icon */,
@@ -287,7 +288,6 @@
 			);
 			dependencies = (
 				CCE094AD2FE8389F00725C1C /* PBXTargetDependency */,
-				CCE094C42FE8398000725C1C /* PBXTargetDependency */,
 				CCE095102FE8490A00725C1C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
@@ -295,7 +295,6 @@
 			);
 			name = MoodMargins;
 			packageProductDependencies = (
-				CCE094922FE8380900725C1C /* FlexStore */,
 				CCE094D02FE83AA100725C1C /* EZSwiftData */,
 				CCE094D32FE83AB600725C1C /* EZCharts */,
 				CCE094D52FE83AB600725C1C /* EZCharts3D */,
@@ -451,7 +450,6 @@
 			mainGroup = CCE094602FE8377800725C1C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				CCE094912FE8380900725C1C /* XCRemoteSwiftPackageReference "FlexStore" */,
 				CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */,
 				CCE094D22FE83AB600725C1C /* XCRemoteSwiftPackageReference "EZCharts" */,
 				CCE094D72FE83AC300725C1C /* XCRemoteSwiftPackageReference "OnboardingKit" */,
@@ -489,6 +487,7 @@
 		CCE0947E2FE8377A00725C1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				A61000000000000000000001 /* PurchaseCompletion.storekit in UI Test Resources */,
 			);
 		};
 		CCE094962FE8389F00725C1C /* Resources */ = {
@@ -504,6 +503,7 @@
 		CCE095052FE8490900725C1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				A51000000000000000000001 /* MoodMarginsIcon.icon in Watch Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -537,6 +537,7 @@
 		CCE095032FE8490900725C1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+                A11000000000000000000001 /* Mood.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -558,16 +559,9 @@
 			target = CCE094972FE8389F00725C1C /* MoodMarginsWidgetExtension */;
 			targetProxy = CCE094AC2FE8389F00725C1C /* PBXContainerItemProxy */;
 		};
-		CCE094C42FE8398000725C1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilters = (
-				macos,
-			);
-			target = CCE094B72FE8397F00725C1C /* MoodMarginsWidgetMacExtension */;
-			targetProxy = CCE094C32FE8398000725C1C /* PBXContainerItemProxy */;
-		};
 		CCE095102FE8490A00725C1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = CCE095062FE8490900725C1C /* WatchMoodMargins Watch App */;
 			targetProxy = CCE0950F2FE8490A00725C1C /* PBXContainerItemProxy */;
 		};
@@ -694,8 +688,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = MoodMarginsIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=xros*]" = VisionAppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=xrsimulator*]" = VisionAppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MoodMargins/MoodMargins.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = MoodMargins/MoodMargins-Mac-Debug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
@@ -705,6 +702,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoodMargins/Info.plist;
+				"INFOPLIST_KEY_LSApplicationCategoryType[sdk=macosx*]" = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -718,7 +716,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -726,6 +724,7 @@
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				"EXCLUDED_ARCHS[sdk=xrsimulator*]" = x86_64;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -740,6 +739,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = MoodMarginsIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=xros*]" = VisionAppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=xrsimulator*]" = VisionAppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MoodMargins/MoodMargins.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -751,6 +752,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoodMargins/Info.plist;
+				"INFOPLIST_KEY_LSApplicationCategoryType[sdk=macosx*]" = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -764,7 +766,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -772,6 +774,7 @@
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				"EXCLUDED_ARCHS[sdk=xrsimulator*]" = x86_64;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -791,7 +794,7 @@
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMarginsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -801,7 +804,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+                SWIFT_STRICT_CONCURRENCY = complete;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodMargins.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoodMargins";
 				XROS_DEPLOYMENT_TARGET = 27.0;
@@ -817,7 +821,7 @@
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMarginsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -827,7 +831,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+                SWIFT_STRICT_CONCURRENCY = complete;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodMargins.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoodMargins";
 				XROS_DEPLOYMENT_TARGET = 27.0;
@@ -842,7 +847,7 @@
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMarginsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -867,7 +872,7 @@
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMarginsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -973,7 +978,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.MoodMarginsWidgetMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1008,7 +1013,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.MoodMarginsWidgetMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1026,7 +1031,7 @@
 		CCE095132FE8490A00725C1C /* Debug configuration for PBXNativeTarget "WatchMoodMargins Watch App" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = MoodMarginsIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "WatchMoodMargins Watch App/WatchMoodMargins Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -1034,6 +1039,7 @@
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleIconName = MoodMarginsIcon;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchMoodMargins;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.transfinite.MoodMargins;
@@ -1052,7 +1058,8 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+                SWIFT_STRICT_CONCURRENCY = complete;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 27.0;
 			};
@@ -1061,7 +1068,7 @@
 		CCE095142FE8490A00725C1C /* Release configuration for PBXNativeTarget "WatchMoodMargins Watch App" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = MoodMarginsIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "WatchMoodMargins Watch App/WatchMoodMargins Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -1069,6 +1076,7 @@
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleIconName = MoodMarginsIcon;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchMoodMargins;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.transfinite.MoodMargins;
@@ -1087,7 +1095,8 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+                SWIFT_STRICT_CONCURRENCY = complete;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 27.0;
@@ -1156,14 +1165,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CCE094912FE8380900725C1C /* XCRemoteSwiftPackageReference "FlexStore" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/gomez1112/FlexStore";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.1;
-			};
-		};
 		CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gomez1112/EZSwiftData";
@@ -1209,17 +1210,12 @@
 			repositoryURL = "https://github.com/LottieFiles/dotlottie-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 0.15.7;
+				version = 0.16.9;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CCE094922FE8380900725C1C /* FlexStore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CCE094912FE8380900725C1C /* XCRemoteSwiftPackageReference "FlexStore" */;
-			productName = FlexStore;
-		};
 		CCE094D02FE83AA100725C1C /* EZSwiftData */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */;

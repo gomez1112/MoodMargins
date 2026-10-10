@@ -72,7 +72,7 @@ private enum MoodMarginsOnboardingContent {
         [
             FeatureItem(
                 title: String(localized: "Daily mood pages"),
-                description: String(localized: "Start from Today, choose a mood, add a note, and save the page when it feels ready."),
+                description: String(localized: "Start from Today, choose a mood, and add a note. Your page saves automatically as you write."),
                 systemImage: "face.smiling.fill",
                 backgroundColor: PastelTheme.blush.opacity(0.72),
                 iconColor: PastelTheme.ink
@@ -92,11 +92,5 @@ private enum MoodMarginsOnboardingContent {
                 iconColor: Mood.laughing.tint
             )
         ]
-    }
-}
-
-#Preview {
-    MoodMarginsOnboarding {
-        ContentView()
     }
 }

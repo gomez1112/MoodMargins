@@ -27,6 +27,7 @@ final class TodayViewModel {
 
     /// Suggested tags generated from the draft note.
     var generatedTagSuggestions: [String] = []
+    var tagSuggestionError: String?
 
     /// A Boolean value indicating whether tag suggestions are currently generating.
     var isGeneratingTagSuggestions = false
@@ -46,6 +47,13 @@ final class TodayViewModel {
     /// A Boolean value indicating whether the view model has already attempted to load an entry for the current session.
     var didLoadToday = false
 
+    var saveErrorMessage: String?
+
+    var isShowingSaveError: Bool {
+        get { saveErrorMessage != nil }
+        set { if !newValue { saveErrorMessage = nil } }
+    }
+
     /// The fixed set of tags shown as quick suggestions on the Today page.
     let suggestedTags = [
         String(localized: "grateful"),
@@ -58,19 +66,56 @@ final class TodayViewModel {
     ]
 
     private let tagProvider = FoundationMoodTaggingProvider()
-    private var tagSuggestionTask: Task<Void, Never>?
+    private var activeTagRequest: UUID?
+    private var tagRetryRevision = 0
     private var lastTagSuggestionNote = ""
+    private var draftDate = Date()
+    private var selectedEntryID: UUID?
+    private var confirmedMood = false
+
+    var autosaveDraft: DiaryDraft {
+        DiaryDraft(date: draftDate, mood: selectedMood, note: note, tags: selectedTags, confirmedMood: confirmedMood)
+    }
+
+    func selectMood(_ mood: Mood) {
+        selectedMood = mood
+        confirmedMood = true
+    }
+
+    func autosave(entries: [MoodEntry], modelContext: ModelContext) async {
+        guard didLoadToday, hasUnsavedEdits else { return }
+        do {
+            try await Task.sleep(for: .milliseconds(500))
+            try Task.checkCancellation()
+            saveIfChanged(entries: entries, modelContext: modelContext)
+        } catch is CancellationError { return }
+        catch { saveErrorMessage = error.localizedDescription }
+    }
+
+    func saveIfChanged(entries: [MoodEntry], modelContext: ModelContext) {
+        guard didLoadToday, hasUnsavedEdits else { return }
+        saveTodayPage(entries: entries, modelContext: modelContext)
+    }
 
     /// Status copy that reflects the current editing state of the diary page.
     var statusText: String {
-        if pageSaved && !hasPendingChanges { return String(localized: "Today's page saved") }
-        if note.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty { return String(localized: "Dear diary...") }
-        return String(localized: "Draft updates live")
+        if saveErrorMessage != nil { return String(localized: "Couldn't save changes") }
+        if pageSaved && !hasPendingChanges { return String(localized: "Saved automatically") }
+        if hasUnsavedEdits { return String(localized: "Saving…") }
+        if note.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty { return String(localized: "Dear diary…") }
+        return String(localized: "Saving…")
     }
 
     /// A Boolean value indicating whether the editor differs from the last saved snapshot.
     var hasPendingChanges: Bool {
-        selectedMood != savedMood || note != savedNote || selectedTags != savedTags
+        !pageSaved || hasUnsavedEdits
+    }
+
+    private var hasUnsavedEdits: Bool {
+        if selectedEntryID == nil, savedNote.isEmpty, savedTags.isEmpty,
+           note.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty, selectedTags.isEmpty,
+           selectedMood == savedMood, !confirmedMood { return false }
+        return selectedMood != savedMood || note != savedNote || selectedTags != savedTags || (!pageSaved && confirmedMood)
     }
 
     /// The title shown on the save button for the current editing state.
@@ -92,17 +137,31 @@ final class TodayViewModel {
         max(selectedTagList.count - 4, 0)
     }
 
-    /// Loads the editor state from today's entry once per view-model lifecycle.
-    ///
-    /// If no entry exists for today, the first entry in `entries` is used as a fallback.
-    /// Calling this method after the first load attempt has no effect.
+    /// Refreshes a clean editor from today's saved entry while preserving an independent unsaved draft.
+    /// Older entries never become today's draft, and deleting today's entry clears a clean editor.
     ///
     /// - Parameter entries: The available mood entries, usually supplied by a SwiftData query.
     func loadTodayIfNeeded(from entries: [MoodEntry]) {
-        guard !didLoadToday else { return }
+        guard !didLoadToday || !hasUnsavedEdits else { return }
         didLoadToday = true
+        confirmedMood = false
 
-        guard let entry = entries.first(where: { Calendar.current.isDateInToday($0.date) }) ?? entries.first else { return }
+        guard let entry = entries.first(where: { Calendar.current.isDateInToday($0.date) }) else {
+            resetTagSuggestions()
+            selectedMood = .laughing
+            note = ""
+            selectedTags = []
+            savedMood = selectedMood
+            savedNote = ""
+            savedTags = []
+            pageSaved = false
+            draftDate = Date()
+            selectedEntryID = nil
+            return
+        }
+        if note != entry.note || (selectedEntryID != nil && selectedEntryID != entry.id) {
+            resetTagSuggestions()
+        }
         selectedMood = entry.mood
         note = entry.note
         selectedTags = Set(entry.tags)
@@ -110,6 +169,19 @@ final class TodayViewModel {
         savedNote = entry.note
         savedTags = Set(entry.tags)
         pageSaved = true
+        // Autosave updates the query after selecting a tag. Keep the other suggestions
+        // for this note, filtering out tags selected here or on another device.
+        generatedTagSuggestions = MoodTagNormalizer.normalizedTags(generatedTagSuggestions, excluding: selectedTags)
+        draftDate = entry.date
+        selectedEntryID = entry.id
+    }
+
+    private func resetTagSuggestions() {
+        activeTagRequest = nil
+        lastTagSuggestionNote = ""
+        generatedTagSuggestions = []
+        tagSuggestionError = nil
+        isGeneratingTagSuggestions = false
     }
 
     /// Saves the current Today page state into SwiftData.
@@ -122,48 +194,63 @@ final class TodayViewModel {
     ///   - modelContext: The SwiftData model context used to insert and save the entry.
     func saveTodayPage(entries: [MoodEntry], modelContext: ModelContext) {
         do {
+            saveErrorMessage = nil
             try persistTodayPage(entries: entries, modelContext: modelContext)
         } catch {
-            assertionFailure("Failed to save today's mood entry: \(error)")
+            saveErrorMessage = error.localizedDescription
         }
     }
 
-    /// Schedules a debounced Foundation Models content-tagging request for the current note.
-    func scheduleTagSuggestions() {
-        tagSuggestionTask?.cancel()
+    func tagRefreshID(using choice: FoundationModelChoice) -> String {
+        "\(choice.rawValue):\(tagRetryRevision):\(note)"
+    }
 
-        let trimmedNote = note.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard trimmedNote.count >= 12 else {
+    func retryTagSuggestions() {
+        lastTagSuggestionNote = ""
+        tagRetryRevision += 1
+    }
+
+    /// SwiftUI owns this debounced task and cancels it when the note, model, or view lifetime changes.
+    func generateTagSuggestions(using modelChoice: FoundationModelChoice, hasPlus: Bool) async {
+        let requestID = UUID()
+        activeTagRequest = requestID
+        tagSuggestionError = nil
+        isGeneratingTagSuggestions = false
+        guard hasPlus else {
             generatedTagSuggestions = []
-            isGeneratingTagSuggestions = false
             lastTagSuggestionNote = ""
             return
         }
-
-        guard trimmedNote != lastTagSuggestionNote else { return }
-
+        let trimmedNote = note.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard trimmedNote.count >= 12 else {
+            generatedTagSuggestions = []
+            lastTagSuggestionNote = ""
+            return
+        }
+        let identity = modelChoice.rawValue + ":" + trimmedNote
+        guard identity != lastTagSuggestionNote else { return }
         generatedTagSuggestions = []
-        tagSuggestionTask = Task { [tagProvider] in
-            try? await Task.sleep(for: .milliseconds(800))
-            guard !Task.isCancelled else { return }
-
+        defer {
+            if activeTagRequest == requestID { isGeneratingTagSuggestions = false }
+        }
+        do {
+            try await Task.sleep(for: .milliseconds(800))
+            try Task.checkCancellation()
+            guard activeTagRequest == requestID else { return }
             isGeneratingTagSuggestions = true
-
-            do {
-                let request = MoodTaggingRequest(note: trimmedNote, selectedTags: selectedTags)
-                try await tagProvider.generateSuggestions(for: request) { suggestions in
-                    generatedTagSuggestions = suggestions
-                }
-                guard !Task.isCancelled else { return }
-
-                lastTagSuggestionNote = trimmedNote
-            } catch {
-                guard !Task.isCancelled else { return }
-                generatedTagSuggestions = []
-                lastTagSuggestionNote = trimmedNote
+            let request = MoodTaggingRequest(note: trimmedNote, selectedTags: selectedTags, modelChoice: modelChoice)
+            try await tagProvider.generateSuggestions(for: request) { suggestions in
+                guard !Task.isCancelled, self.activeTagRequest == requestID else { return }
+                self.generatedTagSuggestions = MoodTagNormalizer.normalizedTags(suggestions, excluding: self.selectedTags)
             }
-
-            isGeneratingTagSuggestions = false
+            try Task.checkCancellation()
+            if activeTagRequest == requestID { lastTagSuggestionNote = identity }
+        } catch is CancellationError {
+            return
+        } catch {
+            guard !Task.isCancelled, activeTagRequest == requestID else { return }
+            tagSuggestionError = FoundationModelsErrorPresenter.message(for: error)
+            generatedTagSuggestions = []
         }
     }
 
@@ -177,12 +264,6 @@ final class TodayViewModel {
         generatedTagSuggestions.removeAll { MoodTagNormalizer.normalizedTag($0) == normalized }
     }
 
-    func cancelTagSuggestions() {
-        tagSuggestionTask?.cancel()
-        tagSuggestionTask = nil
-        isGeneratingTagSuggestions = false
-    }
-
     /// Persists the current editor values and refreshes the saved snapshot.
     ///
     /// - Parameters:
@@ -190,11 +271,13 @@ final class TodayViewModel {
     ///   - modelContext: The SwiftData model context used to insert and save the entry.
     /// - Throws: Any error thrown by `ModelContext.save()`.
     private func persistTodayPage(entries: [MoodEntry], modelContext: ModelContext) throws {
-        let saveDate = Date()
-        try MoodEntryPersistence.saveEntry(
+        // An edit spanning midnight belongs to the day the editor was opened for.
+        let saveDate = Calendar.current.isDateInToday(draftDate) ? Date() : draftDate
+        let entry = try MoodEntryPersistence.saveEntry(
             in: entries,
             modelContext: modelContext,
-            fallbackMatch: { Calendar.current.isDateInToday($0.date) },
+            preferredEntryID: selectedEntryID,
+            fallbackMatch: { Calendar.current.isDate($0.date, inSameDayAs: self.draftDate) },
             date: saveDate,
             mood: selectedMood,
             note: note,
@@ -205,6 +288,7 @@ final class TodayViewModel {
         savedNote = note
         savedTags = selectedTags
         pageSaved = true
+        selectedEntryID = entry.id
     }
 
     /// Marks the page as unsaved when the draft note no longer matches the saved note.

@@ -8,19 +8,16 @@
 import SwiftUI
 
 struct LinedNote: View {
+    @Environment(\.diaryPalette) private var palette
     @Binding var text: String
     let lines: Int
 
     var body: some View {
         LinedNoteEditor(
             text: $text,
-            prompt: "Write a little about today...",
+            prompt: "Write a little about today…",
             lines: lines,
-            lineColor: PastelTheme.lavenderLine
+            lineColor: palette.lavenderLine
         )
     }
-}
-
-#Preview {
-    LinedNote(text: .constant("Hello, I love this very much."), lines: 8)
 }

@@ -12,6 +12,7 @@ enum AppTab: String, CaseIterable, Identifiable, Hashable {
     case today
     case page
     case insights
+    case customize
 
     var id: Self { self }
 
@@ -23,6 +24,8 @@ enum AppTab: String, CaseIterable, Identifiable, Hashable {
             String(localized: "Page")
         case .insights:
             String(localized: "Insights")
+        case .customize:
+            String(localized: "Customize")
         }
     }
 
@@ -34,6 +37,8 @@ enum AppTab: String, CaseIterable, Identifiable, Hashable {
             "pencil"
         case .insights:
             "chart.xyaxis.line"
+        case .customize:
+            "paintpalette"
         }
     }
 }

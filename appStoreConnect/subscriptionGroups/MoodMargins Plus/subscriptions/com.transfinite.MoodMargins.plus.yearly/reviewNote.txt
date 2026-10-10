@@ -1,0 +1,3 @@
+This product uses yearly auto-renewing billing. The US base price is $19.99; Apple provides localized storefront prices.
+
+Open Customize, then MoodMargins Plus. All three auto-renewing plans are the same subscription tier with different billing periods. Plus unlocks all premium themes, AI tag suggestions on Today, and AI recaps in Insights. AI requires Apple Intelligence readiness; the optional Private Cloud Compute model requires Apple access approval, connectivity, and available quota. Charts, streaks, manual tags, and journaling remain free. Themes purchased separately are permanent. No MoodMargins login is required. Restore purchases and Manage subscription are available in Customize.

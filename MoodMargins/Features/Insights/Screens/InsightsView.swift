@@ -10,6 +10,9 @@ import SwiftData
 import SwiftUI
 
 struct InsightsView: View {
+    @Environment(\.diaryPalette) private var palette
+    @Environment(FoundationModelPreferences.self) private var modelPreferences
+    @Environment(PurchaseStore.self) private var purchases
     @Query(sort: \MoodEntry.date, order: .reverse) private var entries: [MoodEntry]
 
     @State private var viewModel = InsightsViewModel()
@@ -20,38 +23,34 @@ struct InsightsView: View {
         ScrollView {
             AdaptiveContentWidth(maximumWidth: 1120) {
                 VStack(alignment: .leading, spacing: 22) {
-                    Header()
+                    InsightHeader(selectedRange: $viewModel.selectedRange)
                     SummaryStack(summaryItems: viewModel.summaryItems(for: entries))
-                    TrendCard(selectedRange: $viewModel.selectedRange, series: viewModel.trendSeries(for: entries))
+                    TrendCard(selectedRange: viewModel.selectedRange, series: viewModel.trendSeries(for: entries))
                     InsightPairs(
                         distribution: viewModel.distribution(for: entries),
                         topActivities: viewModel.topActivities(for: entries)
                     )
                     ReflectionPairs(
+                        hasPlus: purchases.entitlements.hasPlus,
+                        pattern: viewModel.pattern(for: entries),
                         selectedRange: viewModel.selectedRange,
                         generatedRecap: viewModel.generatedRecap,
                         isGeneratingRecap: viewModel.isGeneratingRecap,
-                        recapErrorMessage: viewModel.recapErrorMessage
+                        recapErrorMessage: viewModel.recapErrorMessage,
+                        retry: viewModel.retryGeneratedRecap
                     )
                 }
                 .padding(22)
             }
         }
-        .safeAreaPadding(.bottom, 88)
-        .background(PastelTheme.background.ignoresSafeArea())
+        .safeAreaPadding(.bottom, 16)
+        .background(palette.background.ignoresSafeArea())
         .navigationTitle("")
+#if !os(macOS)
         .toolbar(.hidden, for: .navigationBar)
-        .task(id: viewModel.recapRefreshID(for: entries)) {
-            viewModel.refreshGeneratedRecap(from: entries)
+#endif
+        .task(id: "\(purchases.entitlements.hasPlus):\(viewModel.recapRefreshID(for: entries, using: modelPreferences.choice))") {
+            await viewModel.refreshGeneratedRecap(from: entries, using: modelPreferences.choice, hasPlus: purchases.entitlements.hasPlus)
         }
-        .onDisappear {
-            viewModel.cancelGeneratedRecap()
-        }
-    }
-}
-
-#Preview(traits: .dev(AppPreviewConfig.self)) {
-    NavigationStack {
-        InsightsView()
     }
 }

@@ -12,7 +12,8 @@ enum InsightRecapSnapshotBuilder {
         from entries: [MoodEntry],
         selectedRange: Int,
         calendar: Calendar = .current,
-        now: Date = Date()
+        now: Date = Date(),
+        modelChoice: FoundationModelChoice = .onDevice
     ) -> InsightRecapSnapshot {
         let startOfToday = calendar.startOfDay(for: now)
         let startDate = calendar.date(byAdding: .day, value: -(selectedRange - 1), to: startOfToday) ?? startOfToday
@@ -24,9 +25,10 @@ enum InsightRecapSnapshotBuilder {
             selectedRange: selectedRange,
             entries: filteredEntries.map(entrySnapshot),
             averageMood: MoodInsights.averageMood(filteredEntries),
-            trend: trend(for: filteredEntries, selectedRange: selectedRange),
+            trend: trend(for: filteredEntries, selectedRange: selectedRange, calendar: calendar, now: now),
             topTags: topTags(for: filteredEntries, limit: 4),
-            topActivities: MoodInsights.topActivities(filteredEntries, limit: 4).map { $0.activity.title.lowercased() }
+            topActivities: MoodInsights.topActivities(filteredEntries, limit: 4).map { $0.activity.title.lowercased() },
+            modelChoice: modelChoice
         )
     }
 
@@ -60,8 +62,8 @@ enum InsightRecapSnapshotBuilder {
             .map(\.key)
     }
 
-    private static func trend(for entries: [MoodEntry], selectedRange: Int) -> InsightRecapTrend {
-        let series = MoodInsights.dailyAverages(entries, days: selectedRange)
+    private static func trend(for entries: [MoodEntry], selectedRange: Int, calendar: Calendar, now: Date) -> InsightRecapTrend {
+        let series = MoodInsights.dailyAverages(entries, days: selectedRange, calendar: calendar, now: now)
         guard let first = series.first?.value, let last = series.last?.value, series.count >= 2 else {
             return .unknown
         }

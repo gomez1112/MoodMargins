@@ -1,14 +1,7 @@
-//
-//  InsightSummaryItem.swift
-//  MoodMargins
-//
-//  Created by Gerard Gomez on 6/27/26.
-//
-
-
 struct InsightSummaryItem: Identifiable {
-    let id: String
-    let title: String
-    let value: String
-    let systemName: String
+    var id: String
+    var title: String
+    var value: String
+    var systemName: String
+    var mood: Mood? = nil
 }

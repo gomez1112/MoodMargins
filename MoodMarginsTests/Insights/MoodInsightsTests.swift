@@ -110,7 +110,8 @@ struct MoodInsightsTests {
         let series = MoodInsights.dailyAverages(entries, days: scenario.days)
 
         #expect(series.map(\.value) == scenario.expectedValues)
-        #expect(series.map(\.id) == Array(scenario.expectedValues.indices))
+        #expect(series.map(\.id) == series.map(\.date))
+        #expect(series.map(\.date) == series.map(\.date).sorted())
     }
 
     @Test("Top activities ignores entries without activities")

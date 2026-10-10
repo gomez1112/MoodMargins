@@ -8,43 +8,43 @@
 import SwiftUI
 
 struct ReflectionPairs: View {
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    var hasPlus: Bool
+    var pattern: String
     let selectedRange: Int
     let generatedRecap: PartialGeneratedInsightRecap?
     let isGeneratingRecap: Bool
     let recapErrorMessage: String?
+    var retry: () -> Void = {}
 
     var body: some View {
         ViewThatFits(in: .horizontal) {
-            HStack(alignment: .top, spacing: 22) {
-                GentlePatternCard()
-                    .frame(minWidth: 320, maxWidth: .infinity, alignment: .topLeading)
-                GeneratedInsightRecapCard(
-                    selectedRange: selectedRange,
-                    recap: generatedRecap,
-                    isGenerating: isGeneratingRecap,
-                    errorMessage: recapErrorMessage
-                )
-                .frame(minWidth: 320, maxWidth: .infinity, alignment: .topLeading)
+            if !dynamicTypeSize.isAccessibilitySize {
+                HStack(alignment: .top, spacing: 22) {
+                    GentlePatternCard(pattern: pattern)
+                        .frame(minWidth: 320, maxWidth: .infinity, alignment: .topLeading)
+                    recapCard
+                        .frame(minWidth: 320, maxWidth: .infinity, alignment: .topLeading)
+                }
             }
-
             VStack(alignment: .leading, spacing: 22) {
-                GentlePatternCard()
-                GeneratedInsightRecapCard(
-                    selectedRange: selectedRange,
-                    recap: generatedRecap,
-                    isGenerating: isGeneratingRecap,
-                    errorMessage: recapErrorMessage
-                )
+                GentlePatternCard(pattern: pattern)
+                recapCard
             }
         }
     }
-}
 
-#Preview {
-    ReflectionPairs(
-        selectedRange: 14,
-        generatedRecap: .fallback(for: 14),
-        isGeneratingRecap: false,
-        recapErrorMessage: nil
-    )
+    @ViewBuilder private var recapCard: some View {
+        if hasPlus {
+            GeneratedInsightRecapCard(
+                selectedRange: selectedRange,
+                recap: generatedRecap,
+                isGenerating: isGeneratingRecap,
+                errorMessage: recapErrorMessage,
+                retry: retry
+            )
+        } else {
+            PlusFeatureCard(title: String(localized: "Gentle recap"), message: String(localized: "Plus brings your saved pages together with an AI recap. Your mood charts and streaks stay free."))
+        }
+    }
 }
