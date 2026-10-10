@@ -7520,6 +7520,614 @@
           }
         }
       }
+    },
+    "pageEditTags" : {
+      "comment" : "Optional journal page tag editing.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit tags"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar etiquetas"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar etiquetas"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar etiquetas"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعديل الوسوم"
+          }
+        }
+      }
+    },
+    "pageOtherTags" : {
+      "comment" : "Optional journal page tag editing.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From your page"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De tu página"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De tu página"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De tu página"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "من صفحتك"
+          }
+        }
+      }
+    },
+    "pageTagPurpose" : {
+      "comment" : "Optional journal page tag editing.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tags help you search your pages and find patterns in Insights. Editing them is optional; changes save automatically."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las etiquetas te ayudan a buscar páginas y encontrar patrones en Perspectivas. Editarlas es opcional; los cambios se guardan automáticamente."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las etiquetas te ayudan a buscar páginas y encontrar patrones en Perspectivas. Editarlas es opcional; los cambios se guardan automáticamente."
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las etiquetas te ayudan a buscar páginas y encontrar patrones en Perspectivas. Editarlas es opcional; los cambios se guardan automáticamente."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تساعدك الوسوم على البحث في صفحاتك واكتشاف الأنماط في «الرؤى». تعديلها اختياري، وتُحفظ التغييرات تلقائيًا."
+          }
+        }
+      }
+    },
+    "plusAIInformationTitle" : {
+      "comment" : "Plus paywall information.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI, your way"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IA a tu manera"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IA a tu manera"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IA a tu manera"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الذكاء الاصطناعي بطريقتك"
+          }
+        }
+      }
+    },
+    "plusAIProcessingDetails" : {
+      "comment" : "Plus paywall information.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI tries Private Cloud Compute first, then the on-device model if needed. You can turn off cloud processing in Customize."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La IA intenta usar Private Cloud Compute primero y, si es necesario, el modelo del dispositivo. Puedes desactivar el procesamiento en la nube en Personalizar."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La IA intenta usar Private Cloud Compute primero y, si es necesario, el modelo del dispositivo. Puedes desactivar el procesamiento en la nube en Personalizar."
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La IA intenta usar Private Cloud Compute primero y, si es necesario, el modelo del dispositivo. Puedes desactivar el procesamiento en la nube en Personalizar."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يحاول الذكاء الاصطناعي استخدام Private Cloud Compute أولًا، ثم نموذج الجهاز عند الحاجة. يمكنك إيقاف المعالجة السحابية من «تخصيص»."
+          }
+        }
+      }
+    },
+    "plusInformationButton" : {
+      "comment" : "Plus paywall information.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About Plus and AI"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de Plus y la IA"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de Plus y la IA"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de Plus y la IA"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حول Plus والذكاء الاصطناعي"
+          }
+        }
+      }
+    },
+    "plusInformationTitle" : {
+      "comment" : "Plus paywall information.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About Plus"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de Plus"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de Plus"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de Plus"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حول Plus"
+          }
+        }
+      }
+    },
+    "plusPlansUnavailable" : {
+      "comment" : "Plus paywall information.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Some plans are unavailable. Check your connection and try again."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algunos planes no están disponibles. Comprueba tu conexión e inténtalo de nuevo."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algunos planes no están disponibles. Comprueba tu conexión e inténtalo de nuevo."
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algunos planes no están disponibles. Comprueba tu conexión e inténtalo de nuevo."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بعض الخطط غير متاحة. تحقق من اتصالك وحاول مجددًا."
+          }
+        }
+      }
+    },
+    "plusRecapBenefit" : {
+      "comment" : "Plus paywall information.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gentle recaps of your pages"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resúmenes de tus páginas con delicadeza"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resúmenes de tus páginas con delicadeza"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resúmenes de tus páginas con delicadeza"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ملخصات لطيفة لصفحاتك"
+          }
+        }
+      }
+    },
+    "plusSameFeatures" : {
+      "comment" : "Plus paywall information.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Same features in every plan."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las mismas funciones en todos los planes."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las mismas funciones en todos los planes."
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las mismas funciones en todos los planes."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الميزات نفسها في كل خطة."
+          }
+        }
+      }
+    },
+    "plusTagBenefit" : {
+      "comment" : "Plus paywall information.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI tags from your notes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiquetas de IA a partir de tus notas"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiquetas de IA a partir de tus notas"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiquetas de IA a partir de tus notas"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وسوم ذكية من ملاحظاتك"
+          }
+        }
+      }
+    },
+    "plusThemeBenefit" : {
+      "comment" : "Plus paywall information.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Every premium theme while subscribed"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos los temas premium mientras te suscribes"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos los temas premium mientras te suscribes"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos los temas premium mientras te suscribes"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جميع السمات المميزة أثناء الاشتراك"
+          }
+        }
+      }
+    },
+    "plusThemeInformationTitle" : {
+      "comment" : "Plus paywall information.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscriptions and themes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suscripciones y temas"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suscripciones y temas"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suscripciones y temas"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاشتراكات والسمات"
+          }
+        }
+      }
+    },
+    "plusBenefitsTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make room for your own style"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haz espacio para tu propio estilo"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haz espacio para tu propio estilo"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haz espacio para tu propio estilo"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مساحة لأسلوبك الخاص"
+          }
+        }
+      }
+    },
+    "plusAIReadinessDetails" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI requires Apple Intelligence readiness. Private Cloud Compute requires internet access and is subject to Apple's usage limits."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La IA requiere que Apple Intelligence esté disponible. Private Cloud Compute necesita conexión a internet y está sujeto a los límites de uso de Apple."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La IA requiere que Apple Intelligence esté disponible. Private Cloud Compute necesita conexión a internet y está sujeto a los límites de uso de Apple."
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La IA requiere que Apple Intelligence esté disponible. Private Cloud Compute necesita conexión a internet y está sujeto a los límites de uso de Apple."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتطلب الذكاء الاصطناعي جاهزية Apple Intelligence. تحتاج Private Cloud Compute إلى اتصال بالإنترنت وتخضع لحدود الاستخدام التي تحددها Apple."
+          }
+        }
+      }
+    },
+    "plusThemeOwnershipDetails" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A subscription unlocks premium themes while active. A theme purchased separately is yours to keep after a subscription ends."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una suscripción desbloquea los temas premium mientras está activa. Los temas comprados por separado son tuyos incluso cuando termina la suscripción."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una suscripción desbloquea los temas premium mientras está activa. Los temas comprados por separado son tuyos incluso cuando termina la suscripción."
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una suscripción desbloquea los temas premium mientras está activa. Los temas comprados por separado son tuyos incluso cuando termina la suscripción."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يفتح الاشتراك السمات المميزة طوال فترة سريانه. وتبقى السمات التي تشتريها بشكل منفصل ملكك بعد انتهاء الاشتراك."
+          }
+        }
+      }
+    },
+    "Close" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إغلاق"
+          }
+        }
+      }
     }
   },
   "version" : "1.3"

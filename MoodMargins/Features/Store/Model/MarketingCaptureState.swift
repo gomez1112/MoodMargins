@@ -18,6 +18,14 @@ final class MarketingCaptureState {
         guard isCaptureSession else { return nil }
         return ProcessInfo.processInfo.arguments.contains("--marketing-dark") ? .dark : .light
     }
+    var locale: Locale? {
+        let arguments = ProcessInfo.processInfo.arguments
+        guard isCaptureSession,
+              let index = arguments.firstIndex(of: "-AppleLocale"),
+              arguments.indices.contains(index + 1) else { return nil }
+        // SwiftUI's environment locale can differ from the test process's preferred bundle language.
+        return Locale(identifier: arguments[index + 1])
+    }
 
     init(isCaptureSession: Bool = ProcessInfo.processInfo.arguments.contains("--marketing-capture")) {
         self.isCaptureSession = isCaptureSession

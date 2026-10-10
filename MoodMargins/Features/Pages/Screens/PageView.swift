@@ -37,9 +37,9 @@ struct PageView: View {
                                 accentColor: viewModel.selectedMood.tint,
                                 saveStatus: viewModel.saveStatus
                             )
+                            PageTagsView(viewModel: viewModel)
                             CalendarStickerStrip(viewModel: viewModel, entries: viewModel.calendarEntries(from: entries), selectEntry: selectEntry)
                             MoodStickerRow(viewModel: viewModel)
-                            WashiTags(viewModel: viewModel)
                         }
                     } else {
                         ResponsiveTwoColumn(
@@ -51,7 +51,6 @@ struct PageView: View {
                             VStack(alignment: .leading, spacing: 22) {
                                 CalendarStickerStrip(viewModel: viewModel, entries: viewModel.calendarEntries(from: entries), selectEntry: selectEntry)
                                 MoodStickerRow(viewModel: viewModel)
-                                WashiTags(viewModel: viewModel)
                             }
                         } trailing: {
                             VStack(alignment: .leading, spacing: 22) {
@@ -65,6 +64,7 @@ struct PageView: View {
                                     accentColor: viewModel.selectedMood.tint,
                                     saveStatus: viewModel.saveStatus
                                 )
+                                PageTagsView(viewModel: viewModel)
                             }
                         }
                     }

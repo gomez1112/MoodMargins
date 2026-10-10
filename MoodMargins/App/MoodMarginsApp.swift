@@ -60,6 +60,9 @@ struct MoodMarginsApp: App {
             .id(marketingCapture.isEnabled)
             .environment(marketingCapture)
             .preferredColorScheme(marketingCapture.appearance)
+            .transformEnvironment(\.locale) { locale in
+                if let captureLocale = marketingCapture.locale { locale = captureLocale }
+            }
 #endif
             .task { await purchases.observeTransactions() }
             .task { await purchases.observeSubscriptionStatus() }

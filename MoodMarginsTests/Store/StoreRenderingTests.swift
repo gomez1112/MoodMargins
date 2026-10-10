@@ -8,6 +8,26 @@ import UniformTypeIdentifiers
 @Suite("Store layouts")
 @MainActor
 struct StoreRenderingTests {
+    @Test("Plus benefits adapt to every palette, large text, and right-to-left layout")
+    func plusLayouts() throws {
+        for theme in DiaryTheme.allCases {
+            for scheme in [ColorScheme.light, .dark] {
+                for largeText in [false, true] {
+                    let content = PlusBenefitsView(showInformation: {})
+                        .padding(16)
+                        .frame(width: 393)
+                        .background(theme.palette.background)
+                        .environment(\.diaryPalette, theme.palette)
+                        .environment(\.colorScheme, scheme)
+                        .environment(\.dynamicTypeSize, largeText ? .accessibility3 : .large)
+                        .environment(\.layoutDirection, largeText ? .rightToLeft : .leftToRight)
+                        .environment(\.locale, Locale(identifier: largeText ? "ar" : "en"))
+                    try render(content, name: "plus-\(theme.rawValue)-\(scheme)-\(largeText ? "large-rtl" : "standard")")
+                }
+            }
+        }
+    }
+
     @Test("Themes render in light, dark, and large text without changing purchases")
     func themeLayouts() throws {
         for theme in DiaryTheme.allCases {

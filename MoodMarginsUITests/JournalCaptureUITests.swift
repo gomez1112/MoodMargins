@@ -29,6 +29,32 @@ final class JournalCaptureUITests: XCTestCase {
     @MainActor func testCaptureArabic() throws { try captureLanguage("ar") }
 
     @MainActor
+    func testOptionalTagEditorSavesCorrections() throws {
+        let app = launch(language: "en")
+        defer { app.terminate() }
+        selectTab("Page", in: app)
+        let editTags = app.buttons["pageEditTags"]
+        XCTAssertTrue(editTags.waitForExistence(timeout: 10))
+        XCTAssertFalse(app.staticTexts["Washi tags"].exists)
+        XCTAssertFalse(app.descendants(matching: .any)["pageTag-anxious"].exists)
+        editTags.tap()
+        let tag = app.descendants(matching: .any)["pageTag-anxious"].firstMatch
+        XCTAssertTrue(tag.waitForExistence(timeout: 10))
+        if !tag.isHittable { app.swipeUp() }
+        if tag.value as? String == "1" { tag.tap() }
+        tag.tap()
+        XCTAssertEqual(tag.value as? String, "1")
+        app.buttons["Close"].tap()
+        XCTAssertTrue(app.staticTexts["#anxious"].waitForExistence(timeout: 10))
+        // Navigating away flushes the same automatic save used for note changes.
+        selectTab("Today", in: app)
+        selectTab("Page", in: app)
+        editTags.tap()
+        XCTAssertTrue(tag.waitForExistence(timeout: 10))
+        XCTAssertEqual(tag.value as? String, "1", "Tag corrections must survive navigation without a Save action.")
+    }
+
+    @MainActor
     private func launch(language: String, dark: Bool = false) -> XCUIApplication {
         let app = XCUIApplication()
         app.launchArguments = ["--marketing-capture", "-AppleLanguages", "(\(language))", "-AppleLocale", language == "ar" ? "ar_SA" : language == "es" ? "es_ES" : "en_US"]

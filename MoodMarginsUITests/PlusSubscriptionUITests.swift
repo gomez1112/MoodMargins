@@ -6,6 +6,57 @@ final class PlusSubscriptionUITests: XCTestCase {
     override func setUpWithError() throws { continueAfterFailure = false }
 
     @MainActor
+    func testLocalizedPaywallsAllowEveryPlan() throws {
+        let session = try testSession()
+        defer { session.clearTransactions() }
+        for language in ["es", "ar"] {
+            let app = launchPlus(language: language)
+            defer { app.terminate() }
+            XCTAssertEqual(app.staticTexts["plusBenefitsTitle"].label, language == "ar" ? "مساحة لأسلوبك الخاص" : "Haz espacio para tu propio estilo")
+            let weekly = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "Weekly")).firstMatch
+            let monthly = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "Monthly")).firstMatch
+            let yearly = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "Yearly")).firstMatch
+            XCTAssertTrue(weekly.waitForExistence(timeout: 15))
+            XCTAssertTrue(monthly.waitForExistence(timeout: 15))
+            XCTAssertTrue(yearly.waitForExistence(timeout: 15))
+            for plan in [monthly, yearly, weekly] {
+                plan.tap()
+                XCTAssertTrue(plan.isSelected)
+                XCTAssertTrue(app.staticTexts["plusBenefitsTitle"].exists)
+            }
+            let information = app.buttons["plusInformationButton"]
+            XCTAssertTrue(information.isHittable)
+            capture(app, name: "plus-paywall-\(language)")
+            information.tap()
+            let close = app.buttons["xmark"].firstMatch
+            XCTAssertTrue(close.waitForExistence(timeout: 10))
+            close.tap()
+            XCTAssertTrue(app.staticTexts["plusBenefitsTitle"].exists)
+            app.terminate()
+        }
+    }
+
+    @MainActor
+    func testAIInformationIsAvailableInASheet() throws {
+        let session = try testSession()
+        defer { session.clearTransactions() }
+        let app = launchPlus()
+        defer { app.terminate() }
+        let information = app.buttons["plusInformationButton"]
+        XCTAssertTrue(information.waitForExistence(timeout: 10))
+        let details = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "AI tries Private Cloud Compute first")).firstMatch
+        XCTAssertFalse(details.exists, "Detailed AI disclosures belong in the information sheet.")
+        capture(app, name: "plus-paywall")
+        information.tap()
+        XCTAssertTrue(app.navigationBars["About Plus"].waitForExistence(timeout: 10))
+        XCTAssertTrue(details.waitForExistence(timeout: 10))
+        capture(app, name: "plus-information")
+        app.buttons["Close"].tap()
+        XCTAssertTrue(app.navigationBars["About Plus"].waitForNonExistence(timeout: 10))
+        XCTAssertTrue(app.staticTexts["Make room for your own style"].exists)
+    }
+
+    @MainActor
     func testSuccessfulSubscriptionDismissesPlus() throws {
         let session = try testSession()
         defer { session.clearTransactions() }
@@ -47,14 +98,14 @@ final class PlusSubscriptionUITests: XCTestCase {
     }
 
     @MainActor
-    private func launchPlus() -> XCUIApplication {
+    private func launchPlus(language: String = "en") -> XCUIApplication {
         let app = XCUIApplication()
-        app.launchArguments = ["--marketing-capture", "--marketing-tab", "customize", "-AppleLanguages", "(en)", "-AppleLocale", "en_US"]
+        app.launchArguments = ["--marketing-capture", "--marketing-tab", "customize", "-AppleLanguages", "(\(language))", "-AppleLocale", language == "ar" ? "ar_SA" : language == "es" ? "es_ES" : "en_US"]
         app.launch()
         let plus = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "MoodMargins Plus")).firstMatch
         XCTAssertTrue(plus.waitForExistence(timeout: 15), app.debugDescription)
         plus.tap()
-        XCTAssertTrue(app.staticTexts["Make room for your own style"].waitForExistence(timeout: 10), app.debugDescription)
+        XCTAssertTrue(app.staticTexts["plusBenefitsTitle"].waitForExistence(timeout: 10), app.debugDescription)
         return app
     }
 
@@ -68,5 +119,13 @@ final class PlusSubscriptionUITests: XCTestCase {
         let subscribe = app.buttons["Subscription Store View Button"].firstMatch
         XCTAssertTrue(subscribe.waitForExistence(timeout: 10), app.debugDescription)
         subscribe.tap()
+    }
+
+    @MainActor
+    private func capture(_ app: XCUIApplication, name: String) {
+        let attachment = XCTAttachment(screenshot: app.screenshot())
+        attachment.name = name
+        attachment.lifetime = .keepAlways
+        add(attachment)
     }
 }

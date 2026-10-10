@@ -26,7 +26,7 @@
           "localizations": [
             {
               "description": "Premium themes, AI tags, and recaps.",
-              "displayName": "MoodMargins Plus Weekly",
+              "displayName": "Plus Weekly",
               "locale": "en_US"
             }
           ],
@@ -48,7 +48,7 @@
           "localizations": [
             {
               "description": "Premium themes, AI tags, and recaps.",
-              "displayName": "MoodMargins Plus Monthly",
+              "displayName": "Plus Monthly",
               "locale": "en_US"
             }
           ],
@@ -70,7 +70,7 @@
           "localizations": [
             {
               "description": "Premium themes, AI tags, and recaps.",
-              "displayName": "MoodMargins Plus Yearly",
+              "displayName": "Plus Yearly",
               "locale": "en_US"
             }
           ],

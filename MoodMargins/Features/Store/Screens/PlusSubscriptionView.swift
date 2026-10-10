@@ -3,20 +3,21 @@ import SwiftUI
 
 struct PlusSubscriptionView: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.diaryPalette) private var palette
+    @Environment(\.locale) private var locale
     @Environment(PurchaseStore.self) private var purchases
     @State private var loadRevision = 0
     @State private var didDismiss = false
+    @State private var isShowingInformation = false
 
     var body: some View {
         SubscriptionStoreView(productIDs: StoreProduct.subscriptions.map(\.rawValue)) {
-            VStack(alignment: .leading, spacing: 20) {
-                PlusBenefitsView()
-                Text("AI requires Apple Intelligence readiness. Private Cloud Compute requires internet access and is subject to Apple's usage limits.")
-                    .font(.footnote).foregroundStyle(.secondary)
-                Text("A subscription unlocks premium themes while active. A theme purchased separately is yours to keep after a subscription ends.")
-                    .font(.footnote).foregroundStyle(.secondary)
-                if let message = purchases.loadingMessage {
-                    Text(message).font(.footnote).foregroundStyle(.secondary)
+            VStack(alignment: .leading, spacing: 16) {
+                PlusBenefitsView { isShowingInformation = true }
+                // Unavailable individual themes don't prevent subscribing to Plus.
+                if purchases.subscriptions.count < StoreProduct.subscriptions.count,
+                   purchases.loadingMessage != nil {
+                    Text("plusPlansUnavailable").font(.footnote).foregroundStyle(.secondary)
                     Button("Try again", systemImage: "arrow.clockwise") { loadRevision += 1 }
                         .buttonStyle(.bordered)
                 }
@@ -26,8 +27,18 @@ struct PlusSubscriptionView: View {
             }
             .frame(maxWidth: 680, alignment: .leading)
             .padding()
+            // StoreKit supplies its commerce locale; keep our copy in the app's language.
+            .environment(\.locale, locale)
+#if os(iOS) || os(macOS)
+            .containerBackground(for: .subscriptionStoreFullHeight) { palette.background }
+#endif
         }
         .id(loadRevision)
+        .tint(palette.action)
+        .subscriptionStoreControlStyle(.compactPicker)
+        .subscriptionStorePickerItemBackground(palette.paper)
+        .subscriptionStoreButtonLabel(.action)
+        .storeButton(.hidden, for: .cancellation)
         .storeButton(.visible, for: .restorePurchases)
         .subscriptionStorePolicyDestination(url: StoreLegal.termsURL, for: .termsOfService)
         .subscriptionStorePolicyDestination(url: StoreLegal.privacyURL, for: .privacyPolicy)
@@ -41,6 +52,16 @@ struct PlusSubscriptionView: View {
             if !hadPlus && hasPlus { dismissAfterUnlock() }
         }
         .navigationTitle("MoodMargins Plus")
+#if os(iOS)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar(.hidden, for: .tabBar)
+#endif
+        .sheet(isPresented: $isShowingInformation) {
+            PlusInformationView()
+                .environment(\.locale, locale)
+                .presentationDetents([.medium, .large])
+                .presentationDragIndicator(.visible)
+        }
         .task(id: loadRevision) { await purchases.loadProducts() }
     }
 
@@ -48,20 +69,5 @@ struct PlusSubscriptionView: View {
         guard !didDismiss else { return }
         didDismiss = true
         dismiss()
-    }
-}
-
-private struct PlusBenefitsView: View {
-    var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Label("Make room for your own style", systemImage: "sparkles")
-                .font(.title2.bold())
-            Label("Every premium theme, in light and dark", systemImage: "paintpalette")
-            Label("AI tag suggestions from your notes", systemImage: "tag.fill")
-            Label("Gentle recaps grounded in saved pages", systemImage: "text.book.closed")
-            Text("AI tries Private Cloud Compute first, then the on-device model if needed. You can turn off cloud processing in Customize. Every billing plan includes the same features.")
-                .foregroundStyle(.secondary)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }

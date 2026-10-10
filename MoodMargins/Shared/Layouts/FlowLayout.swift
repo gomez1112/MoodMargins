@@ -40,7 +40,7 @@ struct FlowLayout: Layout {
         var rowWidth: CGFloat = 0, rowHeight: CGFloat = 0
         var totalHeight: CGFloat = 0, totalWidth: CGFloat = 0
         for subview in subviews {
-            let size = subview.sizeThatFits(.unspecified)
+            let size = size(of: subview, within: maxWidth)
             if rowWidth + size.width > maxWidth, rowWidth > 0 {
                 totalHeight += rowHeight + spacing
                 totalWidth = max(totalWidth, rowWidth - spacing)
@@ -64,7 +64,7 @@ struct FlowLayout: Layout {
     func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
         var x = bounds.minX, y = bounds.minY, rowHeight: CGFloat = 0
         for subview in subviews {
-            let size = subview.sizeThatFits(.unspecified)
+            let size = size(of: subview, within: bounds.width)
             if x + size.width > bounds.maxX, x > bounds.minX {
                 x = bounds.minX; y += rowHeight + spacing; rowHeight = 0
             }
@@ -72,5 +72,12 @@ struct FlowLayout: Layout {
             x += size.width + spacing
             rowHeight = max(rowHeight, size.height)
         }
+    }
+
+    private func size(of subview: LayoutSubview, within width: CGFloat) -> CGSize {
+        let idealSize = subview.sizeThatFits(.unspecified)
+        guard idealSize.width > width else { return idealSize }
+        // A long generated tag must fit inside its row rather than extend beyond the page.
+        return subview.sizeThatFits(ProposedViewSize(width: width, height: nil))
     }
 }
