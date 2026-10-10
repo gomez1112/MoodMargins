@@ -4,6 +4,7 @@ import SwiftUI
 struct ThemeDetailView: View {
     @Environment(PurchaseStore.self) private var purchases
     @Environment(ThemePreferences.self) private var themes
+    @Environment(NavigationContext.self) private var navigationContext
     @Environment(\.colorScheme) private var colorScheme
     @State private var previewScheme: ColorScheme?
     @State private var loadRevision = 0
@@ -49,9 +50,7 @@ struct ThemeDetailView: View {
                         }
                         Text("One purchase keeps this theme permanently. No subscription is required.")
                             .font(.footnote).foregroundStyle(.secondary)
-                        NavigationLink { PlusSubscriptionView() } label: {
-                            Label("Or explore MoodMargins Plus", systemImage: "sparkles")
-                        }
+                        Button("Or explore MoodMargins Plus", systemImage: "sparkles") { navigationContext.presentSheet(.plus) }
                     }
                 }
                 .padding(24)

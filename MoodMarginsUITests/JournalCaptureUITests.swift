@@ -29,6 +29,40 @@ final class JournalCaptureUITests: XCTestCase {
     @MainActor func testCaptureArabic() throws { try captureLanguage("ar") }
 
     @MainActor
+    func testWidePageBrowserKeepsEditorVisibleAndSavesChanges() throws {
+        XCUIDevice.shared.orientation = .portrait
+        let app = launch(language: "en")
+        defer { app.terminate(); XCUIDevice.shared.orientation = .portrait }
+        try XCTSkipIf(app.frame.width < 800, "This workflow requires an iPad workspace.")
+        selectTab("Page", in: app)
+        let note = app.textFields["journal-note"].firstMatch
+        let browser = app.scrollViews["page-browser"]
+        XCTAssertTrue(browser.waitForExistence(timeout: 10))
+        XCTAssertTrue(note.isHittable)
+        let originalNote = note.value as? String
+        let editorPosition = note.frame.minY
+        browser.swipeUp()
+        let pages = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "past-page-"))
+        let pastPage = try XCTUnwrap(pages.allElementsBoundByIndex.last(where: { $0.isHittable }))
+        pastPage.tap()
+        XCTAssertTrue(note.isHittable, "Browsing must not scroll the selected page away.")
+        XCTAssertEqual(note.frame.minY, editorPosition, accuracy: 4)
+        XCTAssertNotEqual(note.value as? String, originalNote)
+        note.tap()
+        note.typeText(" A quiet moment worth remembering.")
+        app.buttons["dismiss-journal-keyboard"].firstMatch.tap()
+        selectTab("Today", in: app)
+        selectTab("Page", in: app)
+        browser.swipeUp()
+        pastPage.tap()
+        XCTAssertTrue((note.value as? String)?.contains("A quiet moment worth remembering.") == true)
+        let attachment = XCTAttachment(screenshot: app.screenshot())
+        attachment.name = "ipad-page-workspace"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+    }
+
+    @MainActor
     func testOptionalTagEditorSavesCorrections() throws {
         let app = launch(language: "en")
         defer { app.terminate() }

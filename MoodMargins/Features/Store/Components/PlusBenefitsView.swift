@@ -44,6 +44,7 @@ struct PlusBenefitsView: View {
                     Text("plusSameFeatures")
                         .font(.footnote)
                         .foregroundStyle(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Button(action: showInformation) {
                         Label("plusInformationButton", systemImage: "info.circle")
@@ -71,7 +72,9 @@ struct PlusBenefitsView: View {
                 .foregroundStyle(palette.action)
                 .frame(width: symbolWidth)
                 .accessibilityHidden(true)
-            Text(title).foregroundStyle(palette.ink)
+            Text(title)
+                .foregroundStyle(palette.ink)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .font(.subheadline)
     }

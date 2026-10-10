@@ -58,6 +58,7 @@ struct PastPagesGrid: View {
             MiniDiaryPage(entry: entry, showsTime: daysWithMultipleEntries.contains(Calendar.current.startOfDay(for: entry.date)))
         }
         .buttonStyle(.plain)
+        .accessibilityIdentifier("past-page-\(entry.id)")
         .swipeActions(edge: .trailing, allowsFullSwipe: true) {
             Button("Delete", systemImage: "trash", role: .destructive) { delete(entry) }
         }

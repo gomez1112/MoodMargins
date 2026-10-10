@@ -10,7 +10,7 @@ struct PlusFeatureCard: View {
             VStack(alignment: .leading, spacing: 14) {
                 Text(message).foregroundStyle(.secondary)
                 Button("Explore Plus", systemImage: "sparkles") {
-                    navigationContext.selectTab(.customize)
+                    navigationContext.presentSheet(.plus)
                 }
                 .buttonStyle(.bordered)
             }

@@ -29,6 +29,7 @@ struct PlusInformationView: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Close", systemImage: "xmark") { dismiss() }
                         .labelStyle(.iconOnly)
+                        .accessibilityIdentifier("close-plus-information")
                 }
             }
         }

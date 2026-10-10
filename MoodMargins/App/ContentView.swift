@@ -16,7 +16,6 @@ struct ContentView: View {
 
     var body: some View {
         @Bindable var navigationContext = navigationContext
-        @Bindable var purchases = purchases
 
         TabView(selection: $navigationContext.selectedTab) {
             Tab(AppTab.today.title, systemImage: AppTab.today.systemImage, value: AppTab.today) {
@@ -59,14 +58,21 @@ struct ContentView: View {
         }
         .tabViewStyle(.sidebarAdaptable)
         .tint(palette.ink)
-        .alert("Purchases", isPresented: $purchases.isShowingPurchaseMessage) {
+        // Purchase feedback belongs to the active Plus sheet while it is presented.
+        .alert("Purchases", isPresented: Binding {
+            purchases.isShowingPurchaseMessage && navigationContext.presentedSheet != .plus
+        } set: { if !$0 { purchases.isShowingPurchaseMessage = false } }) {
             Button("OK", role: .cancel) {}
         } message: {
             Text(purchases.purchaseMessage ?? "")
         }
         .sheet(item: $navigationContext.presentedSheet) { sheet in
-            NavigationStack {
-                sheet.destination
+            if sheet == .plus {
+                PlusSubscriptionView()
+            } else {
+                NavigationStack {
+                    sheet.destination
+                }
             }
         }
 #if os(macOS)

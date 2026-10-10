@@ -6,6 +6,7 @@ struct StoreView: View {
     @Environment(PurchaseStore.self) private var purchases
     @Environment(ThemePreferences.self) private var themes
     @Environment(FoundationModelPreferences.self) private var modelPreferences
+    @Environment(NavigationContext.self) private var navigationContext
 #if DEBUG
     @Environment(MarketingCaptureState.self) private var marketingCapture
 #endif
@@ -17,8 +18,8 @@ struct StoreView: View {
         @Bindable var modelPreferences = modelPreferences
         Form {
             Section {
-                NavigationLink {
-                    PlusSubscriptionView()
+                Button {
+                    navigationContext.presentSheet(.plus)
                 } label: {
                     Label {
                         VStack(alignment: .leading, spacing: 4) {

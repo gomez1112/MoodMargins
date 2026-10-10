@@ -10,7 +10,7 @@ import SwiftUI
 
 struct PageView: View {
     @Environment(\.diaryPalette) private var palette
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Environment(\.modelContext) private var modelContext
     @Environment(\.scenePhase) private var scenePhase
     @Query(sort: \MoodEntry.date, order: .reverse) private var entries: [MoodEntry]
@@ -20,71 +20,50 @@ struct PageView: View {
     var body: some View {
         @Bindable var viewModel = viewModel
 
-        ScrollView {
-            AdaptiveContentWidth(maximumWidth: 1120) {
-                VStack(alignment: .leading, spacing: 24) {
-                    PageDateHeader(date: viewModel.selectedDate, ink: palette.ink)
-
-                    if horizontalSizeClass == .compact {
-                        VStack(alignment: .leading, spacing: 22) {
-                            PageSectionLabel(title: "Current selected page", ink: palette.ink)
-                            LinedNoteCard(
-                                text: $viewModel.note,
-                                prompt: "Dear diary…",
-                                lines: 6,
-                                paper: palette.paper,
-                                lineColor: palette.lavenderLine,
-                                accentColor: viewModel.selectedMood.tint,
-                                saveStatus: viewModel.saveStatus
-                            )
-                            PageTagsView(viewModel: viewModel)
-                            CalendarStickerStrip(viewModel: viewModel, entries: viewModel.calendarEntries(from: entries), selectEntry: selectEntry)
-                            MoodStickerRow(viewModel: viewModel)
+        GeometryReader { geometry in
+            // Use the window's width so the workspace also adapts to iPad multitasking.
+            if geometry.size.width >= 800 && !dynamicTypeSize.isAccessibilitySize {
+                AdaptiveContentWidth(maximumWidth: 1120) {
+                    HStack(alignment: .top, spacing: 24) {
+                        ScrollView {
+                            selectedPage(lines: 10)
+                                .padding(.top, 8)
+                                .padding(.bottom, 24)
                         }
-                    } else {
-                        ResponsiveTwoColumn(
-                            leadingMinWidth: 300,
-                            leadingMaxWidth: 420,
-                            trailingMinWidth: 380,
-                            trailingMaxWidth: 640
-                        ) {
-                            VStack(alignment: .leading, spacing: 22) {
-                                CalendarStickerStrip(viewModel: viewModel, entries: viewModel.calendarEntries(from: entries), selectEntry: selectEntry)
-                                MoodStickerRow(viewModel: viewModel)
-                            }
-                        } trailing: {
-                            VStack(alignment: .leading, spacing: 22) {
-                                PageSectionLabel(title: "Current selected page", ink: palette.ink)
-                                LinedNoteCard(
-                                    text: $viewModel.note,
-                                    prompt: "Dear diary…",
-                                    lines: 6,
-                                    paper: palette.paper,
-                                    lineColor: palette.lavenderLine,
-                                    accentColor: viewModel.selectedMood.tint,
-                                    saveStatus: viewModel.saveStatus
-                                )
-                                PageTagsView(viewModel: viewModel)
-                            }
+#if os(iOS) || os(macOS)
+                        .scrollDismissesKeyboard(.interactively)
+#endif
+                        .frame(maxWidth: .infinity)
+                        ScrollView {
+                            pageBrowser
+                                .padding(.top, 8)
+                                .padding(.bottom, 24)
                         }
+                        .swipeActionsContainer()
+#if os(iOS) || os(macOS)
+                        .scrollDismissesKeyboard(.interactively)
+#endif
+                        .frame(width: 340)
+                        .accessibilityIdentifier("page-browser")
                     }
-
-                    PageSectionLabel(title: "Browse past pages", ink: palette.ink, topPadding: 8)
-                    PageMoodFilter(viewModel: viewModel)
-                    PastPagesGrid(
-                        viewModel: viewModel,
-                        entries: viewModel.filteredEntries(from: entries),
-                        daysWithMultipleEntries: viewModel.daysWithMultipleEntries(in: entries),
-                        selectEntry: selectEntry
-                    )
+                    .padding(.horizontal, 24)
                 }
-                .padding(22)
+            } else {
+                ScrollView {
+                    AdaptiveContentWidth(maximumWidth: 680) {
+                        VStack(alignment: .leading, spacing: 24) {
+                            selectedPage(lines: 6)
+                            pageBrowser
+                        }
+                        .padding(22)
+                    }
+                }
+                .swipeActionsContainer()
+#if os(iOS) || os(macOS)
+                .scrollDismissesKeyboard(.interactively)
+#endif
             }
         }
-        .swipeActionsContainer()
-#if os(iOS) || os(macOS)
-        .scrollDismissesKeyboard(.interactively)
-#endif
         .safeAreaPadding(.bottom, 16)
         .background(palette.background.ignoresSafeArea())
         .navigationTitle("Pages")
@@ -108,6 +87,42 @@ struct PageView: View {
         } message: {
             Text(viewModel.saveErrorMessage ?? "")
         }
+    }
+
+    private func selectedPage(lines: Int) -> some View {
+        @Bindable var viewModel = viewModel
+        return VStack(alignment: .leading, spacing: 22) {
+            PageDateHeader(date: viewModel.selectedDate, ink: palette.ink)
+            MoodStickerRow(viewModel: viewModel)
+            LinedNoteCard(
+                text: $viewModel.note,
+                prompt: "Dear diary…",
+                lines: lines,
+                paper: palette.paper,
+                lineColor: palette.lavenderLine,
+                accentColor: viewModel.selectedMood.tint,
+                saveStatus: viewModel.saveStatus
+            )
+            PageTagsView(viewModel: viewModel)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private var pageBrowser: some View {
+        VStack(alignment: .leading, spacing: 22) {
+            PageSectionLabel(title: "Browse past pages", ink: palette.ink)
+            if !entries.isEmpty {
+                CalendarStickerStrip(viewModel: viewModel, entries: viewModel.calendarEntries(from: entries), selectEntry: selectEntry)
+            }
+            PageMoodFilter(viewModel: viewModel)
+            PastPagesGrid(
+                viewModel: viewModel,
+                entries: viewModel.filteredEntries(from: entries),
+                daysWithMultipleEntries: viewModel.daysWithMultipleEntries(in: entries),
+                selectEntry: selectEntry
+            )
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private func selectEntry(_ entry: MoodEntry) {

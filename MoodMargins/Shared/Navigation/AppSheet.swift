@@ -11,6 +11,7 @@ import SwiftUI
 enum AppSheet: Identifiable, Hashable {
     case today
     case insights
+    case plus
 
     var id: Self { self }
 
@@ -21,6 +22,8 @@ enum AppSheet: Identifiable, Hashable {
             TodayView()
         case .insights:
             InsightsView()
+        case .plus:
+            PlusSubscriptionView()
         }
     }
 }
