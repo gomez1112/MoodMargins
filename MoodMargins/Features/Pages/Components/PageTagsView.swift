@@ -12,6 +12,7 @@ struct PageTagsView: View {
                 FlowLayout(spacing: 8) {
                     ForEach(viewModel.selectedTagList.prefix(3), id: \.self) { tag in
                         Text("#\(tag)")
+                            .foregroundStyle(palette.ink)
                             .font(.caption)
                             .lineLimit(1)
                             .padding(.horizontal, 10)
@@ -21,7 +22,7 @@ struct PageTagsView: View {
                     if viewModel.tags.count > 3 {
                         Text("+\(viewModel.tags.count - 3)")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(palette.softInk)
                     }
                 }
                 .padding(.top, 8)

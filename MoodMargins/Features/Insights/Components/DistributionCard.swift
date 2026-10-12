@@ -12,11 +12,11 @@ struct DistributionCard: View {
                 if total == 0 {
                     Text("No moods recorded in this range.")
                         .font(.body)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(palette.softInk)
                 } else {
                     Text("Share of saved pages")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(palette.softInk)
                     ForEach(distribution) { item in
                         VStack(alignment: .leading, spacing: 6) {
                             ViewThatFits(in: .horizontal) {
@@ -54,6 +54,6 @@ struct DistributionCard: View {
     private func countLabel(_ item: MoodCount) -> some View {
         Text("\(item.count) · \(share(item).formatted(.percent.precision(.fractionLength(0))))")
             .font(.caption)
-            .foregroundStyle(.secondary)
+            .foregroundStyle(palette.softInk)
     }
 }

@@ -15,7 +15,7 @@ struct TodayCard: View {
                     if viewModel.selectedTagList.isEmpty {
                         Text("No tags yet")
                             .font(.caption)
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(palette.softInk)
                     } else {
                         ForEach(viewModel.selectedTagList, id: \.self) { tag in
                             Text("#\(tag)")
@@ -23,7 +23,7 @@ struct TodayCard: View {
                                 .padding(.horizontal, 12)
                                 .padding(.vertical, 8)
                                 .background(palette.washiColor(tag).opacity(0.18), in: Capsule())
-                                .foregroundStyle(.primary)
+                                .foregroundStyle(palette.ink)
                         }
                     }
                 }
@@ -38,7 +38,7 @@ struct TodayCard: View {
                 .foregroundStyle(palette.ink)
             Text("\(viewModel.statusText) · \(viewModel.selectedTagList.count) tags")
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(palette.softInk)
                 .fixedSize(horizontal: false, vertical: true)
         }
     }

@@ -27,7 +27,7 @@ struct InsightSticker: View {
             }
             Text(title)
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(palette.softInk)
                 .fixedSize(horizontal: false, vertical: true)
             Spacer(minLength: 0)
         }

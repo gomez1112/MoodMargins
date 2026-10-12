@@ -1,7 +1,53 @@
 {
   "identifier": "MoodMarginsPurchaseCompletionTests",
   "nonRenewingSubscriptions": [],
-  "products": [],
+  "products": [
+    {
+      "displayPrice": "1.99",
+      "familyShareable": false,
+      "internalID": "4",
+      "localizations": [
+        {
+          "description": "Keep the Botanical theme permanently.",
+          "displayName": "Botanical Theme",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.transfinite.MoodMargins.theme.botanical",
+      "referenceName": "Botanical Theme",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "1.99",
+      "familyShareable": false,
+      "internalID": "5",
+      "localizations": [
+        {
+          "description": "Keep the Coastal theme permanently.",
+          "displayName": "Coastal Theme",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.transfinite.MoodMargins.theme.coastal",
+      "referenceName": "Coastal Theme",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "1.99",
+      "familyShareable": false,
+      "internalID": "6",
+      "localizations": [
+        {
+          "description": "Keep the Sunset theme permanently.",
+          "displayName": "Sunset Theme",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.transfinite.MoodMargins.theme.sunset",
+      "referenceName": "Sunset Theme",
+      "type": "NonConsumable"
+    }
+  ],
   "settings": {
     "_askToBuyEnabled": false,
     "_disableDialogs": true,

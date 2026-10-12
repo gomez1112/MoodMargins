@@ -24,7 +24,16 @@ final class WatchJournalStore {
 #if DEBUG
         isCaptureSession = ProcessInfo.processInfo.arguments.contains("--marketing-capture")
         if isCaptureSession {
-            entries = [WatchJournalEntry(id: UUID(), date: Date(), mood: .wink, note: String(localized: "A quiet walk."))]
+            let examples: [(Mood, String)] = [
+                (.wink, String(localized: "A quiet walk.")),
+                (.laughing, String(localized: "Time with friends.")),
+                (.mourn, String(localized: "A moment to rest.")),
+                (.sad, String(localized: "One day at a time."))
+            ]
+            entries = examples.enumerated().compactMap { index, example in
+                guard let date = Calendar.current.date(byAdding: .day, value: -index, to: Date()) else { return nil }
+                return WatchJournalEntry(id: UUID(), date: date, mood: example.0, note: example.1)
+            }
             loadToday()
             return
         }

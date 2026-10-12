@@ -6,6 +6,42 @@ final class PlusSubscriptionUITests: XCTestCase {
     override func setUpWithError() throws { continueAfterFailure = false }
 
     @MainActor
+    func testCaptureLoadedPurchaseScreensForReview() throws {
+        let session = try testSession()
+        defer { session.clearTransactions() }
+        let app = launchPlus()
+        defer { app.terminate() }
+        for plan in ["Weekly", "Monthly", "Yearly"] {
+            let button = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", plan)).firstMatch
+            XCTAssertTrue(button.waitForExistence(timeout: 15))
+            button.tap()
+            XCTAssertTrue(button.isSelected)
+            exportReview(app, name: "plus-\(plan.lowercased())")
+        }
+        app.buttons["close-plus"].tap()
+        for theme in ["botanical", "coastal", "sunset"] {
+            let link = app.buttons["theme-\(theme)"]
+            if !link.isHittable { app.scrollViews.firstMatch.swipeUp() }
+            link.tap()
+            let price = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "1.99")).firstMatch
+            XCTAssertTrue(price.waitForExistence(timeout: 15), app.debugDescription)
+            if !price.isHittable { app.scrollViews.firstMatch.swipeUp() }
+            XCTAssertTrue(price.isHittable)
+            exportReview(app, name: "theme-\(theme)")
+            app.navigationBars.buttons.firstMatch.tap()
+        }
+    }
+
+    @MainActor
+    private func exportReview(_ app: XCUIApplication, name: String) {
+        do {
+            let directory = URL.documentsDirectory.appending(path: "MoodMargins-ProductReview", directoryHint: .isDirectory)
+            try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+            try app.screenshot().pngRepresentation.write(to: directory.appending(path: "\(name).png"))
+        } catch { XCTFail("Could not export purchase review image: \(error)") }
+    }
+
+    @MainActor
     func testPlusSheetPreservesThemePreviewAndToday() throws {
         let session = try testSession()
         defer { session.clearTransactions() }

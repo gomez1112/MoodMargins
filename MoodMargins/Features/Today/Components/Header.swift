@@ -26,7 +26,7 @@ struct Header: View {
                 .accessibilityAddTraits(.isHeader)
             Text(Date(), format: .dateTime.weekday(.wide).month(.wide).day())
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(palette.softInk)
         }
     }
 

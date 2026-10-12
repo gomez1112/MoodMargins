@@ -5,9 +5,9 @@
       "color": {
         "color-space": "srgb",
         "components": {
-          "red": "0.8",
-          "green": "0.78",
-          "blue": "0.85",
+          "red": "0.3451",
+          "green": "0.3137",
+          "blue": "0.7882",
           "alpha": "1.0"
         }
       }
@@ -17,9 +17,9 @@
       "color": {
         "color-space": "srgb",
         "components": {
-          "red": "0.36",
-          "green": "0.32",
-          "blue": "0.43",
+          "red": "0.7216",
+          "green": "0.6941",
+          "blue": "1.0000",
           "alpha": "1.0"
         }
       },
@@ -29,6 +29,18 @@
           "value": "dark"
         }
       ]
+    },
+    {
+      "idiom": "watch",
+      "color": {
+        "color-space": "srgb",
+        "components": {
+          "red": "0.7216",
+          "green": "0.6941",
+          "blue": "1.0000",
+          "alpha": "1.0"
+        }
+      }
     }
   ],
   "info": {

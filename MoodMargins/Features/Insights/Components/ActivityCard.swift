@@ -16,7 +16,7 @@ struct ActivityCard: View {
             VStack(alignment: .leading, spacing: 12) {
                 if topActivities.isEmpty {
                     Text("No activities recorded in this range.")
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(palette.softInk)
                 }
                 ForEach(topActivities) { item in
                     HStack(spacing: 12) {
@@ -32,7 +32,7 @@ struct ActivityCard: View {
                                 .foregroundStyle(palette.ink)
                             Text("appeared in \(item.count) pages")
                                 .font(.system(.caption, design: .rounded))
-                                .foregroundStyle(.secondary)
+                                .foregroundStyle(palette.softInk)
                         }
 
                         Spacer()

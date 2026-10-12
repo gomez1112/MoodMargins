@@ -23,13 +23,13 @@ struct MiniDiaryPage: View {
             }
             Text(entry.note.isEmpty ? String(localized: "A mood check-in") : entry.note)
                 .font(.system(.body, design: .serif))
-                .foregroundStyle(.primary)
+                .foregroundStyle(palette.ink)
                 .lineLimit(dynamicTypeSize.isAccessibilitySize ? 5 : 3)
                 .fixedSize(horizontal: false, vertical: true)
             Spacer(minLength: 0)
             Text(entry.tags.prefix(2).map { "#\($0)" }.joined(separator: " · "))
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(palette.softInk)
                 .lineLimit(2)
         }
         .padding()
@@ -48,7 +48,7 @@ struct MiniDiaryPage: View {
             }
         }
         .font(.caption)
-        .foregroundStyle(.secondary)
+        .foregroundStyle(palette.softInk)
         .fixedSize(horizontal: false, vertical: true)
     }
 }

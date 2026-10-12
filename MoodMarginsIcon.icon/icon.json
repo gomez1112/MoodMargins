@@ -1,134 +1,70 @@
 {
-  "fill-specializations" : [
+  "fill-specializations": [
     {
-      "value" : {
-        "linear-gradient" : [
-          "extended-gray:1.00000,1.00000",
-          "extended-srgb:0.00000,0.53333,1.00000,1.00000"
+      "value": {
+        "linear-gradient": [
+          "srgb:1.00000,0.88000,0.93000,1.00000",
+          "srgb:0.86000,0.84000,1.00000,1.00000"
         ]
       }
     },
     {
-      "appearance" : "dark",
-      "value" : "automatic"
+      "appearance": "dark",
+      "value": {
+        "linear-gradient": [
+          "srgb:0.18000,0.14000,0.22000,1.00000",
+          "srgb:0.25000,0.21000,0.35000,1.00000"
+        ]
+      }
     }
   ],
-  "groups" : [
+  "groups": [
     {
-      "blur-material" : null,
-      "layers" : [
+      "layers": [
         {
-          "glass" : true,
-          "image-name" : "01_DiaryDetails 4.svg",
-          "name" : "01_DiaryDetails"
+          "image-name": "Notebook.png",
+          "name": "Mood notebook",
+          "glass": false
+        }
+      ],
+      "name": "Notebook",
+      "lighting": "combined",
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.22
+      },
+      "specular": false,
+      "translucency": {
+        "enabled": false,
+        "value": 0
+      },
+      "position-specializations": [
+        {
+          "value": {
+            "scale": 0.98,
+            "translation-in-points": [
+              0,
+              0
+            ]
+          }
         },
         {
-          "fill-specializations" : [
-            {
-              "value" : "automatic"
-            },
-            {
-              "appearance" : "dark",
-              "value" : {
-                "solid" : "srgb:0.95294,0.93333,0.90588,1.00000"
-              }
-            }
-          ],
-          "hidden" : false,
-          "image-name" : "02_DiaryBase.svg",
-          "name" : "02_DiaryBase",
-          "position" : {
-            "scale" : 1,
-            "translation-in-points" : [
+          "idiom": "watchOS",
+          "value": {
+            "scale": 0.84,
+            "translation-in-points": [
               0,
               0
             ]
           }
         }
-      ],
-      "lighting" : "combined",
-      "name" : "Diary",
-      "position-specializations" : [
-        {
-          "value" : {
-            "scale" : 1.08,
-            "translation-in-points" : [
-              0,
-              8
-            ]
-          }
-        },
-        {
-          "idiom" : "watchOS",
-          "value" : {
-            "scale" : 0.96,
-            "translation-in-points" : [
-              0,
-              0
-            ]
-          }
-        }
-      ],
-      "refractivity" : {
-        "depth" : 0,
-        "enabled" : false,
-        "strength" : 0.5
-      },
-      "shadow" : {
-        "kind" : "neutral",
-        "opacity" : 0.6
-      },
-      "specular" : true,
-      "translucency" : {
-        "enabled" : true,
-        "value" : 0.2
-      }
-    },
-    {
-      "layers" : [
-        {
-          "fill-specializations" : [
-            {
-              "value" : "automatic"
-            },
-            {
-              "appearance" : "dark",
-              "value" : {
-                "solid" : "srgb:0.10588,0.13333,0.21961,1.00000"
-              }
-            }
-          ],
-          "image-name" : "03_Background.svg",
-          "name" : "03_Background",
-          "position-specializations" : [
-            {
-              "idiom" : "watchOS",
-              "value" : {
-                "scale" : 1.16,
-                "translation-in-points" : [
-                  0,
-                  -8
-                ]
-              }
-            }
-          ]
-        }
-      ],
-      "name" : "Background",
-      "shadow" : {
-        "kind" : "neutral",
-        "opacity" : 0.6
-      },
-      "translucency" : {
-        "enabled" : true,
-        "value" : 0.2
-      }
+      ]
     }
   ],
-  "supported-platforms" : {
-    "circles" : [
+  "supported-platforms": {
+    "circles": [
       "watchOS"
     ],
-    "squares" : "shared"
+    "squares": "shared"
   }
 }

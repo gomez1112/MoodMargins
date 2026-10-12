@@ -22,7 +22,7 @@ struct CalendarStickerStrip: View {
                 Spacer()
                 Text(viewModel.selectedDate, format: .dateTime.month(.wide).year())
                     .font(.system(.caption, design: .rounded).weight(.semibold))
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(palette.softInk)
             }
 
             ScrollView(.horizontal, showsIndicators: false) {

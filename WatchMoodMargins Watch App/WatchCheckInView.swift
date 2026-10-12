@@ -3,6 +3,7 @@ import SwiftUI
 struct WatchCheckInView: View {
     @Environment(\.scenePhase) private var scenePhase
     @State private var selectedTab = WatchTab.today
+    @State private var pagesPath: [UUID] = []
     var journal: WatchJournalStore
 
     var body: some View {
@@ -13,7 +14,7 @@ struct WatchCheckInView: View {
                 }
             }
             Tab("Recent pages", systemImage: "text.book.closed", value: WatchTab.pages) {
-                NavigationStack {
+                NavigationStack(path: $pagesPath) {
                     WatchRecentPagesView(entries: journal.entries)
                 }
             }
@@ -25,6 +26,20 @@ struct WatchCheckInView: View {
             journal.saveIfChanged()
             if scenePhase == .active && !journal.hasChanges { journal.loadToday() }
         }
+#if DEBUG
+        .task {
+            if ProcessInfo.processInfo.arguments.contains("--marketing-capture"),
+               ProcessInfo.processInfo.arguments.contains("--marketing-pages") {
+                selectedTab = .pages
+            }
+            if ProcessInfo.processInfo.arguments.contains("--marketing-capture"),
+               ProcessInfo.processInfo.arguments.contains("--marketing-detail"),
+               let entry = journal.entries.first {
+                selectedTab = .pages
+                pagesPath = [entry.id]
+            }
+        }
+#endif
     }
 }
 

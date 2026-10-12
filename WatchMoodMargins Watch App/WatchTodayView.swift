@@ -10,19 +10,17 @@ struct WatchTodayView: View {
         @Bindable var journal = journal
 
         ScrollView {
-            VStack(spacing: 14) {
+            VStack(spacing: 10) {
                 Button {
                     isChoosingMood = true
                 } label: {
-                    VStack(spacing: 6) {
-                        WatchMoodAnimation(mood: journal.selectedMood, size: 72, animates: isActive && !isChoosingMood)
-                        Text(journal.hasSelectedMood ? journal.selectedMood.title : String(localized: "Mood"))
-                            .font(.headline)
-                            .multilineTextAlignment(.center)
-                    }
-                    .padding(.vertical, 6)
-                    .frame(maxWidth: .infinity)
-                    .contentShape(.rect)
+                    WatchMoodCard(
+                        mood: journal.selectedMood,
+                        title: journal.hasSelectedMood ? journal.selectedMood.title : String(localized: "Choose mood"),
+                        animates: isActive && !isChoosingMood,
+                        showsDisclosure: true,
+                        isCompact: true
+                    )
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel(Text("Mood"))
@@ -31,6 +29,7 @@ struct WatchTodayView: View {
                 .accessibilityIdentifier("watch-choose-mood")
 
                 TextField("A short note", text: $journal.note)
+                    .tint(WatchDiaryStyle.action)
                     .accessibilityIdentifier("watch-note")
                     .privacySensitive()
 
@@ -41,7 +40,7 @@ struct WatchTodayView: View {
                         .fixedSize(horizontal: false, vertical: true)
                 }
             }
-            .padding(.horizontal)
+            .padding(.horizontal, 8)
             .padding(.bottom)
             .frame(maxWidth: .infinity)
         }
@@ -52,5 +51,13 @@ struct WatchTodayView: View {
             }
         }
         .disabled(isLuminanceReduced)
+#if DEBUG
+        .task {
+            if ProcessInfo.processInfo.arguments.contains("--marketing-capture"),
+               ProcessInfo.processInfo.arguments.contains("--marketing-moods") {
+                isChoosingMood = true
+            }
+        }
+#endif
     }
 }

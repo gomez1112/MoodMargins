@@ -23,7 +23,7 @@ struct PromptCard: View {
                     .foregroundStyle(palette.ink)
 
                 if let errorMessage {
-                    Text(errorMessage).font(.caption).foregroundStyle(.secondary)
+                    Text(errorMessage).font(.caption).foregroundStyle(palette.softInk)
                     Button("Try suggestions again", systemImage: "arrow.clockwise", action: retry)
                         .buttonStyle(.bordered)
                 }
@@ -31,7 +31,7 @@ struct PromptCard: View {
                     VStack(alignment: .leading, spacing: 8) {
                         Label(isGeneratingTags ? "Reading your page" : "Suggested from your page", systemImage: "wand.and.sparkles")
                             .font(.system(.caption, design: .rounded).weight(.semibold))
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(palette.softInk)
 
                         FlowLayout(spacing: 8) {
                             ForEach(generatedTags, id: \.self) { tag in
@@ -48,7 +48,7 @@ struct PromptCard: View {
                                             Capsule()
                                                 .stroke(palette.washiColor(tag).opacity(0.48), lineWidth: 1)
                                         }
-                                        .foregroundStyle(.primary)
+                                        .foregroundStyle(palette.ink)
                                 }
                                 .buttonStyle(.plain)
                                 .accessibilityLabel("Add suggested \(tag) tag")

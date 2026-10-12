@@ -27,7 +27,7 @@ struct GeneratedInsightRecapCard: View {
                     Text(pattern)
                         .font(.system(.body, design: .serif))
                         .lineSpacing(5)
-                        .foregroundStyle(.primary.opacity(0.84))
+                        .foregroundStyle(palette.ink.opacity(0.84))
                 } else if isGenerating {
                     loadingLine(String(localized: "Looking for a gentle pattern"))
                 } else if let errorMessage {
@@ -39,7 +39,7 @@ struct GeneratedInsightRecapCard: View {
                 if let supportingDetail = text(recap?.supportingDetail) {
                     Label(supportingDetail, systemImage: "sparkle.magnifyingglass")
                         .font(.system(.caption, design: .rounded))
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(palette.softInk)
                 }
 
                 if let gentleReflection = text(recap?.gentleReflection) {
@@ -77,14 +77,14 @@ struct GeneratedInsightRecapCard: View {
                 .controlSize(.small)
             Text(text)
                 .font(.system(.caption, design: .rounded).weight(.semibold))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(palette.softInk)
         }
     }
 
     private func statusLine(_ text: String, systemImage: String) -> some View {
         Label(text, systemImage: systemImage)
             .font(.system(.caption, design: .rounded).weight(.semibold))
-            .foregroundStyle(.secondary)
+            .foregroundStyle(palette.softInk)
     }
 
     private func text(_ value: String?) -> String? {

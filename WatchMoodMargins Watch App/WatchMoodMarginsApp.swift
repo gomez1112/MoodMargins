@@ -7,6 +7,8 @@ struct WatchMoodMarginsApp: App {
     var body: some Scene {
         WindowGroup {
             WatchCheckInView(journal: journal)
+                .tint(WatchDiaryStyle.action)
+                .preferredColorScheme(.dark)
         }
     }
 }

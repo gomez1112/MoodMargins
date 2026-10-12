@@ -26,14 +26,7 @@ final class MacMarketingCaptureTests: XCTestCase {
             navigation.selectedTab = tab
             let purchases = PurchaseStore()
             let themes = ThemePreferences()
-            let root = Group {
-                switch tab {
-                case .today: TodayView()
-                case .page: PageView()
-                case .insights: InsightsView()
-                case .customize: StoreView()
-                }
-            }
+            let root = ContentView()
                 .environment(navigation).environment(purchases).environment(themes)
                 .environment(FoundationModelPreferences()).environment(preview)
                 .environment(\.diaryPalette, DiaryTheme.pastel.palette)
@@ -41,13 +34,11 @@ final class MacMarketingCaptureTests: XCTestCase {
                 .environment(\.layoutDirection, locale == "ar" ? .rightToLeft : .leftToRight)
                 .preferredColorScheme(scheme)
                 .modelContainer(container)
-                // Present the app content with the window toolbar hidden for the artwork.
-                .toolbar(.hidden, for: .windowToolbar)
             let controller = NSHostingController(rootView: root)
             let host = controller.view
             host.frame = NSRect(x: 0, y: 0, width: 1200, height: 850)
             host.autoresizingMask = [.width, .height]
-            let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1200, height: 850), styleMask: [.borderless], backing: .buffered, defer: false)
+            let window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 1200, height: 850), styleMask: [.titled, .closable, .miniaturizable, .resizable], backing: .buffered, defer: false)
             window.title = "MoodMargins"
             window.contentViewController = controller
             // Keep captures on the primary display, including in RTL locales.
@@ -71,7 +62,6 @@ final class MacMarketingCaptureTests: XCTestCase {
             let animations = descendants(of: host).compactMap { $0 as? DotLottieAnimationView }
             XCTAssertFalse(animations.isEmpty)
             XCTAssertTrue(animations.allSatisfy { $0.dotLottieViewModel.isLoaded() })
-            window.toolbar?.isVisible = false
             host.needsLayout = true
             host.layoutSubtreeIfNeeded()
             // Query only this process's own windows, never the user's desktop.

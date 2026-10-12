@@ -78,7 +78,7 @@ struct TrendCard: View {
                     .accessibilityHint("Mood emojis run from Angry at the bottom to Laughing at the top.")
                     Text("Each point summarizes a day's mood. Gaps are days without a saved page.")
                         .font(.caption)
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(palette.softInk)
                 }
             }
         }

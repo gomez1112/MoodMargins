@@ -20,7 +20,7 @@ struct PastPagesGrid: View {
                 Spacer()
                 Text(entries.count, format: .number)
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(palette.softInk)
             }
             if entries.isEmpty {
                 ContentUnavailableView {

@@ -167,40 +167,29 @@ struct ScreenshotArtwork: View {
     }
 
     private var desktopComposition: some View {
-        ZStack(alignment: .topLeading) {
-            heading(font: canvas.width * 0.050, width: canvas.width * 0.38)
-                .offset(x: canvas.width * 0.045, y: canvas.height * 0.24)
-            if slide.source == "themes" {
-                desktopThemeGrid
-                    .offset(x: canvas.width * 0.49, y: canvas.height * 0.20)
-                Text(themeFooter)
-                    .font(.system(size: canvas.width * 0.015, weight: .semibold)).foregroundStyle(ink)
-                    .position(x: canvas.width * 0.24, y: canvas.height * 0.80)
-            } else {
-                deviceFrame(source: slide.source, width: canvas.width * 0.54, bezel: canvas.width * 0.004, radius: canvas.width * 0.012)
-                    .rotationEffect(.degrees(slide.angle * 0.35))
-                    .position(x: canvas.width * 0.72, y: canvas.height * 0.54)
+        VStack(alignment: rtl ? .trailing : .leading, spacing: 22) {
+            HStack(alignment: .firstTextBaseline, spacing: 32) {
+                Text(slide.headline.replacingOccurrences(of: "\n", with: " "))
+                    .font(.system(size: 42, weight: .heavy, design: .rounded))
+                    .fixedSize(horizontal: false, vertical: true)
+                Spacer(minLength: 0)
+                Text(slide.source == "themes" ? themeFooter : slide.subtitle)
+                    .font(.system(size: 18, weight: .medium))
+                    .frame(maxWidth: 250, alignment: rtl ? .trailing : .leading)
+                    .fixedSize(horizontal: false, vertical: true)
             }
+            .foregroundStyle(ink)
+            let source = slide.source == "themes" ? "botanical" : slide.source
+            let capture = load(source)
+            Image(decorative: capture, scale: 1).resizable().aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .shadow(color: .black.opacity(0.15), radius: 14, y: 8)
         }
-    }
-
-    private var desktopThemeGrid: some View {
-        let width = canvas.width * 0.225
-        return ZStack(alignment: .topLeading) {
-            ForEach(["botanical", "coastal", "sunset"].enumerated(), id: \.element) { index, theme in
-                let image = load(theme, forceDevice: "ipad")
-                let rect = CGRect(x: CGFloat(image.width) * 0.1938, y: CGFloat(image.height) * 0.1977, width: CGFloat(image.width) * 0.6124, height: CGFloat(image.height) * 0.2805)
-                let preview = image.cropping(to: rect) ?? image
-                VStack(alignment: rtl ? .trailing : .leading, spacing: 8) {
-                    Text(themeName(theme)).font(.system(size: 20, weight: .bold, design: .rounded)).foregroundStyle(ink)
-                    Image(decorative: preview, scale: 1).resizable().frame(width: width, height: width * CGFloat(preview.height) / CGFloat(preview.width))
-                        .clipShape(.rect(cornerRadius: 12)).shadow(color: .black.opacity(0.12), radius: 8, y: 6)
-                }
-                .rotationEffect(.degrees(index == 0 ? -3 : 3))
-                .offset(x: index == 1 ? canvas.width * 0.245 : index == 2 ? canvas.width * 0.1225 : 0, y: index == 2 ? canvas.height * 0.34 : 0)
-            }
-        }
-        .frame(width: canvas.width * 0.49, height: canvas.height * 0.64, alignment: .topLeading)
+        .environment(\.layoutDirection, rtl ? .rightToLeft : .leftToRight)
+        .padding(.horizontal, 44)
+        .padding(.top, 103)
+        .padding(.bottom, 20)
+        .frame(width: canvas.width, height: canvas.height)
     }
 
     private func deviceFrame(source: String, width: CGFloat, bezel: CGFloat, radius: CGFloat) -> some View {
@@ -248,7 +237,7 @@ struct ScreenshotArtwork: View {
     }
 
     private func load(_ source: String, forceDevice: String? = nil) -> CGImage {
-        let captureSource = source == "stickers" && device == "mac" ? "insights" : source
+        let captureSource = source
         let url = captureDirectory.appending(path: "\(forceDevice ?? device)-\(captureSource).png")
         guard let data = CGImageSourceCreateWithURL(url as CFURL, nil), let image = CGImageSourceCreateImageAtIndex(data, 0, nil) else {
             fatalError("Missing real capture: \(url.path)")
@@ -291,19 +280,17 @@ func render() throws {
             print("\(device)/\(slide.file).png \(image.width)×\(image.height)")
         }
     }
-    let watchURL = input.appending(path: "watch-check-in.png")
-    if let source = CGImageSourceCreateWithURL(watchURL as CFURL, nil), let capture = CGImageSourceCreateImageAtIndex(source, 0, nil) {
-        let size = CGSize(width: 208, height: 248)
-        let renderer = ImageRenderer(content: Image(decorative: capture, scale: 1).resizable().frame(width: size.width, height: size.height).background(.black))
-        renderer.scale = 2
-        renderer.isOpaque = true
+    for (index, name) in ["check-in", "moods", "pages", "detail", "mood-sad", "mood-laughing"].enumerated() {
+        let url = input.appending(path: "watch-\(name).png")
+        guard let source = CGImageSourceCreateWithURL(url as CFURL, nil), let capture = CGImageSourceCreateImageAtIndex(source, 0, nil) else { continue }
+        // Keep native pixels: every localized Watch set uses the same device size.
         let directory = output.appending(path: "watch", directoryHint: .isDirectory)
         try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
-        let url = directory.appending(path: "01-check-in.png")
-        guard let image = renderer.cgImage, let destination = CGImageDestinationCreateWithURL(url as CFURL, UTType.png.identifier as CFString, 1, nil) else { throw CocoaError(.coderInvalidValue) }
-        CGImageDestinationAddImage(destination, try opaqueImage(image), nil)
+        let filename = "0\(index + 1)-\(name).png"
+        guard let destination = CGImageDestinationCreateWithURL(directory.appending(path: filename) as CFURL, UTType.png.identifier as CFString, 1, nil) else { throw CocoaError(.fileWriteUnknown) }
+        CGImageDestinationAddImage(destination, try opaqueImage(capture), nil)
         guard CGImageDestinationFinalize(destination) else { throw CocoaError(.fileWriteUnknown) }
-        print("watch/01-check-in.png \(image.width)×\(image.height)")
+        print("watch/\(filename) \(capture.width)×\(capture.height)")
     }
 }
 try render()

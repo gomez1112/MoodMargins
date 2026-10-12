@@ -13,7 +13,7 @@ struct InsightHeader: View {
                 .accessibilityAddTraits(.isHeader)
             Text("A soft look back through your pages")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(palette.softInk)
             if dynamicTypeSize.isAccessibilitySize {
                 rangePicker.pickerStyle(.menu).buttonStyle(.bordered)
             } else {

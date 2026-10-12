@@ -18,7 +18,7 @@ struct PageDateHeader: View {
                 .foregroundStyle(ink)
             Text(date, format: .dateTime.month(.wide).day().year())
                 .font(.system(.subheadline, design: .rounded))
-                .foregroundStyle(.secondary)
+                .foregroundStyle(ink.opacity(0.8))
         }
     }
 }

@@ -63,6 +63,41 @@ struct MoodMarginsApp: App {
             .transformEnvironment(\.locale) { locale in
                 if let captureLocale = marketingCapture.locale { locale = captureLocale }
             }
+#if os(iOS)
+            .task {
+                let arguments = ProcessInfo.processInfo.arguments
+                guard arguments.contains("--marketing-capture"), arguments.contains("--marketing-preview") else { return }
+                do {
+                    // Viewing intervals for a live screen recording of the
+                    // actual app. Fictional data remains in its isolated store.
+                    navigationContext.selectedTab = .today
+                    try await Task.sleep(for: .seconds(7))
+                    for tab in [AppTab.page, .insights, .customize] {
+                        navigationContext.selectedTab = tab
+                        try await Task.sleep(for: .seconds(5))
+                    }
+                    navigationContext.selectedTab = .today
+                } catch is CancellationError {
+                    return
+                } catch {
+                    marketingCapture.errorMessage = error.localizedDescription
+                }
+            }
+#endif
+#if os(macOS)
+            .task {
+                let arguments = ProcessInfo.processInfo.arguments
+                guard arguments.contains("--marketing-capture"), arguments.contains("--export-store-captures") else { return }
+                do {
+                    try await MacStoreCapture.export(navigation: navigationContext, preview: marketingCapture)
+                } catch is CancellationError {
+                    return
+                } catch {
+                    marketingCapture.errorMessage = error.localizedDescription
+                    print("STORE_CAPTURE_FAILED: \(error)")
+                }
+            }
+#endif
 #endif
             .task { await purchases.observeTransactions() }
             .task { await purchases.observeSubscriptionStatus() }
@@ -74,7 +109,7 @@ struct MoodMarginsApp: App {
         .environment(modelPreferences)
         .environment(purchases)
         .environment(themes)
-        .environment(\.diaryPalette, themes.effectiveTheme(access: purchases.entitlements).palette)
+        .environment(\.diaryPalette, activePalette)
         .modelContainer(activeContainer)
     }
 
@@ -97,5 +132,14 @@ struct MoodMarginsApp: App {
 #else
         container
 #endif
+    }
+
+    private var activePalette: DiaryPalette {
+#if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("--marketing-capture") {
+            return DiaryTheme.pastel.palette
+        }
+#endif
+        return themes.effectiveTheme(access: purchases.entitlements).palette
     }
 }
