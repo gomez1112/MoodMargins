@@ -20,6 +20,8 @@ Fictional journal entries run in DEBUG-only, isolated capture stores. No real jo
 
 The asset choices follow [Apple's screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/), [preview specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/app-preview-specifications/), and [accurate metadata guidelines](https://developer.apple.com/app-store/review/guidelines/#accurate-metadata). These checks do not constitute App Review approval.
 
+The new [custom product page, header, and search-results artwork](ProductPage/README.md) is prepared separately. [Review its artwork](ProductPage/ContactSheet.png). It awaits approval before creating the page and uploading these assets.
+
 ## Reproduction
 
 Build capture binaries using `bitrig build`. iPhone and iPad still captures are produced by `JournalCaptureUITests` for each language. The Mac utility uses ScreenCaptureKit's current-process filter and exports only the app's own window. It handles native Metal-backed Lottie views without capturing the desktop. Watch capture routes include Today, the horizontal mood selector, Recent Pages, a page detail, and two additional mood pages.
@@ -37,4 +39,4 @@ python3 Tools/Marketing/SyncScreenshotAssets.py
 
 Render `es` and `ar` before syncing. `Marketing/Rendered/` and raw video recordings are intermediate exports excluded from Git; final listing images, final videos, source stills, review images, and tools are retained. The notebook foreground used by Icon Composer is `MoodMarginsIcon.icon/Assets/Notebook.png`. Apple obtains the App Store icon from the uploaded app build, rather than a listing image upload.
 
-See [ReleaseReadiness.md](ReleaseReadiness.md) for the processed builds, listing status, and the remaining privacy-label action.
+See [ReleaseReadiness.md](ReleaseReadiness.md) for the processed builds, listing status, and the confirmed App Privacy publication and remaining physical-device checks.

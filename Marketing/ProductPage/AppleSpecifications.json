@@ -1,0 +1,413 @@
+{
+  "checkedOn": "2026-10-11",
+  "source": "GET /v1/appAssetLibraryRefData",
+  "features": [
+    {
+      "featureId": "APP_STORE_VERSIONS",
+      "placementPolicies": [
+        {
+          "groupLimits": [
+            {
+              "groupIds": [
+                "IMESSAGE_IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+                "IMESSAGE_IPHONE_FACE_ID_LARGE_PROFILE",
+                "IMESSAGE_IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE",
+                "IMESSAGE_IPHONE_FACE_ID_MEDIUM_PROFILE",
+                "IMESSAGE_IPHONE_HOME_BUTTON_LARGE_PROFILE",
+                "IMESSAGE_IPHONE_HOME_BUTTON_MEDIUM_PROFILE",
+                "IMESSAGE_IPHONE_HOME_BUTTON_40_PROFILE",
+                "IMESSAGE_IPHONE_HOME_BUTTON_35_PROFILE",
+                "IMESSAGE_IPAD_13_PROFILE",
+                "IMESSAGE_IPAD_129_PROFILE",
+                "IMESSAGE_IPAD_11_PROFILE",
+                "IMESSAGE_IPAD_105_PROFILE",
+                "IMESSAGE_IPAD_97_PROFILE",
+                "IMESSAGE_IPHONE_DUO_PROFILE"
+              ],
+              "maxCount": 10
+            }
+          ],
+          "placementType": "IMESSAGE_APP_SCREENSHOT"
+        },
+        {
+          "groupLimits": [
+            {
+              "groupIds": [
+                "MAC_PROFILE",
+                "TV_PROFILE",
+                "VISION_PRO_PROFILE",
+                "WATCH_ULTRA_PROFILE",
+                "WATCH_SERIES_10_PROFILE",
+                "WATCH_SERIES_7_PROFILE",
+                "WATCH_SERIES_4_PROFILE",
+                "WATCH_SERIES_3_PROFILE",
+                "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+                "IPHONE_FACE_ID_LARGE_PROFILE",
+                "IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE",
+                "IPHONE_FACE_ID_MEDIUM_PROFILE",
+                "IPHONE_HOME_BUTTON_LARGE_PROFILE",
+                "IPHONE_HOME_BUTTON_MEDIUM_PROFILE",
+                "IPHONE_HOME_BUTTON_40_PROFILE",
+                "IPHONE_HOME_BUTTON_35_PROFILE",
+                "IPAD_13_PROFILE",
+                "IPAD_129_PROFILE",
+                "IPAD_11_PROFILE",
+                "IPAD_105_PROFILE",
+                "IPAD_97_PROFILE",
+                "IPHONE_DUO_PROFILE"
+              ],
+              "maxCount": 10
+            }
+          ],
+          "placementType": "APP_SCREENSHOT"
+        },
+        {
+          "groupLimits": [
+            {
+              "groupIds": [
+                "MAC_PROFILE",
+                "TV_PROFILE",
+                "VISION_PRO_PROFILE",
+                "WATCH_ULTRA_PROFILE",
+                "WATCH_SERIES_10_PROFILE",
+                "WATCH_SERIES_7_PROFILE",
+                "WATCH_SERIES_4_PROFILE",
+                "WATCH_SERIES_3_PROFILE",
+                "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+                "IPHONE_FACE_ID_LARGE_PROFILE",
+                "IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE",
+                "IPHONE_FACE_ID_MEDIUM_PROFILE",
+                "IPHONE_HOME_BUTTON_LARGE_PROFILE",
+                "IPHONE_HOME_BUTTON_MEDIUM_PROFILE",
+                "IPHONE_HOME_BUTTON_40_PROFILE",
+                "IPHONE_HOME_BUTTON_35_PROFILE",
+                "IPAD_13_PROFILE",
+                "IPAD_129_PROFILE",
+                "IPAD_11_PROFILE",
+                "IPAD_105_PROFILE",
+                "IPAD_97_PROFILE",
+                "IPHONE_DUO_PROFILE"
+              ],
+              "maxCount": 3
+            }
+          ],
+          "placementType": "APP_PREVIEW"
+        },
+        {
+          "groupLimits": [
+            {
+              "groupIds": [
+                "DEFAULT_PROFILE"
+              ],
+              "maxCount": 1
+            }
+          ],
+          "placementType": "PRODUCT_PAGE_HEADER_ASSET"
+        },
+        {
+          "groupLimits": [
+            {
+              "groupIds": [
+                "DEFAULT_PROFILE"
+              ],
+              "maxCount": 1
+            }
+          ],
+          "placementType": "APP_STORE_SEARCH_RESULTS_ASSET"
+        }
+      ]
+    },
+    {
+      "featureId": "CUSTOM_PRODUCT_PAGES",
+      "placementPolicies": [
+        {
+          "groupLimits": [
+            {
+              "groupIds": [
+                "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+                "IPHONE_FACE_ID_LARGE_PROFILE",
+                "IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE",
+                "IPHONE_FACE_ID_MEDIUM_PROFILE",
+                "IPHONE_HOME_BUTTON_LARGE_PROFILE",
+                "IPHONE_HOME_BUTTON_MEDIUM_PROFILE",
+                "IPHONE_HOME_BUTTON_40_PROFILE",
+                "IPHONE_HOME_BUTTON_35_PROFILE",
+                "IPAD_13_PROFILE",
+                "IPAD_129_PROFILE",
+                "IPAD_11_PROFILE",
+                "IPAD_105_PROFILE",
+                "IPAD_97_PROFILE",
+                "IPHONE_DUO_PROFILE"
+              ],
+              "maxCount": 10
+            }
+          ],
+          "placementType": "APP_SCREENSHOT"
+        },
+        {
+          "groupLimits": [
+            {
+              "groupIds": [
+                "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+                "IPHONE_FACE_ID_LARGE_PROFILE",
+                "IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE",
+                "IPHONE_FACE_ID_MEDIUM_PROFILE",
+                "IPHONE_HOME_BUTTON_LARGE_PROFILE",
+                "IPHONE_HOME_BUTTON_MEDIUM_PROFILE",
+                "IPHONE_HOME_BUTTON_40_PROFILE",
+                "IPHONE_HOME_BUTTON_35_PROFILE",
+                "IPAD_13_PROFILE",
+                "IPAD_129_PROFILE",
+                "IPAD_11_PROFILE",
+                "IPAD_105_PROFILE",
+                "IPAD_97_PROFILE",
+                "IPHONE_DUO_PROFILE"
+              ],
+              "maxCount": 3
+            }
+          ],
+          "placementType": "APP_PREVIEW"
+        },
+        {
+          "groupLimits": [
+            {
+              "groupIds": [
+                "DEFAULT_PROFILE"
+              ],
+              "maxCount": 1
+            }
+          ],
+          "placementType": "PRODUCT_PAGE_HEADER_ASSET"
+        },
+        {
+          "groupLimits": [
+            {
+              "groupIds": [
+                "DEFAULT_PROFILE"
+              ],
+              "maxCount": 1
+            }
+          ],
+          "placementType": "APP_STORE_SEARCH_RESULTS_ASSET"
+        }
+      ]
+    }
+  ],
+  "placementTypes": [
+    {
+      "acceptsAssetCategories": [
+        "CREATIVE_ASSETS"
+      ],
+      "placementTypeId": "PRODUCT_PAGE_HEADER_ASSET",
+      "specMappings": [
+        {
+          "placementGroupId": "DEFAULT_PROFILE",
+          "specs": [
+            "c8f4e2b1-7a3d-5c9e-8b6f-2d1a0e9c8b7a",
+            "1eb43b80-e0b7-4d96-bd32-47a42a8c5fed",
+            "8aeaae00-2a17-4781-bfc0-44ca02e26ccb"
+          ]
+        }
+      ]
+    },
+    {
+      "acceptsAssetCategories": [
+        "CREATIVE_ASSETS"
+      ],
+      "placementTypeId": "APP_STORE_SEARCH_RESULTS_ASSET",
+      "specMappings": [
+        {
+          "placementGroupId": "DEFAULT_PROFILE",
+          "specs": [
+            "c8f4e2b1-7a3d-5c9e-8b6f-2d1a0e9c8b7a",
+            "d2ffa3b7-6c55-5cdf-8512-229d92791333",
+            "a28b6440-2fe2-58f0-9da3-354cb54cab57"
+          ]
+        }
+      ]
+    },
+    {
+      "acceptsAssetCategories": [
+        "APP_SCREENSHOTS_AND_PREVIEWS"
+      ],
+      "placementTypeId": "APP_SCREENSHOT",
+      "specMappings": [
+        {
+          "placementGroupId": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "specs": [
+            "e00744ec-5f5d-5017-b97a-84f5c761c2b7",
+            "f56c777c-99ea-5760-97ae-27c5f8cbb884",
+            "38e4b05b-3e42-563f-83ed-58f9ac76069e",
+            "bd402f1a-26ee-5b83-9dd7-972c60c43d47",
+            "93045d7c-dd57-5cec-9b67-db770ab51a59",
+            "1cac3bef-0c30-5432-bd89-cb98946a1441"
+          ]
+        },
+        {
+          "placementGroupId": "IPAD_13_PROFILE",
+          "specs": [
+            "4fb432dd-fda6-539d-9408-50b88c7b99ce",
+            "19e742ba-9d8e-578f-a476-27b6bc58f6e0",
+            "91f7a113-9ce7-5ccc-a265-ac752da04d85",
+            "1751a63a-af79-5c7f-a2f2-41140bf28f9e"
+          ]
+        }
+      ]
+    }
+  ],
+  "imageSpecs": [
+    {
+      "alphaAllowed": false,
+      "aspectRatio": "9:16",
+      "compatiblePlacementTypes": [
+        "EVENT_DETAILS_PAGE_ASSET"
+      ],
+      "dimensions": {
+        "maxHeight": 3840,
+        "maxWidth": 2160,
+        "minHeight": 1920,
+        "minWidth": 1080
+      },
+      "fileExtensions": [
+        ".jpg",
+        ".jpeg",
+        ".png"
+      ],
+      "maxFileSize": 524288000,
+      "mimeTypes": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "shortName": "i9x16w1080~2160a0",
+      "specId": "d32a2525-8f19-5044-9a0c-f388fcc124f0",
+      "universalAsset": false
+    },
+    {
+      "alphaAllowed": false,
+      "aspectRatio": "3:2",
+      "compatiblePlacementTypes": [
+        "APP_STORE_SEARCH_RESULTS_ASSET"
+      ],
+      "dimensions": {
+        "maxHeight": 2560,
+        "maxWidth": 3840,
+        "minHeight": 1280,
+        "minWidth": 1920
+      },
+      "fileExtensions": [
+        ".jpg",
+        ".jpeg",
+        ".png"
+      ],
+      "maxFileSize": 524288000,
+      "mimeTypes": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "shortName": "i3x2w1920~3840a0",
+      "specId": "d2ffa3b7-6c55-5cdf-8512-229d92791333",
+      "universalAsset": false
+    },
+    {
+      "alphaAllowed": false,
+      "aspectRatio": "16:9",
+      "compatiblePlacementTypes": [
+        "APP_STORE_SEARCH_RESULTS_ASSET",
+        "PRODUCT_PAGE_HEADER_ASSET"
+      ],
+      "dimensions": {
+        "maxHeight": 2950,
+        "maxWidth": 5244,
+        "minHeight": 2950,
+        "minWidth": 5244
+      },
+      "fileExtensions": [
+        ".png"
+      ],
+      "maxFileSize": 524288000,
+      "mimeTypes": [
+        "image/png"
+      ],
+      "shortName": "i5244x2950a0",
+      "specId": "c8f4e2b1-7a3d-5c9e-8b6f-2d1a0e9c8b7a",
+      "universalAsset": true
+    },
+    {
+      "alphaAllowed": false,
+      "aspectRatio": "21:9",
+      "compatiblePlacementTypes": [
+        "PRODUCT_PAGE_HEADER_ASSET"
+      ],
+      "dimensions": {
+        "maxHeight": 1646,
+        "maxWidth": 3840,
+        "minHeight": 1646,
+        "minWidth": 3840
+      },
+      "fileExtensions": [
+        ".png"
+      ],
+      "maxFileSize": 524288000,
+      "mimeTypes": [
+        "image/png"
+      ],
+      "shortName": "i3840x1646a0",
+      "specId": "1eb43b80-e0b7-4d96-bd32-47a42a8c5fed",
+      "universalAsset": false
+    },
+    {
+      "alphaAllowed": false,
+      "aspectRatio": "6:13",
+      "compatiblePlacementTypes": [
+        "APP_SCREENSHOT",
+        "IMESSAGE_APP_SCREENSHOT"
+      ],
+      "dimensions": {
+        "maxHeight": 2868,
+        "maxWidth": 1320,
+        "minHeight": 2868,
+        "minWidth": 1320
+      },
+      "fileExtensions": [
+        ".jpg",
+        ".jpeg",
+        ".png"
+      ],
+      "maxFileSize": 524288000,
+      "mimeTypes": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "shortName": "i1320x2868a0",
+      "specId": "bd402f1a-26ee-5b83-9dd7-972c60c43d47",
+      "universalAsset": false
+    },
+    {
+      "alphaAllowed": false,
+      "aspectRatio": "3:4",
+      "compatiblePlacementTypes": [
+        "APP_SCREENSHOT",
+        "IMESSAGE_APP_SCREENSHOT"
+      ],
+      "dimensions": {
+        "maxHeight": 2752,
+        "maxWidth": 2064,
+        "minHeight": 2752,
+        "minWidth": 2064
+      },
+      "fileExtensions": [
+        ".jpg",
+        ".jpeg",
+        ".png"
+      ],
+      "maxFileSize": 524288000,
+      "mimeTypes": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "shortName": "i2064x2752a0",
+      "specId": "1751a63a-af79-5c7f-a2f2-41140bf28f9e",
+      "universalAsset": false
+    }
+  ]
+}

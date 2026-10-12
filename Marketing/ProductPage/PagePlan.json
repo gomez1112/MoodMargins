@@ -1,0 +1,87 @@
+{
+  "appId": "6819079849",
+  "bundleId": "com.transfinite.MoodMargins",
+  "referenceName": "Daily check-ins",
+  "status": "PREPARED_LOCALLY",
+  "version": "1.0",
+  "assetLibraryId": "6819079849",
+  "purpose": "Help people looking for a simple daily mood check-in discover journaling, mood patterns, and automatically saved pages.",
+  "scope": {
+    "createCustomProductPage": true,
+    "locales": [
+      "en-US",
+      "es-ES",
+      "ar-SA"
+    ],
+    "defaultIOSVersionCreativeAssets": true,
+    "customProductPageCreativeAssets": true,
+    "customProductPageScreenshots": true,
+    "submitForReview": false,
+    "searchKeywordRouting": "Defer until the app and page are approved; no keyword assignments in this batch."
+  },
+  "localizations": [
+    {
+      "locale": "en-US",
+      "promotionalText": "Start with one mood and a few words. Your pages save automatically. Explore mood trends, your most common mood, and your longest journaling streak."
+    },
+    {
+      "locale": "es-ES",
+      "promotionalText": "Empieza con un ánimo y unas palabras. Tus páginas se guardan automáticamente. Descubre tendencias, tu ánimo más frecuente y tu racha más larga."
+    },
+    {
+      "locale": "ar-SA",
+      "promotionalText": "ابدأ بشعور واحد وبضع كلمات. تُحفظ صفحاتك تلقائيًا. اكتشف اتجاهات مزاجك وشعورك الأكثر شيوعًا وأطول سلسلة تدوين لديك."
+    }
+  ],
+  "defaultVersionId": "f0de5b17-9993-497e-bcd1-11c8058457b2",
+  "defaultLocalizations": [
+    {
+      "locale": "ar-SA",
+      "id": "230cf5fb-ba10-458e-9473-0332156205de"
+    },
+    {
+      "locale": "es-ES",
+      "id": "271f284f-c4a7-492d-8dd7-51ac4b8209cf"
+    },
+    {
+      "locale": "en-US",
+      "id": "08cf0b58-c1e4-4557-bb77-158a28b91533"
+    }
+  ],
+  "screenshots": {
+    "iphone": {
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "orderedFiles": [
+        "01-today.png",
+        "02-insights.png",
+        "03-pages.png"
+      ]
+    },
+    "ipad": {
+      "placementGroup": "IPAD_13_PROFILE",
+      "orderedFiles": [
+        "01-today.png",
+        "02-insights.png",
+        "03-pages.png"
+      ]
+    }
+  },
+  "creativeAssets": {
+    "header": {
+      "file": "header.png",
+      "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+      "placementGroup": "DEFAULT_PROFILE"
+    },
+    "search": {
+      "file": "search.png",
+      "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+      "placementGroup": "DEFAULT_PROFILE"
+    }
+  },
+  "approvalRequiredBefore": "Creating the App Store Connect custom page, uploading these images, and adding their placements.",
+  "sources": [
+    "https://developer.apple.com/app-store/asset-best-practices/",
+    "https://developer.apple.com/help/app-store-connect/reference/app-information/creative-assets-specifications",
+    "https://developer.apple.com/documentation/appstoreconnectapi/app-asset-library"
+  ]
+}
