@@ -27,7 +27,6 @@ struct RecentPages: View {
                                 .frame(width: min(cardWidth, 340))
                                 .scrollTransition(axis: .horizontal) { [reduceMotion] content, phase in
                                     content
-                                        .opacity(reduceMotion ? 1 : 1 - min(abs(phase.value), 1) * 0.15)
                                         .offset(y: reduceMotion ? 0 : min(abs(phase.value), 1) * 8)
                                 }
                         }

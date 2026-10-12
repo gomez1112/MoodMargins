@@ -17,6 +17,7 @@ struct PastPagesGrid: View {
                 Text("Past pages")
                     .font(.system(.headline, design: .rounded))
                     .foregroundStyle(palette.ink)
+                    .accessibilityAddTraits(.isHeader)
                 Spacer()
                 Text(entries.count, format: .number)
                     .font(.caption)

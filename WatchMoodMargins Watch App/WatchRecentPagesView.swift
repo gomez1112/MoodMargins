@@ -20,7 +20,7 @@ struct WatchRecentPagesView: View {
                             Text(entry.date, format: .dateTime.month(.abbreviated).day())
                                 .font(.caption.bold())
                             Text(entry.note.isEmpty ? entry.mood.title : entry.note)
-                                .font(.caption2)
+                                .font(.caption)
                                 .foregroundStyle(.secondary)
                                 .lineLimit(2)
                         }

@@ -15,7 +15,7 @@ struct WeeklyRecapCard: View {
             Text("This period had a mix of steady and tired days. You wrote most about rest, work, and calm moments.")
                 .font(.system(.body, design: .serif))
                 .lineSpacing(5)
-                .foregroundStyle(.primary.opacity(0.82))
+                .foregroundStyle(.primary)
         }
     }
 }

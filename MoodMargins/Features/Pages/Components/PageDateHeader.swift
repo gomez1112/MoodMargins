@@ -16,9 +16,10 @@ struct PageDateHeader: View {
             Text(date, format: .dateTime.weekday(.wide))
                 .font(.system(.title, design: .rounded).weight(.heavy))
                 .foregroundStyle(ink)
+                .accessibilityAddTraits(.isHeader)
             Text(date, format: .dateTime.month(.wide).day().year())
                 .font(.system(.subheadline, design: .rounded))
-                .foregroundStyle(ink.opacity(0.8))
+                .foregroundStyle(ink)
         }
     }
 }

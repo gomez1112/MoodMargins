@@ -15,8 +15,9 @@ struct PageSectionLabel: View {
     var body: some View {
         Text(title)
             .font(.system(.caption, design: .rounded).weight(.bold))
-            .foregroundStyle(ink.opacity(0.72))
+            .foregroundStyle(ink)
             .textCase(.uppercase)
             .padding(.top, topPadding)
+            .accessibilityAddTraits(.isHeader)
     }
 }

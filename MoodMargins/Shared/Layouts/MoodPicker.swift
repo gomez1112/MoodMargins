@@ -11,6 +11,7 @@ struct MoodPicker: View {
             Text(title)
                 .font(.system(.headline, design: .rounded))
                 .foregroundStyle(palette.ink)
+                .accessibilityAddTraits(.isHeader)
             if dynamicTypeSize.isAccessibilitySize {
                 Picker(title, selection: $selection) {
                     ForEach(Mood.allCases) { mood in

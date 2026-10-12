@@ -27,7 +27,7 @@ struct GeneratedInsightRecapCard: View {
                     Text(pattern)
                         .font(.system(.body, design: .serif))
                         .lineSpacing(5)
-                        .foregroundStyle(palette.ink.opacity(0.84))
+                        .foregroundStyle(palette.ink)
                 } else if isGenerating {
                     loadingLine(String(localized: "Looking for a gentle pattern"))
                 } else if let errorMessage {
@@ -45,7 +45,7 @@ struct GeneratedInsightRecapCard: View {
                 if let gentleReflection = text(recap?.gentleReflection) {
                     Text(gentleReflection)
                         .font(.system(.callout, design: .serif))
-                        .foregroundStyle(palette.ink.opacity(0.74))
+                        .foregroundStyle(palette.ink)
                 }
 
                 if let nextPrompt = text(recap?.nextPrompt) {

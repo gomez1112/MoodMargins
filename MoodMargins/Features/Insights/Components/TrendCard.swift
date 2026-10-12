@@ -26,7 +26,7 @@ struct TrendCard: View {
                                 y: .value("Mood score", item.value),
                                 series: .value("Consecutive days", item.segmentStart)
                             )
-                            .foregroundStyle(palette.ink.opacity(0.55))
+                            .foregroundStyle(palette.ink)
                             .lineStyle(StrokeStyle(lineWidth: 2))
                             .interpolationMethod(.linear)
                             .accessibilityHidden(true)

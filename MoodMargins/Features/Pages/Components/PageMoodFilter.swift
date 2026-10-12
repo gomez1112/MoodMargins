@@ -16,6 +16,7 @@ struct PageMoodFilter: View {
             Text("Filter pages")
                 .font(.system(.headline, design: .rounded))
                 .foregroundStyle(palette.ink)
+                .accessibilityAddTraits(.isHeader)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {

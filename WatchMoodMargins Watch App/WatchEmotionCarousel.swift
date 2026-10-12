@@ -70,7 +70,6 @@ struct WatchEmotionCarousel: View {
                         .padding(.vertical, 4)
                         .contentShape(.rect)
                         .scaleEffect(focusedMood == mood ? 1 : 0.85)
-                        .opacity(focusedMood == mood ? 1 : 0.65)
                     }
                     .buttonStyle(.plain)
                     .id(mood)

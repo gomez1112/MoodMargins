@@ -15,7 +15,7 @@ struct LinedNoteEditor: View {
     let prompt: String
     let lines: Int
     var lineColor: Color? = nil
-    var textColor = Color.primary.opacity(0.82)
+    var textColor = Color.primary
     var minimumHeight: CGFloat? = nil
 
     @ScaledMetric(relativeTo: .body) private var rowHeight = 31.0

@@ -36,6 +36,7 @@ struct TodayCard: View {
             Text("Today's page")
                 .font(.system(.headline, design: .rounded))
                 .foregroundStyle(palette.ink)
+                .accessibilityAddTraits(.isHeader)
             Text("\(viewModel.statusText) · \(viewModel.selectedTagList.count) tags")
                 .font(.caption)
                 .foregroundStyle(palette.softInk)

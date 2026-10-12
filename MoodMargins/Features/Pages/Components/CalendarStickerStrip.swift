@@ -19,6 +19,7 @@ struct CalendarStickerStrip: View {
                 Text("Calendar stickers")
                     .font(.system(.headline, design: .rounded))
                     .foregroundStyle(palette.ink)
+                    .accessibilityAddTraits(.isHeader)
                 Spacer()
                 Text(viewModel.selectedDate, format: .dateTime.month(.wide).year())
                     .font(.system(.caption, design: .rounded).weight(.semibold))

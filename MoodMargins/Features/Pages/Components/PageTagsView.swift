@@ -14,7 +14,7 @@ struct PageTagsView: View {
                         Text("#\(tag)")
                             .foregroundStyle(palette.ink)
                             .font(.caption)
-                            .lineLimit(1)
+                            .fixedSize(horizontal: false, vertical: true)
                             .padding(.horizontal, 10)
                             .padding(.vertical, 6)
                             .background(palette.washiColor(tag).opacity(0.18), in: Capsule())

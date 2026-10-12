@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PromptCard: View {
     @Environment(\.diaryPalette) private var palette
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let generatedTags: [String]
     let isGeneratingTags: Bool
     var errorMessage: String? = nil
@@ -55,7 +56,7 @@ struct PromptCard: View {
                             }
                         }
                     }
-                    .transition(.opacity.combined(with: .move(edge: .top)))
+                    .transition(reduceMotion ? .opacity : .opacity.combined(with: .move(edge: .top)))
                 }
             }
         }

@@ -14,7 +14,7 @@ struct GentlePatternCard: View {
         InsightPage(title: String(localized: "Soft pattern"), symbol: "leaf.fill", rotation: 0.8) {
             Text(pattern)
                 .font(.system(.body, design: .serif))
-                .foregroundStyle(palette.ink.opacity(0.82))
+                .foregroundStyle(palette.ink)
         }
     }
 }
