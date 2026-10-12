@@ -7,34 +7,38 @@ struct WatchRecentPagesView: View {
         List {
             if entries.isEmpty {
                 Text("Your check-ins will appear here.")
+                    .font(.caption)
                     .foregroundStyle(.secondary)
             }
             ForEach(entries.prefix(7)) { entry in
                 NavigationLink(value: entry.id) {
                     HStack(spacing: 10) {
-                        WatchMoodAnimation(mood: entry.mood, size: 40, animates: false)
-                        VStack(alignment: .leading, spacing: 4) {
+                        WatchMoodAnimation(mood: entry.mood, size: 30, animates: false)
+                            .padding(5)
+                            .background(WatchDiaryStyle.moodPaper(entry.mood), in: .circle)
+                        VStack(alignment: .leading, spacing: 3) {
                             Text(entry.date, format: .dateTime.month(.abbreviated).day())
-                                .font(.headline)
+                                .font(.caption.bold())
                             Text(entry.note.isEmpty ? entry.mood.title : entry.note)
-                                .font(.caption)
-                                .foregroundStyle(WatchDiaryStyle.ink.opacity(0.8))
+                                .font(.caption2)
+                                .foregroundStyle(.secondary)
                                 .lineLimit(2)
                         }
                     }
-                    .foregroundStyle(WatchDiaryStyle.ink)
-                    .padding(.vertical, 4)
+                    .padding(.vertical, 3)
                 }
                 .privacySensitive()
                 .listRowBackground(
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(WatchDiaryStyle.moodPaper(entry.mood))
+                    RoundedRectangle(cornerRadius: 18)
+                        .fill(WatchDiaryStyle.ink.opacity(0.35))
                 )
                 .accessibilityIdentifier("watch-page-\(entry.id)")
             }
         }
         .navigationTitle("Recent pages")
+        .toolbarTitleDisplayMode(.inline)
         .scrollContentBackground(.hidden)
+        .background(WatchDiaryStyle.canvas)
         .navigationDestination(for: UUID.self) { id in
             if let entry = entries.first(where: { $0.id == id }) {
                 WatchPageDetailView(entry: entry)

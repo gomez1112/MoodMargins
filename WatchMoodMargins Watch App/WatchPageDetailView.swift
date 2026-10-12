@@ -5,22 +5,27 @@ struct WatchPageDetailView: View {
 
     var body: some View {
         ScrollView {
-            VStack(spacing: 10) {
-                WatchMoodCard(mood: entry.mood, title: entry.mood.title)
+            VStack(alignment: .leading, spacing: 16) {
+                HStack(spacing: 12) {
+                    WatchMoodAnimation(mood: entry.mood, size: 42)
+                        .padding(7)
+                        .background(WatchDiaryStyle.moodPaper(entry.mood), in: .circle)
+                    Text(entry.mood.title)
+                        .font(.headline)
+                }
                 if !entry.note.isEmpty {
                     Text(entry.note)
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(.body)
                         .fixedSize(horizontal: false, vertical: true)
-                        .foregroundStyle(WatchDiaryStyle.ink)
-                        .padding(14)
-                        .background(WatchDiaryStyle.paper, in: .rect(cornerRadius: 20))
                 }
             }
-            .padding(.horizontal, 8)
-            .padding(.vertical, 6)
-            .frame(maxWidth: .infinity)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 10)
+            .frame(maxWidth: .infinity, alignment: .leading)
             .privacySensitive()
         }
         .navigationTitle(entry.date.formatted(.dateTime.month(.abbreviated).day()))
+        .toolbarTitleDisplayMode(.inline)
+        .background(WatchDiaryStyle.canvas)
     }
 }

@@ -44,7 +44,7 @@ for language in languages:
             raise RuntimeError(stderr.decode())
         print(f'{language}/{raw.name}', flush=True)
     else:
-        routes = [('check-in', []), ('moods', ['--marketing-moods']), ('pages', ['--marketing-pages']), ('detail', ['--marketing-detail']), ('mood-sad', ['--marketing-moods', '--marketing-focus', '2']), ('mood-laughing', ['--marketing-moods', '--marketing-focus', '5'])] if mode == 'watch' else [('today', ['--marketing-tab', 'today']), ('pages', ['--marketing-tab', 'page']), ('insights', ['--marketing-tab', 'insights'])]
+        routes = [('check-in', []), ('moods', ['--marketing-focus', '1']), ('pages', ['--marketing-pages']), ('detail', ['--marketing-detail']), ('mood-sad', ['--marketing-focus', '2']), ('mood-laughing', ['--marketing-focus', '5'])] if mode == 'watch' else [('today', ['--marketing-tab', 'today']), ('pages', ['--marketing-tab', 'page']), ('insights', ['--marketing-tab', 'insights'])]
         for name, flags in routes:
             sim('launch', '--terminate-running-process', simulator, bundle, *base, *flags)
             time.sleep(12 if mode == 'vision' else 3)

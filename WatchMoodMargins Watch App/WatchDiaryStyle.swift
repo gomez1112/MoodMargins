@@ -10,6 +10,14 @@ enum WatchDiaryStyle {
     static var blush: Color { Color("DiaryBlush") }
     static var sky: Color { Color("DiarySky") }
 
+    static var canvas: LinearGradient {
+        LinearGradient(
+            colors: [.black, ink.opacity(0.85), Color.indigo.opacity(0.65)],
+            startPoint: .top,
+            endPoint: .bottomTrailing
+        )
+    }
+
     static func moodPaper(_ mood: Mood) -> LinearGradient {
         let color: Color = switch mood {
         case .angry, .wink: blush

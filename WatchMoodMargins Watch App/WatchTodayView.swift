@@ -2,7 +2,6 @@ import SwiftUI
 
 struct WatchTodayView: View {
     @Environment(\.isLuminanceReduced) private var isLuminanceReduced
-    @State private var isChoosingMood = false
     var journal: WatchJournalStore
     var isActive: Bool
 
@@ -11,25 +10,10 @@ struct WatchTodayView: View {
 
         ScrollView {
             VStack(spacing: 10) {
-                Button {
-                    isChoosingMood = true
-                } label: {
-                    WatchMoodCard(
-                        mood: journal.selectedMood,
-                        title: journal.hasSelectedMood ? journal.selectedMood.title : String(localized: "Choose mood"),
-                        animates: isActive && !isChoosingMood,
-                        showsDisclosure: true,
-                        isCompact: true
-                    )
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel(Text("Mood"))
-                .accessibilityValue(journal.hasSelectedMood ? journal.selectedMood.title : String(localized: "Choose mood"))
-                .accessibilityHint(Text("Choose mood"))
-                .accessibilityIdentifier("watch-choose-mood")
+                WatchEmotionCarousel(journal: journal, isActive: isActive)
+                    .accessibilityIdentifier("watch-emotions")
 
                 TextField("A short note", text: $journal.note)
-                    .tint(WatchDiaryStyle.action)
                     .accessibilityIdentifier("watch-note")
                     .privacySensitive()
 
@@ -40,24 +24,12 @@ struct WatchTodayView: View {
                         .fixedSize(horizontal: false, vertical: true)
                 }
             }
-            .padding(.horizontal, 8)
-            .padding(.bottom)
+            .padding(.bottom, 12)
             .frame(maxWidth: .infinity)
         }
         .navigationTitle("Today")
-        .sheet(isPresented: $isChoosingMood) {
-            NavigationStack {
-                WatchMoodSelectionView(journal: journal)
-            }
-        }
+        .toolbarTitleDisplayMode(.inline)
+        .background(WatchDiaryStyle.canvas)
         .disabled(isLuminanceReduced)
-#if DEBUG
-        .task {
-            if ProcessInfo.processInfo.arguments.contains("--marketing-capture"),
-               ProcessInfo.processInfo.arguments.contains("--marketing-moods") {
-                isChoosingMood = true
-            }
-        }
-#endif
     }
 }
