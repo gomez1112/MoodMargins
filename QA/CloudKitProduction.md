@@ -1,6 +1,6 @@
 # CloudKit production preparation
 
-Verified October 10, 2026 for `iCloud.com.transfinite.MoodMargins`, owned by TRANSFINITE LLC (`88QL9VPLMY`).
+Verified October 11, 2026 for `iCloud.com.transfinite.MoodMargins`, owned by TRANSFINITE LLC (`88QL9VPLMY`).
 
 ## Current status
 
@@ -8,7 +8,7 @@ The main iPhone/iPad, Mac, and Vision app uses SwiftData automatic CloudKit mirr
 
 TestFlight and App Store distribution use the production CloudKit environment. Development builds retain their development environment. The app's source entitlements and persistence configuration did not need a production-only override.
 
-**Production deployment is still pending.** Exporting the production schema found only Apple's `Users` record type. Exporting development found `CD_MoodEntry`, with no activity record type, relationship field, or external-asset fields. Production cannot create these fields automatically at runtime.
+**Production is deployed.** A read-only `cktool export-schema --environment production` on October 11 returned `CD_MoodEntry`, `CD_Activity`, the optional activity foreign key, and external-asset fields. The exported production schema exactly matches `CloudKitSchema.ckdb` (`cmp` passed). No journal records were queried, changed, or copied during this verification.
 
 ## Prepared changes
 
@@ -30,8 +30,6 @@ The actual SwiftData model types were compiled with Swift 6.4 and inspected thro
 - An isolated initialization dry run using a temporary store could not reach the Mac CloudKit daemon (`Service Unavailable`). End-to-end device sync remains unverified. The dry run did not upload records or open the app's journal store.
 - Application code, model definitions, and deployment targets are unchanged; no application rebuild was required for these server-schema changes.
 
-## Final deployment
+## Device verification
 
-Open [this container's development schema](https://icloud.developer.apple.com/dashboard/database/teams/88QL9VPLMY/containers/iCloud.com.transfinite.MoodMargins/environments/DEVELOPMENT/types), select **Deploy Schema Changes**, review the new types and fields, and click **Deploy**. Apple's [deployment instructions](https://developer.apple.com/documentation/cloudkit/deploying-an-icloud-container-s-schema) require this Console step. The available management tools cannot promote development changes into production.
-
-After deployment, export production and compare it with `CloudKitSchema.ckdb`. Then use TestFlight on two devices signed into the same iCloud account to verify creating, editing, and deleting a page, plus relaunch and offline recovery. Deployment copies the schema, not development journal records. The existing TestFlight builds can use the deployed schema without a new upload.
+The required Console promotion has been completed. Use TestFlight on two devices signed into the same iCloud account to verify creating, editing, and deleting a page, plus relaunch and offline recovery. Deployment copies the schema, not development journal records. Existing TestFlight builds can use the deployed schema without a new upload. Actual two-device sync remains unverified.

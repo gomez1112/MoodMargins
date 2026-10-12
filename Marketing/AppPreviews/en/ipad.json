@@ -1,0 +1,19 @@
+{
+  "audio" : {
+    "channels" : 2,
+    "codec" : "AAC",
+    "content" : "silence",
+    "sampleRate" : 48000,
+    "targetBitrate" : 256000
+  },
+  "bytes" : 6904534,
+  "codec" : "H.264",
+  "durationSeconds" : 21.466666666666665,
+  "file" : "ipad.mp4",
+  "frames" : 644,
+  "framesPerSecond" : 30,
+  "height" : 1600,
+  "profile" : "High 4.0",
+  "targetBitrate" : 11000000,
+  "width" : 1200
+}

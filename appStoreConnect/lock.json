@@ -6,403 +6,562 @@
         "screenshots": [
           {
             "fileName": "01-every-feeling.png",
-            "fileSize": 1919916,
-            "id": "13c00019-672e-86a9-803d-73bd27164232",
-            "sourceFileChecksum": "5b2d853c475f7a5e7fe7a764eb17f5a7"
+            "fileSize": 1778210,
+            "id": "42400019-672e-86a9-8009-4b20c88bb664",
+            "sourceFileChecksum": "11a0dafcba3274c2ee78cd3e6f6c860d"
           },
           {
             "fileName": "02-autosave.png",
-            "fileSize": 2311010,
-            "id": "b1c00019-672e-86a9-8011-882537184552",
-            "sourceFileChecksum": "befc53608891b688d2d85bb5f37025c9"
+            "fileSize": 1947821,
+            "id": "77c00019-672e-86a9-802a-18b232f9fa28",
+            "sourceFileChecksum": "9940b1d58322e4be41cdf2a00dba8c1a"
           },
           {
             "fileName": "03-mood-trends.png",
-            "fileSize": 1402267,
-            "id": "a3800019-672e-86a9-8031-e8b2c63cc692",
-            "sourceFileChecksum": "7017b1493630173f239d68cf9d5d273e"
+            "fileSize": 1339023,
+            "id": "1cc00019-672e-86a9-8022-f934165eda3f",
+            "sourceFileChecksum": "571ad5aec3a00687da6c6dece0925112"
           },
           {
             "fileName": "04-mood-stickers.png",
-            "fileSize": 1413194,
-            "id": "77800019-672e-86a9-803f-3909564bb170",
-            "sourceFileChecksum": "daaa56af1a5ea802eacc12cf8116627c"
+            "fileSize": 1305768,
+            "id": "db400019-672e-86a9-8013-aeb753baa562",
+            "sourceFileChecksum": "c8f8ac9fb2d11398ae875073671a9bc1"
           },
           {
             "fileName": "05-premium-themes.png",
-            "fileSize": 818053,
-            "id": "b6400019-672e-86a9-8004-3092ae3bd1cc",
-            "sourceFileChecksum": "9b75ff7f5bd524523ec67a008303ea71"
+            "fileSize": 849089,
+            "id": "04c00019-672e-86a9-803a-0ab61b0534fc",
+            "sourceFileChecksum": "9473a960ee926e51a7d94334e7ad6562"
           },
           {
             "fileName": "06-dark-appearance.png",
-            "fileSize": 1337842,
-            "id": "8e000019-672e-86a9-8021-cdb051b1010c",
-            "sourceFileChecksum": "541c35f3e3699679157bf04bdd85bef8"
+            "fileSize": 1223497,
+            "id": "2ac00019-672e-86a9-8034-403d6ebdcd14",
+            "sourceFileChecksum": "e67bab665ae7dd7aaa5aedfc2c5bea69"
           }
         ],
-        "setID": "07c314a7-87c9-4eac-a792-11e364b1c009"
+        "setID": "c09a5bd9-a0cc-49b9-bfb9-01d712bfc886"
       },
       "IOS:1.0:ar-SA:APP_IPHONE_67": {
         "screenshots": [
           {
             "fileName": "01-every-feeling.png",
-            "fileSize": 1564616,
-            "id": "96c00019-672e-86a9-8015-9ffaa5150df7",
-            "sourceFileChecksum": "49a9de33c06e1dde46ff2a62705fe5dd"
+            "fileSize": 1441833,
+            "id": "36c00019-672e-86a9-8014-248822a33c8b",
+            "sourceFileChecksum": "1bf63049d4f4961f0fce66e0e1a62fb7"
           },
           {
             "fileName": "02-autosave.png",
-            "fileSize": 1910114,
-            "id": "87c00019-672e-86a9-8017-4c6f8bbf8646",
-            "sourceFileChecksum": "61efb4e45b02853ffd03c3e42bf764c9"
+            "fileSize": 1694775,
+            "id": "3e400019-672e-86a9-802c-3943fc0ce5be",
+            "sourceFileChecksum": "867e4556fc2401229a38707bc4a4b297"
           },
           {
             "fileName": "03-mood-trends.png",
-            "fileSize": 1245378,
-            "id": "eac00019-672e-86a9-803b-141cdd6d647e",
-            "sourceFileChecksum": "fb572b124cc612f33f140cdc5a684369"
+            "fileSize": 1184356,
+            "id": "b8400019-672e-86a9-800c-b0d70f4b32c0",
+            "sourceFileChecksum": "92736546ec9c32489ca753919695b532"
           },
           {
             "fileName": "04-mood-stickers.png",
-            "fileSize": 1295860,
-            "id": "7cc00019-672e-86a9-8001-a205a3f5d54e",
-            "sourceFileChecksum": "c5a806a10748f84f141dd445d5043cbe"
+            "fileSize": 1198776,
+            "id": "21000019-672e-86a9-8012-80b502fd35db",
+            "sourceFileChecksum": "d1d91398b10ef86b7d45a30ca304480f"
           },
           {
             "fileName": "05-premium-themes.png",
-            "fileSize": 730088,
-            "id": "fdc00019-672e-86a9-8009-95ad4aeb05bc",
-            "sourceFileChecksum": "5f1793b942d6d90ccea621ef3f149b00"
+            "fileSize": 730410,
+            "id": "cb800019-672e-86a9-800f-8d38d6e0fff8",
+            "sourceFileChecksum": "c3186d11d9d16e0f7d1e1ce8dad62e49"
           },
           {
             "fileName": "06-dark-appearance.png",
-            "fileSize": 1194175,
-            "id": "27000019-672e-86a9-803d-8b05f1f93107",
-            "sourceFileChecksum": "5b3fc7087198a6e974db65d40c867a5f"
+            "fileSize": 1104493,
+            "id": "96800019-672e-86a9-8025-74e0fbbcf232",
+            "sourceFileChecksum": "8cb8db3e7132860f0af3f99ad7ca1e1b"
           }
         ],
-        "setID": "2673d167-7cac-4eb9-9cb1-641fc5804892"
+        "setID": "2c8264c6-39ba-4321-a4a6-dbda8883534f"
       },
       "IOS:1.0:ar-SA:APP_WATCH_SERIES_10": {
         "screenshots": [
           {
             "fileName": "01-check-in.png",
-            "fileSize": 26159,
-            "id": "86400019-672e-86a9-803b-0a55bfa3c588",
-            "sourceFileChecksum": "2e8c708fac0efbb96edd52c5cbf24446"
+            "fileSize": 181032,
+            "id": "7ac00019-672e-86a9-802c-7b0508637475",
+            "sourceFileChecksum": "4893507eefdced3afce22b11be357c29"
+          },
+          {
+            "fileName": "02-moods.png",
+            "fileSize": 176057,
+            "id": "97800019-672e-86a9-803d-f79762f0c797",
+            "sourceFileChecksum": "900295c14166dff2c2c8139e60a92731"
+          },
+          {
+            "fileName": "03-pages.png",
+            "fileSize": 185414,
+            "id": "d2c00019-672e-86a9-8023-93c9273bc263",
+            "sourceFileChecksum": "7d85e8cdb938838eb754e3ec50417ec3"
+          },
+          {
+            "fileName": "04-detail.png",
+            "fileSize": 170712,
+            "id": "eb800019-672e-86a9-8014-28184afd2cab",
+            "sourceFileChecksum": "091f96243c34ef8d9e64209da4dd0cdd"
+          },
+          {
+            "fileName": "05-mood-sad.png",
+            "fileSize": 181165,
+            "id": "ba800019-672e-86a9-8029-32b45a9c1669",
+            "sourceFileChecksum": "cddfbdc1916b57a40716a24699b0447d"
+          },
+          {
+            "fileName": "06-mood-laughing.png",
+            "fileSize": 179551,
+            "id": "fa000019-672e-86a9-8004-21166c841b73",
+            "sourceFileChecksum": "ca4d4a5a4288994c0c8a3b0c0c1d3d38"
           }
         ],
-        "setID": "9347561f-dcf8-427a-b624-9dd2cb61c6eb"
+        "setID": "a6bf7a8d-35d5-42eb-a536-d630a009fb86"
       },
       "IOS:1.0:en-US:APP_IPAD_PRO_3GEN_129": {
         "screenshots": [
           {
             "fileName": "01-every-feeling.png",
-            "fileSize": 1959529,
-            "id": "ccc00019-672e-86a9-803a-e2aacca8e24f",
-            "sourceFileChecksum": "ec5bee7494d7b3b3dedf184474be35af"
+            "fileSize": 1827225,
+            "id": "b9000019-672e-86a9-8007-ad0eb1776466",
+            "sourceFileChecksum": "1558fc9746bb6182b3cba1d1e40a6f51"
           },
           {
             "fileName": "02-autosave.png",
-            "fileSize": 2319156,
-            "id": "10400019-672e-86a9-803f-92602c103d78",
-            "sourceFileChecksum": "0265660c8c0c03f97ae18bc65189a53d"
+            "fileSize": 1972499,
+            "id": "7d000019-672e-86a9-8006-497fb5387e39",
+            "sourceFileChecksum": "99e7ce978de18bfa13833a091c4da789"
           },
           {
             "fileName": "03-mood-trends.png",
-            "fileSize": 1432401,
-            "id": "dbc00019-672e-86a9-8012-9f91e0a9ee77",
-            "sourceFileChecksum": "b2df26bc173ff74d0fc80af8d68df4f4"
+            "fileSize": 1380946,
+            "id": "f1800019-672e-86a9-8013-e4a1ef76ca6b",
+            "sourceFileChecksum": "5e38b25c000495f508a49c1e3fa52efc"
           },
           {
             "fileName": "04-mood-stickers.png",
-            "fileSize": 1470545,
-            "id": "ef000019-672e-86a9-800d-cf63655f1a7a",
-            "sourceFileChecksum": "5ba283c7386a443c3491e5f1d0cb1589"
+            "fileSize": 1366993,
+            "id": "6f000019-672e-86a9-803a-ae82a39b0a8c",
+            "sourceFileChecksum": "706391441a663708b7d2ded2197c8822"
           },
           {
             "fileName": "05-premium-themes.png",
-            "fileSize": 822116,
-            "id": "8fc00019-672e-86a9-803c-47fdb2c2e443",
-            "sourceFileChecksum": "4ef9268101bb85789ff14b3ac5eacd5b"
+            "fileSize": 865192,
+            "id": "87000019-672e-86a9-8031-ee6b8a3c237a",
+            "sourceFileChecksum": "da2ea8bccfeaf0d7943b69dadbbd3ec0"
           },
           {
             "fileName": "06-dark-appearance.png",
-            "fileSize": 1371805,
-            "id": "d4000019-672e-86a9-803c-ef9fc169eeeb",
-            "sourceFileChecksum": "f8fd2247c62e5401dd5d1c524bc6bdcc"
+            "fileSize": 1257487,
+            "id": "ad000019-672e-86a9-801d-e75a0f0eb3a5",
+            "sourceFileChecksum": "42544a4f13002a7386d4bf7734f7ba26"
           }
         ],
-        "setID": "3a499f1c-5479-44db-8679-b76e51b26e82"
+        "setID": "55b1fc7d-cad1-458f-a856-a9f1c8cf6c8c"
       },
       "IOS:1.0:en-US:APP_IPHONE_67": {
         "screenshots": [
           {
             "fileName": "01-every-feeling.png",
-            "fileSize": 1600664,
-            "id": "e6400019-672e-86a9-8005-51380cfc7ef9",
-            "sourceFileChecksum": "8eac1841a1d42f5f518db747b6b9f5bb"
+            "fileSize": 1466163,
+            "id": "c8400019-672e-86a9-803f-943561a77186",
+            "sourceFileChecksum": "bfbc72d8d999eb44bd9c3031b898d20f"
           },
           {
             "fileName": "02-autosave.png",
-            "fileSize": 1964426,
-            "id": "5b000019-672e-86a9-801c-ab1e7360b349",
-            "sourceFileChecksum": "ed2e494ef8877f2528f95e555b23b1e5"
+            "fileSize": 1737946,
+            "id": "02400019-672e-86a9-800d-e554d4abdea7",
+            "sourceFileChecksum": "a62b2aa21bc63cff485b31b0f3bc326c"
           },
           {
             "fileName": "03-mood-trends.png",
-            "fileSize": 1260402,
-            "id": "ed800019-672e-86a9-8018-ac1acc3de56e",
-            "sourceFileChecksum": "5fd97f627fd07a0de344663e86be2118"
+            "fileSize": 1214077,
+            "id": "41800019-672e-86a9-8008-48bf223a1d7c",
+            "sourceFileChecksum": "e02fe1eadf46774ef36b207d42c78ba1"
           },
           {
             "fileName": "04-mood-stickers.png",
-            "fileSize": 1328096,
-            "id": "18c00019-672e-86a9-802a-a150a55828df",
-            "sourceFileChecksum": "a84de5ab035356f4b9bac27149a4f4c2"
+            "fileSize": 1238265,
+            "id": "0b000019-672e-86a9-800e-ff421c40db96",
+            "sourceFileChecksum": "bb660a6c7a35971a34a573fda1112315"
           },
           {
             "fileName": "05-premium-themes.png",
-            "fileSize": 733243,
-            "id": "af400019-672e-86a9-800c-771e847290c9",
-            "sourceFileChecksum": "7b94bed2620ff399fcfd4abaf34c53fc"
+            "fileSize": 734800,
+            "id": "fe400019-672e-86a9-802d-1f3f54440371",
+            "sourceFileChecksum": "ee7b6b76cd0b4861072ae1feb726ed9d"
           },
           {
             "fileName": "06-dark-appearance.png",
-            "fileSize": 1212246,
-            "id": "4bc00019-672e-86a9-8012-4f92c297caa1",
-            "sourceFileChecksum": "e004bcdbdbfb9e6693c4e2ad7326fe50"
+            "fileSize": 1135475,
+            "id": "03c00019-672e-86a9-800f-06eaaeaeaf9e",
+            "sourceFileChecksum": "cd6a3c7abf949cce625bff9a6ff99c12"
           }
         ],
-        "setID": "f33524f9-9bcd-4547-a45c-f3e8fbabdd66"
+        "setID": "c4b640ac-2c07-4ae3-b046-880389e98eae"
       },
       "IOS:1.0:en-US:APP_WATCH_SERIES_10": {
         "screenshots": [
           {
             "fileName": "01-check-in.png",
-            "fileSize": 28389,
-            "id": "a8800019-672e-86a9-802c-3445cdd380e2",
-            "sourceFileChecksum": "51f2c6cd11d4e9d34cba01435479734d"
+            "fileSize": 177378,
+            "id": "31800019-672e-86a9-8010-e9fca9062174",
+            "sourceFileChecksum": "ca30b20d7c9bb0b839287f7bf9136806"
+          },
+          {
+            "fileName": "02-moods.png",
+            "fileSize": 174036,
+            "id": "32800019-672e-86a9-8038-ecce4af75499",
+            "sourceFileChecksum": "82a3c9e45116358732116b8c8b0bf92c"
+          },
+          {
+            "fileName": "03-pages.png",
+            "fileSize": 174412,
+            "id": "0d800019-672e-86a9-8007-d3f0443836ee",
+            "sourceFileChecksum": "e696069281667e0ae6051910e6081d48"
+          },
+          {
+            "fileName": "04-detail.png",
+            "fileSize": 165974,
+            "id": "94000019-672e-86a9-8016-1a7b9b2abd74",
+            "sourceFileChecksum": "b7a952b1616f9b4e75b1287a2c982070"
+          },
+          {
+            "fileName": "05-mood-sad.png",
+            "fileSize": 178070,
+            "id": "69000019-672e-86a9-802b-e5c66c003326",
+            "sourceFileChecksum": "cee251bf753217ed48f1a2094f7a6799"
+          },
+          {
+            "fileName": "06-mood-laughing.png",
+            "fileSize": 176383,
+            "id": "8bc00019-672e-86a9-8026-343a72b37c21",
+            "sourceFileChecksum": "f6053a55fb8ccb87b7794dd23801c5fb"
           }
         ],
-        "setID": "74684410-c889-4072-abe9-0baa080c6e55"
+        "setID": "3abcf19f-efa5-4824-af3d-2ff7bab697ed"
       },
       "IOS:1.0:es-ES:APP_IPAD_PRO_3GEN_129": {
         "screenshots": [
           {
             "fileName": "01-every-feeling.png",
-            "fileSize": 1994625,
-            "id": "5b000019-672e-86a9-8027-d444ddb1ed82",
-            "sourceFileChecksum": "57d91e23d3ed0c988f45b7719cf6eaf4"
+            "fileSize": 1858466,
+            "id": "71400019-672e-86a9-8024-21575cb9b98f",
+            "sourceFileChecksum": "f85bf1e89559c130606b9c4e4f0b9a34"
           },
           {
             "fileName": "02-autosave.png",
-            "fileSize": 2372231,
-            "id": "39c00019-672e-86a9-8013-c65c8ed3bff6",
-            "sourceFileChecksum": "ac05b880476a266ed97fa29226f0c5b1"
+            "fileSize": 1997933,
+            "id": "ad000019-672e-86a9-8033-6e67943d0ffe",
+            "sourceFileChecksum": "7ee6dc0c56a85f6046cb7a026c0158f2"
           },
           {
             "fileName": "03-mood-trends.png",
-            "fileSize": 1459772,
-            "id": "ff000019-672e-86a9-800b-0168b79d0661",
-            "sourceFileChecksum": "d0966808a0cc32551b8289a723dbf7a5"
+            "fileSize": 1399984,
+            "id": "b2800019-672e-86a9-8030-06733d854310",
+            "sourceFileChecksum": "d5d50e89592c85222f98a0e1c623d89f"
           },
           {
             "fileName": "04-mood-stickers.png",
-            "fileSize": 1501683,
-            "id": "ff400019-672e-86a9-801e-1175e3294543",
-            "sourceFileChecksum": "a77c94427024010c13177853e63df9af"
+            "fileSize": 1392118,
+            "id": "3fc00019-672e-86a9-8039-10abecbe1cd0",
+            "sourceFileChecksum": "68d71cd15c8beb013e5addfdcaae8110"
           },
           {
             "fileName": "05-premium-themes.png",
-            "fileSize": 840607,
-            "id": "87c00019-672e-86a9-8033-70d0fc665ffb",
-            "sourceFileChecksum": "6985f4e9ac9eb87656d3391fef64d0c6"
+            "fileSize": 877246,
+            "id": "f5800019-672e-86a9-803d-10b97c57e51c",
+            "sourceFileChecksum": "5c78c663672872dbb219adf6146af1a7"
           },
           {
             "fileName": "06-dark-appearance.png",
-            "fileSize": 1391361,
-            "id": "8c000019-672e-86a9-803e-06092195bdfb",
-            "sourceFileChecksum": "634641512338d76bdccf8a9ffa3b461d"
+            "fileSize": 1289984,
+            "id": "2ac00019-672e-86a9-8037-a2a914125951",
+            "sourceFileChecksum": "1372253c5ab7bcf4213c974746afb79f"
           }
         ],
-        "setID": "5f53237f-c76e-428f-bb77-ea2e015c8a50"
+        "setID": "9e75350e-659b-4adc-b3e2-15ce9f32f1d3"
       },
       "IOS:1.0:es-ES:APP_IPHONE_67": {
         "screenshots": [
           {
             "fileName": "01-every-feeling.png",
-            "fileSize": 1639520,
-            "id": "4f000019-672e-86a9-8028-c9a56d68d7fa",
-            "sourceFileChecksum": "a4588b1206a4912eb28270cc7cc848d5"
+            "fileSize": 1508579,
+            "id": "98400019-672e-86a9-8020-eeb3d7093198",
+            "sourceFileChecksum": "b20af80336826dd10e2633a8fa78367d"
           },
           {
             "fileName": "02-autosave.png",
-            "fileSize": 1988461,
-            "id": "cb800019-672e-86a9-8030-01d4fb9adb96",
-            "sourceFileChecksum": "811889223d955e0f70169dc2bbf72f0e"
+            "fileSize": 1762942,
+            "id": "ac000019-672e-86a9-8028-8fe04c447f02",
+            "sourceFileChecksum": "5869e104f08723db20be4204b49fb863"
           },
           {
             "fileName": "03-mood-trends.png",
-            "fileSize": 1294309,
-            "id": "a6000019-672e-86a9-800a-4aedd01c48e8",
-            "sourceFileChecksum": "5a97c66adc3dcb22fb6b8d3fb9ad2456"
+            "fileSize": 1238708,
+            "id": "6d400019-672e-86a9-8037-d01bd783c0b4",
+            "sourceFileChecksum": "0d8a91ca99f2a9e80608af754c32a03d"
           },
           {
             "fileName": "04-mood-stickers.png",
-            "fileSize": 1400589,
-            "id": "22800019-672e-86a9-801c-969d3c28bf8a",
-            "sourceFileChecksum": "73211875ee7a6d79e3bd03aba4cce5b4"
+            "fileSize": 1183861,
+            "id": "97800019-672e-86a9-8002-e71d0f4d5847",
+            "sourceFileChecksum": "1ab2cfb17f616e92a5396d350fdc16d7"
           },
           {
             "fileName": "05-premium-themes.png",
-            "fileSize": 755054,
-            "id": "24c00019-672e-86a9-803e-9d6e9683c766",
-            "sourceFileChecksum": "e30978ed03b1f6ed55df4dfd991f0b66"
+            "fileSize": 750193,
+            "id": "bb800019-672e-86a9-8008-fe00abc281f1",
+            "sourceFileChecksum": "696a072b9b5e8cf61b2a3595c5e1afd0"
           },
           {
             "fileName": "06-dark-appearance.png",
-            "fileSize": 1245129,
-            "id": "2a800019-672e-86a9-802a-a042868be0c7",
-            "sourceFileChecksum": "9c299b09da8d9662bbb60a1e5a738372"
+            "fileSize": 1156128,
+            "id": "fac00019-672e-86a9-8015-6325e4587e43",
+            "sourceFileChecksum": "71872dd615a21c0414c792b49846ed25"
           }
         ],
-        "setID": "c682889b-fafd-493c-b70f-6102704fe74d"
+        "setID": "3623dbcf-a703-4bff-a4a5-33e9d5225319"
       },
       "IOS:1.0:es-ES:APP_WATCH_SERIES_10": {
         "screenshots": [
           {
             "fileName": "01-check-in.png",
-            "fileSize": 30620,
-            "id": "a9c00019-672e-86a9-8021-a38219418c81",
-            "sourceFileChecksum": "82e05950cb84afde8c85d5ac622b0225"
+            "fileSize": 178540,
+            "id": "a0000019-672e-86a9-8010-6c70f1203aa3",
+            "sourceFileChecksum": "e837e95d4aa249e2783720de9f47a8d7"
+          },
+          {
+            "fileName": "02-moods.png",
+            "fileSize": 173780,
+            "id": "51c00019-672e-86a9-8027-2eceef3f2083",
+            "sourceFileChecksum": "39f791096d6a95dd7af0a8c003e695d3"
+          },
+          {
+            "fileName": "03-pages.png",
+            "fileSize": 175477,
+            "id": "81000019-672e-86a9-803d-ebfe1691938c",
+            "sourceFileChecksum": "8b48b7ddd25199a5c39b4b5ab8f0fffc"
+          },
+          {
+            "fileName": "04-detail.png",
+            "fileSize": 167551,
+            "id": "89c00019-672e-86a9-801e-245953ae8faa",
+            "sourceFileChecksum": "3002ef26f4e797245cc696577cb77ebf"
+          },
+          {
+            "fileName": "05-mood-sad.png",
+            "fileSize": 179074,
+            "id": "1e400019-672e-86a9-8002-c6ae617c46de",
+            "sourceFileChecksum": "d7a032f6c4290ecc18fac582a211c49d"
+          },
+          {
+            "fileName": "06-mood-laughing.png",
+            "fileSize": 176625,
+            "id": "62000019-672e-86a9-8004-cb794cfa0588",
+            "sourceFileChecksum": "129861153a285e327d0629326b4d9b4d"
           }
         ],
-        "setID": "863fba4b-4a9e-4338-b270-4244bdfebc0a"
+        "setID": "c33bcc3d-d3dd-4531-9c80-b4068b587389"
       },
       "MAC_OS:1.0:ar-SA:APP_DESKTOP": {
         "screenshots": [
           {
             "fileName": "01-every-feeling.png",
-            "fileSize": 1212554,
-            "id": "5e800019-672e-86a9-8035-c52630217c4a",
-            "sourceFileChecksum": "fadbfa0d840a0847aade8b6b777845dd"
+            "fileSize": 1333763,
+            "id": "fb000019-672e-86a9-8005-73d381c24f84",
+            "sourceFileChecksum": "81b3f69331438ce19eaa94ba94a7b209"
           },
           {
             "fileName": "02-autosave.png",
-            "fileSize": 1442574,
-            "id": "22400019-672e-86a9-8003-4d03754c0911",
-            "sourceFileChecksum": "4550fd263685a195d11527825a298b17"
+            "fileSize": 1497310,
+            "id": "1a000019-672e-86a9-8023-0b831b13a75e",
+            "sourceFileChecksum": "51d1268987cec8f77e4e242434a87f0a"
           },
           {
             "fileName": "03-mood-trends.png",
-            "fileSize": 883119,
-            "id": "ce800019-672e-86a9-8011-71f5e7722f4d",
-            "sourceFileChecksum": "2f978124b94a3e12c17b40e00115c776"
+            "fileSize": 945643,
+            "id": "b8800019-672e-86a9-8013-5d7a3f401869",
+            "sourceFileChecksum": "2338c34d19264bdf8d9150310e1a2128"
           },
           {
             "fileName": "04-mood-stickers.png",
-            "fileSize": 909894,
-            "id": "89c00019-672e-86a9-8002-a5d100423926",
-            "sourceFileChecksum": "dbc60d87977cc02aa506c7546c1c802b"
+            "fileSize": 1108941,
+            "id": "0f400019-672e-86a9-8030-2a3d309ee747",
+            "sourceFileChecksum": "39ec50cd4f2bd3df12a3b82daa186396"
           },
           {
             "fileName": "05-premium-themes.png",
-            "fileSize": 588290,
-            "id": "7c000019-672e-86a9-8038-92e20b20369b",
-            "sourceFileChecksum": "52f9ceb94a39abbb375deab2b5aadddb"
+            "fileSize": 492807,
+            "id": "04c00019-672e-86a9-8014-a245641a9f9a",
+            "sourceFileChecksum": "0fccdb32a1630472c10ee610ce2f3595"
           },
           {
             "fileName": "06-dark-appearance.png",
-            "fileSize": 813612,
-            "id": "38000019-672e-86a9-8016-78426c949b58",
-            "sourceFileChecksum": "0271c696fd53b0bf047c777b15c83d9e"
+            "fileSize": 978945,
+            "id": "aa400019-672e-86a9-8019-2be598a8afcf",
+            "sourceFileChecksum": "44e5efca4de5018b04d12852240c4f82"
           }
         ],
-        "setID": "f1179cf8-0af7-4bc8-aa7e-f936f9544312"
+        "setID": "925dfcb8-325e-4db6-baaf-3dc707de2346"
       },
       "MAC_OS:1.0:en-US:APP_DESKTOP": {
         "screenshots": [
           {
             "fileName": "01-every-feeling.png",
-            "fileSize": 1227004,
-            "id": "17c00019-672e-86a9-8022-3dddbe487374",
-            "sourceFileChecksum": "cf044d80bdce8636471e45de00518d2e"
+            "fileSize": 1372562,
+            "id": "e9000019-672e-86a9-803a-591aa20d0067",
+            "sourceFileChecksum": "31def2c42303429a3ed60800c7381fdb"
           },
           {
             "fileName": "02-autosave.png",
-            "fileSize": 1433574,
-            "id": "04000019-672e-86a9-8004-bd1ce4851b50",
-            "sourceFileChecksum": "0e31807118eb1d8e34f5fb85e882ddd7"
+            "fileSize": 1341091,
+            "id": "73400019-672e-86a9-802c-43fe918f55d1",
+            "sourceFileChecksum": "3baa5fce5281dc2564b52c5b49051f78"
           },
           {
             "fileName": "03-mood-trends.png",
-            "fileSize": 886685,
-            "id": "87c00019-672e-86a9-8039-65667f1cbfd7",
-            "sourceFileChecksum": "4b10fc0237c112144523512218d03201"
+            "fileSize": 985104,
+            "id": "96000019-672e-86a9-802e-d4217292954c",
+            "sourceFileChecksum": "a8ac294d1cef1b44dc01ec3c31d10089"
           },
           {
             "fileName": "04-mood-stickers.png",
-            "fileSize": 923640,
-            "id": "d6000019-672e-86a9-8016-38515314158c",
-            "sourceFileChecksum": "cafb15a148aaf3375281b85d7fbfe9e6"
+            "fileSize": 1088466,
+            "id": "cac00019-672e-86a9-8037-b42663a72e44",
+            "sourceFileChecksum": "b02e474a52613f1289e8c25171dc1279"
           },
           {
             "fileName": "05-premium-themes.png",
-            "fileSize": 601037,
-            "id": "3a400019-672e-86a9-800f-8ed020a5998c",
-            "sourceFileChecksum": "be4d7736f788eb0bc13605f117600541"
+            "fileSize": 474539,
+            "id": "73400019-672e-86a9-8033-c6577c015c9e",
+            "sourceFileChecksum": "135e0e3522b1bdbb4a1bb6b87b85e71d"
           },
           {
             "fileName": "06-dark-appearance.png",
-            "fileSize": 817930,
-            "id": "5fc00019-672e-86a9-801d-eb774a4ecb76",
-            "sourceFileChecksum": "87d2c53580c3242744f7e332a43b1bbc"
+            "fileSize": 860752,
+            "id": "55800019-672e-86a9-803a-eab8f6cde923",
+            "sourceFileChecksum": "4590840ede4b33feedcdcf15d04f4c0f"
           }
         ],
-        "setID": "a431b7e6-5dae-40a7-b5fd-3b4df1daf24a"
+        "setID": "c8292c23-8680-469c-8dbe-3f9befbc2a77"
       },
       "MAC_OS:1.0:es-ES:APP_DESKTOP": {
         "screenshots": [
           {
             "fileName": "01-every-feeling.png",
-            "fileSize": 1253681,
-            "id": "44400019-672e-86a9-8010-7c01fb83ff0e",
-            "sourceFileChecksum": "6c69f3cea4b943f98eb2f965874283ec"
+            "fileSize": 1228731,
+            "id": "ec400019-672e-86a9-801e-ef69ef72d7d2",
+            "sourceFileChecksum": "9851a546da662227f32c38b1497302b3"
           },
           {
             "fileName": "02-autosave.png",
-            "fileSize": 1490559,
-            "id": "74000019-672e-86a9-8038-defbece06ed5",
-            "sourceFileChecksum": "3f117413893baf8525026022fe0c8a25"
+            "fileSize": 1362859,
+            "id": "36400019-672e-86a9-8014-c029b6585a63",
+            "sourceFileChecksum": "3c99ff38372e9edc7213571ace56e30d"
           },
           {
             "fileName": "03-mood-trends.png",
-            "fileSize": 916412,
-            "id": "86c00019-672e-86a9-803e-dad50186bff1",
-            "sourceFileChecksum": "1e5d234acdfb0ec85e5f4c76eae72d16"
+            "fileSize": 887870,
+            "id": "0ec00019-672e-86a9-8036-db126b695f47",
+            "sourceFileChecksum": "6910dd3cfaaa5e0d48c36c89bab05db3"
           },
           {
             "fileName": "04-mood-stickers.png",
-            "fileSize": 948849,
-            "id": "b8000019-672e-86a9-802f-8c2271022e4b",
-            "sourceFileChecksum": "33d09e4475194ee02d47d525e2b3b58c"
+            "fileSize": 1012742,
+            "id": "ac000019-672e-86a9-8006-047508d11f9c",
+            "sourceFileChecksum": "a3e21c02cdeb897758c81094ded4f097"
           },
           {
             "fileName": "05-premium-themes.png",
-            "fileSize": 609735,
-            "id": "ee800019-672e-86a9-803a-cae36fda0ec5",
-            "sourceFileChecksum": "e8df79ce2921afcb1962314607071eb8"
+            "fileSize": 480181,
+            "id": "5d800019-672e-86a9-8018-410950832137",
+            "sourceFileChecksum": "36fa8e0c3c400e530721ae6835b6d24c"
           },
           {
             "fileName": "06-dark-appearance.png",
-            "fileSize": 842034,
-            "id": "8f400019-672e-86a9-801f-21ee25dcfa37",
-            "sourceFileChecksum": "3ab44b7bf92b8a60f743d8aec3df73b1"
+            "fileSize": 873976,
+            "id": "4f800019-672e-86a9-803b-98327a65b6b7",
+            "sourceFileChecksum": "7d9e9fe5e4c93986b5705006dcfeb244"
           }
         ],
-        "setID": "a77efdec-2172-47cb-9023-fb877ff8acea"
+        "setID": "abdac8a7-b996-4c20-8137-c0ce0249d8ec"
+      },
+      "VISION_OS:1.0:ar-SA:APP_APPLE_VISION_PRO": {
+        "screenshots": [
+          {
+            "fileName": "01-today.png",
+            "fileSize": 5111785,
+            "id": "7b800019-672e-86a9-802e-9c6c02d98ba3",
+            "sourceFileChecksum": "d144f4932e5e1574c47461e47e6b1fd5"
+          },
+          {
+            "fileName": "02-pages.png",
+            "fileSize": 5165414,
+            "id": "84400019-672e-86a9-801c-a045c7ab7c93",
+            "sourceFileChecksum": "0e95381eca3dd1be773bb6b2fc64e5aa"
+          },
+          {
+            "fileName": "03-insights.png",
+            "fileSize": 5080648,
+            "id": "7bc00019-672e-86a9-8003-d8d1f829d168",
+            "sourceFileChecksum": "e8eb6f68d6a143c3f97143f06e49a645"
+          }
+        ],
+        "setID": "fd3d71b9-9673-4651-b461-fa19abc66038"
+      },
+      "VISION_OS:1.0:en-US:APP_APPLE_VISION_PRO": {
+        "screenshots": [
+          {
+            "fileName": "01-today.png",
+            "fileSize": 5138972,
+            "id": "a0800019-672e-86a9-8002-f0c44e254bb1",
+            "sourceFileChecksum": "90e7f2b35c43aed2aa5bc2bb92836e27"
+          },
+          {
+            "fileName": "02-pages.png",
+            "fileSize": 5202262,
+            "id": "7a400019-672e-86a9-802a-a1b3e1ed11d1",
+            "sourceFileChecksum": "d94ce28f9cd64649ffd97acc776fece2"
+          },
+          {
+            "fileName": "03-insights.png",
+            "fileSize": 5090317,
+            "id": "bb800019-672e-86a9-801d-d72ac3cd8711",
+            "sourceFileChecksum": "b92369f59ff3ff0c09ad37b3599237d6"
+          }
+        ],
+        "setID": "4eaf387c-2211-4146-bcda-51c184aaa742"
+      },
+      "VISION_OS:1.0:es-ES:APP_APPLE_VISION_PRO": {
+        "screenshots": [
+          {
+            "fileName": "01-today.png",
+            "fileSize": 5157646,
+            "id": "0b800019-672e-86a9-802f-df65abc0e49d",
+            "sourceFileChecksum": "f8d4797162e4c78eedc1e89c42ebff15"
+          },
+          {
+            "fileName": "02-pages.png",
+            "fileSize": 5216409,
+            "id": "13000019-672e-86a9-8034-29d15a5e76aa",
+            "sourceFileChecksum": "41a451cfbd73c4a87f80cc2001ed8208"
+          },
+          {
+            "fileName": "03-insights.png",
+            "fileSize": 5105571,
+            "id": "12000019-672e-86a9-8021-7336c5d26bef",
+            "sourceFileChecksum": "18e203a28c26221b81a270ac7388903c"
+          }
+        ],
+        "setID": "c880a535-6aa9-4c76-bb85-37cc4999eae2"
       }
     },
     "inAppPurchasePricing": {
@@ -2510,24 +2669,21 @@
     "inAppPurchaseReviewScreenshots": {
       "com.transfinite.MoodMargins.theme.botanical": {
         "fileName": "SOURCE",
-        "fileSize": 540962,
-        "id": "761d29a8-f9b8-418d-bf82-662d74dcca9c",
-        "renditionChecksum": "3808cd06807fdc7a2175f82dfd4ec9b0",
-        "sourceFileChecksum": "2563c3cb9ef9ee2b102a1c729c3e7dcb"
+        "fileSize": 666571,
+        "id": "a6a6b76a-f0b2-4db9-9ac9-00de00511a79",
+        "sourceFileChecksum": "a93ac664009a993d2fc7c88ef74a20fd"
       },
       "com.transfinite.MoodMargins.theme.coastal": {
         "fileName": "SOURCE",
-        "fileSize": 523173,
-        "id": "ea3fbbb8-133e-4353-bee3-699096f4ccf2",
-        "renditionChecksum": "9084134d605cdad33b9eb4a5819784ff",
-        "sourceFileChecksum": "66e159a6584ecbb559530ae3df7c7355"
+        "fileSize": 657858,
+        "id": "53db8af2-4db9-47d6-9965-0020ba06c583",
+        "sourceFileChecksum": "d4149baee324e3894aa70d283e62b7a1"
       },
       "com.transfinite.MoodMargins.theme.sunset": {
         "fileName": "SOURCE",
-        "fileSize": 478892,
-        "id": "8c5769ca-9f3e-49cd-98d6-72e567852489",
-        "renditionChecksum": "021af7ff4723232039f4d64756b01296",
-        "sourceFileChecksum": "78ab4b7054f6a58ec338c7a5607a9b20"
+        "fileSize": 595096,
+        "id": "c8195065-bb50-433a-9e2b-6b9fcb141d3d",
+        "sourceFileChecksum": "1457e0bf908322af2978191ece3b8b96"
       }
     },
     "pricing": {
@@ -3233,24 +3389,21 @@
     "subscriptionReviewScreenshots": {
       "com.transfinite.MoodMargins.plus.monthly": {
         "fileName": "SOURCE",
-        "fileSize": 350197,
-        "id": "b1448708-3dc8-4494-9b8e-b7b0cbddf0d2",
-        "renditionChecksum": "dd5a758db24e36c6e6c6960bd77263d9",
-        "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+        "fileSize": 1453052,
+        "id": "a60458a9-18c8-42ed-89f8-1fecd128e269",
+        "sourceFileChecksum": "877fc451f11052d8deadce6789e21afb"
       },
       "com.transfinite.MoodMargins.plus.weekly": {
         "fileName": "SOURCE",
-        "fileSize": 350197,
-        "id": "b8e82042-db25-4b9a-9fe8-cc1d95494227",
-        "renditionChecksum": "d2f9853b2a46167980c7e1e291817286",
-        "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+        "fileSize": 1452730,
+        "id": "5cbfe74b-3ec3-4317-8a53-e4a15dfc7ced",
+        "sourceFileChecksum": "adf64ef5afaf90c6f7fa168d47c56ecd"
       },
       "com.transfinite.MoodMargins.plus.yearly": {
         "fileName": "SOURCE",
-        "fileSize": 350197,
-        "id": "fe8f52d2-c870-4708-977a-eb6585ad82f0",
-        "renditionChecksum": "c0a3f99916f66951cddda521929b256a",
-        "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+        "fileSize": 1452644,
+        "id": "973282e6-a882-4bdc-9c04-bea8cc3aa111",
+        "sourceFileChecksum": "7a54869a83c4a2c1551aeab149bb62f7"
       }
     }
   },
@@ -3354,6 +3507,18 @@
       "id": "7b0b168c-2435-48e7-ae10-b350c3966b0d",
       "type": "appStoreReviewDetails"
     },
+    "appStoreReviewDetail:VISION_OS:1.0": {
+      "fields": {
+        "contactEmail": "transfinite@transfinite.us",
+        "contactFirstName": "Gerard",
+        "contactLastName": "Gomez",
+        "contactPhone": "+1 914 316 8248",
+        "demoAccountRequired": false,
+        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion's quick journal is local to the watch and does not sync to the main app. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
+      },
+      "id": "df039bf8-562c-4752-9bca-dd9827896930",
+      "type": "appStoreReviewDetails"
+    },
     "appStoreVersion:IOS:1.0": {
       "fields": {
         "copyright": "2026 Gerard Gomez",
@@ -3370,6 +3535,15 @@
         "versionString": "1.0"
       },
       "id": "8fb28006-1166-4943-b833-85b0228c4040",
+      "type": "appStoreVersions"
+    },
+    "appStoreVersion:VISION_OS:1.0": {
+      "fields": {
+        "copyright": "2026 Gerard Gomez",
+        "releaseType": "AFTER_APPROVAL",
+        "versionString": "1.0"
+      },
+      "id": "19759d81-d4fb-44b5-8a5e-51cbb0ea36c1",
       "type": "appStoreVersions"
     },
     "appStoreVersionLocalization:IOS:1.0:ar-SA": {
@@ -3438,42 +3612,75 @@
       "id": "49ee0c11-68ea-4ae9-82a9-a313da59df8b",
       "type": "appStoreVersionLocalizations"
     },
+    "appStoreVersionLocalization:VISION_OS:1.0:ar-SA": {
+      "fields": {
+        "description": "مساحة لطيفة للتأمل.\n\nيحوّل MoodMargins مشاعرك اليومية إلى دفتر شخصي للحظات الصغيرة. اختر ملصق مزاج متحركًا واكتب بضعة أسطر ودع صفحتك تُحفظ تلقائيًا. لا حاجة لإنشاء حساب أو تذكّر الضغط على زر الحفظ.\n\nامنح يومك مساحة صغيرة\n• عبّر عن مزاجك بخمسة ملصقات متحركة.\n• اكتب على صفحات دفتر ناعمة ومسطّرة.\n• اربط المشاعر والروتين بوسوم تشبه شريط الواشي.\n• عد إلى تدويناتك حسب التاريخ أو البحث أو المزاج.\n\nلاحظ أنماطك دون ضغط\n• استكشف رؤى لسبعة أيام أو أربعة عشر يومًا أو ثلاثين يومًا أو العام كله.\n• تابع اتجاهات المزاج بوسوم رموز تعبيرية واضحة.\n• شاهد أطول سلسلة تدوين ومزاجك الأكثر شيوعًا والوسوم الأكثر تكرارًا.\n• تأمل توزيع المشاعر والأنشطة الموجودة في صفحاتك.\n\nدفتر يشبهك\nسمة باستيل الأصلية مجانية. تضيف سمات نباتية وساحلية وغروب لوحات ألوان جديدة إلى دفترك، ولكل منها مظهر فاتح وآخر داكن. اشترِ سمة منفردة مرة واحدة للاحتفاظ بها دائمًا، أو استمتع بكل السمات المميزة أثناء تفعيل MoodMargins Plus.\n\nذكاء Apple اختياري مع Plus\nيقترح Plus وسومًا أثناء الكتابة وينشئ ملخصات لطيفة من صفحاتك المحفوظة. يحاول التطبيق استخدام الحوسبة السحابية الخاصة من Apple أولًا، ثم يستخدم نموذج الجهاز إذا فشل الطلب السحابي. أوقف الحوسبة السحابية الخاصة في تخصيص لإبقاء طلبات الذكاء الاصطناعي على جهازك. تتطلب هذه الميزات جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا؛ وتحتاج الطلبات السحابية أيضًا إلى الإنترنت وسعة خدمة متاحة.\n\nصفحاتك ومساحتك\nتُخزّن تدويناتك على جهازك. عند توفر iCloud وتفعيله، يزامن التطبيق الرئيسي التدوينات عبر حسابك الخاص في iCloud. لا يدير المطور خادمًا يتلقى يومياتك. تتيح Apple Watch تدوين ملاحظات مزاج سريعة في دفتر محلي منفصل؛ ولا تُزامن تدوينات الساعة حاليًا مع التطبيق الرئيسي.\n\nاليوميات والرؤى الأساسية مجانية. يقدم MoodMargins Plus الميزات المميزة نفسها عبر اشتراكات أسبوعية أو شهرية أو سنوية تتجدد تلقائيًا. السمات المميزة المنفردة مشتريات دائمة غير قابلة للاستهلاك. تظهر الأسعار قبل الشراء وقد تختلف حسب المنطقة. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. لا يؤدي إلغاء Plus إلى حذف تدويناتك أو السمات المشتراة منفردة.\n\nMoodMargins أداة للتأمل الشخصي. لا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
+        "keywords": "يوميات,مشاعر,مزاج,تأمل,امتنان,راحة,ملاحظات,دفتر,سلسلة,تتبع,عناية بالنفس",
+        "marketingUrl": "https://apps.transfinite.us/#moodmargins",
+        "promotionalText": "مساحة لطيفة للتأمل. سجّل اللحظات الصغيرة بملصقات مزاج متحركة وصفحات تُحفظ تلقائيًا ورؤى هادئة. اجعل دفتر يومياتك يعبر عنك.",
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+      },
+      "id": "e5c5de9c-e1e1-4deb-9c2b-8042e9e4401e",
+      "type": "appStoreVersionLocalizations"
+    },
+    "appStoreVersionLocalization:VISION_OS:1.0:en-US": {
+      "fields": {
+        "description": "A softer place to check in.\n\nMoodMargins turns your daily feelings into a personal journal of small moments. Choose an animated mood sticker, write a few lines, and let your page save automatically. There is no account to create and no Save button to remember.\n\nMAKE A LITTLE SPACE FOR YOUR DAY\n• Check in with five expressive, animated mood stickers.\n• Write on soft, lined notebook pages.\n• Connect feelings and routines with washi-style tags.\n• Revisit your entries by date, search, or mood.\n\nSEE YOUR PATTERNS WITHOUT PRESSURE\n• Explore 7-day, 14-day, 30-day, and yearly Insights.\n• Read mood trends with expressive emoji labels.\n• See your longest streak, most common mood, and top tags.\n• Look back at mood distribution and the activities in your pages.\n\nA JOURNAL THAT FEELS LIKE YOURS\nThe original Pastel theme is free. Botanical, Coastal, and Sunset bring fresh palettes to your notebook, each with light and dark appearances. Buy an individual theme once to keep it permanently, or enjoy all premium themes while MoodMargins Plus is active.\n\nOPTIONAL APPLE INTELLIGENCE WITH PLUS\nPlus suggests tags as you write and creates gentle recaps from your saved pages. The app tries Apple's Private Cloud Compute first and uses the on-device model if a cloud request fails. Turn off Private Cloud Compute in Customize to keep AI requests on your device. AI features require a compatible device with Apple Intelligence enabled and ready; cloud requests also need internet access and available service capacity.\n\nYOUR PAGES, YOUR SPACE\nJournal entries are stored on your device. When iCloud is available and enabled, the main app syncs them through your private iCloud account. The developer does not operate a server that receives your journal. Apple Watch supports quick mood notes in a separate local journal; watch entries do not currently sync with the main app.\n\nDaily journaling and standard Insights are free. MoodMargins Plus offers the same premium features with weekly, monthly, or yearly auto-renewing subscriptions. Individual premium themes are separate, permanent non-consumable purchases. Prices are shown before purchase and may vary by region. Manage or cancel subscriptions in your Apple Account settings. Canceling Plus does not delete your entries or themes purchased separately.\n\nMoodMargins is a personal reflection tool. It does not provide medical advice, diagnosis, or treatment.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
+        "keywords": "diary,feelings,emotion,reflection,gratitude,streaks,wellbeing,self care,notebook,tracker",
+        "marketingUrl": "https://apps.transfinite.us/#moodmargins",
+        "promotionalText": "A softer place to check in. Capture small moments with animated mood stickers, automatically saved pages, and gentle Insights. Make your notebook your own.",
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+      },
+      "id": "e501e46f-60fb-4c34-b418-5529caf1e403",
+      "type": "appStoreVersionLocalizations"
+    },
+    "appStoreVersionLocalization:VISION_OS:1.0:es-ES": {
+      "fields": {
+        "description": "Un lugar amable para ti.\n\nMoodMargins convierte tus emociones diarias en un diario personal de pequeños momentos. Elige un sticker de ánimo animado, escribe unas líneas y deja que tu página se guarde automáticamente. No necesitas crear una cuenta ni recordar pulsar Guardar.\n\nUN POCO DE ESPACIO PARA TU DÍA\n• Exprésate con cinco stickers de ánimo animados.\n• Escribe en suaves páginas de cuaderno con renglones.\n• Conecta emociones y rutinas con etiquetas estilo washi.\n• Revisa tus entradas por fecha, búsqueda o estado de ánimo.\n\nDESCUBRE PATRONES SIN PRESIÓN\n• Explora Perspectivas de 7, 14 o 30 días y de todo el año.\n• Sigue las tendencias del ánimo con etiquetas de emojis.\n• Consulta tu racha más larga, tu ánimo más frecuente y tus etiquetas principales.\n• Revisa la distribución de tus emociones y las actividades de tus páginas.\n\nUN DIARIO A TU ESTILO\nEl tema Pastel original es gratis. Botánica, Costera y Atardecer aportan nuevas paletas, cada una con aspectos claro y oscuro. Compra un tema individual una sola vez para conservarlo para siempre o disfruta de todos los temas premium mientras MoodMargins Plus esté activo.\n\nAPPLE INTELLIGENCE OPCIONAL CON PLUS\nPlus sugiere etiquetas mientras escribes y crea resúmenes amables a partir de tus páginas guardadas. La app intenta usar primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si falla una solicitud a la nube. Desactiva Private Cloud Compute en Personalizar para mantener las solicitudes de IA en tu dispositivo. La IA requiere un dispositivo compatible con Apple Intelligence activado y listo; las solicitudes a la nube también necesitan internet y capacidad disponible del servicio.\n\nTUS PÁGINAS, TU ESPACIO\nLas entradas se almacenan en tu dispositivo. Cuando iCloud está disponible y activado, la app principal las sincroniza mediante tu cuenta privada de iCloud. El desarrollador no opera un servidor que reciba tu diario. Apple Watch permite notas rápidas de ánimo en un diario local separado; esas entradas todavía no se sincronizan con la app principal.\n\nEl diario y las Perspectivas básicas son gratis. MoodMargins Plus ofrece las mismas funciones premium mediante suscripciones semanales, mensuales o anuales de renovación automática. Los temas premium individuales son compras permanentes no consumibles. Los precios se muestran antes de comprar y pueden variar según la región. Gestiona o cancela tus suscripciones en los ajustes de tu cuenta de Apple. Cancelar Plus no elimina tus entradas ni los temas comprados por separado.\n\nMoodMargins es una herramienta de reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
+        "keywords": "diario,emociones,reflexión,gratitud,rachas,bienestar,autocuidado,notas,seguimiento,ánimo",
+        "marketingUrl": "https://apps.transfinite.us/#moodmargins",
+        "promotionalText": "Un lugar amable para ti. Guarda pequeños momentos con stickers de ánimo, páginas que se guardan solas y Perspectivas suaves. Haz tuyo el diario.",
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+      },
+      "id": "f06cdbc3-3288-4ef5-aa8f-2c5920ee9e97",
+      "type": "appStoreVersionLocalizations"
+    },
     "appStoreVersionScreenshotSet:IOS:1.0:ar-SA:APP_IPAD_PRO_3GEN_129": {
       "fields": {
         "screenshots": [
           {
             "file": "01-every-feeling.png",
-            "fileSize": 1919916,
-            "sourceFileChecksum": "5b2d853c475f7a5e7fe7a764eb17f5a7"
+            "fileSize": 1778210,
+            "sourceFileChecksum": "11a0dafcba3274c2ee78cd3e6f6c860d"
           },
           {
             "file": "02-autosave.png",
-            "fileSize": 2311010,
-            "sourceFileChecksum": "befc53608891b688d2d85bb5f37025c9"
+            "fileSize": 1947821,
+            "sourceFileChecksum": "9940b1d58322e4be41cdf2a00dba8c1a"
           },
           {
             "file": "03-mood-trends.png",
-            "fileSize": 1402267,
-            "sourceFileChecksum": "7017b1493630173f239d68cf9d5d273e"
+            "fileSize": 1339023,
+            "sourceFileChecksum": "571ad5aec3a00687da6c6dece0925112"
           },
           {
             "file": "04-mood-stickers.png",
-            "fileSize": 1413194,
-            "sourceFileChecksum": "daaa56af1a5ea802eacc12cf8116627c"
+            "fileSize": 1305768,
+            "sourceFileChecksum": "c8f8ac9fb2d11398ae875073671a9bc1"
           },
           {
             "file": "05-premium-themes.png",
-            "fileSize": 818053,
-            "sourceFileChecksum": "9b75ff7f5bd524523ec67a008303ea71"
+            "fileSize": 849089,
+            "sourceFileChecksum": "9473a960ee926e51a7d94334e7ad6562"
           },
           {
             "file": "06-dark-appearance.png",
-            "fileSize": 1337842,
-            "sourceFileChecksum": "541c35f3e3699679157bf04bdd85bef8"
+            "fileSize": 1223497,
+            "sourceFileChecksum": "e67bab665ae7dd7aaa5aedfc2c5bea69"
           }
         ]
       },
-      "id": "07c314a7-87c9-4eac-a792-11e364b1c009",
+      "id": "c09a5bd9-a0cc-49b9-bfb9-01d712bfc886",
       "type": "appScreenshotSets"
     },
     "appStoreVersionScreenshotSet:IOS:1.0:ar-SA:APP_IPHONE_67": {
@@ -3481,37 +3688,37 @@
         "screenshots": [
           {
             "file": "01-every-feeling.png",
-            "fileSize": 1564616,
-            "sourceFileChecksum": "49a9de33c06e1dde46ff2a62705fe5dd"
+            "fileSize": 1441833,
+            "sourceFileChecksum": "1bf63049d4f4961f0fce66e0e1a62fb7"
           },
           {
             "file": "02-autosave.png",
-            "fileSize": 1910114,
-            "sourceFileChecksum": "61efb4e45b02853ffd03c3e42bf764c9"
+            "fileSize": 1694775,
+            "sourceFileChecksum": "867e4556fc2401229a38707bc4a4b297"
           },
           {
             "file": "03-mood-trends.png",
-            "fileSize": 1245378,
-            "sourceFileChecksum": "fb572b124cc612f33f140cdc5a684369"
+            "fileSize": 1184356,
+            "sourceFileChecksum": "92736546ec9c32489ca753919695b532"
           },
           {
             "file": "04-mood-stickers.png",
-            "fileSize": 1295860,
-            "sourceFileChecksum": "c5a806a10748f84f141dd445d5043cbe"
+            "fileSize": 1198776,
+            "sourceFileChecksum": "d1d91398b10ef86b7d45a30ca304480f"
           },
           {
             "file": "05-premium-themes.png",
-            "fileSize": 730088,
-            "sourceFileChecksum": "5f1793b942d6d90ccea621ef3f149b00"
+            "fileSize": 730410,
+            "sourceFileChecksum": "c3186d11d9d16e0f7d1e1ce8dad62e49"
           },
           {
             "file": "06-dark-appearance.png",
-            "fileSize": 1194175,
-            "sourceFileChecksum": "5b3fc7087198a6e974db65d40c867a5f"
+            "fileSize": 1104493,
+            "sourceFileChecksum": "8cb8db3e7132860f0af3f99ad7ca1e1b"
           }
         ]
       },
-      "id": "2673d167-7cac-4eb9-9cb1-641fc5804892",
+      "id": "2c8264c6-39ba-4321-a4a6-dbda8883534f",
       "type": "appScreenshotSets"
     },
     "appStoreVersionScreenshotSet:IOS:1.0:ar-SA:APP_WATCH_SERIES_10": {
@@ -3519,12 +3726,37 @@
         "screenshots": [
           {
             "file": "01-check-in.png",
-            "fileSize": 26159,
-            "sourceFileChecksum": "2e8c708fac0efbb96edd52c5cbf24446"
+            "fileSize": 181032,
+            "sourceFileChecksum": "4893507eefdced3afce22b11be357c29"
+          },
+          {
+            "file": "02-moods.png",
+            "fileSize": 176057,
+            "sourceFileChecksum": "900295c14166dff2c2c8139e60a92731"
+          },
+          {
+            "file": "03-pages.png",
+            "fileSize": 185414,
+            "sourceFileChecksum": "7d85e8cdb938838eb754e3ec50417ec3"
+          },
+          {
+            "file": "04-detail.png",
+            "fileSize": 170712,
+            "sourceFileChecksum": "091f96243c34ef8d9e64209da4dd0cdd"
+          },
+          {
+            "file": "05-mood-sad.png",
+            "fileSize": 181165,
+            "sourceFileChecksum": "cddfbdc1916b57a40716a24699b0447d"
+          },
+          {
+            "file": "06-mood-laughing.png",
+            "fileSize": 179551,
+            "sourceFileChecksum": "ca4d4a5a4288994c0c8a3b0c0c1d3d38"
           }
         ]
       },
-      "id": "9347561f-dcf8-427a-b624-9dd2cb61c6eb",
+      "id": "a6bf7a8d-35d5-42eb-a536-d630a009fb86",
       "type": "appScreenshotSets"
     },
     "appStoreVersionScreenshotSet:IOS:1.0:en-US:APP_IPAD_PRO_3GEN_129": {
@@ -3532,37 +3764,37 @@
         "screenshots": [
           {
             "file": "01-every-feeling.png",
-            "fileSize": 1959529,
-            "sourceFileChecksum": "ec5bee7494d7b3b3dedf184474be35af"
+            "fileSize": 1827225,
+            "sourceFileChecksum": "1558fc9746bb6182b3cba1d1e40a6f51"
           },
           {
             "file": "02-autosave.png",
-            "fileSize": 2319156,
-            "sourceFileChecksum": "0265660c8c0c03f97ae18bc65189a53d"
+            "fileSize": 1972499,
+            "sourceFileChecksum": "99e7ce978de18bfa13833a091c4da789"
           },
           {
             "file": "03-mood-trends.png",
-            "fileSize": 1432401,
-            "sourceFileChecksum": "b2df26bc173ff74d0fc80af8d68df4f4"
+            "fileSize": 1380946,
+            "sourceFileChecksum": "5e38b25c000495f508a49c1e3fa52efc"
           },
           {
             "file": "04-mood-stickers.png",
-            "fileSize": 1470545,
-            "sourceFileChecksum": "5ba283c7386a443c3491e5f1d0cb1589"
+            "fileSize": 1366993,
+            "sourceFileChecksum": "706391441a663708b7d2ded2197c8822"
           },
           {
             "file": "05-premium-themes.png",
-            "fileSize": 822116,
-            "sourceFileChecksum": "4ef9268101bb85789ff14b3ac5eacd5b"
+            "fileSize": 865192,
+            "sourceFileChecksum": "da2ea8bccfeaf0d7943b69dadbbd3ec0"
           },
           {
             "file": "06-dark-appearance.png",
-            "fileSize": 1371805,
-            "sourceFileChecksum": "f8fd2247c62e5401dd5d1c524bc6bdcc"
+            "fileSize": 1257487,
+            "sourceFileChecksum": "42544a4f13002a7386d4bf7734f7ba26"
           }
         ]
       },
-      "id": "3a499f1c-5479-44db-8679-b76e51b26e82",
+      "id": "55b1fc7d-cad1-458f-a856-a9f1c8cf6c8c",
       "type": "appScreenshotSets"
     },
     "appStoreVersionScreenshotSet:IOS:1.0:en-US:APP_IPHONE_67": {
@@ -3570,37 +3802,37 @@
         "screenshots": [
           {
             "file": "01-every-feeling.png",
-            "fileSize": 1600664,
-            "sourceFileChecksum": "8eac1841a1d42f5f518db747b6b9f5bb"
+            "fileSize": 1466163,
+            "sourceFileChecksum": "bfbc72d8d999eb44bd9c3031b898d20f"
           },
           {
             "file": "02-autosave.png",
-            "fileSize": 1964426,
-            "sourceFileChecksum": "ed2e494ef8877f2528f95e555b23b1e5"
+            "fileSize": 1737946,
+            "sourceFileChecksum": "a62b2aa21bc63cff485b31b0f3bc326c"
           },
           {
             "file": "03-mood-trends.png",
-            "fileSize": 1260402,
-            "sourceFileChecksum": "5fd97f627fd07a0de344663e86be2118"
+            "fileSize": 1214077,
+            "sourceFileChecksum": "e02fe1eadf46774ef36b207d42c78ba1"
           },
           {
             "file": "04-mood-stickers.png",
-            "fileSize": 1328096,
-            "sourceFileChecksum": "a84de5ab035356f4b9bac27149a4f4c2"
+            "fileSize": 1238265,
+            "sourceFileChecksum": "bb660a6c7a35971a34a573fda1112315"
           },
           {
             "file": "05-premium-themes.png",
-            "fileSize": 733243,
-            "sourceFileChecksum": "7b94bed2620ff399fcfd4abaf34c53fc"
+            "fileSize": 734800,
+            "sourceFileChecksum": "ee7b6b76cd0b4861072ae1feb726ed9d"
           },
           {
             "file": "06-dark-appearance.png",
-            "fileSize": 1212246,
-            "sourceFileChecksum": "e004bcdbdbfb9e6693c4e2ad7326fe50"
+            "fileSize": 1135475,
+            "sourceFileChecksum": "cd6a3c7abf949cce625bff9a6ff99c12"
           }
         ]
       },
-      "id": "f33524f9-9bcd-4547-a45c-f3e8fbabdd66",
+      "id": "c4b640ac-2c07-4ae3-b046-880389e98eae",
       "type": "appScreenshotSets"
     },
     "appStoreVersionScreenshotSet:IOS:1.0:en-US:APP_WATCH_SERIES_10": {
@@ -3608,12 +3840,37 @@
         "screenshots": [
           {
             "file": "01-check-in.png",
-            "fileSize": 28389,
-            "sourceFileChecksum": "51f2c6cd11d4e9d34cba01435479734d"
+            "fileSize": 177378,
+            "sourceFileChecksum": "ca30b20d7c9bb0b839287f7bf9136806"
+          },
+          {
+            "file": "02-moods.png",
+            "fileSize": 174036,
+            "sourceFileChecksum": "82a3c9e45116358732116b8c8b0bf92c"
+          },
+          {
+            "file": "03-pages.png",
+            "fileSize": 174412,
+            "sourceFileChecksum": "e696069281667e0ae6051910e6081d48"
+          },
+          {
+            "file": "04-detail.png",
+            "fileSize": 165974,
+            "sourceFileChecksum": "b7a952b1616f9b4e75b1287a2c982070"
+          },
+          {
+            "file": "05-mood-sad.png",
+            "fileSize": 178070,
+            "sourceFileChecksum": "cee251bf753217ed48f1a2094f7a6799"
+          },
+          {
+            "file": "06-mood-laughing.png",
+            "fileSize": 176383,
+            "sourceFileChecksum": "f6053a55fb8ccb87b7794dd23801c5fb"
           }
         ]
       },
-      "id": "74684410-c889-4072-abe9-0baa080c6e55",
+      "id": "3abcf19f-efa5-4824-af3d-2ff7bab697ed",
       "type": "appScreenshotSets"
     },
     "appStoreVersionScreenshotSet:IOS:1.0:es-ES:APP_IPAD_PRO_3GEN_129": {
@@ -3621,37 +3878,37 @@
         "screenshots": [
           {
             "file": "01-every-feeling.png",
-            "fileSize": 1994625,
-            "sourceFileChecksum": "57d91e23d3ed0c988f45b7719cf6eaf4"
+            "fileSize": 1858466,
+            "sourceFileChecksum": "f85bf1e89559c130606b9c4e4f0b9a34"
           },
           {
             "file": "02-autosave.png",
-            "fileSize": 2372231,
-            "sourceFileChecksum": "ac05b880476a266ed97fa29226f0c5b1"
+            "fileSize": 1997933,
+            "sourceFileChecksum": "7ee6dc0c56a85f6046cb7a026c0158f2"
           },
           {
             "file": "03-mood-trends.png",
-            "fileSize": 1459772,
-            "sourceFileChecksum": "d0966808a0cc32551b8289a723dbf7a5"
+            "fileSize": 1399984,
+            "sourceFileChecksum": "d5d50e89592c85222f98a0e1c623d89f"
           },
           {
             "file": "04-mood-stickers.png",
-            "fileSize": 1501683,
-            "sourceFileChecksum": "a77c94427024010c13177853e63df9af"
+            "fileSize": 1392118,
+            "sourceFileChecksum": "68d71cd15c8beb013e5addfdcaae8110"
           },
           {
             "file": "05-premium-themes.png",
-            "fileSize": 840607,
-            "sourceFileChecksum": "6985f4e9ac9eb87656d3391fef64d0c6"
+            "fileSize": 877246,
+            "sourceFileChecksum": "5c78c663672872dbb219adf6146af1a7"
           },
           {
             "file": "06-dark-appearance.png",
-            "fileSize": 1391361,
-            "sourceFileChecksum": "634641512338d76bdccf8a9ffa3b461d"
+            "fileSize": 1289984,
+            "sourceFileChecksum": "1372253c5ab7bcf4213c974746afb79f"
           }
         ]
       },
-      "id": "5f53237f-c76e-428f-bb77-ea2e015c8a50",
+      "id": "9e75350e-659b-4adc-b3e2-15ce9f32f1d3",
       "type": "appScreenshotSets"
     },
     "appStoreVersionScreenshotSet:IOS:1.0:es-ES:APP_IPHONE_67": {
@@ -3659,37 +3916,37 @@
         "screenshots": [
           {
             "file": "01-every-feeling.png",
-            "fileSize": 1639520,
-            "sourceFileChecksum": "a4588b1206a4912eb28270cc7cc848d5"
+            "fileSize": 1508579,
+            "sourceFileChecksum": "b20af80336826dd10e2633a8fa78367d"
           },
           {
             "file": "02-autosave.png",
-            "fileSize": 1988461,
-            "sourceFileChecksum": "811889223d955e0f70169dc2bbf72f0e"
+            "fileSize": 1762942,
+            "sourceFileChecksum": "5869e104f08723db20be4204b49fb863"
           },
           {
             "file": "03-mood-trends.png",
-            "fileSize": 1294309,
-            "sourceFileChecksum": "5a97c66adc3dcb22fb6b8d3fb9ad2456"
+            "fileSize": 1238708,
+            "sourceFileChecksum": "0d8a91ca99f2a9e80608af754c32a03d"
           },
           {
             "file": "04-mood-stickers.png",
-            "fileSize": 1400589,
-            "sourceFileChecksum": "73211875ee7a6d79e3bd03aba4cce5b4"
+            "fileSize": 1183861,
+            "sourceFileChecksum": "1ab2cfb17f616e92a5396d350fdc16d7"
           },
           {
             "file": "05-premium-themes.png",
-            "fileSize": 755054,
-            "sourceFileChecksum": "e30978ed03b1f6ed55df4dfd991f0b66"
+            "fileSize": 750193,
+            "sourceFileChecksum": "696a072b9b5e8cf61b2a3595c5e1afd0"
           },
           {
             "file": "06-dark-appearance.png",
-            "fileSize": 1245129,
-            "sourceFileChecksum": "9c299b09da8d9662bbb60a1e5a738372"
+            "fileSize": 1156128,
+            "sourceFileChecksum": "71872dd615a21c0414c792b49846ed25"
           }
         ]
       },
-      "id": "c682889b-fafd-493c-b70f-6102704fe74d",
+      "id": "3623dbcf-a703-4bff-a4a5-33e9d5225319",
       "type": "appScreenshotSets"
     },
     "appStoreVersionScreenshotSet:IOS:1.0:es-ES:APP_WATCH_SERIES_10": {
@@ -3697,12 +3954,37 @@
         "screenshots": [
           {
             "file": "01-check-in.png",
-            "fileSize": 30620,
-            "sourceFileChecksum": "82e05950cb84afde8c85d5ac622b0225"
+            "fileSize": 178540,
+            "sourceFileChecksum": "e837e95d4aa249e2783720de9f47a8d7"
+          },
+          {
+            "file": "02-moods.png",
+            "fileSize": 173780,
+            "sourceFileChecksum": "39f791096d6a95dd7af0a8c003e695d3"
+          },
+          {
+            "file": "03-pages.png",
+            "fileSize": 175477,
+            "sourceFileChecksum": "8b48b7ddd25199a5c39b4b5ab8f0fffc"
+          },
+          {
+            "file": "04-detail.png",
+            "fileSize": 167551,
+            "sourceFileChecksum": "3002ef26f4e797245cc696577cb77ebf"
+          },
+          {
+            "file": "05-mood-sad.png",
+            "fileSize": 179074,
+            "sourceFileChecksum": "d7a032f6c4290ecc18fac582a211c49d"
+          },
+          {
+            "file": "06-mood-laughing.png",
+            "fileSize": 176625,
+            "sourceFileChecksum": "129861153a285e327d0629326b4d9b4d"
           }
         ]
       },
-      "id": "863fba4b-4a9e-4338-b270-4244bdfebc0a",
+      "id": "c33bcc3d-d3dd-4531-9c80-b4068b587389",
       "type": "appScreenshotSets"
     },
     "appStoreVersionScreenshotSet:MAC_OS:1.0:ar-SA:APP_DESKTOP": {
@@ -3710,37 +3992,37 @@
         "screenshots": [
           {
             "file": "01-every-feeling.png",
-            "fileSize": 1212554,
-            "sourceFileChecksum": "fadbfa0d840a0847aade8b6b777845dd"
+            "fileSize": 1333763,
+            "sourceFileChecksum": "81b3f69331438ce19eaa94ba94a7b209"
           },
           {
             "file": "02-autosave.png",
-            "fileSize": 1442574,
-            "sourceFileChecksum": "4550fd263685a195d11527825a298b17"
+            "fileSize": 1497310,
+            "sourceFileChecksum": "51d1268987cec8f77e4e242434a87f0a"
           },
           {
             "file": "03-mood-trends.png",
-            "fileSize": 883119,
-            "sourceFileChecksum": "2f978124b94a3e12c17b40e00115c776"
+            "fileSize": 945643,
+            "sourceFileChecksum": "2338c34d19264bdf8d9150310e1a2128"
           },
           {
             "file": "04-mood-stickers.png",
-            "fileSize": 909894,
-            "sourceFileChecksum": "dbc60d87977cc02aa506c7546c1c802b"
+            "fileSize": 1108941,
+            "sourceFileChecksum": "39ec50cd4f2bd3df12a3b82daa186396"
           },
           {
             "file": "05-premium-themes.png",
-            "fileSize": 588290,
-            "sourceFileChecksum": "52f9ceb94a39abbb375deab2b5aadddb"
+            "fileSize": 492807,
+            "sourceFileChecksum": "0fccdb32a1630472c10ee610ce2f3595"
           },
           {
             "file": "06-dark-appearance.png",
-            "fileSize": 813612,
-            "sourceFileChecksum": "0271c696fd53b0bf047c777b15c83d9e"
+            "fileSize": 978945,
+            "sourceFileChecksum": "44e5efca4de5018b04d12852240c4f82"
           }
         ]
       },
-      "id": "f1179cf8-0af7-4bc8-aa7e-f936f9544312",
+      "id": "925dfcb8-325e-4db6-baaf-3dc707de2346",
       "type": "appScreenshotSets"
     },
     "appStoreVersionScreenshotSet:MAC_OS:1.0:en-US:APP_DESKTOP": {
@@ -3748,37 +4030,37 @@
         "screenshots": [
           {
             "file": "01-every-feeling.png",
-            "fileSize": 1227004,
-            "sourceFileChecksum": "cf044d80bdce8636471e45de00518d2e"
+            "fileSize": 1372562,
+            "sourceFileChecksum": "31def2c42303429a3ed60800c7381fdb"
           },
           {
             "file": "02-autosave.png",
-            "fileSize": 1433574,
-            "sourceFileChecksum": "0e31807118eb1d8e34f5fb85e882ddd7"
+            "fileSize": 1341091,
+            "sourceFileChecksum": "3baa5fce5281dc2564b52c5b49051f78"
           },
           {
             "file": "03-mood-trends.png",
-            "fileSize": 886685,
-            "sourceFileChecksum": "4b10fc0237c112144523512218d03201"
+            "fileSize": 985104,
+            "sourceFileChecksum": "a8ac294d1cef1b44dc01ec3c31d10089"
           },
           {
             "file": "04-mood-stickers.png",
-            "fileSize": 923640,
-            "sourceFileChecksum": "cafb15a148aaf3375281b85d7fbfe9e6"
+            "fileSize": 1088466,
+            "sourceFileChecksum": "b02e474a52613f1289e8c25171dc1279"
           },
           {
             "file": "05-premium-themes.png",
-            "fileSize": 601037,
-            "sourceFileChecksum": "be4d7736f788eb0bc13605f117600541"
+            "fileSize": 474539,
+            "sourceFileChecksum": "135e0e3522b1bdbb4a1bb6b87b85e71d"
           },
           {
             "file": "06-dark-appearance.png",
-            "fileSize": 817930,
-            "sourceFileChecksum": "87d2c53580c3242744f7e332a43b1bbc"
+            "fileSize": 860752,
+            "sourceFileChecksum": "4590840ede4b33feedcdcf15d04f4c0f"
           }
         ]
       },
-      "id": "a431b7e6-5dae-40a7-b5fd-3b4df1daf24a",
+      "id": "c8292c23-8680-469c-8dbe-3f9befbc2a77",
       "type": "appScreenshotSets"
     },
     "appStoreVersionScreenshotSet:MAC_OS:1.0:es-ES:APP_DESKTOP": {
@@ -3786,37 +4068,106 @@
         "screenshots": [
           {
             "file": "01-every-feeling.png",
-            "fileSize": 1253681,
-            "sourceFileChecksum": "6c69f3cea4b943f98eb2f965874283ec"
+            "fileSize": 1228731,
+            "sourceFileChecksum": "9851a546da662227f32c38b1497302b3"
           },
           {
             "file": "02-autosave.png",
-            "fileSize": 1490559,
-            "sourceFileChecksum": "3f117413893baf8525026022fe0c8a25"
+            "fileSize": 1362859,
+            "sourceFileChecksum": "3c99ff38372e9edc7213571ace56e30d"
           },
           {
             "file": "03-mood-trends.png",
-            "fileSize": 916412,
-            "sourceFileChecksum": "1e5d234acdfb0ec85e5f4c76eae72d16"
+            "fileSize": 887870,
+            "sourceFileChecksum": "6910dd3cfaaa5e0d48c36c89bab05db3"
           },
           {
             "file": "04-mood-stickers.png",
-            "fileSize": 948849,
-            "sourceFileChecksum": "33d09e4475194ee02d47d525e2b3b58c"
+            "fileSize": 1012742,
+            "sourceFileChecksum": "a3e21c02cdeb897758c81094ded4f097"
           },
           {
             "file": "05-premium-themes.png",
-            "fileSize": 609735,
-            "sourceFileChecksum": "e8df79ce2921afcb1962314607071eb8"
+            "fileSize": 480181,
+            "sourceFileChecksum": "36fa8e0c3c400e530721ae6835b6d24c"
           },
           {
             "file": "06-dark-appearance.png",
-            "fileSize": 842034,
-            "sourceFileChecksum": "3ab44b7bf92b8a60f743d8aec3df73b1"
+            "fileSize": 873976,
+            "sourceFileChecksum": "7d9e9fe5e4c93986b5705006dcfeb244"
           }
         ]
       },
-      "id": "a77efdec-2172-47cb-9023-fb877ff8acea",
+      "id": "abdac8a7-b996-4c20-8137-c0ce0249d8ec",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:VISION_OS:1.0:ar-SA:APP_APPLE_VISION_PRO": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-today.png",
+            "fileSize": 5111785,
+            "sourceFileChecksum": "d144f4932e5e1574c47461e47e6b1fd5"
+          },
+          {
+            "file": "02-pages.png",
+            "fileSize": 5165414,
+            "sourceFileChecksum": "0e95381eca3dd1be773bb6b2fc64e5aa"
+          },
+          {
+            "file": "03-insights.png",
+            "fileSize": 5080648,
+            "sourceFileChecksum": "e8eb6f68d6a143c3f97143f06e49a645"
+          }
+        ]
+      },
+      "id": "fd3d71b9-9673-4651-b461-fa19abc66038",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:VISION_OS:1.0:en-US:APP_APPLE_VISION_PRO": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-today.png",
+            "fileSize": 5138972,
+            "sourceFileChecksum": "90e7f2b35c43aed2aa5bc2bb92836e27"
+          },
+          {
+            "file": "02-pages.png",
+            "fileSize": 5202262,
+            "sourceFileChecksum": "d94ce28f9cd64649ffd97acc776fece2"
+          },
+          {
+            "file": "03-insights.png",
+            "fileSize": 5090317,
+            "sourceFileChecksum": "b92369f59ff3ff0c09ad37b3599237d6"
+          }
+        ]
+      },
+      "id": "4eaf387c-2211-4146-bcda-51c184aaa742",
+      "type": "appScreenshotSets"
+    },
+    "appStoreVersionScreenshotSet:VISION_OS:1.0:es-ES:APP_APPLE_VISION_PRO": {
+      "fields": {
+        "screenshots": [
+          {
+            "file": "01-today.png",
+            "fileSize": 5157646,
+            "sourceFileChecksum": "f8d4797162e4c78eedc1e89c42ebff15"
+          },
+          {
+            "file": "02-pages.png",
+            "fileSize": 5216409,
+            "sourceFileChecksum": "41a451cfbd73c4a87f80cc2001ed8208"
+          },
+          {
+            "file": "03-insights.png",
+            "fileSize": 5105571,
+            "sourceFileChecksum": "18e203a28c26221b81a270ac7388903c"
+          }
+        ]
+      },
+      "id": "c880a535-6aa9-4c76-bb85-37cc4999eae2",
       "type": "appScreenshotSets"
     },
     "availability": {
@@ -3857,6 +4208,558 @@
       },
       "id": "6819117325",
       "type": "inAppPurchases"
+    },
+    "inAppPurchaseAvailability:com.transfinite.MoodMargins.theme.botanical": {
+      "fields": {
+        "availableInNewTerritories": true,
+        "availableTerritories": [
+          "AFG",
+          "AGO",
+          "AIA",
+          "ALB",
+          "ARE",
+          "ARG",
+          "ARM",
+          "ATG",
+          "AUS",
+          "AUT",
+          "AZE",
+          "BEL",
+          "BEN",
+          "BFA",
+          "BGR",
+          "BHR",
+          "BHS",
+          "BIH",
+          "BLR",
+          "BLZ",
+          "BMU",
+          "BOL",
+          "BRA",
+          "BRB",
+          "BRN",
+          "BTN",
+          "BWA",
+          "CAN",
+          "CHE",
+          "CHL",
+          "CHN",
+          "CIV",
+          "CMR",
+          "COD",
+          "COG",
+          "COL",
+          "CPV",
+          "CRI",
+          "CYM",
+          "CYP",
+          "CZE",
+          "DEU",
+          "DMA",
+          "DNK",
+          "DOM",
+          "DZA",
+          "ECU",
+          "EGY",
+          "ESP",
+          "EST",
+          "FIN",
+          "FJI",
+          "FRA",
+          "FSM",
+          "GAB",
+          "GBR",
+          "GEO",
+          "GHA",
+          "GMB",
+          "GNB",
+          "GRC",
+          "GRD",
+          "GTM",
+          "GUY",
+          "HKG",
+          "HND",
+          "HRV",
+          "HUN",
+          "IDN",
+          "IND",
+          "IRL",
+          "IRQ",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JAM",
+          "JOR",
+          "JPN",
+          "KAZ",
+          "KEN",
+          "KGZ",
+          "KHM",
+          "KNA",
+          "KOR",
+          "KWT",
+          "LAO",
+          "LBN",
+          "LBR",
+          "LBY",
+          "LCA",
+          "LKA",
+          "LTU",
+          "LUX",
+          "LVA",
+          "MAC",
+          "MAR",
+          "MDA",
+          "MDG",
+          "MDV",
+          "MEX",
+          "MKD",
+          "MLI",
+          "MLT",
+          "MMR",
+          "MNE",
+          "MNG",
+          "MOZ",
+          "MRT",
+          "MSR",
+          "MUS",
+          "MWI",
+          "MYS",
+          "NAM",
+          "NER",
+          "NGA",
+          "NIC",
+          "NLD",
+          "NOR",
+          "NPL",
+          "NRU",
+          "NZL",
+          "OMN",
+          "PAK",
+          "PAN",
+          "PER",
+          "PHL",
+          "PLW",
+          "PNG",
+          "POL",
+          "PRT",
+          "PRY",
+          "QAT",
+          "ROU",
+          "RUS",
+          "RWA",
+          "SAU",
+          "SEN",
+          "SGP",
+          "SLB",
+          "SLE",
+          "SLV",
+          "SRB",
+          "STP",
+          "SUR",
+          "SVK",
+          "SVN",
+          "SWE",
+          "SWZ",
+          "SYC",
+          "TCA",
+          "TCD",
+          "THA",
+          "TJK",
+          "TKM",
+          "TON",
+          "TTO",
+          "TUN",
+          "TUR",
+          "TWN",
+          "TZA",
+          "UGA",
+          "UKR",
+          "URY",
+          "USA",
+          "UZB",
+          "VCT",
+          "VEN",
+          "VGB",
+          "VNM",
+          "VUT",
+          "XKS",
+          "YEM",
+          "ZAF",
+          "ZMB",
+          "ZWE"
+        ]
+      },
+      "id": "6819117140",
+      "type": "inAppPurchaseAvailabilities"
+    },
+    "inAppPurchaseAvailability:com.transfinite.MoodMargins.theme.coastal": {
+      "fields": {
+        "availableInNewTerritories": true,
+        "availableTerritories": [
+          "AFG",
+          "AGO",
+          "AIA",
+          "ALB",
+          "ARE",
+          "ARG",
+          "ARM",
+          "ATG",
+          "AUS",
+          "AUT",
+          "AZE",
+          "BEL",
+          "BEN",
+          "BFA",
+          "BGR",
+          "BHR",
+          "BHS",
+          "BIH",
+          "BLR",
+          "BLZ",
+          "BMU",
+          "BOL",
+          "BRA",
+          "BRB",
+          "BRN",
+          "BTN",
+          "BWA",
+          "CAN",
+          "CHE",
+          "CHL",
+          "CHN",
+          "CIV",
+          "CMR",
+          "COD",
+          "COG",
+          "COL",
+          "CPV",
+          "CRI",
+          "CYM",
+          "CYP",
+          "CZE",
+          "DEU",
+          "DMA",
+          "DNK",
+          "DOM",
+          "DZA",
+          "ECU",
+          "EGY",
+          "ESP",
+          "EST",
+          "FIN",
+          "FJI",
+          "FRA",
+          "FSM",
+          "GAB",
+          "GBR",
+          "GEO",
+          "GHA",
+          "GMB",
+          "GNB",
+          "GRC",
+          "GRD",
+          "GTM",
+          "GUY",
+          "HKG",
+          "HND",
+          "HRV",
+          "HUN",
+          "IDN",
+          "IND",
+          "IRL",
+          "IRQ",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JAM",
+          "JOR",
+          "JPN",
+          "KAZ",
+          "KEN",
+          "KGZ",
+          "KHM",
+          "KNA",
+          "KOR",
+          "KWT",
+          "LAO",
+          "LBN",
+          "LBR",
+          "LBY",
+          "LCA",
+          "LKA",
+          "LTU",
+          "LUX",
+          "LVA",
+          "MAC",
+          "MAR",
+          "MDA",
+          "MDG",
+          "MDV",
+          "MEX",
+          "MKD",
+          "MLI",
+          "MLT",
+          "MMR",
+          "MNE",
+          "MNG",
+          "MOZ",
+          "MRT",
+          "MSR",
+          "MUS",
+          "MWI",
+          "MYS",
+          "NAM",
+          "NER",
+          "NGA",
+          "NIC",
+          "NLD",
+          "NOR",
+          "NPL",
+          "NRU",
+          "NZL",
+          "OMN",
+          "PAK",
+          "PAN",
+          "PER",
+          "PHL",
+          "PLW",
+          "PNG",
+          "POL",
+          "PRT",
+          "PRY",
+          "QAT",
+          "ROU",
+          "RUS",
+          "RWA",
+          "SAU",
+          "SEN",
+          "SGP",
+          "SLB",
+          "SLE",
+          "SLV",
+          "SRB",
+          "STP",
+          "SUR",
+          "SVK",
+          "SVN",
+          "SWE",
+          "SWZ",
+          "SYC",
+          "TCA",
+          "TCD",
+          "THA",
+          "TJK",
+          "TKM",
+          "TON",
+          "TTO",
+          "TUN",
+          "TUR",
+          "TWN",
+          "TZA",
+          "UGA",
+          "UKR",
+          "URY",
+          "USA",
+          "UZB",
+          "VCT",
+          "VEN",
+          "VGB",
+          "VNM",
+          "VUT",
+          "XKS",
+          "YEM",
+          "ZAF",
+          "ZMB",
+          "ZWE"
+        ]
+      },
+      "id": "6819117161",
+      "type": "inAppPurchaseAvailabilities"
+    },
+    "inAppPurchaseAvailability:com.transfinite.MoodMargins.theme.sunset": {
+      "fields": {
+        "availableInNewTerritories": true,
+        "availableTerritories": [
+          "AFG",
+          "AGO",
+          "AIA",
+          "ALB",
+          "ARE",
+          "ARG",
+          "ARM",
+          "ATG",
+          "AUS",
+          "AUT",
+          "AZE",
+          "BEL",
+          "BEN",
+          "BFA",
+          "BGR",
+          "BHR",
+          "BHS",
+          "BIH",
+          "BLR",
+          "BLZ",
+          "BMU",
+          "BOL",
+          "BRA",
+          "BRB",
+          "BRN",
+          "BTN",
+          "BWA",
+          "CAN",
+          "CHE",
+          "CHL",
+          "CHN",
+          "CIV",
+          "CMR",
+          "COD",
+          "COG",
+          "COL",
+          "CPV",
+          "CRI",
+          "CYM",
+          "CYP",
+          "CZE",
+          "DEU",
+          "DMA",
+          "DNK",
+          "DOM",
+          "DZA",
+          "ECU",
+          "EGY",
+          "ESP",
+          "EST",
+          "FIN",
+          "FJI",
+          "FRA",
+          "FSM",
+          "GAB",
+          "GBR",
+          "GEO",
+          "GHA",
+          "GMB",
+          "GNB",
+          "GRC",
+          "GRD",
+          "GTM",
+          "GUY",
+          "HKG",
+          "HND",
+          "HRV",
+          "HUN",
+          "IDN",
+          "IND",
+          "IRL",
+          "IRQ",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JAM",
+          "JOR",
+          "JPN",
+          "KAZ",
+          "KEN",
+          "KGZ",
+          "KHM",
+          "KNA",
+          "KOR",
+          "KWT",
+          "LAO",
+          "LBN",
+          "LBR",
+          "LBY",
+          "LCA",
+          "LKA",
+          "LTU",
+          "LUX",
+          "LVA",
+          "MAC",
+          "MAR",
+          "MDA",
+          "MDG",
+          "MDV",
+          "MEX",
+          "MKD",
+          "MLI",
+          "MLT",
+          "MMR",
+          "MNE",
+          "MNG",
+          "MOZ",
+          "MRT",
+          "MSR",
+          "MUS",
+          "MWI",
+          "MYS",
+          "NAM",
+          "NER",
+          "NGA",
+          "NIC",
+          "NLD",
+          "NOR",
+          "NPL",
+          "NRU",
+          "NZL",
+          "OMN",
+          "PAK",
+          "PAN",
+          "PER",
+          "PHL",
+          "PLW",
+          "PNG",
+          "POL",
+          "PRT",
+          "PRY",
+          "QAT",
+          "ROU",
+          "RUS",
+          "RWA",
+          "SAU",
+          "SEN",
+          "SGP",
+          "SLB",
+          "SLE",
+          "SLV",
+          "SRB",
+          "STP",
+          "SUR",
+          "SVK",
+          "SVN",
+          "SWE",
+          "SWZ",
+          "SYC",
+          "TCA",
+          "TCD",
+          "THA",
+          "TJK",
+          "TKM",
+          "TON",
+          "TTO",
+          "TUN",
+          "TUR",
+          "TWN",
+          "TZA",
+          "UGA",
+          "UKR",
+          "URY",
+          "USA",
+          "UZB",
+          "VCT",
+          "VEN",
+          "VGB",
+          "VNM",
+          "VUT",
+          "XKS",
+          "YEM",
+          "ZAF",
+          "ZMB",
+          "ZWE"
+        ]
+      },
+      "id": "6819117325",
+      "type": "inAppPurchaseAvailabilities"
     },
     "inAppPurchaseLocalization:com.transfinite.MoodMargins.theme.botanical:ar-SA": {
       "fields": {
@@ -3972,31 +4875,31 @@
     "inAppPurchaseReviewScreenshot:com.transfinite.MoodMargins.theme.botanical": {
       "fields": {
         "screenshot": {
-          "fileSize": 540962,
-          "sourceFileChecksum": "2563c3cb9ef9ee2b102a1c729c3e7dcb"
+          "fileSize": 666571,
+          "sourceFileChecksum": "a93ac664009a993d2fc7c88ef74a20fd"
         }
       },
-      "id": "761d29a8-f9b8-418d-bf82-662d74dcca9c",
+      "id": "a6a6b76a-f0b2-4db9-9ac9-00de00511a79",
       "type": "inAppPurchaseAppStoreReviewScreenshots"
     },
     "inAppPurchaseReviewScreenshot:com.transfinite.MoodMargins.theme.coastal": {
       "fields": {
         "screenshot": {
-          "fileSize": 523173,
-          "sourceFileChecksum": "66e159a6584ecbb559530ae3df7c7355"
+          "fileSize": 657858,
+          "sourceFileChecksum": "d4149baee324e3894aa70d283e62b7a1"
         }
       },
-      "id": "ea3fbbb8-133e-4353-bee3-699096f4ccf2",
+      "id": "53db8af2-4db9-47d6-9965-0020ba06c583",
       "type": "inAppPurchaseAppStoreReviewScreenshots"
     },
     "inAppPurchaseReviewScreenshot:com.transfinite.MoodMargins.theme.sunset": {
       "fields": {
         "screenshot": {
-          "fileSize": 478892,
-          "sourceFileChecksum": "78ab4b7054f6a58ec338c7a5607a9b20"
+          "fileSize": 595096,
+          "sourceFileChecksum": "1457e0bf908322af2978191ece3b8b96"
         }
       },
-      "id": "8c5769ca-9f3e-49cd-98d6-72e567852489",
+      "id": "c8195065-bb50-433a-9e2b-6b9fcb141d3d",
       "type": "inAppPurchaseAppStoreReviewScreenshots"
     },
     "pricing": {
@@ -4749,31 +5652,31 @@
     "subscriptionReviewScreenshot:com.transfinite.MoodMargins.plus.monthly": {
       "fields": {
         "screenshot": {
-          "fileSize": 350197,
-          "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+          "fileSize": 1453052,
+          "sourceFileChecksum": "877fc451f11052d8deadce6789e21afb"
         }
       },
-      "id": "b1448708-3dc8-4494-9b8e-b7b0cbddf0d2",
+      "id": "a60458a9-18c8-42ed-89f8-1fecd128e269",
       "type": "subscriptionAppStoreReviewScreenshots"
     },
     "subscriptionReviewScreenshot:com.transfinite.MoodMargins.plus.weekly": {
       "fields": {
         "screenshot": {
-          "fileSize": 350197,
-          "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+          "fileSize": 1452730,
+          "sourceFileChecksum": "adf64ef5afaf90c6f7fa168d47c56ecd"
         }
       },
-      "id": "b8e82042-db25-4b9a-9fe8-cc1d95494227",
+      "id": "5cbfe74b-3ec3-4317-8a53-e4a15dfc7ced",
       "type": "subscriptionAppStoreReviewScreenshots"
     },
     "subscriptionReviewScreenshot:com.transfinite.MoodMargins.plus.yearly": {
       "fields": {
         "screenshot": {
-          "fileSize": 350197,
-          "sourceFileChecksum": "4955f0897e8c7bf883a532a5492add61"
+          "fileSize": 1452644,
+          "sourceFileChecksum": "7a54869a83c4a2c1551aeab149bb62f7"
         }
       },
-      "id": "fe8f52d2-c870-4708-977a-eb6585ad82f0",
+      "id": "973282e6-a882-4bdc-9c04-bea8cc3aa111",
       "type": "subscriptionAppStoreReviewScreenshots"
     }
   }

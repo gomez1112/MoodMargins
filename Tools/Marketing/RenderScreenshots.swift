@@ -292,5 +292,16 @@ func render() throws {
         guard CGImageDestinationFinalize(destination) else { throw CocoaError(.fileWriteUnknown) }
         print("watch/\(filename) \(capture.width)×\(capture.height)")
     }
+    for (index, name) in ["today", "pages", "insights"].enumerated() {
+        let url = input.appending(path: "vision-\(name).png")
+        guard let source = CGImageSourceCreateWithURL(url as CFURL, nil), let capture = CGImageSourceCreateImageAtIndex(source, 0, nil) else { continue }
+        let directory = output.appending(path: "vision", directoryHint: .isDirectory)
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        let filename = "0\(index + 1)-\(name).png"
+        guard let destination = CGImageDestinationCreateWithURL(directory.appending(path: filename) as CFURL, UTType.png.identifier as CFString, 1, nil) else { throw CocoaError(.fileWriteUnknown) }
+        CGImageDestinationAddImage(destination, try opaqueImage(capture), nil)
+        guard CGImageDestinationFinalize(destination) else { throw CocoaError(.fileWriteUnknown) }
+        print("vision/\(filename) \(capture.width)×\(capture.height)")
+    }
 }
 try render()

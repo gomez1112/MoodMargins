@@ -1,0 +1,19 @@
+{
+  "audio" : {
+    "channels" : 2,
+    "codec" : "AAC",
+    "content" : "silence",
+    "sampleRate" : 48000,
+    "targetBitrate" : 256000
+  },
+  "bytes" : 8015108,
+  "codec" : "H.264",
+  "durationSeconds" : 21.666666666666668,
+  "file" : "iphone.mp4",
+  "frames" : 650,
+  "framesPerSecond" : 30,
+  "height" : 1920,
+  "profile" : "High 4.0",
+  "targetBitrate" : 11000000,
+  "width" : 886
+}

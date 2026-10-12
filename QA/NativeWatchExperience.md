@@ -1,17 +1,19 @@
-# Native Watch experience — October 10, 2026
+# Native Watch experience — October 11, 2026
 
-The Watch app now uses vertically paginated native tabs for Today and Recent pages. The quick check-in contains a large animated mood control and native note entry. A native, Crown-scrollable list presents the five mood choices. Recent entries open a separate, readable detail view. Save-status copy is removed; selection saves immediately, and note changes retain the existing debounce and lifecycle saves. Save errors remain visible.
+The Watch app was completely redesigned around a direct check-in. Today contains a horizontal carousel of the five bundled animated emotions, a clear selected-state badge, and native one-tap note entry. Swiping previews a mood; tapping confirms and saves it. Both controls fit together on the 42 mm and 46 mm simulators. Native inline navigation and a plum-to-indigo canvas give the content more room.
 
-Watch emoji frames are exported from the exact five Lottie files used by the phone app through the already-resolved DotLottiePlayer framework. The 178 transparent, 160-pixel frames total 1,811,524 bytes. Playback uses SwiftUI TimelineView at 15 fps; only the active check-in/detail or selected mood animates. It pauses for Reduce Motion, a dimmed display, inactive scenes, and disappeared views. Notes and history are marked privacy-sensitive for the Always On display. No UIKit bridge or additional package dependency was introduced.
+Recent Pages uses compact native List rows with circular mood stickers, dates, and note excerpts. A separate detail view places a smaller sticker beside the mood title and gives the note the remaining space. The full-screen paper cards and separate mood-selection sheet were removed. Today and Recent Pages retain the native vertical page navigation and Crown scrolling.
 
-Regenerate the assets with `zsh Tools/Assets/ExportWatchMoodFrames.sh <existing-dotlottie-ios-checkout>`. The exporter handles the core's millisecond timing, preserves its already-rendered frame zero, validates nonempty frames, and caps frame counts to prevent an unexpectedly large export. Generated counts and durations live in WatchMoodAnimationFrames.swift.
+The shared palette supplies cream, blush, sky, and lavender stickers against the darker canvas. SwiftUI text retains Dynamic Type and the mood buttons provide localized labels and selected traits. Reduce Motion disables transition animation. Only the focused mood animates; playback pauses for dimmed displays, inactive scenes, and disappeared views. Notes and history remain privacy-sensitive.
+
+Mood selection saves immediately. Notes retain the existing debounce and lifecycle saves; no app Save button or save-status copy was added. Errors remain visible. Watch entries remain local to the Watch; phone sync and premium-theme transfer were not added.
 
 ## Verification
 
-- Watch and companion iOS Bitrig builds passed using the 27.0 SDKs and Swift 6.4. Final iOS, macOS, and visionOS Simulator builds also passed with no diagnostics.
-- All four isolated Watch model tests passed, including explicit mood selection, persistence and stable entry identity, cancellation/lifecycle saving, and protection of unreadable storage.
-- Inspected the live Watch check-in, native note control, and native mood sheet; all five choices are reachable by scrolling. Did not add fictional entries to the user's journal during this inspection.
-- Verified every generated asset exists and every mood includes distinct animation frames. Inspected an exported frame for correct color and transparency.
-- New accessibility copy is localized in English, Spanish, and Arabic. Native labels and rows retain system typography and wrapping.
+- The final companion and embedded Watch distribution build uploaded successfully as iOS 9 and passed Apple's processing as VALID.
+- Four isolated Swift Testing model tests passed: explicit mood creation, stable entry identity and reopening, cancellation followed by lifecycle save, and protection of unreadable storage.
+- On the 42 mm simulator, swiped the horizontal carousel, selected Laughing, and observed the native note keyboard opening. Automated text injection could not verify committing text through the system keyboard; model-level note persistence is covered by the tests.
+- Inspected Today, history, and detail on 42 mm and 46 mm simulators, and captured six native images in English, Spanish, and Arabic.
+- Marketing capture mode uses fictional entries and does not write to the normal journal.
 
-The 40 mm built-in simulator did not boot after a device change. Returned the device selection to 49 mm, but a later preview launch still waited for boot after successful compilation and was interrupted. The live 49 mm inspection above happened before the device change; the 40 mm runtime layout remains unverified. Watch entries continue to persist locally; this change does not add phone synchronization.
+The 178 transparent mood frames are exported from the exact five bundled Lottie files used by the main app and play at 15 fps. Regenerate them with `zsh Tools/Assets/ExportWatchMoodFrames.sh <existing-dotlottie-ios-checkout>`. No new dependency or UIKit bridge was added.

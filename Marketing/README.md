@@ -1,28 +1,40 @@
-# MoodMargins App Store artwork
+# MoodMargins App Store assets
 
-The listing contains six marketing screenshots for iPhone, iPad, and Mac in English, Spanish, and Arabic, plus one Watch check-in screenshot in each language. These use the actual app's rendered SwiftUI views and bundled Lottie frames with fictional entries. They contain no real journal, fabricated purchase access, or simulated AI results.
+The refreshed listing has 81 screenshots in English, Spanish, and Arabic: six each for iPhone, iPad, Mac, and Watch, and three for Apple Vision Pro per language. Nine App Preview videos cover iPhone, iPad, and Mac in all three languages. Six separate review images show the native StoreKit subscription and theme purchase screens.
 
-Upload-ready files and display-order manifests are under `appStoreConnect/appStoreVersion/`. Preview sheets: [English](ScreenshotPreview-English.png), [Spanish](ScreenshotPreview-Spanish.png), and [Arabic](ScreenshotPreview-Arabic.png). The original localized captures are in `SourceCaptures/` for reproducibility. Mac captures show the actual feature views in their own native window with navigation chrome excluded. Theme artwork crops the shared theme preview rather than presenting an unloaded StoreKit product as a working purchase screen.
+Review the complete artwork: [English](ScreenshotPreview-English.png), [Spanish](ScreenshotPreview-Spanish.png), [Arabic](ScreenshotPreview-Arabic.png). [Video contact sheet](AppPreviews/ContactSheet.png) and [upload records](AppPreviews/Uploads.json) are separate. Upload-ready screenshot images and ordered manifests live under `appStoreConnect/appStoreVersion/`; videos live in `AppPreviews/`.
 
-| Device | PNG pixels | Listing display type |
-| --- | --- | --- |
-| iPhone 6.9-inch | 1320 × 2868 | app-iphone-67 |
-| iPad 13-inch | 2064 × 2752 | app-ipad-pro-3gen-129 |
-| Mac | 2880 × 1800 | app-desktop |
-| Apple Watch Series 12 / 46 mm | 416 × 496 | app-watch-series-10 |
+| Platform | Screenshots per language | PNG pixels | Preview pixels |
+| --- | --- | --- | --- |
+| iPhone | 6 | 1320 × 2868 | 886 × 1920 |
+| iPad | 6 | 2064 × 2752 | 1200 × 1600 |
+| Mac | 6 | 2880 × 1800 | 1920 × 1080 |
+| Watch Series 12, 46 mm | 6 | 416 × 496 | — |
+| Apple Vision Pro | 3 | 3840 × 2160 | — |
 
-There are 57 public exports in total and six separate product review images. Exports are RGB PNGs without alpha. [Apple screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/).
+All public screenshot exports are RGB PNGs without alpha. Watch and Vision captures retain native pixels. Mac images use the actual desktop window with its sidebar, toolbar, and window controls. They do not use an iPad frame. The Mac sticker screenshot scrolls the real Insights screen to the mood distribution. Theme posters explicitly state that Plus or a separate theme purchase is required.
 
-To regenerate the posters on the installed Xcode toolchain, run from the project root:
+Videos contain live screen recordings of the actual app. They use H.264 High 4.0 at a constant 30 fps, with a 48 kHz stereo AAC track containing silence; they run approximately 21–22 seconds and are under 9 MB each. Native windows fit inside the required preview canvas without stretching. Apple processes video delivery separately from accepting the upload.
+
+Fictional journal entries run in DEBUG-only, isolated capture stores. No real journal content, simulated AI output, or fabricated purchase access appears in public artwork. The six product review captures use Apple's local StoreKit test configuration with the same product identifiers, plan periods, and US prices as the live catalog. These verify the UI; they do not prove on-device sandbox billing.
+
+The asset choices follow [Apple's screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/), [preview specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/app-preview-specifications/), and [accurate metadata guidelines](https://developer.apple.com/app-store/review/guidelines/#accurate-metadata). These checks do not constitute App Review approval.
+
+## Reproduction
+
+Build capture binaries using `bitrig build`. iPhone and iPad still captures are produced by `JournalCaptureUITests` for each language. The Mac utility uses ScreenCaptureKit's current-process filter and exports only the app's own window. It handles native Metal-backed Lottie views without capturing the desktop. Watch capture routes include Today, the horizontal mood selector, Recent Pages, a page detail, and two additional mood pages.
 
 ```sh
-xcrun swift -swift-version 6 -default-isolation MainActor -module-cache-path /private/tmp/MoodMargins-Screenshot-Modules Tools/Marketing/RenderScreenshots.swift Marketing/SourceCaptures /private/tmp/MoodMargins-Artwork en
+python3 Tools/Marketing/CaptureNativeMac.py <built-Mac-app> Marketing/SourceCaptures
+python3 Tools/Marketing/CaptureSimulatorAssets.py watch <simulator-id> <built-Watch-app> Marketing/SourceCaptures
+python3 Tools/Marketing/CaptureSimulatorAssets.py vision <simulator-id> <built-Vision-app> Marketing/SourceCaptures
+python3 Tools/Marketing/CaptureSimulatorAssets.py iphone <simulator-id> <built-iPhone-app> Marketing/SourceCaptures
+python3 Tools/Marketing/CaptureSimulatorAssets.py ipad <simulator-id> <built-iPad-app> Marketing/SourceCaptures
+python3 Tools/Marketing/EncodeAppPreviews.py
+xcrun swift -swift-version 6 -default-isolation MainActor -module-cache-path /private/tmp/MoodMargins-Screenshot-Modules Tools/Marketing/RenderScreenshots.swift Marketing/SourceCaptures Marketing/Rendered en
+python3 Tools/Marketing/SyncScreenshotAssets.py
 ```
 
-Use `es` or `ar` for the other languages. Keep the native simulator screenshots at their original resolution.
+Render `es` and `ar` before syncing. `Marketing/Rendered/` and raw video recordings are intermediate exports excluded from Git; final listing images, final videos, source stills, review images, and tools are retained. The notebook foreground used by Icon Composer is `MoodMarginsIcon.icon/Assets/Notebook.png`. Apple obtains the App Store icon from the uploaded app build, rather than a listing image upload.
 
-`JournalCaptureUITests` launch a DEBUG-only in-memory journal, select real tabs and theme previews, and capture each locale. The Mac capture test uses ScreenCaptureKit's current-process window filter; it never captures the desktop. Capture mode and its sample content are excluded from Release. Watch capture mode also avoids writes to the normal journal. `Tools/QA/CheckWatchAutosave.sh` tests the actual Watch model source with four isolated Swift Testing fixtures, without adding an app dependency.
-
-Review and apply the complete listing in **Bitrig → Project Settings → Distribute → App Store Listing**. See [ReleaseReadiness.md](ReleaseReadiness.md) for remaining release steps.
-
-The six product review images show the real Customize benefits or theme preview, at a supported iPhone resolution. Catalog loading is pending metadata application; replace these review images with loaded purchase screens after propagation and device testing before submission. Public artwork does not show unavailable StoreKit controls.
+See [ReleaseReadiness.md](ReleaseReadiness.md) for the processed builds, listing status, and the remaining privacy-label action.

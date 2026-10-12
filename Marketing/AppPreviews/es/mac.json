@@ -1,0 +1,19 @@
+{
+  "audio" : {
+    "channels" : 2,
+    "codec" : "AAC",
+    "content" : "silence",
+    "sampleRate" : 48000,
+    "targetBitrate" : 256000
+  },
+  "bytes" : 2999326,
+  "codec" : "H.264",
+  "durationSeconds" : 20.600000000000001,
+  "file" : "mac.mp4",
+  "frames" : 618,
+  "framesPerSecond" : 30,
+  "height" : 1080,
+  "profile" : "High 4.0",
+  "targetBitrate" : 11000000,
+  "width" : 1920
+}

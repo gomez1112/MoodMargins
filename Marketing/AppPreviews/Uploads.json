@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-10-11",
+  "previews": [
+    {
+      "language": "en",
+      "device": "mac",
+      "id": "f8400019-672e-86a9-8100-26b3bd67c97d",
+      "bytes": 2972576,
+      "md5": "5f4f9d9ed507c7f8606d19a5b69e6a5c",
+      "state": "COMPLETE",
+      "video": "COMPLETE",
+      "error": []
+    },
+    {
+      "language": "en",
+      "device": "iphone",
+      "id": "b1800019-672e-86a9-8138-a538b18db3fe",
+      "bytes": 7360398,
+      "md5": "f6162e938c0dd0b3c8ccada9acd3ef44",
+      "state": "COMPLETE",
+      "video": "COMPLETE",
+      "error": []
+    },
+    {
+      "language": "en",
+      "device": "ipad",
+      "id": "0a800019-672e-86a9-811d-1b43707c6207",
+      "bytes": 6904534,
+      "md5": "6c83ce7d0fe7991102afd60647377f56",
+      "state": "COMPLETE",
+      "video": "COMPLETE",
+      "error": []
+    },
+    {
+      "language": "es",
+      "device": "iphone",
+      "id": "d1c00019-672e-86a9-8133-4bdaabd3005d",
+      "bytes": 8015108,
+      "md5": "c86de270e7191af1a56f0f2ec4d6ec2f",
+      "state": "COMPLETE",
+      "video": "COMPLETE",
+      "error": []
+    },
+    {
+      "language": "es",
+      "device": "ipad",
+      "id": "21000019-672e-86a9-8113-2d958a7c6560",
+      "bytes": 7119342,
+      "md5": "db4e5839574dae7fcbf45c14e5eb328a",
+      "state": "COMPLETE",
+      "video": "COMPLETE",
+      "error": []
+    },
+    {
+      "language": "es",
+      "device": "mac",
+      "id": "6bc00019-672e-86a9-8116-768016edc4ff",
+      "bytes": 2999326,
+      "md5": "3baf79f512af667b30210c1dc5e7fca1",
+      "state": "COMPLETE",
+      "video": "COMPLETE",
+      "error": []
+    },
+    {
+      "language": "ar",
+      "device": "iphone",
+      "id": "c0800019-672e-86a9-8125-25213da80c30",
+      "bytes": 7125897,
+      "md5": "a632dde3e688cf04e62a462762e6a7de",
+      "state": "COMPLETE",
+      "video": "COMPLETE",
+      "error": []
+    },
+    {
+      "language": "ar",
+      "device": "ipad",
+      "id": "9a800019-672e-86a9-8115-72d7f3fc7e97",
+      "bytes": 6526665,
+      "md5": "ed999548def5b72cf6b776c81fad7482",
+      "state": "COMPLETE",
+      "video": "COMPLETE",
+      "error": []
+    },
+    {
+      "language": "ar",
+      "device": "mac",
+      "id": "ebc00019-672e-86a9-811e-b27460d70096",
+      "bytes": 2667720,
+      "md5": "b4df81121f2bd447b908844935448b8a",
+      "state": "COMPLETE",
+      "video": "COMPLETE",
+      "error": []
+    }
+  ],
+  "note": "The English Mac upload used an earlier encode of the same final native footage; its uploaded checksum is recorded here."
+}

@@ -1,0 +1,32 @@
+A softer place to check in.
+
+MoodMargins turns your daily feelings into a personal journal of small moments. Choose an animated mood sticker, write a few lines, and let your page save automatically. There is no account to create and no Save button to remember.
+
+MAKE A LITTLE SPACE FOR YOUR DAY
+• Check in with five expressive, animated mood stickers.
+• Write on soft, lined notebook pages.
+• Connect feelings and routines with washi-style tags.
+• Revisit your entries by date, search, or mood.
+
+SEE YOUR PATTERNS WITHOUT PRESSURE
+• Explore 7-day, 14-day, 30-day, and yearly Insights.
+• Read mood trends with expressive emoji labels.
+• See your longest streak, most common mood, and top tags.
+• Look back at mood distribution and the activities in your pages.
+
+A JOURNAL THAT FEELS LIKE YOURS
+The original Pastel theme is free. Botanical, Coastal, and Sunset bring fresh palettes to your notebook, each with light and dark appearances. Buy an individual theme once to keep it permanently, or enjoy all premium themes while MoodMargins Plus is active.
+
+OPTIONAL APPLE INTELLIGENCE WITH PLUS
+Plus suggests tags as you write and creates gentle recaps from your saved pages. The app tries Apple's Private Cloud Compute first and uses the on-device model if a cloud request fails. Turn off Private Cloud Compute in Customize to keep AI requests on your device. AI features require a compatible device with Apple Intelligence enabled and ready; cloud requests also need internet access and available service capacity.
+
+YOUR PAGES, YOUR SPACE
+Journal entries are stored on your device. When iCloud is available and enabled, the main app syncs them through your private iCloud account. The developer does not operate a server that receives your journal. Apple Watch supports quick mood notes in a separate local journal; watch entries do not currently sync with the main app.
+
+Daily journaling and standard Insights are free. MoodMargins Plus offers the same premium features with weekly, monthly, or yearly auto-renewing subscriptions. Individual premium themes are separate, permanent non-consumable purchases. Prices are shown before purchase and may vary by region. Manage or cancel subscriptions in your Apple Account settings. Canceling Plus does not delete your entries or themes purchased separately.
+
+MoodMargins is a personal reflection tool. It does not provide medical advice, diagnosis, or treatment.
+
+Privacy policy: https://apps.transfinite.us/moodmargins/privacy-policy
+Terms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Support: transfinite@transfinite.us

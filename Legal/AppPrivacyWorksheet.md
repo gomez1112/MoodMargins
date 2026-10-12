@@ -1,6 +1,6 @@
 # MoodMargins App Privacy worksheet
 
-Prepared October 4, 2026 from the app and its resolved packages. Confirm this matches the shipped app and any services you operate, then open [App Privacy](https://appstoreconnect.apple.com/apps/6819079849/distribution/privacy), select **Data Not Collected**, and click **Publish**. Apple requires publishing, not just saving a draft. This disclosure cannot be updated through Apple's listing API.
+Updated October 11, 2026 from the app and its resolved packages. The developer confirmed that the label has **not yet been published**. Confirm this worksheet matches the shipped app and any services you operate, then open [App Privacy](https://appstoreconnect.apple.com/apps/6819079849/distribution/privacy), select **Data Not Collected**, and click **Publish**. Apple requires publishing, not just saving a draft. This disclosure cannot be updated through Apple's listing API.
 
 | Questionnaire data type | Current implementation | Purpose if disclosed | Linked to identity | Tracking |
 | --- | --- | --- | --- | --- |
@@ -16,4 +16,4 @@ The table records the audit, not a recommendation to declare these as collected.
 
 Audit scope: SwiftData/CloudKit configuration, Foundation Models request snapshots, StoreKit transaction processing, bundled dotLottie animation loading, EZSwiftData, EZCharts, GentleNotification, and OnboardingKit. The main app has no journal backend, remote animation URLs, advertising SDK, or analytics SDK. Watch entries are local. iCloud sync still needs a real two-device test.
 
-Before release, replace the hosted policy's old claim that AI never uses Private Cloud Compute with [PrivacyPolicy.txt](PrivacyPolicy.txt). This policy is a draft, not legal advice: verify it reflects actual practices, including SDKs, and have a legal professional review it before publishing.
+The hosted policy already describes Private Cloud Compute. Check it against [PrivacyPolicy.txt](PrivacyPolicy.txt), particularly the cloud off switch and local fallback. That local policy is a draft: verify it reflects actual practices, including SDKs, and have a legal professional review it before publishing changes.
