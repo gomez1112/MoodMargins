@@ -1,6 +1,6 @@
 # MoodMargins App Privacy worksheet
 
-Updated October 11, 2026 from the app and its resolved packages. The developer confirmed that the label has **not yet been published**. Confirm this worksheet matches the shipped app and any services you operate, then open [App Privacy](https://appstoreconnect.apple.com/apps/6819079849/distribution/privacy), select **Data Not Collected**, and click **Publish**. Apple requires publishing, not just saving a draft. This disclosure cannot be updated through Apple's listing API.
+Updated October 11, 2026 from the app and its resolved packages. The developer confirmed that the [App Privacy label](https://appstoreconnect.apple.com/apps/6819079849/distribution/privacy) is **published**. This status records the developer’s confirmation; Apple’s listing API does not expose the published label or its answers. The audit below describes the app’s current implementation and should remain consistent with the published answers.
 
 | Questionnaire data type | Current implementation | Purpose if disclosed | Linked to identity | Tracking |
 | --- | --- | --- | --- | --- |

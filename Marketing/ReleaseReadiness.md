@@ -1,6 +1,6 @@
 # MoodMargins release preparation — October 11, 2026
 
-The release listing and binaries are prepared. The developer confirmed that the App Privacy label has not yet been published; that manual Apple action remains required before submission. Nothing was submitted to App Review.
+The release listing and binaries are prepared. On October 11, 2026, the developer confirmed that the App Privacy label is published; the privacy-label submission blocker is resolved. Nothing was submitted to App Review.
 
 The final Watch design uses direct horizontal emotion selection, native note entry, compact history, and readable page details. The notebook-only icon has no emoji. Apple generated the iPhone and Watch App Store icons from the uploaded binary, and the actual CDN images were inspected. The icon is supplied through the build, rather than a separate listing upload.
 
@@ -43,8 +43,8 @@ Eleven iPhone/iPad UI checks passed, covering all three capture languages, journ
 
 CloudKit's production schema was verified against the deployed schema. Main-app journaling uses the user's private iCloud store; the Watch journal is local. Actual two-device production sync and physical-device sandbox purchase/restore remain unverified. Run those checks on TestFlight before publishing.
 
-Publish the label in [MoodMargins → App Privacy](https://appstoreconnect.apple.com/apps/6819079849/distribution/privacy): use the prepared **Data Not Collected** answers in [AppPrivacyWorksheet.md](../Legal/AppPrivacyWorksheet.md), then click **Publish**. Saving a draft is insufficient, and Apple's API cannot publish the label. Confirm the worksheet still matches any services you operate.
+The developer confirmed publication of the label in [MoodMargins → App Privacy](https://appstoreconnect.apple.com/apps/6819079849/distribution/privacy). Publication status is based on that confirmation because Apple’s listing API does not expose it. The implementation audit remains in [AppPrivacyWorksheet.md](../Legal/AppPrivacyWorksheet.md).
 
 The hosted policy is live at [the privacy-policy URL](https://apps.transfinite.us/moodmargins/privacy-policy) and already mentions Private Cloud Compute. Check the cloud off switch and local fallback wording against the local policy draft; have a legal professional review that draft before publishing changes.
 
-App Review contact is Gerard Gomez, transfinite@transfinite.us, +1 914 316 8248. No MoodMargins account or demo login is required. The app is free, with Lifestyle as the primary category and Health & Fitness as secondary. First-release “What's New” is omitted. Once the label and device checks are complete, the prepared versions and products can be submitted for review.
+App Review contact is Gerard Gomez, transfinite@transfinite.us, +1 914 316 8248. No MoodMargins account or demo login is required. The app is free, with Lifestyle as the primary category and Health & Fitness as secondary. First-release “What's New” is omitted. The remaining verification work is the physical-device purchase/restore and two-device iCloud checks above. The prepared versions and products await an explicit App Review submission request.

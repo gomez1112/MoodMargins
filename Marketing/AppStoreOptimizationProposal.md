@@ -202,7 +202,7 @@ The proposal distinguishes free journaling and standard Insights from paid theme
 
 Private iCloud sync applies to the main app when available and enabled. Watch entries remain in a separate local journal. AI processing starts with Private Cloud Compute, falls back to the local model, and can be set to local processing in Customize. No claims of medical treatment, invented reviews, or guaranteed wellbeing outcomes are added.
 
-No build or code changes were needed. Bitrig validated and published the batch without warnings, then rewrote the listing and its sync lock in canonical form. Readback checked names and subtitles in all three app-info localizations and keywords and descriptions in all nine version localizations. App Privacy still needs to be completed in App Store Connect before the release is ready for review.
+No build or code changes were needed. Bitrig validated and published the batch without warnings, then rewrote the listing and its sync lock in canonical form. Readback checked names and subtitles in all three app-info localizations and keywords and descriptions in all nine version localizations. The developer confirmed on October 11, 2026 that App Privacy is published; that manual step is complete.
 
 ## References
 
