@@ -18,6 +18,8 @@ All three declare `usesNonExemptEncryption = false`, consistent with the app's u
 
 English, Spanish, and Arabic descriptions, names/subtitles, keywords, promotional copy, support and privacy URLs, copyright, age-rating answers, categories, content rights, pricing, availability, and App Review contact information were applied successfully. Local validation has no diagnostics.
 
+On October 12, the developer authorized uploading the creative asset package. The **Daily check-ins** custom page now has three localizations, 18 iPhone/iPad screenshots, and localized header/search artwork. Its six creative images are also placed on the default iOS page. All 24 images processed, all 30 placements match the package, and all six screenshot groups have the approved order. Both pages remain drafts. See [ProductPage/Deployment.json](ProductPage/Deployment.json).
+
 There are 81 public screenshots: six per language for iPhone, iPad, Mac, and Watch, and three per language for Vision. All are RGB PNGs without alpha. Mac captures show the actual native window, sidebar, toolbar, and window controls. Watch images show the final direct-selection design, not the previous card layout.
 
 Nine actual screen-recording previews cover iPhone, iPad, and Mac in all three languages. Apple's asset delivery and video delivery both report COMPLETE for all nine. They use the required dimensions, constant 30 fps H.264 High 4.0, and stereo AAC, run approximately 21–22 seconds, and are under 9 MB each. Theme posters disclose their purchase requirement. No real journal data or fabricated AI output appears.

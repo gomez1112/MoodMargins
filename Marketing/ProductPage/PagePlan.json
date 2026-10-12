@@ -2,7 +2,7 @@
   "appId": "6819079849",
   "bundleId": "com.transfinite.MoodMargins",
   "referenceName": "Daily check-ins",
-  "status": "PREPARED_LOCALLY",
+  "status": "UPLOADED_AND_VERIFIED_DRAFTS",
   "version": "1.0",
   "assetLibraryId": "6819079849",
   "purpose": "Help people looking for a simple daily mood check-in discover journaling, mood patterns, and automatically saved pages.",
@@ -78,10 +78,14 @@
       "placementGroup": "DEFAULT_PROFILE"
     }
   },
-  "approvalRequiredBefore": "Creating the App Store Connect custom page, uploading these images, and adding their placements.",
   "sources": [
     "https://developer.apple.com/app-store/asset-best-practices/",
     "https://developer.apple.com/help/app-store-connect/reference/app-information/creative-assets-specifications",
     "https://developer.apple.com/documentation/appstoreconnectapi/app-asset-library"
-  ]
+  ],
+  "authorizedOn": "2026-10-12",
+  "deployedOn": "2026-10-12",
+  "customProductPageId": "40507614-2637-4477-928c-7ca0ce4b682d",
+  "customProductPageVersionId": "73226e5d-5c7e-4652-8208-770b1f5ee6b6",
+  "customProductPageUrl": "https://apps.apple.com/us/app/moodmargins/id6819079849?ppid=40507614-2637-4477-928c-7ca0ce4b682d"
 }

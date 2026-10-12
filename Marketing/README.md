@@ -20,7 +20,7 @@ Fictional journal entries run in DEBUG-only, isolated capture stores. No real jo
 
 The asset choices follow [Apple's screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/), [preview specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/app-preview-specifications/), and [accurate metadata guidelines](https://developer.apple.com/app-store/review/guidelines/#accurate-metadata). These checks do not constitute App Review approval.
 
-The new [custom product page, header, and search-results artwork](ProductPage/README.md) is prepared separately. [Review its artwork](ProductPage/ContactSheet.png). It awaits approval before creating the page and uploading these assets.
+The new [custom product page, header, and search-results artwork](ProductPage/README.md) is uploaded and verified as drafts in App Store Connect. [Review its artwork](ProductPage/ContactSheet.png) and [deployment records](ProductPage/Deployment.json).
 
 ## Reproduction
 

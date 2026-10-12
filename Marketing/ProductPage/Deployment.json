@@ -1,0 +1,955 @@
+{
+  "appId": "6819079849",
+  "authorizedOn": "2026-10-12",
+  "status": "UPLOADED_AND_VERIFIED_DRAFTS",
+  "customPage": {
+    "id": "40507614-2637-4477-928c-7ca0ce4b682d",
+    "url": "https://apps.apple.com/us/app/moodmargins/id6819079849?ppid=40507614-2637-4477-928c-7ca0ce4b682d",
+    "referenceName": "Daily check-ins",
+    "versionId": "73226e5d-5c7e-4652-8208-770b1f5ee6b6",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "localizations": [
+      {
+        "id": "07022a9f-3c8f-456c-9319-474615e7948e",
+        "locale": "en-US",
+        "promotionalText": "Start with one mood and a few words. Your pages save automatically. Explore mood trends, your most common mood, and your longest journaling streak."
+      },
+      {
+        "id": "9a6d319f-688c-48a5-a565-d2ffc34a1337",
+        "locale": "es-ES",
+        "promotionalText": "Empieza con un ánimo y unas palabras. Tus páginas se guardan automáticamente. Descubre tendencias, tu ánimo más frecuente y tu racha más larga."
+      },
+      {
+        "id": "3dd3c9aa-857d-4c43-95b4-1ed43f01eb13",
+        "locale": "ar-SA",
+        "promotionalText": "ابدأ بشعور واحد وبضع كلمات. تُحفظ صفحاتك تلقائيًا. اكتشف اتجاهات مزاجك وشعورك الأكثر شيوعًا وأطول سلسلة تدوين لديك."
+      }
+    ]
+  },
+  "assets": [
+    {
+      "file": "en-US/header.png",
+      "id": "b0c00019-672e-86a9-8037-8b08a7f51e47",
+      "referenceName": "Daily check-ins en-US/header.png 1c54c74f",
+      "bytes": 4193994,
+      "sha256": "1c54c74fd162619cc4e6b3604be73df819842c065c7189506938ff5622da5607",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1eb43b80-e0b7-4d96-bd32-47a42a8c5fed"
+      ],
+      "specId": "1eb43b80-e0b7-4d96-bd32-47a42a8c5fed",
+      "dimensions": {
+        "width": 3840,
+        "height": 1646
+      }
+    },
+    {
+      "file": "en-US/ipad/01-today.png",
+      "id": "3e000019-672e-86a9-8002-225122dbbd4b",
+      "referenceName": "Daily check-ins en-US/ipad/01-today.png 943e23c3",
+      "bytes": 2461401,
+      "sha256": "943e23c3fa6155e2e332c01cb167c22d76a6d34a6507ebde4c41d5eec234c560",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1751a63a-af79-5c7f-a2f2-41140bf28f9e"
+      ],
+      "specId": "1751a63a-af79-5c7f-a2f2-41140bf28f9e",
+      "dimensions": {
+        "width": 2064,
+        "height": 2752
+      }
+    },
+    {
+      "file": "en-US/ipad/02-insights.png",
+      "id": "0d800019-672e-86a9-8009-0fce347de28b",
+      "referenceName": "Daily check-ins en-US/ipad/02-insights.png 0e735626",
+      "bytes": 1723949,
+      "sha256": "0e735626f6a1dd61e8f62bed0cc6deeccfafbac35bcc8a42baab3804dde1a535",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1751a63a-af79-5c7f-a2f2-41140bf28f9e"
+      ],
+      "specId": "1751a63a-af79-5c7f-a2f2-41140bf28f9e",
+      "dimensions": {
+        "width": 2064,
+        "height": 2752
+      }
+    },
+    {
+      "file": "en-US/ipad/03-pages.png",
+      "id": "e3400019-672e-86a9-8007-48af1b0f80ab",
+      "referenceName": "Daily check-ins en-US/ipad/03-pages.png 8a2fc047",
+      "bytes": 2542202,
+      "sha256": "8a2fc0479610f5c4c45b247efd34cdb7193309c5f6a98f7af48b538ca486c0ac",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1751a63a-af79-5c7f-a2f2-41140bf28f9e"
+      ],
+      "specId": "1751a63a-af79-5c7f-a2f2-41140bf28f9e",
+      "dimensions": {
+        "width": 2064,
+        "height": 2752
+      }
+    },
+    {
+      "file": "en-US/iphone/01-today.png",
+      "id": "f0c00019-672e-86a9-802a-82ce605f275f",
+      "referenceName": "Daily check-ins en-US/iphone/01-today.png c4b0e9ee",
+      "bytes": 1556019,
+      "sha256": "c4b0e9eea56552f4c87864d649fcc509850669d6e34e5067b1bef9c2a5cddef4",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "bd402f1a-26ee-5b83-9dd7-972c60c43d47"
+      ],
+      "specId": "bd402f1a-26ee-5b83-9dd7-972c60c43d47",
+      "dimensions": {
+        "width": 1320,
+        "height": 2868
+      }
+    },
+    {
+      "file": "en-US/iphone/02-insights.png",
+      "id": "73000019-672e-86a9-8007-b2b066ad3020",
+      "referenceName": "Daily check-ins en-US/iphone/02-insights.png 41fb836a",
+      "bytes": 1303148,
+      "sha256": "41fb836ac73c766bef529b84d0165c27fb85592195ed771783954db07d4a1aa9",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "bd402f1a-26ee-5b83-9dd7-972c60c43d47"
+      ],
+      "specId": "bd402f1a-26ee-5b83-9dd7-972c60c43d47",
+      "dimensions": {
+        "width": 1320,
+        "height": 2868
+      }
+    },
+    {
+      "file": "en-US/iphone/03-pages.png",
+      "id": "ab400019-672e-86a9-800c-1c00ffc84fe0",
+      "referenceName": "Daily check-ins en-US/iphone/03-pages.png 3088066c",
+      "bytes": 1850143,
+      "sha256": "3088066c8d067887d97eb580481e12800896231d1018e7fabf6f2ef260fe00da",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "bd402f1a-26ee-5b83-9dd7-972c60c43d47"
+      ],
+      "specId": "bd402f1a-26ee-5b83-9dd7-972c60c43d47",
+      "dimensions": {
+        "width": 1320,
+        "height": 2868
+      }
+    },
+    {
+      "file": "en-US/search.png",
+      "id": "74800019-672e-86a9-8027-01cbb5a694e0",
+      "referenceName": "Daily check-ins en-US/search.png 80a2b590",
+      "bytes": 6178956,
+      "sha256": "80a2b590d7a33c0bcbeb6bef98342db5d002377902b1603dd2ca10bda8a82959",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "d2ffa3b7-6c55-5cdf-8512-229d92791333"
+      ],
+      "specId": "d2ffa3b7-6c55-5cdf-8512-229d92791333",
+      "dimensions": {
+        "width": 3840,
+        "height": 2560
+      }
+    },
+    {
+      "file": "es-ES/header.png",
+      "id": "73400019-672e-86a9-8009-2fb2d2820012",
+      "referenceName": "Daily check-ins es-ES/header.png edccb9cd",
+      "bytes": 4199243,
+      "sha256": "edccb9cda357df199187f90a4337edde96a240d6c8ede7410fa6f4794d33af49",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1eb43b80-e0b7-4d96-bd32-47a42a8c5fed"
+      ],
+      "specId": "1eb43b80-e0b7-4d96-bd32-47a42a8c5fed",
+      "dimensions": {
+        "width": 3840,
+        "height": 1646
+      }
+    },
+    {
+      "file": "es-ES/ipad/01-today.png",
+      "id": "0a000019-672e-86a9-8034-832ae587e9e0",
+      "referenceName": "Daily check-ins es-ES/ipad/01-today.png 89ab6080",
+      "bytes": 2470797,
+      "sha256": "89ab60804a243256b3d8959b8f3931f4bbb0ce383ba320ff4df838e3f421096b",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1751a63a-af79-5c7f-a2f2-41140bf28f9e"
+      ],
+      "specId": "1751a63a-af79-5c7f-a2f2-41140bf28f9e",
+      "dimensions": {
+        "width": 2064,
+        "height": 2752
+      }
+    },
+    {
+      "file": "es-ES/ipad/02-insights.png",
+      "id": "dc400019-672e-86a9-8022-bfa5314227b3",
+      "referenceName": "Daily check-ins es-ES/ipad/02-insights.png d5bb3145",
+      "bytes": 1750171,
+      "sha256": "d5bb3145629b560685362e99fcd58d6d3be739164a2ef1ea0a249f0688a2013f",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1751a63a-af79-5c7f-a2f2-41140bf28f9e"
+      ],
+      "specId": "1751a63a-af79-5c7f-a2f2-41140bf28f9e",
+      "dimensions": {
+        "width": 2064,
+        "height": 2752
+      }
+    },
+    {
+      "file": "es-ES/ipad/03-pages.png",
+      "id": "f7c00019-672e-86a9-8033-fff773031c46",
+      "referenceName": "Daily check-ins es-ES/ipad/03-pages.png eb80a75a",
+      "bytes": 2560999,
+      "sha256": "eb80a75af0ae502974b7766c5fe37fb99964f208d63a0ef4b99b55a671a1d817",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1751a63a-af79-5c7f-a2f2-41140bf28f9e"
+      ],
+      "specId": "1751a63a-af79-5c7f-a2f2-41140bf28f9e",
+      "dimensions": {
+        "width": 2064,
+        "height": 2752
+      }
+    },
+    {
+      "file": "es-ES/iphone/01-today.png",
+      "id": "b0c00019-672e-86a9-8030-da922db2365e",
+      "referenceName": "Daily check-ins es-ES/iphone/01-today.png 749385d4",
+      "bytes": 1580764,
+      "sha256": "749385d4d56feccf2640ef372b0562170db443c5498fe3563fb555aa6dcc5b96",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "bd402f1a-26ee-5b83-9dd7-972c60c43d47"
+      ],
+      "specId": "bd402f1a-26ee-5b83-9dd7-972c60c43d47",
+      "dimensions": {
+        "width": 1320,
+        "height": 2868
+      }
+    },
+    {
+      "file": "es-ES/iphone/02-insights.png",
+      "id": "2e000019-672e-86a9-802c-7373acf5ef86",
+      "referenceName": "Daily check-ins es-ES/iphone/02-insights.png abd387c4",
+      "bytes": 1326441,
+      "sha256": "abd387c48cce0d5e8154f520a2751fb172fe46c1e353671c8bbeca60d69ea40d",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "bd402f1a-26ee-5b83-9dd7-972c60c43d47"
+      ],
+      "specId": "bd402f1a-26ee-5b83-9dd7-972c60c43d47",
+      "dimensions": {
+        "width": 1320,
+        "height": 2868
+      }
+    },
+    {
+      "file": "es-ES/iphone/03-pages.png",
+      "id": "89000019-672e-86a9-8016-8170f1422777",
+      "referenceName": "Daily check-ins es-ES/iphone/03-pages.png 9c2253e3",
+      "bytes": 1874634,
+      "sha256": "9c2253e322aba60c27e3b4799984b22d90f5af10c0a5bfa1bd68905dbedca81b",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "bd402f1a-26ee-5b83-9dd7-972c60c43d47"
+      ],
+      "specId": "bd402f1a-26ee-5b83-9dd7-972c60c43d47",
+      "dimensions": {
+        "width": 1320,
+        "height": 2868
+      }
+    },
+    {
+      "file": "es-ES/search.png",
+      "id": "31400019-672e-86a9-801c-a393346473bf",
+      "referenceName": "Daily check-ins es-ES/search.png b38568cb",
+      "bytes": 6180121,
+      "sha256": "b38568cbd2630033165b4b28adf2accb130c39c23838dd73970b9fb18b472725",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "d2ffa3b7-6c55-5cdf-8512-229d92791333"
+      ],
+      "specId": "d2ffa3b7-6c55-5cdf-8512-229d92791333",
+      "dimensions": {
+        "width": 3840,
+        "height": 2560
+      }
+    },
+    {
+      "file": "ar-SA/header.png",
+      "id": "2b400019-672e-86a9-8013-fdddb354b01a",
+      "referenceName": "Daily check-ins ar-SA/header.png 923b44c2",
+      "bytes": 4238823,
+      "sha256": "923b44c2953750e9faed88db1a2706714fed1f021faaab3fbe77b275c2615fc6",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1eb43b80-e0b7-4d96-bd32-47a42a8c5fed"
+      ],
+      "specId": "1eb43b80-e0b7-4d96-bd32-47a42a8c5fed",
+      "dimensions": {
+        "width": 3840,
+        "height": 1646
+      }
+    },
+    {
+      "file": "ar-SA/ipad/01-today.png",
+      "id": "31000019-672e-86a9-8002-002309a46d49",
+      "referenceName": "Daily check-ins ar-SA/ipad/01-today.png 7d99bf01",
+      "bytes": 2420450,
+      "sha256": "7d99bf0129d18aa8ffa05a399e379048eb9215b2cdf1a1b3f873f78a691e37bb",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1751a63a-af79-5c7f-a2f2-41140bf28f9e"
+      ],
+      "specId": "1751a63a-af79-5c7f-a2f2-41140bf28f9e",
+      "dimensions": {
+        "width": 2064,
+        "height": 2752
+      }
+    },
+    {
+      "file": "ar-SA/ipad/02-insights.png",
+      "id": "6b400019-672e-86a9-8005-47878008b1d5",
+      "referenceName": "Daily check-ins ar-SA/ipad/02-insights.png 3b271f7f",
+      "bytes": 1695535,
+      "sha256": "3b271f7f9c884e62be6879d7d3d1041417f12b27e5e389e34742a0968fdfb29e",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1751a63a-af79-5c7f-a2f2-41140bf28f9e"
+      ],
+      "specId": "1751a63a-af79-5c7f-a2f2-41140bf28f9e",
+      "dimensions": {
+        "width": 2064,
+        "height": 2752
+      }
+    },
+    {
+      "file": "ar-SA/ipad/03-pages.png",
+      "id": "e3400019-672e-86a9-8018-b49fca65ad98",
+      "referenceName": "Daily check-ins ar-SA/ipad/03-pages.png 0da3259b",
+      "bytes": 2537083,
+      "sha256": "0da3259b94a909594f94eac2538f211c699776c6db6ee1609d6dda9315a3f3c4",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "1751a63a-af79-5c7f-a2f2-41140bf28f9e"
+      ],
+      "specId": "1751a63a-af79-5c7f-a2f2-41140bf28f9e",
+      "dimensions": {
+        "width": 2064,
+        "height": 2752
+      }
+    },
+    {
+      "file": "ar-SA/iphone/01-today.png",
+      "id": "acc00019-672e-86a9-8001-2819e917407f",
+      "referenceName": "Daily check-ins ar-SA/iphone/01-today.png 1d8b360c",
+      "bytes": 1530457,
+      "sha256": "1d8b360c373f314765a0c2fc09d8bb5448a6e603ce5b5e38ecc0d094b0f7c962",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "bd402f1a-26ee-5b83-9dd7-972c60c43d47"
+      ],
+      "specId": "bd402f1a-26ee-5b83-9dd7-972c60c43d47",
+      "dimensions": {
+        "width": 1320,
+        "height": 2868
+      }
+    },
+    {
+      "file": "ar-SA/iphone/02-insights.png",
+      "id": "ee800019-672e-86a9-8035-580c1bed13da",
+      "referenceName": "Daily check-ins ar-SA/iphone/02-insights.png d9ebeae6",
+      "bytes": 1271639,
+      "sha256": "d9ebeae648f81e8c9b92da7390f757d2e5c64bc099ee083277ea0251d6406450",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "bd402f1a-26ee-5b83-9dd7-972c60c43d47"
+      ],
+      "specId": "bd402f1a-26ee-5b83-9dd7-972c60c43d47",
+      "dimensions": {
+        "width": 1320,
+        "height": 2868
+      }
+    },
+    {
+      "file": "ar-SA/iphone/03-pages.png",
+      "id": "82400019-672e-86a9-8013-9be6efcb53dd",
+      "referenceName": "Daily check-ins ar-SA/iphone/03-pages.png d8450f7d",
+      "bytes": 1803797,
+      "sha256": "d8450f7d2f1b82732e4e810bad58a16ab5985efd4130d292af7836aec777cad0",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "bd402f1a-26ee-5b83-9dd7-972c60c43d47"
+      ],
+      "specId": "bd402f1a-26ee-5b83-9dd7-972c60c43d47",
+      "dimensions": {
+        "width": 1320,
+        "height": 2868
+      }
+    },
+    {
+      "file": "ar-SA/search.png",
+      "id": "00000019-672e-86a9-8010-9c65f1aca113",
+      "referenceName": "Daily check-ins ar-SA/search.png c9e3f2b7",
+      "bytes": 6278526,
+      "sha256": "c9e3f2b766f96af6de4734a7880cd5e48e5fa7d33fbc54b2f8a98a24eca345b7",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "expectedSpecIds": [
+        "d2ffa3b7-6c55-5cdf-8512-229d92791333"
+      ],
+      "specId": "d2ffa3b7-6c55-5cdf-8512-229d92791333",
+      "dimensions": {
+        "width": 3840,
+        "height": 2560
+      }
+    }
+  ],
+  "placements": [
+    {
+      "scope": "default",
+      "locale": "ar-SA",
+      "parentId": "230cf5fb-ba10-458e-9473-0332156205de",
+      "parentType": "appStoreVersionLocalizations",
+      "relationship": "appStoreVersionLocalization",
+      "file": "ar-SA/header.png",
+      "imageId": "2b400019-672e-86a9-8013-fdddb354b01a",
+      "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "5ac00019-672e-86a9-8f39-9679987871c6",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "default",
+      "locale": "ar-SA",
+      "parentId": "230cf5fb-ba10-458e-9473-0332156205de",
+      "parentType": "appStoreVersionLocalizations",
+      "relationship": "appStoreVersionLocalization",
+      "file": "ar-SA/search.png",
+      "imageId": "00000019-672e-86a9-8010-9c65f1aca113",
+      "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "d4c00019-672e-86a9-8f01-06cd5df75bb3",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "default",
+      "locale": "es-ES",
+      "parentId": "271f284f-c4a7-492d-8dd7-51ac4b8209cf",
+      "parentType": "appStoreVersionLocalizations",
+      "relationship": "appStoreVersionLocalization",
+      "file": "es-ES/header.png",
+      "imageId": "73400019-672e-86a9-8009-2fb2d2820012",
+      "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "13400019-672e-86a9-8f15-7d5d324c588c",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "default",
+      "locale": "es-ES",
+      "parentId": "271f284f-c4a7-492d-8dd7-51ac4b8209cf",
+      "parentType": "appStoreVersionLocalizations",
+      "relationship": "appStoreVersionLocalization",
+      "file": "es-ES/search.png",
+      "imageId": "31400019-672e-86a9-801c-a393346473bf",
+      "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "50400019-672e-86a9-8f33-127488e73a84",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "default",
+      "locale": "en-US",
+      "parentId": "08cf0b58-c1e4-4557-bb77-158a28b91533",
+      "parentType": "appStoreVersionLocalizations",
+      "relationship": "appStoreVersionLocalization",
+      "file": "en-US/header.png",
+      "imageId": "b0c00019-672e-86a9-8037-8b08a7f51e47",
+      "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "ce800019-672e-86a9-8f04-08fe949e0e0f",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "default",
+      "locale": "en-US",
+      "parentId": "08cf0b58-c1e4-4557-bb77-158a28b91533",
+      "parentType": "appStoreVersionLocalizations",
+      "relationship": "appStoreVersionLocalization",
+      "file": "en-US/search.png",
+      "imageId": "74800019-672e-86a9-8027-01cbb5a694e0",
+      "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "f9c00019-672e-86a9-8f0c-399c91b535b6",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "en-US",
+      "parentId": "07022a9f-3c8f-456c-9319-474615e7948e",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "en-US/header.png",
+      "imageId": "b0c00019-672e-86a9-8037-8b08a7f51e47",
+      "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "89400019-672e-86a9-8f24-e765324c2b30",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "en-US",
+      "parentId": "07022a9f-3c8f-456c-9319-474615e7948e",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "en-US/ipad/01-today.png",
+      "imageId": "3e000019-672e-86a9-8002-225122dbbd4b",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "3fc00019-672e-86a9-8f11-d730e0143bd6",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "en-US",
+      "parentId": "07022a9f-3c8f-456c-9319-474615e7948e",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "en-US/ipad/02-insights.png",
+      "imageId": "0d800019-672e-86a9-8009-0fce347de28b",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "1d800019-672e-86a9-8f22-b78d99c67c83",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "en-US",
+      "parentId": "07022a9f-3c8f-456c-9319-474615e7948e",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "en-US/ipad/03-pages.png",
+      "imageId": "e3400019-672e-86a9-8007-48af1b0f80ab",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "97800019-672e-86a9-8f39-aa6300734b1b",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "en-US",
+      "parentId": "07022a9f-3c8f-456c-9319-474615e7948e",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "en-US/iphone/01-today.png",
+      "imageId": "f0c00019-672e-86a9-802a-82ce605f275f",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "31c00019-672e-86a9-8f0f-4a082d353bca",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "en-US",
+      "parentId": "07022a9f-3c8f-456c-9319-474615e7948e",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "en-US/iphone/02-insights.png",
+      "imageId": "73000019-672e-86a9-8007-b2b066ad3020",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "8d000019-672e-86a9-8f04-425487d26034",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "en-US",
+      "parentId": "07022a9f-3c8f-456c-9319-474615e7948e",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "en-US/iphone/03-pages.png",
+      "imageId": "ab400019-672e-86a9-800c-1c00ffc84fe0",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "e7c00019-672e-86a9-8f09-8efad698fa62",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "en-US",
+      "parentId": "07022a9f-3c8f-456c-9319-474615e7948e",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "en-US/search.png",
+      "imageId": "74800019-672e-86a9-8027-01cbb5a694e0",
+      "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "7fc00019-672e-86a9-8f01-a201719164d7",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "es-ES",
+      "parentId": "9a6d319f-688c-48a5-a565-d2ffc34a1337",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "es-ES/header.png",
+      "imageId": "73400019-672e-86a9-8009-2fb2d2820012",
+      "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "0a400019-672e-86a9-8f38-7308c4af2083",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "es-ES",
+      "parentId": "9a6d319f-688c-48a5-a565-d2ffc34a1337",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "es-ES/ipad/01-today.png",
+      "imageId": "0a000019-672e-86a9-8034-832ae587e9e0",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "ef800019-672e-86a9-8f33-4aa348e87413",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "es-ES",
+      "parentId": "9a6d319f-688c-48a5-a565-d2ffc34a1337",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "es-ES/ipad/02-insights.png",
+      "imageId": "dc400019-672e-86a9-8022-bfa5314227b3",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "e4c00019-672e-86a9-8f10-bc49f4b23d3e",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "es-ES",
+      "parentId": "9a6d319f-688c-48a5-a565-d2ffc34a1337",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "es-ES/ipad/03-pages.png",
+      "imageId": "f7c00019-672e-86a9-8033-fff773031c46",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "39800019-672e-86a9-8f37-d5926ed30b6d",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "es-ES",
+      "parentId": "9a6d319f-688c-48a5-a565-d2ffc34a1337",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "es-ES/iphone/01-today.png",
+      "imageId": "b0c00019-672e-86a9-8030-da922db2365e",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "b4800019-672e-86a9-8f26-472ba2a1abac",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "es-ES",
+      "parentId": "9a6d319f-688c-48a5-a565-d2ffc34a1337",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "es-ES/iphone/02-insights.png",
+      "imageId": "2e000019-672e-86a9-802c-7373acf5ef86",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "f8000019-672e-86a9-8f23-b09d8d3381bb",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "es-ES",
+      "parentId": "9a6d319f-688c-48a5-a565-d2ffc34a1337",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "es-ES/iphone/03-pages.png",
+      "imageId": "89000019-672e-86a9-8016-8170f1422777",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "1a800019-672e-86a9-8f31-4fb8d86cee0f",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "es-ES",
+      "parentId": "9a6d319f-688c-48a5-a565-d2ffc34a1337",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "es-ES/search.png",
+      "imageId": "31400019-672e-86a9-801c-a393346473bf",
+      "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "79800019-672e-86a9-8f0d-088fc5022623",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "ar-SA",
+      "parentId": "3dd3c9aa-857d-4c43-95b4-1ed43f01eb13",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "ar-SA/header.png",
+      "imageId": "2b400019-672e-86a9-8013-fdddb354b01a",
+      "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "9b800019-672e-86a9-8f10-6adb38308fa5",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "ar-SA",
+      "parentId": "3dd3c9aa-857d-4c43-95b4-1ed43f01eb13",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "ar-SA/ipad/01-today.png",
+      "imageId": "31000019-672e-86a9-8002-002309a46d49",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "07000019-672e-86a9-8f11-217bac9c2aa5",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "ar-SA",
+      "parentId": "3dd3c9aa-857d-4c43-95b4-1ed43f01eb13",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "ar-SA/ipad/02-insights.png",
+      "imageId": "6b400019-672e-86a9-8005-47878008b1d5",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "ad400019-672e-86a9-8f22-8c1552e3f291",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "ar-SA",
+      "parentId": "3dd3c9aa-857d-4c43-95b4-1ed43f01eb13",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "ar-SA/ipad/03-pages.png",
+      "imageId": "e3400019-672e-86a9-8018-b49fca65ad98",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "ed800019-672e-86a9-8f09-a6e36eb4fbbc",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "ar-SA",
+      "parentId": "3dd3c9aa-857d-4c43-95b4-1ed43f01eb13",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "ar-SA/iphone/01-today.png",
+      "imageId": "acc00019-672e-86a9-8001-2819e917407f",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "e1c00019-672e-86a9-8f1a-0d82b40da36f",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "ar-SA",
+      "parentId": "3dd3c9aa-857d-4c43-95b4-1ed43f01eb13",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "ar-SA/iphone/02-insights.png",
+      "imageId": "ee800019-672e-86a9-8035-580c1bed13da",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "ab800019-672e-86a9-8f3d-d46be82ff0a8",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "ar-SA",
+      "parentId": "3dd3c9aa-857d-4c43-95b4-1ed43f01eb13",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "ar-SA/iphone/03-pages.png",
+      "imageId": "82400019-672e-86a9-8013-9be6efcb53dd",
+      "placementType": "APP_SCREENSHOT",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "c4000019-672e-86a9-8f17-3ff9eeeb2820",
+      "state": "ACTIVE"
+    },
+    {
+      "scope": "custom",
+      "locale": "ar-SA",
+      "parentId": "3dd3c9aa-857d-4c43-95b4-1ed43f01eb13",
+      "parentType": "appCustomProductPageLocalizations",
+      "relationship": "appCustomProductPageLocalization",
+      "file": "ar-SA/search.png",
+      "imageId": "00000019-672e-86a9-8010-9c65f1aca113",
+      "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+      "placementGroup": "DEFAULT_PROFILE",
+      "id": "8a400019-672e-86a9-8f04-a9f58b130737",
+      "state": "ACTIVE"
+    }
+  ],
+  "orderingRequests": [
+    {
+      "locale": "en-US",
+      "device": "iphone",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "08d768e7-dd09-4dab-8028-2992a17abb91",
+      "orderedPlacementIds": [
+        "31c00019-672e-86a9-8f0f-4a082d353bca",
+        "8d000019-672e-86a9-8f04-425487d26034",
+        "e7c00019-672e-86a9-8f09-8efad698fa62"
+      ]
+    },
+    {
+      "locale": "en-US",
+      "device": "ipad",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "e665f06f-f86e-4251-a0da-9731db4b91bb",
+      "orderedPlacementIds": [
+        "3fc00019-672e-86a9-8f11-d730e0143bd6",
+        "1d800019-672e-86a9-8f22-b78d99c67c83",
+        "97800019-672e-86a9-8f39-aa6300734b1b"
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "device": "iphone",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "44d756da-c3f4-49e6-a3e1-52f9ed06446e",
+      "orderedPlacementIds": [
+        "b4800019-672e-86a9-8f26-472ba2a1abac",
+        "f8000019-672e-86a9-8f23-b09d8d3381bb",
+        "1a800019-672e-86a9-8f31-4fb8d86cee0f"
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "device": "ipad",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "afcec361-986a-41b5-8b33-ca80f8dafbf2",
+      "orderedPlacementIds": [
+        "ef800019-672e-86a9-8f33-4aa348e87413",
+        "e4c00019-672e-86a9-8f10-bc49f4b23d3e",
+        "39800019-672e-86a9-8f37-d5926ed30b6d"
+      ]
+    },
+    {
+      "locale": "ar-SA",
+      "device": "iphone",
+      "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+      "id": "f3c89c37-ca4c-4ba7-985e-a52de2df6533",
+      "orderedPlacementIds": [
+        "e1c00019-672e-86a9-8f1a-0d82b40da36f",
+        "ab800019-672e-86a9-8f3d-d46be82ff0a8",
+        "c4000019-672e-86a9-8f17-3ff9eeeb2820"
+      ]
+    },
+    {
+      "locale": "ar-SA",
+      "device": "ipad",
+      "placementGroup": "IPAD_13_PROFILE",
+      "id": "aceee70b-3f1d-4a3e-af04-1e7ece9f23ff",
+      "orderedPlacementIds": [
+        "07000019-672e-86a9-8f11-217bac9c2aa5",
+        "ad400019-672e-86a9-8f22-8c1552e3f291",
+        "ed800019-672e-86a9-8f09-a6e36eb4fbbc"
+      ]
+    }
+  ],
+  "defaultVersionState": "PREPARE_FOR_SUBMISSION",
+  "verifiedOn": "2026-10-12",
+  "referenceDataCheckedOn": "2026-10-12",
+  "verification": [
+    {
+      "scope": "default",
+      "locale": "ar-SA",
+      "verified": true,
+      "placementCount": 2,
+      "placementState": "ACTIVE",
+      "orderChecks": []
+    },
+    {
+      "scope": "default",
+      "locale": "es-ES",
+      "verified": true,
+      "placementCount": 2,
+      "placementState": "ACTIVE",
+      "orderChecks": []
+    },
+    {
+      "scope": "default",
+      "locale": "en-US",
+      "verified": true,
+      "placementCount": 2,
+      "placementState": "ACTIVE",
+      "orderChecks": []
+    },
+    {
+      "scope": "custom",
+      "locale": "en-US",
+      "verified": true,
+      "placementCount": 8,
+      "placementState": "ACTIVE",
+      "orderChecks": [
+        {
+          "device": "iphone",
+          "matches": true
+        },
+        {
+          "device": "ipad",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "scope": "custom",
+      "locale": "es-ES",
+      "verified": true,
+      "placementCount": 8,
+      "placementState": "ACTIVE",
+      "orderChecks": [
+        {
+          "device": "iphone",
+          "matches": true
+        },
+        {
+          "device": "ipad",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "scope": "custom",
+      "locale": "ar-SA",
+      "verified": true,
+      "placementCount": 8,
+      "placementState": "ACTIVE",
+      "orderChecks": [
+        {
+          "device": "iphone",
+          "matches": true
+        },
+        {
+          "device": "ipad",
+          "matches": true
+        }
+      ]
+    }
+  ]
+}

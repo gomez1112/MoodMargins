@@ -1,6 +1,6 @@
 # MoodMargins custom product page and creative assets
 
-Prepared October 11, 2026. These assets are ready for review locally. No new page, asset upload, placement, keyword assignment, or review submission has been made in App Store Connect.
+Prepared October 11 and uploaded October 12, 2026 with the developer’s confirmation. All 24 images processed successfully in Apple’s Asset Library. All 30 placements and six screenshot sequences were verified by API readback. The custom page and default iOS version remain PREPARE_FOR_SUBMISSION drafts. No review submission or keyword routing change was made. [Deployment.json](Deployment.json) records the resource IDs and verification results.
 
 [View the complete artwork](ContactSheet.png). The header and search previews on that sheet are crops of Apple’s focal safe areas, not screenshots of Apple’s product-page Preview tool. Full upload files are linked below.
 
@@ -46,21 +46,21 @@ Arabic promotional text:
 
 The name and subtitle are inherited from the app listing. Keyword routing is deferred until an approved app version and approved custom page exist; Apple requires choosing from approved version keywords. No deep link or ad campaign is part of this package.
 
-## Proposed App Store Connect action
+## Completed App Store Connect action
 
-After confirmation, create one custom product page named **Daily check-ins**, add its three localized promotional texts, upload the 24 final images, and place them as described in PagePlan.json:
+Created one custom product page named **Daily check-ins**, added its three localized promotional texts, uploaded the 24 final images, and placed them as described in PagePlan.json:
 
 - Default iOS version 1.0: one header and one search-results image per localization.
 - New custom page: reuse the header and search image per localization, plus three screenshots for each of iPhone and iPad.
-- Save the results as drafts and verify processing and placement order.
+- Saved the results as drafts and verified processing and placement order.
 
-There are currently no custom product pages or default header/search placements. This plan does not require deleting any current screenshot or preview. The default listing’s 81 screenshots and nine videos are outside this batch. Creation eligibility must be checked when applying the plan; Apple’s first-release workflow may require the custom page to be reviewed with the initial iOS version. No App Review submission is included in this action.
+The custom page’s ID is `40507614-2637-4477-928c-7ca0ce4b682d`. No current screenshots or previews were deleted. The default listing’s 81 screenshots and nine videos remain outside this batch. Apple requires the custom page to be reviewed before it appears to customers; a first-release custom page goes with the initial iOS version’s review submission. [Apple-generated page URL](https://apps.apple.com/us/app/moodmargins/id6819079849?ppid=40507614-2637-4477-928c-7ca0ce4b682d). The URL is not evidence of a public release.
 
 Header/search assets are the new iOS 27 and iPadOS 27 creative placements; they are separate from Mac, Watch, and Vision screenshot sets. Draft uploads become visible only after the appropriate Apple approval and release.
 
 ## Verification
 
-All 24 final exports match Apple’s current image catalog, placement groups, maximum file size, and alpha requirements. The 147-, 143-, and 115-character promotional texts fit the 170-character limit. Apple’s Photoshop templates supplied these focal bounds:
+All 24 final exports match Apple’s current image catalog, placement groups, maximum file size, and alpha requirements. Apple’s processed dimensions and specification IDs match every expected file. Placements report ACTIVE, meaning they are attached to their parent drafts; both parent states were separately verified as PREPARE_FOR_SUBMISSION. The 147-, 143-, and 115-character promotional texts fit the 170-character limit. Apple’s Photoshop templates supplied these focal bounds:
 
 | Asset | Focal safe area: x, y, width, height |
 | --- | --- |
