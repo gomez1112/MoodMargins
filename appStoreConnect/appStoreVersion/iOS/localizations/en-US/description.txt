@@ -1,31 +1,30 @@
-A softer place to check in.
+A mood journal for the little moments that make your day.
 
-MoodMargins turns your daily feelings into a personal journal of small moments. Choose an animated mood sticker, write a few lines, and let your page save automatically. There is no account to create and no Save button to remember.
+Choose an animated mood sticker, write a few lines, and build a daily diary that feels like yours. MoodMargins saves your pages automatically, so you can focus on how you feel.
 
-MAKE A LITTLE SPACE FOR YOUR DAY
-• Check in with five expressive, animated mood stickers.
+CHECK IN YOUR WAY
+• Express your mood with five animated stickers.
 • Write on soft, lined notebook pages.
-• Connect feelings and routines with washi-style tags.
-• Revisit your entries by date, search, or mood.
+• Organize moments with tags and find entries by date, mood, or search.
 
-SEE YOUR PATTERNS WITHOUT PRESSURE
-• Explore 7-day, 14-day, 30-day, and yearly Insights.
-• Read mood trends with expressive emoji labels.
-• See your longest streak, most common mood, and top tags.
-• Look back at mood distribution and the activities in your pages.
+UNDERSTAND YOUR PATTERNS
+Explore mood trends across 7 days, 14 days, 30 days, or a year. See your longest journaling streak, most common mood, and frequently used tags. Daily journaling and standard Insights are free.
 
-A JOURNAL THAT FEELS LIKE YOURS
-The original Pastel theme is free. Botanical, Coastal, and Sunset bring fresh palettes to your notebook, each with light and dark appearances. Buy an individual theme once to keep it permanently, or enjoy all premium themes while MoodMargins Plus is active.
+MAKE IT YOURS
+Start with the free Pastel theme, or choose Botanical, Coastal, and Sunset. Each palette includes light and dark appearances. Buy a theme once to keep it, or enjoy all premium themes with MoodMargins Plus.
 
-OPTIONAL APPLE INTELLIGENCE WITH PLUS
-Plus suggests tags as you write and creates gentle recaps from your saved pages. The app tries Apple's Private Cloud Compute first and uses the on-device model if a cloud request fails. Turn off Private Cloud Compute in Customize to keep AI requests on your device. AI features require a compatible device with Apple Intelligence enabled and ready; cloud requests also need internet access and available service capacity.
+A LITTLE HELP WITH PLUS
+Plus adds AI tag suggestions and recaps of your saved pages. AI requires a compatible device with Apple Intelligence enabled and ready. It uses Apple's Private Cloud Compute first, with the on-device model as a fallback. Turn off cloud processing in Customize to use the local model. Cloud requests need internet access and are subject to Apple's usage limits.
 
-YOUR PAGES, YOUR SPACE
-Journal entries are stored on your device. When iCloud is available and enabled, the main app syncs them through your private iCloud account. The developer does not operate a server that receives your journal. Apple Watch supports quick mood notes in a separate local journal; watch entries do not currently sync with the main app.
+YOUR PRIVATE NOTEBOOK
+No app account is needed. Your entries stay on your device and sync through your private iCloud account when iCloud is available and enabled. The developer has no server that receives your journal. On Apple Watch, swipe through moods and add a quick note; Watch entries are stored locally and do not currently sync with the main app.
 
-Daily journaling and standard Insights are free. MoodMargins Plus offers the same premium features with weekly, monthly, or yearly auto-renewing subscriptions. Individual premium themes are separate, permanent non-consumable purchases. Prices are shown before purchase and may vary by region. Manage or cancel subscriptions in your Apple Account settings. Canceling Plus does not delete your entries or themes purchased separately.
+ABOUT PLUS AND THEME PURCHASES
+Weekly, monthly, and yearly auto-renewing Plus subscriptions include the same premium features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.
 
-MoodMargins is a personal reflection tool. It does not provide medical advice, diagnosis, or treatment.
+MoodMargins is for personal reflection, not medical advice, diagnosis, or treatment.
+
+Make a little space for your day. Start with one check-in.
 
 Privacy policy: https://apps.transfinite.us/moodmargins/privacy-policy
 Terms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
