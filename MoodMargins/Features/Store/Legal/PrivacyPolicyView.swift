@@ -14,6 +14,7 @@ struct PrivacyPolicyView: View {
                         }
                     }
                     Link("kickstartPrivacyNotice", destination: StoreLegal.exchangePrivacyURL)
+                    Link("signalPrivacyNotice", destination: StoreLegal.signalPrivacyURL)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(24)

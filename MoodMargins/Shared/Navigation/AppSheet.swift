@@ -12,6 +12,7 @@ enum AppSheet: Identifiable, Hashable {
     case today
     case insights
     case plus
+    case feedback
 
     var id: Self { self }
 
@@ -24,6 +25,8 @@ enum AppSheet: Identifiable, Hashable {
             InsightsView()
         case .plus:
             PlusSubscriptionView()
+        case .feedback:
+            FeedbackBoardView()
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A82000000000000000000001 /* KickstartSignal in Frameworks */ = {isa = PBXBuildFile; productRef = A82000000000000000000002 /* KickstartSignal */; };
 		A81000000000000000000001 /* KickstartExchange in Frameworks */ = {isa = PBXBuildFile; productRef = A81000000000000000000002 /* KickstartExchange */; };
 		A71000000000000000000001 /* BrandPalette.xcassets in Watch Resources */ = {isa = PBXBuildFile; fileRef = A71000000000000000000002 /* BrandPalette.xcassets */; };
 		A61000000000000000000001 /* PurchaseCompletion.storekit in UI Test Resources */ = {isa = PBXBuildFile; fileRef = A61000000000000000000002 /* PurchaseCompletion.storekit */; };
@@ -173,6 +174,7 @@
 		CCE094662FE8377800725C1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				A82000000000000000000001 /* KickstartSignal in Frameworks */,
 				A81000000000000000000001 /* KickstartExchange in Frameworks */,
 				CCE094E42FE840C000725C1C /* DotLottiePlayer in Frameworks */,
 				CCE094E22FE840C000725C1C /* DotLottie in Frameworks */,
@@ -299,6 +301,7 @@
 			);
 			name = MoodMargins;
 			packageProductDependencies = (
+				A82000000000000000000002 /* KickstartSignal */,
 				A81000000000000000000002 /* KickstartExchange */,
 				CCE094D02FE83AA100725C1C /* EZSwiftData */,
 				CCE094D32FE83AB600725C1C /* EZCharts */,
@@ -1233,6 +1236,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A82000000000000000000002 /* KickstartSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A81000000000000000000003 /* XCRemoteSwiftPackageReference "KickstartSDK" */;
+			productName = KickstartSignal;
+		};
 		A81000000000000000000002 /* KickstartExchange */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A81000000000000000000003 /* XCRemoteSwiftPackageReference "KickstartSDK" */;

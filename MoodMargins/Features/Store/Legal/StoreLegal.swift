@@ -1,6 +1,12 @@
 import Foundation
 
 enum StoreLegal {
+    static let signalPrivacyURL: URL = {
+        guard let url = URL(string: "https://signal.kickstart.tools/privacy") else {
+            preconditionFailure("Invalid Kickstart Signal privacy URL")
+        }
+        return url
+    }()
     static let exchangePrivacyURL: URL = {
         guard let url = URL(string: "https://exchange.kickstart.tools/privacy") else {
             preconditionFailure("Invalid Kickstart Exchange privacy URL")
