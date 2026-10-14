@@ -39,6 +39,11 @@ struct MoodLottieIcon: View {
         .loopMode(reduceMotion ? .playOnce : .loop)
         .playbackMode(reduceMotion ? .paused : .playing)
         .frame(width: size, height: size)
+#if os(visionOS)
+        // DotLottie's Core Image → Metal path reverses the image rows on visionOS.
+        // Correct only the artwork; labels and selection controls remain upright.
+        .scaleEffect(x: 1, y: -1)
+#endif
         .allowsHitTesting(false)
     }
 

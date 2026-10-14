@@ -17,7 +17,11 @@ struct MoodMarginsOnboarding<Content: View>: View {
 
     var body: some View {
 #if os(visionOS)
-        VisionOnboarding(currentVersion: MoodMarginsOnboardingContent.currentVersion) {
+        VisionOnboarding(
+            currentVersion: MoodMarginsOnboardingContent.currentVersion,
+            pages: MoodMarginsOnboardingContent.pages,
+            copy: MoodMarginsOnboardingContent.copy
+        ) {
             content
         }
 #else

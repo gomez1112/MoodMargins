@@ -7,19 +7,26 @@ final class VisionInterfaceUITests: XCTestCase {
     override func setUpWithError() throws { continueAfterFailure = false }
 
     @MainActor
-    func testWelcomeFitsAndOffersInteractiveMoods() throws {
+    func testWelcomeUsesTheSameThreePagesAsPhoneAndMac() throws {
+        // An earlier commerce test must not enable live AI work in this UI fixture.
+        let session = try testSession()
+        defer { session.clearTransactions() }
         let app = XCUIApplication()
         app.launchArguments = ["--marketing-capture", "--show-onboarding", "-com.onboardingkit.lastSeenVersion", "", "-AppleLanguages", "(en)"]
         app.launch()
         defer { app.terminate() }
-        let start = app.buttons["start-journaling"]
-        XCTAssertTrue(start.waitForExistence(timeout: 15))
-        XCTAssertTrue(start.isHittable)
-        let mood = app.buttons["Laughing"].firstMatch
-        XCTAssertTrue(mood.isHittable)
-        mood.tap()
-        XCTAssertTrue(mood.isSelected)
+        let next = app.buttons["onboarding-next"]
+        XCTAssertTrue(next.waitForExistence(timeout: 15))
+        XCTAssertTrue(next.isHittable)
+        assertPage(app, contains: "A softer place to check in")
         capture(app, name: "vision-welcome")
+        next.tap()
+        assertPage(app, contains: "Build today with gentle tags")
+        XCTAssertTrue(next.isHittable)
+        next.tap()
+        assertPage(app, contains: "See patterns without pressure")
+        let start = app.buttons["start-journaling"]
+        XCTAssertTrue(start.isHittable)
         start.tap()
         XCTAssertTrue(app.staticTexts["Today's page"].waitForExistence(timeout: 10))
         capture(app, name: "vision-today")
@@ -46,15 +53,24 @@ final class VisionInterfaceUITests: XCTestCase {
 
     @MainActor
     func testWelcomeSupportsLargeTextAndArabic() throws {
+        let session = try testSession()
+        defer { session.clearTransactions() }
         let app = XCUIApplication()
         app.launchArguments = ["--marketing-capture", "--show-onboarding", "-com.onboardingkit.lastSeenVersion", "", "-AppleLanguages", "(ar)", "-AppleLocale", "ar_SA", "-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"]
         app.launch()
         defer { app.terminate() }
+        let next = app.buttons["onboarding-next"]
+        XCTAssertTrue(next.waitForExistence(timeout: 15))
+        XCTAssertTrue(next.isHittable)
+        XCTAssertEqual(next.label, "التالي")
+        capture(app, name: "vision-welcome-arabic-large-text")
+        next.tap()
+        XCTAssertTrue(next.isHittable)
+        next.tap()
         let start = app.buttons["start-journaling"]
-        XCTAssertTrue(start.waitForExistence(timeout: 15))
+        XCTAssertTrue(start.waitForExistence(timeout: 5))
         XCTAssertTrue(start.isHittable)
         XCTAssertEqual(start.label, "ابدأ التدوين")
-        capture(app, name: "vision-welcome-arabic-large-text")
         start.tap()
         XCTAssertTrue(start.waitForNonExistence(timeout: 5))
     }
@@ -103,6 +119,12 @@ final class VisionInterfaceUITests: XCTestCase {
         attachment.name = name
         attachment.lifetime = .keepAlways
         add(attachment)
+    }
+
+    @MainActor
+    private func assertPage(_ app: XCUIApplication, contains title: String) {
+        let page = app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", title)).firstMatch
+        XCTAssertTrue(page.waitForExistence(timeout: 5), app.debugDescription)
     }
 }
 #endif

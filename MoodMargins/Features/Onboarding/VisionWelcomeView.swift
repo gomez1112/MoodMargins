@@ -1,103 +1,100 @@
 #if os(visionOS)
+import OnboardingKit
 import SwiftUI
 
+/// Uses the shared onboarding pages with native spatial materials and controls.
 struct VisionWelcomeView: View {
     @Environment(\.diaryPalette) private var palette
-    @State private var previewMood = Mood.wink
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @ScaledMetric(relativeTo: .largeTitle) private var symbolSize = 80.0
+    @State private var currentPage = 0
+    @AccessibilityFocusState private var isPageFocused: Bool
+    var pages: [OnboardingPage]
+    var copy: OnboardingCopy
     var onComplete: () -> Void
 
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 28) {
-                    VStack(alignment: .leading, spacing: 12) {
-                        Text("A softer place to check in")
-                            .font(.system(.largeTitle, design: .rounded).bold())
+                if let page {
+                    VStack(spacing: 24) {
+                        pageIcon(page.icon)
+                            .font(.system(size: min(symbolSize, 136)))
+                            .foregroundStyle(palette.action)
+                            .frame(minHeight: 120)
+                            .accessibilityHidden(true)
+                        Text(page.title)
+                            .font(.largeTitle.bold())
                             .accessibilityAddTraits(.isHeader)
-                        Text("Pick a mood, jot a few lines, and save the small moments that usually slip past.")
-                            .font(.title3)
+                        Text(page.description)
+                            .font(.body)
                             .foregroundStyle(.secondary)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
-                    ViewThatFits(in: .horizontal) {
-                        HStack(alignment: .center, spacing: 32) {
-                            notebookPreview.frame(minWidth: 310, maxWidth: 350)
-                            features.frame(minWidth: 280, maxWidth: .infinity)
-                        }
-                        VStack(alignment: .leading, spacing: 28) {
-                            notebookPreview
-                            features
-                        }
-                    }
-                    Text(.visionWelcomePrivacy)
-                        .font(.footnote)
-                        .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: 520)
+                    .padding(32)
+                    .frame(maxWidth: .infinity)
+                    .accessibilityElement(children: .combine)
+                    .accessibilityFocused($isPageFocused)
+                    .id(currentPage)
+                    .transition(.opacity)
                 }
-                .frame(maxWidth: 760, alignment: .leading)
-                .padding(32)
-                .frame(maxWidth: .infinity)
             }
             .safeAreaInset(edge: .bottom) {
-                HStack {
-                    Spacer()
-                    Button("Start journaling", action: onComplete)
+                VStack(spacing: 20) {
+                    HStack(spacing: 8) {
+                        ForEach(pages.indices, id: \.self) { index in
+                            Circle()
+                                .fill(index == currentPage ? palette.action : Color.secondary.opacity(0.4))
+                                .frame(width: 8, height: 8)
+                        }
+                    }
+                    .accessibilityHidden(true)
+                    Button(isLastPage ? copy.getStartedButtonTitle : copy.nextButtonTitle, action: advance)
                         .buttonStyle(.borderedProminent)
                         .controlSize(.large)
-                        .accessibilityIdentifier("start-journaling")
+                        .accessibilityIdentifier(isLastPage ? "start-journaling" : "onboarding-next")
                 }
+                .frame(maxWidth: .infinity)
                 .padding(24)
                 .background(.regularMaterial)
             }
             .navigationTitle("MoodMargins")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Skip", systemImage: "xmark", action: onComplete)
+                    Button(copy.skipButtonTitle, systemImage: "xmark", action: onComplete)
                         .labelStyle(.iconOnly)
+                        .accessibilityIdentifier("skip-onboarding")
                 }
             }
         }
         .tint(palette.action)
-        .frame(idealWidth: 800, idealHeight: 660)
+        .frame(idealWidth: 600, idealHeight: 600)
+        .animation(reduceMotion ? nil : .snappy, value: currentPage)
+        .onChange(of: currentPage) { isPageFocused = true }
     }
 
-    private var notebookPreview: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            MoodPicker(selection: $previewMood, title: String(localized: .visionWelcomeHint))
-            Divider()
-            Text("Dear diary…")
-                .font(.system(.title3, design: .serif))
-                .foregroundStyle(.secondary)
-            Text(.visionWelcomeSample)
-                .font(.system(.title2, design: .serif))
-                .fixedSize(horizontal: false, vertical: true)
-            Rectangle().fill(.primary.opacity(0.12)).frame(height: 1)
-            Rectangle().fill(.primary.opacity(0.12)).frame(height: 1)
-        }
-        .padding(24)
-        .diarySurface(cornerRadius: 24)
+    private var page: OnboardingPage? {
+        pages.indices.contains(currentPage) ? pages[currentPage] : nil
     }
 
-    private var features: some View {
-        VStack(alignment: .leading, spacing: 24) {
-            feature(title: "Daily mood pages", detail: .visionWelcomeAutoSave, symbol: "book.pages.fill")
-            feature(title: "Past page browsing", detail: "Revisit entries by date, mood, and search so older reflections stay easy to find.", symbol: "calendar")
-            feature(title: "Gentle insights", detail: .visionWelcomeInsights, symbol: "sparkles")
+    private var isLastPage: Bool { currentPage >= pages.count - 1 }
+
+    @ViewBuilder
+    private func pageIcon(_ icon: OnboardingIcon) -> some View {
+        switch icon {
+        case .system(let name): Image(systemName: name)
+        case .asset(let name): Image(name).resizable().scaledToFit().frame(maxHeight: 120)
         }
     }
 
-    private func feature(title: LocalizedStringKey, detail: LocalizedStringResource, symbol: String) -> some View {
-        HStack(alignment: .top, spacing: 16) {
-            Image(systemName: symbol)
-                .font(.title2)
-                .foregroundStyle(palette.action)
-                .frame(width: 32)
-                .accessibilityHidden(true)
-            VStack(alignment: .leading, spacing: 6) {
-                Text(title).font(.headline)
-                Text(detail).font(.subheadline).foregroundStyle(.secondary)
-            }
+    private func advance() {
+        if isLastPage {
+            onComplete()
+        } else {
+            currentPage += 1
         }
-        .fixedSize(horizontal: false, vertical: true)
-        .accessibilityElement(children: .combine)
     }
 }
 #endif
