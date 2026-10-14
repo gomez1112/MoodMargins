@@ -1,0 +1,22 @@
+{
+  "placements": [
+    {
+      "fileName": "01-check-in.png"
+    },
+    {
+      "fileName": "02-moods.png"
+    },
+    {
+      "fileName": "03-pages.png"
+    },
+    {
+      "fileName": "04-detail.png"
+    },
+    {
+      "fileName": "05-mood-sad.png"
+    },
+    {
+      "fileName": "06-mood-laughing.png"
+    }
+  ]
+}
