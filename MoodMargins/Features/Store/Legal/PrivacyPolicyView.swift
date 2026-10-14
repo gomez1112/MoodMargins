@@ -13,6 +13,7 @@ struct PrivacyPolicyView: View {
                             Text(section.body).textSelection(.enabled)
                         }
                     }
+                    Link("kickstartPrivacyNotice", destination: StoreLegal.exchangePrivacyURL)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(24)

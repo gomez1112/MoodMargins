@@ -1,6 +1,27 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "kickstartPrivacyNotice" : {
+      "comment" : "Link to the privacy notice for the app recommendation banner provider.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Kickstart Exchange privacy notice" }
+        },
+        "ar" : {
+          "stringUnit" : { "state" : "translated", "value" : "إشعار خصوصية Kickstart Exchange" }
+        },
+        "es" : {
+          "stringUnit" : { "state" : "translated", "value" : "Aviso de privacidad de Kickstart Exchange" }
+        },
+        "es-419" : {
+          "stringUnit" : { "state" : "translated", "value" : "Aviso de privacidad de Kickstart Exchange" }
+        },
+        "es-US" : {
+          "stringUnit" : { "state" : "translated", "value" : "Aviso de privacidad de Kickstart Exchange" }
+        }
+      }
+    },
     "" : {
       "localizations" : {
         "ar" : {

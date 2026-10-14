@@ -1,5 +1,5 @@
 {
-  "originHash" : "b297666d17207d9bf03af825639e4e8d01a82bcd64f7d71c8d1cf142cc2fe75a",
+  "originHash" : "2bd4e35eea54b0a71d75740624cc63545a3f41f221cb2deb99f83945b3395a94",
   "pins" : [
     {
       "identity" : "dotlottie-ios",
@@ -35,6 +35,15 @@
       "state" : {
         "revision" : "8ff5a73598253451bff3aa4de1b25bfaada45701",
         "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "kickstartsdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/twostraws/KickstartSDK",
+      "state" : {
+        "revision" : "f368c7e79695ec6370c96e5656896d972d581621",
+        "version" : "0.6.0"
       }
     },
     {

@@ -21,6 +21,7 @@ struct PurchaseCompletionTests {
             return
         }
         let store = PurchaseStore()
+        #expect(!store.canShowExchangeBanner)
         guard case .verified = verification else {
             Issue.record("The local StoreKit transaction was not verified")
             return
@@ -29,7 +30,21 @@ struct PurchaseCompletionTests {
         #expect(unlocked == product)
         #expect(store.entitlements.products.contains(product))
         #expect(store.entitlements.hasPlus == product.isSubscription)
+        #expect(store.hasResolvedEntitlements)
+        #expect(store.canShowExchangeBanner == !product.isSubscription)
         #expect(store.purchaseMessage == nil)
+    }
+
+    @Test("A free account can show a banner only after the initial entitlement check")
+    func freeAccountBanner() async throws {
+        let session = try testSession()
+        defer { session.clearTransactions() }
+        let store = PurchaseStore()
+        #expect(!store.hasResolvedEntitlements)
+        #expect(!store.canShowExchangeBanner)
+        await store.refreshEntitlements()
+        #expect(store.hasResolvedEntitlements)
+        #expect(store.canShowExchangeBanner)
     }
 
     @Test("Pending, cancelled, and failed purchases never signal dismissal")
@@ -46,6 +61,18 @@ struct PurchaseCompletionTests {
         #expect(await store.handlePurchase(.failure(URLError(.notConnectedToInternet))) == nil)
         #expect(store.purchaseMessage != nil)
         #expect(!store.entitlements.hasPlus)
+    }
+
+    @Test("Cancelling an entitlement check never enables a banner")
+    func cancelledEntitlementCheck() async throws {
+        let session = try testSession()
+        defer { session.clearTransactions() }
+        let store = PurchaseStore()
+        let refresh = Task { await store.refreshEntitlements() }
+        refresh.cancel()
+        await refresh.value
+        #expect(!store.hasResolvedEntitlements)
+        #expect(!store.canShowExchangeBanner)
     }
 
     private func testSession() throws -> SKTestSession {

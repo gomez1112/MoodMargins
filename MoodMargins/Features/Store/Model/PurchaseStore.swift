@@ -12,9 +12,15 @@ final class PurchaseStore {
     private(set) var isLoading = false
     private(set) var isRestoring = false
     private(set) var hasLoaded = false
+    private(set) var hasResolvedEntitlements = false
     var loadingMessage: String?
     var purchaseMessage: String?
     private var refreshID: UUID?
+
+    /// Do not instantiate the ad SDK while a returning subscriber's access is unknown.
+    var canShowExchangeBanner: Bool {
+        hasResolvedEntitlements && !entitlements.hasPlus
+    }
 
     var isShowingPurchaseMessage: Bool {
         get { purchaseMessage != nil }
@@ -67,6 +73,7 @@ final class PurchaseStore {
         }
         guard !Task.isCancelled, refreshID == requestID else { return }
         entitlements = PurchaseEntitlements(products: verifiedProducts)
+        hasResolvedEntitlements = true
     }
 
     /// Each window owns a cancellable observer; finishing a verified transaction is idempotent.

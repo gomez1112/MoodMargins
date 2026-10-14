@@ -1,5 +1,5 @@
 MoodMargins Privacy Policy
-Effective date: October 4, 2026
+Effective date: October 14, 2026
 
 Your journal
 MoodMargins is a personal mood journal developed by Gerard Gomez. You can save moods, notes, tags, and related journal details without creating a MoodMargins account. Journal content is stored on your device. When iCloud is available and enabled for MoodMargins, the main app uses Apple’s CloudKit to sync journal data through your private iCloud account. Your Apple Watch journal is stored locally on the watch and does not currently sync with the main app. The developer does not operate a server that receives your journal.
@@ -14,7 +14,10 @@ Purchases
 Apple processes payments for auto-renewing weekly, monthly, and yearly Plus subscriptions and permanent, non-consumable theme purchases. MoodMargins reads verified StoreKit product and transaction information to provide, restore, and update access. The developer does not receive your payment card details. Canceling a subscription does not delete journal pages or themes purchased separately. You can manage or cancel subscriptions in your Apple Account settings.
 
 Preferences and notifications
-The app stores preferences such as your theme, model choice, and onboarding state on your device. Where you use reminders, notification permissions are controlled by your device settings. Journal content is not used for advertising or sold. This version does not include developer-operated analytics, advertising, or tracking services.
+The app stores preferences such as your theme, model choice, and onboarding state on your device. Where you use reminders, notification permissions are controlled by your device settings. Journal content is not used for advertising or sold.
+
+App recommendations
+The Customize screen can show a Kickstart Exchange banner when you do not have an active Plus subscription. Exchange recommends other apps without using your journal, tracking users or devices, or building behavioral profiles. It receives app-level details such as the bundle identifier, platform, app and build versions, SDK version, and App Store country, and records ad delivery, impressions, clicks, and reports. These records are not linked to your identity or used for tracking. In shipping builds, it temporarily processes a locally verified Apple-signed App Transaction to verify the app installation, then discards that signed data without retaining or using its user or device values. Individual ad records are kept for approximately 30 days; aggregate app-level statistics may be retained longer. Its network provider processes IP addresses to deliver requests, but Exchange does not store them or use them to identify you. See the Kickstart Exchange privacy notice at https://exchange.kickstart.tools/privacy for full details.
 
 Retention and deletion
 Journal pages remain in the app until you delete them. Use the Pages screen to delete individual entries; deletions sync to iCloud when the service is available. Apple manages iCloud backups and their retention under your account settings. Deleting the app removes its local app data, but does not automatically cancel a subscription or guarantee deletion of cloud data or backups. Manage those separately in your Apple Account and iCloud settings.

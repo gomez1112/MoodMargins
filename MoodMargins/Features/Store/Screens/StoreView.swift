@@ -1,4 +1,5 @@
 import FoundationModels
+import KickstartExchange
 import StoreKit
 import SwiftUI
 
@@ -87,6 +88,15 @@ struct StoreView: View {
                 NavigationLink("Privacy policy") { PrivacyPolicyView() }
                 Link("Privacy policy on the web", destination: StoreLegal.privacyURL)
                 Link("Terms of use", destination: StoreLegal.termsURL)
+            }
+            if purchases.canShowExchangeBanner {
+                Section {
+                    ExchangeBannerAdView(apiKey: "ks_live_-uYuqmZRUIP03QeyjQ45qZMzb49J9Gc2phVPlJQFHzk")
+                        .exchangeAdCornerStyle(.rounded)
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.clear)
+                        .environment(\.defaultMinListRowHeight, 0)
+                }
             }
 #if DEBUG
             if !ProcessInfo.processInfo.arguments.contains("--marketing-capture") {

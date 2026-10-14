@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A81000000000000000000001 /* KickstartExchange in Frameworks */ = {isa = PBXBuildFile; productRef = A81000000000000000000002 /* KickstartExchange */; };
 		A71000000000000000000001 /* BrandPalette.xcassets in Watch Resources */ = {isa = PBXBuildFile; fileRef = A71000000000000000000002 /* BrandPalette.xcassets */; };
 		A61000000000000000000001 /* PurchaseCompletion.storekit in UI Test Resources */ = {isa = PBXBuildFile; fileRef = A61000000000000000000002 /* PurchaseCompletion.storekit */; };
         A11000000000000000000001 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11000000000000000000002 /* Mood.swift */; };
@@ -172,6 +173,7 @@
 		CCE094662FE8377800725C1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				A81000000000000000000001 /* KickstartExchange in Frameworks */,
 				CCE094E42FE840C000725C1C /* DotLottiePlayer in Frameworks */,
 				CCE094E22FE840C000725C1C /* DotLottie in Frameworks */,
 				CCE094DF2FE83AFC00725C1C /* Algorithms in Frameworks */,
@@ -297,6 +299,7 @@
 			);
 			name = MoodMargins;
 			packageProductDependencies = (
+				A81000000000000000000002 /* KickstartExchange */,
 				CCE094D02FE83AA100725C1C /* EZSwiftData */,
 				CCE094D32FE83AB600725C1C /* EZCharts */,
 				CCE094D52FE83AB600725C1C /* EZCharts3D */,
@@ -452,6 +455,7 @@
 			mainGroup = CCE094602FE8377800725C1C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				A81000000000000000000003 /* XCRemoteSwiftPackageReference "KickstartSDK" */,
 				CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */,
 				CCE094D22FE83AB600725C1C /* XCRemoteSwiftPackageReference "EZCharts" */,
 				CCE094D72FE83AC300725C1C /* XCRemoteSwiftPackageReference "OnboardingKit" */,
@@ -701,6 +705,7 @@
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -751,6 +756,7 @@
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1168,6 +1174,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A81000000000000000000003 /* XCRemoteSwiftPackageReference "KickstartSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/KickstartSDK";
+			requirement = {
+				kind = exactVersion;
+				version = 0.6.0;
+			};
+		};
 		CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gomez1112/EZSwiftData";
@@ -1219,6 +1233,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A81000000000000000000002 /* KickstartExchange */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A81000000000000000000003 /* XCRemoteSwiftPackageReference "KickstartSDK" */;
+			productName = KickstartExchange;
+		};
 		CCE094D02FE83AA100725C1C /* EZSwiftData */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CCE094CF2FE83AA100725C1C /* XCRemoteSwiftPackageReference "EZSwiftData" */;
