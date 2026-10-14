@@ -8128,6 +8128,270 @@
           }
         }
       }
+    },
+    "purchaseNetworkError" : {
+      "comment" : "Actionable StoreKit purchase recovery message.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The App Store couldn’t connect. Check your connection and try again."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El App Store no pudo conectarse. Comprueba tu conexión e inténtalo de nuevo."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر الاتصال بـ App Store. تحقّق من اتصالك وحاول مجددًا."
+          }
+        }
+      }
+    },
+    "purchaseProductUnavailable" : {
+      "comment" : "Actionable StoreKit purchase recovery message.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This purchase is temporarily unavailable. Try again in a moment."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta compra no está disponible temporalmente. Inténtalo de nuevo en unos momentos."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هذا الشراء غير متاح مؤقتًا. حاول مجددًا بعد قليل."
+          }
+        }
+      }
+    },
+    "purchaseRestrictedError" : {
+      "comment" : "Actionable StoreKit purchase recovery message.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchases are restricted for this Apple Account or device. Check the account’s purchase settings."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las compras están restringidas para esta cuenta de Apple o este dispositivo. Comprueba los ajustes de compras de la cuenta."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المشتريات مقيّدة لهذا الجهاز أو حساب Apple. تحقّق من إعدادات المشتريات للحساب."
+          }
+        }
+      }
+    },
+    "purchaseStorefrontError" : {
+      "comment" : "Actionable StoreKit purchase recovery message.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This purchase isn’t available in your Apple Account’s country or region."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta compra no está disponible en el país o región de tu cuenta de Apple."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هذا الشراء غير متاح في بلد أو منطقة حساب Apple."
+          }
+        }
+      }
+    },
+    "purchaseTemporaryError" : {
+      "comment" : "Actionable StoreKit purchase recovery message.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The App Store couldn’t complete this purchase. Try again later, or restore purchases if you already paid."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El App Store no pudo completar esta compra. Inténtalo más tarde o restaura las compras si ya has pagado."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر على App Store إكمال هذا الشراء. حاول لاحقًا، أو استعد المشتريات إذا كنت قد دفعت بالفعل."
+          }
+        }
+      }
+    },
+    "spatialThemePurchaseFooter" : {
+      "comment" : "Theme purchase explanation on Vision Pro, where glass adapts to the surroundings instead of light/dark appearances.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buy a theme once to keep it, or use every premium theme while Plus is active."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compra un tema una vez para conservarlo, o usa todos los temas premium mientras Plus esté activo."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشترِ سمة مرة واحدة للاحتفاظ بها، أو استخدم جميع السمات المميزة أثناء تفعيل Plus."
+          }
+        }
+      }
+    },
+    "visionWelcomeAutoSave" : {
+      "comment" : "Vision Pro welcome copy.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your page saves automatically as you write."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu página se guarda automáticamente mientras escribes."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تُحفظ صفحتك تلقائيًا أثناء الكتابة."
+          }
+        }
+      }
+    },
+    "visionWelcomeHint" : {
+      "comment" : "Vision Pro welcome copy.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try a mood sticker"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prueba un sticker de ánimo"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جرّب ملصقًا للمزاج"
+          }
+        }
+      }
+    },
+    "visionWelcomeInsights" : {
+      "comment" : "Vision Pro welcome copy.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See your moods and journaling streaks over time."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Observa tus estados de ánimo y tus rachas de escritura con el tiempo."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تأمّل حالات مزاجك وسلاسل التدوين بمرور الوقت."
+          }
+        }
+      }
+    },
+    "visionWelcomePrivacy" : {
+      "comment" : "Vision Pro welcome copy.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your journal is personal. No app account is needed."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu diario es personal. No necesitas una cuenta en la app."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يومياتك شخصية. لا تحتاج إلى حساب للتطبيق."
+          }
+        }
+      }
+    },
+    "visionWelcomeSample" : {
+      "comment" : "Vision Pro welcome copy.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A quiet moment, just for me."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un momento de calma, solo para mí."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لحظة هادئة، لي وحدي."
+          }
+        }
+      }
     }
   },
   "version" : "1.3"

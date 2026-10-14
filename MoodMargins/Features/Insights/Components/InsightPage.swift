@@ -18,7 +18,8 @@ struct InsightPage<Content: View>: View {
         }
         .padding(18)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(palette.paper, in: .rect(cornerRadius: 18))
+        .diarySurface()
+#if !os(visionOS)
         .overlay(alignment: .topTrailing) {
             RoundedRectangle(cornerRadius: 5)
                 .fill(.purple.opacity(0.18))
@@ -28,6 +29,6 @@ struct InsightPage<Content: View>: View {
                 .accessibilityHidden(true)
                 .allowsHitTesting(false)
         }
-        .shadow(color: .black.opacity(0.05), radius: 6, y: 3)
+#endif
     }
 }

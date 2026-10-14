@@ -53,7 +53,13 @@ struct GeneratedInsightRecapCard: View {
                         .font(.system(.caption, design: .rounded).weight(.semibold))
                         .padding(.horizontal, 12)
                         .padding(.vertical, 8)
-                        .background(Capsule().fill(palette.blush))
+                        .background {
+#if os(visionOS)
+                            Capsule().fill(palette.action.opacity(0.16))
+#else
+                            Capsule().fill(palette.blush)
+#endif
+                        }
                         .foregroundStyle(palette.ink)
                 }
 

@@ -1,10 +1,12 @@
 import Foundation
 import Observation
 import StoreKit
+import OSLog
 
 @MainActor
 @Observable
 final class PurchaseStore {
+    private static let logger = Logger(subsystem: "com.transfinite.MoodMargins", category: "Purchases")
     private(set) var products: [Product] = []
     private(set) var entitlements = PurchaseEntitlements()
     private(set) var isLoading = false
@@ -39,12 +41,15 @@ final class PurchaseStore {
             hasLoaded = true
             if loaded.count != StoreProduct.allCases.count {
                 loadingMessage = String(localized: "Some purchases are unavailable right now. You can still preview every theme.")
+                let missing = StoreProduct.allCases.filter { identifier in !loaded.contains { $0.id == identifier.rawValue } }
+                Self.logger.error("StoreKit did not return products: \(missing.map(\.rawValue).joined(separator: ","), privacy: .public)")
             }
         } catch is CancellationError {
             return
         } catch {
             guard !Task.isCancelled else { return }
             hasLoaded = true
+            Self.log(error, operation: "load products")
             loadingMessage = String(localized: "Purchases couldn't be loaded. Check your connection and try again.")
         }
     }
@@ -107,10 +112,13 @@ final class PurchaseStore {
 
     /// Returns the verified product only after its current access has been refreshed.
     @discardableResult
-    func handlePurchase(_ result: Result<Product.PurchaseResult, Error>) async -> StoreProduct? {
+    func handlePurchase(_ result: Result<Product.PurchaseResult, Error>, product: StoreProduct? = nil) async -> StoreProduct? {
         switch result {
         case .success(.success(let verification)):
             guard case .verified(let transaction) = verification else {
+                if case .unverified(_, let error) = verification {
+                    Self.log(error, operation: "verify transaction")
+                }
                 purchaseMessage = String(localized: "This purchase couldn't be verified. Restore purchases or try again.")
                 return nil
             }
@@ -124,11 +132,16 @@ final class PurchaseStore {
             purchaseMessage = String(localized: "Your purchase is waiting for approval. Access will unlock when Apple confirms it.")
         case .success(.userCancelled): break
         case .failure(let error):
-            guard !(error is CancellationError), !Task.isCancelled else { return nil }
-            if let storeError = error as? StoreKitError, case .userCancelled = storeError { return nil }
-            purchaseMessage = String(localized: "Your purchase couldn't be completed. Please try again.")
+            guard !Task.isCancelled, let message = PurchaseErrorPresenter.message(for: error) else { return nil }
+            Self.log(error, operation: "purchase \(product?.rawValue ?? "unknown product")")
+            purchaseMessage = message
         @unknown default: break
         }
         return nil
+    }
+
+    private static func log(_ error: Error, operation: String) {
+        let diagnostic = error as NSError
+        logger.error("StoreKit \(operation, privacy: .public) failed: \(diagnostic.domain, privacy: .public) / \(diagnostic.code, privacy: .public). \(diagnostic.localizedDescription, privacy: .private)")
     }
 }

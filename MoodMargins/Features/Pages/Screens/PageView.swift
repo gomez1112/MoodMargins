@@ -65,7 +65,7 @@ struct PageView: View {
             }
         }
         .safeAreaPadding(.bottom, 16)
-        .background(palette.background.ignoresSafeArea())
+        .background { DiaryWindowBackground() }
         .navigationTitle("Pages")
 #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)

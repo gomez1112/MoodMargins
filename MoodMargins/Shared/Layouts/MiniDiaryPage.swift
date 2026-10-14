@@ -34,8 +34,7 @@ struct MiniDiaryPage: View {
         }
         .padding()
         .frame(maxWidth: .infinity, minHeight: dynamicTypeSize.isAccessibilitySize ? 0 : minimumHeight, alignment: .topLeading)
-        .background(palette.paper, in: .rect(cornerRadius: 16))
-        .shadow(color: .black.opacity(0.06), radius: 5, y: 3)
+        .diarySurface(cornerRadius: 16)
         .accessibilityElement(children: .combine)
         .accessibilityValue(entry.mood.title)
     }

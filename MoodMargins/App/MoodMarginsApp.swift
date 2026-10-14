@@ -59,7 +59,10 @@ struct MoodMarginsApp: App {
 #if DEBUG
             .id(marketingCapture.isEnabled)
             .environment(marketingCapture)
+#if !os(visionOS)
+            // visionOS glass adapts to its surroundings rather than a light/dark appearance.
             .preferredColorScheme(marketingCapture.appearance)
+#endif
             .transformEnvironment(\.locale) { locale in
                 if let captureLocale = marketingCapture.locale { locale = captureLocale }
             }
@@ -116,7 +119,8 @@ struct MoodMarginsApp: App {
     @ViewBuilder
     private var rootContent: some View {
 #if DEBUG
-        if ProcessInfo.processInfo.arguments.contains("--marketing-capture") {
+        if ProcessInfo.processInfo.arguments.contains("--marketing-capture"),
+           !ProcessInfo.processInfo.arguments.contains("--show-onboarding") {
             ContentView()
         } else {
             MoodMarginsOnboarding { ContentView() }

@@ -2,17 +2,24 @@ import Foundation
 import StoreKit
 import StoreKitTest
 import Testing
+#if os(visionOS)
+import UIKit
+#endif
 @testable import MoodMargins
 
 /// Uses Apple's local test store; no App Store account or real payment is involved.
 @Suite("Purchase completion", .serialized)
 @MainActor
 struct PurchaseCompletionTests {
-    @Test("Every verified subscription returns unlocked access for dismissal", arguments: StoreProduct.subscriptions)
-    func verifiedSubscription(product: StoreProduct) async throws {
+    @Test("Verified subscriptions and permanent themes unlock access", arguments: StoreProduct.allCases)
+    func verifiedProduct(product: StoreProduct) async throws {
         let session = try testSession()
         defer { session.clearTransactions() }
-        let verification = try await purchasedTransaction(product: product, session: session)
+        let result = try await purchase(product: product)
+        guard case .success(let verification) = result else {
+            Issue.record("The local purchase didn't return a transaction")
+            return
+        }
         let store = PurchaseStore()
         guard case .verified = verification else {
             Issue.record("The local StoreKit transaction was not verified")
@@ -20,7 +27,8 @@ struct PurchaseCompletionTests {
         }
         let unlocked = await store.handlePurchase(.success(.success(verification)))
         #expect(unlocked == product)
-        #expect(store.entitlements.hasPlus)
+        #expect(store.entitlements.products.contains(product))
+        #expect(store.entitlements.hasPlus == product.isSubscription)
         #expect(store.purchaseMessage == nil)
     }
 
@@ -50,24 +58,19 @@ struct PurchaseCompletionTests {
         return session
     }
 
-    private func purchasedTransaction(product: StoreProduct, session: SKTestSession) async throws -> VerificationResult<Transaction> {
-        let updates = Transaction.updates
-        return try await withThrowingTaskGroup(of: VerificationResult<Transaction>.self) { group in
-            group.addTask {
-                for await verification in updates {
-                    if verification.unsafePayloadValue.productID == product.rawValue { return verification }
-                }
-                throw CancellationError()
-            }
-            group.addTask {
-                try await Task.sleep(for: .seconds(10))
-                throw URLError(.timedOut)
-            }
-            defer { group.cancelAll() }
-            try await session.buyProduct(identifier: product.rawValue)
-            if let verification = await Transaction.latest(for: product.rawValue) { return verification }
-            return try #require(await group.next())
-        }
+    private func purchase(product: StoreProduct) async throws -> Product.PurchaseResult {
+        let loaded = try await Product.products(for: [product.rawValue])
+        let product = try #require(loaded.first)
+#if os(visionOS)
+        // Test-only UIKit access: StoreKit's programmatic visionOS API requires a scene.
+        // Shipping purchase controls use native StoreKit views and don't use this bridge.
+        let scene = try #require(UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .first { $0.activationState == .foregroundActive })
+        return try await product.purchase(confirmIn: scene)
+#else
+        return try await product.purchase()
+#endif
     }
 }
 

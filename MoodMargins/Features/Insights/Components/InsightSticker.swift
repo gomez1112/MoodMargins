@@ -33,8 +33,12 @@ struct InsightSticker: View {
         }
         .padding(14)
         .frame(maxWidth: .infinity, minHeight: dynamicTypeSize.isAccessibilitySize ? 0 : minimumHeight, alignment: .topLeading)
+#if os(visionOS)
+        .diarySurface(cornerRadius: 16)
+#else
         .background(palette.paper, in: .rect(cornerRadius: 16))
         .shadow(color: .black.opacity(0.04), radius: 5, y: 3)
+#endif
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(title)
         .accessibilityValue(value)

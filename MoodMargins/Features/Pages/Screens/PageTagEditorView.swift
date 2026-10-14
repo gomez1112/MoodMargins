@@ -35,7 +35,7 @@ struct PageTagEditorView: View {
                 }
             }
             .scrollContentBackground(.hidden)
-            .background(palette.background.ignoresSafeArea())
+            .background { DiaryWindowBackground() }
             .navigationTitle("pageEditTags")
 #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)

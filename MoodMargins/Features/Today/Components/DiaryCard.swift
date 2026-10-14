@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct DiaryCard<Content: View>: View {
-    @Environment(\.diaryPalette) private var palette
     let rotation: Angle
     @ContentBuilder var content: () -> Content
     
     var body: some View {
         content()
             .padding()
-            .background(palette.paper, in: RoundedRectangle(cornerRadius: 18))
+            .diarySurface()
+#if !os(visionOS)
             .overlay(alignment: .topTrailing) {
                 RoundedRectangle(cornerRadius: 5)
                     .fill(.pink.opacity(0.28))
@@ -25,6 +25,6 @@ struct DiaryCard<Content: View>: View {
                     .accessibilityHidden(true)
                     .allowsHitTesting(false)
             }
-            .shadow(color: .black.opacity(0.05), radius: 6, y: 3)
+#endif
     }
 }

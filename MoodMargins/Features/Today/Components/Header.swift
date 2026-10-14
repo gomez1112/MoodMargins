@@ -35,7 +35,13 @@ struct Header: View {
             .font(.system(.caption, design: .rounded).bold())
             .padding(.horizontal, 14)
             .padding(.vertical, 10)
-            .background(palette.paper, in: Capsule())
+            .background {
+#if os(visionOS)
+                Capsule().fill(.regularMaterial)
+#else
+                Capsule().fill(palette.paper)
+#endif
+            }
             .foregroundStyle(palette.ink)
     }
 }

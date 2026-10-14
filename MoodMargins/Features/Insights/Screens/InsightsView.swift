@@ -44,7 +44,7 @@ struct InsightsView: View {
             }
         }
         .safeAreaPadding(.bottom, 16)
-        .background(palette.background.ignoresSafeArea())
+        .background { DiaryWindowBackground() }
         .navigationTitle("")
 #if !os(macOS)
         .toolbar(.hidden, for: .navigationBar)

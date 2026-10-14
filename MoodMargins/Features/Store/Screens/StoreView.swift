@@ -42,7 +42,11 @@ struct StoreView: View {
             } header: {
                 Text("Themes")
             } footer: {
+#if os(visionOS)
+                Text(.spatialThemePurchaseFooter)
+#else
                 Text("Buy a theme once to keep it, or use every premium theme while Plus is active. All themes include light and dark appearances.")
+#endif
             }
             Section {
                 Toggle("Use Private Cloud Compute", systemImage: "cloud", isOn: $modelPreferences.usesPrivateCloudCompute)
@@ -124,9 +128,19 @@ private struct ThemeStoreRow: View {
         HStack(spacing: 14) {
             Image(systemName: theme.symbol)
                 .font(.title2)
+#if os(visionOS)
+                .foregroundStyle(theme.palette.action)
+#else
                 .foregroundStyle(theme.palette.ink)
+#endif
                 .frame(width: 48, height: 48)
-                .background(theme.palette.background, in: .rect(cornerRadius: 12))
+                .background {
+#if os(visionOS)
+                    RoundedRectangle(cornerRadius: 12).fill(.regularMaterial)
+#else
+                    RoundedRectangle(cornerRadius: 12).fill(theme.palette.background)
+#endif
+                }
                 .accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 4) {
                 Text(theme.title).font(.headline)

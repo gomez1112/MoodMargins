@@ -23,7 +23,7 @@ struct PlusSubscriptionView: View {
                                 .padding()
                         }
                     }
-                    .background(palette.background)
+                    .background { DiaryWindowBackground() }
                 } else {
                     subscriptionContent
                 }
@@ -40,8 +40,13 @@ struct PlusSubscriptionView: View {
                     }
                 }
         }
+#if os(visionOS)
+        .frame(idealWidth: 600, idealHeight: 680)
+        .presentationSizing(.fitted)
+#else
         .frame(idealHeight: 780)
         .presentationSizing(.form.fitted(horizontal: false, vertical: true))
+#endif
         .sheet(isPresented: $isShowingInformation) {
             PlusInformationView()
                 .environment(\.locale, locale)
@@ -68,8 +73,13 @@ struct PlusSubscriptionView: View {
         }
         .id(loadRevision)
         .tint(palette.action)
+#if os(visionOS)
+        // Let StoreKit provide spatial controls and the purchase presentation context.
+        .subscriptionStoreControlStyle(.automatic)
+#else
         .subscriptionStoreControlStyle(.compactPicker, placement: .scrollView)
         .subscriptionStorePickerItemBackground(palette.paper)
+#endif
 #if os(iOS) || os(macOS)
         .subscriptionStoreControlBackground(.clear)
 #endif
@@ -78,8 +88,8 @@ struct PlusSubscriptionView: View {
         .storeButton(.visible, for: .restorePurchases)
         .subscriptionStorePolicyDestination(url: StoreLegal.termsURL, for: .termsOfService)
         .subscriptionStorePolicyDestination(url: StoreLegal.privacyURL, for: .privacyPolicy)
-        .onInAppPurchaseCompletion { _, result in
-            if let product = await purchases.handlePurchase(result), product.isSubscription {
+        .onInAppPurchaseCompletion { product, result in
+            if let product = await purchases.handlePurchase(result, product: StoreProduct(rawValue: product.id)), product.isSubscription {
                 dismissAfterUnlock()
             }
         }

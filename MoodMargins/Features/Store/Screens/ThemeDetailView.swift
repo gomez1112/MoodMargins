@@ -15,15 +15,19 @@ struct ThemeDetailView: View {
             AdaptiveContentWidth(maximumWidth: 680) {
                 VStack(alignment: .leading, spacing: 24) {
                     Text(theme.description).font(.body).foregroundStyle(.secondary)
+#if !os(visionOS)
                     Picker("Preview appearance", selection: $previewScheme) {
                         Text("System").tag(ColorScheme?.none)
                         Text("Light").tag(ColorScheme?.some(.light))
                         Text("Dark").tag(ColorScheme?.some(.dark))
                     }
                     .pickerStyle(.segmented)
+#endif
                     ThemePreviewView(theme: theme)
                         .accessibilityIdentifier("theme-preview")
+#if !os(visionOS)
                         .environment(\.colorScheme, previewScheme ?? colorScheme)
+#endif
                     if purchases.entitlements.canUse(theme) {
                         Button(isSelected ? "Selected" : "Use this theme", systemImage: "checkmark") {
                             themes.select(theme, access: purchases.entitlements)
@@ -36,12 +40,23 @@ struct ThemeDetailView: View {
                         }
                     } else {
                         if let identifier = theme.product {
-                            ProductView(id: identifier.rawValue)
+                            if let product = purchases.product(identifier) {
+                                ProductView(product)
 #if os(iOS) || os(macOS)
                                 .productViewStyle(.compact)
 #endif
                                 .id(loadRevision)
-                                .onInAppPurchaseCompletion { _, result in await purchases.handlePurchase(result) }
+                                .onInAppPurchaseCompletion { _, result in
+                                    await purchases.handlePurchase(result, product: identifier)
+                                }
+                            } else if purchases.isLoading || !purchases.hasLoaded {
+                                ProgressView("Loading purchases…")
+                                    .frame(maxWidth: .infinity)
+                            } else {
+                                Text(.purchaseProductUnavailable)
+                                    .font(.callout)
+                                    .foregroundStyle(.secondary)
+                            }
                         }
                         if let message = purchases.loadingMessage {
                             Text(message).font(.footnote).foregroundStyle(.secondary)

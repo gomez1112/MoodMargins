@@ -57,7 +57,11 @@ struct ContentView: View {
             .customizationID(AppTab.customize.rawValue)
         }
         .tabViewStyle(.sidebarAdaptable)
+#if os(visionOS)
+        .tint(palette.action)
+#else
         .tint(palette.ink)
+#endif
         // Purchase feedback belongs to the active Plus sheet while it is presented.
         .alert("Purchases", isPresented: Binding {
             purchases.isShowingPurchaseMessage && navigationContext.presentedSheet != .plus

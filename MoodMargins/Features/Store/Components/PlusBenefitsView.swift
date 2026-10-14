@@ -29,7 +29,13 @@ struct PlusBenefitsView: View {
                                 .padding(12)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .foregroundStyle(theme.palette.ink)
-                                .background(theme.palette.background, in: .rect(cornerRadius: 12))
+                                .background {
+#if os(visionOS)
+                                    RoundedRectangle(cornerRadius: 12).fill(.regularMaterial)
+#else
+                                    RoundedRectangle(cornerRadius: 12).fill(theme.palette.background)
+#endif
+                                }
                         }
                     }
                 } else {
@@ -93,7 +99,13 @@ private struct PlusThemeSwatch: View {
             }
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(theme.palette.background, in: .rect(cornerRadius: 12))
+            .background {
+#if os(visionOS)
+                RoundedRectangle(cornerRadius: 12).fill(.regularMaterial)
+#else
+                RoundedRectangle(cornerRadius: 12).fill(theme.palette.background)
+#endif
+            }
             Text(theme.title)
                 .font(.caption)
                 .foregroundStyle(.secondary)

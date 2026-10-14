@@ -3,12 +3,30 @@ import SwiftUI
 struct DiaryPalette {
     var assetPrefix: String
 
-    var ink: Color { Color("\(assetPrefix)Ink") }
-    var softInk: Color { Color("\(assetPrefix)SoftInk") }
+    var ink: Color {
+#if os(visionOS)
+        .primary
+#else
+        Color("\(assetPrefix)Ink")
+#endif
+    }
+    var softInk: Color {
+#if os(visionOS)
+        .secondary
+#else
+        Color("\(assetPrefix)SoftInk")
+#endif
+    }
     var paper: Color { Color("\(assetPrefix)Paper") }
     var blush: Color { Color("\(assetPrefix)Blush") }
     var sky: Color { Color("\(assetPrefix)Sky") }
-    var lavenderLine: Color { Color("\(assetPrefix)Rule") }
+    var lavenderLine: Color {
+#if os(visionOS)
+        .primary.opacity(0.12)
+#else
+        Color("\(assetPrefix)Rule")
+#endif
+    }
     var action: Color { Color("\(assetPrefix)Action") }
 
     var background: LinearGradient {

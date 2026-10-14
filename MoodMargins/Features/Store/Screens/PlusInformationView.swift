@@ -20,7 +20,7 @@ struct PlusInformationView: View {
                 }
             }
             .scrollContentBackground(.hidden)
-            .background(palette.background.ignoresSafeArea())
+            .background { DiaryWindowBackground() }
             .navigationTitle("plusInformationTitle")
 #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)

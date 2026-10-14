@@ -28,6 +28,7 @@ final class JournalCaptureUITests: XCTestCase {
     @MainActor func testCaptureSpanish() throws { try captureLanguage("es") }
     @MainActor func testCaptureArabic() throws { try captureLanguage("ar") }
 
+#if os(iOS)
     @MainActor
     func testWidePageBrowserKeepsEditorVisibleAndSavesChanges() throws {
         XCUIDevice.shared.orientation = .portrait
@@ -62,6 +63,7 @@ final class JournalCaptureUITests: XCTestCase {
         add(attachment)
     }
 
+#endif
     @MainActor
     func testOptionalTagEditorSavesCorrections() throws {
         let app = launch(language: "en")

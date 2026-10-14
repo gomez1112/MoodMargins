@@ -16,6 +16,11 @@ struct MoodMarginsOnboarding<Content: View>: View {
     }
 
     var body: some View {
+#if os(visionOS)
+        VisionOnboarding(currentVersion: MoodMarginsOnboardingContent.currentVersion) {
+            content
+        }
+#else
         OnboardingWrapper(
             appName: "MoodMargins",
             currentVersion: MoodMarginsOnboardingContent.currentVersion,
@@ -26,6 +31,7 @@ struct MoodMarginsOnboarding<Content: View>: View {
         ) {
             content
         }
+#endif
     }
 }
 

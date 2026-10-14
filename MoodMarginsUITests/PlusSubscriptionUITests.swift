@@ -70,6 +70,7 @@ final class PlusSubscriptionUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Today's page"].exists)
     }
 
+#if os(iOS)
     @MainActor
     func testPlusSheetFitsOnIPadAndReturnsToCustomize() throws {
         let session = try testSession()
@@ -100,6 +101,7 @@ final class PlusSubscriptionUITests: XCTestCase {
         }
     }
 
+#endif
     @MainActor
     func testLocalizedPaywallsAllowEveryPlan() throws {
         let session = try testSession()

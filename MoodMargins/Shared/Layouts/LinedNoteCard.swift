@@ -16,7 +16,6 @@ struct LinedNoteCard: View {
             Text(saveStatus).font(.caption).foregroundStyle(palette.softInk)
         }
         .padding(18)
-        .background(paper, in: .rect(cornerRadius: 18))
-        .shadow(color: .black.opacity(0.05), radius: 6, y: 3)
+        .diarySurface(paper: paper)
     }
 }

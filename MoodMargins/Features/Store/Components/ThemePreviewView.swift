@@ -23,12 +23,24 @@ struct ThemePreviewView: View {
                 Text("#calm  #rest")
                     .font(.caption)
                     .padding(10)
-                    .background(theme.palette.blush, in: Capsule())
+                    .background {
+#if os(visionOS)
+                        Capsule().fill(theme.palette.action.opacity(0.16))
+#else
+                        Capsule().fill(theme.palette.blush)
+#endif
+                    }
                     .foregroundStyle(theme.palette.ink)
             }
             .padding(20)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(theme.palette.paper, in: .rect(cornerRadius: 18))
+            .background {
+#if os(visionOS)
+                RoundedRectangle(cornerRadius: 18).fill(.regularMaterial)
+#else
+                RoundedRectangle(cornerRadius: 18).fill(theme.palette.paper)
+#endif
+            }
             HStack(spacing: 12) {
                 ForEach(0..<3) { index in
                     [theme.palette.ink, theme.palette.paper, theme.palette.action][index]
@@ -40,7 +52,13 @@ struct ThemePreviewView: View {
         }
         .padding(22)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(theme.palette.background, in: .rect(cornerRadius: 24))
+        .background {
+#if os(visionOS)
+            RoundedRectangle(cornerRadius: 24).fill(.thinMaterial)
+#else
+            RoundedRectangle(cornerRadius: 24).fill(theme.palette.background)
+#endif
+        }
         .accessibilityElement(children: .combine)
         .accessibilityLabel(String(localized: "\(theme.title) theme preview"))
     }
