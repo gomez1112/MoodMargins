@@ -58,42 +58,6 @@
         }
       }
     },
-    "signalPrivacyNotice" : {
-      "comment" : "Link to the feedback board provider’s privacy notice.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kickstart Signal privacy notice"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "إشعار خصوصية Kickstart Signal"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aviso de privacidad de Kickstart Signal"
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aviso de privacidad de Kickstart Signal"
-          }
-        },
-        "es-US" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aviso de privacidad de Kickstart Signal"
-          }
-        }
-      }
-    },
     "Signal.Title" : {
       "comment" : "Kickstart Signal board title.",
       "extractionState" : "manual",
@@ -307,27 +271,6 @@
             "state" : "translated",
             "value" : "Todavía no hay nada que mostrar."
           }
-        }
-      }
-    },
-    "kickstartPrivacyNotice" : {
-      "comment" : "Link to the privacy notice for the app recommendation banner provider.",
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : { "state" : "translated", "value" : "Kickstart Exchange privacy notice" }
-        },
-        "ar" : {
-          "stringUnit" : { "state" : "translated", "value" : "إشعار خصوصية Kickstart Exchange" }
-        },
-        "es" : {
-          "stringUnit" : { "state" : "translated", "value" : "Aviso de privacidad de Kickstart Exchange" }
-        },
-        "es-419" : {
-          "stringUnit" : { "state" : "translated", "value" : "Aviso de privacidad de Kickstart Exchange" }
-        },
-        "es-US" : {
-          "stringUnit" : { "state" : "translated", "value" : "Aviso de privacidad de Kickstart Exchange" }
         }
       }
     },
@@ -6412,41 +6355,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "سياسة الخصوصية"
-          }
-        }
-      }
-    },
-    "Privacy policy on the web" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Privacy policy on the web"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Política de privacidad en la web"
-          }
-        },
-        "es-US" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Política de privacidad en la web"
-          }
-        },
-        "es-419" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Política de privacidad en la web"
-          }
-        },
-        "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سياسة الخصوصية على الويب"
           }
         }
       }

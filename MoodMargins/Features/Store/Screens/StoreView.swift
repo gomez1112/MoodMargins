@@ -87,8 +87,8 @@ struct StoreView: View {
             Section("About") {
                 Button("feedbackAndIdeas") { navigationContext.presentSheet(.feedback) }
                     .accessibilityIdentifier("feedback-and-ideas")
-                NavigationLink("Privacy policy") { PrivacyPolicyView() }
-                Link("Privacy policy on the web", destination: StoreLegal.privacyURL)
+                Link("Privacy policy", destination: StoreLegal.privacyURL)
+                    .accessibilityIdentifier("privacy-policy")
                 Link("Terms of use", destination: StoreLegal.termsURL)
             }
             if purchases.canShowExchangeBanner {
