@@ -21,10 +21,20 @@ struct FeedbackBoardView: View {
 
     @ViewBuilder
     private var board: some View {
-#if DEBUG
-        if marketingCapture.isEnabled {
-            // Screenshot previews stay offline and cannot submit to the live board.
+#if DEBUG || targetEnvironment(simulator)
+        if usesDemoBoard {
             SignalBoardView.demo()
+                .safeAreaInset(edge: .bottom) {
+                    Text("feedbackDemoNotice")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
+                        .padding(.vertical, 8)
+                        .frame(maxWidth: .infinity)
+                        .background(.bar)
+                        .accessibilityIdentifier("feedback-demo-notice")
+                }
         } else {
             liveBoard
         }
@@ -32,6 +42,19 @@ struct FeedbackBoardView: View {
         liveBoard
 #endif
     }
+
+#if DEBUG || targetEnvironment(simulator)
+    private var usesDemoBoard: Bool {
+#if DEBUG
+        // Live development testing is an explicit opt-in and still requires the owner's
+        // Allow Xcode testing setting. Screenshot captures always remain offline.
+        marketingCapture.isEnabled || !ProcessInfo.processInfo.arguments.contains("--signal-live-testing")
+#else
+        // Simulator builds have no production App Store install to verify.
+        true
+#endif
+    }
+#endif
 
     private var liveBoard: some View {
         SignalBoardView(apiKey: "ks_live_-uYuqmZRUIP03QeyjQ45qZMzb49J9Gc2phVPlJQFHzk")

@@ -1,6 +1,27 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "feedbackDemoNotice" : {
+      "comment" : "Shown only on the offline sample feedback board in development and Simulator builds.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Offline demo. Changes stay in this preview." }
+        },
+        "ar" : {
+          "stringUnit" : { "state" : "translated", "value" : "عرض تجريبي دون اتصال. تبقى التغييرات في هذه المعاينة." }
+        },
+        "es" : {
+          "stringUnit" : { "state" : "translated", "value" : "Demo sin conexión. Los cambios se quedan en esta vista previa." }
+        },
+        "es-419" : {
+          "stringUnit" : { "state" : "translated", "value" : "Demo sin conexión. Los cambios se quedan en esta vista previa." }
+        },
+        "es-US" : {
+          "stringUnit" : { "state" : "translated", "value" : "Demo sin conexión. Los cambios se quedan en esta vista previa." }
+        }
+      }
+    },
     "feedbackAndIdeas" : {
       "comment" : "Entry point for the optional feature request board in Customize.",
       "extractionState" : "manual",
