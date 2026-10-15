@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91000000000000000000001 /* MoodEntry.swift in Watch Sources */ = {isa = PBXBuildFile; fileRef = A91000000000000000000002 /* MoodEntry.swift */; };
+		A91000000000000000000003 /* Activity.swift in Watch Sources */ = {isa = PBXBuildFile; fileRef = A91000000000000000000004 /* Activity.swift */; };
 		A82000000000000000000001 /* KickstartSignal in Frameworks */ = {isa = PBXBuildFile; productRef = A82000000000000000000002 /* KickstartSignal */; };
 		A81000000000000000000001 /* KickstartExchange in Frameworks */ = {isa = PBXBuildFile; productRef = A81000000000000000000002 /* KickstartExchange */; };
 		A71000000000000000000001 /* BrandPalette.xcassets in Watch Resources */ = {isa = PBXBuildFile; fileRef = A71000000000000000000002 /* BrandPalette.xcassets */; };
@@ -83,6 +85,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A91000000000000000000002 /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMargins/Shared/Model/MoodEntry.swift; sourceTree = SOURCE_ROOT; };
+		A91000000000000000000004 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMargins/Shared/Model/Activity.swift; sourceTree = SOURCE_ROOT; };
 		A71000000000000000000002 /* BrandPalette.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MoodMargins/BrandPalette.xcassets; sourceTree = SOURCE_ROOT; };
 		A61000000000000000000002 /* PurchaseCompletion.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MoodMarginsTests/Store/PurchaseCompletion.storekit; sourceTree = SOURCE_ROOT; };
         A11000000000000000000002 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMargins/Shared/Model/Mood.swift; sourceTree = SOURCE_ROOT; };
@@ -105,6 +109,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A91000000000000000000005 /* Watch Info.plist exception */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (Info.plist,);
+			target = CCE095062FE8490900725C1C /* WatchMoodMargins Watch App */;
+		};
 		CCE094AF2FE8389F00725C1C /* Exceptions for "MoodMarginsWidget" folder in "MoodMarginsWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -165,6 +174,7 @@
 		};
 		CCE095082FE8490900725C1C /* WatchMoodMargins Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (A91000000000000000000005 /* Watch Info.plist exception */,);
 			path = "WatchMoodMargins Watch App";
 			sourceTree = "<group>";
 		};
@@ -220,7 +230,7 @@
 /* Begin PBXGroup section */
         A11000000000000000000003 /* Shared Watch Model */ = {
             isa = PBXGroup;
-            children = (A11000000000000000000002 /* Mood.swift */, A71000000000000000000002 /* BrandPalette.xcassets */,);
+            children = (A11000000000000000000002 /* Mood.swift */, A91000000000000000000002 /* MoodEntry.swift */, A91000000000000000000004 /* Activity.swift */, A71000000000000000000002 /* BrandPalette.xcassets */,);
             name = "Shared Watch Model";
             sourceTree = "<group>";
         };
@@ -548,6 +558,8 @@
 			isa = PBXSourcesBuildPhase;
 			files = (
                 A11000000000000000000001 /* Mood.swift in Sources */,
+                A91000000000000000000001 /* MoodEntry.swift in Watch Sources */,
+                A91000000000000000000003 /* Activity.swift in Watch Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -728,7 +740,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -779,7 +791,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -807,7 +819,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMarginsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -834,7 +846,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMarginsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -860,7 +872,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMarginsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -885,7 +897,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMarginsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -920,7 +932,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.MoodMarginsWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -954,7 +966,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.MoodMarginsWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -991,7 +1003,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.MoodMarginsWidgetMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -1026,7 +1038,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.MoodMarginsWidgetMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -1051,6 +1063,7 @@
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchMoodMargins Watch App/Info.plist";
 				INFOPLIST_KEY_CFBundleIconName = MoodMarginsIcon;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchMoodMargins;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -1059,7 +1072,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -1088,6 +1101,7 @@
 				DEVELOPMENT_TEAM = 88QL9VPLMY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchMoodMargins Watch App/Info.plist";
 				INFOPLIST_KEY_CFBundleIconName = MoodMarginsIcon;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchMoodMargins;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -1096,7 +1110,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;

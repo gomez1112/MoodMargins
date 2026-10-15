@@ -6,3 +6,12 @@ struct WatchJournalEntry: Codable, Identifiable, Equatable {
     var mood: Mood
     var note: String
 }
+
+extension WatchJournalEntry {
+    init(_ entry: MoodEntry) {
+        id = entry.id
+        date = entry.date
+        mood = entry.mood
+        note = entry.note
+    }
+}

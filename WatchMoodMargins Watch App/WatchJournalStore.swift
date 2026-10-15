@@ -1,7 +1,8 @@
 import Foundation
 import Observation
+import SwiftData
 
-/// A local journal. Watch pages are not advertised as synchronized with the phone.
+/// Editable value drafts backed by the shared private-iCloud journal.
 @MainActor
 @Observable
 final class WatchJournalStore {
@@ -9,8 +10,7 @@ final class WatchJournalStore {
     var selectedMood: Mood = .laughing
     var note = ""
     var errorMessage: String?
-    private let defaults: UserDefaults
-    private let storageKey = "watchJournalEntries"
+    private let persistence: WatchJournalPersistence
     private var loadedEntryID: UUID?
     private var draftDate = Date()
     private var savedMood: Mood = .laughing
@@ -19,8 +19,8 @@ final class WatchJournalStore {
     private var hasUnreadableStorage = false
     private var isCaptureSession = false
 
-    init(defaults: UserDefaults = .standard) {
-        self.defaults = defaults
+    init(container: ModelContainer, defaults: UserDefaults = .standard) {
+        persistence = WatchJournalPersistence(container: container, defaults: defaults)
 #if DEBUG
         isCaptureSession = ProcessInfo.processInfo.arguments.contains("--marketing-capture")
         if isCaptureSession {
@@ -38,14 +38,6 @@ final class WatchJournalStore {
             return
         }
 #endif
-        if let data = defaults.data(forKey: storageKey) {
-            do {
-                entries = try JSONDecoder().decode([WatchJournalEntry].self, from: data).sorted { $0.date > $1.date }
-            } catch {
-                hasUnreadableStorage = true
-                errorMessage = String(localized: "Your saved Watch pages couldn't be opened. Please try again before saving.")
-            }
-        }
         loadToday()
     }
 
@@ -61,6 +53,30 @@ final class WatchJournalStore {
     func selectMood(_ mood: Mood) { selectedMood = mood; confirmedMood = true }
 
     func loadToday() {
+        guard !hasChanges else { return }
+        if !isCaptureSession {
+            do {
+                entries = try persistence.load()
+                hasUnreadableStorage = false
+                errorMessage = nil
+            } catch {
+                hasUnreadableStorage = true
+                errorMessage = String(localized: "Your saved Watch pages couldn't be opened. Please try again before saving.")
+                return
+            }
+        }
+        restoreCleanDraft()
+    }
+
+    /// Query updates include iCloud imports and deletions. Keep a person's unfinished draft intact.
+    func synchronize(from entries: [WatchJournalEntry]) {
+        guard !isCaptureSession, !hasUnreadableStorage else { return }
+        let wasEditing = hasChanges
+        self.entries = entries
+        if !wasEditing { restoreCleanDraft() }
+    }
+
+    private func restoreCleanDraft() {
         let entry = today
         loadedEntryID = entry?.id
         draftDate = entry?.date ?? Date()
@@ -83,18 +99,17 @@ final class WatchJournalStore {
 
     func saveIfChanged() {
         guard hasChanges, !hasUnreadableStorage else { return }
-        var updated = entries
-        if let index = updated.firstIndex(where: { $0.id == loadedEntryID }) {
-            updated[index].mood = selectedMood
-            updated[index].note = note
-        } else {
-            updated.insert(WatchJournalEntry(id: UUID(), date: draftDate, mood: selectedMood, note: note), at: 0)
-        }
         do {
-            let data = try JSONEncoder().encode(updated)
-            if !isCaptureSession { defaults.set(data, forKey: storageKey) }
-            entries = updated
-            loadedEntryID = updated.first { Calendar.current.isDate($0.date, inSameDayAs: draftDate) }?.id
+            guard !isCaptureSession else { return }
+            let entry = try persistence.save(
+                id: loadedEntryID, date: draftDate,
+                mood: confirmedMood || selectedMood != savedMood ? selectedMood : nil,
+                note: note != savedNote ? note : nil
+            )
+            entries = try persistence.load()
+            loadedEntryID = entry.id
+            selectedMood = entry.mood
+            note = entry.note
             savedMood = selectedMood
             savedNote = note
             confirmedMood = false

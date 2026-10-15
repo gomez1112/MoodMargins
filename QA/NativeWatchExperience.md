@@ -6,7 +6,7 @@ Recent Pages uses compact native List rows with circular mood stickers, dates, a
 
 The shared palette supplies cream, blush, sky, and lavender stickers against the darker canvas. SwiftUI text retains Dynamic Type and the mood buttons provide localized labels and selected traits. Reduce Motion disables transition animation. Only the focused mood animates; playback pauses for dimmed displays, inactive scenes, and disappeared views. Notes and history remain privacy-sensitive.
 
-Mood selection saves immediately. Notes retain the existing debounce and lifecycle saves; no app Save button or save-status copy was added. Errors remain visible. Watch entries remain local to the Watch; phone sync and premium-theme transfer were not added.
+Mood selection saves immediately. Notes retain the existing debounce and lifecycle saves; no app Save button or save-status copy was added. Errors remain visible. Version 1.0 kept Watch entries local. Release 1.1 adds automatic private-iCloud journal sync using the shared SwiftData models, preserving existing Watch history. Premium-theme transfer remains separate from journal syncing.
 
 ## Verification
 

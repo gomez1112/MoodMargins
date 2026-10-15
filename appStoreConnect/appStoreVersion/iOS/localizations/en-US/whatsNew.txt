@@ -1,0 +1,6 @@
+New in 1.1
+
+• Your Watch moods and notes now sync automatically with the main app through your private iCloud account. Existing Watch pages are preserved.
+• Share suggestions through the new Feedback & ideas board in Customize.
+• Find a Rate this app link in Customize whenever you want to leave a review.
+• A small advertising banner in Customize helps support free journaling. Plus remains ad-free.

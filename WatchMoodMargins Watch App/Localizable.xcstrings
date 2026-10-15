@@ -369,6 +369,54 @@
           }
         }
       }
+    },
+    "watchJournalOpenError": {
+      "extractionState": "manual",
+      "comment": "Storage initialization failed; the person can retry without deleting their journal.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't open your journal"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se ha podido abrir tu diario"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعذر فتح يومياتك"
+          }
+        }
+      }
+    },
+    "watchRetry": {
+      "extractionState": "manual",
+      "comment": "Retry opening the journal store after a storage error.",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try again"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reintentar"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حاول مجددًا"
+          }
+        }
+      }
     }
   }
 }

@@ -1,9 +1,11 @@
 import SwiftUI
+import SwiftData
 
 struct WatchCheckInView: View {
     @Environment(\.scenePhase) private var scenePhase
     @State private var selectedTab = WatchTab.today
     @State private var pagesPath: [UUID] = []
+    @Query(sort: \MoodEntry.date, order: .reverse) private var savedEntries: [MoodEntry]
     var journal: WatchJournalStore
 
     var body: some View {
@@ -21,6 +23,9 @@ struct WatchCheckInView: View {
         }
         .tabViewStyle(.verticalPage)
         .task(id: journal.draft) { await journal.autosave() }
+        .onChange(of: savedEntries.map(WatchJournalEntry.init)) {
+            journal.synchronize(from: savedEntries.map(WatchJournalEntry.init))
+        }
         .onDisappear { journal.saveIfChanged() }
         .onChange(of: scenePhase) {
             journal.saveIfChanged()
