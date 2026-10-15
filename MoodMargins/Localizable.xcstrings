@@ -1,6 +1,17 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "rateThisApp" : {
+      "comment" : "Opens the App Store so the person can voluntarily write a review.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Rate this app" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Valorar esta app" } },
+        "es-US" : { "stringUnit" : { "state" : "translated", "value" : "Calificar esta app" } },
+        "es-419" : { "stringUnit" : { "state" : "translated", "value" : "Calificar esta app" } },
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "تقييم هذا التطبيق" } }
+      }
+    },
     "feedbackDemoNotice" : {
       "comment" : "Shown only on the offline sample feedback board in development and Simulator builds.",
       "extractionState" : "manual",

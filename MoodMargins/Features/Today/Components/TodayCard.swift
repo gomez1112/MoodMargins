@@ -5,12 +5,13 @@ struct TodayCard: View {
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Bindable var viewModel: TodayViewModel
     var lines = 3
+    var focusChanged: (Bool) -> Void = { _ in }
 
     var body: some View {
         DiaryCard(rotation: .zero) {
             VStack(alignment: .leading, spacing: 16) {
                 header
-                LinedNote(text: $viewModel.note, lines: lines)
+                LinedNote(text: $viewModel.note, lines: lines, focusChanged: focusChanged)
                 FlowLayout(spacing: 8) {
                     if viewModel.selectedTagList.isEmpty {
                         Text("No tags yet")

@@ -19,6 +19,7 @@ struct TodayView: View {
     @Query(sort: \MoodEntry.date, order: .reverse) private var entries: [MoodEntry]
 
     @State private var viewModel = TodayViewModel()
+    @State private var isNoteFocused = false
 
     var body: some View {
         @Bindable var viewModel = viewModel
@@ -33,7 +34,7 @@ struct TodayView: View {
                             HStack(alignment: .top, spacing: 24) {
                                 VStack(alignment: .leading, spacing: 18) {
                                     QuickMoodCard(viewModel: viewModel)
-                                    TodayCard(viewModel: viewModel, lines: 10)
+                                    TodayCard(viewModel: viewModel, lines: 10, focusChanged: { isNoteFocused = $0 })
                                 }
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 VStack(alignment: .leading, spacing: 24) {
@@ -46,7 +47,7 @@ struct TodayView: View {
                             }
                         } else {
                             QuickMoodCard(viewModel: viewModel)
-                            TodayCard(viewModel: viewModel)
+                            TodayCard(viewModel: viewModel, focusChanged: { isNoteFocused = $0 })
                             tagSuggestions
                             if !entries.isEmpty { RecentPages(entries: entries) }
                         }
@@ -83,6 +84,13 @@ struct TodayView: View {
         .task(id: "\(purchases.entitlements.hasPlus):\(viewModel.tagRefreshID(using: modelPreferences.choice))") {
             await viewModel.generateTagSuggestions(using: modelPreferences.choice, hasPlus: purchases.entitlements.hasPlus)
         }
+        .modifier(JournalReviewRequestModifier(
+            successfulSaveDate: viewModel.lastSuccessfulSaveDate,
+            isEditing: isNoteFocused,
+            hasPendingChanges: viewModel.hasPendingChanges,
+            hasError: viewModel.saveErrorMessage != nil || viewModel.tagSuggestionError != nil,
+            isBusy: viewModel.isGeneratingTagSuggestions
+        ))
         .alert("Couldn't save your page", isPresented: $viewModel.isShowingSaveError) {
             Button("Try again") { viewModel.saveIfChanged(entries: entries, modelContext: modelContext) }
             Button("OK", role: .cancel) {}

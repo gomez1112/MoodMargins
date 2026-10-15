@@ -49,6 +49,9 @@ final class TodayViewModel {
 
     var saveErrorMessage: String?
 
+    /// Changes only after persistence succeeds; query refreshes aren't user accomplishments.
+    private(set) var lastSuccessfulSaveDate: Date?
+
     var isShowingSaveError: Bool {
         get { saveErrorMessage != nil }
         set { if !newValue { saveErrorMessage = nil } }
@@ -289,6 +292,7 @@ final class TodayViewModel {
         savedTags = selectedTags
         pageSaved = true
         selectedEntryID = entry.id
+        lastSuccessfulSaveDate = saveDate
     }
 
     /// Marks the page as unsaved when the draft note no longer matches the saved note.

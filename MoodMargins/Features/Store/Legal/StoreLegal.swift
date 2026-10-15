@@ -1,6 +1,12 @@
 import Foundation
 
 enum StoreLegal {
+    static let reviewURL: URL = {
+        guard let url = URL(string: "https://apps.apple.com/app/id6819079849?action=write-review") else {
+            preconditionFailure("Invalid MoodMargins review URL")
+        }
+        return url
+    }()
     static let privacyURL: URL = {
         guard let url = URL(string: "https://apps.transfinite.us/moodmargins/privacy-policy") else {
             preconditionFailure("Invalid MoodMargins privacy policy URL")

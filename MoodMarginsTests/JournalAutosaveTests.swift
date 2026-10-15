@@ -46,6 +46,7 @@ struct JournalAutosaveTests {
         today.loadTodayIfNeeded(from: [])
         today.note = " \n "
         today.saveIfChanged(entries: [], modelContext: context)
+        #expect(today.lastSuccessfulSaveDate == nil)
         let pages = PageViewModel()
         pages.synchronize(from: [])
         pages.note = " \n "
@@ -79,9 +80,36 @@ struct JournalAutosaveTests {
         await pending.value
         #expect(today.note == "A thought still in progress")
         #expect(today.saveErrorMessage == nil)
+        #expect(today.lastSuccessfulSaveDate == nil)
         #expect(try context.fetchCount(FetchDescriptor<MoodEntry>()) == 0)
         today.saveIfChanged(entries: [], modelContext: context)
         #expect(try context.fetchCount(FetchDescriptor<MoodEntry>()) == 1)
+        #expect(today.lastSuccessfulSaveDate != nil)
+    }
+
+    @Test("Loading and refreshing saved pages do not create review accomplishments")
+    func loadedPagesAreNotNewSaves() throws {
+        let container = try store()
+        let entry = TestFactory.entry(date: Date(), mood: .sad, note: "Already saved")
+        container.mainContext.insert(entry)
+        try container.mainContext.save()
+        let today = TodayViewModel()
+        today.loadTodayIfNeeded(from: [entry])
+        today.saveIfChanged(entries: [entry], modelContext: container.mainContext)
+        today.loadTodayIfNeeded(from: [entry])
+        #expect(today.lastSuccessfulSaveDate == nil)
+    }
+
+    @Test("Every mood can complete a check-in", arguments: Mood.allCases)
+    func everyMoodCanCompleteCheckIn(mood: Mood) throws {
+        let container = try store()
+        let today = TodayViewModel()
+        today.loadTodayIfNeeded(from: [])
+        today.selectMood(mood)
+        today.saveIfChanged(entries: [], modelContext: container.mainContext)
+        #expect(today.lastSuccessfulSaveDate != nil)
+        #expect(!today.hasPendingChanges)
+        #expect(today.saveErrorMessage == nil)
     }
 
     @Test("Fast saves with a stale query update the same page")

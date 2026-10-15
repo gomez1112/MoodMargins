@@ -17,6 +17,7 @@ struct LinedNoteEditor: View {
     var lineColor: Color? = nil
     var textColor = Color.primary
     var minimumHeight: CGFloat? = nil
+    var focusChanged: (Bool) -> Void = { _ in }
 
     @ScaledMetric(relativeTo: .body) private var rowHeight = 31.0
     private let textLineSpacing: CGFloat = 11
@@ -42,6 +43,8 @@ struct LinedNoteEditor: View {
                 .frame(minHeight: minimumHeight ?? CGFloat(lines) * rowHeight, alignment: .topLeading)
                 .padding(.top, 1)
         }
+        .onChange(of: isFocused) { focusChanged(isFocused) }
+        .onDisappear { focusChanged(false) }
 #if os(iOS)
         .toolbar {
             ToolbarItem(placement: .keyboard) {
