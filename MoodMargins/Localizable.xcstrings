@@ -1,6 +1,28 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "reviewRequiresDeviceTitle" : {
+      "comment" : "Title shown only when trying to open App Store reviews in a simulator.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Review on a Device" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Escribir una reseña en un dispositivo" } },
+        "es-US" : { "stringUnit" : { "state" : "translated", "value" : "Escribir una reseña en un dispositivo" } },
+        "es-419" : { "stringUnit" : { "state" : "translated", "value" : "Escribir una reseña en un dispositivo" } },
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "كتابة مراجعة على جهاز فعلي" } }
+      }
+    },
+    "reviewSimulatorMessage" : {
+      "comment" : "Explains the unavailable App Store handoff in simulator builds only.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The simulator doesn’t include the App Store. Open MoodMargins on a physical device to write a review." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "El simulador no incluye App Store. Abre MoodMargins en un dispositivo físico para escribir una reseña." } },
+        "es-US" : { "stringUnit" : { "state" : "translated", "value" : "El simulador no incluye App Store. Abre MoodMargins en un dispositivo físico para escribir una reseña." } },
+        "es-419" : { "stringUnit" : { "state" : "translated", "value" : "El simulador no incluye App Store. Abre MoodMargins en un dispositivo físico para escribir una reseña." } },
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "لا يتضمن المحاكي متجر App Store. افتح MoodMargins على جهاز فعلي لكتابة مراجعة." } }
+      }
+    },
     "rateThisApp" : {
       "comment" : "Opens the App Store so the person can voluntarily write a review.",
       "extractionState" : "manual",

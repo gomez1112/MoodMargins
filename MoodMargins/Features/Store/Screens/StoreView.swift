@@ -85,8 +85,7 @@ struct StoreView: View {
                 }
             }
             Section("About") {
-                Link(.rateThisApp, destination: StoreLegal.reviewURL)
-                    .accessibilityIdentifier("rate-this-app")
+                AppReviewLink()
                 Button("feedbackAndIdeas") { navigationContext.presentSheet(.feedback) }
                     .accessibilityIdentifier("feedback-and-ideas")
                 Link("Privacy policy", destination: StoreLegal.privacyURL)
