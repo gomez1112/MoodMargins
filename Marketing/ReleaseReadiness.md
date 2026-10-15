@@ -1,5 +1,17 @@
 # MoodMargins release status — October 14, 2026
 
+## Version 1.1 update
+
+iOS 1.1 build 2 includes Watch journal sync from commit `fb39f44`. Apple accepted upload `0e84511d-50f1-4c8a-8e86-5b4f9d7b5d62` and reports the build as VALID, with non-exempt encryption set to false. It is attached to iOS version `a3f050e7-940b-40ca-ab23-aa41e53d8575`, which remains PREPARE_FOR_SUBMISSION with release after approval. The archive was scoped to iOS with its embedded Watch companion; all source platform settings were restored afterward. iOS 1.0 remains live.
+
+The attempted iOS submission did not submit anything: the listing updater applied zero of 15 operations because Apple rejected editing the shared age-rating declaration with HTTP 409 STATE_ERROR. Both App Info records are locked (READY_FOR_SALE and IN_REVIEW), including after creating the iOS 1.1 draft. The new advertising and voluntary feedback features require the prepared advertising, messaging/chat, and user-generated-content disclosures, so those answers must not be omitted just to submit. The developer has been asked whether to withdraw the older Mac and Vision reviews to unlock the shared record; neither review has been withdrawn.
+
+macOS 1.0 remains IN_REVIEW and visionOS 1.0 remains WAITING_FOR_REVIEW, both with MANUAL release. No new Mac or Vision build was submitted. visionOS 1.1 build 1 is VALID for testing. Apple's build-upload record reports the earlier macOS 1.1 build 12 as FAILED, despite the upload tool reporting completion: error 90284 identifies distribution signing of `KickstartSDK_KickstartSignal.bundle` and `KickstartSDK_KickstartExchange.bundle`. That build is not available in TestFlight and needs a signing correction before another Mac upload.
+
+The Watch now shares the main app's private iCloud journal models and preserves existing local Watch pages during migration. Eight isolated Watch regression tests and Watch simulator compilation/launch passed before this archive; actual same-account Watch/iPhone cloud delivery remains unverified. English, Spanish, and Arabic release notes describe the sync. The developer confirmed the updated hosted privacy policy and SDK App Privacy disclosures are published. No sleep/energy or other dead-code cleanup was performed.
+
+## Version 1.0 history
+
 iOS 1.0 is live, and all six purchase products are approved. macOS 1.0 and the resubmitted visionOS 1.0 are waiting for review. On October 11, 2026, the developer confirmed that the App Privacy label is published.
 
 The final Watch design uses direct horizontal emotion selection, native note entry, compact history, and readable page details. The notebook-only icon has no emoji. Apple generated the iPhone and Watch App Store icons from the uploaded binary, and the actual CDN images were inspected. The icon is supplied through the build, rather than a separate listing upload.
