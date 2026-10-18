@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "projectName": "MoodMargins",
+  "appStoreId": "6819079849",
+  "destination": "Kickstart keyword tracking",
+  "status": "AWAITING_EXACT_BATCH_CONFIRMATION",
+  "preparedOn": "2026-10-18",
+  "purpose": "Monitor App Store search positions; no in-app analytics or advertising campaign",
+  "fetchNow": true,
+  "trackers": [
+    {
+      "country": "us",
+      "platform": "ios",
+      "keyword": "mood journal"
+    },
+    {
+      "country": "us",
+      "platform": "ios",
+      "keyword": "mood tracker"
+    },
+    {
+      "country": "us",
+      "platform": "ios",
+      "keyword": "private mood tracker"
+    },
+    {
+      "country": "es",
+      "platform": "ios",
+      "keyword": "diario de ánimo"
+    },
+    {
+      "country": "es",
+      "platform": "ios",
+      "keyword": "diario"
+    },
+    {
+      "country": "sa",
+      "platform": "ios",
+      "keyword": "يوميات"
+    },
+    {
+      "country": "sa",
+      "platform": "ios",
+      "keyword": "مزاج"
+    },
+    {
+      "country": "us",
+      "platform": "macos",
+      "keyword": "mood journal"
+    }
+  ],
+  "changes": {
+    "addTrackers": true,
+    "replaceOrRemoveTrackers": false,
+    "changeKeywordDataMode": false,
+    "changeAppStoreMetadata": false,
+    "createAdsOrSpend": false,
+    "addInAppTracking": false
+  }
+}
