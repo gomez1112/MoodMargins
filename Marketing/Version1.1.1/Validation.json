@@ -1,6 +1,6 @@
 {
   "checkedOn": "2026-10-18",
-  "status": "PASSED_LOCAL_COPY_CHECKS",
+  "status": "PASSED_LOCAL_RELEASE_PREPARATION_CHECKS",
   "appStoreId": "6819079849",
   "proposedVersion": "1.1.1",
   "checks": [
@@ -16,8 +16,17 @@
     "NFC-normalized Unicode with no hidden formatting/control characters except line breaks",
     "No live SDK key in the new package",
     "Existing local Markdown links resolve within the repository",
-    "Baseline version 1.1 listing and project files unchanged in Git",
-    "git diff --check"
+    "git diff --check",
+    "All 12 configured target/configuration pairs match version 1.1.1 and build 15",
+    "All 3 local platform versions and 9 localizations match the prepared package",
+    "Localized release notes and updated review notes prepared without inventing new features",
+    "CloudKit entitlements, schema, source implementation, assets, pricing, privacy, and sync lock unchanged",
+    "Bitrig listing validation passed with 9 existing remote-video source warnings",
+    "Release builds passed for Watch Simulator, Vision Simulator, native Mac, and iOS device",
+    "iOS Release preview built and launched; other platforms were not selected for preview",
+    "Built app and embedded bundle versions verified as 1.1.1 (15)",
+    "Mac normal Release deep/strict signature verification passed",
+    "Remote 1.1 review states rechecked; no 1.1.1 upload, listing apply, or submission performed"
   ],
   "fieldLengths": {
     "ar-SA": {
@@ -84,7 +93,7 @@
       }
     }
   },
-  "draftSha256": "572f6b30e4a3db0ebdf01fff88a0e8245cd714de516b25a21e97963874d6e56b",
+  "draftSha256": "9929ac9d3916148dac5da5f18e60d117c3e277eb377f8cdf19280c5f356e40c0",
   "notVerified": [
     "Apple name availability or acceptance of future metadata",
     "Native-speaker editorial approval",
@@ -92,6 +101,15 @@
     "New screenshot/video exports or current remote asset approvals",
     "Live external URLs on all devices/storefronts",
     "Conversion impact, statistical significance, or analytics baseline",
-    "App Store Connect application, review submission, or release"
-  ]
+    "App Store Connect application, review submission, or release",
+    "1.1.1 App Store archive/export and server processing; deferred until predecessor approval"
+  ],
+  "phase": "LOCAL_RELEASE_PREPARATION",
+  "sourceBuildNumber": "15",
+  "listingValidation": {
+    "status": "valid",
+    "existingVideoWarnings": 9,
+    "newMediaUploaded": false
+  },
+  "buildVerification": "../../QA/Version1.1.1BuildVerification.json"
 }

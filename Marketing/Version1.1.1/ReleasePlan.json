@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "appStoreId": "6819079849",
+  "bundleId": "com.transfinite.MoodMargins",
+  "version": "1.1.1",
+  "sourceBuildNumber": "15",
+  "status": "LOCALLY_PREPARED_AND_VALIDATED_AWAITING_1_1_APPROVAL",
+  "preparedOn": "2026-10-18",
+  "ownerInstruction": "Prepare version 1.1.1 and upload it for App Store submission only after version 1.1 is approved.",
+  "platforms": [
+    "iOS",
+    "macOS",
+    "visionOS"
+  ],
+  "locales": [
+    "en-US",
+    "es-ES",
+    "ar-SA"
+  ],
+  "scope": "The previously presented marketing/ASO package, matching version/build settings, truthful localized release notes, and review notes. Watch ships with iOS.",
+  "deferredActions": {
+    "uploadBuilds": true,
+    "applyPreparedListing": true,
+    "submitForReview": true,
+    "gate": "Freshly verify predecessor 1.1 approval for every platform included in an upload; submit only when Apple allows the next version.",
+    "performNow": false
+  },
+  "predecessorSnapshot": [
+    {
+      "platform": "iOS",
+      "version": "1.1",
+      "versionId": "a3f050e7-940b-40ca-ab23-aa41e53d8575",
+      "appStoreState": "WAITING_FOR_REVIEW",
+      "build": "2",
+      "buildProcessingState": "VALID",
+      "releaseType": "AFTER_APPROVAL"
+    },
+    {
+      "platform": "macOS",
+      "version": "1.1",
+      "versionId": "6a7380c8-6d7e-4945-b7a2-dfef79a16585",
+      "appStoreState": "WAITING_FOR_REVIEW",
+      "build": "14",
+      "buildProcessingState": "VALID",
+      "releaseType": "MANUAL"
+    },
+    {
+      "platform": "visionOS",
+      "version": "1.1",
+      "versionId": "0aa28bb5-22dd-44ab-aa57-3e81cfe03226",
+      "appStoreState": "WAITING_FOR_REVIEW",
+      "build": "1",
+      "buildProcessingState": "VALID",
+      "releaseType": "MANUAL"
+    }
+  ],
+  "releaseTypes": {
+    "iOS": "AFTER_APPROVAL",
+    "macOS": "MANUAL",
+    "visionOS": "MANUAL"
+  },
+  "constraints": [
+    "Do not upload, apply listing changes, or submit 1.1.1 before its predecessor approval gate is met.",
+    "Recheck live App Store status; this saved snapshot is not proof of later approval.",
+    "Apple requires the current version to be Ready for Distribution before creating a new App Store version. Mac and Vision 1.1 are manual releases; approval alone can leave them Pending Developer Release.",
+    "Do not withdraw or replace the 1.1 reviews or silently change their release settings.",
+    "No 1.1 manual-release action is authorized by this preparation alone; handle any pending manual release explicitly before submitting 1.1.1.",
+    "The upload helper handles configured platforms together. If only some predecessors are approved, do not accidentally upload unapproved platforms.",
+    "Upload archives may receive tool-assigned build numbers; verify actual uploaded version, build, encryption answer, and processing status before attachment.",
+    "Retain approved existing screenshots, previews, search artwork, headers, purchases, prices, availability, and privacy settings.",
+    "No custom analytics service, additional dependency, or runtime feature changes are included.",
+    "Keep lock.json tool-managed; never hand-edit sync state or bypass a conflict.",
+    "Do not submit the old 1.1 build as 1.1.1 or invent a feature changelog."
+  ],
+  "monitoring": {
+    "automaticBackgroundChecksConfigured": false,
+    "explanation": "This is committed release preparation and a conditional authorization record, not a scheduled monitoring job."
+  },
+  "verification": {
+    "listingStatus": "valid",
+    "existingPreviewWarnings": 9,
+    "buildChecks": "ALL_RELEASE_BUILDS_PASSED",
+    "report": "../../QA/Version1.1.1Readiness.md",
+    "macReleaseSignature": "PASSED_DEEP_STRICT_VERIFICATION",
+    "builtBundleVersions": "1.1.1 (15)",
+    "remotePredecessorStatesRechecked": true
+  }
+}

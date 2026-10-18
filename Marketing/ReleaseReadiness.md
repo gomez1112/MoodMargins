@@ -1,5 +1,13 @@
 # MoodMargins release status — October 18, 2026
 
+## Version 1.1.1 prepared locally, held for 1.1 approval
+
+The current project and authored local listing are staged at 1.1.1 (source build 15). English, Spanish, and Arabic names/subtitles, keywords, promotional text, platform-specific descriptions, release notes, and review notes are prepared. The metadata-only release introduces no new analytics service, runtime feature, purchase configuration, or CloudKit schema change. Existing screenshots and previews are retained.
+
+A fresh read on October 18 still showed all three 1.1 versions WAITING_FOR_REVIEW. No 1.1.1 upload, listing apply, review submission, or predecessor withdrawal has been performed. The user's authorization is conditional on 1.1 approval. Mac and Vision remain manual releases; Apple's requirement for the predecessor to be Ready for Distribution must also be satisfied before creating/submitting their next versions. Do not infer approval from this file or from Kickstart's cached beta status.
+
+See [the release plan](Version1.1.1/ReleasePlan.json) and [preparation checks](../QA/Version1.1.1Readiness.md). There is no scheduled background approval monitor. The 1.1 history below describes Apple's existing submissions, not the newly staged local files.
+
 ## Version 1.1 submitted October 18
 
 Apple confirms all three version 1.1 releases and their review submissions are WAITING_FOR_REVIEW. Every selected build is VALID and declares non-exempt encryption false. The previously released 1.0 versions remain READY_FOR_SALE while Apple reviews the updates.

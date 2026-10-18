@@ -22,7 +22,7 @@ The asset choices follow [Apple's screenshot specifications](https://developer.a
 
 The new [custom product page, header, and search-results artwork](ProductPage/README.md) is uploaded and verified as drafts in App Store Connect. [Review its artwork](ProductPage/ContactSheet.png) and [deployment records](ProductPage/Deployment.json).
 
-The [version 1.1.1 marketing and ASO package](Version1.1.1/README.md) contains localized metadata drafts, dated Kickstart research, organic launch copy, and an asset messaging test proposal. It is prepared for copy review and has not been applied to App Store Connect.
+The [version 1.1.1 marketing and ASO package](Version1.1.1/README.md) contains localized metadata, dated Kickstart research, organic launch copy, and an asset messaging test proposal. Version 1.1.1 (source build 15) and its local listing are prepared for upload after 1.1 approval, with [Release build checks](../QA/Version1.1.1Readiness.md). It has not been uploaded, applied, or submitted to App Store Connect.
 
 ## Reproduction
 

@@ -1,30 +1,31 @@
-A mood journal for the little moments that make your day.
+Your daily mood journal, one small moment at a time.
 
-Choose an animated mood sticker, write a few lines, and build a daily diary that feels like yours. MoodMargins saves your pages automatically, so you can focus on how you feel.
+Choose an animated mood sticker, write a few words, and let your pages save automatically. MoodMargins gives you a notebook for how you feel, without needing to write a long entry.
 
-CHECK IN YOUR WAY
+CHECK IN AND LOOK BACK
 • Express your mood with five animated stickers.
-• Write on soft, lined notebook pages.
-• Organize moments with tags and find entries by date, mood, or search.
+• Keep notes on lined notebook pages that save as you write.
+• Find past entries with search, mood filters, and tags.
+• Explore mood trends over 7, 14, or 30 days, or a year.
+• See your longest journaling streak and most common mood.
 
-UNDERSTAND YOUR PATTERNS
-Explore mood trends across 7 days, 14 days, 30 days, or a year. See your longest journaling streak, most common mood, and frequently used tags. Daily journaling and standard Insights are free.
+A NOTEBOOK AT HOME ON MAC
+Move between Today, Pages, and Insights from the sidebar. Browse your pages and write in a native Mac window. Your journal can sync with your other MoodMargins devices, including Watch check-ins, through your private iCloud account when iCloud is available and enabled. Changes can take time to appear.
 
-MAKE IT YOURS
-Start with the free Pastel theme, or choose Botanical, Coastal, and Sunset. Each palette includes light and dark appearances. Buy a theme once to keep it, or enjoy all premium themes with MoodMargins Plus.
+FREE TO START, YOURS TO PERSONALIZE
+Daily journaling, standard Insights, and the Pastel theme are free. Choose light or dark appearance. Make the notebook your own with Botanical, Coastal, or Sunset: purchase a theme once to keep it, or access all premium themes while subscribed to MoodMargins Plus.
 
 A LITTLE HELP WITH PLUS
-Plus adds AI tag suggestions and recaps of your saved pages. AI requires a compatible device with Apple Intelligence enabled and ready. It uses Apple's Private Cloud Compute first, with the on-device model as a fallback. Turn off cloud processing in Customize to use the local model. Cloud requests need internet access and are subject to Apple's usage limits.
+Plus includes AI tag suggestions, recaps of your saved pages, premium themes, and an ad-free experience. Optional AI requires a compatible device with Apple Intelligence enabled and ready. It tries Apple's Private Cloud Compute first, with an on-device fallback. Turn off cloud processing in Customize to use on-device AI. Cloud use requires internet and is subject to Apple's availability and usage limits.
 
-YOUR PRIVATE NOTEBOOK
-No app account is needed. Your entries stay on your device and sync through your private iCloud account when iCloud is available and enabled. The developer has no server that receives your journal. On Apple Watch, swipe through moods and add a quick note; Watch entries are stored locally and do not currently sync with the main app.
+YOUR JOURNAL AND YOUR CHOICES
+No MoodMargins account is needed. Pages are stored on your device, with private iCloud sync when available and enabled. The developer does not operate a server that receives your journal. Free users can see app recommendations in Customize; Plus is ad-free.
 
-ABOUT PLUS AND THEME PURCHASES
-Weekly, monthly, and yearly auto-renewing Plus subscriptions include the same premium features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.
+Weekly, monthly, and yearly Plus subscriptions renew automatically and include the same features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.
 
 MoodMargins is for personal reflection, not medical advice, diagnosis, or treatment.
 
-Make a little space for your day. Start with one check-in.
+Start with one mood and a few words.
 
 Privacy policy: https://apps.transfinite.us/moodmargins/privacy-policy
 Terms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

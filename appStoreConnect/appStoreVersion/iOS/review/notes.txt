@@ -1,6 +1,8 @@
+Version 1.1.1 refreshes the App Store presentation: platform-specific descriptions, localized names and keywords, and clearer explanations of Plus and private iCloud sync. App functionality and data practices are unchanged from 1.1. No general-purpose analytics service or additional SDK is introduced.
+
 MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.
 
-New in version 1.1: Customize → Feedback & ideas presents the Kickstart Signal board in a navigation sheet. Only voluntarily submitted feedback is sent to that service; private journal content is not submitted. A Kickstart Exchange advertising banner appears below About for free accounts after purchase entitlements load. Plus accounts remain ad-free. Neither integration is used for tracking, and Signal receives no premium-status flag.
+Existing features introduced in version 1.1: Customize → Feedback & ideas presents the Kickstart Signal board in a navigation sheet. Only voluntarily submitted feedback is sent to that service; private journal content is not submitted. A Kickstart Exchange advertising banner appears below About for free accounts after purchase entitlements load. Plus accounts remain ad-free. Neither integration is used for tracking, and Signal receives no premium-status flag.
 
 Customize → Rate this app opens this app's App Store write-review page on devices. Automatic native StoreKit review requests become eligible after three distinct saved Today check-in days and wait until editing has finished. Requests are limited to once per version, with at least 14 days and three additional check-in days between attempts. All moods count equally. StoreKit may suppress a request, and TestFlight does not show automatic prompts.
 

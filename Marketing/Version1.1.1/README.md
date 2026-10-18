@@ -2,7 +2,7 @@
 
 Prepared October 18, 2026 for MoodMargins: Mood Journal, App Store ID **6819079849**, bundle ID **com.transfinite.MoodMargins**.
 
-**Status: local proposal, ready for copy review.** No 1.1.1 App Store version, build, campaign, or public metadata was created by this work. The submitted 1.1 listings remain the release baseline. Actual availability and review status must be checked again before applying this package.
+**Status: version 1.1.1 is staged locally for upload after 1.1 approval.** The project and local listing now use 1.1.1, with source build 15 across the app and its embedded targets. No 1.1.1 build or metadata has been uploaded, applied, or submitted. A live check on October 18 still showed 1.1 Waiting for Review on all three platforms. See the [conditional release plan](ReleasePlan.json) and [preparation checks](../../QA/Version1.1.1Readiness.md).
 
 ## Recommended direction
 
@@ -29,6 +29,7 @@ The Arabic subtitle adds daily writing and pattern discovery without repeating t
 - [Validation.json](Validation.json): automated checks and field lengths for this exact package.
 - [KeywordTrackingPlan.json](KeywordTrackingPlan.json): owner-approved eight-tracker batch, added to Kickstart and verified on October 18; [initial ranking snapshots and readback results](KeywordTrackingResults.json).
 - [PrivacyPreservingAnalytics.md](PrivacyPreservingAnalytics.md): Apple's existing reports and a proposal for optional feature counters; no analytics instrumentation has been added.
+- [ReleasePlan.json](ReleasePlan.json): predecessor approval requirements, platform release methods, and the deferred upload/submission scope.
 
 Descriptions: [iOS English](descriptions/iOS/en-US.txt), [Spanish](descriptions/iOS/es-ES.txt), [Arabic](descriptions/iOS/ar-SA.txt); [Mac English](descriptions/macOS/en-US.txt), [Spanish](descriptions/macOS/es-ES.txt), [Arabic](descriptions/macOS/ar-SA.txt); [Vision Pro English](descriptions/visionOS/en-US.txt), [Spanish](descriptions/visionOS/es-ES.txt), [Arabic](descriptions/visionOS/ar-SA.txt).
 
@@ -41,15 +42,17 @@ Descriptions: [iOS English](descriptions/iOS/en-US.txt), [Spanish](descriptions/
 - Explains that free users can see app recommendations in Customize, and Plus is ad-free.
 - Removes weaker English keyword targets such as mindfulness and gratitude. They suggest experiences the app does not specifically provide. Uses relevant writing, mood, and notebook language instead.
 
-## Application scope, after exact copy approval
+## Prepared scope and deferred application
 
 1. Re-read App Store Connect status. Do not replace a build under review, withdraw a review, or change its release method as part of this marketing package. Create or select 1.1.1 only when Apple allows the next version on that platform.
-2. Review shared App Information separately: name/subtitle changes are app-level, not isolated to a version. Apply the Spanish/Arabic proposals only when their release timing is agreed.
+2. Name/subtitle changes are app-level, not isolated to a version. The discussed Spanish/Arabic names and subtitles are staged locally with this package; apply them only with the eligible 1.1.1 release, preserving the active 1.1 reviews.
 3. Apply keywords, promotional text, and the matching description to **1.1.1 only**, for iOS, macOS, and visionOS in en-US, es-ES, and ar-SA. iOS includes the Watch companion; no separate Watch App Store version is proposed.
 4. Revalidate name availability, all lengths, actual feature behavior, links, localized product names, and App Store Connect's resulting changes before publishing. Preserve privacy, categories, prices, purchases, availability, and unrelated remote fields.
 5. Update Kickstart's internal project description after approval as a separate action; its cached Watch-local-only description is also stale. Keep the internal project name MoodMargins.
 
-The actual project version remains 1.1. A future 1.1.1 binary needs its own matching marketing version and normal distribution checks. No feature changelog is invented for this copy-only task; write What's New from the final shipped changes when that release is assembled. Screenshots, previews, the notebook icon, existing product-page artwork, and campaign budgets are unchanged.
+The user requested preparing this package and uploading/submitting it after 1.1 approval. The matching project settings, three local version files, all nine metadata localizations, truthful release notes, and updated review instructions are prepared. The release notes explain the App Store information refresh; they do not reannounce Watch sync as a new 1.1.1 feature. Screenshots, previews, the notebook icon, existing product-page artwork, and campaign budgets are unchanged.
+
+Do not click Update Listing, Upload, or Submit while the predecessor condition is unmet. Apple requires the current version to be Ready for Distribution to create the next version. Mac and Vision 1.1 use manual release, so an approved version may still need release before 1.1.1 can be created/submitted. This preparation does not change those release methods or release 1.1. [Apple: Create a new version](https://developer.apple.com/help/app-store-connect/update-your-app/create-a-new-version/).
 
 ## Measurement and rollout
 
@@ -63,8 +66,8 @@ After the metadata settles and sufficient traffic exists, consider one Apple Pro
 
 ## Remaining owner/release steps
 
-- Review and approve exact localized copy before it is applied externally. Native-language editorial review is recommended for Spanish and Arabic before publishing.
+- Recheck predecessor approval and whether Apple allows a new version before applying this prepared copy. Native-language editorial review remains recommended for Spanish and Arabic.
 - Verify Watch-to-main-app sync on physical devices using the same Apple Account, including offline edits and eventual delivery. This marketing work did not repeat that device test.
 - Obtain current acquisition exports; Kickstart returned no analytics for this project during this audit.
 - Check the existing Daily check-ins custom product page's current review state before using its URL. The repository records it as an uploaded, verified **draft**, not a live campaign destination.
-- Assemble the eventual 1.1.1 build/release separately if a new binary is needed. This proposal does not submit a review or publish a release.
+- Archive/upload the prepared 1.1.1 code after the approval gate, verify processed builds, apply the local listing, and submit eligible platforms using the existing release methods. No automatic background approval monitor has been configured.

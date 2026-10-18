@@ -1,0 +1,112 @@
+{
+  "checkedOn": "2026-10-18",
+  "version": "1.1.1",
+  "sourceBuildNumber": "15",
+  "result": "ALL_RELEASE_BUILDS_PASSED",
+  "preview": {
+    "platform": "iOS Simulator",
+    "result": "succeeded",
+    "log": "2026-10-18T19-17-45-8a96ab9d.log",
+    "otherPlatformsNotSelected": true
+  },
+  "releaseBuildLog": "2026-10-18T19-18-48-1bfac255.log",
+  "destinations": [
+    {
+      "destination": "generic/platform=watchOS Simulator",
+      "result": "succeeded",
+      "bundles": [
+        {
+          "bundleId": "com.transfinite.MoodMargins.watchkitapp",
+          "marketingVersion": "1.1.1",
+          "buildNumber": "15"
+        }
+      ],
+      "warnings": [
+        {
+          "classification": "warning",
+          "filePath": "WatchMoodMargins Watch App/WatchJournalSession.swift",
+          "lineNumber": 24,
+          "message": "will never be executed"
+        },
+        {
+          "classification": "warning",
+          "message": "2026-10-18 19:18:56.839 appintentsmetadataprocessor[54526:1955936] warning: Metadata extraction skipped, no AppIntents.framework dependency found"
+        },
+        {
+          "classification": "warning",
+          "message": "2026-10-18 19:19:09.692 appintentsmetadataprocessor[54666:1957081] warning: Metadata extraction skipped, no AppIntents.framework dependency found"
+        }
+      ]
+    },
+    {
+      "destination": "generic/platform=visionOS Simulator",
+      "result": "succeeded",
+      "bundles": [
+        {
+          "bundleId": "com.transfinite.MoodMargins",
+          "marketingVersion": "1.1.1",
+          "buildNumber": "15"
+        }
+      ],
+      "warnings": [
+        {
+          "classification": "warning",
+          "message": "2026-10-18 19:19:38.085 appintentsmetadataprocessor[55556:1962128] warning: Metadata extraction skipped, no AppIntents.framework dependency found"
+        }
+      ]
+    },
+    {
+      "destination": "generic/platform=macOS",
+      "result": "succeeded",
+      "bundles": [
+        {
+          "bundleId": "com.transfinite.MoodMargins",
+          "marketingVersion": "1.1.1",
+          "buildNumber": "15"
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "destination": "generic/platform=iOS",
+      "result": "succeeded",
+      "bundles": [
+        {
+          "bundleId": "com.transfinite.MoodMargins",
+          "marketingVersion": "1.1.1",
+          "buildNumber": "15"
+        },
+        {
+          "bundleId": "com.transfinite.MoodMargins.MoodMarginsWidget",
+          "marketingVersion": "1.1.1",
+          "buildNumber": "15"
+        },
+        {
+          "bundleId": "com.transfinite.MoodMargins.watchkitapp",
+          "marketingVersion": "1.1.1",
+          "buildNumber": "15"
+        }
+      ],
+      "warnings": [
+        {
+          "classification": "warning",
+          "filePath": "WatchMoodMargins Watch App/WatchJournalSession.swift",
+          "lineNumber": 24,
+          "message": "will never be executed"
+        },
+        {
+          "classification": "warning",
+          "message": "2026-10-18 19:19:52.810 appintentsmetadataprocessor[56177:1965511] warning: Metadata extraction skipped, no AppIntents.framework dependency found"
+        },
+        {
+          "classification": "warning",
+          "message": "2026-10-18 19:20:06.865 appintentsmetadataprocessor[56401:1966703] warning: Metadata extraction skipped, no AppIntents.framework dependency found"
+        }
+      ]
+    }
+  ],
+  "macReleaseDeepStrictSignatureVerification": "passed",
+  "uploaded": false,
+  "distributionExportVerifiedForThisVersion": false,
+  "appStoreProcessingVerifiedForThisVersion": false
+}

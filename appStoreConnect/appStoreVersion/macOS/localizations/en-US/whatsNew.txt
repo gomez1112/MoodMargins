@@ -1,5 +1,1 @@
-New in 1.1
-
-• Share suggestions through the new Feedback & ideas board in Customize.
-• Find a Rate this app link in Customize whenever you want to leave a review.
-• A small advertising banner in Customize helps support free journaling. Plus remains ad-free.
+Updated our App Store information with clearer details about daily journaling, mood Insights, themes, and Plus. We also clarified private iCloud sync, including Apple Watch check-ins.

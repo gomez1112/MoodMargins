@@ -1,30 +1,31 @@
-Un diario de ánimo para los pequeños momentos de tu día.
+Tu diario de ánimo, un pequeño momento cada día.
 
-Elige un sticker de ánimo animado, escribe unas líneas y crea un diario que se sienta tuyo. MoodMargins guarda tus páginas automáticamente para que puedas centrarte en cómo te sientes.
+Elige un sticker de ánimo animado, escribe unas palabras y deja que tus páginas se guarden solas. MoodNotas te ofrece un cuaderno para expresar cómo te sientes, sin tener que escribir una entrada larga.
 
-EXPRÉSATE A TU MANERA
-• Elige entre cinco stickers de ánimo animados.
-• Escribe en suaves páginas de cuaderno con renglones.
-• Organiza momentos con etiquetas y encuentra entradas por fecha, ánimo o búsqueda.
+ESCRIBE Y MIRA ATRÁS
+• Expresa tu ánimo con cinco stickers animados.
+• Escribe en páginas con renglones que se guardan mientras escribes.
+• Encuentra entradas con la búsqueda, los filtros de ánimo y las etiquetas.
+• Explora las tendencias de 7, 14 o 30 días, o de todo un año.
+• Consulta tu racha de escritura más larga y tu ánimo más frecuente.
 
-DESCUBRE TUS PATRONES
-Explora las tendencias de ánimo de 7, 14 o 30 días, o de todo un año. Consulta tu racha de escritura más larga, tu ánimo más frecuente y las etiquetas que más usas. El diario y las Perspectivas básicas son gratis.
+UN ESPACIO EN APPLE VISION PRO
+Escribe, explora tus páginas y consulta Perspectivas en una ventana diseñada para visionOS. Tu diario puede sincronizarse con tus otros dispositivos con MoodNotas, incluidas las entradas del Watch, mediante tu cuenta privada de iCloud cuando está disponible y activado. Los cambios pueden tardar en aparecer.
 
-DALE TU ESTILO
-Empieza con el tema Pastel gratuito o elige Botánica, Costera y Atardecer. Cada paleta tiene un aspecto claro y otro oscuro. Compra un tema una sola vez para conservarlo o disfruta de todos los temas premium con MoodMargins Plus.
+EMPIEZA GRATIS Y DALE TU ESTILO
+El diario, las Perspectivas básicas y el tema Pastel son gratis. Elige el aspecto claro u oscuro. Personaliza el cuaderno con Botánica, Costera o Atardecer: compra un tema una sola vez para conservarlo o accede a todos los temas premium mientras tengas una suscripción a MoodMargins Plus.
 
 UN POCO DE AYUDA CON PLUS
-Plus añade sugerencias de etiquetas con IA y resúmenes de tus páginas guardadas. La IA requiere un dispositivo compatible con Apple Intelligence activado y listo. Utiliza primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si falla. Desactiva el procesamiento en la nube en Personalizar para usar el modelo local. Las solicitudes a la nube necesitan internet y están sujetas a los límites de uso de Apple.
+Plus incluye sugerencias de etiquetas con IA, resúmenes de tus páginas, temas premium y una experiencia sin anuncios. La IA opcional requiere un dispositivo compatible con Apple Intelligence activado y listo. Utiliza primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si es necesario. Desactiva el procesamiento en la nube en Personalizar para usar la IA local. La nube requiere internet y está sujeta a la disponibilidad y los límites de uso de Apple.
 
-TU CUADERNO PRIVADO
-No necesitas una cuenta de la app. Tus entradas se guardan en tu dispositivo y se sincronizan mediante tu cuenta privada de iCloud cuando está disponible y activado. El desarrollador no tiene un servidor que reciba tu diario. En Apple Watch, desliza entre los estados de ánimo y añade una nota rápida; las entradas se guardan localmente y todavía no se sincronizan con la app principal.
+TU DIARIO Y TUS DECISIONES
+No necesitas una cuenta de MoodNotas. Las páginas se guardan en tu dispositivo y se sincronizan mediante tu cuenta privada de iCloud cuando está disponible y activado. El desarrollador no tiene un servidor que reciba tu diario. La versión gratuita puede mostrar recomendaciones de apps en Personalizar; Plus no tiene anuncios.
 
-SOBRE PLUS Y LAS COMPRAS DE TEMAS
-Las suscripciones semanales, mensuales y anuales de renovación automática incluyen las mismas funciones premium. Las compras individuales de temas son permanentes y no incluyen IA. Gestiona o cancela las suscripciones en los ajustes de tu cuenta de Apple. Si cancelas Plus, conservarás tus entradas y los temas comprados por separado.
+Las suscripciones semanales, mensuales y anuales de Plus se renuevan automáticamente e incluyen las mismas funciones. Los temas comprados por separado son permanentes y no incluyen IA. Gestiona o cancela las suscripciones en los ajustes de tu cuenta de Apple. Al terminar Plus, conservas tus entradas y los temas comprados por separado.
 
-MoodMargins es para la reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.
+MoodNotas es para la reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.
 
-Haz un pequeño espacio para tu día. Empieza con una entrada.
+Empieza con un estado de ánimo y unas palabras.
 
 Política de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy
 Condiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
