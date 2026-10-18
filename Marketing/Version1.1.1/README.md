@@ -27,7 +27,7 @@ The Arabic subtitle adds daily writing and pattern discovery without repeating t
 - [AssetBrief.md](AssetBrief.md): screenshot and preview messaging, with a controlled test proposal.
 - [LaunchCopy.md](LaunchCopy.md): ready-to-use English, Spanish, and Arabic organic launch copy.
 - [Validation.json](Validation.json): automated checks and field lengths for this exact package.
-- [KeywordTrackingPlan.json](KeywordTrackingPlan.json): exact proposed eight-tracker batch for Kickstart, pending its separate confirmation and readback.
+- [KeywordTrackingPlan.json](KeywordTrackingPlan.json): owner-approved eight-tracker batch, added to Kickstart and verified on October 18; [initial ranking snapshots and readback results](KeywordTrackingResults.json).
 - [PrivacyPreservingAnalytics.md](PrivacyPreservingAnalytics.md): Apple's existing reports and a proposal for optional feature counters; no analytics instrumentation has been added.
 
 Descriptions: [iOS English](descriptions/iOS/en-US.txt), [Spanish](descriptions/iOS/es-ES.txt), [Arabic](descriptions/iOS/ar-SA.txt); [Mac English](descriptions/macOS/en-US.txt), [Spanish](descriptions/macOS/es-ES.txt), [Arabic](descriptions/macOS/ar-SA.txt); [Vision Pro English](descriptions/visionOS/en-US.txt), [Spanish](descriptions/visionOS/es-ES.txt), [Arabic](descriptions/visionOS/ar-SA.txt).

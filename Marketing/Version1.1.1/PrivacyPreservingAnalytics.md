@@ -1,6 +1,6 @@
 # Private analytics for MoodMargins
 
-Prepared October 18, 2026. **Recommendation only:** no analytics SDK, collection endpoint, event instrumentation, consent screen, dependency, or privacy-policy change was added. Keyword tracking in Kickstart is a separate activity: it monitors App Store rankings, not people using the app. Its exact proposed batch is in [KeywordTrackingPlan.json](KeywordTrackingPlan.json).
+Prepared October 18, 2026. **Recommendation only:** no analytics SDK, collection endpoint, event instrumentation, consent screen, dependency, or privacy-policy change was added. Keyword tracking in Kickstart is a separate activity: it monitors App Store rankings, not people using the app. The owner-approved eight-tracker batch was added and verified on October 18; see [KeywordTrackingPlan.json](KeywordTrackingPlan.json) and the [dated initial results](KeywordTrackingResults.json).
 
 ## Start with Apple's existing reports
 

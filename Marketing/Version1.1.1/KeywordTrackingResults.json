@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "verifiedOn": "2026-10-18",
+  "projectName": "MoodMargins",
+  "appStoreId": "6819079849",
+  "outcome": "ALL_8_ADDED_AND_READBACK_VERIFIED",
+  "approvedScope": "The owner explicitly approved this exact batch on October 18, 2026.",
+  "source": {
+    "creationTool": "Kickstart track_keyword",
+    "verificationTool": "Kickstart list_tracked_keywords",
+    "fetchNow": true,
+    "keywordDataMode": "serverBacked",
+    "changedDataMode": false
+  },
+  "results": [
+    {
+      "country": "us",
+      "platform": "ios",
+      "keyword": "mood journal",
+      "trackingAdded": true,
+      "verifiedInTrackedList": true,
+      "fetchStatus": "complete",
+      "snapshotDate": "2026-10-18",
+      "rank": 29,
+      "resultStatus": "RANKED",
+      "returnedResultCount": 249
+    },
+    {
+      "country": "us",
+      "platform": "ios",
+      "keyword": "mood tracker",
+      "trackingAdded": true,
+      "verifiedInTrackedList": true,
+      "fetchStatus": "complete",
+      "snapshotDate": "2026-10-17",
+      "rank": 166,
+      "resultStatus": "RANKED",
+      "returnedResultCount": 249
+    },
+    {
+      "country": "us",
+      "platform": "ios",
+      "keyword": "private mood tracker",
+      "trackingAdded": true,
+      "verifiedInTrackedList": true,
+      "fetchStatus": "complete",
+      "snapshotDate": "2026-10-17",
+      "rank": 73,
+      "resultStatus": "RANKED",
+      "returnedResultCount": 241
+    },
+    {
+      "country": "es",
+      "platform": "ios",
+      "keyword": "diario de ánimo",
+      "trackingAdded": true,
+      "verifiedInTrackedList": true,
+      "fetchStatus": "complete",
+      "snapshotDate": "2026-10-18",
+      "rank": null,
+      "resultStatus": "NOT_PRESENT_IN_RETURNED_RESULTS",
+      "returnedResultCount": 243
+    },
+    {
+      "country": "es",
+      "platform": "ios",
+      "keyword": "diario",
+      "trackingAdded": true,
+      "verifiedInTrackedList": true,
+      "fetchStatus": "complete",
+      "snapshotDate": "2026-10-18",
+      "rank": null,
+      "resultStatus": "NOT_PRESENT_IN_RETURNED_RESULTS",
+      "returnedResultCount": 244
+    },
+    {
+      "country": "sa",
+      "platform": "ios",
+      "keyword": "يوميات",
+      "trackingAdded": true,
+      "verifiedInTrackedList": true,
+      "fetchStatus": "complete",
+      "snapshotDate": "2026-10-18",
+      "rank": null,
+      "resultStatus": "NOT_PRESENT_IN_RETURNED_RESULTS",
+      "returnedResultCount": 248
+    },
+    {
+      "country": "sa",
+      "platform": "ios",
+      "keyword": "مزاج",
+      "trackingAdded": true,
+      "verifiedInTrackedList": true,
+      "fetchStatus": "complete",
+      "snapshotDate": "2026-10-18",
+      "rank": null,
+      "resultStatus": "NOT_PRESENT_IN_RETURNED_RESULTS",
+      "returnedResultCount": 249
+    },
+    {
+      "country": "us",
+      "platform": "macos",
+      "keyword": "mood journal",
+      "trackingAdded": true,
+      "verifiedInTrackedList": true,
+      "fetchStatus": "complete",
+      "snapshotDate": "2026-10-18",
+      "rank": null,
+      "resultStatus": "NOT_PRESENT_IN_RETURNED_RESULTS",
+      "returnedResultCount": 181
+    }
+  ],
+  "notes": [
+    "These are dated server-backed ranking snapshots, not personalized live App Store searches or guaranteed positions.",
+    "Absent from returned results does not establish that the app is unavailable or unindexed.",
+    "Fetch was requested immediately; two US iOS queries returned October 17 snapshots. Other snapshots are dated October 18.",
+    "Ongoing refresh cadence is managed by Kickstart; no scheduler or cadence setting was changed or verified.",
+    "No App Store metadata, app code, analytics collection, advertising campaign, or spending changed."
+  ]
+}
