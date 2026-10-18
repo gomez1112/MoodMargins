@@ -1,6 +1,269 @@
 {
   "appId": "6819079849",
   "derived": {
+    "appAssetLibraryAssets": {
+      "00000019-672e-86a9-8010-9c65f1aca113": {
+        "renditionChecksum": "1c2113a6ff3ef60afed8d9766c6ffde4"
+      },
+      "02400019-672e-86a9-800d-e554d4abdea7": {
+        "sourceFileChecksum": "a62b2aa21bc63cff485b31b0f3bc326c"
+      },
+      "03c00019-672e-86a9-800f-06eaaeaeaf9e": {
+        "sourceFileChecksum": "cd6a3c7abf949cce625bff9a6ff99c12"
+      },
+      "04c00019-672e-86a9-8014-a245641a9f9a": {
+        "sourceFileChecksum": "0fccdb32a1630472c10ee610ce2f3595"
+      },
+      "04c00019-672e-86a9-803a-0ab61b0534fc": {
+        "sourceFileChecksum": "9473a960ee926e51a7d94334e7ad6562"
+      },
+      "0b000019-672e-86a9-800e-ff421c40db96": {
+        "sourceFileChecksum": "bb660a6c7a35971a34a573fda1112315"
+      },
+      "0b800019-672e-86a9-802f-df65abc0e49d": {
+        "sourceFileChecksum": "f8d4797162e4c78eedc1e89c42ebff15"
+      },
+      "0d800019-672e-86a9-8007-d3f0443836ee": {
+        "sourceFileChecksum": "e696069281667e0ae6051910e6081d48"
+      },
+      "0ec00019-672e-86a9-8036-db126b695f47": {
+        "sourceFileChecksum": "6910dd3cfaaa5e0d48c36c89bab05db3"
+      },
+      "0f400019-672e-86a9-8030-2a3d309ee747": {
+        "sourceFileChecksum": "39ec50cd4f2bd3df12a3b82daa186396"
+      },
+      "12000019-672e-86a9-8021-7336c5d26bef": {
+        "sourceFileChecksum": "18e203a28c26221b81a270ac7388903c"
+      },
+      "13000019-672e-86a9-8034-29d15a5e76aa": {
+        "sourceFileChecksum": "41a451cfbd73c4a87f80cc2001ed8208"
+      },
+      "1a000019-672e-86a9-8023-0b831b13a75e": {
+        "sourceFileChecksum": "51d1268987cec8f77e4e242434a87f0a"
+      },
+      "1cc00019-672e-86a9-8022-f934165eda3f": {
+        "sourceFileChecksum": "571ad5aec3a00687da6c6dece0925112"
+      },
+      "1e400019-672e-86a9-8002-c6ae617c46de": {
+        "sourceFileChecksum": "d7a032f6c4290ecc18fac582a211c49d"
+      },
+      "21000019-672e-86a9-8012-80b502fd35db": {
+        "sourceFileChecksum": "d1d91398b10ef86b7d45a30ca304480f"
+      },
+      "2ac00019-672e-86a9-8034-403d6ebdcd14": {
+        "sourceFileChecksum": "e67bab665ae7dd7aaa5aedfc2c5bea69"
+      },
+      "2ac00019-672e-86a9-8037-a2a914125951": {
+        "sourceFileChecksum": "1372253c5ab7bcf4213c974746afb79f"
+      },
+      "2b400019-672e-86a9-8013-fdddb354b01a": {
+        "renditionChecksum": "b3be90bbcef7629fa53e1292da2eb79a"
+      },
+      "31400019-672e-86a9-801c-a393346473bf": {
+        "renditionChecksum": "3b3d63994a5dd0fe3a7697ea43784813"
+      },
+      "31800019-672e-86a9-8010-e9fca9062174": {
+        "sourceFileChecksum": "ca30b20d7c9bb0b839287f7bf9136806"
+      },
+      "32800019-672e-86a9-8038-ecce4af75499": {
+        "sourceFileChecksum": "82a3c9e45116358732116b8c8b0bf92c"
+      },
+      "36400019-672e-86a9-8014-c029b6585a63": {
+        "sourceFileChecksum": "3c99ff38372e9edc7213571ace56e30d"
+      },
+      "36c00019-672e-86a9-8014-248822a33c8b": {
+        "sourceFileChecksum": "1bf63049d4f4961f0fce66e0e1a62fb7"
+      },
+      "3e400019-672e-86a9-802c-3943fc0ce5be": {
+        "sourceFileChecksum": "867e4556fc2401229a38707bc4a4b297"
+      },
+      "3fc00019-672e-86a9-8039-10abecbe1cd0": {
+        "sourceFileChecksum": "68d71cd15c8beb013e5addfdcaae8110"
+      },
+      "41800019-672e-86a9-8008-48bf223a1d7c": {
+        "sourceFileChecksum": "e02fe1eadf46774ef36b207d42c78ba1"
+      },
+      "42400019-672e-86a9-8009-4b20c88bb664": {
+        "sourceFileChecksum": "11a0dafcba3274c2ee78cd3e6f6c860d"
+      },
+      "4f800019-672e-86a9-803b-98327a65b6b7": {
+        "sourceFileChecksum": "7d9e9fe5e4c93986b5705006dcfeb244"
+      },
+      "51c00019-672e-86a9-8027-2eceef3f2083": {
+        "sourceFileChecksum": "39f791096d6a95dd7af0a8c003e695d3"
+      },
+      "55800019-672e-86a9-803a-eab8f6cde923": {
+        "sourceFileChecksum": "4590840ede4b33feedcdcf15d04f4c0f"
+      },
+      "5d800019-672e-86a9-8018-410950832137": {
+        "sourceFileChecksum": "36fa8e0c3c400e530721ae6835b6d24c"
+      },
+      "62000019-672e-86a9-8004-cb794cfa0588": {
+        "sourceFileChecksum": "129861153a285e327d0629326b4d9b4d"
+      },
+      "69000019-672e-86a9-802b-e5c66c003326": {
+        "sourceFileChecksum": "cee251bf753217ed48f1a2094f7a6799"
+      },
+      "6d400019-672e-86a9-8037-d01bd783c0b4": {
+        "sourceFileChecksum": "0d8a91ca99f2a9e80608af754c32a03d"
+      },
+      "6f000019-672e-86a9-803a-ae82a39b0a8c": {
+        "sourceFileChecksum": "706391441a663708b7d2ded2197c8822"
+      },
+      "71400019-672e-86a9-8024-21575cb9b98f": {
+        "sourceFileChecksum": "f85bf1e89559c130606b9c4e4f0b9a34"
+      },
+      "73400019-672e-86a9-8009-2fb2d2820012": {
+        "renditionChecksum": "43ffe324e3cb8cdcc1905969ff25742a"
+      },
+      "73400019-672e-86a9-802c-43fe918f55d1": {
+        "sourceFileChecksum": "3baa5fce5281dc2564b52c5b49051f78"
+      },
+      "73400019-672e-86a9-8033-c6577c015c9e": {
+        "sourceFileChecksum": "135e0e3522b1bdbb4a1bb6b87b85e71d"
+      },
+      "74800019-672e-86a9-8027-01cbb5a694e0": {
+        "renditionChecksum": "302e63adf34e8db55fce28724a84b352"
+      },
+      "77c00019-672e-86a9-802a-18b232f9fa28": {
+        "sourceFileChecksum": "9940b1d58322e4be41cdf2a00dba8c1a"
+      },
+      "7a400019-672e-86a9-802a-a1b3e1ed11d1": {
+        "sourceFileChecksum": "d94ce28f9cd64649ffd97acc776fece2"
+      },
+      "7ac00019-672e-86a9-802c-7b0508637475": {
+        "sourceFileChecksum": "4893507eefdced3afce22b11be357c29"
+      },
+      "7b800019-672e-86a9-802e-9c6c02d98ba3": {
+        "sourceFileChecksum": "d144f4932e5e1574c47461e47e6b1fd5"
+      },
+      "7bc00019-672e-86a9-8003-d8d1f829d168": {
+        "sourceFileChecksum": "e8eb6f68d6a143c3f97143f06e49a645"
+      },
+      "7d000019-672e-86a9-8006-497fb5387e39": {
+        "sourceFileChecksum": "99e7ce978de18bfa13833a091c4da789"
+      },
+      "81000019-672e-86a9-803d-ebfe1691938c": {
+        "sourceFileChecksum": "8b48b7ddd25199a5c39b4b5ab8f0fffc"
+      },
+      "84400019-672e-86a9-801c-a045c7ab7c93": {
+        "sourceFileChecksum": "0e95381eca3dd1be773bb6b2fc64e5aa"
+      },
+      "87000019-672e-86a9-8031-ee6b8a3c237a": {
+        "sourceFileChecksum": "da2ea8bccfeaf0d7943b69dadbbd3ec0"
+      },
+      "89c00019-672e-86a9-801e-245953ae8faa": {
+        "sourceFileChecksum": "3002ef26f4e797245cc696577cb77ebf"
+      },
+      "8bc00019-672e-86a9-8026-343a72b37c21": {
+        "sourceFileChecksum": "f6053a55fb8ccb87b7794dd23801c5fb"
+      },
+      "94000019-672e-86a9-8016-1a7b9b2abd74": {
+        "sourceFileChecksum": "b7a952b1616f9b4e75b1287a2c982070"
+      },
+      "96000019-672e-86a9-802e-d4217292954c": {
+        "sourceFileChecksum": "a8ac294d1cef1b44dc01ec3c31d10089"
+      },
+      "96800019-672e-86a9-8025-74e0fbbcf232": {
+        "sourceFileChecksum": "8cb8db3e7132860f0af3f99ad7ca1e1b"
+      },
+      "97800019-672e-86a9-8002-e71d0f4d5847": {
+        "sourceFileChecksum": "1ab2cfb17f616e92a5396d350fdc16d7"
+      },
+      "97800019-672e-86a9-803d-f79762f0c797": {
+        "sourceFileChecksum": "900295c14166dff2c2c8139e60a92731"
+      },
+      "98400019-672e-86a9-8020-eeb3d7093198": {
+        "sourceFileChecksum": "b20af80336826dd10e2633a8fa78367d"
+      },
+      "a0000019-672e-86a9-8010-6c70f1203aa3": {
+        "sourceFileChecksum": "e837e95d4aa249e2783720de9f47a8d7"
+      },
+      "a0800019-672e-86a9-8002-f0c44e254bb1": {
+        "sourceFileChecksum": "90e7f2b35c43aed2aa5bc2bb92836e27"
+      },
+      "aa400019-672e-86a9-8019-2be598a8afcf": {
+        "sourceFileChecksum": "44e5efca4de5018b04d12852240c4f82"
+      },
+      "ac000019-672e-86a9-8006-047508d11f9c": {
+        "sourceFileChecksum": "a3e21c02cdeb897758c81094ded4f097"
+      },
+      "ac000019-672e-86a9-8028-8fe04c447f02": {
+        "sourceFileChecksum": "5869e104f08723db20be4204b49fb863"
+      },
+      "ad000019-672e-86a9-801d-e75a0f0eb3a5": {
+        "sourceFileChecksum": "42544a4f13002a7386d4bf7734f7ba26"
+      },
+      "ad000019-672e-86a9-8033-6e67943d0ffe": {
+        "sourceFileChecksum": "7ee6dc0c56a85f6046cb7a026c0158f2"
+      },
+      "b0c00019-672e-86a9-8037-8b08a7f51e47": {
+        "renditionChecksum": "327b3f25e4d90dd4917de801f36233b4"
+      },
+      "b2800019-672e-86a9-8030-06733d854310": {
+        "sourceFileChecksum": "d5d50e89592c85222f98a0e1c623d89f"
+      },
+      "b8400019-672e-86a9-800c-b0d70f4b32c0": {
+        "sourceFileChecksum": "92736546ec9c32489ca753919695b532"
+      },
+      "b8800019-672e-86a9-8013-5d7a3f401869": {
+        "sourceFileChecksum": "2338c34d19264bdf8d9150310e1a2128"
+      },
+      "b9000019-672e-86a9-8007-ad0eb1776466": {
+        "sourceFileChecksum": "1558fc9746bb6182b3cba1d1e40a6f51"
+      },
+      "ba800019-672e-86a9-8029-32b45a9c1669": {
+        "sourceFileChecksum": "cddfbdc1916b57a40716a24699b0447d"
+      },
+      "bb800019-672e-86a9-8008-fe00abc281f1": {
+        "sourceFileChecksum": "696a072b9b5e8cf61b2a3595c5e1afd0"
+      },
+      "bb800019-672e-86a9-801d-d72ac3cd8711": {
+        "sourceFileChecksum": "b92369f59ff3ff0c09ad37b3599237d6"
+      },
+      "c8400019-672e-86a9-803f-943561a77186": {
+        "sourceFileChecksum": "bfbc72d8d999eb44bd9c3031b898d20f"
+      },
+      "cac00019-672e-86a9-8037-b42663a72e44": {
+        "sourceFileChecksum": "b02e474a52613f1289e8c25171dc1279"
+      },
+      "cb800019-672e-86a9-800f-8d38d6e0fff8": {
+        "sourceFileChecksum": "c3186d11d9d16e0f7d1e1ce8dad62e49"
+      },
+      "d2c00019-672e-86a9-8023-93c9273bc263": {
+        "sourceFileChecksum": "7d85e8cdb938838eb754e3ec50417ec3"
+      },
+      "db400019-672e-86a9-8013-aeb753baa562": {
+        "sourceFileChecksum": "c8f8ac9fb2d11398ae875073671a9bc1"
+      },
+      "e9000019-672e-86a9-803a-591aa20d0067": {
+        "sourceFileChecksum": "31def2c42303429a3ed60800c7381fdb"
+      },
+      "eb800019-672e-86a9-8014-28184afd2cab": {
+        "sourceFileChecksum": "091f96243c34ef8d9e64209da4dd0cdd"
+      },
+      "ec400019-672e-86a9-801e-ef69ef72d7d2": {
+        "sourceFileChecksum": "9851a546da662227f32c38b1497302b3"
+      },
+      "f1800019-672e-86a9-8013-e4a1ef76ca6b": {
+        "sourceFileChecksum": "5e38b25c000495f508a49c1e3fa52efc"
+      },
+      "f5800019-672e-86a9-803d-10b97c57e51c": {
+        "sourceFileChecksum": "5c78c663672872dbb219adf6146af1a7"
+      },
+      "fa000019-672e-86a9-8004-21166c841b73": {
+        "sourceFileChecksum": "ca4d4a5a4288994c0c8a3b0c0c1d3d38"
+      },
+      "fac00019-672e-86a9-8015-6325e4587e43": {
+        "sourceFileChecksum": "71872dd615a21c0414c792b49846ed25"
+      },
+      "fb000019-672e-86a9-8005-73d381c24f84": {
+        "sourceFileChecksum": "81b3f69331438ce19eaa94ba94a7b209"
+      },
+      "fe400019-672e-86a9-802d-1f3f54440371": {
+        "sourceFileChecksum": "ee7b6b76cd0b4861072ae1feb726ed9d"
+      }
+    },
     "inAppPurchasePricing": {
       "com.transfinite.MoodMargins.theme.botanical": {
         "automaticPrices": [
@@ -2123,494 +2386,6 @@
         "sourceFileChecksum": "1457e0bf908322af2978191ece3b8b96"
       }
     },
-    "legacyAppStoreVersionScreenshots": [
-      {
-        "fileName": "01-every-feeling.png",
-        "fileSize": 1778210,
-        "id": "42400019-672e-86a9-8009-4b20c88bb664",
-        "sourceFileChecksum": "11a0dafcba3274c2ee78cd3e6f6c860d"
-      },
-      {
-        "fileName": "02-autosave.png",
-        "fileSize": 1947821,
-        "id": "77c00019-672e-86a9-802a-18b232f9fa28",
-        "sourceFileChecksum": "9940b1d58322e4be41cdf2a00dba8c1a"
-      },
-      {
-        "fileName": "03-mood-trends.png",
-        "fileSize": 1339023,
-        "id": "1cc00019-672e-86a9-8022-f934165eda3f",
-        "sourceFileChecksum": "571ad5aec3a00687da6c6dece0925112"
-      },
-      {
-        "fileName": "04-mood-stickers.png",
-        "fileSize": 1305768,
-        "id": "db400019-672e-86a9-8013-aeb753baa562",
-        "sourceFileChecksum": "c8f8ac9fb2d11398ae875073671a9bc1"
-      },
-      {
-        "fileName": "05-premium-themes.png",
-        "fileSize": 849089,
-        "id": "04c00019-672e-86a9-803a-0ab61b0534fc",
-        "sourceFileChecksum": "9473a960ee926e51a7d94334e7ad6562"
-      },
-      {
-        "fileName": "06-dark-appearance.png",
-        "fileSize": 1223497,
-        "id": "2ac00019-672e-86a9-8034-403d6ebdcd14",
-        "sourceFileChecksum": "e67bab665ae7dd7aaa5aedfc2c5bea69"
-      },
-      {
-        "fileName": "01-every-feeling.png",
-        "fileSize": 1441833,
-        "id": "36c00019-672e-86a9-8014-248822a33c8b",
-        "sourceFileChecksum": "1bf63049d4f4961f0fce66e0e1a62fb7"
-      },
-      {
-        "fileName": "02-autosave.png",
-        "fileSize": 1694775,
-        "id": "3e400019-672e-86a9-802c-3943fc0ce5be",
-        "sourceFileChecksum": "867e4556fc2401229a38707bc4a4b297"
-      },
-      {
-        "fileName": "03-mood-trends.png",
-        "fileSize": 1184356,
-        "id": "b8400019-672e-86a9-800c-b0d70f4b32c0",
-        "sourceFileChecksum": "92736546ec9c32489ca753919695b532"
-      },
-      {
-        "fileName": "04-mood-stickers.png",
-        "fileSize": 1198776,
-        "id": "21000019-672e-86a9-8012-80b502fd35db",
-        "sourceFileChecksum": "d1d91398b10ef86b7d45a30ca304480f"
-      },
-      {
-        "fileName": "05-premium-themes.png",
-        "fileSize": 730410,
-        "id": "cb800019-672e-86a9-800f-8d38d6e0fff8",
-        "sourceFileChecksum": "c3186d11d9d16e0f7d1e1ce8dad62e49"
-      },
-      {
-        "fileName": "06-dark-appearance.png",
-        "fileSize": 1104493,
-        "id": "96800019-672e-86a9-8025-74e0fbbcf232",
-        "sourceFileChecksum": "8cb8db3e7132860f0af3f99ad7ca1e1b"
-      },
-      {
-        "fileName": "01-check-in.png",
-        "fileSize": 181032,
-        "id": "7ac00019-672e-86a9-802c-7b0508637475",
-        "sourceFileChecksum": "4893507eefdced3afce22b11be357c29"
-      },
-      {
-        "fileName": "02-moods.png",
-        "fileSize": 176057,
-        "id": "97800019-672e-86a9-803d-f79762f0c797",
-        "sourceFileChecksum": "900295c14166dff2c2c8139e60a92731"
-      },
-      {
-        "fileName": "03-pages.png",
-        "fileSize": 185414,
-        "id": "d2c00019-672e-86a9-8023-93c9273bc263",
-        "sourceFileChecksum": "7d85e8cdb938838eb754e3ec50417ec3"
-      },
-      {
-        "fileName": "04-detail.png",
-        "fileSize": 170712,
-        "id": "eb800019-672e-86a9-8014-28184afd2cab",
-        "sourceFileChecksum": "091f96243c34ef8d9e64209da4dd0cdd"
-      },
-      {
-        "fileName": "05-mood-sad.png",
-        "fileSize": 181165,
-        "id": "ba800019-672e-86a9-8029-32b45a9c1669",
-        "sourceFileChecksum": "cddfbdc1916b57a40716a24699b0447d"
-      },
-      {
-        "fileName": "06-mood-laughing.png",
-        "fileSize": 179551,
-        "id": "fa000019-672e-86a9-8004-21166c841b73",
-        "sourceFileChecksum": "ca4d4a5a4288994c0c8a3b0c0c1d3d38"
-      },
-      {
-        "fileName": "01-every-feeling.png",
-        "fileSize": 1827225,
-        "id": "b9000019-672e-86a9-8007-ad0eb1776466",
-        "sourceFileChecksum": "1558fc9746bb6182b3cba1d1e40a6f51"
-      },
-      {
-        "fileName": "02-autosave.png",
-        "fileSize": 1972499,
-        "id": "7d000019-672e-86a9-8006-497fb5387e39",
-        "sourceFileChecksum": "99e7ce978de18bfa13833a091c4da789"
-      },
-      {
-        "fileName": "03-mood-trends.png",
-        "fileSize": 1380946,
-        "id": "f1800019-672e-86a9-8013-e4a1ef76ca6b",
-        "sourceFileChecksum": "5e38b25c000495f508a49c1e3fa52efc"
-      },
-      {
-        "fileName": "04-mood-stickers.png",
-        "fileSize": 1366993,
-        "id": "6f000019-672e-86a9-803a-ae82a39b0a8c",
-        "sourceFileChecksum": "706391441a663708b7d2ded2197c8822"
-      },
-      {
-        "fileName": "05-premium-themes.png",
-        "fileSize": 865192,
-        "id": "87000019-672e-86a9-8031-ee6b8a3c237a",
-        "sourceFileChecksum": "da2ea8bccfeaf0d7943b69dadbbd3ec0"
-      },
-      {
-        "fileName": "06-dark-appearance.png",
-        "fileSize": 1257487,
-        "id": "ad000019-672e-86a9-801d-e75a0f0eb3a5",
-        "sourceFileChecksum": "42544a4f13002a7386d4bf7734f7ba26"
-      },
-      {
-        "fileName": "01-every-feeling.png",
-        "fileSize": 1466163,
-        "id": "c8400019-672e-86a9-803f-943561a77186",
-        "sourceFileChecksum": "bfbc72d8d999eb44bd9c3031b898d20f"
-      },
-      {
-        "fileName": "02-autosave.png",
-        "fileSize": 1737946,
-        "id": "02400019-672e-86a9-800d-e554d4abdea7",
-        "sourceFileChecksum": "a62b2aa21bc63cff485b31b0f3bc326c"
-      },
-      {
-        "fileName": "03-mood-trends.png",
-        "fileSize": 1214077,
-        "id": "41800019-672e-86a9-8008-48bf223a1d7c",
-        "sourceFileChecksum": "e02fe1eadf46774ef36b207d42c78ba1"
-      },
-      {
-        "fileName": "04-mood-stickers.png",
-        "fileSize": 1238265,
-        "id": "0b000019-672e-86a9-800e-ff421c40db96",
-        "sourceFileChecksum": "bb660a6c7a35971a34a573fda1112315"
-      },
-      {
-        "fileName": "05-premium-themes.png",
-        "fileSize": 734800,
-        "id": "fe400019-672e-86a9-802d-1f3f54440371",
-        "sourceFileChecksum": "ee7b6b76cd0b4861072ae1feb726ed9d"
-      },
-      {
-        "fileName": "06-dark-appearance.png",
-        "fileSize": 1135475,
-        "id": "03c00019-672e-86a9-800f-06eaaeaeaf9e",
-        "sourceFileChecksum": "cd6a3c7abf949cce625bff9a6ff99c12"
-      },
-      {
-        "fileName": "01-check-in.png",
-        "fileSize": 177378,
-        "id": "31800019-672e-86a9-8010-e9fca9062174",
-        "sourceFileChecksum": "ca30b20d7c9bb0b839287f7bf9136806"
-      },
-      {
-        "fileName": "02-moods.png",
-        "fileSize": 174036,
-        "id": "32800019-672e-86a9-8038-ecce4af75499",
-        "sourceFileChecksum": "82a3c9e45116358732116b8c8b0bf92c"
-      },
-      {
-        "fileName": "03-pages.png",
-        "fileSize": 174412,
-        "id": "0d800019-672e-86a9-8007-d3f0443836ee",
-        "sourceFileChecksum": "e696069281667e0ae6051910e6081d48"
-      },
-      {
-        "fileName": "04-detail.png",
-        "fileSize": 165974,
-        "id": "94000019-672e-86a9-8016-1a7b9b2abd74",
-        "sourceFileChecksum": "b7a952b1616f9b4e75b1287a2c982070"
-      },
-      {
-        "fileName": "05-mood-sad.png",
-        "fileSize": 178070,
-        "id": "69000019-672e-86a9-802b-e5c66c003326",
-        "sourceFileChecksum": "cee251bf753217ed48f1a2094f7a6799"
-      },
-      {
-        "fileName": "06-mood-laughing.png",
-        "fileSize": 176383,
-        "id": "8bc00019-672e-86a9-8026-343a72b37c21",
-        "sourceFileChecksum": "f6053a55fb8ccb87b7794dd23801c5fb"
-      },
-      {
-        "fileName": "01-every-feeling.png",
-        "fileSize": 1858466,
-        "id": "71400019-672e-86a9-8024-21575cb9b98f",
-        "sourceFileChecksum": "f85bf1e89559c130606b9c4e4f0b9a34"
-      },
-      {
-        "fileName": "02-autosave.png",
-        "fileSize": 1997933,
-        "id": "ad000019-672e-86a9-8033-6e67943d0ffe",
-        "sourceFileChecksum": "7ee6dc0c56a85f6046cb7a026c0158f2"
-      },
-      {
-        "fileName": "03-mood-trends.png",
-        "fileSize": 1399984,
-        "id": "b2800019-672e-86a9-8030-06733d854310",
-        "sourceFileChecksum": "d5d50e89592c85222f98a0e1c623d89f"
-      },
-      {
-        "fileName": "04-mood-stickers.png",
-        "fileSize": 1392118,
-        "id": "3fc00019-672e-86a9-8039-10abecbe1cd0",
-        "sourceFileChecksum": "68d71cd15c8beb013e5addfdcaae8110"
-      },
-      {
-        "fileName": "05-premium-themes.png",
-        "fileSize": 877246,
-        "id": "f5800019-672e-86a9-803d-10b97c57e51c",
-        "sourceFileChecksum": "5c78c663672872dbb219adf6146af1a7"
-      },
-      {
-        "fileName": "06-dark-appearance.png",
-        "fileSize": 1289984,
-        "id": "2ac00019-672e-86a9-8037-a2a914125951",
-        "sourceFileChecksum": "1372253c5ab7bcf4213c974746afb79f"
-      },
-      {
-        "fileName": "01-every-feeling.png",
-        "fileSize": 1508579,
-        "id": "98400019-672e-86a9-8020-eeb3d7093198",
-        "sourceFileChecksum": "b20af80336826dd10e2633a8fa78367d"
-      },
-      {
-        "fileName": "02-autosave.png",
-        "fileSize": 1762942,
-        "id": "ac000019-672e-86a9-8028-8fe04c447f02",
-        "sourceFileChecksum": "5869e104f08723db20be4204b49fb863"
-      },
-      {
-        "fileName": "03-mood-trends.png",
-        "fileSize": 1238708,
-        "id": "6d400019-672e-86a9-8037-d01bd783c0b4",
-        "sourceFileChecksum": "0d8a91ca99f2a9e80608af754c32a03d"
-      },
-      {
-        "fileName": "04-mood-stickers.png",
-        "fileSize": 1183861,
-        "id": "97800019-672e-86a9-8002-e71d0f4d5847",
-        "sourceFileChecksum": "1ab2cfb17f616e92a5396d350fdc16d7"
-      },
-      {
-        "fileName": "05-premium-themes.png",
-        "fileSize": 750193,
-        "id": "bb800019-672e-86a9-8008-fe00abc281f1",
-        "sourceFileChecksum": "696a072b9b5e8cf61b2a3595c5e1afd0"
-      },
-      {
-        "fileName": "06-dark-appearance.png",
-        "fileSize": 1156128,
-        "id": "fac00019-672e-86a9-8015-6325e4587e43",
-        "sourceFileChecksum": "71872dd615a21c0414c792b49846ed25"
-      },
-      {
-        "fileName": "01-check-in.png",
-        "fileSize": 178540,
-        "id": "a0000019-672e-86a9-8010-6c70f1203aa3",
-        "sourceFileChecksum": "e837e95d4aa249e2783720de9f47a8d7"
-      },
-      {
-        "fileName": "02-moods.png",
-        "fileSize": 173780,
-        "id": "51c00019-672e-86a9-8027-2eceef3f2083",
-        "sourceFileChecksum": "39f791096d6a95dd7af0a8c003e695d3"
-      },
-      {
-        "fileName": "03-pages.png",
-        "fileSize": 175477,
-        "id": "81000019-672e-86a9-803d-ebfe1691938c",
-        "sourceFileChecksum": "8b48b7ddd25199a5c39b4b5ab8f0fffc"
-      },
-      {
-        "fileName": "04-detail.png",
-        "fileSize": 167551,
-        "id": "89c00019-672e-86a9-801e-245953ae8faa",
-        "sourceFileChecksum": "3002ef26f4e797245cc696577cb77ebf"
-      },
-      {
-        "fileName": "05-mood-sad.png",
-        "fileSize": 179074,
-        "id": "1e400019-672e-86a9-8002-c6ae617c46de",
-        "sourceFileChecksum": "d7a032f6c4290ecc18fac582a211c49d"
-      },
-      {
-        "fileName": "06-mood-laughing.png",
-        "fileSize": 176625,
-        "id": "62000019-672e-86a9-8004-cb794cfa0588",
-        "sourceFileChecksum": "129861153a285e327d0629326b4d9b4d"
-      },
-      {
-        "fileName": "01-every-feeling.png",
-        "fileSize": 1333763,
-        "id": "fb000019-672e-86a9-8005-73d381c24f84",
-        "sourceFileChecksum": "81b3f69331438ce19eaa94ba94a7b209"
-      },
-      {
-        "fileName": "02-autosave.png",
-        "fileSize": 1497310,
-        "id": "1a000019-672e-86a9-8023-0b831b13a75e",
-        "sourceFileChecksum": "51d1268987cec8f77e4e242434a87f0a"
-      },
-      {
-        "fileName": "03-mood-trends.png",
-        "fileSize": 945643,
-        "id": "b8800019-672e-86a9-8013-5d7a3f401869",
-        "sourceFileChecksum": "2338c34d19264bdf8d9150310e1a2128"
-      },
-      {
-        "fileName": "04-mood-stickers.png",
-        "fileSize": 1108941,
-        "id": "0f400019-672e-86a9-8030-2a3d309ee747",
-        "sourceFileChecksum": "39ec50cd4f2bd3df12a3b82daa186396"
-      },
-      {
-        "fileName": "05-premium-themes.png",
-        "fileSize": 492807,
-        "id": "04c00019-672e-86a9-8014-a245641a9f9a",
-        "sourceFileChecksum": "0fccdb32a1630472c10ee610ce2f3595"
-      },
-      {
-        "fileName": "06-dark-appearance.png",
-        "fileSize": 978945,
-        "id": "aa400019-672e-86a9-8019-2be598a8afcf",
-        "sourceFileChecksum": "44e5efca4de5018b04d12852240c4f82"
-      },
-      {
-        "fileName": "01-every-feeling.png",
-        "fileSize": 1372562,
-        "id": "e9000019-672e-86a9-803a-591aa20d0067",
-        "sourceFileChecksum": "31def2c42303429a3ed60800c7381fdb"
-      },
-      {
-        "fileName": "02-autosave.png",
-        "fileSize": 1341091,
-        "id": "73400019-672e-86a9-802c-43fe918f55d1",
-        "sourceFileChecksum": "3baa5fce5281dc2564b52c5b49051f78"
-      },
-      {
-        "fileName": "03-mood-trends.png",
-        "fileSize": 985104,
-        "id": "96000019-672e-86a9-802e-d4217292954c",
-        "sourceFileChecksum": "a8ac294d1cef1b44dc01ec3c31d10089"
-      },
-      {
-        "fileName": "04-mood-stickers.png",
-        "fileSize": 1088466,
-        "id": "cac00019-672e-86a9-8037-b42663a72e44",
-        "sourceFileChecksum": "b02e474a52613f1289e8c25171dc1279"
-      },
-      {
-        "fileName": "05-premium-themes.png",
-        "fileSize": 474539,
-        "id": "73400019-672e-86a9-8033-c6577c015c9e",
-        "sourceFileChecksum": "135e0e3522b1bdbb4a1bb6b87b85e71d"
-      },
-      {
-        "fileName": "06-dark-appearance.png",
-        "fileSize": 860752,
-        "id": "55800019-672e-86a9-803a-eab8f6cde923",
-        "sourceFileChecksum": "4590840ede4b33feedcdcf15d04f4c0f"
-      },
-      {
-        "fileName": "01-every-feeling.png",
-        "fileSize": 1228731,
-        "id": "ec400019-672e-86a9-801e-ef69ef72d7d2",
-        "sourceFileChecksum": "9851a546da662227f32c38b1497302b3"
-      },
-      {
-        "fileName": "02-autosave.png",
-        "fileSize": 1362859,
-        "id": "36400019-672e-86a9-8014-c029b6585a63",
-        "sourceFileChecksum": "3c99ff38372e9edc7213571ace56e30d"
-      },
-      {
-        "fileName": "03-mood-trends.png",
-        "fileSize": 887870,
-        "id": "0ec00019-672e-86a9-8036-db126b695f47",
-        "sourceFileChecksum": "6910dd3cfaaa5e0d48c36c89bab05db3"
-      },
-      {
-        "fileName": "04-mood-stickers.png",
-        "fileSize": 1012742,
-        "id": "ac000019-672e-86a9-8006-047508d11f9c",
-        "sourceFileChecksum": "a3e21c02cdeb897758c81094ded4f097"
-      },
-      {
-        "fileName": "05-premium-themes.png",
-        "fileSize": 480181,
-        "id": "5d800019-672e-86a9-8018-410950832137",
-        "sourceFileChecksum": "36fa8e0c3c400e530721ae6835b6d24c"
-      },
-      {
-        "fileName": "06-dark-appearance.png",
-        "fileSize": 873976,
-        "id": "4f800019-672e-86a9-803b-98327a65b6b7",
-        "sourceFileChecksum": "7d9e9fe5e4c93986b5705006dcfeb244"
-      },
-      {
-        "fileName": "01-today.png",
-        "fileSize": 5111785,
-        "id": "7b800019-672e-86a9-802e-9c6c02d98ba3",
-        "sourceFileChecksum": "d144f4932e5e1574c47461e47e6b1fd5"
-      },
-      {
-        "fileName": "02-pages.png",
-        "fileSize": 5165414,
-        "id": "84400019-672e-86a9-801c-a045c7ab7c93",
-        "sourceFileChecksum": "0e95381eca3dd1be773bb6b2fc64e5aa"
-      },
-      {
-        "fileName": "03-insights.png",
-        "fileSize": 5080648,
-        "id": "7bc00019-672e-86a9-8003-d8d1f829d168",
-        "sourceFileChecksum": "e8eb6f68d6a143c3f97143f06e49a645"
-      },
-      {
-        "fileName": "01-today.png",
-        "fileSize": 5138972,
-        "id": "a0800019-672e-86a9-8002-f0c44e254bb1",
-        "sourceFileChecksum": "90e7f2b35c43aed2aa5bc2bb92836e27"
-      },
-      {
-        "fileName": "02-pages.png",
-        "fileSize": 5202262,
-        "id": "7a400019-672e-86a9-802a-a1b3e1ed11d1",
-        "sourceFileChecksum": "d94ce28f9cd64649ffd97acc776fece2"
-      },
-      {
-        "fileName": "03-insights.png",
-        "fileSize": 5090317,
-        "id": "bb800019-672e-86a9-801d-d72ac3cd8711",
-        "sourceFileChecksum": "b92369f59ff3ff0c09ad37b3599237d6"
-      },
-      {
-        "fileName": "01-today.png",
-        "fileSize": 5157646,
-        "id": "0b800019-672e-86a9-802f-df65abc0e49d",
-        "sourceFileChecksum": "f8d4797162e4c78eedc1e89c42ebff15"
-      },
-      {
-        "fileName": "02-pages.png",
-        "fileSize": 5216409,
-        "id": "13000019-672e-86a9-8034-29d15a5e76aa",
-        "sourceFileChecksum": "41a451cfbd73c4a87f80cc2001ed8208"
-      },
-      {
-        "fileName": "03-insights.png",
-        "fileSize": 5105571,
-        "id": "12000019-672e-86a9-8021-7336c5d26bef",
-        "sourceFileChecksum": "18e203a28c26221b81a270ac7388903c"
-      }
-    ],
     "pricing": {
       "automaticPrices": [
         {
@@ -3362,7 +3137,7 @@
         "violenceRealistic": "NONE",
         "violenceRealisticProlongedGraphicOrSadistic": "NONE"
       },
-      "id": "355e8e43-e735-4659-b5a3-3567667c66b5",
+      "id": "a4852585-20cf-462a-b411-c4367d131806",
       "type": "ageRatingDeclarations"
     },
     "app": {
@@ -3378,16 +3153,16 @@
         "primaryCategory": "LIFESTYLE",
         "secondaryCategory": "HEALTH_AND_FITNESS"
       },
-      "id": "355e8e43-e735-4659-b5a3-3567667c66b5",
+      "id": "a4852585-20cf-462a-b411-c4367d131806",
       "type": "appInfos"
     },
     "appInfoLocalization:ar-SA": {
       "fields": {
-        "name": "MoodMargins: يوميات المزاج",
+        "name": "دفتر مزاج",
         "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
         "subtitle": "تتبّع مشاعرك وتأمل يومك"
       },
-      "id": "3bdc74b8-ea33-4d30-a2da-b264e4b74d78",
+      "id": "9272d7e9-a7ad-4ff3-a704-5fa5bc36d2f5",
       "type": "appInfoLocalizations"
     },
     "appInfoLocalization:en-US": {
@@ -3396,181 +3171,218 @@
         "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
         "subtitle": "Daily Diary & Emotion Tracker"
       },
-      "id": "7eb0e856-7cf7-4dfb-b5cd-8dbe8fbd01e8",
+      "id": "f33e3957-2ab4-4e7b-8d09-df4934147925",
       "type": "appInfoLocalizations"
     },
     "appInfoLocalization:es-ES": {
       "fields": {
-        "name": "MoodMargins: Diario de ánimo",
+        "name": "MoodNotas",
         "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
         "subtitle": "Emociones y reflexión diaria"
       },
-      "id": "70156027-1e5d-4277-bfd2-c7f1a05049d1",
+      "id": "ab2ed057-331c-4e81-af7f-de835c62fa17",
       "type": "appInfoLocalizations"
     },
-    "appStoreReviewDetail:IOS:1.0": {
+    "appStoreReviewDetail:IOS:1.1": {
       "fields": {
         "contactEmail": "transfinite@transfinite.us",
         "contactFirstName": "Gerard",
         "contactLastName": "Gomez",
         "contactPhone": "+1 914 316 8248",
         "demoAccountRequired": false,
-        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion's quick journal is local to the watch and does not sync to the main app. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
+        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nNew in version 1.1: Customize → Feedback & ideas presents the Kickstart Signal board in a navigation sheet. Only voluntarily submitted feedback is sent to that service; private journal content is not submitted. A Kickstart Exchange advertising banner appears below About for free accounts after purchase entitlements load. Plus accounts remain ad-free. Neither integration is used for tracking, and Signal receives no premium-status flag.\n\nCustomize → Rate this app opens this app's App Store write-review page on devices. Automatic native StoreKit review requests become eligible after three distinct saved Today check-in days and wait until editing has finished. Requests are limited to once per version, with at least 14 days and three additional check-in days between attempts. All moods count equally. StoreKit may suppress a request, and TestFlight does not show automatic prompts.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion now uses the same SwiftData journal models and private CloudKit container as the main app. Moods and notes autosave locally and sync automatically through the same iCloud account when available. Existing local Watch pages are migrated without overwriting separate phone pages. The Watch updates only fields the person edits, preserving phone tags and other journal details. Sync timing depends on iCloud connectivity and system scheduling. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
       },
-      "id": "03a0254f-242c-40c6-b580-1793b221a4fd",
+      "id": "44b4af62-4499-4ff9-901b-b0e298f27820",
       "type": "appStoreReviewDetails"
     },
-    "appStoreReviewDetail:MAC_OS:1.0": {
+    "appStoreReviewDetail:MAC_OS:1.1": {
       "fields": {
         "contactEmail": "transfinite@transfinite.us",
         "contactFirstName": "Gerard",
         "contactLastName": "Gomez",
         "contactPhone": "+1 914 316 8248",
         "demoAccountRequired": false,
-        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion's quick journal is local to the watch and does not sync to the main app. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
+        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nNew in version 1.1: Customize → Feedback & ideas presents the Kickstart Signal board in a navigation sheet. Only voluntarily submitted feedback is sent to that service; private journal content is not submitted. A Kickstart Exchange advertising banner appears below About for free accounts after purchase entitlements load. Plus accounts remain ad-free. Neither integration is used for tracking, and Signal receives no premium-status flag.\n\nCustomize → Rate this app opens this app's App Store write-review page on devices. Automatic native StoreKit review requests become eligible after three distinct saved Today check-in days and wait until editing has finished. Requests are limited to once per version, with at least 14 days and three additional check-in days between attempts. All moods count equally. StoreKit may suppress a request, and TestFlight does not show automatic prompts.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion distributed with the iOS 1.1 app uses the same SwiftData journal models and private CloudKit container as this app. Moods and notes autosave locally and sync automatically through the same iCloud account when available. Existing local Watch pages are migrated without overwriting separate phone pages. The Watch updates only fields the person edits, preserving phone tags and other journal details. Sync timing depends on iCloud connectivity and system scheduling. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
       },
-      "id": "7b0b168c-2435-48e7-ae10-b350c3966b0d",
+      "id": "75239b93-f693-4479-8d06-66c2d48baba7",
       "type": "appStoreReviewDetails"
     },
-    "appStoreReviewDetail:VISION_OS:1.0": {
+    "appStoreReviewDetail:VISION_OS:1.1": {
       "fields": {
         "contactEmail": "transfinite@transfinite.us",
         "contactFirstName": "Gerard",
         "contactLastName": "Gomez",
         "contactPhone": "+1 914 316 8248",
         "demoAccountRequired": false,
-        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion's quick journal is local to the watch and does not sync to the main app. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
+        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nNew in version 1.1: Customize → Feedback & ideas presents the Kickstart Signal board in a navigation sheet. Only voluntarily submitted feedback is sent to that service; private journal content is not submitted. A Kickstart Exchange advertising banner appears below About for free accounts after purchase entitlements load. Plus accounts remain ad-free. Neither integration is used for tracking, and Signal receives no premium-status flag.\n\nCustomize → Rate this app opens this app's App Store write-review page on devices. Automatic native StoreKit review requests become eligible after three distinct saved Today check-in days and wait until editing has finished. Requests are limited to once per version, with at least 14 days and three additional check-in days between attempts. All moods count equally. StoreKit may suppress a request, and TestFlight does not show automatic prompts.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion distributed with the iOS 1.1 app uses the same SwiftData journal models and private CloudKit container as this app. Moods and notes autosave locally and sync automatically through the same iCloud account when available. Existing local Watch pages are migrated without overwriting separate phone pages. The Watch updates only fields the person edits, preserving phone tags and other journal details. Sync timing depends on iCloud connectivity and system scheduling. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
       },
-      "id": "df039bf8-562c-4752-9bca-dd9827896930",
+      "id": "f7cb6f7d-2636-4dd7-9ea4-6c32ba19fe65",
       "type": "appStoreReviewDetails"
     },
-    "appStoreVersion:IOS:1.0": {
+    "appStoreVersion:IOS:1.1": {
       "fields": {
         "copyright": "2026 Gerard Gomez",
         "releaseType": "AFTER_APPROVAL",
-        "versionString": "1.0"
+        "versionString": "1.1"
       },
-      "id": "f0de5b17-9993-497e-bcd1-11c8058457b2",
+      "id": "a3f050e7-940b-40ca-ab23-aa41e53d8575",
       "type": "appStoreVersions"
     },
-    "appStoreVersion:MAC_OS:1.0": {
+    "appStoreVersion:MAC_OS:1.1": {
       "fields": {
         "copyright": "2026 Gerard Gomez",
-        "releaseType": "AFTER_APPROVAL",
-        "versionString": "1.0"
+        "releaseType": "MANUAL",
+        "versionString": "1.1"
       },
-      "id": "8fb28006-1166-4943-b833-85b0228c4040",
+      "id": "6a7380c8-6d7e-4945-b7a2-dfef79a16585",
       "type": "appStoreVersions"
     },
-    "appStoreVersion:VISION_OS:1.0": {
+    "appStoreVersion:VISION_OS:1.1": {
       "fields": {
         "copyright": "2026 Gerard Gomez",
-        "releaseType": "AFTER_APPROVAL",
-        "versionString": "1.0"
+        "releaseType": "MANUAL",
+        "versionString": "1.1"
       },
-      "id": "19759d81-d4fb-44b5-8a5e-51cbb0ea36c1",
+      "id": "0aa28bb5-22dd-44ab-aa57-3e81cfe03226",
       "type": "appStoreVersions"
     },
-    "appStoreVersionLocalization:IOS:1.0:ar-SA": {
+    "appStoreVersionLocalization:IOS:1.1:ar-SA": {
       "fields": {
         "description": "يوميات للمزاج وللحظات الصغيرة التي تصنع يومك.\n\nاختر ملصق مزاج متحركًا، واكتب بضعة أسطر، وابدأ دفترًا يوميًا يشبهك. يحفظ MoodMargins صفحاتك تلقائيًا لتمنح مشاعرك اهتمامك.\n\nعبّر بطريقتك\n• اختر من بين خمسة ملصقات مزاج متحركة.\n• اكتب على صفحات دفتر ناعمة ومسطّرة.\n• رتّب لحظاتك بالوسوم واعثر على تدويناتك حسب التاريخ أو المزاج أو البحث.\n\nاكتشف أنماطك\nاستكشف اتجاهات المزاج خلال 7 أيام أو 14 يومًا أو 30 يومًا أو عام كامل. شاهد أطول سلسلة تدوين لديك، ومزاجك الأكثر شيوعًا، والوسوم التي تستخدمها كثيرًا. اليوميات والرؤى الأساسية مجانية.\n\nاجعله يشبهك\nابدأ بسمة باستيل المجانية، أو اختر سمات نباتية وساحلية وغروب. لكل لوحة ألوان مظهر فاتح وآخر داكن. اشترِ سمة مرة واحدة لتحتفظ بها، أو استمتع بكل السمات المميزة مع MoodMargins Plus.\n\nمساعدة بسيطة مع Plus\nيضيف Plus اقتراحات وسوم بالذكاء الاصطناعي وملخصات لصفحاتك المحفوظة. تتطلب هذه الميزات جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا. يستخدم التطبيق الحوسبة السحابية الخاصة من Apple أولًا، ثم نموذج الجهاز إذا فشل الطلب السحابي. أوقف المعالجة السحابية في تخصيص لاستخدام النموذج المحلي. تحتاج الطلبات السحابية إلى الإنترنت وتخضع لحدود استخدام Apple.\n\nدفترك الخاص\nلا تحتاج إلى حساب للتطبيق. تُحفظ تدويناتك على جهازك وتُزامن عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. ليس لدى المطور خادم يتلقى يومياتك. على Apple Watch، مرّر بين حالات المزاج وأضف ملاحظة سريعة؛ تُحفظ تدوينات الساعة محليًا ولا تُزامن حاليًا مع التطبيق الرئيسي.\n\nعن Plus وشراء السمات\nتتضمن اشتراكات Plus الأسبوعية والشهرية والسنوية، التي تتجدد تلقائيًا، الميزات المميزة نفسها. شراء سمة منفردة يمنحك إياها دائمًا ولا يتضمن الذكاء الاصطناعي. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. بعد انتهاء Plus، تحتفظ بتدويناتك والسمات التي اشتريتها منفردة.\n\nMoodMargins للتأمل الشخصي، ولا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nامنح يومك مساحة صغيرة. ابدأ بتدوينة واحدة.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
         "keywords": "امتنان,عناية بالنفس,مذكرات,دفتر,ملاحظات,راحة,عادات,وسوم,إحصاءات,كتابة,رفاهية,خاصة",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
         "promotionalText": "مساحة لطيفة للتأمل. سجّل اللحظات الصغيرة بملصقات مزاج متحركة وصفحات تُحفظ تلقائيًا ورؤى هادئة. اجعل دفتر يومياتك يعبر عنك.",
-        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins",
+        "whatsNew": "الجديد في الإصدار 1.1\n\n• تتزامن الآن حالاتك المزاجية وملاحظاتك على Apple Watch تلقائيًا مع التطبيق الرئيسي عبر حسابك الخاص على iCloud، مع الاحتفاظ بصفحاتك السابقة على الساعة.\n• شارك اقتراحاتك عبر لوحة الملاحظات والأفكار الجديدة ضمن «تخصيص».\n• ستجد رابطًا لتقييم التطبيق ضمن «تخصيص» متى أردت كتابة مراجعة.\n• يساعد إعلان صغير ضمن «تخصيص» في دعم تدوين اليوميات مجانًا. وتبقى Plus خالية من الإعلانات."
       },
-      "id": "230cf5fb-ba10-458e-9473-0332156205de",
+      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:IOS:1.0:en-US": {
+    "appStoreVersionLocalization:IOS:1.1:en-US": {
       "fields": {
         "description": "A mood journal for the little moments that make your day.\n\nChoose an animated mood sticker, write a few lines, and build a daily diary that feels like yours. MoodMargins saves your pages automatically, so you can focus on how you feel.\n\nCHECK IN YOUR WAY\n• Express your mood with five animated stickers.\n• Write on soft, lined notebook pages.\n• Organize moments with tags and find entries by date, mood, or search.\n\nUNDERSTAND YOUR PATTERNS\nExplore mood trends across 7 days, 14 days, 30 days, or a year. See your longest journaling streak, most common mood, and frequently used tags. Daily journaling and standard Insights are free.\n\nMAKE IT YOURS\nStart with the free Pastel theme, or choose Botanical, Coastal, and Sunset. Each palette includes light and dark appearances. Buy a theme once to keep it, or enjoy all premium themes with MoodMargins Plus.\n\nA LITTLE HELP WITH PLUS\nPlus adds AI tag suggestions and recaps of your saved pages. AI requires a compatible device with Apple Intelligence enabled and ready. It uses Apple's Private Cloud Compute first, with the on-device model as a fallback. Turn off cloud processing in Customize to use the local model. Cloud requests need internet access and are subject to Apple's usage limits.\n\nYOUR PRIVATE NOTEBOOK\nNo app account is needed. Your entries stay on your device and sync through your private iCloud account when iCloud is available and enabled. The developer has no server that receives your journal. On Apple Watch, swipe through moods and add a quick note; Watch entries are stored locally and do not currently sync with the main app.\n\nABOUT PLUS AND THEME PURCHASES\nWeekly, monthly, and yearly auto-renewing Plus subscriptions include the same premium features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.\n\nMoodMargins is for personal reflection, not medical advice, diagnosis, or treatment.\n\nMake a little space for your day. Start with one check-in.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
         "keywords": "feelings,gratitude,mindfulness,wellbeing,self care,reflection,streaks,private,notebook,log,habits",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
         "promotionalText": "A softer place to check in. Capture small moments with animated mood stickers, automatically saved pages, and gentle Insights. Make your notebook your own.",
-        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins",
+        "whatsNew": "New in 1.1\n\n• Your Watch moods and notes now sync automatically with the main app through your private iCloud account. Existing Watch pages are preserved.\n• Share suggestions through the new Feedback & ideas board in Customize.\n• Find a Rate this app link in Customize whenever you want to leave a review.\n• A small advertising banner in Customize helps support free journaling. Plus remains ad-free."
       },
-      "id": "08cf0b58-c1e4-4557-bb77-158a28b91533",
+      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:IOS:1.0:es-ES": {
+    "appStoreVersionLocalization:IOS:1.1:es-ES": {
       "fields": {
         "description": "Un diario de ánimo para los pequeños momentos de tu día.\n\nElige un sticker de ánimo animado, escribe unas líneas y crea un diario que se sienta tuyo. MoodMargins guarda tus páginas automáticamente para que puedas centrarte en cómo te sientes.\n\nEXPRÉSATE A TU MANERA\n• Elige entre cinco stickers de ánimo animados.\n• Escribe en suaves páginas de cuaderno con renglones.\n• Organiza momentos con etiquetas y encuentra entradas por fecha, ánimo o búsqueda.\n\nDESCUBRE TUS PATRONES\nExplora las tendencias de ánimo de 7, 14 o 30 días, o de todo un año. Consulta tu racha de escritura más larga, tu ánimo más frecuente y las etiquetas que más usas. El diario y las Perspectivas básicas son gratis.\n\nDALE TU ESTILO\nEmpieza con el tema Pastel gratuito o elige Botánica, Costera y Atardecer. Cada paleta tiene un aspecto claro y otro oscuro. Compra un tema una sola vez para conservarlo o disfruta de todos los temas premium con MoodMargins Plus.\n\nUN POCO DE AYUDA CON PLUS\nPlus añade sugerencias de etiquetas con IA y resúmenes de tus páginas guardadas. La IA requiere un dispositivo compatible con Apple Intelligence activado y listo. Utiliza primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si falla. Desactiva el procesamiento en la nube en Personalizar para usar el modelo local. Las solicitudes a la nube necesitan internet y están sujetas a los límites de uso de Apple.\n\nTU CUADERNO PRIVADO\nNo necesitas una cuenta de la app. Tus entradas se guardan en tu dispositivo y se sincronizan mediante tu cuenta privada de iCloud cuando está disponible y activado. El desarrollador no tiene un servidor que reciba tu diario. En Apple Watch, desliza entre los estados de ánimo y añade una nota rápida; las entradas se guardan localmente y todavía no se sincronizan con la app principal.\n\nSOBRE PLUS Y LAS COMPRAS DE TEMAS\nLas suscripciones semanales, mensuales y anuales de renovación automática incluyen las mismas funciones premium. Las compras individuales de temas son permanentes y no incluyen IA. Gestiona o cancela las suscripciones en los ajustes de tu cuenta de Apple. Si cancelas Plus, conservarás tus entradas y los temas comprados por separado.\n\nMoodMargins es para la reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nHaz un pequeño espacio para tu día. Empieza con una entrada.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
         "keywords": "bienestar,gratitud,autocuidado,rachas,privado,notas,cuaderno,hábitos,sentimientos,mindfulness",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
         "promotionalText": "Un lugar amable para ti. Guarda pequeños momentos con stickers de ánimo, páginas que se guardan solas y Perspectivas suaves. Haz tuyo el diario.",
-        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins",
+        "whatsNew": "Novedades de la versión 1.1\n\n• Tus estados de ánimo y notas del Apple Watch ahora se sincronizan automáticamente con la app principal a través de tu cuenta privada de iCloud. Tus páginas anteriores del Watch se conservan.\n• Comparte sugerencias en el nuevo tablón de ideas y comentarios de Personalizar.\n• Encuentra un enlace para valorar la app en Personalizar cuando quieras dejar una reseña.\n• Un pequeño anuncio en Personalizar ayuda a mantener gratuito el diario. Plus sigue sin anuncios."
       },
-      "id": "271f284f-c4a7-492d-8dd7-51ac4b8209cf",
+      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:MAC_OS:1.0:ar-SA": {
+    "appStoreVersionLocalization:MAC_OS:1.1:ar-SA": {
       "fields": {
         "description": "يوميات للمزاج وللحظات الصغيرة التي تصنع يومك.\n\nاختر ملصق مزاج متحركًا، واكتب بضعة أسطر، وابدأ دفترًا يوميًا يشبهك. يحفظ MoodMargins صفحاتك تلقائيًا لتمنح مشاعرك اهتمامك.\n\nعبّر بطريقتك\n• اختر من بين خمسة ملصقات مزاج متحركة.\n• اكتب على صفحات دفتر ناعمة ومسطّرة.\n• رتّب لحظاتك بالوسوم واعثر على تدويناتك حسب التاريخ أو المزاج أو البحث.\n\nاكتشف أنماطك\nاستكشف اتجاهات المزاج خلال 7 أيام أو 14 يومًا أو 30 يومًا أو عام كامل. شاهد أطول سلسلة تدوين لديك، ومزاجك الأكثر شيوعًا، والوسوم التي تستخدمها كثيرًا. اليوميات والرؤى الأساسية مجانية.\n\nاجعله يشبهك\nابدأ بسمة باستيل المجانية، أو اختر سمات نباتية وساحلية وغروب. لكل لوحة ألوان مظهر فاتح وآخر داكن. اشترِ سمة مرة واحدة لتحتفظ بها، أو استمتع بكل السمات المميزة مع MoodMargins Plus.\n\nمساعدة بسيطة مع Plus\nيضيف Plus اقتراحات وسوم بالذكاء الاصطناعي وملخصات لصفحاتك المحفوظة. تتطلب هذه الميزات جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا. يستخدم التطبيق الحوسبة السحابية الخاصة من Apple أولًا، ثم نموذج الجهاز إذا فشل الطلب السحابي. أوقف المعالجة السحابية في تخصيص لاستخدام النموذج المحلي. تحتاج الطلبات السحابية إلى الإنترنت وتخضع لحدود استخدام Apple.\n\nدفترك الخاص\nلا تحتاج إلى حساب للتطبيق. تُحفظ تدويناتك على جهازك وتُزامن عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. ليس لدى المطور خادم يتلقى يومياتك. على Apple Watch، مرّر بين حالات المزاج وأضف ملاحظة سريعة؛ تُحفظ تدوينات الساعة محليًا ولا تُزامن حاليًا مع التطبيق الرئيسي.\n\nعن Plus وشراء السمات\nتتضمن اشتراكات Plus الأسبوعية والشهرية والسنوية، التي تتجدد تلقائيًا، الميزات المميزة نفسها. شراء سمة منفردة يمنحك إياها دائمًا ولا يتضمن الذكاء الاصطناعي. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. بعد انتهاء Plus، تحتفظ بتدويناتك والسمات التي اشتريتها منفردة.\n\nMoodMargins للتأمل الشخصي، ولا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nامنح يومك مساحة صغيرة. ابدأ بتدوينة واحدة.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
         "keywords": "امتنان,عناية بالنفس,مذكرات,دفتر,ملاحظات,راحة,عادات,وسوم,إحصاءات,كتابة,رفاهية,خاصة",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
         "promotionalText": "مساحة لطيفة للتأمل. سجّل اللحظات الصغيرة بملصقات مزاج متحركة وصفحات تُحفظ تلقائيًا ورؤى هادئة. اجعل دفتر يومياتك يعبر عنك.",
-        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins",
+        "whatsNew": "الجديد في الإصدار 1.1\n\n• شارك اقتراحاتك عبر لوحة الملاحظات والأفكار الجديدة ضمن «تخصيص».\n• ستجد رابطًا لتقييم التطبيق ضمن «تخصيص» متى أردت كتابة مراجعة.\n• يساعد إعلان صغير ضمن «تخصيص» في دعم تدوين اليوميات مجانًا. وتبقى Plus خالية من الإعلانات."
       },
-      "id": "2cb5a1a8-fe8d-4a7b-96ea-19a20bf6fbb5",
+      "id": "b54f6d54-c6f9-403e-b896-9f0e4810fb9a",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:MAC_OS:1.0:en-US": {
+    "appStoreVersionLocalization:MAC_OS:1.1:en-US": {
       "fields": {
         "description": "A mood journal for the little moments that make your day.\n\nChoose an animated mood sticker, write a few lines, and build a daily diary that feels like yours. MoodMargins saves your pages automatically, so you can focus on how you feel.\n\nCHECK IN YOUR WAY\n• Express your mood with five animated stickers.\n• Write on soft, lined notebook pages.\n• Organize moments with tags and find entries by date, mood, or search.\n\nUNDERSTAND YOUR PATTERNS\nExplore mood trends across 7 days, 14 days, 30 days, or a year. See your longest journaling streak, most common mood, and frequently used tags. Daily journaling and standard Insights are free.\n\nMAKE IT YOURS\nStart with the free Pastel theme, or choose Botanical, Coastal, and Sunset. Each palette includes light and dark appearances. Buy a theme once to keep it, or enjoy all premium themes with MoodMargins Plus.\n\nA LITTLE HELP WITH PLUS\nPlus adds AI tag suggestions and recaps of your saved pages. AI requires a compatible device with Apple Intelligence enabled and ready. It uses Apple's Private Cloud Compute first, with the on-device model as a fallback. Turn off cloud processing in Customize to use the local model. Cloud requests need internet access and are subject to Apple's usage limits.\n\nYOUR PRIVATE NOTEBOOK\nNo app account is needed. Your entries stay on your device and sync through your private iCloud account when iCloud is available and enabled. The developer has no server that receives your journal. On Apple Watch, swipe through moods and add a quick note; Watch entries are stored locally and do not currently sync with the main app.\n\nABOUT PLUS AND THEME PURCHASES\nWeekly, monthly, and yearly auto-renewing Plus subscriptions include the same premium features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.\n\nMoodMargins is for personal reflection, not medical advice, diagnosis, or treatment.\n\nMake a little space for your day. Start with one check-in.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
         "keywords": "feelings,gratitude,mindfulness,wellbeing,self care,reflection,streaks,private,notebook,log,habits",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
         "promotionalText": "A softer place to check in. Capture small moments with animated mood stickers, automatically saved pages, and gentle Insights. Make your notebook your own.",
-        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins",
+        "whatsNew": "New in 1.1\n\n• Share suggestions through the new Feedback & ideas board in Customize.\n• Find a Rate this app link in Customize whenever you want to leave a review.\n• A small advertising banner in Customize helps support free journaling. Plus remains ad-free."
       },
-      "id": "687c226b-357f-41bc-9b58-6d26384a04d0",
+      "id": "1c53979e-92ff-404f-8c79-48c10e1647d9",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:MAC_OS:1.0:es-ES": {
+    "appStoreVersionLocalization:MAC_OS:1.1:es-ES": {
       "fields": {
         "description": "Un diario de ánimo para los pequeños momentos de tu día.\n\nElige un sticker de ánimo animado, escribe unas líneas y crea un diario que se sienta tuyo. MoodMargins guarda tus páginas automáticamente para que puedas centrarte en cómo te sientes.\n\nEXPRÉSATE A TU MANERA\n• Elige entre cinco stickers de ánimo animados.\n• Escribe en suaves páginas de cuaderno con renglones.\n• Organiza momentos con etiquetas y encuentra entradas por fecha, ánimo o búsqueda.\n\nDESCUBRE TUS PATRONES\nExplora las tendencias de ánimo de 7, 14 o 30 días, o de todo un año. Consulta tu racha de escritura más larga, tu ánimo más frecuente y las etiquetas que más usas. El diario y las Perspectivas básicas son gratis.\n\nDALE TU ESTILO\nEmpieza con el tema Pastel gratuito o elige Botánica, Costera y Atardecer. Cada paleta tiene un aspecto claro y otro oscuro. Compra un tema una sola vez para conservarlo o disfruta de todos los temas premium con MoodMargins Plus.\n\nUN POCO DE AYUDA CON PLUS\nPlus añade sugerencias de etiquetas con IA y resúmenes de tus páginas guardadas. La IA requiere un dispositivo compatible con Apple Intelligence activado y listo. Utiliza primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si falla. Desactiva el procesamiento en la nube en Personalizar para usar el modelo local. Las solicitudes a la nube necesitan internet y están sujetas a los límites de uso de Apple.\n\nTU CUADERNO PRIVADO\nNo necesitas una cuenta de la app. Tus entradas se guardan en tu dispositivo y se sincronizan mediante tu cuenta privada de iCloud cuando está disponible y activado. El desarrollador no tiene un servidor que reciba tu diario. En Apple Watch, desliza entre los estados de ánimo y añade una nota rápida; las entradas se guardan localmente y todavía no se sincronizan con la app principal.\n\nSOBRE PLUS Y LAS COMPRAS DE TEMAS\nLas suscripciones semanales, mensuales y anuales de renovación automática incluyen las mismas funciones premium. Las compras individuales de temas son permanentes y no incluyen IA. Gestiona o cancela las suscripciones en los ajustes de tu cuenta de Apple. Si cancelas Plus, conservarás tus entradas y los temas comprados por separado.\n\nMoodMargins es para la reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nHaz un pequeño espacio para tu día. Empieza con una entrada.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
         "keywords": "bienestar,gratitud,autocuidado,rachas,privado,notas,cuaderno,hábitos,sentimientos,mindfulness",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
         "promotionalText": "Un lugar amable para ti. Guarda pequeños momentos con stickers de ánimo, páginas que se guardan solas y Perspectivas suaves. Haz tuyo el diario.",
-        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins",
+        "whatsNew": "Novedades de la versión 1.1\n\n• Comparte sugerencias en el nuevo tablón de ideas y comentarios de Personalizar.\n• Encuentra un enlace para valorar la app en Personalizar cuando quieras dejar una reseña.\n• Un pequeño anuncio en Personalizar ayuda a mantener gratuito el diario. Plus sigue sin anuncios."
       },
-      "id": "49ee0c11-68ea-4ae9-82a9-a313da59df8b",
+      "id": "e65a5ef9-ecba-49ce-a762-6a6524491431",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:VISION_OS:1.0:ar-SA": {
+    "appStoreVersionLocalization:VISION_OS:1.1:ar-SA": {
       "fields": {
         "description": "يوميات للمزاج وللحظات الصغيرة التي تصنع يومك.\n\nاختر ملصق مزاج متحركًا، واكتب بضعة أسطر، وابدأ دفترًا يوميًا يشبهك. يحفظ MoodMargins صفحاتك تلقائيًا لتمنح مشاعرك اهتمامك.\n\nعبّر بطريقتك\n• اختر من بين خمسة ملصقات مزاج متحركة.\n• اكتب على صفحات دفتر ناعمة ومسطّرة.\n• رتّب لحظاتك بالوسوم واعثر على تدويناتك حسب التاريخ أو المزاج أو البحث.\n\nاكتشف أنماطك\nاستكشف اتجاهات المزاج خلال 7 أيام أو 14 يومًا أو 30 يومًا أو عام كامل. شاهد أطول سلسلة تدوين لديك، ومزاجك الأكثر شيوعًا، والوسوم التي تستخدمها كثيرًا. اليوميات والرؤى الأساسية مجانية.\n\nاجعله يشبهك\nابدأ بسمة باستيل المجانية، أو اختر سمات نباتية وساحلية وغروب. لكل لوحة ألوان مظهر فاتح وآخر داكن. اشترِ سمة مرة واحدة لتحتفظ بها، أو استمتع بكل السمات المميزة مع MoodMargins Plus.\n\nمساعدة بسيطة مع Plus\nيضيف Plus اقتراحات وسوم بالذكاء الاصطناعي وملخصات لصفحاتك المحفوظة. تتطلب هذه الميزات جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا. يستخدم التطبيق الحوسبة السحابية الخاصة من Apple أولًا، ثم نموذج الجهاز إذا فشل الطلب السحابي. أوقف المعالجة السحابية في تخصيص لاستخدام النموذج المحلي. تحتاج الطلبات السحابية إلى الإنترنت وتخضع لحدود استخدام Apple.\n\nدفترك الخاص\nلا تحتاج إلى حساب للتطبيق. تُحفظ تدويناتك على جهازك وتُزامن عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. ليس لدى المطور خادم يتلقى يومياتك. على Apple Watch، مرّر بين حالات المزاج وأضف ملاحظة سريعة؛ تُحفظ تدوينات الساعة محليًا ولا تُزامن حاليًا مع التطبيق الرئيسي.\n\nعن Plus وشراء السمات\nتتضمن اشتراكات Plus الأسبوعية والشهرية والسنوية، التي تتجدد تلقائيًا، الميزات المميزة نفسها. شراء سمة منفردة يمنحك إياها دائمًا ولا يتضمن الذكاء الاصطناعي. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. بعد انتهاء Plus، تحتفظ بتدويناتك والسمات التي اشتريتها منفردة.\n\nMoodMargins للتأمل الشخصي، ولا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nامنح يومك مساحة صغيرة. ابدأ بتدوينة واحدة.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
         "keywords": "امتنان,عناية بالنفس,مذكرات,دفتر,ملاحظات,راحة,عادات,وسوم,إحصاءات,كتابة,رفاهية,خاصة",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
         "promotionalText": "مساحة لطيفة للتأمل. سجّل اللحظات الصغيرة بملصقات مزاج متحركة وصفحات تُحفظ تلقائيًا ورؤى هادئة. اجعل دفتر يومياتك يعبر عنك.",
-        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins",
+        "whatsNew": "الجديد في الإصدار 1.1\n\n• شارك اقتراحاتك عبر لوحة الملاحظات والأفكار الجديدة ضمن «تخصيص».\n• ستجد رابطًا لتقييم التطبيق ضمن «تخصيص» متى أردت كتابة مراجعة.\n• يساعد إعلان صغير ضمن «تخصيص» في دعم تدوين اليوميات مجانًا. وتبقى Plus خالية من الإعلانات."
       },
-      "id": "e5c5de9c-e1e1-4deb-9c2b-8042e9e4401e",
+      "id": "284baa7a-29bd-4bba-8f93-464f80ea58f9",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:VISION_OS:1.0:en-US": {
+    "appStoreVersionLocalization:VISION_OS:1.1:en-US": {
       "fields": {
         "description": "A mood journal for the little moments that make your day.\n\nChoose an animated mood sticker, write a few lines, and build a daily diary that feels like yours. MoodMargins saves your pages automatically, so you can focus on how you feel.\n\nCHECK IN YOUR WAY\n• Express your mood with five animated stickers.\n• Write on soft, lined notebook pages.\n• Organize moments with tags and find entries by date, mood, or search.\n\nUNDERSTAND YOUR PATTERNS\nExplore mood trends across 7 days, 14 days, 30 days, or a year. See your longest journaling streak, most common mood, and frequently used tags. Daily journaling and standard Insights are free.\n\nMAKE IT YOURS\nStart with the free Pastel theme, or choose Botanical, Coastal, and Sunset. Each palette includes light and dark appearances. Buy a theme once to keep it, or enjoy all premium themes with MoodMargins Plus.\n\nA LITTLE HELP WITH PLUS\nPlus adds AI tag suggestions and recaps of your saved pages. AI requires a compatible device with Apple Intelligence enabled and ready. It uses Apple's Private Cloud Compute first, with the on-device model as a fallback. Turn off cloud processing in Customize to use the local model. Cloud requests need internet access and are subject to Apple's usage limits.\n\nYOUR PRIVATE NOTEBOOK\nNo app account is needed. Your entries stay on your device and sync through your private iCloud account when iCloud is available and enabled. The developer has no server that receives your journal. On Apple Watch, swipe through moods and add a quick note; Watch entries are stored locally and do not currently sync with the main app.\n\nABOUT PLUS AND THEME PURCHASES\nWeekly, monthly, and yearly auto-renewing Plus subscriptions include the same premium features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.\n\nMoodMargins is for personal reflection, not medical advice, diagnosis, or treatment.\n\nMake a little space for your day. Start with one check-in.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
         "keywords": "feelings,gratitude,mindfulness,wellbeing,self care,reflection,streaks,private,notebook,log,habits",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
         "promotionalText": "A softer place to check in. Capture small moments with animated mood stickers, automatically saved pages, and gentle Insights. Make your notebook your own.",
-        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins",
+        "whatsNew": "New in 1.1\n\n• Share suggestions through the new Feedback & ideas board in Customize.\n• Find a Rate this app link in Customize whenever you want to leave a review.\n• A small advertising banner in Customize helps support free journaling. Plus remains ad-free."
       },
-      "id": "e501e46f-60fb-4c34-b418-5529caf1e403",
+      "id": "3a4601b8-c699-4b12-b1f8-04c8209abf07",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:VISION_OS:1.0:es-ES": {
+    "appStoreVersionLocalization:VISION_OS:1.1:es-ES": {
       "fields": {
         "description": "Un diario de ánimo para los pequeños momentos de tu día.\n\nElige un sticker de ánimo animado, escribe unas líneas y crea un diario que se sienta tuyo. MoodMargins guarda tus páginas automáticamente para que puedas centrarte en cómo te sientes.\n\nEXPRÉSATE A TU MANERA\n• Elige entre cinco stickers de ánimo animados.\n• Escribe en suaves páginas de cuaderno con renglones.\n• Organiza momentos con etiquetas y encuentra entradas por fecha, ánimo o búsqueda.\n\nDESCUBRE TUS PATRONES\nExplora las tendencias de ánimo de 7, 14 o 30 días, o de todo un año. Consulta tu racha de escritura más larga, tu ánimo más frecuente y las etiquetas que más usas. El diario y las Perspectivas básicas son gratis.\n\nDALE TU ESTILO\nEmpieza con el tema Pastel gratuito o elige Botánica, Costera y Atardecer. Cada paleta tiene un aspecto claro y otro oscuro. Compra un tema una sola vez para conservarlo o disfruta de todos los temas premium con MoodMargins Plus.\n\nUN POCO DE AYUDA CON PLUS\nPlus añade sugerencias de etiquetas con IA y resúmenes de tus páginas guardadas. La IA requiere un dispositivo compatible con Apple Intelligence activado y listo. Utiliza primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si falla. Desactiva el procesamiento en la nube en Personalizar para usar el modelo local. Las solicitudes a la nube necesitan internet y están sujetas a los límites de uso de Apple.\n\nTU CUADERNO PRIVADO\nNo necesitas una cuenta de la app. Tus entradas se guardan en tu dispositivo y se sincronizan mediante tu cuenta privada de iCloud cuando está disponible y activado. El desarrollador no tiene un servidor que reciba tu diario. En Apple Watch, desliza entre los estados de ánimo y añade una nota rápida; las entradas se guardan localmente y todavía no se sincronizan con la app principal.\n\nSOBRE PLUS Y LAS COMPRAS DE TEMAS\nLas suscripciones semanales, mensuales y anuales de renovación automática incluyen las mismas funciones premium. Las compras individuales de temas son permanentes y no incluyen IA. Gestiona o cancela las suscripciones en los ajustes de tu cuenta de Apple. Si cancelas Plus, conservarás tus entradas y los temas comprados por separado.\n\nMoodMargins es para la reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nHaz un pequeño espacio para tu día. Empieza con una entrada.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
         "keywords": "bienestar,gratitud,autocuidado,rachas,privado,notas,cuaderno,hábitos,sentimientos,mindfulness",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
         "promotionalText": "Un lugar amable para ti. Guarda pequeños momentos con stickers de ánimo, páginas que se guardan solas y Perspectivas suaves. Haz tuyo el diario.",
-        "supportUrl": "https://apps.transfinite.us/support#moodmargins"
+        "supportUrl": "https://apps.transfinite.us/support#moodmargins",
+        "whatsNew": "Novedades de la versión 1.1\n\n• Comparte sugerencias en el nuevo tablón de ideas y comentarios de Personalizar.\n• Encuentra un enlace para valorar la app en Personalizar cuando quieras dejar una reseña.\n• Un pequeño anuncio en Personalizar ayuda a mantener gratuito el diario. Plus sigue sin anuncios."
       },
-      "id": "f06cdbc3-3288-4ef5-aa8f-2c5920ee9e97",
+      "id": "b1f24f67-65ad-4714-8f45-2f330d59d430",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionPlacementGroup:IOS:1.0:ar-SA:APP_SCREENSHOT:IPAD_13_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_PREVIEW:IPAD_13_PROFILE": {
+      "fields": {
+        "appPreview": [
+          {
+            "checksum": "asset:9a800019-672e-86a9-8115-72d7f3fc7e97",
+            "fileName": "MoodMargins-ipad-ar.mp4",
+            "fileSize": 6526665,
+            "previewFrameTimeCode": "00:00:05:01"
+          }
+        ]
+      },
+      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_PREVIEW:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+      "fields": {
+        "appPreview": [
+          {
+            "checksum": "asset:c0800019-672e-86a9-8125-25213da80c30",
+            "fileName": "MoodMargins-iphone-ar.mp4",
+            "fileSize": 7125897,
+            "previewFrameTimeCode": "00:00:05:01"
+          }
+        ]
+      },
+      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_SCREENSHOT:IPAD_13_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3605,10 +3417,10 @@
           }
         ]
       },
-      "id": "c09a5bd9-a0cc-49b9-bfb9-01d712bfc886",
+      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.0:ar-SA:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3643,10 +3455,10 @@
           }
         ]
       },
-      "id": "2c8264c6-39ba-4321-a4a6-dbda8883534f",
+      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.0:ar-SA:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3681,10 +3493,64 @@
           }
         ]
       },
-      "id": "a6bf7a8d-35d5-42eb-a536-d630a009fb86",
+      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.0:en-US:APP_SCREENSHOT:IPAD_13_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_STORE_SEARCH_RESULTS_ASSET:DEFAULT_PROFILE": {
+      "fields": {
+        "appStoreSearchResultsAsset": [
+          {
+            "checksum": "asset:00000019-672e-86a9-8010-9c65f1aca113",
+            "fileName": "MM-DailyCheckIns-ar-SA-search.png",
+            "fileSize": 6278526
+          }
+        ]
+      },
+      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:PRODUCT_PAGE_HEADER_ASSET:DEFAULT_PROFILE": {
+      "fields": {
+        "productPageHeaderAsset": [
+          {
+            "checksum": "asset:2b400019-672e-86a9-8013-fdddb354b01a",
+            "fileName": "MM-DailyCheckIns-ar-SA-header.png",
+            "fileSize": 4238823
+          }
+        ]
+      },
+      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_PREVIEW:IPAD_13_PROFILE": {
+      "fields": {
+        "appPreview": [
+          {
+            "checksum": "asset:0a800019-672e-86a9-811d-1b43707c6207",
+            "fileName": "MoodMargins-ipad-en.mp4",
+            "fileSize": 6904534,
+            "previewFrameTimeCode": "00:00:05:01"
+          }
+        ]
+      },
+      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_PREVIEW:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+      "fields": {
+        "appPreview": [
+          {
+            "checksum": "asset:b1800019-672e-86a9-8138-a538b18db3fe",
+            "fileName": "MoodMargins-iphone-en.mp4",
+            "fileSize": 7360398,
+            "previewFrameTimeCode": "00:00:05:01"
+          }
+        ]
+      },
+      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_SCREENSHOT:IPAD_13_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3719,10 +3585,10 @@
           }
         ]
       },
-      "id": "55b1fc7d-cad1-458f-a856-a9f1c8cf6c8c",
+      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.0:en-US:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3757,10 +3623,10 @@
           }
         ]
       },
-      "id": "c4b640ac-2c07-4ae3-b046-880389e98eae",
+      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.0:en-US:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3795,10 +3661,64 @@
           }
         ]
       },
-      "id": "3abcf19f-efa5-4824-af3d-2ff7bab697ed",
+      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.0:es-ES:APP_SCREENSHOT:IPAD_13_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_STORE_SEARCH_RESULTS_ASSET:DEFAULT_PROFILE": {
+      "fields": {
+        "appStoreSearchResultsAsset": [
+          {
+            "checksum": "asset:74800019-672e-86a9-8027-01cbb5a694e0",
+            "fileName": "MM-DailyCheckIns-en-US-search.png",
+            "fileSize": 6178956
+          }
+        ]
+      },
+      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.1:en-US:PRODUCT_PAGE_HEADER_ASSET:DEFAULT_PROFILE": {
+      "fields": {
+        "productPageHeaderAsset": [
+          {
+            "checksum": "asset:b0c00019-672e-86a9-8037-8b08a7f51e47",
+            "fileName": "MM-DailyCheckIns-en-US-header.png",
+            "fileSize": 4193994
+          }
+        ]
+      },
+      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_PREVIEW:IPAD_13_PROFILE": {
+      "fields": {
+        "appPreview": [
+          {
+            "checksum": "asset:21000019-672e-86a9-8113-2d958a7c6560",
+            "fileName": "MoodMargins-ipad-es.mp4",
+            "fileSize": 7119342,
+            "previewFrameTimeCode": "00:00:05:01"
+          }
+        ]
+      },
+      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_PREVIEW:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+      "fields": {
+        "appPreview": [
+          {
+            "checksum": "asset:d1c00019-672e-86a9-8133-4bdaabd3005d",
+            "fileName": "MoodMargins-iphone-es.mp4",
+            "fileSize": 8015108,
+            "previewFrameTimeCode": "00:00:05:01"
+          }
+        ]
+      },
+      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_SCREENSHOT:IPAD_13_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3833,10 +3753,10 @@
           }
         ]
       },
-      "id": "9e75350e-659b-4adc-b3e2-15ce9f32f1d3",
+      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.0:es-ES:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3871,10 +3791,10 @@
           }
         ]
       },
-      "id": "3623dbcf-a703-4bff-a4a5-33e9d5225319",
+      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.0:es-ES:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3909,10 +3829,50 @@
           }
         ]
       },
-      "id": "c33bcc3d-d3dd-4531-9c80-b4068b587389",
+      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:MAC_OS:1.0:ar-SA:APP_SCREENSHOT:MAC_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_STORE_SEARCH_RESULTS_ASSET:DEFAULT_PROFILE": {
+      "fields": {
+        "appStoreSearchResultsAsset": [
+          {
+            "checksum": "asset:31400019-672e-86a9-801c-a393346473bf",
+            "fileName": "MM-DailyCheckIns-es-ES-search.png",
+            "fileSize": 6180121
+          }
+        ]
+      },
+      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:PRODUCT_PAGE_HEADER_ASSET:DEFAULT_PROFILE": {
+      "fields": {
+        "productPageHeaderAsset": [
+          {
+            "checksum": "asset:73400019-672e-86a9-8009-2fb2d2820012",
+            "fileName": "MM-DailyCheckIns-es-ES-header.png",
+            "fileSize": 4199243
+          }
+        ]
+      },
+      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:MAC_OS:1.1:ar-SA:APP_PREVIEW:MAC_PROFILE": {
+      "fields": {
+        "appPreview": [
+          {
+            "checksum": "asset:ebc00019-672e-86a9-811e-b27460d70096",
+            "fileName": "MoodMargins-mac-ar.mp4",
+            "fileSize": 2667720,
+            "previewFrameTimeCode": "00:00:05:01"
+          }
+        ]
+      },
+      "id": "b54f6d54-c6f9-403e-b896-9f0e4810fb9a",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:MAC_OS:1.1:ar-SA:APP_SCREENSHOT:MAC_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3947,10 +3907,24 @@
           }
         ]
       },
-      "id": "925dfcb8-325e-4db6-baaf-3dc707de2346",
+      "id": "b54f6d54-c6f9-403e-b896-9f0e4810fb9a",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:MAC_OS:1.0:en-US:APP_SCREENSHOT:MAC_PROFILE": {
+    "appStoreVersionPlacementGroup:MAC_OS:1.1:en-US:APP_PREVIEW:MAC_PROFILE": {
+      "fields": {
+        "appPreview": [
+          {
+            "checksum": "asset:f8400019-672e-86a9-8100-26b3bd67c97d",
+            "fileName": "MoodMargins-Mac-English-30fps-Stereo.mp4",
+            "fileSize": 2972576,
+            "previewFrameTimeCode": "00:00:05:01"
+          }
+        ]
+      },
+      "id": "1c53979e-92ff-404f-8c79-48c10e1647d9",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:MAC_OS:1.1:en-US:APP_SCREENSHOT:MAC_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3985,10 +3959,24 @@
           }
         ]
       },
-      "id": "c8292c23-8680-469c-8dbe-3f9befbc2a77",
+      "id": "1c53979e-92ff-404f-8c79-48c10e1647d9",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:MAC_OS:1.0:es-ES:APP_SCREENSHOT:MAC_PROFILE": {
+    "appStoreVersionPlacementGroup:MAC_OS:1.1:es-ES:APP_PREVIEW:MAC_PROFILE": {
+      "fields": {
+        "appPreview": [
+          {
+            "checksum": "asset:6bc00019-672e-86a9-8116-768016edc4ff",
+            "fileName": "MoodMargins-mac-es.mp4",
+            "fileSize": 2999326,
+            "previewFrameTimeCode": "00:00:05:01"
+          }
+        ]
+      },
+      "id": "e65a5ef9-ecba-49ce-a762-6a6524491431",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:MAC_OS:1.1:es-ES:APP_SCREENSHOT:MAC_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -4023,10 +4011,10 @@
           }
         ]
       },
-      "id": "abdac8a7-b996-4c20-8137-c0ce0249d8ec",
+      "id": "e65a5ef9-ecba-49ce-a762-6a6524491431",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:VISION_OS:1.0:ar-SA:APP_SCREENSHOT:VISION_PRO_PROFILE": {
+    "appStoreVersionPlacementGroup:VISION_OS:1.1:ar-SA:APP_SCREENSHOT:VISION_PRO_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -4046,10 +4034,10 @@
           }
         ]
       },
-      "id": "fd3d71b9-9673-4651-b461-fa19abc66038",
+      "id": "284baa7a-29bd-4bba-8f93-464f80ea58f9",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:VISION_OS:1.0:en-US:APP_SCREENSHOT:VISION_PRO_PROFILE": {
+    "appStoreVersionPlacementGroup:VISION_OS:1.1:en-US:APP_SCREENSHOT:VISION_PRO_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -4069,10 +4057,10 @@
           }
         ]
       },
-      "id": "4eaf387c-2211-4146-bcda-51c184aaa742",
+      "id": "3a4601b8-c699-4b12-b1f8-04c8209abf07",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:VISION_OS:1.0:es-ES:APP_SCREENSHOT:VISION_PRO_PROFILE": {
+    "appStoreVersionPlacementGroup:VISION_OS:1.1:es-ES:APP_SCREENSHOT:VISION_PRO_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -4092,13 +4080,1062 @@
           }
         ]
       },
-      "id": "c880a535-6aa9-4c76-bb85-37cc4999eae2",
+      "id": "b1f24f67-65ad-4714-8f45-2f330d59d430",
       "type": "appAssetLibraryPlacements"
     },
     "availability": {
       "fields": {
         "territories": [
-
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "AFG"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "AGO"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "AIA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ALB"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ARE"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ARG"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ARM"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ATG"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "AUS"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "AUT"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "AZE"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BEL"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BEN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BFA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BGR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BHR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BHS"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BIH"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BLR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BLZ"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BMU"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BOL"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BRA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BRB"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BRN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BTN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "BWA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "CAN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "CHE"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "CHL"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "CHN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "CIV"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "CMR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "COD"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "COG"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "COL"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "CPV"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "CRI"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "CYM"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "CYP"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "CZE"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "DEU"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "DMA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "DNK"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "DOM"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "DZA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ECU"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "EGY"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ESP"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "EST"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "FIN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "FJI"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "FRA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "FSM"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "GAB"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "GBR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "GEO"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "GHA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "GMB"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "GNB"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "GRC"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "GRD"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "GTM"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "GUY"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "HKG"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "HND"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "HRV"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "HUN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "IDN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "IND"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "IRL"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "IRQ"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ISL"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ISR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ITA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "JAM"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "JOR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "JPN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "KAZ"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "KEN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "KGZ"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "KHM"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "KNA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "KOR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "KWT"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "LAO"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "LBN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "LBR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "LBY"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "LCA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "LKA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "LTU"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "LUX"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "LVA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MAC"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MAR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MDA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MDG"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MDV"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MEX"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MKD"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MLI"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MLT"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MMR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MNE"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MNG"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MOZ"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MRT"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MSR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MUS"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MWI"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "MYS"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "NAM"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "NER"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "NGA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "NIC"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "NLD"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "NOR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "NPL"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "NRU"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "NZL"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "OMN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "PAK"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "PAN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "PER"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "PHL"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "PLW"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "PNG"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "POL"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "PRT"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "PRY"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "QAT"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ROU"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "RUS"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "RWA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SAU"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SEN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SGP"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SLB"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SLE"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SLV"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SRB"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "STP"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SUR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SVK"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SVN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SWE"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SWZ"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "SYC"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "TCA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "TCD"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "THA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "TJK"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "TKM"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "TON"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "TTO"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "TUN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "TUR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "TWN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "TZA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "UGA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "UKR"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "URY"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "USA"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "UZB"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "VCT"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "VEN"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "VGB"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "VNM"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "VUT"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "XKS"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "YEM"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ZAF"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ZMB"
+          },
+          {
+            "available": true,
+            "preOrderEnabled": false,
+            "releaseDate": "2026-10-14",
+            "territory": "ZWE"
+          }
         ]
       },
       "id": "6819079849",

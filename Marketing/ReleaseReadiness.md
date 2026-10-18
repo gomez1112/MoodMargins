@@ -1,18 +1,34 @@
 # MoodMargins release status — October 18, 2026
 
-## Status verified October 18
+## Version 1.1 submitted October 18
 
-Read-only App Store Connect checks confirmed:
+Apple confirms all three version 1.1 releases and their review submissions are WAITING_FOR_REVIEW. Every selected build is VALID and declares non-exempt encryption false. The previously released 1.0 versions remain READY_FOR_SALE while Apple reviews the updates.
 
-| Platform | App Store version | Version 1.1 update |
-| --- | --- | --- |
-| iOS, including Watch | 1.0 READY_FOR_SALE | Build 2 VALID; attached to the 1.1 PREPARE_FOR_SUBMISSION draft; not submitted |
-| macOS | 1.0 READY_FOR_SALE | Build 12 upload FAILED with signing error 90284 for the two Kickstart SDK bundles |
-| visionOS | 1.0 READY_FOR_SALE | Build 1 VALID for testing; no 1.1 App Store version created |
+| Platform | Submitted build | Review status | Release after approval |
+| --- | --- | --- | --- |
+| iOS, including Watch | 2 | [Waiting for Review](https://appstoreconnect.apple.com/apps/6819079849/distribution/reviewsubmissions/details/6a681016-be21-48a2-b457-092da03695b5) | Automatic |
+| macOS | 14 | [Waiting for Review](https://appstoreconnect.apple.com/apps/6819079849/distribution/reviewsubmissions/details/5d2c25f1-fd87-41cc-9e1f-c68bec472f9f) | Manual |
+| visionOS | 1 | [Waiting for Review](https://appstoreconnect.apple.com/apps/6819079849/distribution/reviewsubmissions/details/a2ee903a-8891-46a3-b78d-b195b9c065b2) | Manual |
 
-The Mac and Vision reviews have finished without withdrawal. Their existing 1.0 version records still have MANUAL release settings, but Apple now reports both as READY_FOR_SALE. Uploading a 1.1 TestFlight build does not automatically create or submit a 1.1 App Store version. The earlier instruction limited the 1.1 public update to iOS, leaving other platforms' updates for testing only.
+Submission times were 17:54:10 UTC for iOS, 17:54:32 UTC for visionOS, and 17:59:26 UTC for macOS. No additional purchase products awaited review. Existing Mac and Vision 1.0 reviews completed without withdrawal. The developer's October 18 instruction authorized submitting 1.1 on every platform, superseding the earlier deferral and testing-only update plan.
 
-The shared App Info now has a PREPARE_FOR_SUBMISSION record (`89d2864b-ff1a-4e15-a901-f05b401c8b2e`), so the earlier review-state lock has cleared. Its advertising, messaging/chat, and user-generated-content answers remain false remotely; the prepared disclosures still need to be applied before submitting iOS 1.1. This status check did not change the listing, withdraw reviews, upload another build, or resume the deferred submission.
+The iOS version (`a3f050e7-940b-40ca-ab23-aa41e53d8575`) contains Watch sync build `0e84511d-50f1-4c8a-8e86-5b4f9d7b5d62`. The Mac version (`6a7380c8-6d7e-4945-b7a2-dfef79a16585`) contains corrected build `9297cb28-b5fa-489c-83f8-4dd6ac424e36`. The Vision version (`0aa28bb5-22dd-44ab-aa57-3e81cfe03226`) reuses processed 1.1 build `fefa8257-16ea-4956-92cc-d2d79490def7`. There was no unnecessary replacement iOS or Vision upload.
+
+### Signing verification
+
+Mac builds 12 and 13 failed Apple's certificate validation for Kickstart resource bundles. Build 14 passed after archive signing was corrected to use the distribution identity whose public certificate matches the Mac App Store profile. A Mac Release build, recursive app-signature validation, and an isolated archive-mode check of both resource bundles passed. Only Mac Release signing configuration changed; SDK sources and runtime behavior are unchanged. See [MacDistributionSigning.md](../QA/MacDistributionSigning.md). All platform settings were restored after temporarily limiting each Mac upload to that platform.
+
+### Listing and disclosures
+
+All three 1.1 listings have English, Spanish, and Arabic release notes and updated review notes. The Mac and Vision releases retain manual release settings because the current request was submission for review. iOS retains the previously authorized automatic release after approval.
+
+Apple's shared 1.1 App Info record (`89d2864b-ff1a-4e15-a901-f05b401c8b2e`) was verified after every platform was submitted: advertising, messaging/chat, and user-generated-content answers are true. The published 1.0 record retains its previous false answers. The source ageRating.json retains the intended true answers.
+
+The listing updater incorrectly selected the read-only published age-rating record even when an editable 1.1 record existed. The earlier explanation based solely on active platform reviews was incomplete; withdrawing those reviews was not required. Recovery applied the prepared answers directly to the editable 1.1 record. During the dedicated listing/submission calls only, the local questionnaire temporarily matched published 1.0 so the updater would leave that record alone. The intended source file was restored in finally blocks, and the actual submitted 1.1 answers were verified independently. lock.json was rewritten only by Bitrig's sync tools, never edited by hand. If the updater again targets the published record before 1.1 releases, preserve the submitted true answers rather than overwriting or withdrawing reviews.
+
+The sync preserved remote-only names (including the Spanish and Arabic names), territories, app previews, search-results artwork, and product-page headers. It imported their canonical values/manifests without replacing those remote assets. Validation passes with nine warnings for absent local copies of already-uploaded preview videos. Apple's existing previews were retained; the warnings concern local source files, not missing remote placements. Do not replace those videos from similarly named files unless their identity has been verified.
+
+The developer previously confirmed publication of the SDK App Privacy disclosures and updated hosted Watch-sync policy. Actual physical Watch/iPhone cloud delivery, live Vision Pro AI, and physical-device sandbox purchase/restore remain unverified as recorded below. No dead-code cleanup was performed.
 
 ## October 14–15 version 1.1 preparation history
 
