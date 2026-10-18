@@ -299,6 +299,7 @@
 				CCE094672FE8377800725C1C /* Resources */,
 				CCE094B32FE8389F00725C1C /* Embed Foundation Extensions */,
 				CCE095152FE8490A00725C1C /* Embed Watch Content */,
+				AA1000000000000000000001 /* Sign Mac Resource Bundles */,
 			);
 			buildRules = (
 			);
@@ -527,6 +528,29 @@
 			);
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA1000000000000000000001 /* Sign Mac Resource Bundles */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = ();
+			inputPaths = (
+				"$(SRCROOT)/Tools/Distribution/SignMacResourceBundles.sh",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/KickstartSDK_KickstartSignal.bundle",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/KickstartSDK_KickstartExchange.bundle",
+			);
+			name = "Sign Mac Resource Bundles";
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/KickstartSDK_KickstartSignal.bundle/Contents/_CodeSignature",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/KickstartSDK_KickstartExchange.bundle/Contents/_CodeSignature",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"${SRCROOT}/Tools/Distribution/SignMacResourceBundles.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCE094652FE8377800725C1C /* Sources */ = {
@@ -772,6 +796,7 @@
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				"ENABLE_USER_SCRIPT_SANDBOXING[sdk=macosx*]" = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -792,6 +817,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 27.0;
 				MARKETING_VERSION = 1.1;
+				"MOODMARGINS_DISTRIBUTION_SIGNING_IDENTITY[sdk=macosx*]" = "Apple Distribution: TRANSFINITE LLC (88QL9VPLMY)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.MoodMargins;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
