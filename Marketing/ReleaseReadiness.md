@@ -1,6 +1,20 @@
-# MoodMargins release status — October 15, 2026
+# MoodMargins release status — October 18, 2026
 
-## Version 1.1 update
+## Status verified October 18
+
+Read-only App Store Connect checks confirmed:
+
+| Platform | App Store version | Version 1.1 update |
+| --- | --- | --- |
+| iOS, including Watch | 1.0 READY_FOR_SALE | Build 2 VALID; attached to the 1.1 PREPARE_FOR_SUBMISSION draft; not submitted |
+| macOS | 1.0 READY_FOR_SALE | Build 12 upload FAILED with signing error 90284 for the two Kickstart SDK bundles |
+| visionOS | 1.0 READY_FOR_SALE | Build 1 VALID for testing; no 1.1 App Store version created |
+
+The Mac and Vision reviews have finished without withdrawal. Their existing 1.0 version records still have MANUAL release settings, but Apple now reports both as READY_FOR_SALE. Uploading a 1.1 TestFlight build does not automatically create or submit a 1.1 App Store version. The earlier instruction limited the 1.1 public update to iOS, leaving other platforms' updates for testing only.
+
+The shared App Info now has a PREPARE_FOR_SUBMISSION record (`89d2864b-ff1a-4e15-a901-f05b401c8b2e`), so the earlier review-state lock has cleared. Its advertising, messaging/chat, and user-generated-content answers remain false remotely; the prepared disclosures still need to be applied before submitting iOS 1.1. This status check did not change the listing, withdraw reviews, upload another build, or resume the deferred submission.
+
+## October 14–15 version 1.1 preparation history
 
 iOS 1.1 build 2 includes Watch journal sync from commit `fb39f44`. Apple accepted upload `0e84511d-50f1-4c8a-8e86-5b4f9d7b5d62` and reports the build as VALID, with non-exempt encryption set to false. It is attached to iOS version `a3f050e7-940b-40ca-ab23-aa41e53d8575`, which remains PREPARE_FOR_SUBMISSION with release after approval. The archive was scoped to iOS with its embedded Watch companion; all source platform settings were restored afterward. iOS 1.0 remains live.
 
