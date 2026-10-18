@@ -30,4 +30,3 @@ Start with one mood and a few words.
 Privacy policy: https://apps.transfinite.us/moodmargins/privacy-policy
 Terms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 Support: transfinite@transfinite.us
-

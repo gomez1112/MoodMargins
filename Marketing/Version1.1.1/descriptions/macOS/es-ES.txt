@@ -30,4 +30,3 @@ Empieza con un estado de ánimo y unas palabras.
 Política de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy
 Condiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 Soporte: transfinite@transfinite.us
-

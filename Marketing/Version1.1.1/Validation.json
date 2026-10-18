@@ -28,16 +28,16 @@
       "promotionalTextCharacters": 109,
       "descriptions": {
         "iOS": {
-          "characters": 2195,
-          "sha256": "5287df639f327f985eb99bec757f42bc4881bd6183b565352d97980f49ba3268"
+          "characters": 2194,
+          "sha256": "5adc044cc7553b263ba98a86d2703008c271b8c5e7dfd8b51ed7ce414e367376"
         },
         "macOS": {
-          "characters": 2181,
-          "sha256": "252a2bf157db5263cf4d3e6c2f7edb9f51d414e0f1e8e53d15b710b392cbb4ab"
+          "characters": 2180,
+          "sha256": "740d4cf5fec9cc72fbef28a2229a2cb17edd2c79a61fea331cbeb0fbccd8bbf0"
         },
         "visionOS": {
-          "characters": 2162,
-          "sha256": "5fa5c8f9bfa61aac92379e652262dbe68a1175cbdf62bcfc0da9b3bb8ee237b7"
+          "characters": 2161,
+          "sha256": "c0863d569a9255f96b37d4bec0c8ac461f61021b3ff6eb0bd5e212c4fca08e57"
         }
       }
     },
@@ -49,16 +49,16 @@
       "promotionalTextCharacters": 135,
       "descriptions": {
         "iOS": {
-          "characters": 2490,
-          "sha256": "58a22b9af8f9a256c565c4a405f32f083490d76eac4d01a4c07ac3939c51edff"
+          "characters": 2489,
+          "sha256": "231ecf7368f1e08f1928e7c8e4b5b61b6d67c84c5e6d8b1051a9f319a6c4007a"
         },
         "macOS": {
-          "characters": 2499,
-          "sha256": "a6490d33ac50b2201dd4324bedd80591b4eda2b98148a17ab5dffeee354cb2d2"
+          "characters": 2498,
+          "sha256": "9e364775b86b2c07f0efe634788101bdcdeea80cefd16817ba2900f9e298276c"
         },
         "visionOS": {
-          "characters": 2480,
-          "sha256": "0094b5f99adf58ad2a91c437cc8c2fa01597562b1da434c4d8288b1cf8a131b7"
+          "characters": 2479,
+          "sha256": "4f0c68118b2055685027c67b4a598da461ac7d00f51f65440c3298afedd76250"
         }
       }
     },
@@ -70,16 +70,16 @@
       "promotionalTextCharacters": 135,
       "descriptions": {
         "iOS": {
-          "characters": 2841,
-          "sha256": "4c68bdbaed80df6a41238ba25ce0137530410a58bbb03926bc3d1fb322d02a3d"
+          "characters": 2840,
+          "sha256": "938806ac5a9bbae43a246cd47c1e26efcb3b7ab745ba209c5c673a771fe98df7"
         },
         "macOS": {
-          "characters": 2842,
-          "sha256": "948036981baf523a310f2dae69df124c0c5f4eba2b3d1ff1ff5fc376591a83e4"
+          "characters": 2841,
+          "sha256": "6e4bd2c82021480b9667db6b5e30a957ba18e3c35309144ad1350bda5fd7cabb"
         },
         "visionOS": {
-          "characters": 2812,
-          "sha256": "39405d545d94913b48d6ef1d28deaaba2dd53bd47d1d4b6f3791204033441f0f"
+          "characters": 2811,
+          "sha256": "de529380063b779533150d5cb3e184ff58412c903fc7ecbfb93f743015f94e2f"
         }
       }
     }
