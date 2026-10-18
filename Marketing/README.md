@@ -22,6 +22,8 @@ The asset choices follow [Apple's screenshot specifications](https://developer.a
 
 The new [custom product page, header, and search-results artwork](ProductPage/README.md) is uploaded and verified as drafts in App Store Connect. [Review its artwork](ProductPage/ContactSheet.png) and [deployment records](ProductPage/Deployment.json).
 
+The [version 1.1.1 marketing and ASO package](Version1.1.1/README.md) contains localized metadata drafts, dated Kickstart research, organic launch copy, and an asset messaging test proposal. It is prepared for copy review and has not been applied to App Store Connect.
+
 ## Reproduction
 
 Build capture binaries using `bitrig build`. iPhone and iPad still captures are produced by `JournalCaptureUITests` for each language. The Mac utility uses ScreenCaptureKit's current-process filter and exports only the app's own window. It handles native Metal-backed Lottie views without capturing the desktop. Watch capture routes include Today, the horizontal mood selector, Recent Pages, a page detail, and two additional mood pages.

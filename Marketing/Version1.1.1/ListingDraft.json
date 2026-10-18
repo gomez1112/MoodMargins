@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "preparedOn": "2026-10-18",
+  "status": "LOCAL_PROPOSAL_NOT_APPLIED",
+  "appStoreId": "6819079849",
+  "bundleId": "com.transfinite.MoodMargins",
+  "proposedVersion": "1.1.1",
+  "platforms": ["iOS", "macOS", "visionOS"],
+  "sharedAppInformation": {
+    "en-US": {
+      "name": "MoodMargins: Mood Journal",
+      "subtitle": "Daily Diary & Emotion Tracker"
+    },
+    "es-ES": {
+      "name": "MoodNotas: Diario de ánimo",
+      "subtitle": "Emociones y reflexión diaria"
+    },
+    "ar-SA": {
+      "name": "دفتر مزاج: يوميات ومشاعر",
+      "subtitle": "دوّن يومك واكتشف أنماطك"
+    }
+  },
+  "versionLocalizations": {
+    "en-US": {
+      "keywords": "feelings,reflection,private,notebook,streaks,thoughts,notes,check in,writing,log,wellbeing",
+      "promotionalText": "One mood. A few words. A moment for you. Build your daily journal with animated mood stickers, automatic saving, and clear mood trends.",
+      "descriptions": {
+        "iOS": "descriptions/iOS/en-US.txt",
+        "macOS": "descriptions/macOS/en-US.txt",
+        "visionOS": "descriptions/visionOS/en-US.txt"
+      }
+    },
+    "es-ES": {
+      "keywords": "sentimientos,privado,cuaderno,notas,rachas,hábitos,bienestar,escribir,registro",
+      "promotionalText": "Un estado de ánimo y unas palabras. Crea tu diario con stickers animados, guardado automático y tendencias que te ayudan a mirar atrás.",
+      "descriptions": {
+        "iOS": "descriptions/iOS/es-ES.txt",
+        "macOS": "descriptions/macOS/es-ES.txt",
+        "visionOS": "descriptions/visionOS/es-ES.txt"
+      }
+    },
+    "ar-SA": {
+      "keywords": "مذكرات,تدوين,كتابة,خاص,عادات,إحصاءات,ملصقات",
+      "promotionalText": "شعور واحد وبضع كلمات. امنح يومك لحظة مع ملصقات مزاج متحركة، وحفظ تلقائي، واتجاهات تساعدك على التأمل في أيامك.",
+      "descriptions": {
+        "iOS": "descriptions/iOS/ar-SA.txt",
+        "macOS": "descriptions/macOS/ar-SA.txt",
+        "visionOS": "descriptions/visionOS/ar-SA.txt"
+      }
+    }
+  },
+  "preservedUrls": {
+    "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
+    "marketingUrl": "https://apps.transfinite.us/#moodmargins",
+    "supportUrl": "https://apps.transfinite.us/support#moodmargins",
+    "termsOfUseUrl": "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+  },
+  "application": {
+    "requiresExactCopyApproval": true,
+    "protectSubmittedVersion": "1.1",
+    "applyToPreparedVersionOnly": "1.1.1",
+    "sharedAppInformationNeedsSeparateTimingReview": true,
+    "changeScreenshotsOrPreviews": false,
+    "changeIcon": false,
+    "changePrivacyDisclosures": false,
+    "changePricesOrPurchases": false,
+    "createCampaignOrSpend": false,
+    "submitForReview": false
+  }
+}
