@@ -1,0 +1,42 @@
+{
+  "diagnostics": [
+    {
+      "message": "appStoreConnect/appStoreVersion/iOS/localizations/ar-SA/placements/app-preview/ipad-13-profile/manifest.json references missing file appStoreConnect/appStoreVersion/iOS/localizations/ar-SA/placements/app-preview/ipad-13-profile/assets/MoodMargins-ipad-ar.mp4. App Store Connect doesn't serve videos for download, so it can't be restored. A video already placed under this name stays as it is until the file is added back; placing a new one needs the file.",
+      "severity": "warning"
+    },
+    {
+      "message": "appStoreConnect/appStoreVersion/iOS/localizations/ar-SA/placements/app-preview/iphone-dynamic-island-large-profile/manifest.json references missing file appStoreConnect/appStoreVersion/iOS/localizations/ar-SA/placements/app-preview/iphone-dynamic-island-large-profile/assets/MoodMargins-iphone-ar.mp4. App Store Connect doesn't serve videos for download, so it can't be restored. A video already placed under this name stays as it is until the file is added back; placing a new one needs the file.",
+      "severity": "warning"
+    },
+    {
+      "message": "appStoreConnect/appStoreVersion/iOS/localizations/en-US/placements/app-preview/ipad-13-profile/manifest.json references missing file appStoreConnect/appStoreVersion/iOS/localizations/en-US/placements/app-preview/ipad-13-profile/assets/MoodMargins-ipad-en.mp4. App Store Connect doesn't serve videos for download, so it can't be restored. A video already placed under this name stays as it is until the file is added back; placing a new one needs the file.",
+      "severity": "warning"
+    },
+    {
+      "message": "appStoreConnect/appStoreVersion/iOS/localizations/en-US/placements/app-preview/iphone-dynamic-island-large-profile/manifest.json references missing file appStoreConnect/appStoreVersion/iOS/localizations/en-US/placements/app-preview/iphone-dynamic-island-large-profile/assets/MoodMargins-iphone-en.mp4. App Store Connect doesn't serve videos for download, so it can't be restored. A video already placed under this name stays as it is until the file is added back; placing a new one needs the file.",
+      "severity": "warning"
+    },
+    {
+      "message": "appStoreConnect/appStoreVersion/iOS/localizations/es-ES/placements/app-preview/ipad-13-profile/manifest.json references missing file appStoreConnect/appStoreVersion/iOS/localizations/es-ES/placements/app-preview/ipad-13-profile/assets/MoodMargins-ipad-es.mp4. App Store Connect doesn't serve videos for download, so it can't be restored. A video already placed under this name stays as it is until the file is added back; placing a new one needs the file.",
+      "severity": "warning"
+    },
+    {
+      "message": "appStoreConnect/appStoreVersion/iOS/localizations/es-ES/placements/app-preview/iphone-dynamic-island-large-profile/manifest.json references missing file appStoreConnect/appStoreVersion/iOS/localizations/es-ES/placements/app-preview/iphone-dynamic-island-large-profile/assets/MoodMargins-iphone-es.mp4. App Store Connect doesn't serve videos for download, so it can't be restored. A video already placed under this name stays as it is until the file is added back; placing a new one needs the file.",
+      "severity": "warning"
+    },
+    {
+      "message": "appStoreConnect/appStoreVersion/macOS/localizations/ar-SA/placements/app-preview/mac-profile/manifest.json references missing file appStoreConnect/appStoreVersion/macOS/localizations/ar-SA/placements/app-preview/mac-profile/assets/MoodMargins-mac-ar.mp4. App Store Connect doesn't serve videos for download, so it can't be restored. A video already placed under this name stays as it is until the file is added back; placing a new one needs the file.",
+      "severity": "warning"
+    },
+    {
+      "message": "appStoreConnect/appStoreVersion/macOS/localizations/en-US/placements/app-preview/mac-profile/manifest.json references missing file appStoreConnect/appStoreVersion/macOS/localizations/en-US/placements/app-preview/mac-profile/assets/MoodMargins-Mac-English-30fps-Stereo.mp4. App Store Connect doesn't serve videos for download, so it can't be restored. A video already placed under this name stays as it is until the file is added back; placing a new one needs the file.",
+      "severity": "warning"
+    },
+    {
+      "message": "appStoreConnect/appStoreVersion/macOS/localizations/es-ES/placements/app-preview/mac-profile/manifest.json references missing file appStoreConnect/appStoreVersion/macOS/localizations/es-ES/placements/app-preview/mac-profile/assets/MoodMargins-mac-es.mp4. App Store Connect doesn't serve videos for download, so it can't be restored. A video already placed under this name stays as it is until the file is added back; placing a new one needs the file.",
+      "severity": "warning"
+    }
+  ],
+  "message": "The appStoreConnect/ listing files are valid, with 9 warning(s).",
+  "status": "valid"
+}

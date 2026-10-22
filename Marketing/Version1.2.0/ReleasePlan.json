@@ -1,0 +1,66 @@
+{
+  "version": "1.2.0",
+  "sourceBuildNumber": "16",
+  "appStoreId": "6819079849",
+  "bundleId": "com.transfinite.MoodMargins",
+  "minimumIOS": "27.0",
+  "duoAPIsMinimum": "27.1",
+  "branch": "iphone-duo-1-2",
+  "platformsToUpload": [
+    "iOS",
+    "macOS",
+    "visionOS"
+  ],
+  "platformsToSubmit": [
+    "iOS"
+  ],
+  "releaseType": "AFTER_APPROVAL",
+  "watchCompanionIncluded": true,
+  "authorization": "Owner requested native Duo implementation retaining iOS 27.0, then upload and App Store release. Earlier instruction retains other platforms as uploaded builds without publishing.",
+  "predecessorCheck": {
+    "checkedOn": "2026-10-22",
+    "iOS": "1.1 READY_FOR_SALE",
+    "macOS": "1.1 READY_FOR_SALE",
+    "visionOS": "1.1 READY_FOR_SALE"
+  },
+  "status": "IOS_WAITING_FOR_REVIEW",
+  "locales": [
+    "en-US",
+    "es-ES",
+    "ar-SA"
+  ],
+  "uploadedBuilds": [
+    {
+      "platform": "iOS",
+      "version": "1.2.0",
+      "buildNumber": "16",
+      "processingState": "VALID"
+    },
+    {
+      "platform": "macOS",
+      "version": "1.2.0",
+      "buildNumber": "16",
+      "processingState": "VALID"
+    },
+    {
+      "platform": "visionOS",
+      "version": "1.2.0",
+      "buildNumber": "16",
+      "processingState": "VALID"
+    }
+  ],
+  "screenshots": {
+    "count": 18,
+    "group": "iphone-duo-profile",
+    "locales": [
+      "en-US",
+      "es-ES",
+      "ar-SA"
+    ],
+    "remoteProcessing": "COMPLETE_ALL_18"
+  },
+  "newDuoPreview": "BLOCKED_NATIVE_RECORDING_RETURNED_BLACK_FRAMES",
+  "reviewSubmissionId": "0cc84350-d19f-4b13-9da1-785aae1ebbdd",
+  "appStoreVersionId": "aa599dd0-a9d5-4243-ae3e-565c725e9e83",
+  "reviewStatusURL": "https://appstoreconnect.apple.com/apps/6819079849/distribution/reviewsubmissions/details/0cc84350-d19f-4b13-9da1-785aae1ebbdd"
+}

@@ -1,1 +1,9 @@
-Hemos actualizado la información del App Store para explicar mejor el diario, las Perspectivas, los temas y Plus. También hemos aclarado la sincronización mediante tu cuenta privada de iCloud, incluidas las entradas del Apple Watch.
+Diseñado para el iPhone Duo.
+
+• Diseños que se adaptan a ambas pantallas y al dispositivo parcialmente plegado.
+• Consulta tus páginas junto al diario y explora las gráficas con sus resúmenes al lado.
+• Conserva tu borrador y tu lugar al abrir, cerrar o girar el dispositivo.
+• Una pregunta para reflexionar junto a tu espacio de escritura.
+• Mejoras de accesibilidad y de los textos en árabe.
+
+Sigue siendo compatible con iOS 27.0.

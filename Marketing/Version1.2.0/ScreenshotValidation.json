@@ -1,0 +1,110 @@
+[
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/ar-SA/placements/app-screenshot/iphone-duo-profile/assets/01-outer-today.png",
+    "width": 1398,
+    "height": 2034,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/ar-SA/placements/app-screenshot/iphone-duo-profile/assets/02-inner-today.png",
+    "width": 2853,
+    "height": 2007,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/ar-SA/placements/app-screenshot/iphone-duo-profile/assets/03-inner-pages.png",
+    "width": 2853,
+    "height": 2007,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/ar-SA/placements/app-screenshot/iphone-duo-profile/assets/04-outer-pages.png",
+    "width": 1398,
+    "height": 2034,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/ar-SA/placements/app-screenshot/iphone-duo-profile/assets/05-inner-insights.png",
+    "width": 2853,
+    "height": 2007,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/ar-SA/placements/app-screenshot/iphone-duo-profile/assets/06-outer-dark-today.png",
+    "width": 1398,
+    "height": 2034,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/en-US/placements/app-screenshot/iphone-duo-profile/assets/01-outer-today.png",
+    "width": 1398,
+    "height": 2034,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/en-US/placements/app-screenshot/iphone-duo-profile/assets/02-inner-today.png",
+    "width": 2853,
+    "height": 2007,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/en-US/placements/app-screenshot/iphone-duo-profile/assets/03-inner-pages.png",
+    "width": 2853,
+    "height": 2007,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/en-US/placements/app-screenshot/iphone-duo-profile/assets/04-outer-pages.png",
+    "width": 1398,
+    "height": 2034,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/en-US/placements/app-screenshot/iphone-duo-profile/assets/05-inner-insights.png",
+    "width": 2853,
+    "height": 2007,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/en-US/placements/app-screenshot/iphone-duo-profile/assets/06-outer-dark-today.png",
+    "width": 1398,
+    "height": 2034,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/es-ES/placements/app-screenshot/iphone-duo-profile/assets/01-outer-today.png",
+    "width": 1398,
+    "height": 2034,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/es-ES/placements/app-screenshot/iphone-duo-profile/assets/02-inner-today.png",
+    "width": 2853,
+    "height": 2007,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/es-ES/placements/app-screenshot/iphone-duo-profile/assets/03-inner-pages.png",
+    "width": 2853,
+    "height": 2007,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/es-ES/placements/app-screenshot/iphone-duo-profile/assets/04-outer-pages.png",
+    "width": 1398,
+    "height": 2034,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/es-ES/placements/app-screenshot/iphone-duo-profile/assets/05-inner-insights.png",
+    "width": 2853,
+    "height": 2007,
+    "hasAlpha": false
+  },
+  {
+    "file": "appStoreConnect/appStoreVersion/iOS/localizations/es-ES/placements/app-screenshot/iphone-duo-profile/assets/06-outer-dark-today.png",
+    "width": 1398,
+    "height": 2034,
+    "hasAlpha": false
+  }
+]

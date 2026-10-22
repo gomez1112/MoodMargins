@@ -17,6 +17,9 @@
       "04c00019-672e-86a9-803a-0ab61b0534fc": {
         "sourceFileChecksum": "9473a960ee926e51a7d94334e7ad6562"
       },
+      "0ac00019-672e-86a9-8033-dc16ea6828e8": {
+        "sourceFileChecksum": "5b82cd7d065e1eac92cac2837c9985d4"
+      },
       "0b000019-672e-86a9-800e-ff421c40db96": {
         "sourceFileChecksum": "bb660a6c7a35971a34a573fda1112315"
       },
@@ -59,6 +62,12 @@
       "2b400019-672e-86a9-8013-fdddb354b01a": {
         "renditionChecksum": "b3be90bbcef7629fa53e1292da2eb79a"
       },
+      "2e400019-672e-86a9-8019-5194af22b23f": {
+        "sourceFileChecksum": "810fdac6aa4c75719883297a8100cae2"
+      },
+      "2f800019-672e-86a9-8024-78e387f4c358": {
+        "sourceFileChecksum": "ca28e6eae998c4907b2fc461cb489862"
+      },
       "31400019-672e-86a9-801c-a393346473bf": {
         "renditionChecksum": "3b3d63994a5dd0fe3a7697ea43784813"
       },
@@ -83,8 +92,20 @@
       "41800019-672e-86a9-8008-48bf223a1d7c": {
         "sourceFileChecksum": "e02fe1eadf46774ef36b207d42c78ba1"
       },
+      "41800019-672e-86a9-802b-7c57020e1646": {
+        "sourceFileChecksum": "16f4b40c7da46d284eaf9f1f187053e3"
+      },
       "42400019-672e-86a9-8009-4b20c88bb664": {
         "sourceFileChecksum": "11a0dafcba3274c2ee78cd3e6f6c860d"
+      },
+      "43000019-672e-86a9-8033-bfa38ae480d0": {
+        "sourceFileChecksum": "ccaf70f05c5b74f26895736df5c8a8d3"
+      },
+      "47400019-672e-86a9-803e-4018f7cdb41b": {
+        "sourceFileChecksum": "dd3b107aa13f294853cca726ad6f9f31"
+      },
+      "48c00019-672e-86a9-801e-73cf7bc39669": {
+        "sourceFileChecksum": "44fb6ce3da308c62ba3cf6fd9fcc3199"
       },
       "4f800019-672e-86a9-803b-98327a65b6b7": {
         "sourceFileChecksum": "7d9e9fe5e4c93986b5705006dcfeb244"
@@ -101,8 +122,14 @@
       "62000019-672e-86a9-8004-cb794cfa0588": {
         "sourceFileChecksum": "129861153a285e327d0629326b4d9b4d"
       },
+      "62800019-672e-86a9-8013-3ce333c58f48": {
+        "sourceFileChecksum": "3da000b04b7ace544d782896cd21542b"
+      },
       "69000019-672e-86a9-802b-e5c66c003326": {
         "sourceFileChecksum": "cee251bf753217ed48f1a2094f7a6799"
+      },
+      "6b800019-672e-86a9-803b-97f9422a5e54": {
+        "sourceFileChecksum": "6f7dfc2297c75741104df6e6ed897e86"
       },
       "6d400019-672e-86a9-8037-d01bd783c0b4": {
         "sourceFileChecksum": "0d8a91ca99f2a9e80608af754c32a03d"
@@ -127,6 +154,9 @@
       },
       "77c00019-672e-86a9-802a-18b232f9fa28": {
         "sourceFileChecksum": "9940b1d58322e4be41cdf2a00dba8c1a"
+      },
+      "7a000019-672e-86a9-8002-cd07229d3846": {
+        "sourceFileChecksum": "d23e5120144b95e0a52653297dc3c6e3"
       },
       "7a400019-672e-86a9-802a-a1b3e1ed11d1": {
         "sourceFileChecksum": "d94ce28f9cd64649ffd97acc776fece2"
@@ -182,6 +212,9 @@
       "a0800019-672e-86a9-8002-f0c44e254bb1": {
         "sourceFileChecksum": "90e7f2b35c43aed2aa5bc2bb92836e27"
       },
+      "a9400019-672e-86a9-8004-ce551bebd27e": {
+        "sourceFileChecksum": "6c00114723ea4d3d4215c4e6349e9f4c"
+      },
       "aa400019-672e-86a9-8019-2be598a8afcf": {
         "sourceFileChecksum": "44e5efca4de5018b04d12852240c4f82"
       },
@@ -221,6 +254,15 @@
       "bb800019-672e-86a9-801d-d72ac3cd8711": {
         "sourceFileChecksum": "b92369f59ff3ff0c09ad37b3599237d6"
       },
+      "bec00019-672e-86a9-8018-e60013336ead": {
+        "sourceFileChecksum": "5cab3b4273a544e14f1184a8e9777670"
+      },
+      "c1400019-672e-86a9-802a-3759fea91ede": {
+        "sourceFileChecksum": "dd29f6d941ad7186e7fb72b3c57de885"
+      },
+      "c3400019-672e-86a9-800a-71adef0d4cbf": {
+        "sourceFileChecksum": "cb438475e11b84700c379c255a9e4072"
+      },
       "c8400019-672e-86a9-803f-943561a77186": {
         "sourceFileChecksum": "bfbc72d8d999eb44bd9c3031b898d20f"
       },
@@ -245,11 +287,20 @@
       "ec400019-672e-86a9-801e-ef69ef72d7d2": {
         "sourceFileChecksum": "9851a546da662227f32c38b1497302b3"
       },
+      "ed400019-672e-86a9-8036-6af03b7d928e": {
+        "sourceFileChecksum": "4476eb7ccb9626ee01dbd751f7fe2f6d"
+      },
       "f1800019-672e-86a9-8013-e4a1ef76ca6b": {
         "sourceFileChecksum": "5e38b25c000495f508a49c1e3fa52efc"
       },
+      "f2000019-672e-86a9-8031-49c0bead8979": {
+        "sourceFileChecksum": "39daadf1c9475a4d4557fd7b011cd9bb"
+      },
       "f5800019-672e-86a9-803d-10b97c57e51c": {
         "sourceFileChecksum": "5c78c663672872dbb219adf6146af1a7"
+      },
+      "f7000019-672e-86a9-802f-79c526db3ab1": {
+        "sourceFileChecksum": "776468f19d50cae61a282203871089aa"
       },
       "fa000019-672e-86a9-8004-21166c841b73": {
         "sourceFileChecksum": "ca4d4a5a4288994c0c8a3b0c0c1d3d38"
@@ -262,6 +313,9 @@
       },
       "fe400019-672e-86a9-802d-1f3f54440371": {
         "sourceFileChecksum": "ee7b6b76cd0b4861072ae1feb726ed9d"
+      },
+      "fec00019-672e-86a9-800c-5c1e51e6b0a1": {
+        "sourceFileChecksum": "ff8b364c2de082bb41c91cf30cafc7fb"
       }
     },
     "inAppPurchasePricing": {
@@ -3112,7 +3166,7 @@
   "resources": {
     "ageRatingDeclaration": {
       "fields": {
-        "advertising": false,
+        "advertising": true,
         "ageAssurance": false,
         "ageRatingOverrideV2": "NONE",
         "alcoholTobaccoOrDrugUseOrReferences": "NONE",
@@ -3126,18 +3180,18 @@
         "lootBox": false,
         "matureOrSuggestiveThemes": "NONE",
         "medicalOrTreatmentInformation": "NONE",
-        "messagingAndChat": false,
+        "messagingAndChat": true,
         "parentalControls": false,
         "profanityOrCrudeHumor": "NONE",
         "sexualContentGraphicAndNudity": "NONE",
         "sexualContentOrNudity": "NONE",
         "unrestrictedWebAccess": false,
-        "userGeneratedContent": false,
+        "userGeneratedContent": true,
         "violenceCartoonOrFantasy": "NONE",
         "violenceRealistic": "NONE",
         "violenceRealisticProlongedGraphicOrSadistic": "NONE"
       },
-      "id": "a4852585-20cf-462a-b411-c4367d131806",
+      "id": "051204fa-67aa-45dd-8284-bd75c99eed58",
       "type": "ageRatingDeclarations"
     },
     "app": {
@@ -3153,7 +3207,7 @@
         "primaryCategory": "LIFESTYLE",
         "secondaryCategory": "HEALTH_AND_FITNESS"
       },
-      "id": "a4852585-20cf-462a-b411-c4367d131806",
+      "id": "051204fa-67aa-45dd-8284-bd75c99eed58",
       "type": "appInfos"
     },
     "appInfoLocalization:ar-SA": {
@@ -3162,7 +3216,7 @@
         "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
         "subtitle": "تتبّع مشاعرك وتأمل يومك"
       },
-      "id": "9272d7e9-a7ad-4ff3-a704-5fa5bc36d2f5",
+      "id": "3da997c0-f685-49d3-9ead-0655467b8042",
       "type": "appInfoLocalizations"
     },
     "appInfoLocalization:en-US": {
@@ -3171,7 +3225,7 @@
         "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
         "subtitle": "Daily Diary & Emotion Tracker"
       },
-      "id": "f33e3957-2ab4-4e7b-8d09-df4934147925",
+      "id": "449f7986-754d-41cf-8d24-83927b8e9c5b",
       "type": "appInfoLocalizations"
     },
     "appInfoLocalization:es-ES": {
@@ -3180,181 +3234,181 @@
         "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
         "subtitle": "Emociones y reflexión diaria"
       },
-      "id": "ab2ed057-331c-4e81-af7f-de835c62fa17",
+      "id": "ade8f1e7-4c61-4cf7-85f5-45a67b44d7f7",
       "type": "appInfoLocalizations"
     },
-    "appStoreReviewDetail:IOS:1.1": {
+    "appStoreReviewDetail:IOS:1.2.0": {
       "fields": {
         "contactEmail": "transfinite@transfinite.us",
         "contactFirstName": "Gerard",
         "contactLastName": "Gomez",
         "contactPhone": "+1 914 316 8248",
         "demoAccountRequired": false,
-        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nNew in version 1.1: Customize → Feedback & ideas presents the Kickstart Signal board in a navigation sheet. Only voluntarily submitted feedback is sent to that service; private journal content is not submitted. A Kickstart Exchange advertising banner appears below About for free accounts after purchase entitlements load. Plus accounts remain ad-free. Neither integration is used for tracking, and Signal receives no premium-status flag.\n\nCustomize → Rate this app opens this app's App Store write-review page on devices. Automatic native StoreKit review requests become eligible after three distinct saved Today check-in days and wait until editing has finished. Requests are limited to once per version, with at least 14 days and three additional check-in days between attempts. All moods count equally. StoreKit may suppress a request, and TestFlight does not show automatic prompts.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion now uses the same SwiftData journal models and private CloudKit container as the main app. Moods and notes autosave locally and sync automatically through the same iCloud account when available. Existing local Watch pages are migrated without overwriting separate phone pages. The Watch updates only fields the person edits, preserving phone tags and other journal details. Sync timing depends on iCloud connectivity and system scheduling. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
+        "notes": "Version 1.2.0 adds native iPhone Duo layouts, built using the iOS 27.1 SDK while retaining iOS 27.0 support. All 27.1-specific APIs are availability-guarded. On Duo, Today adapts the journal and recent pages around the fold; Pages uses native browser/detail navigation; Insights places mood charts beside supporting summaries. Open and close Duo while writing to check continuity and automatic saving. A reflection prompt is located inside Today's journal card, immediately above the writing area. App windows have independent navigation state. No new SDK, tracking, journal data collection, or purchase product is added.\n\nMoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nExisting features introduced in version 1.1: Customize → Feedback & ideas presents the Kickstart Signal board in a navigation sheet. Only voluntarily submitted feedback is sent to that service; private journal content is not submitted. A Kickstart Exchange advertising banner appears below About for free accounts after purchase entitlements load. Plus accounts remain ad-free. Neither integration is used for tracking, and Signal receives no premium-status flag.\n\nCustomize → Rate this app opens this app's App Store write-review page on devices. Automatic native StoreKit review requests become eligible after three distinct saved Today check-in days and wait until editing has finished. Requests are limited to once per version, with at least 14 days and three additional check-in days between attempts. All moods count equally. StoreKit may suppress a request, and TestFlight does not show automatic prompts.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion now uses the same SwiftData journal models and private CloudKit container as the main app. Moods and notes autosave locally and sync automatically through the same iCloud account when available. Existing local Watch pages are migrated without overwriting separate phone pages. The Watch updates only fields the person edits, preserving phone tags and other journal details. Sync timing depends on iCloud connectivity and system scheduling. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
       },
-      "id": "44b4af62-4499-4ff9-901b-b0e298f27820",
+      "id": "26230154-dba6-45a2-831b-ff4e79015b4f",
       "type": "appStoreReviewDetails"
     },
-    "appStoreReviewDetail:MAC_OS:1.1": {
+    "appStoreReviewDetail:MAC_OS:1.1.1": {
       "fields": {
         "contactEmail": "transfinite@transfinite.us",
         "contactFirstName": "Gerard",
         "contactLastName": "Gomez",
         "contactPhone": "+1 914 316 8248",
         "demoAccountRequired": false,
-        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nNew in version 1.1: Customize → Feedback & ideas presents the Kickstart Signal board in a navigation sheet. Only voluntarily submitted feedback is sent to that service; private journal content is not submitted. A Kickstart Exchange advertising banner appears below About for free accounts after purchase entitlements load. Plus accounts remain ad-free. Neither integration is used for tracking, and Signal receives no premium-status flag.\n\nCustomize → Rate this app opens this app's App Store write-review page on devices. Automatic native StoreKit review requests become eligible after three distinct saved Today check-in days and wait until editing has finished. Requests are limited to once per version, with at least 14 days and three additional check-in days between attempts. All moods count equally. StoreKit may suppress a request, and TestFlight does not show automatic prompts.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion distributed with the iOS 1.1 app uses the same SwiftData journal models and private CloudKit container as this app. Moods and notes autosave locally and sync automatically through the same iCloud account when available. Existing local Watch pages are migrated without overwriting separate phone pages. The Watch updates only fields the person edits, preserving phone tags and other journal details. Sync timing depends on iCloud connectivity and system scheduling. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
+        "notes": "Version 1.1.1 refreshes the App Store presentation: platform-specific descriptions, localized names and keywords, and clearer explanations of Plus and private iCloud sync. App functionality and data practices are unchanged from 1.1. No general-purpose analytics service or additional SDK is introduced.\n\nMoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nExisting features introduced in version 1.1: Customize → Feedback & ideas presents the Kickstart Signal board in a navigation sheet. Only voluntarily submitted feedback is sent to that service; private journal content is not submitted. A Kickstart Exchange advertising banner appears below About for free accounts after purchase entitlements load. Plus accounts remain ad-free. Neither integration is used for tracking, and Signal receives no premium-status flag.\n\nCustomize → Rate this app opens this app's App Store write-review page on devices. Automatic native StoreKit review requests become eligible after three distinct saved Today check-in days and wait until editing has finished. Requests are limited to once per version, with at least 14 days and three additional check-in days between attempts. All moods count equally. StoreKit may suppress a request, and TestFlight does not show automatic prompts.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion distributed with the iOS app (version 1.1 or later) uses the same SwiftData journal models and private CloudKit container as this app. Moods and notes autosave locally and sync automatically through the same iCloud account when available. Existing local Watch pages are migrated without overwriting separate phone pages. The Watch updates only fields the person edits, preserving phone tags and other journal details. Sync timing depends on iCloud connectivity and system scheduling. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
       },
-      "id": "75239b93-f693-4479-8d06-66c2d48baba7",
+      "id": "5eb67eb5-53d5-460b-aec4-6c2aecb7b761",
       "type": "appStoreReviewDetails"
     },
-    "appStoreReviewDetail:VISION_OS:1.1": {
+    "appStoreReviewDetail:VISION_OS:1.1.1": {
       "fields": {
         "contactEmail": "transfinite@transfinite.us",
         "contactFirstName": "Gerard",
         "contactLastName": "Gomez",
         "contactPhone": "+1 914 316 8248",
         "demoAccountRequired": false,
-        "notes": "MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nNew in version 1.1: Customize → Feedback & ideas presents the Kickstart Signal board in a navigation sheet. Only voluntarily submitted feedback is sent to that service; private journal content is not submitted. A Kickstart Exchange advertising banner appears below About for free accounts after purchase entitlements load. Plus accounts remain ad-free. Neither integration is used for tracking, and Signal receives no premium-status flag.\n\nCustomize → Rate this app opens this app's App Store write-review page on devices. Automatic native StoreKit review requests become eligible after three distinct saved Today check-in days and wait until editing has finished. Requests are limited to once per version, with at least 14 days and three additional check-in days between attempts. All moods count equally. StoreKit may suppress a request, and TestFlight does not show automatic prompts.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion distributed with the iOS 1.1 app uses the same SwiftData journal models and private CloudKit container as this app. Moods and notes autosave locally and sync automatically through the same iCloud account when available. Existing local Watch pages are migrated without overwriting separate phone pages. The Watch updates only fields the person edits, preserving phone tags and other journal details. Sync timing depends on iCloud connectivity and system scheduling. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
+        "notes": "Version 1.1.1 refreshes the App Store presentation: platform-specific descriptions, localized names and keywords, and clearer explanations of Plus and private iCloud sync. App functionality and data practices are unchanged from 1.1. No general-purpose analytics service or additional SDK is introduced.\n\nMoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.\n\nExisting features introduced in version 1.1: Customize → Feedback & ideas presents the Kickstart Signal board in a navigation sheet. Only voluntarily submitted feedback is sent to that service; private journal content is not submitted. A Kickstart Exchange advertising banner appears below About for free accounts after purchase entitlements load. Plus accounts remain ad-free. Neither integration is used for tracking, and Signal receives no premium-status flag.\n\nCustomize → Rate this app opens this app's App Store write-review page on devices. Automatic native StoreKit review requests become eligible after three distinct saved Today check-in days and wait until editing has finished. Requests are limited to once per version, with at least 14 days and three additional check-in days between attempts. All moods count equally. StoreKit may suppress a request, and TestFlight does not show automatic prompts.\n\nChoose a mood or type a note in Today or Pages. Changes save automatically after a short typing pause and when leaving the editor. Browse or delete entries in Pages. Insights contains free mood trends, mood stickers, longest streak, and tag/activity patterns.\n\nCustomize contains native StoreKit SubscriptionStoreView for weekly, monthly, and yearly MoodMargins Plus plans, and ProductView for individual Botanical, Coastal, and Sunset themes. Every plan unlocks the same features: all premium themes, AI tag suggestions, and AI recaps. Individual themes are permanent non-consumable purchases and do not unlock AI. Restore purchases is in Customize; subscription management and privacy/terms links are also provided.\n\nAI uses Apple's Foundation Models. Private Cloud Compute is on by default, with an off switch in Customize; a failed cloud request retries on device. Apple Intelligence must be enabled and ready. If AI is unavailable, free journaling and standard Insights continue working. The app is not a medical or diagnostic service.\n\nMain-app data uses a private iCloud store when available. The Apple Watch companion distributed with the iOS app (version 1.1 or later) uses the same SwiftData journal models and private CloudKit container as this app. Moods and notes autosave locally and sync automatically through the same iCloud account when available. Existing local Watch pages are migrated without overwriting separate phone pages. The Watch updates only fields the person edits, preserving phone tags and other journal details. Sync timing depends on iCloud connectivity and system scheduling. Bundled mood animations are rendered with the existing dotLottie library. Marketing images contain fictional entries; no preview controls or sample data are included in release builds."
       },
-      "id": "f7cb6f7d-2636-4dd7-9ea4-6c32ba19fe65",
+      "id": "66b9eb16-9885-4abb-aade-4a2bbea3bc87",
       "type": "appStoreReviewDetails"
     },
-    "appStoreVersion:IOS:1.1": {
+    "appStoreVersion:IOS:1.2.0": {
       "fields": {
         "copyright": "2026 Gerard Gomez",
         "releaseType": "AFTER_APPROVAL",
-        "versionString": "1.1"
+        "versionString": "1.2.0"
       },
-      "id": "a3f050e7-940b-40ca-ab23-aa41e53d8575",
+      "id": "aa599dd0-a9d5-4243-ae3e-565c725e9e83",
       "type": "appStoreVersions"
     },
-    "appStoreVersion:MAC_OS:1.1": {
+    "appStoreVersion:MAC_OS:1.1.1": {
       "fields": {
         "copyright": "2026 Gerard Gomez",
         "releaseType": "MANUAL",
-        "versionString": "1.1"
+        "versionString": "1.1.1"
       },
-      "id": "6a7380c8-6d7e-4945-b7a2-dfef79a16585",
+      "id": "47d38eef-20f8-482b-8eb9-9a6446ab8b74",
       "type": "appStoreVersions"
     },
-    "appStoreVersion:VISION_OS:1.1": {
+    "appStoreVersion:VISION_OS:1.1.1": {
       "fields": {
         "copyright": "2026 Gerard Gomez",
         "releaseType": "MANUAL",
-        "versionString": "1.1"
+        "versionString": "1.1.1"
       },
-      "id": "0aa28bb5-22dd-44ab-aa57-3e81cfe03226",
+      "id": "2ec044bf-6808-4230-8dd8-4fe0f6c8c301",
       "type": "appStoreVersions"
     },
-    "appStoreVersionLocalization:IOS:1.1:ar-SA": {
+    "appStoreVersionLocalization:IOS:1.2.0:ar-SA": {
       "fields": {
-        "description": "يوميات للمزاج وللحظات الصغيرة التي تصنع يومك.\n\nاختر ملصق مزاج متحركًا، واكتب بضعة أسطر، وابدأ دفترًا يوميًا يشبهك. يحفظ MoodMargins صفحاتك تلقائيًا لتمنح مشاعرك اهتمامك.\n\nعبّر بطريقتك\n• اختر من بين خمسة ملصقات مزاج متحركة.\n• اكتب على صفحات دفتر ناعمة ومسطّرة.\n• رتّب لحظاتك بالوسوم واعثر على تدويناتك حسب التاريخ أو المزاج أو البحث.\n\nاكتشف أنماطك\nاستكشف اتجاهات المزاج خلال 7 أيام أو 14 يومًا أو 30 يومًا أو عام كامل. شاهد أطول سلسلة تدوين لديك، ومزاجك الأكثر شيوعًا، والوسوم التي تستخدمها كثيرًا. اليوميات والرؤى الأساسية مجانية.\n\nاجعله يشبهك\nابدأ بسمة باستيل المجانية، أو اختر سمات نباتية وساحلية وغروب. لكل لوحة ألوان مظهر فاتح وآخر داكن. اشترِ سمة مرة واحدة لتحتفظ بها، أو استمتع بكل السمات المميزة مع MoodMargins Plus.\n\nمساعدة بسيطة مع Plus\nيضيف Plus اقتراحات وسوم بالذكاء الاصطناعي وملخصات لصفحاتك المحفوظة. تتطلب هذه الميزات جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا. يستخدم التطبيق الحوسبة السحابية الخاصة من Apple أولًا، ثم نموذج الجهاز إذا فشل الطلب السحابي. أوقف المعالجة السحابية في تخصيص لاستخدام النموذج المحلي. تحتاج الطلبات السحابية إلى الإنترنت وتخضع لحدود استخدام Apple.\n\nدفترك الخاص\nلا تحتاج إلى حساب للتطبيق. تُحفظ تدويناتك على جهازك وتُزامن عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. ليس لدى المطور خادم يتلقى يومياتك. على Apple Watch، مرّر بين حالات المزاج وأضف ملاحظة سريعة؛ تُحفظ تدوينات الساعة محليًا ولا تُزامن حاليًا مع التطبيق الرئيسي.\n\nعن Plus وشراء السمات\nتتضمن اشتراكات Plus الأسبوعية والشهرية والسنوية، التي تتجدد تلقائيًا، الميزات المميزة نفسها. شراء سمة منفردة يمنحك إياها دائمًا ولا يتضمن الذكاء الاصطناعي. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. بعد انتهاء Plus، تحتفظ بتدويناتك والسمات التي اشتريتها منفردة.\n\nMoodMargins للتأمل الشخصي، ولا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nامنح يومك مساحة صغيرة. ابدأ بتدوينة واحدة.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
-        "keywords": "امتنان,عناية بالنفس,مذكرات,دفتر,ملاحظات,راحة,عادات,وسوم,إحصاءات,كتابة,رفاهية,خاصة",
+        "description": "يوميات لمزاجك، لحظة صغيرة كل يوم.\n\nاختر ملصق مزاج متحركًا، واكتب بضع كلمات، ودع صفحاتك تُحفظ تلقائيًا. يمنحك دفتر مزاج مساحة للتعبير عن شعورك، دون الحاجة إلى كتابة تدوينة طويلة.\n\nدوّن وتأمل أيامك\n• عبّر عن مزاجك بخمسة ملصقات متحركة.\n• اكتب على صفحات مسطّرة تُحفظ أثناء الكتابة.\n• اعثر على التدوينات بالبحث وتصفية المزاج والوسوم.\n• استكشف اتجاهات المزاج خلال 7 أو 14 أو 30 يومًا، أو عام كامل.\n• شاهد أطول سلسلة تدوين لديك ومزاجك الأكثر شيوعًا.\n\nمن ساعتك إلى دفتر يومياتك\nدوّن على iPhone أو iPad، أو اختر مزاجًا وأضف ملاحظة سريعة في التطبيق المرافق على Apple Watch. تُزامن حالات المزاج والملاحظات من الساعة مع التطبيق الرئيسي عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. استخدم حساب Apple نفسه على أجهزتك؛ قد يستغرق ظهور التغييرات بعض الوقت.\n\nابدأ مجانًا واجعله يشبهك\nاليوميات والرؤى الأساسية وسمة باستيل مجانية. اختر المظهر الفاتح أو الداكن. خصّص الدفتر بسمات نباتية أو ساحلية أو غروب: اشترِ سمة مرة واحدة لتحتفظ بها، أو استمتع بكل السمات المميزة أثناء اشتراكك في MoodMargins Plus.\n\nمساعدة بسيطة مع PLUS\nيتضمن Plus اقتراحات وسوم بالذكاء الاصطناعي وملخصات لصفحاتك وسمات مميزة وتجربة بلا إعلانات. يتطلب الذكاء الاصطناعي الاختياري جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا. يستخدم التطبيق الحوسبة السحابية الخاصة من Apple أولًا، ثم نموذج الجهاز عند الحاجة. أوقف المعالجة السحابية في تخصيص لاستخدام الذكاء الاصطناعي على جهازك. تتطلب السحابة الإنترنت وتخضع لتوفر الخدمة وحدود استخدام Apple.\n\nيومياتك وخياراتك\nلا تحتاج إلى حساب خاص بالتطبيق. تُحفظ صفحاتك على جهازك وتُزامن عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. ليس لدى المطور خادم يتلقى يومياتك. قد تعرض النسخة المجانية توصيات بتطبيقات في تخصيص؛ أما Plus فبلا إعلانات.\n\nتتجدد اشتراكات Plus الأسبوعية والشهرية والسنوية تلقائيًا وتتضمن الميزات نفسها. السمات التي تُشترى منفردة دائمة ولا تتضمن الذكاء الاصطناعي. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. بعد انتهاء Plus، تحتفظ بتدويناتك والسمات التي اشتريتها منفردة.\n\nدفتر مزاج للتأمل الشخصي، ولا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nابدأ بشعور واحد وبضع كلمات.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
+        "keywords": "مذكرات,تدوين,كتابة,خاص,عادات,إحصاءات,ملصقات",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
-        "promotionalText": "مساحة لطيفة للتأمل. سجّل اللحظات الصغيرة بملصقات مزاج متحركة وصفحات تُحفظ تلقائيًا ورؤى هادئة. اجعل دفتر يومياتك يعبر عنك.",
+        "promotionalText": "شعور واحد وبضع كلمات. امنح يومك لحظة مع ملصقات مزاج متحركة، وحفظ تلقائي، واتجاهات تساعدك على التأمل في أيامك.",
         "supportUrl": "https://apps.transfinite.us/support#moodmargins",
-        "whatsNew": "الجديد في الإصدار 1.1\n\n• تتزامن الآن حالاتك المزاجية وملاحظاتك على Apple Watch تلقائيًا مع التطبيق الرئيسي عبر حسابك الخاص على iCloud، مع الاحتفاظ بصفحاتك السابقة على الساعة.\n• شارك اقتراحاتك عبر لوحة الملاحظات والأفكار الجديدة ضمن «تخصيص».\n• ستجد رابطًا لتقييم التطبيق ضمن «تخصيص» متى أردت كتابة مراجعة.\n• يساعد إعلان صغير ضمن «تخصيص» في دعم تدوين اليوميات مجانًا. وتبقى Plus خالية من الإعلانات."
+        "whatsNew": "مصمّم لـ iPhone Duo.\n\n• تخطيطات تتكيّف مع الشاشتين وعند طيّ الجهاز جزئيًا.\n• تصفّح الصفحات بجانب يومياتك واستكشف اتجاهات المزاج مع ملخّصاتها.\n• احتفظ بمسودّتك وموضعك عند فتح الجهاز أو إغلاقه أو تدويره.\n• سؤال تأملي لطيف بجانب مساحة الكتابة.\n• تحسينات لإمكانية الوصول والصياغة العربية.\n\nيستمر دعم iOS 27.0."
       },
-      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "id": "2a593a24-fc64-417f-b1a9-004610b3a6f4",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:IOS:1.1:en-US": {
+    "appStoreVersionLocalization:IOS:1.2.0:en-US": {
       "fields": {
-        "description": "A mood journal for the little moments that make your day.\n\nChoose an animated mood sticker, write a few lines, and build a daily diary that feels like yours. MoodMargins saves your pages automatically, so you can focus on how you feel.\n\nCHECK IN YOUR WAY\n• Express your mood with five animated stickers.\n• Write on soft, lined notebook pages.\n• Organize moments with tags and find entries by date, mood, or search.\n\nUNDERSTAND YOUR PATTERNS\nExplore mood trends across 7 days, 14 days, 30 days, or a year. See your longest journaling streak, most common mood, and frequently used tags. Daily journaling and standard Insights are free.\n\nMAKE IT YOURS\nStart with the free Pastel theme, or choose Botanical, Coastal, and Sunset. Each palette includes light and dark appearances. Buy a theme once to keep it, or enjoy all premium themes with MoodMargins Plus.\n\nA LITTLE HELP WITH PLUS\nPlus adds AI tag suggestions and recaps of your saved pages. AI requires a compatible device with Apple Intelligence enabled and ready. It uses Apple's Private Cloud Compute first, with the on-device model as a fallback. Turn off cloud processing in Customize to use the local model. Cloud requests need internet access and are subject to Apple's usage limits.\n\nYOUR PRIVATE NOTEBOOK\nNo app account is needed. Your entries stay on your device and sync through your private iCloud account when iCloud is available and enabled. The developer has no server that receives your journal. On Apple Watch, swipe through moods and add a quick note; Watch entries are stored locally and do not currently sync with the main app.\n\nABOUT PLUS AND THEME PURCHASES\nWeekly, monthly, and yearly auto-renewing Plus subscriptions include the same premium features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.\n\nMoodMargins is for personal reflection, not medical advice, diagnosis, or treatment.\n\nMake a little space for your day. Start with one check-in.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
-        "keywords": "feelings,gratitude,mindfulness,wellbeing,self care,reflection,streaks,private,notebook,log,habits",
+        "description": "Your daily mood journal, one small moment at a time.\n\nChoose an animated mood sticker, write a few words, and let your pages save automatically. MoodMargins gives you a notebook for how you feel, without needing to write a long entry.\n\nCHECK IN AND LOOK BACK\n• Express your mood with five animated stickers.\n• Keep notes on lined notebook pages that save as you write.\n• Find past entries with search, mood filters, and tags.\n• Explore mood trends over 7, 14, or 30 days, or a year.\n• See your longest journaling streak and most common mood.\n\nFROM WRIST TO NOTEBOOK\nCheck in on iPhone or iPad, or choose a mood and add a quick note on the Apple Watch companion. Your Watch moods and notes sync with the main app through your private iCloud account when iCloud is available and enabled. Use the same Apple Account on your devices; changes can take time to appear.\n\nFREE TO START, YOURS TO PERSONALIZE\nDaily journaling, standard Insights, and the Pastel theme are free. Choose light or dark appearance. Make the notebook your own with Botanical, Coastal, or Sunset: purchase a theme once to keep it, or access all premium themes while subscribed to MoodMargins Plus.\n\nA LITTLE HELP WITH PLUS\nPlus includes AI tag suggestions, recaps of your saved pages, premium themes, and an ad-free experience. Optional AI requires a compatible device with Apple Intelligence enabled and ready. It tries Apple's Private Cloud Compute first, with an on-device fallback. Turn off cloud processing in Customize to use on-device AI. Cloud use requires internet and is subject to Apple's availability and usage limits.\n\nYOUR JOURNAL AND YOUR CHOICES\nNo MoodMargins account is needed. Pages are stored on your device, with private iCloud sync when available and enabled. The developer does not operate a server that receives your journal. Free users can see app recommendations in Customize; Plus is ad-free.\n\nWeekly, monthly, and yearly Plus subscriptions renew automatically and include the same features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.\n\nMoodMargins is for personal reflection, not medical advice, diagnosis, or treatment.\n\nStart with one mood and a few words.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
+        "keywords": "feelings,reflection,private,notebook,streaks,thoughts,notes,check in,writing,log,wellbeing",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
-        "promotionalText": "A softer place to check in. Capture small moments with animated mood stickers, automatically saved pages, and gentle Insights. Make your notebook your own.",
+        "promotionalText": "One mood. A few words. A moment for you. Build your daily journal with animated mood stickers, automatic saving, and clear mood trends.",
         "supportUrl": "https://apps.transfinite.us/support#moodmargins",
-        "whatsNew": "New in 1.1\n\n• Your Watch moods and notes now sync automatically with the main app through your private iCloud account. Existing Watch pages are preserved.\n• Share suggestions through the new Feedback & ideas board in Customize.\n• Find a Rate this app link in Customize whenever you want to leave a review.\n• A small advertising banner in Customize helps support free journaling. Plus remains ad-free."
+        "whatsNew": "Made for iPhone Duo.\n\n• Adaptive layouts for both displays, including partially folded use.\n• Browse pages beside your journal and explore mood trends with summaries alongside.\n• Keep your draft and place when opening, closing, or rotating your device.\n• A gentle reflection prompt right beside your writing.\n• Arabic wording and accessibility refinements.\n\niOS 27.0 remains supported."
       },
-      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "id": "02b41c16-75e1-4137-8bf6-afdb1f140f73",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:IOS:1.1:es-ES": {
+    "appStoreVersionLocalization:IOS:1.2.0:es-ES": {
       "fields": {
-        "description": "Un diario de ánimo para los pequeños momentos de tu día.\n\nElige un sticker de ánimo animado, escribe unas líneas y crea un diario que se sienta tuyo. MoodMargins guarda tus páginas automáticamente para que puedas centrarte en cómo te sientes.\n\nEXPRÉSATE A TU MANERA\n• Elige entre cinco stickers de ánimo animados.\n• Escribe en suaves páginas de cuaderno con renglones.\n• Organiza momentos con etiquetas y encuentra entradas por fecha, ánimo o búsqueda.\n\nDESCUBRE TUS PATRONES\nExplora las tendencias de ánimo de 7, 14 o 30 días, o de todo un año. Consulta tu racha de escritura más larga, tu ánimo más frecuente y las etiquetas que más usas. El diario y las Perspectivas básicas son gratis.\n\nDALE TU ESTILO\nEmpieza con el tema Pastel gratuito o elige Botánica, Costera y Atardecer. Cada paleta tiene un aspecto claro y otro oscuro. Compra un tema una sola vez para conservarlo o disfruta de todos los temas premium con MoodMargins Plus.\n\nUN POCO DE AYUDA CON PLUS\nPlus añade sugerencias de etiquetas con IA y resúmenes de tus páginas guardadas. La IA requiere un dispositivo compatible con Apple Intelligence activado y listo. Utiliza primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si falla. Desactiva el procesamiento en la nube en Personalizar para usar el modelo local. Las solicitudes a la nube necesitan internet y están sujetas a los límites de uso de Apple.\n\nTU CUADERNO PRIVADO\nNo necesitas una cuenta de la app. Tus entradas se guardan en tu dispositivo y se sincronizan mediante tu cuenta privada de iCloud cuando está disponible y activado. El desarrollador no tiene un servidor que reciba tu diario. En Apple Watch, desliza entre los estados de ánimo y añade una nota rápida; las entradas se guardan localmente y todavía no se sincronizan con la app principal.\n\nSOBRE PLUS Y LAS COMPRAS DE TEMAS\nLas suscripciones semanales, mensuales y anuales de renovación automática incluyen las mismas funciones premium. Las compras individuales de temas son permanentes y no incluyen IA. Gestiona o cancela las suscripciones en los ajustes de tu cuenta de Apple. Si cancelas Plus, conservarás tus entradas y los temas comprados por separado.\n\nMoodMargins es para la reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nHaz un pequeño espacio para tu día. Empieza con una entrada.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
-        "keywords": "bienestar,gratitud,autocuidado,rachas,privado,notas,cuaderno,hábitos,sentimientos,mindfulness",
+        "description": "Tu diario de ánimo, un pequeño momento cada día.\n\nElige un sticker de ánimo animado, escribe unas palabras y deja que tus páginas se guarden solas. MoodNotas te ofrece un cuaderno para expresar cómo te sientes, sin tener que escribir una entrada larga.\n\nESCRIBE Y MIRA ATRÁS\n• Expresa tu ánimo con cinco stickers animados.\n• Escribe en páginas con renglones que se guardan mientras escribes.\n• Encuentra entradas con la búsqueda, los filtros de ánimo y las etiquetas.\n• Explora las tendencias de 7, 14 o 30 días, o de todo un año.\n• Consulta tu racha de escritura más larga y tu ánimo más frecuente.\n\nDE TU MUÑECA AL DIARIO\nEscribe en el iPhone o el iPad, o elige un ánimo y añade una nota rápida en la app complementaria para Apple Watch. Los ánimos y las notas del Watch se sincronizan con la app principal mediante tu cuenta privada de iCloud cuando está disponible y activado. Usa la misma cuenta de Apple en tus dispositivos; los cambios pueden tardar en aparecer.\n\nEMPIEZA GRATIS Y DALE TU ESTILO\nEl diario, las Perspectivas básicas y el tema Pastel son gratis. Elige el aspecto claro u oscuro. Personaliza el cuaderno con Botánica, Costera o Atardecer: compra un tema una sola vez para conservarlo o accede a todos los temas premium mientras tengas una suscripción a MoodMargins Plus.\n\nUN POCO DE AYUDA CON PLUS\nPlus incluye sugerencias de etiquetas con IA, resúmenes de tus páginas, temas premium y una experiencia sin anuncios. La IA opcional requiere un dispositivo compatible con Apple Intelligence activado y listo. Utiliza primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si es necesario. Desactiva el procesamiento en la nube en Personalizar para usar la IA local. La nube requiere internet y está sujeta a la disponibilidad y los límites de uso de Apple.\n\nTU DIARIO Y TUS DECISIONES\nNo necesitas una cuenta de MoodNotas. Las páginas se guardan en tu dispositivo y se sincronizan mediante tu cuenta privada de iCloud cuando está disponible y activado. El desarrollador no tiene un servidor que reciba tu diario. La versión gratuita puede mostrar recomendaciones de apps en Personalizar; Plus no tiene anuncios.\n\nLas suscripciones semanales, mensuales y anuales de Plus se renuevan automáticamente e incluyen las mismas funciones. Los temas comprados por separado son permanentes y no incluyen IA. Gestiona o cancela las suscripciones en los ajustes de tu cuenta de Apple. Al terminar Plus, conservas tus entradas y los temas comprados por separado.\n\nMoodNotas es para la reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nEmpieza con un estado de ánimo y unas palabras.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
+        "keywords": "sentimientos,privado,cuaderno,notas,rachas,hábitos,bienestar,escribir,registro",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
-        "promotionalText": "Un lugar amable para ti. Guarda pequeños momentos con stickers de ánimo, páginas que se guardan solas y Perspectivas suaves. Haz tuyo el diario.",
+        "promotionalText": "Un estado de ánimo y unas palabras. Crea tu diario con stickers animados, guardado automático y tendencias que te ayudan a mirar atrás.",
         "supportUrl": "https://apps.transfinite.us/support#moodmargins",
-        "whatsNew": "Novedades de la versión 1.1\n\n• Tus estados de ánimo y notas del Apple Watch ahora se sincronizan automáticamente con la app principal a través de tu cuenta privada de iCloud. Tus páginas anteriores del Watch se conservan.\n• Comparte sugerencias en el nuevo tablón de ideas y comentarios de Personalizar.\n• Encuentra un enlace para valorar la app en Personalizar cuando quieras dejar una reseña.\n• Un pequeño anuncio en Personalizar ayuda a mantener gratuito el diario. Plus sigue sin anuncios."
+        "whatsNew": "Diseñado para el iPhone Duo.\n\n• Diseños que se adaptan a ambas pantallas y al dispositivo parcialmente plegado.\n• Consulta tus páginas junto al diario y explora las gráficas con sus resúmenes al lado.\n• Conserva tu borrador y tu lugar al abrir, cerrar o girar el dispositivo.\n• Una pregunta para reflexionar junto a tu espacio de escritura.\n• Mejoras de accesibilidad y de los textos en árabe.\n\nSigue siendo compatible con iOS 27.0."
       },
-      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "id": "99c0105b-1a30-467f-ad9c-49f49ba94dc1",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:MAC_OS:1.1:ar-SA": {
+    "appStoreVersionLocalization:MAC_OS:1.1.1:ar-SA": {
       "fields": {
-        "description": "يوميات للمزاج وللحظات الصغيرة التي تصنع يومك.\n\nاختر ملصق مزاج متحركًا، واكتب بضعة أسطر، وابدأ دفترًا يوميًا يشبهك. يحفظ MoodMargins صفحاتك تلقائيًا لتمنح مشاعرك اهتمامك.\n\nعبّر بطريقتك\n• اختر من بين خمسة ملصقات مزاج متحركة.\n• اكتب على صفحات دفتر ناعمة ومسطّرة.\n• رتّب لحظاتك بالوسوم واعثر على تدويناتك حسب التاريخ أو المزاج أو البحث.\n\nاكتشف أنماطك\nاستكشف اتجاهات المزاج خلال 7 أيام أو 14 يومًا أو 30 يومًا أو عام كامل. شاهد أطول سلسلة تدوين لديك، ومزاجك الأكثر شيوعًا، والوسوم التي تستخدمها كثيرًا. اليوميات والرؤى الأساسية مجانية.\n\nاجعله يشبهك\nابدأ بسمة باستيل المجانية، أو اختر سمات نباتية وساحلية وغروب. لكل لوحة ألوان مظهر فاتح وآخر داكن. اشترِ سمة مرة واحدة لتحتفظ بها، أو استمتع بكل السمات المميزة مع MoodMargins Plus.\n\nمساعدة بسيطة مع Plus\nيضيف Plus اقتراحات وسوم بالذكاء الاصطناعي وملخصات لصفحاتك المحفوظة. تتطلب هذه الميزات جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا. يستخدم التطبيق الحوسبة السحابية الخاصة من Apple أولًا، ثم نموذج الجهاز إذا فشل الطلب السحابي. أوقف المعالجة السحابية في تخصيص لاستخدام النموذج المحلي. تحتاج الطلبات السحابية إلى الإنترنت وتخضع لحدود استخدام Apple.\n\nدفترك الخاص\nلا تحتاج إلى حساب للتطبيق. تُحفظ تدويناتك على جهازك وتُزامن عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. ليس لدى المطور خادم يتلقى يومياتك. على Apple Watch، مرّر بين حالات المزاج وأضف ملاحظة سريعة؛ تُحفظ تدوينات الساعة محليًا ولا تُزامن حاليًا مع التطبيق الرئيسي.\n\nعن Plus وشراء السمات\nتتضمن اشتراكات Plus الأسبوعية والشهرية والسنوية، التي تتجدد تلقائيًا، الميزات المميزة نفسها. شراء سمة منفردة يمنحك إياها دائمًا ولا يتضمن الذكاء الاصطناعي. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. بعد انتهاء Plus، تحتفظ بتدويناتك والسمات التي اشتريتها منفردة.\n\nMoodMargins للتأمل الشخصي، ولا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nامنح يومك مساحة صغيرة. ابدأ بتدوينة واحدة.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
-        "keywords": "امتنان,عناية بالنفس,مذكرات,دفتر,ملاحظات,راحة,عادات,وسوم,إحصاءات,كتابة,رفاهية,خاصة",
+        "description": "يوميات لمزاجك، لحظة صغيرة كل يوم.\n\nاختر ملصق مزاج متحركًا، واكتب بضع كلمات، ودع صفحاتك تُحفظ تلقائيًا. يمنحك دفتر مزاج مساحة للتعبير عن شعورك، دون الحاجة إلى كتابة تدوينة طويلة.\n\nدوّن وتأمل أيامك\n• عبّر عن مزاجك بخمسة ملصقات متحركة.\n• اكتب على صفحات مسطّرة تُحفظ أثناء الكتابة.\n• اعثر على التدوينات بالبحث وتصفية المزاج والوسوم.\n• استكشف اتجاهات المزاج خلال 7 أو 14 أو 30 يومًا، أو عام كامل.\n• شاهد أطول سلسلة تدوين لديك ومزاجك الأكثر شيوعًا.\n\nدفتر يناسب جهاز Mac\nتنقّل بين اليوم والصفحات والرؤى من الشريط الجانبي. تصفّح تدويناتك واكتب في نافذة أصلية على Mac. يمكن مزامنة يومياتك مع أجهزتك الأخرى التي تستخدم دفتر مزاج، بما فيها تدوينات الساعة، عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. قد يستغرق ظهور التغييرات بعض الوقت.\n\nابدأ مجانًا واجعله يشبهك\nاليوميات والرؤى الأساسية وسمة باستيل مجانية. اختر المظهر الفاتح أو الداكن. خصّص الدفتر بسمات نباتية أو ساحلية أو غروب: اشترِ سمة مرة واحدة لتحتفظ بها، أو استمتع بكل السمات المميزة أثناء اشتراكك في MoodMargins Plus.\n\nمساعدة بسيطة مع PLUS\nيتضمن Plus اقتراحات وسوم بالذكاء الاصطناعي وملخصات لصفحاتك وسمات مميزة وتجربة بلا إعلانات. يتطلب الذكاء الاصطناعي الاختياري جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا. يستخدم التطبيق الحوسبة السحابية الخاصة من Apple أولًا، ثم نموذج الجهاز عند الحاجة. أوقف المعالجة السحابية في تخصيص لاستخدام الذكاء الاصطناعي على جهازك. تتطلب السحابة الإنترنت وتخضع لتوفر الخدمة وحدود استخدام Apple.\n\nيومياتك وخياراتك\nلا تحتاج إلى حساب خاص بالتطبيق. تُحفظ صفحاتك على جهازك وتُزامن عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. ليس لدى المطور خادم يتلقى يومياتك. قد تعرض النسخة المجانية توصيات بتطبيقات في تخصيص؛ أما Plus فبلا إعلانات.\n\nتتجدد اشتراكات Plus الأسبوعية والشهرية والسنوية تلقائيًا وتتضمن الميزات نفسها. السمات التي تُشترى منفردة دائمة ولا تتضمن الذكاء الاصطناعي. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. بعد انتهاء Plus، تحتفظ بتدويناتك والسمات التي اشتريتها منفردة.\n\nدفتر مزاج للتأمل الشخصي، ولا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nابدأ بشعور واحد وبضع كلمات.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
+        "keywords": "مذكرات,تدوين,كتابة,خاص,عادات,إحصاءات,ملصقات",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
-        "promotionalText": "مساحة لطيفة للتأمل. سجّل اللحظات الصغيرة بملصقات مزاج متحركة وصفحات تُحفظ تلقائيًا ورؤى هادئة. اجعل دفتر يومياتك يعبر عنك.",
+        "promotionalText": "شعور واحد وبضع كلمات. امنح يومك لحظة مع ملصقات مزاج متحركة، وحفظ تلقائي، واتجاهات تساعدك على التأمل في أيامك.",
         "supportUrl": "https://apps.transfinite.us/support#moodmargins",
-        "whatsNew": "الجديد في الإصدار 1.1\n\n• شارك اقتراحاتك عبر لوحة الملاحظات والأفكار الجديدة ضمن «تخصيص».\n• ستجد رابطًا لتقييم التطبيق ضمن «تخصيص» متى أردت كتابة مراجعة.\n• يساعد إعلان صغير ضمن «تخصيص» في دعم تدوين اليوميات مجانًا. وتبقى Plus خالية من الإعلانات."
+        "whatsNew": "حدّثنا معلومات التطبيق على App Store لتوضيح اليوميات والرؤى والسمات وPlus. كما أوضحنا مزامنة التدوينات عبر حسابك الخاص في iCloud، بما فيها تدوينات Apple Watch."
       },
-      "id": "b54f6d54-c6f9-403e-b896-9f0e4810fb9a",
+      "id": "0e712712-dd04-4ce4-9e70-44b7a5b48ba6",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:MAC_OS:1.1:en-US": {
+    "appStoreVersionLocalization:MAC_OS:1.1.1:en-US": {
       "fields": {
-        "description": "A mood journal for the little moments that make your day.\n\nChoose an animated mood sticker, write a few lines, and build a daily diary that feels like yours. MoodMargins saves your pages automatically, so you can focus on how you feel.\n\nCHECK IN YOUR WAY\n• Express your mood with five animated stickers.\n• Write on soft, lined notebook pages.\n• Organize moments with tags and find entries by date, mood, or search.\n\nUNDERSTAND YOUR PATTERNS\nExplore mood trends across 7 days, 14 days, 30 days, or a year. See your longest journaling streak, most common mood, and frequently used tags. Daily journaling and standard Insights are free.\n\nMAKE IT YOURS\nStart with the free Pastel theme, or choose Botanical, Coastal, and Sunset. Each palette includes light and dark appearances. Buy a theme once to keep it, or enjoy all premium themes with MoodMargins Plus.\n\nA LITTLE HELP WITH PLUS\nPlus adds AI tag suggestions and recaps of your saved pages. AI requires a compatible device with Apple Intelligence enabled and ready. It uses Apple's Private Cloud Compute first, with the on-device model as a fallback. Turn off cloud processing in Customize to use the local model. Cloud requests need internet access and are subject to Apple's usage limits.\n\nYOUR PRIVATE NOTEBOOK\nNo app account is needed. Your entries stay on your device and sync through your private iCloud account when iCloud is available and enabled. The developer has no server that receives your journal. On Apple Watch, swipe through moods and add a quick note; Watch entries are stored locally and do not currently sync with the main app.\n\nABOUT PLUS AND THEME PURCHASES\nWeekly, monthly, and yearly auto-renewing Plus subscriptions include the same premium features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.\n\nMoodMargins is for personal reflection, not medical advice, diagnosis, or treatment.\n\nMake a little space for your day. Start with one check-in.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
-        "keywords": "feelings,gratitude,mindfulness,wellbeing,self care,reflection,streaks,private,notebook,log,habits",
+        "description": "Your daily mood journal, one small moment at a time.\n\nChoose an animated mood sticker, write a few words, and let your pages save automatically. MoodMargins gives you a notebook for how you feel, without needing to write a long entry.\n\nCHECK IN AND LOOK BACK\n• Express your mood with five animated stickers.\n• Keep notes on lined notebook pages that save as you write.\n• Find past entries with search, mood filters, and tags.\n• Explore mood trends over 7, 14, or 30 days, or a year.\n• See your longest journaling streak and most common mood.\n\nA NOTEBOOK AT HOME ON MAC\nMove between Today, Pages, and Insights from the sidebar. Browse your pages and write in a native Mac window. Your journal can sync with your other MoodMargins devices, including Watch check-ins, through your private iCloud account when iCloud is available and enabled. Changes can take time to appear.\n\nFREE TO START, YOURS TO PERSONALIZE\nDaily journaling, standard Insights, and the Pastel theme are free. Choose light or dark appearance. Make the notebook your own with Botanical, Coastal, or Sunset: purchase a theme once to keep it, or access all premium themes while subscribed to MoodMargins Plus.\n\nA LITTLE HELP WITH PLUS\nPlus includes AI tag suggestions, recaps of your saved pages, premium themes, and an ad-free experience. Optional AI requires a compatible device with Apple Intelligence enabled and ready. It tries Apple's Private Cloud Compute first, with an on-device fallback. Turn off cloud processing in Customize to use on-device AI. Cloud use requires internet and is subject to Apple's availability and usage limits.\n\nYOUR JOURNAL AND YOUR CHOICES\nNo MoodMargins account is needed. Pages are stored on your device, with private iCloud sync when available and enabled. The developer does not operate a server that receives your journal. Free users can see app recommendations in Customize; Plus is ad-free.\n\nWeekly, monthly, and yearly Plus subscriptions renew automatically and include the same features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.\n\nMoodMargins is for personal reflection, not medical advice, diagnosis, or treatment.\n\nStart with one mood and a few words.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
+        "keywords": "feelings,reflection,private,notebook,streaks,thoughts,notes,check in,writing,log,wellbeing",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
-        "promotionalText": "A softer place to check in. Capture small moments with animated mood stickers, automatically saved pages, and gentle Insights. Make your notebook your own.",
+        "promotionalText": "One mood. A few words. A moment for you. Build your daily journal with animated mood stickers, automatic saving, and clear mood trends.",
         "supportUrl": "https://apps.transfinite.us/support#moodmargins",
-        "whatsNew": "New in 1.1\n\n• Share suggestions through the new Feedback & ideas board in Customize.\n• Find a Rate this app link in Customize whenever you want to leave a review.\n• A small advertising banner in Customize helps support free journaling. Plus remains ad-free."
+        "whatsNew": "Updated our App Store information with clearer details about daily journaling, mood Insights, themes, and Plus. We also clarified private iCloud sync, including Apple Watch check-ins."
       },
-      "id": "1c53979e-92ff-404f-8c79-48c10e1647d9",
+      "id": "e7135310-33bf-4c7e-bb9e-3a5efbf6184e",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:MAC_OS:1.1:es-ES": {
+    "appStoreVersionLocalization:MAC_OS:1.1.1:es-ES": {
       "fields": {
-        "description": "Un diario de ánimo para los pequeños momentos de tu día.\n\nElige un sticker de ánimo animado, escribe unas líneas y crea un diario que se sienta tuyo. MoodMargins guarda tus páginas automáticamente para que puedas centrarte en cómo te sientes.\n\nEXPRÉSATE A TU MANERA\n• Elige entre cinco stickers de ánimo animados.\n• Escribe en suaves páginas de cuaderno con renglones.\n• Organiza momentos con etiquetas y encuentra entradas por fecha, ánimo o búsqueda.\n\nDESCUBRE TUS PATRONES\nExplora las tendencias de ánimo de 7, 14 o 30 días, o de todo un año. Consulta tu racha de escritura más larga, tu ánimo más frecuente y las etiquetas que más usas. El diario y las Perspectivas básicas son gratis.\n\nDALE TU ESTILO\nEmpieza con el tema Pastel gratuito o elige Botánica, Costera y Atardecer. Cada paleta tiene un aspecto claro y otro oscuro. Compra un tema una sola vez para conservarlo o disfruta de todos los temas premium con MoodMargins Plus.\n\nUN POCO DE AYUDA CON PLUS\nPlus añade sugerencias de etiquetas con IA y resúmenes de tus páginas guardadas. La IA requiere un dispositivo compatible con Apple Intelligence activado y listo. Utiliza primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si falla. Desactiva el procesamiento en la nube en Personalizar para usar el modelo local. Las solicitudes a la nube necesitan internet y están sujetas a los límites de uso de Apple.\n\nTU CUADERNO PRIVADO\nNo necesitas una cuenta de la app. Tus entradas se guardan en tu dispositivo y se sincronizan mediante tu cuenta privada de iCloud cuando está disponible y activado. El desarrollador no tiene un servidor que reciba tu diario. En Apple Watch, desliza entre los estados de ánimo y añade una nota rápida; las entradas se guardan localmente y todavía no se sincronizan con la app principal.\n\nSOBRE PLUS Y LAS COMPRAS DE TEMAS\nLas suscripciones semanales, mensuales y anuales de renovación automática incluyen las mismas funciones premium. Las compras individuales de temas son permanentes y no incluyen IA. Gestiona o cancela las suscripciones en los ajustes de tu cuenta de Apple. Si cancelas Plus, conservarás tus entradas y los temas comprados por separado.\n\nMoodMargins es para la reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nHaz un pequeño espacio para tu día. Empieza con una entrada.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
-        "keywords": "bienestar,gratitud,autocuidado,rachas,privado,notas,cuaderno,hábitos,sentimientos,mindfulness",
+        "description": "Tu diario de ánimo, un pequeño momento cada día.\n\nElige un sticker de ánimo animado, escribe unas palabras y deja que tus páginas se guarden solas. MoodNotas te ofrece un cuaderno para expresar cómo te sientes, sin tener que escribir una entrada larga.\n\nESCRIBE Y MIRA ATRÁS\n• Expresa tu ánimo con cinco stickers animados.\n• Escribe en páginas con renglones que se guardan mientras escribes.\n• Encuentra entradas con la búsqueda, los filtros de ánimo y las etiquetas.\n• Explora las tendencias de 7, 14 o 30 días, o de todo un año.\n• Consulta tu racha de escritura más larga y tu ánimo más frecuente.\n\nUN DIARIO QUE ENCAJA EN TU MAC\nPasa de Hoy a Páginas y Perspectivas desde la barra lateral. Explora tus páginas y escribe en una ventana nativa del Mac. Tu diario puede sincronizarse con tus otros dispositivos con MoodNotas, incluidas las entradas del Watch, mediante tu cuenta privada de iCloud cuando está disponible y activado. Los cambios pueden tardar en aparecer.\n\nEMPIEZA GRATIS Y DALE TU ESTILO\nEl diario, las Perspectivas básicas y el tema Pastel son gratis. Elige el aspecto claro u oscuro. Personaliza el cuaderno con Botánica, Costera o Atardecer: compra un tema una sola vez para conservarlo o accede a todos los temas premium mientras tengas una suscripción a MoodMargins Plus.\n\nUN POCO DE AYUDA CON PLUS\nPlus incluye sugerencias de etiquetas con IA, resúmenes de tus páginas, temas premium y una experiencia sin anuncios. La IA opcional requiere un dispositivo compatible con Apple Intelligence activado y listo. Utiliza primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si es necesario. Desactiva el procesamiento en la nube en Personalizar para usar la IA local. La nube requiere internet y está sujeta a la disponibilidad y los límites de uso de Apple.\n\nTU DIARIO Y TUS DECISIONES\nNo necesitas una cuenta de MoodNotas. Las páginas se guardan en tu dispositivo y se sincronizan mediante tu cuenta privada de iCloud cuando está disponible y activado. El desarrollador no tiene un servidor que reciba tu diario. La versión gratuita puede mostrar recomendaciones de apps en Personalizar; Plus no tiene anuncios.\n\nLas suscripciones semanales, mensuales y anuales de Plus se renuevan automáticamente e incluyen las mismas funciones. Los temas comprados por separado son permanentes y no incluyen IA. Gestiona o cancela las suscripciones en los ajustes de tu cuenta de Apple. Al terminar Plus, conservas tus entradas y los temas comprados por separado.\n\nMoodNotas es para la reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nEmpieza con un estado de ánimo y unas palabras.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
+        "keywords": "sentimientos,privado,cuaderno,notas,rachas,hábitos,bienestar,escribir,registro",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
-        "promotionalText": "Un lugar amable para ti. Guarda pequeños momentos con stickers de ánimo, páginas que se guardan solas y Perspectivas suaves. Haz tuyo el diario.",
+        "promotionalText": "Un estado de ánimo y unas palabras. Crea tu diario con stickers animados, guardado automático y tendencias que te ayudan a mirar atrás.",
         "supportUrl": "https://apps.transfinite.us/support#moodmargins",
-        "whatsNew": "Novedades de la versión 1.1\n\n• Comparte sugerencias en el nuevo tablón de ideas y comentarios de Personalizar.\n• Encuentra un enlace para valorar la app en Personalizar cuando quieras dejar una reseña.\n• Un pequeño anuncio en Personalizar ayuda a mantener gratuito el diario. Plus sigue sin anuncios."
+        "whatsNew": "Hemos actualizado la información del App Store para explicar mejor el diario, las Perspectivas, los temas y Plus. También hemos aclarado la sincronización mediante tu cuenta privada de iCloud, incluidas las entradas del Apple Watch."
       },
-      "id": "e65a5ef9-ecba-49ce-a762-6a6524491431",
+      "id": "b30f6e7f-89ee-46d6-a40b-119f68aabb86",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:VISION_OS:1.1:ar-SA": {
+    "appStoreVersionLocalization:VISION_OS:1.1.1:ar-SA": {
       "fields": {
-        "description": "يوميات للمزاج وللحظات الصغيرة التي تصنع يومك.\n\nاختر ملصق مزاج متحركًا، واكتب بضعة أسطر، وابدأ دفترًا يوميًا يشبهك. يحفظ MoodMargins صفحاتك تلقائيًا لتمنح مشاعرك اهتمامك.\n\nعبّر بطريقتك\n• اختر من بين خمسة ملصقات مزاج متحركة.\n• اكتب على صفحات دفتر ناعمة ومسطّرة.\n• رتّب لحظاتك بالوسوم واعثر على تدويناتك حسب التاريخ أو المزاج أو البحث.\n\nاكتشف أنماطك\nاستكشف اتجاهات المزاج خلال 7 أيام أو 14 يومًا أو 30 يومًا أو عام كامل. شاهد أطول سلسلة تدوين لديك، ومزاجك الأكثر شيوعًا، والوسوم التي تستخدمها كثيرًا. اليوميات والرؤى الأساسية مجانية.\n\nاجعله يشبهك\nابدأ بسمة باستيل المجانية، أو اختر سمات نباتية وساحلية وغروب. لكل لوحة ألوان مظهر فاتح وآخر داكن. اشترِ سمة مرة واحدة لتحتفظ بها، أو استمتع بكل السمات المميزة مع MoodMargins Plus.\n\nمساعدة بسيطة مع Plus\nيضيف Plus اقتراحات وسوم بالذكاء الاصطناعي وملخصات لصفحاتك المحفوظة. تتطلب هذه الميزات جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا. يستخدم التطبيق الحوسبة السحابية الخاصة من Apple أولًا، ثم نموذج الجهاز إذا فشل الطلب السحابي. أوقف المعالجة السحابية في تخصيص لاستخدام النموذج المحلي. تحتاج الطلبات السحابية إلى الإنترنت وتخضع لحدود استخدام Apple.\n\nدفترك الخاص\nلا تحتاج إلى حساب للتطبيق. تُحفظ تدويناتك على جهازك وتُزامن عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. ليس لدى المطور خادم يتلقى يومياتك. على Apple Watch، مرّر بين حالات المزاج وأضف ملاحظة سريعة؛ تُحفظ تدوينات الساعة محليًا ولا تُزامن حاليًا مع التطبيق الرئيسي.\n\nعن Plus وشراء السمات\nتتضمن اشتراكات Plus الأسبوعية والشهرية والسنوية، التي تتجدد تلقائيًا، الميزات المميزة نفسها. شراء سمة منفردة يمنحك إياها دائمًا ولا يتضمن الذكاء الاصطناعي. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. بعد انتهاء Plus، تحتفظ بتدويناتك والسمات التي اشتريتها منفردة.\n\nMoodMargins للتأمل الشخصي، ولا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nامنح يومك مساحة صغيرة. ابدأ بتدوينة واحدة.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
-        "keywords": "امتنان,عناية بالنفس,مذكرات,دفتر,ملاحظات,راحة,عادات,وسوم,إحصاءات,كتابة,رفاهية,خاصة",
+        "description": "يوميات لمزاجك، لحظة صغيرة كل يوم.\n\nاختر ملصق مزاج متحركًا، واكتب بضع كلمات، ودع صفحاتك تُحفظ تلقائيًا. يمنحك دفتر مزاج مساحة للتعبير عن شعورك، دون الحاجة إلى كتابة تدوينة طويلة.\n\nدوّن وتأمل أيامك\n• عبّر عن مزاجك بخمسة ملصقات متحركة.\n• اكتب على صفحات مسطّرة تُحفظ أثناء الكتابة.\n• اعثر على التدوينات بالبحث وتصفية المزاج والوسوم.\n• استكشف اتجاهات المزاج خلال 7 أو 14 أو 30 يومًا، أو عام كامل.\n• شاهد أطول سلسلة تدوين لديك ومزاجك الأكثر شيوعًا.\n\nمساحة صغيرة على APPLE VISION PRO\nاكتب وتصفّح صفحاتك واستكشف الرؤى في نافذة مصممة لنظام visionOS. يمكن مزامنة يومياتك مع أجهزتك الأخرى التي تستخدم دفتر مزاج، بما فيها تدوينات الساعة، عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. قد يستغرق ظهور التغييرات بعض الوقت.\n\nابدأ مجانًا واجعله يشبهك\nاليوميات والرؤى الأساسية وسمة باستيل مجانية. اختر المظهر الفاتح أو الداكن. خصّص الدفتر بسمات نباتية أو ساحلية أو غروب: اشترِ سمة مرة واحدة لتحتفظ بها، أو استمتع بكل السمات المميزة أثناء اشتراكك في MoodMargins Plus.\n\nمساعدة بسيطة مع PLUS\nيتضمن Plus اقتراحات وسوم بالذكاء الاصطناعي وملخصات لصفحاتك وسمات مميزة وتجربة بلا إعلانات. يتطلب الذكاء الاصطناعي الاختياري جهازًا متوافقًا مع Apple Intelligence مفعّلًا وجاهزًا. يستخدم التطبيق الحوسبة السحابية الخاصة من Apple أولًا، ثم نموذج الجهاز عند الحاجة. أوقف المعالجة السحابية في تخصيص لاستخدام الذكاء الاصطناعي على جهازك. تتطلب السحابة الإنترنت وتخضع لتوفر الخدمة وحدود استخدام Apple.\n\nيومياتك وخياراتك\nلا تحتاج إلى حساب خاص بالتطبيق. تُحفظ صفحاتك على جهازك وتُزامن عبر حسابك الخاص في iCloud عندما يكون متاحًا ومفعّلًا. ليس لدى المطور خادم يتلقى يومياتك. قد تعرض النسخة المجانية توصيات بتطبيقات في تخصيص؛ أما Plus فبلا إعلانات.\n\nتتجدد اشتراكات Plus الأسبوعية والشهرية والسنوية تلقائيًا وتتضمن الميزات نفسها. السمات التي تُشترى منفردة دائمة ولا تتضمن الذكاء الاصطناعي. يمكنك إدارة الاشتراكات أو إلغاؤها في إعدادات حساب Apple. بعد انتهاء Plus، تحتفظ بتدويناتك والسمات التي اشتريتها منفردة.\n\nدفتر مزاج للتأمل الشخصي، ولا يقدم نصائح طبية أو تشخيصًا أو علاجًا.\n\nابدأ بشعور واحد وبضع كلمات.\n\nسياسة الخصوصية: https://apps.transfinite.us/moodmargins/privacy-policy\nشروط الاستخدام: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nالدعم: transfinite@transfinite.us",
+        "keywords": "مذكرات,تدوين,كتابة,خاص,عادات,إحصاءات,ملصقات",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
-        "promotionalText": "مساحة لطيفة للتأمل. سجّل اللحظات الصغيرة بملصقات مزاج متحركة وصفحات تُحفظ تلقائيًا ورؤى هادئة. اجعل دفتر يومياتك يعبر عنك.",
+        "promotionalText": "شعور واحد وبضع كلمات. امنح يومك لحظة مع ملصقات مزاج متحركة، وحفظ تلقائي، واتجاهات تساعدك على التأمل في أيامك.",
         "supportUrl": "https://apps.transfinite.us/support#moodmargins",
-        "whatsNew": "الجديد في الإصدار 1.1\n\n• شارك اقتراحاتك عبر لوحة الملاحظات والأفكار الجديدة ضمن «تخصيص».\n• ستجد رابطًا لتقييم التطبيق ضمن «تخصيص» متى أردت كتابة مراجعة.\n• يساعد إعلان صغير ضمن «تخصيص» في دعم تدوين اليوميات مجانًا. وتبقى Plus خالية من الإعلانات."
+        "whatsNew": "حدّثنا معلومات التطبيق على App Store لتوضيح اليوميات والرؤى والسمات وPlus. كما أوضحنا مزامنة التدوينات عبر حسابك الخاص في iCloud، بما فيها تدوينات Apple Watch."
       },
-      "id": "284baa7a-29bd-4bba-8f93-464f80ea58f9",
+      "id": "285d0e6a-4da6-435a-abb2-fd5baed43586",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:VISION_OS:1.1:en-US": {
+    "appStoreVersionLocalization:VISION_OS:1.1.1:en-US": {
       "fields": {
-        "description": "A mood journal for the little moments that make your day.\n\nChoose an animated mood sticker, write a few lines, and build a daily diary that feels like yours. MoodMargins saves your pages automatically, so you can focus on how you feel.\n\nCHECK IN YOUR WAY\n• Express your mood with five animated stickers.\n• Write on soft, lined notebook pages.\n• Organize moments with tags and find entries by date, mood, or search.\n\nUNDERSTAND YOUR PATTERNS\nExplore mood trends across 7 days, 14 days, 30 days, or a year. See your longest journaling streak, most common mood, and frequently used tags. Daily journaling and standard Insights are free.\n\nMAKE IT YOURS\nStart with the free Pastel theme, or choose Botanical, Coastal, and Sunset. Each palette includes light and dark appearances. Buy a theme once to keep it, or enjoy all premium themes with MoodMargins Plus.\n\nA LITTLE HELP WITH PLUS\nPlus adds AI tag suggestions and recaps of your saved pages. AI requires a compatible device with Apple Intelligence enabled and ready. It uses Apple's Private Cloud Compute first, with the on-device model as a fallback. Turn off cloud processing in Customize to use the local model. Cloud requests need internet access and are subject to Apple's usage limits.\n\nYOUR PRIVATE NOTEBOOK\nNo app account is needed. Your entries stay on your device and sync through your private iCloud account when iCloud is available and enabled. The developer has no server that receives your journal. On Apple Watch, swipe through moods and add a quick note; Watch entries are stored locally and do not currently sync with the main app.\n\nABOUT PLUS AND THEME PURCHASES\nWeekly, monthly, and yearly auto-renewing Plus subscriptions include the same premium features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.\n\nMoodMargins is for personal reflection, not medical advice, diagnosis, or treatment.\n\nMake a little space for your day. Start with one check-in.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
-        "keywords": "feelings,gratitude,mindfulness,wellbeing,self care,reflection,streaks,private,notebook,log,habits",
+        "description": "Your daily mood journal, one small moment at a time.\n\nChoose an animated mood sticker, write a few words, and let your pages save automatically. MoodMargins gives you a notebook for how you feel, without needing to write a long entry.\n\nCHECK IN AND LOOK BACK\n• Express your mood with five animated stickers.\n• Keep notes on lined notebook pages that save as you write.\n• Find past entries with search, mood filters, and tags.\n• Explore mood trends over 7, 14, or 30 days, or a year.\n• See your longest journaling streak and most common mood.\n\nA LITTLE SPACE ON APPLE VISION PRO\nWrite, browse your pages, and explore Insights in a window designed for visionOS. Your journal can sync with your other MoodMargins devices, including Watch check-ins, through your private iCloud account when iCloud is available and enabled. Changes can take time to appear.\n\nFREE TO START, YOURS TO PERSONALIZE\nDaily journaling, standard Insights, and the Pastel theme are free. Choose light or dark appearance. Make the notebook your own with Botanical, Coastal, or Sunset: purchase a theme once to keep it, or access all premium themes while subscribed to MoodMargins Plus.\n\nA LITTLE HELP WITH PLUS\nPlus includes AI tag suggestions, recaps of your saved pages, premium themes, and an ad-free experience. Optional AI requires a compatible device with Apple Intelligence enabled and ready. It tries Apple's Private Cloud Compute first, with an on-device fallback. Turn off cloud processing in Customize to use on-device AI. Cloud use requires internet and is subject to Apple's availability and usage limits.\n\nYOUR JOURNAL AND YOUR CHOICES\nNo MoodMargins account is needed. Pages are stored on your device, with private iCloud sync when available and enabled. The developer does not operate a server that receives your journal. Free users can see app recommendations in Customize; Plus is ad-free.\n\nWeekly, monthly, and yearly Plus subscriptions renew automatically and include the same features. Individual theme purchases are permanent and do not include AI. Manage or cancel subscriptions in your Apple Account settings. Ending Plus keeps your entries and themes purchased separately.\n\nMoodMargins is for personal reflection, not medical advice, diagnosis, or treatment.\n\nStart with one mood and a few words.\n\nPrivacy policy: https://apps.transfinite.us/moodmargins/privacy-policy\nTerms of use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSupport: transfinite@transfinite.us",
+        "keywords": "feelings,reflection,private,notebook,streaks,thoughts,notes,check in,writing,log,wellbeing",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
-        "promotionalText": "A softer place to check in. Capture small moments with animated mood stickers, automatically saved pages, and gentle Insights. Make your notebook your own.",
+        "promotionalText": "One mood. A few words. A moment for you. Build your daily journal with animated mood stickers, automatic saving, and clear mood trends.",
         "supportUrl": "https://apps.transfinite.us/support#moodmargins",
-        "whatsNew": "New in 1.1\n\n• Share suggestions through the new Feedback & ideas board in Customize.\n• Find a Rate this app link in Customize whenever you want to leave a review.\n• A small advertising banner in Customize helps support free journaling. Plus remains ad-free."
+        "whatsNew": "Updated our App Store information with clearer details about daily journaling, mood Insights, themes, and Plus. We also clarified private iCloud sync, including Apple Watch check-ins."
       },
-      "id": "3a4601b8-c699-4b12-b1f8-04c8209abf07",
+      "id": "bcd3da24-2865-48ec-a762-651537149b98",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionLocalization:VISION_OS:1.1:es-ES": {
+    "appStoreVersionLocalization:VISION_OS:1.1.1:es-ES": {
       "fields": {
-        "description": "Un diario de ánimo para los pequeños momentos de tu día.\n\nElige un sticker de ánimo animado, escribe unas líneas y crea un diario que se sienta tuyo. MoodMargins guarda tus páginas automáticamente para que puedas centrarte en cómo te sientes.\n\nEXPRÉSATE A TU MANERA\n• Elige entre cinco stickers de ánimo animados.\n• Escribe en suaves páginas de cuaderno con renglones.\n• Organiza momentos con etiquetas y encuentra entradas por fecha, ánimo o búsqueda.\n\nDESCUBRE TUS PATRONES\nExplora las tendencias de ánimo de 7, 14 o 30 días, o de todo un año. Consulta tu racha de escritura más larga, tu ánimo más frecuente y las etiquetas que más usas. El diario y las Perspectivas básicas son gratis.\n\nDALE TU ESTILO\nEmpieza con el tema Pastel gratuito o elige Botánica, Costera y Atardecer. Cada paleta tiene un aspecto claro y otro oscuro. Compra un tema una sola vez para conservarlo o disfruta de todos los temas premium con MoodMargins Plus.\n\nUN POCO DE AYUDA CON PLUS\nPlus añade sugerencias de etiquetas con IA y resúmenes de tus páginas guardadas. La IA requiere un dispositivo compatible con Apple Intelligence activado y listo. Utiliza primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si falla. Desactiva el procesamiento en la nube en Personalizar para usar el modelo local. Las solicitudes a la nube necesitan internet y están sujetas a los límites de uso de Apple.\n\nTU CUADERNO PRIVADO\nNo necesitas una cuenta de la app. Tus entradas se guardan en tu dispositivo y se sincronizan mediante tu cuenta privada de iCloud cuando está disponible y activado. El desarrollador no tiene un servidor que reciba tu diario. En Apple Watch, desliza entre los estados de ánimo y añade una nota rápida; las entradas se guardan localmente y todavía no se sincronizan con la app principal.\n\nSOBRE PLUS Y LAS COMPRAS DE TEMAS\nLas suscripciones semanales, mensuales y anuales de renovación automática incluyen las mismas funciones premium. Las compras individuales de temas son permanentes y no incluyen IA. Gestiona o cancela las suscripciones en los ajustes de tu cuenta de Apple. Si cancelas Plus, conservarás tus entradas y los temas comprados por separado.\n\nMoodMargins es para la reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nHaz un pequeño espacio para tu día. Empieza con una entrada.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
-        "keywords": "bienestar,gratitud,autocuidado,rachas,privado,notas,cuaderno,hábitos,sentimientos,mindfulness",
+        "description": "Tu diario de ánimo, un pequeño momento cada día.\n\nElige un sticker de ánimo animado, escribe unas palabras y deja que tus páginas se guarden solas. MoodNotas te ofrece un cuaderno para expresar cómo te sientes, sin tener que escribir una entrada larga.\n\nESCRIBE Y MIRA ATRÁS\n• Expresa tu ánimo con cinco stickers animados.\n• Escribe en páginas con renglones que se guardan mientras escribes.\n• Encuentra entradas con la búsqueda, los filtros de ánimo y las etiquetas.\n• Explora las tendencias de 7, 14 o 30 días, o de todo un año.\n• Consulta tu racha de escritura más larga y tu ánimo más frecuente.\n\nUN ESPACIO EN APPLE VISION PRO\nEscribe, explora tus páginas y consulta Perspectivas en una ventana diseñada para visionOS. Tu diario puede sincronizarse con tus otros dispositivos con MoodNotas, incluidas las entradas del Watch, mediante tu cuenta privada de iCloud cuando está disponible y activado. Los cambios pueden tardar en aparecer.\n\nEMPIEZA GRATIS Y DALE TU ESTILO\nEl diario, las Perspectivas básicas y el tema Pastel son gratis. Elige el aspecto claro u oscuro. Personaliza el cuaderno con Botánica, Costera o Atardecer: compra un tema una sola vez para conservarlo o accede a todos los temas premium mientras tengas una suscripción a MoodMargins Plus.\n\nUN POCO DE AYUDA CON PLUS\nPlus incluye sugerencias de etiquetas con IA, resúmenes de tus páginas, temas premium y una experiencia sin anuncios. La IA opcional requiere un dispositivo compatible con Apple Intelligence activado y listo. Utiliza primero Private Cloud Compute de Apple y recurre al modelo del dispositivo si es necesario. Desactiva el procesamiento en la nube en Personalizar para usar la IA local. La nube requiere internet y está sujeta a la disponibilidad y los límites de uso de Apple.\n\nTU DIARIO Y TUS DECISIONES\nNo necesitas una cuenta de MoodNotas. Las páginas se guardan en tu dispositivo y se sincronizan mediante tu cuenta privada de iCloud cuando está disponible y activado. El desarrollador no tiene un servidor que reciba tu diario. La versión gratuita puede mostrar recomendaciones de apps en Personalizar; Plus no tiene anuncios.\n\nLas suscripciones semanales, mensuales y anuales de Plus se renuevan automáticamente e incluyen las mismas funciones. Los temas comprados por separado son permanentes y no incluyen IA. Gestiona o cancela las suscripciones en los ajustes de tu cuenta de Apple. Al terminar Plus, conservas tus entradas y los temas comprados por separado.\n\nMoodNotas es para la reflexión personal. No ofrece consejos médicos, diagnósticos ni tratamientos.\n\nEmpieza con un estado de ánimo y unas palabras.\n\nPolítica de privacidad: https://apps.transfinite.us/moodmargins/privacy-policy\nCondiciones de uso: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/\nSoporte: transfinite@transfinite.us",
+        "keywords": "sentimientos,privado,cuaderno,notas,rachas,hábitos,bienestar,escribir,registro",
         "marketingUrl": "https://apps.transfinite.us/#moodmargins",
-        "promotionalText": "Un lugar amable para ti. Guarda pequeños momentos con stickers de ánimo, páginas que se guardan solas y Perspectivas suaves. Haz tuyo el diario.",
+        "promotionalText": "Un estado de ánimo y unas palabras. Crea tu diario con stickers animados, guardado automático y tendencias que te ayudan a mirar atrás.",
         "supportUrl": "https://apps.transfinite.us/support#moodmargins",
-        "whatsNew": "Novedades de la versión 1.1\n\n• Comparte sugerencias en el nuevo tablón de ideas y comentarios de Personalizar.\n• Encuentra un enlace para valorar la app en Personalizar cuando quieras dejar una reseña.\n• Un pequeño anuncio en Personalizar ayuda a mantener gratuito el diario. Plus sigue sin anuncios."
+        "whatsNew": "Hemos actualizado la información del App Store para explicar mejor el diario, las Perspectivas, los temas y Plus. También hemos aclarado la sincronización mediante tu cuenta privada de iCloud, incluidas las entradas del Apple Watch."
       },
-      "id": "b1f24f67-65ad-4714-8f45-2f330d59d430",
+      "id": "87bca2fb-1c81-4989-ba34-423b88b03202",
       "type": "appStoreVersionLocalizations"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_PREVIEW:IPAD_13_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:ar-SA:APP_PREVIEW:IPAD_13_PROFILE": {
       "fields": {
         "appPreview": [
           {
@@ -3365,10 +3419,10 @@
           }
         ]
       },
-      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "id": "2a593a24-fc64-417f-b1a9-004610b3a6f4",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_PREVIEW:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:ar-SA:APP_PREVIEW:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
       "fields": {
         "appPreview": [
           {
@@ -3379,10 +3433,10 @@
           }
         ]
       },
-      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "id": "2a593a24-fc64-417f-b1a9-004610b3a6f4",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_SCREENSHOT:IPAD_13_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:ar-SA:APP_SCREENSHOT:IPAD_13_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3417,10 +3471,48 @@
           }
         ]
       },
-      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "id": "2a593a24-fc64-417f-b1a9-004610b3a6f4",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:ar-SA:APP_SCREENSHOT:IPHONE_DUO_PROFILE": {
+      "fields": {
+        "appScreenshot": [
+          {
+            "checksum": "dd3b107aa13f294853cca726ad6f9f31",
+            "fileName": "01-outer-today.png",
+            "fileSize": 1107829
+          },
+          {
+            "checksum": "6f7dfc2297c75741104df6e6ed897e86",
+            "fileName": "02-inner-today.png",
+            "fileSize": 1847853
+          },
+          {
+            "checksum": "4476eb7ccb9626ee01dbd751f7fe2f6d",
+            "fileName": "03-inner-pages.png",
+            "fileSize": 2273240
+          },
+          {
+            "checksum": "16f4b40c7da46d284eaf9f1f187053e3",
+            "fileName": "04-outer-pages.png",
+            "fileSize": 1293250
+          },
+          {
+            "checksum": "776468f19d50cae61a282203871089aa",
+            "fileName": "05-inner-insights.png",
+            "fileSize": 1631066
+          },
+          {
+            "checksum": "5b82cd7d065e1eac92cac2837c9985d4",
+            "fileName": "06-outer-dark-today.png",
+            "fileSize": 944823
+          }
+        ]
+      },
+      "id": "2a593a24-fc64-417f-b1a9-004610b3a6f4",
+      "type": "appAssetLibraryPlacements"
+    },
+    "appStoreVersionPlacementGroup:IOS:1.2.0:ar-SA:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3455,10 +3547,10 @@
           }
         ]
       },
-      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "id": "2a593a24-fc64-417f-b1a9-004610b3a6f4",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:ar-SA:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3493,10 +3585,10 @@
           }
         ]
       },
-      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "id": "2a593a24-fc64-417f-b1a9-004610b3a6f4",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:APP_STORE_SEARCH_RESULTS_ASSET:DEFAULT_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:ar-SA:APP_STORE_SEARCH_RESULTS_ASSET:DEFAULT_PROFILE": {
       "fields": {
         "appStoreSearchResultsAsset": [
           {
@@ -3506,10 +3598,10 @@
           }
         ]
       },
-      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "id": "2a593a24-fc64-417f-b1a9-004610b3a6f4",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:ar-SA:PRODUCT_PAGE_HEADER_ASSET:DEFAULT_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:ar-SA:PRODUCT_PAGE_HEADER_ASSET:DEFAULT_PROFILE": {
       "fields": {
         "productPageHeaderAsset": [
           {
@@ -3519,10 +3611,10 @@
           }
         ]
       },
-      "id": "7582988a-80e8-4c6c-8295-3f19d43762bb",
+      "id": "2a593a24-fc64-417f-b1a9-004610b3a6f4",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_PREVIEW:IPAD_13_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:en-US:APP_PREVIEW:IPAD_13_PROFILE": {
       "fields": {
         "appPreview": [
           {
@@ -3533,10 +3625,10 @@
           }
         ]
       },
-      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "id": "02b41c16-75e1-4137-8bf6-afdb1f140f73",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_PREVIEW:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:en-US:APP_PREVIEW:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
       "fields": {
         "appPreview": [
           {
@@ -3547,10 +3639,10 @@
           }
         ]
       },
-      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "id": "02b41c16-75e1-4137-8bf6-afdb1f140f73",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_SCREENSHOT:IPAD_13_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:en-US:APP_SCREENSHOT:IPAD_13_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3585,10 +3677,10 @@
           }
         ]
       },
-      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "id": "02b41c16-75e1-4137-8bf6-afdb1f140f73",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:en-US:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3623,10 +3715,10 @@
           }
         ]
       },
-      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "id": "02b41c16-75e1-4137-8bf6-afdb1f140f73",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:en-US:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3661,10 +3753,10 @@
           }
         ]
       },
-      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "id": "02b41c16-75e1-4137-8bf6-afdb1f140f73",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:en-US:APP_STORE_SEARCH_RESULTS_ASSET:DEFAULT_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:en-US:APP_STORE_SEARCH_RESULTS_ASSET:DEFAULT_PROFILE": {
       "fields": {
         "appStoreSearchResultsAsset": [
           {
@@ -3674,10 +3766,10 @@
           }
         ]
       },
-      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "id": "02b41c16-75e1-4137-8bf6-afdb1f140f73",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:en-US:PRODUCT_PAGE_HEADER_ASSET:DEFAULT_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:en-US:PRODUCT_PAGE_HEADER_ASSET:DEFAULT_PROFILE": {
       "fields": {
         "productPageHeaderAsset": [
           {
@@ -3687,10 +3779,10 @@
           }
         ]
       },
-      "id": "5529b05d-2479-43ac-9942-abdb030b9355",
+      "id": "02b41c16-75e1-4137-8bf6-afdb1f140f73",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_PREVIEW:IPAD_13_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:es-ES:APP_PREVIEW:IPAD_13_PROFILE": {
       "fields": {
         "appPreview": [
           {
@@ -3701,10 +3793,10 @@
           }
         ]
       },
-      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "id": "99c0105b-1a30-467f-ad9c-49f49ba94dc1",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_PREVIEW:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:es-ES:APP_PREVIEW:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
       "fields": {
         "appPreview": [
           {
@@ -3715,10 +3807,10 @@
           }
         ]
       },
-      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "id": "99c0105b-1a30-467f-ad9c-49f49ba94dc1",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_SCREENSHOT:IPAD_13_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:es-ES:APP_SCREENSHOT:IPAD_13_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3753,10 +3845,10 @@
           }
         ]
       },
-      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "id": "99c0105b-1a30-467f-ad9c-49f49ba94dc1",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:es-ES:APP_SCREENSHOT:IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3791,10 +3883,10 @@
           }
         ]
       },
-      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "id": "99c0105b-1a30-467f-ad9c-49f49ba94dc1",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:es-ES:APP_SCREENSHOT:WATCH_SERIES_10_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3829,10 +3921,10 @@
           }
         ]
       },
-      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "id": "99c0105b-1a30-467f-ad9c-49f49ba94dc1",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:APP_STORE_SEARCH_RESULTS_ASSET:DEFAULT_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:es-ES:APP_STORE_SEARCH_RESULTS_ASSET:DEFAULT_PROFILE": {
       "fields": {
         "appStoreSearchResultsAsset": [
           {
@@ -3842,10 +3934,10 @@
           }
         ]
       },
-      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "id": "99c0105b-1a30-467f-ad9c-49f49ba94dc1",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:IOS:1.1:es-ES:PRODUCT_PAGE_HEADER_ASSET:DEFAULT_PROFILE": {
+    "appStoreVersionPlacementGroup:IOS:1.2.0:es-ES:PRODUCT_PAGE_HEADER_ASSET:DEFAULT_PROFILE": {
       "fields": {
         "productPageHeaderAsset": [
           {
@@ -3855,10 +3947,10 @@
           }
         ]
       },
-      "id": "2304d034-fbdd-4b67-9822-230e5c609bce",
+      "id": "99c0105b-1a30-467f-ad9c-49f49ba94dc1",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:MAC_OS:1.1:ar-SA:APP_PREVIEW:MAC_PROFILE": {
+    "appStoreVersionPlacementGroup:MAC_OS:1.1.1:ar-SA:APP_PREVIEW:MAC_PROFILE": {
       "fields": {
         "appPreview": [
           {
@@ -3869,10 +3961,10 @@
           }
         ]
       },
-      "id": "b54f6d54-c6f9-403e-b896-9f0e4810fb9a",
+      "id": "0e712712-dd04-4ce4-9e70-44b7a5b48ba6",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:MAC_OS:1.1:ar-SA:APP_SCREENSHOT:MAC_PROFILE": {
+    "appStoreVersionPlacementGroup:MAC_OS:1.1.1:ar-SA:APP_SCREENSHOT:MAC_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3907,10 +3999,10 @@
           }
         ]
       },
-      "id": "b54f6d54-c6f9-403e-b896-9f0e4810fb9a",
+      "id": "0e712712-dd04-4ce4-9e70-44b7a5b48ba6",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:MAC_OS:1.1:en-US:APP_PREVIEW:MAC_PROFILE": {
+    "appStoreVersionPlacementGroup:MAC_OS:1.1.1:en-US:APP_PREVIEW:MAC_PROFILE": {
       "fields": {
         "appPreview": [
           {
@@ -3921,10 +4013,10 @@
           }
         ]
       },
-      "id": "1c53979e-92ff-404f-8c79-48c10e1647d9",
+      "id": "e7135310-33bf-4c7e-bb9e-3a5efbf6184e",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:MAC_OS:1.1:en-US:APP_SCREENSHOT:MAC_PROFILE": {
+    "appStoreVersionPlacementGroup:MAC_OS:1.1.1:en-US:APP_SCREENSHOT:MAC_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -3959,10 +4051,10 @@
           }
         ]
       },
-      "id": "1c53979e-92ff-404f-8c79-48c10e1647d9",
+      "id": "e7135310-33bf-4c7e-bb9e-3a5efbf6184e",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:MAC_OS:1.1:es-ES:APP_PREVIEW:MAC_PROFILE": {
+    "appStoreVersionPlacementGroup:MAC_OS:1.1.1:es-ES:APP_PREVIEW:MAC_PROFILE": {
       "fields": {
         "appPreview": [
           {
@@ -3973,10 +4065,10 @@
           }
         ]
       },
-      "id": "e65a5ef9-ecba-49ce-a762-6a6524491431",
+      "id": "b30f6e7f-89ee-46d6-a40b-119f68aabb86",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:MAC_OS:1.1:es-ES:APP_SCREENSHOT:MAC_PROFILE": {
+    "appStoreVersionPlacementGroup:MAC_OS:1.1.1:es-ES:APP_SCREENSHOT:MAC_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -4011,10 +4103,10 @@
           }
         ]
       },
-      "id": "e65a5ef9-ecba-49ce-a762-6a6524491431",
+      "id": "b30f6e7f-89ee-46d6-a40b-119f68aabb86",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:VISION_OS:1.1:ar-SA:APP_SCREENSHOT:VISION_PRO_PROFILE": {
+    "appStoreVersionPlacementGroup:VISION_OS:1.1.1:ar-SA:APP_SCREENSHOT:VISION_PRO_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -4034,10 +4126,10 @@
           }
         ]
       },
-      "id": "284baa7a-29bd-4bba-8f93-464f80ea58f9",
+      "id": "285d0e6a-4da6-435a-abb2-fd5baed43586",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:VISION_OS:1.1:en-US:APP_SCREENSHOT:VISION_PRO_PROFILE": {
+    "appStoreVersionPlacementGroup:VISION_OS:1.1.1:en-US:APP_SCREENSHOT:VISION_PRO_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -4057,10 +4149,10 @@
           }
         ]
       },
-      "id": "3a4601b8-c699-4b12-b1f8-04c8209abf07",
+      "id": "bcd3da24-2865-48ec-a762-651537149b98",
       "type": "appAssetLibraryPlacements"
     },
-    "appStoreVersionPlacementGroup:VISION_OS:1.1:es-ES:APP_SCREENSHOT:VISION_PRO_PROFILE": {
+    "appStoreVersionPlacementGroup:VISION_OS:1.1.1:es-ES:APP_SCREENSHOT:VISION_PRO_PROFILE": {
       "fields": {
         "appScreenshot": [
           {
@@ -4080,7 +4172,7 @@
           }
         ]
       },
-      "id": "b1f24f67-65ad-4714-8f45-2f330d59d430",
+      "id": "87bca2fb-1c81-4989-ba34-423b88b03202",
       "type": "appAssetLibraryPlacements"
     },
     "availability": {

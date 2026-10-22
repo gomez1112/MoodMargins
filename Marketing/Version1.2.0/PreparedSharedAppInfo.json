@@ -1,0 +1,17 @@
+{
+  "es-ES": {
+    "name": "MoodNotas: Diario de ánimo",
+    "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
+    "subtitle": "Emociones y reflexión diaria"
+  },
+  "ar-SA": {
+    "name": "دفتر مزاج: يوميات ومشاعر",
+    "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
+    "subtitle": "دوّن يومك واكتشف أنماطك"
+  },
+  "en-US": {
+    "name": "MoodMargins: Mood Journal",
+    "privacyPolicyUrl": "https://apps.transfinite.us/moodmargins/privacy-policy",
+    "subtitle": "Daily Diary & Emotion Tracker"
+  }
+}

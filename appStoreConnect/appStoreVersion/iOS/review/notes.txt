@@ -1,4 +1,4 @@
-Version 1.1.1 refreshes the App Store presentation: platform-specific descriptions, localized names and keywords, and clearer explanations of Plus and private iCloud sync. App functionality and data practices are unchanged from 1.1. No general-purpose analytics service or additional SDK is introduced.
+Version 1.2.0 adds native iPhone Duo layouts, built using the iOS 27.1 SDK while retaining iOS 27.0 support. All 27.1-specific APIs are availability-guarded. On Duo, Today adapts the journal and recent pages around the fold; Pages uses native browser/detail navigation; Insights places mood charts beside supporting summaries. Open and close Duo while writing to check continuity and automatic saving. A reflection prompt is located inside Today's journal card, immediately above the writing area. App windows have independent navigation state. No new SDK, tracking, journal data collection, or purchase product is added.
 
 MoodMargins is a personal mood journal. No MoodMargins sign-in or demo credentials are required. An Apple Account is used only for optional iCloud sync and Apple purchases.
 

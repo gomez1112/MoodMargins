@@ -1,0 +1,25 @@
+{
+  "builds": [
+    {
+      "build_number": 16,
+      "platform": "iOS",
+      "status": "completed",
+      "version": "1.2.0"
+    },
+    {
+      "build_number": 16,
+      "platform": "macOS",
+      "status": "completed",
+      "version": "1.2.0"
+    },
+    {
+      "build_number": 16,
+      "platform": "visionOS",
+      "status": "completed",
+      "version": "1.2.0"
+    }
+  ],
+  "bundle_id": "com.transfinite.MoodMargins",
+  "message": "Uploaded 3 platform builds to App Store Connect. Wait for processing to finish before calling asc_submit_for_review.",
+  "status": "completed"
+}

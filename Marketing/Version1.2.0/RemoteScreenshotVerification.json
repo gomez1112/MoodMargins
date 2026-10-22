@@ -1,0 +1,169 @@
+{
+  "checkedOn": "2026-10-22",
+  "version": "1.2.0",
+  "buildNumber": "16",
+  "localizations": [
+    {
+      "locale": "en-US",
+      "count": 6,
+      "screenshots": [
+        {
+          "id": "ea1a3155-6bf3-4299-a0a4-668b996aa284",
+          "fileName": "01-outer-today.png",
+          "fileSize": 1129390,
+          "checksum": "ca28e6eae998c4907b2fc461cb489862",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "7803b4d5-0d21-48cc-ba41-8a95018a378a",
+          "fileName": "02-inner-today.png",
+          "fileSize": 1869379,
+          "checksum": "3da000b04b7ace544d782896cd21542b",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "1d4a421e-ed6f-4801-af48-e708b957733d",
+          "fileName": "03-inner-pages.png",
+          "fileSize": 2281559,
+          "checksum": "810fdac6aa4c75719883297a8100cae2",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "7cc22004-c0b7-4bd6-bc51-dfec00508023",
+          "fileName": "04-outer-pages.png",
+          "fileSize": 1298229,
+          "checksum": "6c00114723ea4d3d4215c4e6349e9f4c",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "a06c45d2-6a9c-49d4-ae65-2174e3efbe78",
+          "fileName": "05-inner-insights.png",
+          "fileSize": 1611574,
+          "checksum": "ccaf70f05c5b74f26895736df5c8a8d3",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "96ea076a-99e4-4d81-ae4d-7877dab76641",
+          "fileName": "06-outer-dark-today.png",
+          "fileSize": 974274,
+          "checksum": "ff8b364c2de082bb41c91cf30cafc7fb",
+          "state": "COMPLETE",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "count": 6,
+      "screenshots": [
+        {
+          "id": "fcd198a7-fdbe-491c-99fb-2c3ae1160506",
+          "fileName": "01-outer-today.png",
+          "fileSize": 1130590,
+          "checksum": "44fb6ce3da308c62ba3cf6fd9fcc3199",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "884b6061-79eb-4879-92cd-bea715a9ff3e",
+          "fileName": "02-inner-today.png",
+          "fileSize": 1887440,
+          "checksum": "cb438475e11b84700c379c255a9e4072",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "30c84fff-90d2-4c89-9cda-78faa7db1ba2",
+          "fileName": "03-inner-pages.png",
+          "fileSize": 2313410,
+          "checksum": "d23e5120144b95e0a52653297dc3c6e3",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "6eb65349-ecf3-4261-af1b-e2752cba46ed",
+          "fileName": "04-outer-pages.png",
+          "fileSize": 1323372,
+          "checksum": "dd29f6d941ad7186e7fb72b3c57de885",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "f29948ee-7444-4098-8abf-d9124c4f601a",
+          "fileName": "05-inner-insights.png",
+          "fileSize": 1648387,
+          "checksum": "39daadf1c9475a4d4557fd7b011cd9bb",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "f36d59a9-3c98-4db2-860f-0d4ea2a17c00",
+          "fileName": "06-outer-dark-today.png",
+          "fileSize": 963977,
+          "checksum": "5cab3b4273a544e14f1184a8e9777670",
+          "state": "COMPLETE",
+          "errors": []
+        }
+      ]
+    },
+    {
+      "locale": "ar-SA",
+      "count": 6,
+      "screenshots": [
+        {
+          "id": "e737d730-d428-42c6-a596-a8c336e84b05",
+          "fileName": "01-outer-today.png",
+          "fileSize": 1107829,
+          "checksum": "dd3b107aa13f294853cca726ad6f9f31",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "05df62c9-dff0-4f59-90a4-08ba1eb32792",
+          "fileName": "02-inner-today.png",
+          "fileSize": 1847853,
+          "checksum": "6f7dfc2297c75741104df6e6ed897e86",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "5a9e1c65-dbdf-48a8-ae1b-9bfdd841fb78",
+          "fileName": "03-inner-pages.png",
+          "fileSize": 2273240,
+          "checksum": "4476eb7ccb9626ee01dbd751f7fe2f6d",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "7c3384bc-6d56-4852-8a19-f49ad84cfeb3",
+          "fileName": "04-outer-pages.png",
+          "fileSize": 1293250,
+          "checksum": "16f4b40c7da46d284eaf9f1f187053e3",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "c98be13d-594c-4486-8312-4fec496e5b9b",
+          "fileName": "05-inner-insights.png",
+          "fileSize": 1631066,
+          "checksum": "776468f19d50cae61a282203871089aa",
+          "state": "COMPLETE",
+          "errors": []
+        },
+        {
+          "id": "828b55a6-acf3-4493-baa3-7a51beb0f41e",
+          "fileName": "06-outer-dark-today.png",
+          "fileSize": 944823,
+          "checksum": "5b82cd7d065e1eac92cac2837c9985d4",
+          "state": "COMPLETE",
+          "errors": []
+        }
+      ]
+    }
+  ]
+}

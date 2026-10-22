@@ -1,0 +1,15 @@
+{
+  "build_number": "16",
+  "bundle_id": "com.transfinite.MoodMargins",
+  "included_products": [],
+  "listing_sent": true,
+  "listing_warnings": [
+    "The en-US app-screenshot/iphone-duo-profile placements are still processing in App Store Connect; plan again once processing finishes.",
+    "The es-ES app-screenshot/iphone-duo-profile placements are still processing in App Store Connect; plan again once processing finishes."
+  ],
+  "message": "Submitted the selected build for App Store review. The project's listing for the build's platform was sent first, with the warnings in listing_warnings; relay them to the user. Share review_status_url with the user so they can follow its status.",
+  "platform": "iOS",
+  "review_status_url": "https://appstoreconnect.apple.com/apps/6819079849/distribution/reviewsubmissions/details/0cc84350-d19f-4b13-9da1-785aae1ebbdd",
+  "status": "submitted",
+  "version": "1.2.0"
+}

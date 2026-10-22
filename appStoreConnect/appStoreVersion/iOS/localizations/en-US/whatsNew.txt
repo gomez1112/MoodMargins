@@ -1,1 +1,9 @@
-Updated our App Store information with clearer details about daily journaling, mood Insights, themes, and Plus. We also clarified private iCloud sync, including Apple Watch check-ins.
+Made for iPhone Duo.
+
+• Adaptive layouts for both displays, including partially folded use.
+• Browse pages beside your journal and explore mood trends with summaries alongside.
+• Keep your draft and place when opening, closing, or rotating your device.
+• A gentle reflection prompt right beside your writing.
+• Arabic wording and accessibility refinements.
+
+iOS 27.0 remains supported.
