@@ -29,11 +29,13 @@ Bitrig test logs / result bundles (within the project build directory; retention
 - The simulator accessibility reader stopped responding after the VoiceOver introduction; screenshot-based UI inspection continued. This is not a completed end-to-end VoiceOver audit.
 - Real multiwindow interaction and real-device fold behavior were not exercised. Independent navigation ownership is covered by unit tests.
 - No physical-device sandbox purchase or cross-device iCloud synchronization was rerun for this layout change.
-- The native headless Duo video recorder produced black frames. Invalid recordings were discarded. Duo app-preview videos are not included; the existing iPhone/iPad previews are preserved remotely. A working device/simulator recording is required to add Duo previews later.
+- The owner canceled the Duo app-preview video after the native recorder produced black frames. Failed recordings were discarded. No further Duo video work is planned or required for this release; existing iPhone/iPad previews are preserved remotely.
 
 ## Release scope
 
 Upload iOS, macOS, and visionOS 1.2.0 (16). Submit iOS, including its Watch companion, for automatic release after Apple approval. Mac and Vision uploads remain available without a new review submission.
+
+Duo support only requires the iOS submission. macOS and visionOS updates and version numbers are independent; their builds do not need submission to enable Duo support.
 
 ## Listing sync workaround
 
@@ -51,4 +53,4 @@ The editable shared app-information record is also `WAITING_FOR_REVIEW`, with th
 
 macOS 1.2.0 (16) and visionOS 1.2.0 (16) are uploaded and `VALID`, without review submission. The updater also carried forward the previously prepared Mac/Vision 1.1.1 listing drafts; those remain `PREPARE_FOR_SUBMISSION`. No Mac or Vision version was submitted or released in this task.
 
-The app is not live as version 1.2.0 yet. Apple must approve it; automatic release is already selected. New Duo preview video remains the media limitation documented above.
+At the verified submission check, version 1.2.0 was not live yet. Apple must approve it; automatic release is already selected. The owner subsequently canceled the Duo preview video, so it is no longer an outstanding media task.
