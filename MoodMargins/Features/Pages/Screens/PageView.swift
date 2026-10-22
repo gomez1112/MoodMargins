@@ -13,13 +13,106 @@ struct PageView: View {
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Environment(\.modelContext) private var modelContext
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(NavigationContext.self) private var navigationContext
     @Query(sort: \MoodEntry.date, order: .reverse) private var entries: [MoodEntry]
 
     @State private var viewModel = PageViewModel()
+#if os(iOS)
+    @State private var compactColumn: NavigationSplitViewColumn = .detail
+#endif
 
     var body: some View {
         @Bindable var viewModel = viewModel
 
+        workspace
+        .safeAreaPadding(.bottom, 16)
+        .background { DiaryWindowBackground() }
+        .modifier(JournalFoldAutosaveModifier {
+            viewModel.saveIfChanged(entries: entries, modelContext: modelContext)
+        })
+        .onAppear {
+            viewModel.synchronize(from: entries)
+            showRequestedBrowser()
+        }
+        .onChange(of: navigationContext.isPageBrowserRequested) { showRequestedBrowser() }
+        .onChange(of: selectedSnapshot) { viewModel.synchronize(from: entries) }
+        .onChange(of: scenePhase) {
+            viewModel.saveIfChanged(entries: entries, modelContext: modelContext)
+            if scenePhase == .active { viewModel.synchronize(from: entries) }
+        }
+        .onDisappear { viewModel.saveIfChanged(entries: entries, modelContext: modelContext) }
+        .task(id: viewModel.autosaveDraft) { await viewModel.autosave(entries: entries, modelContext: modelContext) }
+        .alert("Couldn't save your page", isPresented: $viewModel.isShowingSaveError) {
+            Button("Try again") { viewModel.saveIfChanged(entries: entries, modelContext: modelContext) }
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(viewModel.saveErrorMessage ?? "")
+        }
+    }
+
+    @ViewBuilder
+    private var workspace: some View {
+#if os(iOS)
+        if #available(iOS 27.1, *) {
+            navigationWorkspace
+        } else {
+            legacyWorkspace
+                .navigationTitle("Pages")
+                .navigationBarTitleDisplayMode(.inline)
+                .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search your pages")
+        }
+#else
+        legacyWorkspace
+            .navigationTitle("Pages")
+            .searchable(text: $viewModel.searchText, prompt: "Search your pages")
+#endif
+    }
+
+#if os(iOS)
+    @available(iOS 27.1, *)
+    private var navigationWorkspace: some View {
+        @Bindable var viewModel = viewModel
+        @Bindable var navigationContext = navigationContext
+        return NavigationSplitView(preferredCompactColumn: $compactColumn) {
+            ScrollView {
+                pageBrowser.padding()
+            }
+            .swipeActionsContainer()
+            .accessibilityIdentifier("page-browser")
+            .background { DiaryWindowBackground() }
+            .navigationTitle("Pages")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationSplitViewColumnWidth(min: 260, ideal: 320, max: 400)
+            .searchable(text: $viewModel.searchText, prompt: "Search your pages")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button("duoOpenSelectedPage", systemImage: "pencil") {
+                        compactColumn = .detail
+                    }
+                    .labelStyle(.iconOnly)
+                    .accessibilityIdentifier("open-selected-page")
+                }
+            }
+        } detail: {
+            NavigationStack(path: $navigationContext.pagePath) {
+                ScrollView {
+                    AdaptiveContentWidth(maximumWidth: 680) {
+                        selectedPage(lines: 6).padding()
+                    }
+                }
+                .scrollDismissesKeyboard(.interactively)
+                .background { DiaryWindowBackground() }
+                .navigationTitle("Pages")
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationDestination(for: AppScreen.self) { $0.destination }
+            }
+        }
+        .navigationSplitViewStyle(.balanced)
+        .toolbarVerticalCompressionBehavior(.prefersTabBar)
+    }
+#endif
+
+    private var legacyWorkspace: some View {
         GeometryReader { geometry in
             // Use the window's width so the workspace also adapts to iPad multitasking.
             if geometry.size.width >= 800 && !dynamicTypeSize.isAccessibilitySize {
@@ -64,29 +157,6 @@ struct PageView: View {
 #endif
             }
         }
-        .safeAreaPadding(.bottom, 16)
-        .background { DiaryWindowBackground() }
-        .navigationTitle("Pages")
-#if os(iOS)
-        .navigationBarTitleDisplayMode(.inline)
-        .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search your pages")
-#else
-        .searchable(text: $viewModel.searchText, placement: .automatic, prompt: "Search your pages")
-#endif
-        .onAppear { viewModel.synchronize(from: entries) }
-        .onChange(of: selectedSnapshot) { viewModel.synchronize(from: entries) }
-        .onChange(of: scenePhase) {
-            viewModel.saveIfChanged(entries: entries, modelContext: modelContext)
-            if scenePhase == .active { viewModel.synchronize(from: entries) }
-        }
-        .onDisappear { viewModel.saveIfChanged(entries: entries, modelContext: modelContext) }
-        .task(id: viewModel.autosaveDraft) { await viewModel.autosave(entries: entries, modelContext: modelContext) }
-        .alert("Couldn't save your page", isPresented: $viewModel.isShowingSaveError) {
-            Button("Try again") { viewModel.saveIfChanged(entries: entries, modelContext: modelContext) }
-            Button("OK", role: .cancel) {}
-        } message: {
-            Text(viewModel.saveErrorMessage ?? "")
-        }
     }
 
     private func selectedPage(lines: Int) -> some View {
@@ -127,6 +197,17 @@ struct PageView: View {
 
     private func selectEntry(_ entry: MoodEntry) {
         viewModel.selectEntry(entry, entries: entries, modelContext: modelContext)
+#if os(iOS)
+        compactColumn = .detail
+#endif
+    }
+
+    private func showRequestedBrowser() {
+        guard navigationContext.isPageBrowserRequested else { return }
+#if os(iOS)
+        compactColumn = .sidebar
+#endif
+        navigationContext.isPageBrowserRequested = false
     }
 
     private var selectedSnapshot: DiaryEntrySnapshot? {

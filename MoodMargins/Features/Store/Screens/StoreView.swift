@@ -103,12 +103,7 @@ struct StoreView: View {
             }
 #if DEBUG
             if !ProcessInfo.processInfo.arguments.contains("--marketing-capture") {
-            Section {
-                Toggle("Screenshot preview", isOn: Binding(get: { marketingCapture.isEnabled }, set: marketingCapture.setEnabled))
-                if let message = marketingCapture.errorMessage { Text(message).foregroundStyle(.secondary) }
-            } header: { Text("Development") } footer: {
-                Text("Uses fictional entries in a separate preview store. Your journal stays in its own store. This option is excluded from App Store builds.")
-            }
+                MarketingCaptureControls()
             }
 #endif
         }

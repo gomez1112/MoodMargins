@@ -60,6 +60,14 @@ struct PastPagesGrid: View {
         }
         .buttonStyle(.plain)
         .accessibilityIdentifier("past-page-\(entry.id)")
+        .accessibilityAddTraits(viewModel.selectedEntryID == entry.id ? [.isSelected] : [])
+        .overlay {
+            if viewModel.selectedEntryID == entry.id {
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(palette.ink.opacity(0.55), lineWidth: 2)
+                    .allowsHitTesting(false)
+            }
+        }
         .swipeActions(edge: .trailing, allowsFullSwipe: true) {
             Button("Delete", systemImage: "trash", role: .destructive) { delete(entry) }
         }

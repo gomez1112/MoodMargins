@@ -11,6 +11,7 @@ struct TodayCard: View {
         DiaryCard(rotation: .zero) {
             VStack(alignment: .leading, spacing: 16) {
                 header
+                JournalReflectionPrompt()
                 LinedNote(text: $viewModel.note, lines: lines, focusChanged: focusChanged)
                 FlowLayout(spacing: 8) {
                     if viewModel.selectedTagList.isEmpty {

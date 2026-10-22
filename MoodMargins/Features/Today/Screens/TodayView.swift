@@ -12,6 +12,7 @@ struct TodayView: View {
     @Environment(\.diaryPalette) private var palette
     @Environment(FoundationModelPreferences.self) private var modelPreferences
     @Environment(PurchaseStore.self) private var purchases
+    @Environment(NavigationContext.self) private var navigationContext
     @Environment(\.modelContext) private var modelContext
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
@@ -24,41 +25,19 @@ struct TodayView: View {
     var body: some View {
         @Bindable var viewModel = viewModel
 
-        GeometryReader { geometry in
-            let usesColumns = geometry.size.width >= 800 && !dynamicTypeSize.isAccessibilitySize
-            ScrollView {
-                AdaptiveContentWidth(maximumWidth: usesColumns ? 1040 : 680) {
-                    VStack(alignment: .leading, spacing: 18) {
-                        Header(streak: MoodInsights.currentStreak(entries))
-                        if usesColumns {
-                            HStack(alignment: .top, spacing: 24) {
-                                VStack(alignment: .leading, spacing: 18) {
-                                    QuickMoodCard(viewModel: viewModel)
-                                    TodayCard(viewModel: viewModel, lines: 10, focusChanged: { isNoteFocused = $0 })
-                                }
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                VStack(alignment: .leading, spacing: 24) {
-                                    tagSuggestions
-                                    if !entries.isEmpty {
-                                        RecentPages(entries: entries, isSidebar: true)
-                                    }
-                                }
-                                .frame(width: 300, alignment: .leading)
-                            }
-                        } else {
-                            QuickMoodCard(viewModel: viewModel)
-                            TodayCard(viewModel: viewModel, focusChanged: { isNoteFocused = $0 })
-                            tagSuggestions
-                            if !entries.isEmpty { RecentPages(entries: entries) }
-                        }
-                    }
-                    .padding(usesColumns ? 24 : 16)
+        JournalWorkspace {
+            VStack(alignment: .leading, spacing: 18) {
+                Header(streak: MoodInsights.currentStreak(entries))
+                QuickMoodCard(viewModel: viewModel)
+                TodayCard(viewModel: viewModel, lines: 6, focusChanged: { isNoteFocused = $0 })
+                tagSuggestions
+                Button("Browse past pages", systemImage: "book.pages.fill") {
+                    navigationContext.browsePages()
                 }
+                .buttonStyle(.bordered)
             }
-#if os(iOS) || os(macOS)
-            .scrollDismissesKeyboard(.interactively)
-#endif
-            .frame(maxWidth: .infinity)
+        } secondary: {
+            RecentPages(entries: entries, isSidebar: true)
         }
         .safeAreaPadding(.bottom, 16)
         .background { DiaryWindowBackground() }
@@ -66,6 +45,9 @@ struct TodayView: View {
 #if !os(macOS)
         .toolbar(.hidden, for: .navigationBar)
 #endif
+        .modifier(JournalFoldAutosaveModifier {
+            viewModel.saveIfChanged(entries: entries, modelContext: modelContext)
+        })
         .onAppear {
             viewModel.loadTodayIfNeeded(from: entries)
         }

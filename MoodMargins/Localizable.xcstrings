@@ -1,6 +1,221 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "duoRecentPagesEmpty" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your recent journal pages will appear here."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tus páginas recientes aparecerán aquí."
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tus páginas recientes aparecerán aquí."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tus páginas recientes aparecerán aquí."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ستظهر صفحات يومياتك الأخيرة هنا."
+          }
+        }
+      }
+    },
+    "duoReflectionTitle" : {
+      "comment" : "iPhone Duo journal workspace and release onboarding.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A moment to reflect"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un momento para reflexionar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لحظة للتأمل"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un momento para reflexionar"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un momento para reflexionar"
+          }
+        }
+      }
+    },
+    "duoReflectionPrompt" : {
+      "comment" : "iPhone Duo journal workspace and release onboarding.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What is one small moment you would like to remember from today?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué pequeño momento de hoy te gustaría recordar?"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما اللحظة الصغيرة من يومك التي تودّ تذكّرها؟"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué pequeño momento de hoy te gustaría recordar?"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué pequeño momento de hoy te gustaría recordar?"
+          }
+        }
+      }
+    },
+    "duoOpenSelectedPage" : {
+      "comment" : "iPhone Duo journal workspace and release onboarding.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open selected page"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir página seleccionada"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "افتح الصفحة المحددة"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir página seleccionada"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir página seleccionada"
+          }
+        }
+      }
+    },
+    "duoOnboardingTitle" : {
+      "comment" : "iPhone Duo journal workspace and release onboarding.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "More room for your journal"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más espacio para tu diario"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مساحة أوسع ليومياتك"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más espacio para tu diario"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más espacio para tu diario"
+          }
+        }
+      }
+    },
+    "duoOnboardingDescription" : {
+      "comment" : "iPhone Duo journal workspace and release onboarding.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write in a focused view or browse pages beside your journal when there’s room. Your place stays with you as the layout changes."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe sin distracciones o consulta tus páginas junto al diario cuando haya espacio. Mantén tu lugar al cambiar de tamaño."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اكتب بتركيز أو تصفّح الصفحات بجانب يومياتك عندما تتّسع المساحة. يبقى موضعك محفوظًا مع تغيّر التخطيط."
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe sin distracciones o consulta tus páginas junto al diario cuando haya espacio. Mantén tu lugar al cambiar de tamaño."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe sin distracciones o consulta tus páginas junto al diario cuando haya espacio. Mantén tu lugar al cambiar de tamaño."
+          }
+        }
+      }
+    },
     "reviewRequiresDeviceTitle" : {
       "comment" : "Title shown only when trying to open App Store reviews in a simulator.",
       "extractionState" : "manual",
@@ -2569,7 +2784,7 @@
         "ar" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "حزين"
+            "value" : "أسى"
           }
         },
         "en" : {
@@ -7400,9 +7615,45 @@
           }
         },
         "ar" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "سلسلة من %lld يومًا"
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "لا أيام متتالية"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "سلسلة يوم واحد"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "سلسلة يومين"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "سلسلة من %lld أيام"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "سلسلة من %lld يومًا"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "سلسلة من %lld يوم"
+                }
+              }
+            }
           }
         }
       }

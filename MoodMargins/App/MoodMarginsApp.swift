@@ -11,8 +11,6 @@ import EZSwiftData
 
 @main
 struct MoodMarginsApp: App {
-    @Environment(\.scenePhase) private var scenePhase
-    @State private var navigationContext: NavigationContext
     @State private var modelPreferences = FoundationModelPreferences()
     @State private var purchases = PurchaseStore()
     @State private var themes = ThemePreferences()
@@ -38,96 +36,34 @@ struct MoodMarginsApp: App {
         } catch {
             fatalError("Failed to create ModelContainer: \(error.localizedDescription)")
         }
-        let navigation = NavigationContext()
-#if DEBUG
-        let arguments = ProcessInfo.processInfo.arguments
-        if arguments.contains("--marketing-capture"),
-           let index = arguments.firstIndex(of: "--marketing-tab"),
-           arguments.indices.contains(index + 1),
-           let tab = AppTab(rawValue: arguments[index + 1]) {
-            navigation.selectedTab = tab
-        }
-#endif
-        _navigationContext = State(initialValue: navigation)
 #if DEBUG
         _marketingCapture = State(initialValue: capture)
 #endif
     }
     var body: some Scene {
         WindowGroup {
-            rootContent
+            JournalSceneRoot()
 #if DEBUG
-            .id(marketingCapture.isEnabled)
-            .environment(marketingCapture)
+                .id(marketingCapture.isEnabled)
+                .environment(marketingCapture)
 #if !os(visionOS)
-            // visionOS glass adapts to its surroundings rather than a light/dark appearance.
-            .preferredColorScheme(marketingCapture.appearance)
+                .preferredColorScheme(marketingCapture.appearance)
 #endif
-            .transformEnvironment(\.locale) { locale in
-                if let captureLocale = marketingCapture.locale { locale = captureLocale }
-            }
-#if os(iOS)
-            .task {
-                let arguments = ProcessInfo.processInfo.arguments
-                guard arguments.contains("--marketing-capture"), arguments.contains("--marketing-preview") else { return }
-                do {
-                    // Viewing intervals for a live screen recording of the
-                    // actual app. Fictional data remains in its isolated store.
-                    navigationContext.selectedTab = .today
-                    try await Task.sleep(for: .seconds(7))
-                    for tab in [AppTab.page, .insights, .customize] {
-                        navigationContext.selectedTab = tab
-                        try await Task.sleep(for: .seconds(5))
+                .transformEnvironment(\.locale) { locale in
+                    if let captureLocale = marketingCapture.locale { locale = captureLocale }
+                }
+                .transformEnvironment(\.layoutDirection) { direction in
+                    if let locale = marketingCapture.locale {
+                        direction = locale.language.languageCode?.identifier == "ar" ? .rightToLeft : .leftToRight
                     }
-                    navigationContext.selectedTab = .today
-                } catch is CancellationError {
-                    return
-                } catch {
-                    marketingCapture.errorMessage = error.localizedDescription
                 }
-            }
 #endif
-#if os(macOS)
-            .task {
-                let arguments = ProcessInfo.processInfo.arguments
-                guard arguments.contains("--marketing-capture"), arguments.contains("--export-store-captures") else { return }
-                do {
-                    try await MacStoreCapture.export(navigation: navigationContext, preview: marketingCapture)
-                } catch is CancellationError {
-                    return
-                } catch {
-                    marketingCapture.errorMessage = error.localizedDescription
-                    print("STORE_CAPTURE_FAILED: \(error)")
-                }
-            }
-#endif
-#endif
-            .task { await purchases.observeTransactions() }
-            .task { await purchases.observeSubscriptionStatus() }
-            .task(id: scenePhase) {
-                if scenePhase == .active { await purchases.refreshEntitlements() }
-            }
         }
-        .environment(navigationContext)
         .environment(modelPreferences)
         .environment(purchases)
         .environment(themes)
         .environment(\.diaryPalette, activePalette)
         .modelContainer(activeContainer)
-    }
-
-    @ViewBuilder
-    private var rootContent: some View {
-#if DEBUG
-        if ProcessInfo.processInfo.arguments.contains("--marketing-capture"),
-           !ProcessInfo.processInfo.arguments.contains("--show-onboarding") {
-            ContentView()
-        } else {
-            MoodMarginsOnboarding { ContentView() }
-        }
-#else
-        MoodMarginsOnboarding { ContentView() }
-#endif
     }
 
     private var activeContainer: ModelContainer {

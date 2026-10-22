@@ -29,12 +29,23 @@ struct ContentView: View {
             .customizationID(AppTab.today.rawValue)
             
             Tab(AppTab.page.title, systemImage: AppTab.page.systemImage, value: AppTab.page) {
+#if os(iOS)
+                if #available(iOS 27.1, *) {
+                    PageView()
+                } else {
+                    NavigationStack(path: $navigationContext.pagePath) {
+                        PageView()
+                            .navigationDestination(for: AppScreen.self) { $0.destination }
+                    }
+                }
+#else
                 NavigationStack(path: $navigationContext.pagePath) {
                     PageView()
                         .navigationDestination(for: AppScreen.self) { screen in
                             screen.destination
                         }
                 }
+#endif
             }
             .customizationID(AppTab.page.rawValue)
             Tab(AppTab.insights.title, systemImage: AppTab.insights.systemImage, value: AppTab.insights) {

@@ -10,6 +10,7 @@ import SwiftData
 import SwiftUI
 
 struct InsightsView: View {
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Environment(\.diaryPalette) private var palette
     @Environment(FoundationModelPreferences.self) private var modelPreferences
     @Environment(PurchaseStore.self) private var purchases
@@ -20,28 +21,29 @@ struct InsightsView: View {
     var body: some View {
         @Bindable var viewModel = viewModel
 
-        ScrollView {
-            AdaptiveContentWidth(maximumWidth: 1120) {
-                VStack(alignment: .leading, spacing: 22) {
-                    InsightHeader(selectedRange: $viewModel.selectedRange)
-                    SummaryStack(summaryItems: viewModel.summaryItems(for: entries))
-                    TrendCard(selectedRange: viewModel.selectedRange, series: viewModel.trendSeries(for: entries))
-                    InsightPairs(
-                        distribution: viewModel.distribution(for: entries),
-                        topActivities: viewModel.topActivities(for: entries)
-                    )
-                    ReflectionPairs(
-                        hasPlus: purchases.entitlements.hasPlus,
-                        pattern: viewModel.pattern(for: entries),
-                        selectedRange: viewModel.selectedRange,
-                        generatedRecap: viewModel.generatedRecap,
-                        isGeneratingRecap: viewModel.isGeneratingRecap,
-                        recapErrorMessage: viewModel.recapErrorMessage,
-                        retry: viewModel.retryGeneratedRecap
-                    )
+        GeometryReader { geometry in
+#if os(iOS)
+            if #available(iOS 27.1, *),
+               geometry.size.width >= 600,
+               !dynamicTypeSize.isAccessibilitySize,
+               !geometry.reservedRegions(kind: .division, options: .includeInactive).isEmpty {
+                JournalWorkspace {
+                    VStack(alignment: .leading, spacing: 22) {
+                        InsightHeader(selectedRange: $viewModel.selectedRange)
+                        TrendCard(selectedRange: viewModel.selectedRange, series: viewModel.trendSeries(for: entries))
+                    }
+                } secondary: {
+                    VStack(alignment: .leading, spacing: 22) {
+                        SummaryStack(summaryItems: viewModel.summaryItems(for: entries))
+                        supportingInsights
+                    }
                 }
-                .padding(22)
+            } else {
+                standardInsights
             }
+#else
+            standardInsights
+#endif
         }
         .safeAreaPadding(.bottom, 16)
         .background { DiaryWindowBackground() }
@@ -53,4 +55,37 @@ struct InsightsView: View {
             await viewModel.refreshGeneratedRecap(from: entries, using: modelPreferences.choice, hasPlus: purchases.entitlements.hasPlus)
         }
     }
+    private var standardInsights: some View {
+        @Bindable var viewModel = viewModel
+        return ScrollView {
+            AdaptiveContentWidth(maximumWidth: 1120) {
+                VStack(alignment: .leading, spacing: 22) {
+                    InsightHeader(selectedRange: $viewModel.selectedRange)
+                    SummaryStack(summaryItems: viewModel.summaryItems(for: entries))
+                    TrendCard(selectedRange: viewModel.selectedRange, series: viewModel.trendSeries(for: entries))
+                    supportingInsights
+                }
+                .padding(22)
+            }
+        }
+    }
+
+    private var supportingInsights: some View {
+        VStack(alignment: .leading, spacing: 22) {
+            InsightPairs(
+                distribution: viewModel.distribution(for: entries),
+                topActivities: viewModel.topActivities(for: entries)
+            )
+            ReflectionPairs(
+                hasPlus: purchases.entitlements.hasPlus,
+                pattern: viewModel.pattern(for: entries),
+                selectedRange: viewModel.selectedRange,
+                generatedRecap: viewModel.generatedRecap,
+                isGeneratingRecap: viewModel.isGeneratingRecap,
+                recapErrorMessage: viewModel.recapErrorMessage,
+                retry: viewModel.retryGeneratedRecap
+            )
+        }
+    }
+
 }

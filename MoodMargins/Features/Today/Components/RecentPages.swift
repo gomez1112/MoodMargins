@@ -13,7 +13,12 @@ struct RecentPages: View {
                 .font(.system(.headline, design: .rounded))
                 .foregroundStyle(palette.ink)
                 .accessibilityAddTraits(.isHeader)
-            if isSidebar {
+            if entries.isEmpty {
+                Text("duoRecentPagesEmpty")
+                    .font(.subheadline)
+                    .foregroundStyle(palette.softInk)
+                    .fixedSize(horizontal: false, vertical: true)
+            } else if isSidebar {
                 VStack(spacing: 16) {
                     ForEach(entries.prefix(2)) { entry in
                         MiniDiaryPage(entry: entry)

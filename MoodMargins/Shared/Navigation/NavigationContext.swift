@@ -19,6 +19,12 @@ final class NavigationContext {
     var customizePath = NavigationPath()
     var presentedSheet: AppSheet?
     var presentedFullScreenCover: AppFullScreenCover?
+    var isPageBrowserRequested = false
+
+    func browsePages() {
+        isPageBrowserRequested = true
+        selectedTab = .page
+    }
 
     func selectTab(_ tab: AppTab) {
         selectedTab = tab

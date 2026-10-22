@@ -79,7 +79,7 @@ private enum MoodMarginsOnboardingContent {
     }
 
     static var features: [FeatureItem] {
-        [
+        var items = [
             FeatureItem(
                 title: String(localized: "Daily mood pages"),
                 description: String(localized: "Start from Today, choose a mood, and add a note. Your page saves automatically as you write."),
@@ -102,5 +102,17 @@ private enum MoodMarginsOnboardingContent {
                 iconColor: Mood.laughing.tint
             )
         ]
+#if os(iOS)
+        if #available(iOS 27.1, *) {
+            items.insert(FeatureItem(
+                title: String(localized: "duoOnboardingTitle"),
+                description: String(localized: "duoOnboardingDescription"),
+                systemImage: "book.pages.fill",
+                backgroundColor: PastelTheme.paper,
+                iconColor: PastelTheme.ink
+            ), at: 0)
+        }
+#endif
+        return items
     }
 }

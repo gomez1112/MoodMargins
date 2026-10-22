@@ -10,19 +10,29 @@ import SwiftUI
 final class MarketingCaptureState {
     private(set) var container: ModelContainer?
     var errorMessage: String?
+    var language: String = UserDefaults.standard.string(forKey: "marketingCaptureLanguage") ?? "en" {
+        didSet {
+            defaults.set(language, forKey: "marketingCaptureLanguage")
+            // This app-scoped override is restored when the isolated capture mode ends.
+            defaults.set([language], forKey: "AppleLanguages")
+        }
+    }
+    var usesDarkAppearance = UserDefaults.standard.bool(forKey: "marketingCaptureDark") {
+        didSet { defaults.set(usesDarkAppearance, forKey: "marketingCaptureDark") }
+    }
     private let defaults = UserDefaults.standard
     private let storageKey = "marketingPreviewEnabled"
     private let isCaptureSession: Bool
     var isEnabled: Bool { container != nil }
     var appearance: ColorScheme? {
-        guard isCaptureSession else { return nil }
-        return ProcessInfo.processInfo.arguments.contains("--marketing-dark") ? .dark : .light
+        guard isEnabled else { return nil }
+        return ProcessInfo.processInfo.arguments.contains("--marketing-dark") || usesDarkAppearance ? .dark : .light
     }
     var locale: Locale? {
         let arguments = ProcessInfo.processInfo.arguments
         guard isCaptureSession,
               let index = arguments.firstIndex(of: "-AppleLocale"),
-              arguments.indices.contains(index + 1) else { return nil }
+              arguments.indices.contains(index + 1) else { return isEnabled ? Locale(identifier: language) : nil }
         // SwiftUI's environment locale can differ from the test process's preferred bundle language.
         return Locale(identifier: arguments[index + 1])
     }
@@ -35,10 +45,25 @@ final class MarketingCaptureState {
     func setEnabled(_ enabled: Bool) {
         if !enabled {
             container = nil
-            if !isCaptureSession { defaults.set(false, forKey: storageKey) }
+            if !isCaptureSession {
+                defaults.set(false, forKey: storageKey)
+                if let originalLanguages = defaults.array(forKey: "marketingOriginalLanguages") {
+                    defaults.set(originalLanguages, forKey: "AppleLanguages")
+                } else {
+                    defaults.removeObject(forKey: "AppleLanguages")
+                }
+                defaults.removeObject(forKey: "marketingOriginalLanguages")
+                defaults.removeObject(forKey: "marketingCapturedLanguageBaseline")
+            }
             return
         }
         guard container == nil else { return }
+        if !isCaptureSession, !defaults.bool(forKey: "marketingCapturedLanguageBaseline") {
+            if let originalLanguages = defaults.array(forKey: "AppleLanguages") {
+                defaults.set(originalLanguages, forKey: "marketingOriginalLanguages")
+            }
+            defaults.set(true, forKey: "marketingCapturedLanguageBaseline")
+        }
         do {
             let schema = Schema([MoodEntry.self, Activity.self])
             let configuration = ModelConfiguration("MarketingPreview", schema: schema, isStoredInMemoryOnly: true, cloudKitDatabase: .none)
